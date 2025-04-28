@@ -19,6 +19,8 @@
       * [Web version](home/getting-started/installation-and-setup/web-version.md)
       * [Browser extension](home/getting-started/installation-and-setup/browser-extension.md)
       * [Mobile apps](home/getting-started/installation-and-setup/mobile-apps.md)
+    * [Creating a new wallet](home/getting-started/creating-a-new-wallet.md)
+    * [Restoring an existing wallet](home/getting-started/restoring-an-existing-wallet.md)
   * [Using Eternl](home/using-eternl/README.md)
     * [Application](home/using-eternl/application.md)
     * [Wallet](home/using-eternl/wallet.md)
@@ -26,3 +28,4 @@
     * [Staking](home/using-eternl/staking.md)
     * [DApps](home/using-eternl/dapps.md)
 * [FAQ](faq.md)
+* [Page 1](page-1.md)
