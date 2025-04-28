@@ -21,6 +21,7 @@
       * [Mobile apps](home/getting-started/installation-and-setup/mobile-apps.md)
     * [Creating a new wallet](home/getting-started/creating-a-new-wallet.md)
     * [Restoring an existing wallet](home/getting-started/restoring-an-existing-wallet.md)
+    * [Importing/Exporting wallet data](home/getting-started/importing-exporting-wallet-data.md)
   * [Using Eternl](home/using-eternl/README.md)
     * [Application](home/using-eternl/application.md)
     * [Wallet](home/using-eternl/wallet.md)
