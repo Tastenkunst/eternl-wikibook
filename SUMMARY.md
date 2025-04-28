@@ -33,4 +33,6 @@
     * [Collateral setup & UTxO management](home/using-eternl/collateral-setup-and-utxo-management.md)
     * [DApp connector & browser](home/using-eternl/dapp-connector-and-browser.md)
     * [Governance](home/using-eternl/governance.md)
+* [For Developers](for-developers/README.md)
+  * [DApp browser integration](for-developers/dapp-browser-integration.md)
 * [FAQ](faq.md)
