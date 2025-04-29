@@ -35,7 +35,7 @@ Eternl v2 supports 4 app types and 7 different connection methods:
 
 Although implementing the PWA JS Bridge involves extra effort, it provides the benefit of featuring your dapp in the PWA’s Dapp Browser, where only select dApps are supported. With no URL input available, the PWA displays just a list of compliant dApps, so we encourage you to add support for the PWA JS Bridge.
 
-Bridge snippet and example implementation:[cardano-dapp-connector-bridge](https://github.com/Tastenkunst/cardano-dapp-connector-bridge)
+Bridge snippet and example implementation:  [cardano-dapp-connector-bridge](https://github.com/Tastenkunst/cardano-dapp-connector-bridge)
 
 ## Technical requirements
 
@@ -90,9 +90,13 @@ Fill out the following JSON structure.
   }
 ```
 
-#### Conveniense fee
+#### Convenience fee
 
 The convenience fee is our way to monetize Eternl wallet to keep the lights on and delevop it further. To be listed on the Dapp Browser it's a requirement to implement the fee.
+
+```
+ // const feeAddress = window.cardano.eternl.experimental.feeAddress // normal string, bech32 address.
+```
 
 [EternlDAppBrowser.md](https://github.com/Tastenkunst/cardano-dapp-connector-bridge/blob/main/EternlDAppBrowser.md)\
 (for the implementation of the Eternl "convenience fee").
