@@ -6,8 +6,22 @@ description: >-
 
 # Eternl v2.0 Wiki
 
-Recommended structure of this wiki:\
-\
+
+
+Syntax samples:
+
+
+
+
+
+Recommended structure of this wiki:
+
+
+
+
+
+
+
 
 
 Eternl v2.0 Wiki
