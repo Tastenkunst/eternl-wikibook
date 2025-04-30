@@ -10,6 +10,7 @@
     * [Why security matters.](home/security-and-privacy/why-security-matters..md)
     * [The seed phrase: Your master key.](home/security-and-privacy/the-seed-phrase-your-master-key./README.md)
       * [What is a seed phrase?](home/security-and-privacy/the-seed-phrase-your-master-key./what-is-a-seed-phrase.md)
+      * [Hot wallets vs cold wallets.](home/security-and-privacy/the-seed-phrase-your-master-key./hot-wallets-vs-cold-wallets..md)
       * [How to store your seed phrase securely?](home/security-and-privacy/the-seed-phrase-your-master-key./how-to-store-your-seed-phrase-securely.md)
       * [Common mistakes to avoid](home/security-and-privacy/the-seed-phrase-your-master-key./common-mistakes-to-avoid.md)
     * [Recovery & backup](home/security-and-privacy/recovery-and-backup.md)
