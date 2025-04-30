@@ -12,9 +12,3 @@ If someone else gains access to your seed phrase, they can control your cryptocu
 
 1. **Use Physical Backup**: Write down your seed phrase on paper or a non-digital medium, like a metal sheet, to protect it from digital theft and natural disasters.
 
-### Risks of Digital Photos
-
-Taking a digital photo of your seed phrase poses significant security risks. Photos stored in your device can be hacked or accidentally uploaded to the cloud, making them easily accessible to cybercriminals. Always avoid sharing or uploading images of your seed phrase, and promptly delete any accidental digital copies.
-
-By following these guidelines, you minimize the risk of losing access to your digital assets and protect your financial privacy.
-
