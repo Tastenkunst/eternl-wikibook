@@ -82,6 +82,8 @@ This means:
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
 
+***
+
 ## Manual sync option
 
 <figure><img src="../../../.gitbook/assets/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
@@ -131,4 +133,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 | **Automatic** (default) | Background sync     | Most users (easy & up to date)             |
 | **Manual**              | User-triggered sync | Power users, low-resource devices, testing |
 
+
+
 > 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
+
