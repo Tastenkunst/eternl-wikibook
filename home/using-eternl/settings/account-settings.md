@@ -81,3 +81,54 @@ This means:
 * Collateral is **never locked** and can be spent in regular (non-contract) transactions.
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
+
+## Manual sync option
+
+<figure><img src="../../../.gitbook/assets/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+
+### What is Manual Sync?
+
+In Eternl, **Manual Sync** is an optional setting that allows you to control **when** your wallet fetches the latest data (such as balances, UTxOs, and transaction history) from the blockchain.
+
+By default, this setting is **OFF**, meaning the wallet performs **automatic syncing** in the background.
+
+***
+
+### 🔁 Automatic Sync (Default)
+
+* The wallet refreshes data **automatically** at regular intervals.
+* Keeps balances and UTxOs **up to date** without user input.
+* Convenient for most users.
+
+***
+
+### ✋ Manual Sync (When turned ON)
+
+When enabled, syncing will **only occur when you manually trigger it** by pressing the **sync button** in the interface.
+
+***
+
+### ✅ Advantages of Manual Sync
+
+* ⚡ **Faster UI response**: Reduces background activity, especially useful on low-power devices or slow networks.
+* 🔒 **More control**: Ideal for advanced users who want to control when blockchain state updates.
+* 🧪 **Useful in testing/debugging scenarios**, where state consistency is critical.
+
+***
+
+### ❌ Disadvantages of Manual Sync
+
+* 🕒 **Outdated balances**: You may see stale wallet data until you manually sync.
+* 🧍‍♂️ **Extra effort**: Requires remembering to sync before sending transactions or interacting with dApps.
+* ❌ **May cause confusion**: New users might not realize data isn’t current.
+
+***
+
+### Summary
+
+| Mode                    | Sync Method         | Best For                                   |
+| ----------------------- | ------------------- | ------------------------------------------ |
+| **Automatic** (default) | Background sync     | Most users (easy & up to date)             |
+| **Manual**              | User-triggered sync | Power users, low-resource devices, testing |
+
+> 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
