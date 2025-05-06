@@ -37,3 +37,17 @@ When enabled, all funds will be held on the first receive address by default.
 Alternatively a custom receive address can be set here.
 
 > <mark style="color:red;">Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.</mark>
+
+### Collateral&#x20;
+
+<figure><img src="../../../.gitbook/assets/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+
+#### What is Collateral?
+
+#### In the context of Cardano and smart contracts (Plutus scripts), collateral is a special UTxO (Unspent Transaction Output) set aside to cover potential fees if a transaction involving a smart contract fails during script execution.
+
+If the transaction succeeds: the collateral is untouched.
+
+If the transaction fails: the collateral is used to pay the fee (only the fee, not the full amount).
+
+This mechanism prevents abuse of the network by ensuring that users take on the cost of failed executions.
