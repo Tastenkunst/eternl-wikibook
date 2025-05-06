@@ -42,12 +42,42 @@ Alternatively a custom receive address can be set here.
 
 <figure><img src="../../../.gitbook/assets/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
-#### What is Collateral?
+***
 
-#### In the context of Cardano and smart contracts (Plutus scripts), collateral is a special UTxO (Unspent Transaction Output) set aside to cover potential fees if a transaction involving a smart contract fails during script execution.
+## Collateral (Cardano)
 
-If the transaction succeeds: the collateral is untouched.
+### What is Collateral?
 
-If the transaction fails: the collateral is used to pay the fee (only the fee, not the full amount).
+In the Cardano blockchain, **collateral** is a special UTxO (Unspent Transaction Output) set aside to cover transaction fees if a smart contract (Plutus script) **fails** during execution.
 
-This mechanism prevents abuse of the network by ensuring that users take on the cost of failed executions.
+* ✅ If the script **succeeds**, the collateral is untouched.
+* ❌ If the script **fails**, the collateral is used to pay the **transaction fee only**, not the full amount.
+
+This system ensures users are responsible for failed executions, helping to protect the network from spam or abuse.
+
+> 🔓 The **collateral is never locked.** It can still be spent in any transaction that does **not** require a collateral.
+
+***
+
+### Using Collateral in Eternl
+
+The **Eternl wallet** provides a feature called the **Collateral**.
+
+> When the Collateral Switch is **ON**, Eternl will automatically select a suitable UTxO to be used as collateral—if available in your wallet.
+
+This means:
+
+* You don’t need to manually choose a collateral UTxO.
+* Interactions with smart contracts and dApps are handled smoothly.
+* The selected collateral is only used **if a contract execution fails**, and only to cover **fees**.
+
+> 🛡️ This helps ensure secure and seamless usage of smart contracts on Cardano through the Eternl wallet.
+
+***
+
+### Summary
+
+* Collateral is **required** for transactions involving Plutus smart contracts.
+* Collateral is **never locked** and can be spent in regular (non-contract) transactions.
+* Eternl automates collateral management when the **Collateral Switch** is enabled.
+* Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
