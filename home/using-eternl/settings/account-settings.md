@@ -137,3 +137,57 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
+### History sync option
+
+The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
+
+> When **enabled**, Eternl will fetch your complete historical activity (incoming/outgoing transactions, metadata, etc.).
+
+***
+
+#### 🔍 What is History Sync?
+
+Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or with **full history sync**. This setting determines which mode Eternl uses.
+
+* 🔄 **ON**: Full transaction history is retrieved and displayed.
+* 💤 **OFF**: Only your current balance and available UTxOs are shown — not past transactions.
+
+***
+
+#### ✅ Advantages of History Sync (ON)
+
+* 📜 See your full transaction history in-app
+* 🔍 Useful for auditing, record keeping, or tax purposes
+* 🧠 Easier to track smart contract interactions or NFT transfers
+
+***
+
+#### ❌ Disadvantages
+
+* 🐢 **Slower sync time**, especially for older or busy wallets
+* 🔋 Higher memory and data usage
+* Not needed for simple transfers or light use
+
+***
+
+#### 📌 Summary Table
+
+| Setting           | Sync Behavior                      | Best For                           |
+| ----------------- | ---------------------------------- | ---------------------------------- |
+| **ON**            | Full transaction history is synced | Power users, bookkeeping, audits   |
+| **OFF** (default) | Faster sync, no history loaded     | Everyday users, faster performance |
+
+> 💡 **Tip:** If you just need to send/receive ADA or NFTs, you can leave this **OFF** for quicker syncs.
+
+***
+
+### 🧭 Recommendation
+
+Enable **History Sync** if:
+
+* You need to track past transactions or use the wallet for business or DeFi.
+* You’re troubleshooting contract calls or asset transfers.
+
+Keep it **disabled** if:
+
+* You want the wallet to load quickly and don’t need old records.
