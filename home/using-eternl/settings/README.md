@@ -25,13 +25,11 @@ will open this **settings menu**:
 
 ***
 
+{% hint style="info" %}
+Use the search bar at the top to **quickly find settings**.
+{% endhint %}
 
-
-> \[!NOTE]> \
-> This is an informational message.
-
-<mark style="color:green;background-color:yellow;">Use the search bar at the top to</mark> <mark style="color:green;background-color:yellow;"></mark><mark style="color:green;background-color:yellow;">**quickly find settings**</mark><mark style="color:green;background-color:yellow;">.</mark>\
-As soon as you enter the **second character**, the list is **instantly filtered** across the 3 settings areas.
+As soon as you enter the **second character**, the list is **instantly filtered** across the 4 sub menus.
 
 <figure><img src="../../../.gitbook/assets/settings_filtered.png" alt=""><figcaption><p><em>Settings filtered by search term</em></p></figcaption></figure>
 
