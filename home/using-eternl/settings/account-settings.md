@@ -8,11 +8,15 @@ description: Settings that apply to the currently active account.
 
 ## Account name / handle
 
+### Reduce transaction fees by fragmenting tokens.
+
 <figure><img src="../../../.gitbook/assets/Account_name_Handle.png" alt=""><figcaption><p>Enter an account name or choose a $handle</p></figcaption></figure>
 
 Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.
 
 ## Export Account Key
+
+### Export the public key of this account.
 
 <figure><img src="../../../.gitbook/assets/Account_public_key_export.png" alt=""><figcaption><p>account public key export (read only)</p></figcaption></figure>
 
@@ -30,6 +34,8 @@ These key formats enable wallet **monitoring and address generation**, but **can
 
 ## Single Address Mode (SAM) option
 
+### Only use a single address for all transactions.
+
 When enabled, all funds will be held on the first receive address by default.
 
 <figure><img src="../../../.gitbook/assets/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
@@ -38,15 +44,17 @@ Alternatively a custom receive address can be set here.
 
 > <mark style="color:red;">Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.</mark>
 
-## Collateral option
+## Collateral \[option]
+
+### Use Eternl provided collateral?
 
 <figure><img src="../../../.gitbook/assets/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
 ***
 
-## Collateral (Cardano)
+### Collateral (Cardano)
 
-### What is Collateral?
+#### What is Collateral?
 
 In the Cardano blockchain, **collateral** is a special UTxO (Unspent Transaction Output) set aside to cover transaction fees if a smart contract (Plutus script) **fails** during execution.
 
@@ -59,7 +67,7 @@ This system ensures users are responsible for failed executions, helping to prot
 
 ***
 
-### Using Collateral in Eternl
+#### Using Collateral in Eternl
 
 The **Eternl wallet** provides a feature called the **Collateral**.
 
@@ -84,7 +92,9 @@ This means:
 
 ***
 
-## Manual sync option
+## Manual sync \[option]
+
+### Set manual sync
 
 <figure><img src="../../../.gitbook/assets/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
@@ -137,7 +147,11 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
-## History sync option
+## History sync \[option]
+
+### Set history sync
+
+<figure><img src="../../../.gitbook/assets/history_sync.png" alt=""><figcaption></figcaption></figure>
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
@@ -191,3 +205,48 @@ Enable **History Sync** if:
 Keep it **disabled** if:
 
 * You want the wallet to load quickly and don’t need old records.
+
+## 🧩Token Fragmentation (TF)
+
+### Reduce transaction fees by fragmenting tokens.
+
+<figure><img src="../../../.gitbook/assets/token_fragmentation.png" alt=""><figcaption></figcaption></figure>
+
+### Token Fragmentation (TF)
+
+**Token Fragmentation** is an advanced sending option that controls how tokens are grouped when a transaction is made.
+
+> When enabled, the wallet will **split tokens into bundles** if the number of tokens in the **change output** exceeds a defined threshold.
+
+> 🧩 **Default value:** `20` tokens per UTxO
+
+#### 🔍 Purpose
+
+This helps **reduce UTxO bloat** and improves **token management** by avoiding overly large token bundles in change.
+
+#### ⚙️ How it works
+
+* During a transaction, if the wallet detects that the change output would include **more tokens than the set limit**, it will **automatically split** them into smaller, more manageable outputs.
+* This behavior depends on your wallet’s current **UTxO and token distribution**.
+
+#### 🎯 Tweaking for Best Results
+
+To get optimal results:
+
+* You may need to **adjust the threshold value** based on your wallet’s token composition.
+* Different distributions may require different configurations to achieve the desired outcome.
+
+***
+
+> 💡 **Tip:** Token Fragmentation can help avoid failed transactions caused by oversized outputs or complex UTxO sets.
+
+### 📦 Token Bundle Size
+
+The **Token Bundle Size** setting defines the **maximum number of tokens** each UTxO output should contain when tokens are fragmented.
+
+This setting involves a tradeoff:
+
+* **Smaller bundle size** → Lower transaction fees, but **more ADA locked** across multiple UTxOs.
+* **Larger bundle size** → Fewer UTxOs and less ADA locked, but **higher transaction fees** due to increased output complexity.
+
+> ⚖️ Adjust this value based on your priority: minimizing fees vs. optimizing ADA availability.
