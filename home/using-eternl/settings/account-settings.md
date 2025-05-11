@@ -6,13 +6,13 @@ description: Settings that apply to the currently active account.
 
 <figure><img src="../../../.gitbook/assets/account_settings.png" alt=""><figcaption><p>Active account settings</p></figcaption></figure>
 
-### Account name / handle
+## Account name / handle
 
 <figure><img src="../../../.gitbook/assets/Account_name_Handle.png" alt=""><figcaption><p>Enter an account name or choose a $handle</p></figcaption></figure>
 
 Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.
 
-### Export Account Key
+## Export Account Key
 
 <figure><img src="../../../.gitbook/assets/Account_public_key_export.png" alt=""><figcaption><p>account public key export (read only)</p></figcaption></figure>
 
@@ -28,7 +28,7 @@ Cardano supports several public account key formats, each used to view wallet in
 
 These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
 
-### Single Address Mode (SAM)
+## Single Address Mode (SAM) option
 
 When enabled, all funds will be held on the first receive address by default.
 
@@ -38,7 +38,7 @@ Alternatively a custom receive address can be set here.
 
 > <mark style="color:red;">Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.</mark>
 
-### Collateral&#x20;
+## Collateral option
 
 <figure><img src="../../../.gitbook/assets/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
@@ -137,7 +137,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
-### History sync option
+## History sync option
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
