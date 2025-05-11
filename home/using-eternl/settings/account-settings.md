@@ -244,9 +244,20 @@ To get optimal results:
 
 The **Token Bundle Size** setting defines the **maximum number of tokens** each UTxO output should contain when tokens are fragmented.
 
-This setting involves a tradeoff:
+> 🧩 **Default value:** `20` tokens per UTxO\
+> 🔧 This value is adjustable based on your specific needs.
 
-* **Smaller bundle size** → Lower transaction fees, but **more ADA locked** across multiple UTxOs.
-* **Larger bundle size** → Fewer UTxOs and less ADA locked, but **higher transaction fees** due to increased output complexity.
+#### 📊 What does it affect?
 
-> ⚖️ Adjust this value based on your priority: minimizing fees vs. optimizing ADA availability.
+Changing this value affects how tokens are distributed across outputs when sending transactions:
+
+* **Lowering the value (<20):**
+  * Splits tokens into **smaller bundles**
+  * ⚡ **Lower transaction fees**
+  * 🔒 **More ADA locked** in multiple UTxOs
+* **Increasing the value (>20):**
+  * Groups more tokens per UTxO
+  * 💸 **Higher transaction fees**
+  * 🔓 **Less ADA locked**, more efficient for frequent use
+
+> ⚖️ **Tip:** Lower values are better for minimizing fees in simple wallets. Higher values can be more efficient for wallets handling many tokens or dApp interactions.
