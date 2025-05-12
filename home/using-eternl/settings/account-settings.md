@@ -267,3 +267,12 @@ Changing this value affects how tokens are distributed across outputs when sendi
 ### Use advanced UTxO management on your transactions.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### 🧠 Advanced UTxO Management
+
+When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
+
+* 🔄 It attempts to maintain at least **10 available UTxOs** to support **parallel transaction execution**, improving performance and responsiveness.
+* 🛡️ Additionally, it tries to reserve a dedicated **5 \{{currency\}} collateral UTxO** for use with **smart contract interactions**.
+
+> ⚙️ This setting is especially useful for users interacting with dApps, submitting multiple transactions, or participating in DeFi.
