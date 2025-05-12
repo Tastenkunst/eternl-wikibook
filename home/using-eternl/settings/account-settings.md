@@ -261,3 +261,9 @@ Changing this value affects how tokens are distributed across outputs when sendi
   * 🔓 **Less ADA locked**, more efficient for frequent use
 
 > ⚖️ **Tip:** Lower values are better for minimizing fees in simple wallets. Higher values can be more efficient for wallets handling many tokens or dApp interactions.
+
+## Advanced UTxO Management
+
+### Use advanced UTxO management on your transactions.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
