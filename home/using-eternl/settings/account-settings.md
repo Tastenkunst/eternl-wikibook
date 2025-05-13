@@ -276,3 +276,10 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 * 🛡️ Additionally, it tries to reserve a dedicated **5 \{{currency\}} collateral UTxO** for use with **smart contract interactions**.
 
 > ⚙️ This setting is especially useful for users interacting with dApps, submitting multiple transactions, or participating in DeFi.
+
+### Auto Withdrawal
+
+Automatically withdraw rewards if needed.
+
+<figure><img src="../../../.gitbook/assets/auto_withdrawal (1).png" alt=""><figcaption></figcaption></figure>
+
