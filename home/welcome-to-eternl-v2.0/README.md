@@ -5,4 +5,4 @@ coverY: 0
 
 # Welcome to Eternl v2.0
 
-{% file src="../../.gitbook/assets/IconCalendarRange.vue" %}
+![](../../.gitbook/assets/IconApplication.svg)
