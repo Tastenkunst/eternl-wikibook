@@ -4,17 +4,23 @@
 
 <summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (1).png>)
+
+</details>
+
+<details>
+
+<summary>Account name / handle</summary>
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
 ## Account name / handle
 
-### Reduce transaction fees by fragmenting tokens.
 
-<figure><img src="../../../.gitbook/assets/Account_name_Handle.png" alt=""><figcaption><p>Enter an account name or choose a $handle</p></figcaption></figure>
 
-Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.
+<figure><img src="../../../.gitbook/assets/Account_name_Handle.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 ## Export Account Key
 
@@ -268,7 +274,7 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 ### Use advanced UTxO management on your transactions.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🧠 Advanced UTxO Management
 
