@@ -4,7 +4,7 @@
 
 <summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (1).png>)
 
 </details>
 
@@ -12,23 +12,17 @@
 
 <summary>Account name / handle</summary>
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 </details>
 
-## Account name / handle
+<details>
 
-
-
-<figure><img src="../../../.gitbook/assets/Account_name_Handle.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
-
-## Export Account Key
+<summary>Export Account Key</summary>
 
 ### Export the public key of this account.
 
-<figure><img src="../../../.gitbook/assets/Account_public_key_export.png" alt=""><figcaption><p>account public key export (read only)</p></figcaption></figure>
-
-Here you can export the public key of your current account.
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 #### Cardano Public Account Key Formats
 
@@ -39,6 +33,10 @@ Cardano supports several public account key formats, each used to view wallet in
 * **`acct_vk`**: A non-extended account public key (Bech32) that includes only the public key. Used for viewing wallet details or verifying signatures.
 
 These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
+
+</details>
+
+
 
 ## Single Address Mode (SAM) option
 
@@ -274,7 +272,7 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 ### Use advanced UTxO management on your transactions.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🧠 Advanced UTxO Management
 
