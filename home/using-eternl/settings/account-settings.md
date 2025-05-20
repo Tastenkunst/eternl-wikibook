@@ -1,16 +1,10 @@
 # Account settings
 
-<figure><img src="../../../.gitbook/assets/account_settings.png" alt=""><figcaption><p>Active account settings</p></figcaption></figure>
-
 <details>
 
-<summary><strong>Eternl v2 - Settings menu</strong></summary>
+<summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-In Eternl v2, you can access the settings menu via the cogwheel in the top right-hand corner of the screen. If you click on it, the side menu opens with all the settings for the current account, the current wallet or the entire application.
-
-will open this settings menu:
-
-Here you can quickly find, what you are looking for by entering your search term in the search field above. By entering the second character, all settings are automatically filtered and the matches in the 3 setting areas are displayed instantly.
+![](../../../.gitbook/assets/image.png)
 
 </details>
 
@@ -274,7 +268,7 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 ### Use advanced UTxO management on your transactions.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🧠 Advanced UTxO Management
 
