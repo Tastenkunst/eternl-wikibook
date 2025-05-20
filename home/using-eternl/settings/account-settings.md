@@ -165,9 +165,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 <details>
 
-<summary>history sync [option]</summary>
-
-###
+<summary>History sync [option]</summary>
 
 ### Set history sync
 
