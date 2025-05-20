@@ -4,7 +4,7 @@
 
 <summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-![](<../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../.gitbook/assets/image (1) (1) (1).png>)
 
 </details>
 
@@ -12,7 +12,7 @@
 
 <summary>Account name / handle</summary>
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 </details>
 
@@ -22,7 +22,7 @@
 
 ### Export the public key of this account.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 #### Cardano Public Account Key Formats
 
@@ -52,15 +52,15 @@ Alternatively a custom receive address can be set here.
 
 </details>
 
+<details>
 
-
-## Collateral \[option]
+<summary>Collateral [option]</summary>
 
 ### Use Eternl provided collateral?
 
-<figure><img src="../../../.gitbook/assets/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
-***
+
 
 ### Collateral (Cardano)
 
@@ -100,13 +100,17 @@ This means:
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
 
-***
+</details>
 
-## Manual sync \[option]
+<details>
+
+<summary>Manual sync [option]</summary>
 
 ### Set manual sync
 
 <figure><img src="../../../.gitbook/assets/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+
+
 
 ### What is Manual Sync?
 
@@ -157,7 +161,13 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
-## History sync \[option]
+</details>
+
+<details>
+
+<summary>history sync [option]</summary>
+
+###
 
 ### Set history sync
 
@@ -215,6 +225,8 @@ Enable **History Sync** if:
 Keep it **disabled** if:
 
 * You want the wallet to load quickly and don’t need old records.
+
+</details>
 
 ## 🧩Token Fragmentation (TF)
 
@@ -276,7 +288,7 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 ### Use advanced UTxO management on your transactions.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🧠 Advanced UTxO Management
 
