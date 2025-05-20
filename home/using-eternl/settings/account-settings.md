@@ -36,19 +36,23 @@ These key formats enable wallet **monitoring and address generation**, but **can
 
 </details>
 
+<details>
 
-
-## Single Address Mode (SAM) option
+<summary>Single Address Mode (SAM) [option]</summary>
 
 ### Only use a single address for all transactions.
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="../../../.gitbook/assets/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
 
 Alternatively a custom receive address can be set here.
 
 > <mark style="color:red;">Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.</mark>
+
+</details>
+
+
 
 ## Collateral \[option]
 
