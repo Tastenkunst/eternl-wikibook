@@ -307,11 +307,17 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 </details>
 
+<details>
+
+<summary>Auto Withdrawal [option]</summary>
+
+### Automatically withdraw rewards if needed.
 
 
-## ## Auto Withdrawal
-
-Automatically withdraw rewards if needed.
 
 <figure><img src="../../../.gitbook/assets/auto_withdrawal (1).png" alt=""><figcaption></figcaption></figure>
+
+</details>
+
+
 
