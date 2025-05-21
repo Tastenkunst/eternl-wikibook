@@ -288,13 +288,9 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 </details>
 
+<details>
 
-
-###
-
-###
-
-## Advanced UTxO Management
+<summary>Advanced UTxO Management</summary>
 
 ### Use advanced UTxO management on your transactions.
 
@@ -309,7 +305,11 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 > ⚙️ This setting is especially useful for users interacting with dApps, submitting multiple transactions, or participating in DeFi.
 
-### Auto Withdrawal
+</details>
+
+
+
+## ## Auto Withdrawal
 
 Automatically withdraw rewards if needed.
 
