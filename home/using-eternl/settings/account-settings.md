@@ -4,7 +4,7 @@
 
 <summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-![](<../../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (1) (1) (1) (2).png>)
 
 </details>
 
@@ -12,7 +12,7 @@
 
 <summary>Account name / handle</summary>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 </details>
 
@@ -22,7 +22,7 @@
 
 ### Export the public key of this account.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 #### Cardano Public Account Key Formats
 
@@ -58,7 +58,7 @@ Alternatively a custom receive address can be set here.
 
 ### Use Eternl provided collateral?
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
 
 
@@ -226,11 +226,15 @@ Keep it **disabled** if:
 
 </details>
 
-## 🧩Token Fragmentation (TF)
+<details>
+
+<summary>Token Fragmentation (TF)</summary>
 
 ### Reduce transaction fees by fragmenting tokens.
 
-<figure><img src="../../../.gitbook/assets/token_fragmentation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Token Fragmentation (TF)
 
@@ -281,6 +285,14 @@ Changing this value affects how tokens are distributed across outputs when sendi
   * 🔓 **Less ADA locked**, more efficient for frequent use
 
 > ⚖️ **Tip:** Lower values are better for minimizing fees in simple wallets. Higher values can be more efficient for wallets handling many tokens or dApp interactions.
+
+</details>
+
+
+
+###
+
+###
 
 ## Advanced UTxO Management
 
