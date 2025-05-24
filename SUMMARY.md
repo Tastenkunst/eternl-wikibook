@@ -37,6 +37,7 @@
     * [Collateral setup & UTxO management](home/using-eternl/collateral-setup-and-utxo-management.md)
     * [DApp connector & browser](home/using-eternl/dapp-connector-and-browser.md)
     * [Governance](home/using-eternl/governance.md)
+    * [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
   * [Advanced features](home/advanced-features/README.md)
     * [Manual synchronization](home/advanced-features/manual-synchronization.md)
     * [Exporting / importing public keys](home/advanced-features/exporting-importing-public-keys.md)
