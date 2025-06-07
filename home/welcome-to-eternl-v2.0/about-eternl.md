@@ -16,8 +16,13 @@ More features: \
 \+ 30+ languages. \
 \+ Send to multiple recipients at once. \
 \+ Address Book: Add addresses or Ada Handles. \
-\+ Portfolio overview. + Catalyst Voting. \
-\+ Cardano on-chain governance. \
+\+ Portfolio overview.&#x20;
+
+\+ Catalyst Voting. \
+\+ Cardano on-chain governance.&#x20;
+
+\
 \+ And much more... \
 \
 Your keys, your crypto! Eternl stores your wallet's encrypted private keys on your computer, not on Eternl servers (non-custodial). Be careful: Keep your seed phrase safe and never enter it on any other website.
+
