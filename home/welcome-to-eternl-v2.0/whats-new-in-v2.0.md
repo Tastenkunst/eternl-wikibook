@@ -1,5 +1,5 @@
 ---
-description: '## major enhencements & addition in v2'
+description: Major enhencements & addition in v2
 ---
 
 # What’s New in v2.0 ?
