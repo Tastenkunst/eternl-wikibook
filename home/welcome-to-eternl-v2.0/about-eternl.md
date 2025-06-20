@@ -1,8 +1,11 @@
+---
+description: Your all-in-one gateway to Cardano DeFi, DApps and NFTs.
+---
+
 # &#x20;About Eternl&#x20;
 
-Your all-in-one gateway to Cardano DeFi, DApps and NFTs.
+Eternl: Your Gateway to the Cardano Blockchain.&#x20;
 
-Eternl: Your Gateway to the Cardano Blockchain. \
 \+ Send and receive Ada and native assets. \
 \+ Liquid Staking: Choose from over 3,000 staking pools for ADA delegation. \
 \+ DApp Integration: Seamlessly connect to a variety of Cardano dApps, from DEXes to marketplaces, lending platforms, to NFT projects and many more. \
@@ -16,7 +19,7 @@ More features: \
 \+ 30+ languages. \
 \+ Send to multiple recipients at once. \
 \+ Address Book: Add addresses or Ada Handles. \
-\+ Portfolio overview.&#x20;
+\+ Portfolio overview.
 
 \+ Catalyst Voting. \
 \+ Cardano on-chain governance.&#x20;
