@@ -6,6 +6,19 @@ description: >-
 
 # Eternl v2.0 Wiki
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This is a standard info box with a blue background and an info icon.
 {% endhint %}
+
+
+
+**ℹ️ Info:** This is a customized info block with a light blue background.
+
+
+
+**ℹ️ Info:** This is a customized info box with a light blue background.
+
+
+
+
+
