@@ -1,5 +1,7 @@
 ---
-cover: ../../.gitbook/assets/Eternlc v2.png
+cover:
+  light: ../../.gitbook/assets/v1-light.jpg
+  dark: ../../.gitbook/assets/v1-dark.jpg
 coverY: 0
 ---
 
