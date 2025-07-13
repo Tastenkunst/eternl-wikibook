@@ -1,7 +1,73 @@
 # Common mistakes to avoid
 
-When handling and securely storing seed phrases, there are common mistakes that should be avoided to ensure the safety of your crypto assets. One major error is taking or keeping digital photos of your seed phrase. Photos stored on devices are vulnerable to hacks, malware, or unauthorized access, potentially revealing your seed phrase. Instead, consider writing your seed phrase down physically on paper and storing it in a secure, offline location. For enhanced durability and protection against environmental damage, you can use stainless steel versions designed specifically for storing seed phrases. These metal backups can withstand fire, water, and other damaging conditions, thereby protecting your seed phrase from both digital and physical threats. It's also crucial to avoid saving any digital copy of the seed phrase in cloud services or digital note-taking apps, as they can be compromised and lead to loss of funds.
+## &#x20;Common Mistakes to Avoid
 
+Protecting your crypto assets begins with understanding how to properly handle and store your **seed phrase** and credentials. Below are common mistakes users should avoid — along with safer alternatives.
 
+***
 
-When using hot wallets, it's important to create and maintain a strong spending password. This password is used to authorize transactions, adding an additional layer of security to your crypto assets. However, because spending passwords must be entered / inserted manually, they are susceptible to additional risks like malware and keyloggers, which can capture your input and compromise your security. To mitigate these risks, ensure that your device is protected with reliable antivirus software and keep your operating system and applications up to date. Consider using hardware wallets for increased security when handling substantial amounts and always be cautious of phishing attempts that may trick you into entering your password on fraudulent websites.
+### &#x20;Avoid Digital Photos of Your Seed Phrase
+
+Never take a screenshot or photo of your seed phrase. Storing images on phones or computers exposes them to:
+
+* Malware and hacks
+* Unauthorized access
+* Cloud service breaches
+
+> &#x20;**Safer Alternative:** Write the seed phrase **on paper** and store it securely offline.
+
+***
+
+### &#x20;Use Metal Backups for Long-Term Security
+
+To protect your seed from physical damage:
+
+* Use stainless steel plates or specialized metal backups
+* Resistant to fire, water, corrosion, and physical degradation
+
+> Great for long-term HODLers or secure cold storage.
+
+***
+
+### &#x20;Never Save Your Seed Digitally
+
+Avoid saving your seed phrase in:
+
+* Cloud storage (Google Drive, iCloud, etc.)
+* Note-taking apps
+* Screenshots or email drafts
+
+> Any digital record can be breached or leaked.
+
+***
+
+### &#x20;Use Strong Spending Passwords (Hot Wallets)
+
+When using hot wallets like Eternl:
+
+* Set a **strong, unique spending password**
+* Used to **authorize transactions** and prevent unauthorized access
+
+> But beware: passwords are still vulnerable to digital threats.
+
+***
+
+### &#x20;Defend Against Malware and Keyloggers
+
+Spending passwords can be intercepted by:
+
+* Malware
+* Keyloggers
+* Phishing websites
+
+#### &#x20;Best Practices:
+
+* Use **antivirus software**
+* Keep your system and browser **up to date**
+* Avoid clicking suspicious links or popups
+* Use **hardware wallets** for large holdings
+
+***
+
+> &#x20;**Tip:** Stay informed. Most losses happen due to small oversights, not sophisticated attacks.
+
