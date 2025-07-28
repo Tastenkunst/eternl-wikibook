@@ -16,6 +16,8 @@
     * [Protecting your privacy](home/security-and-privacy/protecting-your-privacy.md)
     * [Security Best Practices](home/security-and-privacy/security-best-practices.md)
   * [Getting Started](home/getting-started/README.md)
+    * [Cardano Basics](home/getting-started/cardano-basics/README.md)
+      * [(e)UTxO - extended Unspent Transaction Output](home/getting-started/cardano-basics/e-utxo-extended-unspent-transaction-output.md)
     * [Installation & Setup](home/getting-started/installation-and-setup/README.md)
       * [Web version](home/getting-started/installation-and-setup/web-version.md)
       * [Browser extension](home/getting-started/installation-and-setup/browser-extension.md)
