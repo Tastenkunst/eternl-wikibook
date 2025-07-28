@@ -4,7 +4,7 @@
 
 <summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-![](<../../../.gitbook/assets/image (1) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/image (1) (1) (1) (2) (1).png>)
 
 </details>
 
@@ -12,7 +12,7 @@
 
 <summary>Account name / handle</summary>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 </details>
 
@@ -22,7 +22,7 @@
 
 ### Export the public key of this account.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 #### Cardano Public Account Key Formats
 
@@ -44,7 +44,7 @@ These key formats enable wallet **monitoring and address generation**, but **can
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
 
 Alternatively a custom receive address can be set here.
 
@@ -58,7 +58,7 @@ Alternatively a custom receive address can be set here.
 
 ### Use Eternl provided collateral?
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
 
 
@@ -232,7 +232,7 @@ Keep it **disabled** if:
 
 ### Reduce transaction fees by fragmenting tokens.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
