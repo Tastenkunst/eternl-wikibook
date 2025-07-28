@@ -20,6 +20,8 @@
       * [(e)UTxO - extended Unspent Transaction Output](home/getting-started/cardano-basics/e-utxo-extended-unspent-transaction-output.md)
       * [A brief overview of DeFi (Decentralized Finance)](home/getting-started/cardano-basics/a-brief-overview-of-defi-decentralized-finance.md)
       * [Basic tips for keeping your assets safe and using Eternl Wallet securely](home/getting-started/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
+      * [Can I migrate my wallet to a hardware device?](home/getting-started/cardano-basics/can-i-migrate-my-wallet-to-a-hardware-device.md)
+      * [Can I restore my hardware wallet phrase on Eternl?](home/getting-started/cardano-basics/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
     * [Installation & Setup](home/getting-started/installation-and-setup/README.md)
       * [Web version](home/getting-started/installation-and-setup/web-version.md)
       * [Browser extension](home/getting-started/installation-and-setup/browser-extension.md)
