@@ -19,6 +19,7 @@
     * [Cardano Basics](home/getting-started/cardano-basics/README.md)
       * [(e)UTxO - extended Unspent Transaction Output](home/getting-started/cardano-basics/e-utxo-extended-unspent-transaction-output.md)
       * [A brief overview of DeFi (Decentralized Finance)](home/getting-started/cardano-basics/a-brief-overview-of-defi-decentralized-finance.md)
+      * [Basic tips for keeping your assets safe and using Eternl Wallet securely](home/getting-started/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
     * [Installation & Setup](home/getting-started/installation-and-setup/README.md)
       * [Web version](home/getting-started/installation-and-setup/web-version.md)
       * [Browser extension](home/getting-started/installation-and-setup/browser-extension.md)
