@@ -4,15 +4,17 @@ description: Understanding the Extended Version of UTxO in Cardano in a Simple W
 
 # (e)UTxO - extended Unspent Transaction Output
 
+<details>
 
+<summary><strong>Abstract</strong></summary>
 
-### Abstract
+The (e)UTxO (Extended Unspent Transaction Output) model in Cardano enhances the traditional UTxO system by allowing more complex transactions, such as smart contracts. Unlike the basic UTxO model, which tracks the movement of assets as simple outputs from transactions, (e)UTxO can carry additional data (datum) and scripts, enabling the execution of smart contracts and supporting multi-assets. This model maintains the benefits of UTxO, such as security and transparency, while adding flexibility for developers to create more sophisticated applications on the Cardano blockchain. \{% endhint %\}
 
-{% hint style="info" %}
-### The (e)UTxO (Extended Unspent Transaction Output) model in Cardano enhances the traditional UTxO system by allowing more complex transactions, such as smart contracts. Unlike the basic UTxO model, which tracks the movement of assets as simple outputs from transactions, (e)UTxO can carry additional data (datum) and scripts, enabling the execution of smart contracts and supporting multi-assets. This model maintains the benefits of UTxO, such as security and transparency, while adding flexibility for developers to create more sophisticated applications on the Cardano blockchain. \{% endhint %\}
-{% endhint %}
+</details>
 
-### 1. What is Cardano?
+<details>
+
+<summary><strong>1. What is Cardano?</strong></summary>
 
 Cardano is a blockchain that focuses on being secure and flexible. It was made using science and research. Its main goals are to be sustainable, work reliably, and be clear about how it works. Cardano is open to everyone and wants to help people worldwide, especially those without bank services. It uses a special computer language to make sure it is very secure. Cardano is also creating a system for smart contracts, which are agreements that work automatically, to support new kinds of apps and to keep improving over time.
 
@@ -33,6 +35,8 @@ Decentralization: Cardano aims for no single person or group to control it. It d
 Open participation: Anyone with ADA can help make decisions for Cardano. This means everyone has a chance to share their opinion. ADA owners can vote on changes or offer their ADA to a staking pool, or even start their own pool. This is not just for earning rewards but also plays a big role in how Cardano is run, as it affects which pools get to create blocks and have a say in the network.
 
 Understanding ADA staking pools in Cardano shows us the blockchain is about building a fair digital world for all, not just technology. With many staking pools and chances for ADA owners to join, Cardano shows its dedication to shared control and people-powered governance. For more about staking, see "How staking works".
+
+</details>
 
 ***
 
