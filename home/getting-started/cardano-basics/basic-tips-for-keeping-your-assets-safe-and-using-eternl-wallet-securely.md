@@ -6,45 +6,33 @@ description: security basics
 
 <details>
 
-<summary><strong>1. What is Cardano?</strong></summary>
+<summary><strong>1.</strong> Keep your seed phrase safe</summary>
 
-Cardano is a blockchain that focuses on being secure and flexible. It was made using science and research. Its main goals are to be sustainable, work reliably, and be clear about how it works. Cardano is open to everyone and wants to help people worldwide, especially those without bank services. It uses a special computer language to make sure it is very secure. Cardano is also creating a system for smart contracts, which are agreements that work automatically, to support new kinds of apps and to keep improving over time.
+A seed phrase in cryptocurrency is a list of words (usually 12, 15, or 24) that works like a main key to open and get back your crypto wallet. This phrase contains all the details needed to get back and control the money in your wallet.. If you lose your wallet, it breaks, or you forget your password, you can use this phrase to access your cryptocurrency again. It's very important to keep your seed phrase secret because anyone who knows it can take all your assets. This means you should NEVER share this with anyone for any reason and only enter it on trusted wallets.
 
-### 1.1 Cardano's ADA
+### 1.1 Best practices <a href="#h-11-best-practices" id="h-11-best-practices"></a>
 
-Digital currency: ADA is Cardano's digital money. Like other digital currencies, you can buy, sell, and exchange ADA. It serves as a way to keep value and helps with fast, cheap money transfers, similar to other digital currencies.
+* Offline Storage\
+  Store your seed phrase offline. This means not using internet connected devices for storage, as they are vulnerable to hacking and malware attacks​​. Keep in mind that different types of storage have different advantages and disadvantages.
+* Physical Writing\
+  Write the seed phrase on paper or, preferably, on a more durable material like metal (e.g., cryptosteel) that is resistant to fire, water, and other environmental hazards. This provides long term security against physical damag​​​​e. Writing on paper is a start but keep in mind that ink may bleach out or can’t be readable after a long period of time.
+* Secure Location\
+  Keep the written seed phrase in a safe and secure location, such as a safe or a locked drawer. It’s important to choose a place where it is protected from theft, loss, and unauthorized acces​​​s.
+* Avoid Digital Storage\
+  Refrain from storing your seed phrase digitally, such as in screenshots, photos, text files, or cloud storage, as these methods are vulnerable to cyber threat​s.
 
-Fuel for operations: ADA is needed to run things on Cardano's network. For example, to use a smart contract on Cardano, you pay with ADA. This use of ADA as 'fuel' helps keep the network running by encouraging those involved to process transactions and confirm blocks.
-
-### 1.2 Cardano’s Vision
-
-Bringing change: Cardano wants to make a difference in the real world. Its aim is to give financial services to those who don't have bank accounts, make voting more secure, and develop ways for people to safely keep their personal information.
-
-### 1.3 The Community and Governance
-
-Decentralization: Cardano aims for no single person or group to control it. It does this through a special way of making decisions, where people who own ADA can help decide its future. An important part of this are ADA staking pools, which help spread out the power of managing transactions and creating new blocks, so no one person or group is in charge. There are over 3,000 of these pools helping to keep Cardano running smoothly and securely. Please see our article "How to participate in Blockchain Governance " to learn more about governance and decentralized decision making.
-
-Open participation: Anyone with ADA can help make decisions for Cardano. This means everyone has a chance to share their opinion. ADA owners can vote on changes or offer their ADA to a staking pool, or even start their own pool. This is not just for earning rewards but also plays a big role in how Cardano is run, as it affects which pools get to create blocks and have a say in the network.
-
-Understanding ADA staking pools in Cardano shows us the blockchain is about building a fair digital world for all, not just technology. With many staking pools and chances for ADA owners to join, Cardano shows its dedication to shared control and people-powered governance. For more about staking, see "How staking works"
+{% hint style="success" %}
+Keep your seed phrase safe in several ways\
+It's wise to have more than one secure method to keep your seed phrase protected. This means you could have a paper copy stored safely and another copy on a durable material like metal that won't easily get damaged. This way, if one copy gets lost or ruined, you still have another copy to use. Make sure to store these copies in different spots. If something bad happens to one spot, the other copy will still be safe. Doing this helps ensure you can always access your seed phrase, no matter what.
+{% endhint %}
 
 </details>
 
 <details>
 
-<summary><strong>2. The (e)UTxO model</strong></summary>
+<summary><strong>2.</strong> Use trusted wallets for Cardano (ADA)</summary>
 
-### 2.1 What is the (e)UTxO Model?
-
-The (e)UTxO model in Cardano, inspired by Bitcoin's reliable UTxO system which has worked well for over a decade, introduces improvements. It keeps Bitcoins strengths in handling transactions securely and efficiently but adds the ability to include more data in transactions, like smart contracts. This makes Cardano's blockchain more versatile, allowing for complex transactions and applications, while maintaining high security and performance standards.
-
-The model also offers flexibility in transaction conditions, expanding the types of applications that can be developed on Cardano, especially those needing detailed transaction logic.
-
-### 2.2 Why is (e)UTxO Important?
-
-* More than just storing money In Cardano, the (e)UTxO model doesn't just keep track of how much digital currency someone has. It also stores rules about how that money can be spent. This is especially useful for things like smart contracts.
-* Security and efficiency The (e)UTxO model stands out for its security, ensuring transactions comply with set rules, and efficiency, by processing multiple transactions simultaneously. Moreover, its underlying UTxO mode has a proven track record as the longest tested account model as it is utilized by Bitcoin for over a decade without issues.
-* Determinism Determinism in handling transactions and scripts means everything is predictable. This ensures a user knows in advance how their transaction will affect the blockchains state, avoiding surprises like failed script validations, unexpected fees or unanticipated changes in the ledger or script states.
+Wallets like Eternl, Lace, Yoroi, and Flint are safe ways to manage your Cardano (ADA) cryptocurrency. When you use these wallets clients combined with hardware wallets like Ledger, Trezor, or Keystone, your security becomes even better. Hardware wallets keep your private keys (access keys) on device only. When you make transactions, they are checked and approved through the hardware wallet itself.
 
 </details>
 
