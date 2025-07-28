@@ -1,6 +1,5 @@
 ---
 description: Understanding the Expanded Version of UTxO in Cardano in a Simple Way
-icon: slack
 ---
 
 # (e)UTxO - extended Unspent Transaction Output
