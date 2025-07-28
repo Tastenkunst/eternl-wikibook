@@ -84,13 +84,17 @@ A cold wallet is different because it's not connected to the internet. It's used
 
 Hardware wallets are small physical devices that keep your private keys (like secret codes for your crypto) safe and offline. This makes it hard for hackers to get to them.
 
-> ### Good Things About Hardware Wallets:
->
-> Better Security: They're not connected to the internet, so they're safe from online hacking. Control Over Your Keys: You have full control of your private keys. Strong and Lasting: They are made to be tough and long-lasting. Can Hold Many Types of Crypto: They usually support different cryptocurrencies, not just ADA. {.is-success}
+{% hint style="success" %}
+### Good Things About Hardware Wallets:
 
-> ### Downsides Of Hardware Wallets:
->
-> Cost: They cost more than free hot wallets (online wallets). Less Convenient: Not as easy to use for frequent trading or quick transactions. Risk of Losing or Breaking Them: They can be lost, stolen, or broken because they're physical objects. {.is-info}
+Better Security: They're not connected to the internet, so they're safe from online hacking. Control Over Your Keys: You have full control of your private keys. Strong and Lasting: They are made to be tough and long-lasting. Can Hold Many Types of Crypto: They usually support different cryptocurrencies, not just ADA.
+{% endhint %}
+
+{% hint style="warning" %}
+### Downsides Of Hardware Wallets:
+
+Cost: They cost more than free hot wallets (online wallets). Less Convenient: Not as easy to use for frequent trading or quick transactions. Risk of Losing or Breaking Them: They can be lost, stolen, or broken because they're physical objects.
+{% endhint %}
 
 For people who trade a lot or need fast access to their ADA, hot wallets (online wallets) are more practical, but they have some security risks. However, for big transactions and keeping your crypto safe for a long time, it's better to use hardware wallets like Trezor, Ledger, and Keystone. These wallets are known for being really secure and they lower the risk of online dangers. Also, these hardware wallets work with the Eternl wallet, which makes them even more useful for Cardano users.
 
@@ -100,9 +104,13 @@ For people who trade a lot or need fast access to their ADA, hot wallets (online
 
 <summary>8. How to manage your finances securely with Eternl wallet?</summary>
 
+{% hint style="success" %}
 Everything mentioned before also applies to using Eternl. The most crucial thing is to securely store your seed phrase.
+{% endhint %}
 
+{% hint style="success" %}
 Additionally, it's advised to use Hardware Wallets such as Ledger, Trezor, or Keystone in combination with Eternl to boost security. This approach provides added safety because it keeps the private keys offline.
+{% endhint %}
 
 Eternl wallets ensure that master keys are encrypted with a spending password and stored locally. This means your keys are not exposed online.
 
