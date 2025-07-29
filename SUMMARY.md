@@ -29,6 +29,7 @@
     * [Creating a new wallet](home/getting-started/creating-a-new-wallet.md)
     * [Restoring an existing wallet](home/getting-started/restoring-an-existing-wallet.md)
     * [Importing/Exporting wallet data](home/getting-started/importing-exporting-wallet-data.md)
+    * [How staking works](home/getting-started/how-staking-works.md)
   * [Using Eternl](home/using-eternl/README.md)
     * [Dashboard overview](home/using-eternl/dashboard-overview.md)
     * [Settings](home/using-eternl/settings/README.md)
