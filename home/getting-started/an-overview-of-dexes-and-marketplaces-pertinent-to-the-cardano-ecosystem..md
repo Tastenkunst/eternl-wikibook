@@ -60,7 +60,7 @@ JPG Store has recently focused on expanding its global reach by enhancing site l
 
 ### Taptools. io
 
-[TapTools.io](an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#taptools.-io) is a comprehensive analytics platform for Cardano users. It helps users monitor and manage their investments by providing real-time data on token prices, portfolio values, and DeFi (Decentralized Finance) activities. It's a tool aimed at enhancing the trading and investment experience on the Cardano blockchain.
+[Taptools.io](https://www.taptools.io/) is a comprehensive analytics platform for Cardano users. It helps users monitor and manage their investments by providing real-time data on token prices, portfolio values, and DeFi (Decentralized Finance) activities. It's a tool aimed at enhancing the trading and investment experience on the Cardano blockchain.
 
 ### Cardanoscan. io
 
