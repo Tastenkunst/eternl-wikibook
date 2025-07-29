@@ -10,7 +10,10 @@ description: Staking on Cardano blockchain explained
 
 <summary><strong>Abstract</strong></summary>
 
-This article outlines how staking works on the Cardano blockchain, contrasting it with Bitcoin's Proof of Work (PoW). Staking involves holding ADA, Cardano's cryptocurrency, to support network operations and secure transactions. Users delegate ADA to stake pools, which then participate in validating transactions and creating new blocks. Unlike Bitcoin, which requires significant computational power, Cardano's Proof of Stake (PoS) system is more energy-efficient and democratic. Validators are chosen based on the amount of ADA they stake, with rewards distributed for their contribution. The system aims to enhance network security and performance, rewarding participants with additional ADA. The article also compares Cardano's approach to Ethereum's staking, emphasizing Cardano's more decentralized and user-friendly mechanism.
+This article outlines how staking works on the Cardano blockchain, contrasting it with Bitcoin's Proof of Work (PoW). Staking involves holding ADA, Cardano's cryptocurrency, to support network operations and secure transactions. Users delegate ADA to stake pools, which then participate in validating transactions and creating new blocks. \
+Unlike Bitcoin, which requires significant computational power, Cardano's Proof of Stake (PoS) system is more energy-efficient and democratic. Validators are chosen based on the amount of ADA they stake, with rewards distributed for their contribution. The system aims to enhance network security and performance, rewarding participants with additional ADA.&#x20;
+
+The article also compares Cardano's approach to Ethereum's staking, emphasizing Cardano's more decentralized and user-friendly mechanism.
 
 </details>
 
