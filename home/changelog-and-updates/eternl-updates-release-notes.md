@@ -4,13 +4,83 @@
 
 previous releases
 
+## v2.0.10.5
+
+{% hint style="info" %}
+Released 05.08.2025
+{% endhint %}
+
+### Governance
+
+Bulk voting (first iteration) on proposals is here. DReps can now prepare their votes and cast them in a single transaction.
+
+For DReps using Ledger devices, you can only cast a single vote per transaction. As a workaround, you could get a Keystone device, enter your Ledger seed phrase, change derivation on the Keystone device to Ledger and use that to cast all your votes in a single transaction.
+
+### Web URIs
+
+Eternl now supports URLs in the form of web+cardano://
+
+This includes CIP-0013, CIP-0099, CIP-0157, CIP-0158
+
+Simple payment requests, POO claims, advanced payment requests (prefilling the Send page with values for ADA, token, and comments) and opening the DApp Browser with a given URL. You can try it out using the new QR-Scanner option in the header or main menu.
+
+### Apex Fusion
+
+* Added support for the new Vector testnet.
+
+{% hint style="info" %}
+<mark style="color:$info;">Please note: AF uses the same address prefix on Prime mainnet and Vector testnet (same as Cardano mainnet).</mark>
+{% endhint %}
+
+### Added
+
+* Ada Handle resolution of decentralized minted handles (DeMi)
+* Failed transaction status (very rare on-chain)
+* Export/Import wallet as QR code: makes it easy to transfer wallets from one device to another, e.g. from Desktop to mobile. Keep in mind, that for 'hot wallets' the encrypted (by spending password) private key is also shared.
+* Added CSwap to MonsterSwap
+* Added a bottom banner to get more user participation for governance.
+
+### Changed
+
+* Transaction list filter: Enter a token name (hit ENTER), enter another token name (hit ENTER) to filter for multiple tokens at the same time.
+* Added context menus where we had multiple options, e.g. copy address
+* Added hardware device info to debug export
+* Trezor v9.6.2
+* Updated Catalyst info page
+* Forced DApp Account setting now prominently visible on accounts and wallets.
+* Forced DApp Accouned can now be set in the three dot context menu.
+
+### iOS
+
+* DApp Browser entries removed. User need to enter the URLs themselfes.
+
+### Fixed
+
+* Decimal settings applied globally
+* Catalyst registration
+* \[object Object] in notifications where it should read 'ADA'.
+* Wayland X11 multiple screens popup
+* GrapheneOS added missing \[meta-data] tag
+* Pin on mobile (biometrics)
+* Transaction viewer on utxo list
+* UI issues on multi-sig creation
+
+### Availability
+
+* eternl.io: available
+* beta.eternl.io: available
+* Eternl extension: submitted, awaiting approval
+* Eternl Beta ext: not submitted
+* Android: not submitted
+* iOS: not submitted
+
 ## v2.0.9
 
-> coming up\
-> {.is-info}
+Released 26.06.2025&#x20;
 
-> (Eternl Beta published to Chrome Webstore - beta.eternl.io is up-to-date)\
-> {.is-info}
+{% hint style="info" %}
+Eternl Beta published to Chrome Webstore - beta.eternl.io is up-to-date
+{% endhint %}
 
 SidePanels have too many issues, we are going back to popups for dapp interactions.
 

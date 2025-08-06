@@ -40,7 +40,7 @@
       * [App utilities](home/using-eternl/settings/app-utilities.md)
     * [Address book](home/using-eternl/address-book.md)
     * [Managing multiple accounts](home/using-eternl/managing-multiple-accounts.md)
-    * [Sending & receiving Ada & tokens](home/using-eternl/sending-and-receiving-ada-and-tokens/README.md)
+    * [Sending & receiving Ada & tokens](home/using-eternl/sending-and-receiving-ada-and-tokens.md)
       * [Eternl balances walkthrough](home/using-eternl/sending-and-receiving-ada-and-tokens/eternl-balances-walkthrough.md)
     * [Staking & delegation](home/using-eternl/staking-and-delegation.md)
     * [Collateral setup & UTxO management](home/using-eternl/collateral-setup-and-utxo-management.md)
