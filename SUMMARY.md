@@ -62,6 +62,7 @@
     * [Contributing to this Wiki](home/about-the-team-and-community/contributing-to-this-wiki.md)
   * [Contact & support](home/contact-and-support.md)
   * [stake pool rating](home/stake-pool-rating.md)
+  * [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
 * [For Developers](for-developers/README.md)
   * [DApp browser integration](for-developers/dapp-browser-integration.md)
   * [Cardano DApp connector (CIP-30) API Reference](for-developers/cardano-dapp-connector-cip-30-api-reference.md)
