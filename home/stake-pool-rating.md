@@ -1,5 +1,6 @@
 ---
 description: How Eternl rates stake pools.
+icon: coins
 ---
 
 # stake pool rating
