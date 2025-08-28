@@ -47,5 +47,7 @@ In short, supporting multi-sig wallets with DApps means building a new interacti
 
 {% embed url="https://youtu.be/vUvHKuJyDlE" %}
 
+### How to create complex multi-sig structures?
 
+{% embed url="https://www.youtube.com/embed/Amar1nDk0FU" %}
 

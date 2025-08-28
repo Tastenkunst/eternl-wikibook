@@ -1,5 +1,6 @@
 ---
 description: Step-by-Step Instructions
+icon: rotate-exclamation
 ---
 
 # Claiming the Glacier Airdrop in Eternl v2
