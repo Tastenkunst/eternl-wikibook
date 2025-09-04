@@ -4,6 +4,98 @@
 
 previous releases
 
+## v2.0.12.5
+
+{% hint style="info" %}
+released 04.09.2025
+{% endhint %}
+
+### Midnight Glacier Drop
+
+* Trezor: Claim your $NIGHT tokens using the "NULL Transaction signing" method.
+
+### Backend
+
+* Translations are now their own microservice decoupeling them from the syncing backend.
+
+### Send page
+
+* Address input is now an auto-complete input field: Enter wallet names or address book labels to quickly select your own or stored wallets/accounts.
+* Put "Select account", "Select from addressbook" and "QR code" to a context menu.
+* Added the option to add inline datums and RefScripts to an output on the send page.
+* Added warnings when spending UTxOs with attached datums or RefScripts.
+* IMPORTANT: If you want to not spend UTxOs with datums or RefScripts, make sure to lock them on the UTxO List page.
+
+### Changed
+
+* Support to allow signing of transactions with unknown inputs and expired TTL (added warnings).
+* Asset filter: Use ; to filter for multiple assets at once, e.g. "tappy4278; tappy3709". Hit ENTER to lock in those assets and search for additional assets.
+* Added treasury withdrawals to the rewards chart.
+* Improved OneKey hardware wallet support.
+* Added more details about withdrawal and parameter governance actions.
+* Added warning to pool deletation, if please isn't met or low ROS.
+* Changed account public key export to acct\_xvk1 only, but also added wallet multi-sig acct\_shared\_xvk1.
+* Added filter and pagination for Ada Handles on the Account Name setting.
+* Added a source for token registry data.
+
+### Fixed
+
+* Delegate button, if delegated to a retired pool.
+* Custom submit endpoints returning status other than 200.
+* Minor number formatter issues.
+* SAM mode: Put a custom SAM address as first address returned by getUsedAddresses().
+* Some tx building issues after removing previously added assets.
+* DRep card (with no available data) in tx viewer.
+
+Availability eternl.io: not submitted beta.eternl.io: available Eternl extension: not submitted Eternl Beta ext: awaiting approval Android: not submitted iOS: not submitted
+
+## v2.0.11.2
+
+{% hint style="info" %}
+released 06.08.2025
+{% endhint %}
+
+### Midnight Glacier Drop
+
+* Trezor: Claim your $NIGHT tokens using the "NULL Transaction signing" method.
+
+### Backend
+
+* Translations are now their own microservice decoupeling them from the syncing backend.
+
+### Send page
+
+* Address input is now an auto-complete input field: Enter wallet names or address book labels to quickly select your own or stored wallets/accounts.
+* Put "Select account", "Select from addressbook" and "QR code" to a context menu.
+* Added the option to add inline datums and RefScripts to an output on the send page.
+* Added warnings when spending UTxOs with attached datums or RefScripts.
+* IMPORTANT: If you want to not spend UTxOs with datums or RefScripts, make sure to lock them on the UTxO List page.
+
+### Changed
+
+* Support to allow signing of transactions with unknown inputs and expired TTL (added warnings).
+* Asset filter: Use ; to filter for multiple assets at once, e.g. "tappy4278; tappy3709". Hit ENTER to lock in those assets and search for additional assets.
+* Added treasury withdrawals to the rewards chart.
+* Improved OneKey hardware wallet support.
+* Added more details about withdrawal and parameter governance actions.
+* Added warning to pool deletation, if please isn't met or low ROS.
+* Changed account public key export to acct\_xvk1 only, but also added wallet multi-sig acct\_shared\_xvk1.
+* Added filter and pagination for Ada Handles on the Account Name setting.
+* Added a source for token registry data.
+
+### Fixed
+
+* Delegate button, if delegated to a retired pool.
+* Custom submit endpoints returning status other than 200.
+* Minor number formatter issues.
+* SAM mode: Put a custom SAM address as first address returned by getUsedAddresses().
+* Some tx building issues after removing previously added assets.
+* DRep card (with no available data) in tx viewer.
+
+### Availability
+
+eternl.io: - not submitted beta.eternl.io: - available Eternl extension: - not submitted Eternl Beta ext: - awaiting approval Android: - not submitted iOS: - not submitted
+
 ## v2.0.10.5
 
 {% hint style="info" %}
