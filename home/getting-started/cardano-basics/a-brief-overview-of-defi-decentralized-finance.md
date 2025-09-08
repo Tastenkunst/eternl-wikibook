@@ -6,9 +6,15 @@ description: Decentralized Finance explained
 
 ## 1. Understanding Decentralized Finance (DeFi)
 
+<details>
+
+<summary>1. Understanding Decentralized Finance (DeFi)</summary>
+
 Decentralized Finance, or DeFi for short, is a new kind of financial technology based on blockchain technology. It's a fresh take on the old banking system, doing away with the need for central financial entities like banks or stock exchanges. Instead, it uses smart contracts on blockchain technology to offer those services.
 
 DeFi makes it easier, more efficient, and safer to handle money, allowing people to lend, borrow, and trade directly with each other without the extra costs and rules that usually come with traditional banks.
+
+</details>
 
 ## 2. A Quick Look at how DeFi Started and Grew over Time.
 
