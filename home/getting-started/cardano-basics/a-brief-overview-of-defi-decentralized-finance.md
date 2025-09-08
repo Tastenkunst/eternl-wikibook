@@ -4,8 +4,6 @@ description: Decentralized Finance explained
 
 # A brief overview of DeFi (Decentralized Finance)
 
-## 1. Understanding Decentralized Finance (DeFi)
-
 <details>
 
 <summary>1. Understanding Decentralized Finance (DeFi)</summary>
@@ -16,7 +14,9 @@ DeFi makes it easier, more efficient, and safer to handle money, allowing people
 
 </details>
 
-## 2. A Quick Look at how DeFi Started and Grew over Time.
+<details>
+
+<summary><strong>2. A Quick Look at how DeFi Started and Grew over Time.</strong></summary>
 
 The story of DeFi, starts with the launch of Bitcoin in 2009. The term "DeFi" became well-known in 2017, thanks to projects like MakerDAO, which introduced decentralized stablecoins. Since then, DeFi has grown a lot, bringing new protocols and applications.
 
@@ -29,6 +29,10 @@ However, this fast growth brought issues like high fees on Ethereum, smart contr
 2021 saw even more growth in DeFi, introducing new ideas like decentralized insurance and lending platforms. Even traditional financial companies started getting involved with DeFi projects. Layer 2 solutions, which use Optimistic Roll Ups were invented. In projects like Optimism and Arbitrum this was used to circumvent the slower speed of Ethereum to make it more scalable. In late 2021 the Alonzo hardfork opened the gates for Defi on Cardano. Since then many new projects like Lenfi , Minswap etc have been created.
 
 Today, DeFi is still growing and changing, working on making things scalable, interoperable, and in line with regulations. It's becoming a big part of finance, offering new ways to do financial services, international payments and making financial tools more accessible to everyone.
+
+</details>
+
+
 
 ## 3. DeFi is Crucial in Today's Financial World for Many Reasons
 
