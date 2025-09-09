@@ -4,7 +4,7 @@
 
 <summary><strong>Eternl v2 - Account Settings menu</strong></summary>
 
-![](<../../../.gitbook/assets/image (1) (1) (1) (2) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
