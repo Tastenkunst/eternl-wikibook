@@ -36,7 +36,7 @@
     * [Settings](home/using-eternl/settings/README.md)
       * [Account settings](home/using-eternl/settings/account-settings.md)
       * [Wallet settings](home/using-eternl/settings/wallet-settings.md)
-      * [Application settings](home/using-eternl/settings/application-settings.md)
+      * [App settings](home/using-eternl/settings/app-settings.md)
       * [App utilities](home/using-eternl/settings/app-utilities.md)
     * [Address book](home/using-eternl/address-book.md)
     * [Managing multiple accounts](home/using-eternl/managing-multiple-accounts.md)
