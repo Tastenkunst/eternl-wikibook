@@ -75,7 +75,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 <details>
 
-<summary><strong>PHASE 2: SCAVENGER MINE ((CLOSED! Oct 29th to Nov 19th))**</strong></summary>
+<summary><strong>PHASE 2: SCAVENGER MINE (CLOSED! Oct 29th to Nov 19th)**</strong></summary>
 
 Missed the Glacier Drop window? Want to play a bigger part in the future of Midnight? **Scavenger Mine is here and everyone can join!**
 
