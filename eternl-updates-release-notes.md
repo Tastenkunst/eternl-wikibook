@@ -2,7 +2,67 @@
 
 ## Releases
 
-previous releases
+### previous releases
+
+## v2.0.14.1
+
+> Released 29.10.2025 {.is-info}
+
+### MonsterSwap
+
+* Added support for the MinSwap aggregator
+
+### Updated
+
+* Smart contract badges
+
+### Fixed
+
+* After submitting a transaction the app didn't switch to the transaction list
+* Selecting autocomplete wallet group name preventing loading the app
+* Midnight not using an unused address on sm.midnight.gd
+* Dapp Browser with a url /path opening without the path after app restart
+* Optimized Multi-Sig backend (sharing of partially signed transactions)
+* Import issue with custom Multi-Sig scripts (e.g. Summon Platform scripts)
+
+### Availability
+
+✓ available - eternl.io ✓ available - beta.eternl.io ✓ available - Eternl Extension ✓ available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
+
+FYI: Mobile apps won't be updated until next week or next release
+
+## v2.0.13.4
+
+> Released 15.10.2025 {.is-info}
+
+### Added
+
+* Tx Viewer: "Show Details" will reveal "Spent by" on outputs, navigate to that transaction through the context menu, similar to inputs.
+
+### Changed
+
+* Warning/Info for spending refScripts or inline datums in transaction.
+
+### Updated
+
+* Smart Contract badges (e.g. Strike, CSwap, Splash)
+* Trezor signData support (device firmware isn't available yet to the general public)
+* OneKey SDK
+
+### Fixed
+
+* Addressbook handling.
+* Transaction building for cases: 2 UTxOs, Send All, fee was deducted, when it was already covered.
+* DRep status/info when de-registered
+* Account DRep delegation status; When the DRep de-registered, the previous delegation was considered instead.
+* Trezor: Staking pool update transactions
+* Transaction date filter
+
+***
+
+#### Availability
+
+✓ available - eternl.io ✓ available - beta.eternl.io ✓ available - Eternl Extension ✓ available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
 
 ## v2.0.12.5
 
