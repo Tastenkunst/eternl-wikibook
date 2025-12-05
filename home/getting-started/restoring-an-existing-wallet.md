@@ -1,2 +1,0 @@
-# Restoring an existing wallet
-

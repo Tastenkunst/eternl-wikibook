@@ -1,2 +1,0 @@
-# Sending & receiving Ada & tokens
-
