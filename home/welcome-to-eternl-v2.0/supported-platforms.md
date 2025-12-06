@@ -29,5 +29,4 @@ All versions are fully non-custodial — **you remain in control of your keys** 
 
 ***
 
-&#x20;**Tip**\
-Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.
+&#x20;<mark style="color:green;">**Tip**</mark>\ <mark style="color:green;">Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.</mark>
