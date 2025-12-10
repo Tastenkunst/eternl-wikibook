@@ -18,6 +18,10 @@ layout:
 
 # Account settings
 
+{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
+
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 <details>
@@ -25,6 +29,8 @@ layout:
 <summary>Account name / handle</summary>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
+
+
 
 </details>
 
