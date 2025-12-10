@@ -7,8 +7,6 @@ icon: rotate-exclamation
 
 {% embed url="https://www.youtube.com/watch?v=CRPlXGoFO8w" %}
 
-@[youtube](https://www.youtube.com/watch?v=CRPlXGoFO8w)
-
 <details>
 
 <summary><strong>PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th)</strong></summary>
@@ -116,7 +114,7 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 
 <details>
 
-<summary><strong>PHASE 3: REDEEM (Coming soon)</strong></summary>
+<summary><strong>PHASE 3: REDEEM (OPEN until 05. December 2026)</strong></summary>
 
 #### Redemption period (360 days)
 
