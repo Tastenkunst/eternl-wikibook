@@ -6,9 +6,13 @@ description: How staking works
 
 ## How staking works
 
-\{% hint style="info" %\} Abstract This article outlines how staking works on the Cardano blockchain, contrasting it with Bitcoin's Proof of Work (PoW). Staking involves holding ADA, Cardano's cryptocurrency, to support network operations and secure transactions. Users delegate ADA to stake pools, which then participate in validating transactions and creating new blocks. Unlike Bitcoin, which requires significant computational power, Cardano's Proof of Stake (PoS) system is more energy-efficient and democratic. Validators are chosen based on the amount of ADA they stake, with rewards distributed for their contribution. The system aims to enhance network security and performance, rewarding participants with additional ADA. The article also compares Cardano's approach to Ethereum's staking, emphasizing Cardano's more decentralized and user-friendly mechanism. \{% endhint %\}
+### Abstract&#x20;
 
-\<details> \<summary>1. Proof of Stake in Cardano\</summary>
+{% hint style="info" %}
+This article outlines how staking works on the Cardano blockchain, contrasting it with Bitcoin's Proof of Work (PoW). Staking involves holding ADA, Cardano's cryptocurrency, to support network operations and secure transactions. Users delegate ADA to stake pools, which then participate in validating transactions and creating new blocks. Unlike Bitcoin, which requires significant computational power, Cardano's Proof of Stake (PoS) system is more energy-efficient and democratic. Validators are chosen based on the amount of ADA they stake, with rewards distributed for their contribution. The system aims to enhance network security and performance, rewarding participants with additional ADA. The article also compares Cardano's approach to Ethereum's staking, emphasizing Cardano's more decentralized and user-friendly mechanism.
+{% endhint %}
+
+## 1. Proof of Stake in Cardano
 
 Cardano's Proof of Stake is a method that secures the network and adds new blocks to the blockchain, but it works differently than Bitcoin's system. Instead of requiring massive amounts of computing power, it lets users lock up some of their Cardano coins as a sign of reliability. The more coins you lock up, or "stake," the better your odds of being selected to check transactions and receive rewards.
 
@@ -48,19 +52,17 @@ Overall, staking on the Cardano blockchain provides a way for ADA holders to par
 
 \</details>
 
-\<details> \<summary>2. Rewards Distribution\</summary>
+### 2. Rewards Distribution
 
 In the Cardano ecosystem, rewards are generated from two key sources: all transaction fees collected from transactions within a block minted during an epoch, and monetary expansion, which is the process of increasing the circulating ADA supply towards a maximum cap. These rewards are then proportionally distributed to both stakers and pool operators. Pool operators are rewarded for their crucial role in maintaining and securing the network, while the remaining rewards are allocated among the stakers. This system is designed to motivate users to engage in staking their ADA, thus enhancing the network's security and overall performance by ensuring a vested interest in the health and efficiency of Cardano.
 
 \</details>
 
-\<details> \<summary>3. Return on Stake (RoS)\</summary>
+### Return on Stake (RoS)\</summary>
 
 The RoS in Cardano depends on several factors, including the total amount of ADA staked on the network and the individual stake pool's performance and the amount of ADA staked to the pool. RoS can vary but provides an incentive for ADA holders to participate in staking while keeping full access to spend their ADA whenever.
 
-\</details>
-
-\<details> \<summary>4. Cardano vs Ethereum staking mechanisms\</summary>
+### 4. Cardano vs Ethereum staking mechanisms
 
 Cardano and Ethereum offer contrasting staking mechanisms, with Cardano featuring a native liquid staking system that allows ADA to remain accessible for spending during staking, without any minimum staking requirements or penalties for misbehavior. This approach promotes decentralization and security by making participation more straightforward and aligning stakeholders' interests with the network's needs. Cardano relies on the Ouroboros Proof-of-Stake consensus and Nash equilibrium theory to encourage honest participation, avoiding the need for slashing as a deterrent.
 
@@ -70,9 +72,7 @@ Cardano's model is highlighted for its potential to maintain a more decentralize
 
 In the Cardano network, ADA holders have the option to participate directly in the network's consensus by operating active nodes or to delegate their participation rights to a stake pool. This delegation process allows those who may not have the capacity or desire to maintain active participation to still contribute to the network's security and decision-making processes. When selecting a stake pool, it's crucial to understand that a lower variable commission does not automatically translate to higher rewards. The annual return difference between delegating to a pool with a 1% commission versus a 5% commission is relatively minor, around 1/4% of the expected annual return. The primary considerations for choosing a stake pool should be the operator's reliability in keeping the nodes safe and operational and the pool's saturation level. Saturation occurs when a pool has a high level of staking, leading to diminished rewards for its delegates due to the distribution of rewards across a larger number of participants. The rewards from staking are automatically delegated to the stake pool, generating additional rewards over time. Any changes in the delegation preferences are processed after the next epoch. The Return on ADA (ROA) is a critical metric for assessing a stake pool's performance, calculated as the direct result of the blocks produced by the stake pool divided by the total amount of ADA staked in the pool for each epoch. The number of blocks a stake pool is assigned in each epoch is determined through a lottery process, contributing to the variability in ROA% across different epochs. For ADA holders looking to track their rewards and estimate future earnings, resources are available to provide detailed historical and predictive insights into the rewards process.
 
-\</details>
-
-\<details> \<summary>5. About fees\</summary>
+### 5. About fees\</summary>
 
 On the Cardano blockchain, stake pool operators charge two types of fees to cover the costs associated with running a pool and to provide an incentive for their services: a fixed fee and a variable fee.
 
@@ -90,9 +90,7 @@ For example, if a pool earns 5,000 ADA in rewards for an epoch, the pool operato
 
 It's important for delegators to understand these fees when choosing a stake pool, as they can affect the overall rewards received from staking ADA. Lower fees do not necessarily mean higher returns, as the performance and reliability of the pool are also crucial factors.
 
-\</details>
-
-\<details> \<summary>6. Comparison with Bitcoin's Proof of Work\</summary>
+### 6. Comparison with Bitcoin's Proof of Work
 
 Bitcoin uses a PoW mechanism, where miners solve complex mathematical problems to validate transactions and create new blocks. This process requires significant computational power and energy. The rewards in Bitcoin come in the form of newly minted bitcoins (block rewards) and transaction fees. Unlike Cardano, Bitcoin's reward system heavily relies on the computational work done by miners, not on the amount of cryptocurrency they hold.
 
@@ -100,9 +98,7 @@ Environmental Impact and Efficiency: Cardano's PoS is more energy-efficient comp
 
 In summary, Cardano's staking mechanism offers a more energy-efficient and potentially more democratic way to participate in the blockchain's security and governance, compared to Bitcoin's computationally intensive PoW mechanism.
 
-\</details>
-
-\<details> \<summary>7. Delegating to a Stake Pool using Eternl wallet\</summary>
+### 7. Delegating to a Stake Pool using Eternl wallet\</summary>
 
 #### 7.1 Explore Pools:
 
@@ -136,5 +132,3 @@ Enable the Auto Withdrawal option in the Account Settings
 
 * Initial Rewards: It typically takes 15-20 days to receive your first rewards after delegating your ADA to a pool.
 * Subsequent Rewards: After the initial period, rewards are distributed every epoch, approximately every 5 days.
-
-\</details>
