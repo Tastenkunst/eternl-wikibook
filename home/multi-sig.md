@@ -1,4 +1,16 @@
+---
+description: How to create simple or complex multi-sig wallets?
+---
+
 # Multi-sig
+
+### How to create a multi-sig wallet?
+
+{% embed url="https://youtu.be/vUvHKuJyDlE" %}
+
+### How to create complex multi-sig structures?
+
+{% embed url="https://www.youtube.com/embed/Amar1nDk0FU" %}
 
 ### Why multi-sig wallets cannot be a DApp account (for now)
 
@@ -44,10 +56,3 @@ In short, supporting multi-sig wallets with DApps means building a new interacti
 > * Web wallet bridge (CIP-30) communication challenges to overcome.
 >
 > Until DApps explicitly support multi-sig, use a standard wallet for interacting with them. {.is-info}
-
-{% embed url="https://youtu.be/vUvHKuJyDlE" %}
-
-### How to create complex multi-sig structures?
-
-{% embed url="https://www.youtube.com/embed/Amar1nDk0FU" %}
-
