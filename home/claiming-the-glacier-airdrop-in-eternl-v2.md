@@ -112,7 +112,7 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 
 </details>
 
-<details>
+<details open>
 
 <summary><strong>PHASE 3: REDEEM (OPEN until 05. December 2026)</strong></summary>
 
