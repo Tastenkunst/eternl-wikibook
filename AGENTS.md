@@ -25,6 +25,11 @@
 - Markdown remains the source of truth and is edited only in WebStorm/VSCode (no in-page editing).
 - Expect LLM-assisted translations into 36+ languages with locale-specific Markdown trees.
 - The web app lives under page/ (package.json and app code) to keep the repo root focused on content.
+- Markdown is rendered via markdown-it with GitBook hint/embed preprocessing and SUMMARY.md-driven routing.
+- .gitbook/assets is copied into the web app as /gitbook-assets at build time.
+- Front matter is parsed with a lightweight YAML subset parser (no Node Buffer dependency).
+- The viewer must be accessible on mobile and for screen readers (skip link, labeled nav/search, good mobile navigation).
+- Focus the main content after route changes to help screen reader navigation.
 
 ## Common edits
 - Add a page: create the Markdown file in the right folder and add it to SUMMARY.md.

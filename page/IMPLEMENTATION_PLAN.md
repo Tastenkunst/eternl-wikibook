@@ -17,6 +17,7 @@
 - On-page table of contents with anchor links.
 - Previous/next page navigation.
 - Responsive layout for desktop and mobile.
+- Accessible navigation (skip link, labeled nav/search, keyboard-friendly interactions).
 - Basic search (static index over the current content set).
 
 ### Nice to have (later)
@@ -31,8 +32,18 @@
 ## Tech stack
 - Vite + Vue 3 + TypeScript.
 - TailwindCSS v4 for styling.
-- Markdown pipeline with remark/rehype to support GitBook-specific blocks.
-- Static search index (Pagefind or a small custom JSON index).
+- Markdown pipeline with markdown-it (anchor + container plugins) for GitBook-specific blocks.
+- Static search index built in-memory from parsed Markdown.
+- vite-plugin-static-copy to expose `.gitbook/assets` as `/gitbook-assets`.
+
+## MVP implementation notes
+- Use `import.meta.glob` to load Markdown files from the repo root at build time.
+- Parse SUMMARY.md into a nav tree and a flat list for prev/next links.
+- Rewrite `.gitbook/assets` paths and GitBook hint/embed blocks during preprocessing.
+- Resolve relative `.md` links to router paths during Markdown rendering.
+- Use a lightweight front matter parser (YAML subset) to avoid Node-only dependencies.
+- Provide a mobile-friendly nav wrapper (collapsible details) and a skip link to main content.
+- Focus the main content on route change for screen reader context.
 
 ## Suggested implementation phases
 1) Content ingestion: parse SUMMARY.md, map routes, load Markdown files.

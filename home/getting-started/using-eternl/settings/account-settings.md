@@ -19,6 +19,9 @@ layout:
 # Account settings
 
 {% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
+{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
+{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
+{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
 <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
