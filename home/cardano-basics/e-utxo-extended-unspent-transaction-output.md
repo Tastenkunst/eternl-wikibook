@@ -66,18 +66,18 @@ The model also offers flexibility in transaction conditions, expanding the types
 
 Cardano employs the extended Unspent Transaction Output ((e)UTxO) accounting framework, which is distinct from Ethereums account-based system. In the Ethereum model, each user maintains an account that holds a balance. As funds are transferred between accounts, these balances are accordingly adjusted.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p><strong>EUtxO Model vs Account Model</strong> <br>(<a href="https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/2/0/206e4f51eb92a1bf3534247e18b378f40495f213_2_1000x562.jpeg">https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/2/0/206e4f51eb92a1bf3534247e18b378f40495f213_2_1000x562.jpeg</a>)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pictures/image (3).png" alt=""><figcaption><p><strong>EUtxO Model vs Account Model</strong> <br>(<a href="https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/2/0/206e4f51eb92a1bf3534247e18b378f40495f213_2_1000x562.jpeg">https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/2/0/206e4f51eb92a1bf3534247e18b378f40495f213_2_1000x562.jpeg</a>)</p></figcaption></figure>
 
 * Transaction outputs as piggy banks: Imagine every transaction on Cardano creates a virtual piggy bank. Each piggy bank has a certain amount of Cardano's currency, ADA, and rules about how that ADA can be spent.
 * "Extended" part: The 'Extended' in (e)UTxO means that these piggy banks can hold more than just ADA; they can also contain special instructions or conditions. This is like having a piggy bank that not only holds coins but also has a note attached saying under what conditions the coins can be used.
 
 The "e" in (e)UTxO signifies "extended," enhancing the Unspent Transaction Output (UTxO) model. Unlike UTxO smart contracts, which only engage with direct requests to verify a transaction, the (e)UTxO model in Cardano offers advancements beyond this basic functionality.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><strong>EUtxO vs UTxO Model</strong> <br>(<a href="https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/a/9/a9af3c665177df48ab5ed3b249b466db82dc59b7_2_1000x562.jpeg">https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/a/9/a9af3c665177df48ab5ed3b249b466db82dc59b7_2_1000x562.jpeg</a></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pictures/image (1) (1).png" alt=""><figcaption><p><strong>EUtxO vs UTxO Model</strong> <br>(<a href="https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/a/9/a9af3c665177df48ab5ed3b249b466db82dc59b7_2_1000x562.jpeg">https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/a/9/a9af3c665177df48ab5ed3b249b466db82dc59b7_2_1000x562.jpeg</a></p></figcaption></figure>
 
 #### 3.1 The (e)UTxO model integrates the following transaction mechanisms:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p><strong>EUTxO Components</strong> <br>(<a href="https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/b/3/b3351160eb9145c7cfc6a3cf80171547f09a8318_2_1000x533.jpeg">https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/b/3/b3351160eb9145c7cfc6a3cf80171547f09a8318_2_1000x533.jpeg</a>) </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pictures/image (2) (1).png" alt=""><figcaption><p><strong>EUTxO Components</strong> <br>(<a href="https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/b/3/b3351160eb9145c7cfc6a3cf80171547f09a8318_2_1000x533.jpeg">https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/b/3/b3351160eb9145c7cfc6a3cf80171547f09a8318_2_1000x533.jpeg</a>) </p></figcaption></figure>
 
 {% hint style="success" %}
 The (e)UTxO model is a bit like a sophisticated way of tracking who owns what on the Cardano blockchain.
@@ -137,7 +137,7 @@ Let's compare Cardanos (e)UTxO model with the traditional UTXO model used in blo
 
 The infographic below, created by IOG, shows a comparison between the two models:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p><strong>Infographic Eutxo v. account-based-models</strong> <br>(<a href="https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F466e4cd4-7871-4fe9-a6c0-8dd66f06e0cc%2F&#x26;w=3840&#x26;q=75">https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F466e4cd4-7871-4fe9-a6c0-8dd66f06e0cc%2F&#x26;w=3840&#x26;q=75</a>)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pictures/image (3) (1).png" alt=""><figcaption><p><strong>Infographic Eutxo v. account-based-models</strong> <br>(<a href="https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F466e4cd4-7871-4fe9-a6c0-8dd66f06e0cc%2F&#x26;w=3840&#x26;q=75">https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F466e4cd4-7871-4fe9-a6c0-8dd66f06e0cc%2F&#x26;w=3840&#x26;q=75</a>)</p></figcaption></figure>
 
 #### 5.1 Traditional UTXO model (example)
 

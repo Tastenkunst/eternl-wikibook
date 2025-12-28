@@ -156,7 +156,7 @@ Enable the Auto Withdrawal option under the Wallet & Account Settings tab
 * Initial Rewards: It typically takes 15-20 days to receive your first rewards after delegating your ADA to a pool.
 * Subsequent Rewards: After the initial period, rewards are distributed every epoch, approximately every 5 days.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p> Based on data from <br>https://ahlnet.nu/wp-content/uploads/2024/02/delegation-flow_v3-1.png and <br>https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/7/1/71036df5e0ef2eb3be6c0e6ce19929f6880e3d0f_2_999x934.png</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/pictures/image (5).png" alt=""><figcaption><p> Based on data from <br>https://ahlnet.nu/wp-content/uploads/2024/02/delegation-flow_v3-1.png and <br>https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/7/1/71036df5e0ef2eb3be6c0e6ce19929f6880e3d0f_2_999x934.png</p></figcaption></figure>
 
 </details>
 

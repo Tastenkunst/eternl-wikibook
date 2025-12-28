@@ -16,22 +16,15 @@ layout:
     visible: true
 ---
 
-# Account settings
-
-{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
-{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
-{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 {% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/image (9).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
 <summary>Account name / handle</summary>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 </details>
 
@@ -39,11 +32,11 @@ layout:
 
 <summary>Export Account Key</summary>
 
-### Export the public key of this account.
+<figure><img src="../../../../.gitbook/assets/pictures/export_account_key.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
+##
 
-#### Cardano Public Account Key Formats
+### Cardano Public Account Key Formats
 
 Cardano supports several public account key formats, each used to view wallet information but **not to sign transactions**. When imported, these keys create **read-only wallets**:
 
@@ -59,11 +52,11 @@ These key formats enable wallet **monitoring and address generation**, but **can
 
 <summary>Single Address Mode (SAM) [option]</summary>
 
-### Only use a single address for all transactions.
+Only use a single address for all transactions
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/image (2) (1) (1).png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
 
 Alternatively a custom receive address can be set here.
 
@@ -75,15 +68,13 @@ Alternatively a custom receive address can be set here.
 
 <summary>Collateral [option]</summary>
 
-### Use Eternl provided collateral?
+## Use Eternl provided collateral?
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/image (1) (1) (1).png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
+## Collateral (Cardano)
 
-
-### Collateral (Cardano)
-
-#### What is Collateral?
+### What is Collateral?
 
 In the Cardano blockchain, **collateral** is a special UTxO (Unspent Transaction Output) set aside to cover transaction fees if a smart contract (Plutus script) **fails** during execution.
 
@@ -96,7 +87,7 @@ This system ensures users are responsible for failed executions, helping to prot
 
 ***
 
-#### Using Collateral in Eternl
+### Using Collateral in Eternl
 
 The **Eternl wallet** provides a feature called the **Collateral**.
 
@@ -125,13 +116,11 @@ This means:
 
 <summary>Manual sync [option]</summary>
 
-### Set manual sync
+## Set manual sync
 
-<figure><img src="../../../../.gitbook/assets/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
-
-
-### What is Manual Sync?
+## What is Manual Sync?
 
 In Eternl, **Manual Sync** is an optional setting that allows you to control **when** your wallet fetches the latest data (such as balances, UTxOs, and transaction history) from the blockchain.
 
@@ -139,7 +128,7 @@ By default, this setting is **OFF**, meaning the wallet performs **automatic syn
 
 ***
 
-### 🔁 Automatic Sync (Default)
+## 🔁 Automatic Sync (Default)
 
 * The wallet refreshes data **automatically** at regular intervals.
 * Keeps balances and UTxOs **up to date** without user input.
@@ -147,7 +136,7 @@ By default, this setting is **OFF**, meaning the wallet performs **automatic syn
 
 ***
 
-### ✋ Manual Sync (When turned ON)
+## ✋ Manual Sync (When turned ON)
 
 When enabled, syncing will **only occur when you manually trigger it** by pressing the **sync button** in the interface.
 
@@ -176,8 +165,6 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 | **Automatic** (default) | Background sync     | Most users (easy & up to date)             |
 | **Manual**              | User-triggered sync | Power users, low-resource devices, testing |
 
-
-
 > 💡 **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
 </details>
@@ -186,9 +173,9 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 <summary>History sync [option]</summary>
 
-### Set history sync
+## Set history sync
 
-<figure><img src="../../../../.gitbook/assets/history_sync.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
@@ -196,7 +183,7 @@ The **History Sync** option controls whether your Eternl wallet **syncs your ful
 
 ***
 
-#### 🔍 What is History Sync?
+### 🔍 What is History Sync?
 
 Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or with **full history sync**. This setting determines which mode Eternl uses.
 
@@ -205,7 +192,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 
 ***
 
-#### ✅ Advantages of History Sync (ON)
+### ✅ Advantages of History Sync (ON)
 
 * 📜 See your full transaction history in-app
 * 🔍 Useful for auditing, record keeping, or tax purposes
@@ -213,7 +200,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 
 ***
 
-#### ❌ Disadvantages
+### ❌ Disadvantages
 
 * 🐢 **Slower sync time**, especially for older or busy wallets
 * 🔋 Higher memory and data usage
@@ -221,7 +208,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 
 ***
 
-#### 📌 Summary Table
+### 📌 Summary Table
 
 | Setting           | Sync Behavior                      | Best For                           |
 | ----------------- | ---------------------------------- | ---------------------------------- |
@@ -249,30 +236,27 @@ Keep it **disabled** if:
 
 <summary>Token Fragmentation (TF)</summary>
 
-### Reduce transaction fees by fragmenting tokens.
+## Token Fragmentation (TF)
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+### Reduce transaction fees by fragmenting tokens
 
-
-
-### Token Fragmentation (TF)
+<figure><img src="../../../../.gitbook/assets/pictures/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Token Fragmentation** is an advanced sending option that controls how tokens are grouped when a transaction is made.
 
 > When enabled, the wallet will **split tokens into bundles** if the number of tokens in the **change output** exceeds a defined threshold.
-
 > 🧩 **Default value:** `20` tokens per UTxO
 
-#### 🔍 Purpose
+### 🔍 Purpose
 
 This helps **reduce UTxO bloat** and improves **token management** by avoiding overly large token bundles in change.
 
-#### ⚙️ How it works
+### ⚙️ How it works
 
 * During a transaction, if the wallet detects that the change output would include **more tokens than the set limit**, it will **automatically split** them into smaller, more manageable outputs.
 * This behavior depends on your wallet’s current **UTxO and token distribution**.
 
-#### 🎯 Tweaking for Best Results
+### 🎯 Tweaking for Best Results
 
 To get optimal results:
 
@@ -283,14 +267,14 @@ To get optimal results:
 
 > 💡 **Tip:** Token Fragmentation can help avoid failed transactions caused by oversized outputs or complex UTxO sets.
 
-### 📦 Token Bundle Size
+## 📦 Token Bundle Size
 
 The **Token Bundle Size** setting defines the **maximum number of tokens** each UTxO output should contain when tokens are fragmented.
 
 > 🧩 **Default value:** `20` tokens per UTxO\
 > 🔧 This value is adjustable based on your specific needs.
 
-#### 📊 What does it affect?
+### 📊 What does it affect?
 
 Changing this value affects how tokens are distributed across outputs when sending transactions:
 
@@ -311,11 +295,11 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 <summary>Advanced UTxO Management</summary>
 
-### Use advanced UTxO management on your transactions.
+## Use advanced UTxO management on your transactions
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
 
-#### 🧠 Advanced UTxO Management
+## 🧠 Advanced UTxO Management
 
 When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
 
@@ -330,13 +314,8 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 <summary>Auto Withdrawal [option]</summary>
 
-### Automatically withdraw rewards if needed.
+## Automatically withdraw rewards if needed
 
-
-
-<figure><img src="../../../../.gitbook/assets/auto_withdrawal (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/auto_withdrawal (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
-
-
-
