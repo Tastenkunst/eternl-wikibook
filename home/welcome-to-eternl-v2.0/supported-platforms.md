@@ -1,6 +1,6 @@
 # Supported Platforms
 
-### &#x20;Platform Availability
+### Platform Availability
 
 Eternl is available across multiple platforms, offering flexibility for different use cases and user preferences.
 
@@ -10,7 +10,7 @@ Eternl is available across multiple platforms, offering flexibility for differen
 * Works in any modern browser (desktop & mobile)
 * **Can be installed as a PWA (Progressive Web App)** for a native app-like experience
 
-> &#x20;On supported browsers, look for the **install option** in the address bar to add Eternl as a standalone app.
+> On supported browsers, look for the **install option** in the address bar to add Eternl as a standalone app.
 
 #### 🧩 Browser Extension
 
@@ -24,9 +24,9 @@ Eternl is available across multiple platforms, offering flexibility for differen
 
 ***
 
-&#x20;**Security Note**\
+**Security Note**\
 All versions are fully non-custodial — **you remain in control of your keys** at all times.
 
 ***
 
-&#x20;<mark style="color:green;">**Tip**</mark>\ <mark style="color:green;">Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.</mark>
+<mark style="color:green;">**Tip**</mark>\ <mark style="color:green;">Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.</mark>

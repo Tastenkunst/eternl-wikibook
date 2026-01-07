@@ -2,7 +2,51 @@
 
 ## Releases
 
-### previous releases
+# v2.0.16.0
+> Released 16.12.2025
+{.is-info}
+
+## Changed
++ Updated second checkbox text on the ToS acceptance overlay to read: "I agree to the immediate start of the service and acknowledge that I waive my 14-day cooling-off period (for the ToS)."
+
+## Fixed
++ Signing with spending password: Shift key not working properly.
+
+Thanks to @stakepool_ for reporting it.
+
+Availability
+ ✓  available - eternl.io
+ ✓  available - beta.eternl.io
+ ✓  available - Eternl Extension
+not submitted - Eternl Beta Extension
+    pending   - Android app
+    pending   - iOS app
+
+[Eternl Update v2.0.16.0](/en/updates/2-0-16-0)
+
+---
+
+# v2.0.15.0
+> Released 14.12.2025
+{.is-info}
+
+## Fixed
++ Granting initial dapp access resulting in "account changed" error 
++ User slippage setting in MonsterSwap being used to build final transactions
++ Extension popups not opening on multiple screens setups
++ Delegate button not showing when stake pool is retired
++ Cancel orders using minswap aggregator via MonsterSwap
++ Trying to submit a tx after signing with the first account when more accounts need to sign
+
+## Availability
+ ✓  available - eternl.io
+ ✓  available - beta.eternl.io
+ ✓  available - Eternl Extension
+not submitted - Eternl Beta Extension
+ -  submitted - Android app
+ -  submitted - iOS app
+
+[Eternl Update v2.0.15.0](/en/updates/2-0-15-0)
 
 ## v2.0.14.1
 
