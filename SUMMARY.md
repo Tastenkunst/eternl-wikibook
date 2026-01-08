@@ -2,7 +2,7 @@
 
 * [Eternl v2.0 Wiki](README.md)
   * [Welcome to Eternl v2.0](home/welcome-to-eternl-v2.0/README.md)
-    * [ About Eternl ](home/welcome-to-eternl-v2.0/about-eternl.md)
+    * [About Eternl](home/welcome-to-eternl-v2.0/about-eternl.md)
     * [What’s New in v2.0 ?](home/welcome-to-eternl-v2.0/whats-new-in-v2.0.md)
     * [Supported Platforms](home/welcome-to-eternl-v2.0/supported-platforms.md)
   * [Security & Privacy](home/security-and-privacy/README.md)
@@ -29,6 +29,7 @@
   * [Multi-sig](home/multi-sig.md)
   * [Staking & delegation](home/staking-and-delegation/README.md)
     * [stake pool rating](home/staking-and-delegation/stake-pool-rating.md)
+  * [FAQ](readme/faq.md)
   * [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
   * [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
 * [For Developers](for-developers/README.md)
