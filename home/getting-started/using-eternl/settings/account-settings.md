@@ -18,7 +18,7 @@ layout:
 
 {% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
-<figure><img src="../../../../.gitbook/assets/pictures/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -56,7 +56,7 @@ Only use a single address for all transactions
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="../../../../.gitbook/assets/pictures/image (2) (1) (1).png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
 
 Alternatively a custom receive address can be set here.
 
@@ -70,7 +70,7 @@ Alternatively a custom receive address can be set here.
 
 ## Use Eternl provided collateral?
 
-<figure><img src="../../../../.gitbook/assets/pictures/image (1) (1) (1).png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
 
 ## Collateral (Cardano)
 
@@ -118,7 +118,7 @@ This means:
 
 ## Set manual sync
 
-<figure><img src="../../../../.gitbook/assets/pictures/manual_sync (1).png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
 ## What is Manual Sync?
 
@@ -240,7 +240,7 @@ Keep it **disabled** if:
 
 ### Reduce transaction fees by fragmenting tokens
 
-<figure><img src="../../../../.gitbook/assets/pictures/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
 
 **Token Fragmentation** is an advanced sending option that controls how tokens are grouped when a transaction is made.
 
@@ -316,6 +316,6 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 ## Automatically withdraw rewards if needed
 
-<figure><img src="../../../../.gitbook/assets/pictures/auto_withdrawal (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
 
 </details>
