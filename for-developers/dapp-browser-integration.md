@@ -1,6 +1,6 @@
 # DApp browser integration
 
-#### Some statistics:
+## Some statistics
 
 | Platform           | User base (monthly) |
 | ------------------ | ------------------: |
@@ -9,7 +9,7 @@
 | iOS mobile app     |                  8k |
 | PWA (eternl.io)    |                  5k |
 
-#### Connection types
+## Connection types
 
 Eternl v2 supports 4 app types and 7 different connection methods:
 
@@ -31,7 +31,7 @@ Eternl v2 supports 4 app types and 7 different connection methods:
 * (3) WalletConnect: Relies on centralized servers.
 * (4) Cardano Connect: A decentralized, P2P alternative to WalletConnect CIP-45.
 
-**Deciding whether to support PWA user base**
+**Deciding whether to support PWA user base.**
 
 Although implementing the PWA JS Bridge involves extra effort, it provides the benefit of featuring your dapp in the PWA’s Dapp Browser, where only select dApps are supported. With no URL input available, the PWA displays just a list of compliant dApps, so we encourage you to add support for the PWA JS Bridge.
 
@@ -40,8 +40,6 @@ Bridge snippet and example implementation:  [cardano-dapp-connector-bridge](http
 ## Technical requirements
 
 Please open a support ticket with us on Discord to provide the following information:
-
-{.align-center}
 
 Fill out the following JSON structure.
 
@@ -90,13 +88,11 @@ Fill out the following JSON structure.
   }
 ```
 
-#### Convenience fee
+## Convenience fee
 
 The convenience fee is our way to monetize Eternl wallet to keep the lights on and delevop it further. To be listed on the Dapp Browser it's a requirement to implement the fee.
 
-```
  // const feeAddress = window.cardano.eternl.experimental.feeAddress // normal string, bech32 address.
-```
 
 [EternlDAppBrowser.md](https://github.com/Tastenkunst/cardano-dapp-connector-bridge/blob/main/EternlDAppBrowser.md)\
 (for the implementation of the Eternl "convenience fee").
@@ -105,9 +101,7 @@ The convenience fee is our way to monetize Eternl wallet to keep the lights on a
 
 ### Integration test
 
-{.is-info}
-
-**API Injected (1): Eternl Beta browser extension**
+## **API Injected (1): Eternl Beta browser extension**
 
 If you want to test against a localhost, that's only available on the Eternl Beta extension, not in production.\
 The dapp page is embedded in an iframe, which needs to be allowed by the dApp page.
@@ -123,8 +117,6 @@ Please check the browser's dev console network section to find any errors (check
 ***
 
 ### Checklist
-
-{.is-info}
 
 * No errors while loading the page in the Dapp Browser
 * The page works on mobile browsers (iOS: Safari, Android: Chrome)
