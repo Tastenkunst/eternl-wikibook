@@ -4,9 +4,9 @@ description: Account-, Wallet- and Application settings and App Utils
 
 # Settings
 
-<details open>
+<details>
 
-<summary><strong>Eternl v2 – Settings menu</strong></summary>
+<summary>Eternl v2 – Settings menu</summary>
 
 In **Eternl v2**, you can access the settings menu via the **cogwheel** in the top right-hand corner of the screen.\
 Clicking it opens the side panel with settings for the current account, wallet, the entire app and some app utilities.
@@ -15,9 +15,7 @@ Clicking it opens the side panel with settings for the current account, wallet, 
 
 Clicking the cogwheel in the upper-right corner opens the settings menu.
 
-<figure><img src="../../../../.gitbook/assets/pictures/settings_menue.png" alt=""><figcaption><p><em>Settings menu overview</em></p></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/pictures/settings_menue.png" alt=""><figcaption><p>Settings menu overview</em></p></figcaption></figure>
 
 ***
 
@@ -27,8 +25,6 @@ Use the search bar at the top to **quickly find settings**.
 
 As soon as you enter the **second character**, the list is **instantly filtered** across the 4 sub menus.
 
-<figure><img src="../../../../.gitbook/assets/pictures/settings_filtered.png" alt=""><figcaption><p><em>Settings filtered by search term</em></p></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/pictures/settings_filtered.png" alt=""><figcaption><p>Settings filtered by search term</em></p></figcaption></figure>
 
 </details>

@@ -2,7 +2,7 @@
 description: A brief intro of a few projects within the Cardano ecosystem
 ---
 
-# An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.
+# An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem
 
 With its robust, research-first approach, Cardano has become a favored blockchain for developers and investors alike illustrated by a high market capitalization placing it in the top10 of blockchains. Central to its appeal are the features of a modern 3rd generation blockchain enabling a broad and ever changing infrastructure of service providers like Decentralized Exchanges (DEXes) and marketplaces that operate within its network.
 
