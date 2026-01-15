@@ -62,7 +62,7 @@ Alternatively a custom receive address can be set here.
 
 ## Use Eternl provided collateral?
 
-<figure><img src="../../../../.gitbook/assets/pictures/collateral.png" alt=""><figcaption><p>Option switch Collateral</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
 
 ## Collateral (Cardano)
 
@@ -95,7 +95,7 @@ This means:
 
 ***
 
-### Summary
+### Collateral Summary
 
 * Collateral is **required** for transactions involving Plutus smart contracts.
 * Collateral is **never locked** and can be spent in regular (non-contract) transactions.
@@ -150,7 +150,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 ***
 
-### Summary
+### Sync Summary
 
 | Mode                    | Sync Method         | Best For                                   |
 | ----------------------- | ------------------- | ------------------------------------------ |
