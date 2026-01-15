@@ -2,7 +2,7 @@
 description: >-
   The Eternl Wiki is still actively being improved and expanded, if you have any
   feedback, please do reach out and let us know!
-cover: .gitbook/assets/v1-dark.jpg
+cover: .gitbook/assets/pictures/v1-dark.jpg
 coverY: 0
 ---
 
