@@ -1,24 +1,16 @@
----
-description: Eternl v2 - Account Settings menu
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
+# Settings
 
+<details>
+<summary>Account Settings</summary>
+
+<figure><img src="../../../../.gitbook/assets/pictures/Account_Settings.png" alt=""><figcaption><p>Wallet Settings</p></figcaption></figure>
+
+<details>
+<summary>Overview</summary>
 {% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
 <figure><img src="../../../../.gitbook/assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
+</details>
 
 <details>
 
@@ -318,4 +310,22 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 <figure><img src="../../../../.gitbook/assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
 
+</details>
+</details>
+
+<details>
+
+<summary>Wallet Settings</summary>
+<figure><img src="../../../../.gitbook/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption><p>Wallet Settings</p></figcaption></figure>
+xxx
+</details>
+
+<details>
+<summary>App Settings</summary>
+xxx
+</details>
+
+<details>
+<summary>App Utilities</summary>
+xxx
 </details>
