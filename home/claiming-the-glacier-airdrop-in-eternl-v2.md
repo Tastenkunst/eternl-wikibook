@@ -20,7 +20,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 * [How to install the Chrome Browser Eternl extension?](https://www.youtube.com/watch?v=TuIYDx2_0nA)
 * [How to Import Multiple Wallets in Eternl v2?](https://www.youtube.com/watch?v=fXevC1U2OFg)
 
-***
+---
 
 ### Follow these steps to participate:
 
@@ -48,7 +48,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
    Sign the message with your account to prove ownership of the address.\
    Then click **Complete Claim**.
 
-***
+---
 
 ✅ Your claim is now successfully completed.\
 📥 It is recommended to download your **claim summary** for your records.
@@ -57,17 +57,17 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 > Simply start a **new claim** for each one.\
 > {.is-info}
 
-***
+---
 
 🔗 Try out this feature and many more at [eternl.io](https://eternl.io).
 
-***
+---
 
 > ℹ️ In Eternl v2.0.11.2 the process was updated as described above.\
 > The previous method (manually disabling _Single Address Mode_) is no longer necessary.\
 > {.is-warning}
 
-***
+---
 
 </details>
 
@@ -98,11 +98,11 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 * **Solving Challenges**: Your device automatically accepts, solves, and submits cryptographic challenges in the background. The system issues one new challenge per hour, totaling 24 challenges per cycle.
 * **Determining Allocation**: Your final token allocation for a cycle is **proportional** to the number of solutions your device submitted relative to the total solutions submitted by all participants in that specific 24-hour cycle.
 
-***
+---
 
 > How to particpate in phase 2 - Scavenger Mine by entering an unused address manually: [Link](https://wiki.eternl.io/en/2_user-guide/scavenger) {.is-info}
 
-***
+---
 
 **For more details:**
 

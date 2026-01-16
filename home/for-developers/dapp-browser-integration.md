@@ -97,7 +97,7 @@ The convenience fee is our way to monetize Eternl wallet to keep the lights on a
 [EternlDAppBrowser.md](https://github.com/Tastenkunst/cardano-dapp-connector-bridge/blob/main/EternlDAppBrowser.md)\
 (for the implementation of the Eternl "convenience fee").
 
-***
+---
 
 ### Integration test
 
@@ -114,7 +114,7 @@ The Dapp Browser page has a URL input field. Enter the URL to your dapp staging/
 
 Please check the browser's dev console network section to find any errors (check the response headers of failing requests).
 
-***
+---
 
 ### Checklist
 

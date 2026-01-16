@@ -22,11 +22,11 @@ Eternl is available across multiple platforms, offering flexibility for differen
 * Android version available via direct APK or third-party stores
 * iOS is not officially supported (yet)
 
-***
+---
 
 **Security Note**\
 All versions are fully non-custodial — **you remain in control of your keys** at all times.
 
-***
+---
 
 <mark style="color:green;">**Tip**</mark>\ <mark style="color:green;">Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.</mark>

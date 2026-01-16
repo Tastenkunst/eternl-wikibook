@@ -38,11 +38,7 @@ Cardano supports several public account key formats, each used to view wallet in
 
 These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
 
-</details>
-
-<details>
-
-<summary>Single Address Mode (SAM) [option]</summary>
+### Single Address Mode (SAM) [option]
 
 Only use a single address for all transactions
 
@@ -77,7 +73,7 @@ This system ensures users are responsible for failed executions, helping to prot
 
 > 🔓 The **collateral is never locked.** It can still be spent in any transaction that does **not** require a collateral.
 
-***
+---
 
 ### Using Collateral in Eternl
 
@@ -93,7 +89,7 @@ This means:
 
 > 🛡️ This helps ensure secure and seamless usage of smart contracts on Cardano through the Eternl wallet.
 
-***
+---
 
 ### Collateral Summary
 
@@ -118,7 +114,7 @@ In Eternl, **Manual Sync** is an optional setting that allows you to control **w
 
 By default, this setting is **OFF**, meaning the wallet performs **automatic syncing** in the background.
 
-***
+---
 
 ## 🔁 Automatic Sync (Default)
 
@@ -126,13 +122,13 @@ By default, this setting is **OFF**, meaning the wallet performs **automatic syn
 * Keeps balances and UTxOs **up to date** without user input.
 * Convenient for most users.
 
-***
+---
 
 ## ✋ Manual Sync (When turned ON)
 
 When enabled, syncing will **only occur when you manually trigger it** by pressing the **sync button** in the interface.
 
-***
+---
 
 ### ✅ Advantages of Manual Sync
 
@@ -140,7 +136,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 * 🔒 **More control**: Ideal for advanced users who want to control when blockchain state updates.
 * 🧪 **Useful in testing/debugging scenarios**, where state consistency is critical.
 
-***
+---
 
 ### ❌ Disadvantages of Manual Sync
 
@@ -148,7 +144,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 * 🧍‍♂️ **Extra effort**: Requires remembering to sync before sending transactions or interacting with dApps.
 * ❌ **May cause confusion**: New users might not realize data isn’t current.
 
-***
+---
 
 ### Sync Summary
 
@@ -173,7 +169,7 @@ The **History Sync** option controls whether your Eternl wallet **syncs your ful
 
 > When **enabled**, Eternl will fetch your complete historical activity (incoming/outgoing transactions, metadata, etc.).
 
-***
+---
 
 ### 🔍 What is History Sync?
 
@@ -182,7 +178,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 * 🔄 **ON**: Full transaction history is retrieved and displayed.
 * 💤 **OFF**: Only your current balance and available UTxOs are shown — not past transactions.
 
-***
+---
 
 ### ✅ Advantages of History Sync (ON)
 
@@ -190,7 +186,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 * 🔍 Useful for auditing, record keeping, or tax purposes
 * 🧠 Easier to track smart contract interactions or NFT transfers
 
-***
+---
 
 ### ❌ Disadvantages
 
@@ -198,7 +194,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 * 🔋 Higher memory and data usage
 * Not needed for simple transfers or light use
 
-***
+---
 
 ### 📌 Summary Table
 
@@ -209,7 +205,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 
 > 💡 **Tip:** If you just need to send/receive ADA or NFTs, you can leave this **OFF** for quicker syncs.
 
-***
+---
 
 ### 🧭 Recommendation
 
@@ -255,7 +251,7 @@ To get optimal results:
 * You may need to **adjust the threshold value** based on your wallet’s token composition.
 * Different distributions may require different configurations to achieve the desired outcome.
 
-***
+---
 
 > 💡 **Tip:** Token Fragmentation can help avoid failed transactions caused by oversized outputs or complex UTxO sets.
 

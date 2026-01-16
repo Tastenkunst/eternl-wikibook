@@ -17,7 +17,7 @@ Clicking the cogwheel in the upper-right corner opens the settings menu.
 
 <figure><img src="../../../../.gitbook/assets/pictures/settings_menue.png" alt=""><figcaption><p>Settings menu overview</em></p></figcaption></figure>
 
-***
+---
 
 {% hint style="info" %}
 Use the search bar at the top to **quickly find settings**.

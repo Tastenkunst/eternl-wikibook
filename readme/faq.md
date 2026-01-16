@@ -26,7 +26,7 @@ Modern browsers (Chrome, Brave, Edge) periodically perform maintenance to optimi
 
 Software such as **CCleaner** or system "Optimize" apps on mobile devices often identify browser extension data as junk. If these programs are set to run automatically, they may delete your Eternl configuration.
 
-***
+---
 
 ### Why is "Persistent Data" Gone?
 
@@ -38,7 +38,7 @@ In older versions of Eternl, a **Persistent Data** toggle was available in the s
 * **Redundancy:** Modern browsers now handle storage persistence more intelligently based on site usage, making a manual toggle less effective.
 * **Focus on Backups:** The development focus has shifted toward robust **JSON backups**, which are a much more reliable way to ensure you never lose your configuration.
 
-***
+---
 
 ### The Best Protection: .json Backups
 
@@ -49,7 +49,7 @@ Instead of relying on browser persistence, you should regularly export an **Eter
 
     <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p><strong>Note:</strong> A backup file is a convenience tool; it <strong>does not</strong> replace your 15 or 24-word recovery phrase. Always keep your physical seed phrase written down in a secure, offline location.</p></div>
 
-***
+---
 
 ### How to Restore Your Wallets
 
@@ -62,7 +62,7 @@ If your wallets have disappeared and you have your backup file ready, follow the
 5. Click on **Import backup**.
 6. Upload your previously exported `.json` file and enter the **spending password** you used when the file was created.
 
-***
+---
 
 #### Troubleshooting
 

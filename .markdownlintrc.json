@@ -1,0 +1,29 @@
+{
+  "MD024": {
+    "siblings_only": true
+  },
+  "MD033": {
+    "allowed_elements": [
+      "a",
+      "br",
+      "details",
+      "div",
+      "em",
+      "figcaption",
+      "figure",
+      "img",
+      "li",
+      "mark",
+      "p",
+      "strong",
+      "summary",
+      "table",
+      "tbody",
+      "td",
+      "th",
+      "thead",
+      "tr",
+      "ul"
+    ]
+  }
+}
