@@ -60,7 +60,7 @@ Spending passwords can be intercepted by:
 * Keyloggers
 * Phishing websites
 
-#### &#x20;Best Practices:
+#### Best Practices
 
 * Use **antivirus software**
 * Keep your system and browser **up to date**
@@ -70,4 +70,3 @@ Spending passwords can be intercepted by:
 ---
 
 > &#x20;**Tip:** Stay informed. Most losses happen due to small oversights, not sophisticated attacks.
-

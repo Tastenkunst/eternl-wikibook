@@ -20,15 +20,15 @@ Validators on the Cardano network are selected based on the amount of ADA they a
 
 Staking on the Cardano blockchain involves participants (stakeholders) delegating their ADA (Cardano's native cryptocurrency) to a stake pool, which helps secure the network and participate in the Proof-of-Stake (PoS) consensus mechanism. Here's how it generally works:
 
-#### Stakeholders
+### Stakeholders
 
 Anyone who holds ADA cryptocurrency can participate in staking.
 
-#### Stake Pools
+### Stake Pools
 
 Stake pools are entities on the Cardano network that are responsible for processing transactions and creating new blocks. Stake pools consist of a combination of technical infrastructure and the expertise of the pool operator.
 
-#### Delegation
+### Delegation
 
 ADA holders can delegate their ADA to a stake pool of their choice. This process involves selecting a stake pool and delegating their ADA holdings to that pool. Delegation does not involve transferring ownership of ADA; it simply allows the stake pool to include the delegated ADA in its staking power.
 
@@ -100,11 +100,11 @@ In summary, Cardano's staking mechanism offers a more energy-efficient and poten
 
 ### 7. Delegating to a Stake Pool using Eternl wallet\</summary>
 
-#### 7.1 Explore Pools:
+#### 7.1 Explore Pools
 
 In Eternl, view available pools. Select one or delegate to multiple pools by adding more accounts to your wallet.
 
-#### 7.2 Delegation Process:
+#### 7.2 Delegation Process
 
 Navigate to the ‘Staking’ section in Eternl. Choose “Delegate” for the chosen pool. Confirm the transaction with your wallet spending password or hardware device. Verify delegation in “Account” or “Staking” after wallet synchronization.
 

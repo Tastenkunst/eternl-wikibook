@@ -185,7 +185,8 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
   const tokens = md.parse(processed, {});
   const { title, tokens: trimmedTokens } = extractTitle(tokens, fallbackTitle);
   const toc = buildToc(trimmedTokens);
-  const html = md.renderer.render(trimmedTokens, md.options, {});
+  const rawHtml = md.renderer.render(trimmedTokens, md.options, {});
+  const html = replaceIconSvgs(rawHtml);
 
   return {
     routePath: toRoutePath(filePath),
@@ -387,6 +388,35 @@ function buildToc(tokens: Token[]): TocItem[] {
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function replaceIconSvgs(html: string): string {
+  return html.replace(
+    /<img\b([^>]*?)\bsrc="([^"]*\/gitbook-assets\/icons\/[^"]+\.svg)"([^>]*)>/gi,
+    (_match, before, src, after) => {
+      const alt = extractAltText(`${before} ${after}`);
+      if (alt) {
+        return `<span class="gb-icon" style="--gb-icon: url('${src}')" role="img" aria-label="${escapeHtml(
+          alt
+        )}"></span>`;
+      }
+      return `<span class="gb-icon" style="--gb-icon: url('${src}')" aria-hidden="true"></span>`;
+    }
+  );
+}
+
+function extractAltText(attributes: string): string | null {
+  const match = attributes.match(/\balt="([^"]*)"/i);
+  const value = match ? match[1].trim() : '';
+  return value || null;
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 function parseFrontMatter(raw: string): { data: Record<string, unknown>; content: string } {

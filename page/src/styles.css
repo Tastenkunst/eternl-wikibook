@@ -156,7 +156,7 @@
     margin-top: 2.5rem;
     font-size: 1.5rem;
     font-family: 'Fraunces', serif;
-    color: var(--color-ink);
+    color: #dc2626;
   }
 
   .doc-content h3 {
@@ -237,6 +237,16 @@
     border-radius: 0.75rem;
     border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
   }
+  .doc-content .gb-icon {
+    display: inline-block;
+    width: 1.05em;
+    height: 1.05em;
+    vertical-align: -0.15em;
+    background-color: currentColor;
+    -webkit-mask: var(--gb-icon) no-repeat center / contain;
+    mask: var(--gb-icon) no-repeat center / contain;
+    filter: drop-shadow(0 0 0.6px currentColor);
+  }
 
   .doc-content figure {
     margin-top: 1.5rem;
@@ -259,7 +269,7 @@
   .doc-content summary {
     cursor: pointer;
     font-weight: 600;
-    color: var(--color-ink);
+    color: #dc2626;
   }
 
   .gb-hint {

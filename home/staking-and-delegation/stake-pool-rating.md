@@ -11,7 +11,7 @@ The idea behind the staking pools is that the pools process the transactions of 
 
 Let’s first have a look at the parameters displayed in Eternl’s staking section for each pool:
 
-### Saturation
+## Saturation
 
 * **Saturation** refers to the point at which a stake pool is fully utilized.
 
@@ -60,7 +60,6 @@ RoS is often expressed in terms of the `e12` epoch, meaning it is calculated bas
 > * **RoS (e12):** 5%
 >
 > If the pool has reached its saturation point, delegators can expect to earn a RoS of approximately 5% annually on their staked ADA. The pool operator will take 170 ADA as a fixed fee and 2% of the remaining rewards as a variable fee.
-
 > \[!SUCCESS]\
 > By understanding these parameters, users can make informed decisions about which stake pool to delegate their ADA to and what to expect in terms of returns and costs.
 
@@ -106,7 +105,8 @@ Pools not meeting these criteria are moved to the end of the list.
 
 After all calculations, the pools are sorted by their final scores to determine the display order.
 
-> \[!SUCCESS]> \
+> \[!SUCCESS]
+> \
 > This method ensures that highly pledged, well-staked, and efficient single-operator pools with low margins are incentivized and prominently displayed.
 
 This version will display correctly and cleanly on GitBook, preserving your original formatting intent while using GitBook-supported callouts and structure. Let me know if you'd like it styled with custom GitBook blocks or code injections for enhanced visuals.

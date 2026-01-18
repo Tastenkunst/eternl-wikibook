@@ -1,4 +1,11 @@
-<svg width="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="25px">
+<svg fill="currentColor" width="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="25px">
+  <style>
+    svg { color: #1f1a14; }
+    @media (prefers-color-scheme: dark) {
+      svg { color: #f5efe6; }
+    }
+  </style>
+
     <g clip-path="url(#clip0_419_3735)">
       <mask id="path-1-inside-1_419_3735" >
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23.5C18.3513 23.5 23.5 18.3513 23.5 12C23.5 5.64873 18.3513 0.5 12 0.5C5.64873 0.5 0.5 5.64873 0.5 12C0.5 18.3513 5.64873 23.5 12 23.5ZM8.60957 11.2928C8.21898 11.6832 8.21898 12.3163 8.60957 12.7067L11.2929 15.3892C11.6835 15.7796 12.3168 15.7796 12.7074 15.3892L15.3907 12.7067C15.7813 12.3163 15.7813 11.6832 15.3907 11.2928L12.7074 8.61029C12.3168 8.21984 11.6835 8.21984 11.2929 8.61029L8.60957 11.2928Z"/>

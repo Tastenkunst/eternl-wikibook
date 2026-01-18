@@ -14,6 +14,4 @@ It is a series of words that store all the information needed to recover a walle
 
 24 - a Shelley wallet created by e.g. Eternl or Daedalus
 
-[<mark style="color:red;">This phrase must be stored securely, as anyone with access to it can control the associated funds. Seed phrases allow easy backup and restoration of your wallet, reaffirming their role as the critical security layer for your cryptocurrency assets.</mark>](#user-content-fn-1)[^1]
-
-[^1]: 
+[<mark style="color:red;">This phrase must be stored securely, as anyone with access to it can control the associated funds. Seed phrases allow easy backup and restoration of your wallet, reaffirming their role as the critical security layer for your cryptocurrency assets.</mark>]]
