@@ -5,7 +5,7 @@
 <details>
 <summary><span style="color: #ffffff !important;">Account Settings</span></summary>
 
-<figure><img src="../../../../.gitbook/assets/pictures/Account_Settings.png" alt=""><figcaption><p>Wallet Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pictures/Account_Settings.png" alt=""><figcaption><p></p></figcaption></figure>
 
 <details>
 <summary><span style="color: #dc2626;">Overview</span></summary>
@@ -15,11 +15,8 @@
 </details>
 
 <details>
-
 <summary><span style="color: #dc2626;">Account name / handle</span></summary>
-
 <figure><img src="../../../../.gitbook/assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
-
 </details>
 
 <details>
@@ -315,15 +312,144 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 <summary><span style="color: #ffffff !important;">Wallet Settings</span></summary>
 <figure><img src="../../../../.gitbook/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption><p>Wallet Settings</p></figcaption></figure>
-xxx
+<details>
+<summary><span style="color: #dc2626;">Name and Group</span></summary>
+Update your wallet or group name.
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Wallet Spending Password</span></summary>
+Update your wallet spending password.
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Wallet Icon</span></summary>
+Set a custom wallet icon or generate a random wallet icon.
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Export Wallet</span></summary>
+Secure wallet JSON export that lets you import it on other browsers/devices.
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Re-sync wallet</span></summary>
+Force a complete wallet re-synchronization.
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Recovery phrase verificationn</span></summary>
+Verify that you've stored the correct recovery phrase for a wallet.
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Delete Wallet</span></summary>
+Remove the wallet and all its accounts.
+</details>
 </details>
 
 <details>
 <summary><span style="color: #ffffff !important;">App Settings</span></summary>
-xxx
+<figure><img src="../../../../.gitbook/assets/pictures/App_Settings.jpg" alt=""><figcaption><p></p></figcaption></figure>
+<details>
+
+<summary><span style="color: #dc2626;">Pro Mode</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/pro_mode.jpg" alt=""><figcaption><p>Switch between Simple and Pro Mode.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Network</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/network_switcher.png" alt=""><figcaption><p>Select the current active network.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Language</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/language.png" alt=""><figcaption><p>Select your preferred language, formatting region and timezone.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Currency</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/currency.png" alt=""><figcaption><p>Select your preferred currency for conversion.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Decimal Precision</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/precision.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Access PIN Code</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/pin.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Biometrics Auth</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/biometrics.png" alt=""><figcaption><p>Use Face ID (iOS) or native biometric systems for authentication yourself.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Sounds</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/sounds.jpg" alt=""><figcaption><p>Enable or disable sound notifications.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Address Book</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/address_book.jpg" alt=""><figcaption><p>Add, delete, and edit Address Book entries.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">DApp Allow List</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/whitelisted.jpg" alt=""><figcaption><p>The list of websites/dApps that are allowed to connect to this Eternl app.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Export Wallets</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/export_wallets.jpg" alt=""><figcaption><p>This option will export all wallets.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Transactions: Auto-Submit</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/transactions_auto_submit.jpg" alt=""><figcaption><p>Automatically submit transactions when you sign them. Turn this off to let you download the signed transaction data.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Custom Submit Endpoint</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/custom_submit_endpoint.jpg" alt=""><figcaption><p>Send transactions through a custom Cardano node and Cardano Submit API.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Blockchain Explorer</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/blockchain_explorer.jpg" alt=""><figcaption><p>Set your preferred blockchain explorer by type.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">MonsterSwap</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/monitor_swap.jpg" alt=""><figcaption><p>Slippage and Dex settings for MonsterSwap.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Reset Application Cache</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/reset_application_cache.jpg" alt=""><figcaption><p>Remove all cached data to reset the application.</p></figcaption></figure>
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Reset Application</span></summary>
+<figure><img src="../../../../.gitbook/assets/pictures/delete_application.jpg" alt=""><figcaption><p>Delete all wallets and stored data to reset the application.</p></figcaption></figure>
+</details>
+
 </details>
 
 <details>
 <summary><span style="color: #ffffff !important;">App Utilities</span></summary>
-xxx
+<figure><img src="../../../../.gitbook/assets/pictures/App_Utilities.jpg" alt=""><figcaption><p></p></figcaption></figure>
+
+<details>
+<summary><span style="color: #dc2626;">Franken Address Generator</span></summary>
+Create a new address by combining any two addresses
+</details>
+
+<details>
+<summary><span style="color: #dc2626;">Sign Data</span></summary>
+Sign or verify any payload with an address / ID according to the CIP-8 standard.
+</details>
 </details>
