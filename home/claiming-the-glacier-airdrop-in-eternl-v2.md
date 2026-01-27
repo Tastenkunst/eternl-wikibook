@@ -9,7 +9,7 @@ icon: rotate-exclamation
 
 <details>
 
-<summary><strong>PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th)</strong></summary>
+<summary>PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th)</summary>
 
 Welcome to Eternl. In this video, we'll show you how to participate in the **Glacier Airdrop** and claim your $Night token.\
 You have until **October 20th** to do so.
@@ -22,7 +22,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 ---
 
-### Follow these steps to participate:
+## Follow these steps to participate
 
 1. **Open the Claim Website**\
    Navigate to [claim.midnight.gd](https://claim.midnight.gd) and start a new claim.
@@ -32,7 +32,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
    Select **Browser Wallet**, click _Continue_, then choose **Eternl**.\
    A pop-up window will open to connect the selected account in your Eternl wallet to the Midnight website.\
    → Click **Grant Access**.
-4.  **Eligibility Check**\
+4. **Eligibility Check**\
     If the chosen account is eligible, you will see the amount of Knight token you can receive.
 
     > To qualify, you must have held at least **$100 worth of ADA on the snapshot day (June 11th, 2025)**.\
@@ -73,14 +73,13 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 <details>
 
-<summary><strong>PHASE 2: SCAVENGER MINE (CLOSED! Oct 29th to Nov 19th)**</strong></summary>
+<summary>PHASE 2: SCAVENGER MINE (CLOSED! Oct 29th to Nov 19th)</summary>
 
 Missed the Glacier Drop window? Want to play a bigger part in the future of Midnight? **Scavenger Mine is here and everyone can join!**
 
 This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to everyone, requires **no prerequisites or eligibility criteria**, and specialized hardware is **not required**.
 
 > **Phase Dates**: The Scavenger Mine is live from **October 29th until November 19th (21 days total)**. {.is-info}
-
 > **What You Do**: You participate by having your device automatically solve cryptographic challenges in the background to earn an allocation of $NIGHT tokens. {.is-info}
 
 **![Settings](../../.gitbook/assets/icons/IconSettings.svg) How to Participate and Start Mining:**
@@ -100,7 +99,7 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 
 ---
 
-> How to particpate in phase 2 - Scavenger Mine by entering an unused address manually: [Link](https://wiki.eternl.io/en/2_user-guide/scavenger) {.is-info}
+> How to particpate in phase 2 - Scavenger Mine by entering an unused address manually: [Scavenger Mine guide](https://wiki.eternl.io/en/2_user-guide/scavenger) {.is-info}
 
 ---
 
@@ -114,9 +113,9 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 
 <details open>
 
-<summary><strong>PHASE 3: REDEEM (OPEN until 05. December 2026)</strong></summary>
+<summary>PHASE 3: REDEEM (OPEN until 05. December 2026)</summary>
 
-#### Redemption period (360 days)
+### Redemption period (360 days)
 
 Wait for your allocation(s) to thaw Allocations must thaw before they can be redeemed.
 
