@@ -19,9 +19,9 @@
 Thanks to @stakepool_ for reporting it.
 
 Availability
- ✓  available - eternl.io
- ✓  available - beta.eternl.io
- ✓  available - Eternl Extension
+ ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
+ ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+ ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
 not submitted - Eternl Beta Extension
     pending   - Android app
     pending   - iOS app
@@ -46,9 +46,9 @@ not submitted - Eternl Beta Extension
 
 ## Availability
 
- ✓  available - eternl.io
- ✓  available - beta.eternl.io
- ✓  available - Eternl Extension
+ ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
+ ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+ ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
 not submitted - Eternl Beta Extension
 
 + submitted - Android app
@@ -79,7 +79,7 @@ not submitted - Eternl Beta Extension
 
 ### Availability
 
-✓ available - eternl.io ✓ available - beta.eternl.io ✓ available - Eternl Extension ✓ available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
+![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
 
 FYI: Mobile apps won't be updated until next week or next release
 
@@ -114,7 +114,7 @@ FYI: Mobile apps won't be updated until next week or next release
 
 #### Availability
 
-✓ available - eternl.io ✓ available - beta.eternl.io ✓ available - Eternl Extension ✓ available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
+![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
 
 ## v2.0.12.5
 

@@ -4,7 +4,7 @@
 
 Eternl is available across multiple platforms, offering flexibility for different use cases and user preferences.
 
-#### 🖥️ Web Wallet
+#### ![Web Wallet](../../.gitbook/assets/icons/IconGlobe.svg) Web Wallet
 
 * Accessible at [eternl.io](https://eternl.io)
 * Works in any modern browser (desktop & mobile)
@@ -12,12 +12,12 @@ Eternl is available across multiple platforms, offering flexibility for differen
 
 > On supported browsers, look for the **install option** in the address bar to add Eternl as a standalone app.
 
-#### 🧩 Browser Extension
+#### ![Browser Extension](../../.gitbook/assets/icons/IconPlug.svg) Browser Extension
 
 * Available for **Chrome**, **Brave**, and other Chromium-based browsers
 * Lightweight and ideal for seamless dApp integration
 
-#### 📱 Mobile App _(Beta / Limited)_
+#### ![Mobile App](../../.gitbook/assets/icons/IconApplication.svg) Mobile App _(Beta / Limited)_
 
 * Android version available via direct APK or third-party stores
 * iOS is not officially supported (yet)

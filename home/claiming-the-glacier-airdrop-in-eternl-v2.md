@@ -15,7 +15,7 @@ Welcome to Eternl. In this video, we'll show you how to participate in the **Gla
 You have until **October 20th** to do so.
 
 For the easiest experience, use the **Eternl Chrome browser extension**.\
-👉 Check out our tutorials on:
+![Pointing hand](../../.gitbook/assets/icons/IconFingerTouch03.svg) Check out our tutorials on:
 
 * [How to install the Chrome Browser Eternl extension?](https://www.youtube.com/watch?v=TuIYDx2_0nA)
 * [How to Import Multiple Wallets in Eternl v2?](https://www.youtube.com/watch?v=fXevC1U2OFg)
@@ -50,8 +50,8 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 ---
 
-✅ Your claim is now successfully completed.\
-📥 It is recommended to download your **claim summary** for your records.
+![Checkmark](../../.gitbook/assets/icons/IconCheckmark.svg) Your claim is now successfully completed.\
+![Download](../../.gitbook/assets/icons/IconDownload.svg) It is recommended to download your **claim summary** for your records.
 
 > If you want to participate with multiple accounts:\
 > Simply start a **new claim** for each one.\
@@ -59,11 +59,11 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 ---
 
-🔗 Try out this feature and many more at [eternl.io](https://eternl.io).
+![Link](../../.gitbook/assets/icons/IconLinkSquare01.svg) Try out this feature and many more at [eternl.io](https://eternl.io).
 
 ---
 
-> ℹ️ In Eternl v2.0.11.2 the process was updated as described above.\
+> ![Info](../../.gitbook/assets/icons/IconInfo.svg) In Eternl v2.0.11.2 the process was updated as described above.\
 > The previous method (manually disabling _Single Address Mode_) is no longer necessary.\
 > {.is-warning}
 
@@ -83,7 +83,7 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 
 > **What You Do**: You participate by having your device automatically solve cryptographic challenges in the background to earn an allocation of $NIGHT tokens. {.is-info}
 
-**⚙️ How to Participate and Start Mining:**
+**![Settings](../../.gitbook/assets/icons/IconSettings.svg) How to Participate and Start Mining:**
 
 1. **Go to the Website**: Navigate to the claim portal at `claim.midnight.gd` and select the **Scavenger Mine** tab.
 2. **Choose a Destination Address**:
@@ -92,7 +92,7 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 4. **Sign Message**: Sign the unique claim message. This registers your address and binds it to your current browser session.
 5. **Click Start Session**: Click **Start session** to begin. Your Scavenger Mine instance will start looking for solutions to the most current challenge for as long as your device/browser is running (or until the end of the claim phase).
 
-**📊 Scavenger Mine Mechanics (How You Earn):**
+**![Chart](../../.gitbook/assets/icons/IconChart.svg) Scavenger Mine Mechanics (How You Earn):**
 
 * **24h Claim Cycles**: The event is structured into **21 distinct claim cycles**, each lasting 24 hours. The total token pool for this phase is divided equally across these cycles.
 * **Solving Challenges**: Your device automatically accepts, solves, and submits cryptographic challenges in the background. The system issues one new challenge per hour, totaling 24 challenges per cycle.

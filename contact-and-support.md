@@ -10,4 +10,4 @@ If you need help, have questions, or want to get in touch with us, you can reach
 
 ---
 
-💡 **Tip:** Discord is the best place to get fast support since we use a dedicated ticket system.
+![Tip](../home/.gitbook/assets/icons/IconInfo.svg) **Tip:** Discord is the best place to get fast support since we use a dedicated ticket system.
