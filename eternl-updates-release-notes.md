@@ -6,7 +6,6 @@
 ## v2.0.16.0
 
 > Released 16.12.2025
-{.is-info}
 
 ## Changed
 
@@ -33,7 +32,6 @@ not submitted - Eternl Beta Extension
 ## v2.0.15.0
 
 > Released 14.12.2025
-{.is-info}
 
 ## Fixed
 
@@ -58,7 +56,7 @@ not submitted - Eternl Beta Extension
 
 ## v2.0.14.1
 
-> Released 29.10.2025 {.is-info}
+> Released 29.10.2025
 
 ### MonsterSwap
 
@@ -85,7 +83,7 @@ FYI: Mobile apps won't be updated until next week or next release
 
 ## v2.0.13.4
 
-> Released 15.10.2025 {.is-info}
+> Released 15.10.2025
 
 ### Added
 
@@ -118,9 +116,7 @@ FYI: Mobile apps won't be updated until next week or next release
 
 ## v2.0.12.5
 
-{% hint style="info" %}
 released 04.09.2025
-{% endhint %}
 
 ### Midnight Glacier Drop
 
@@ -163,9 +159,7 @@ Availability eternl.io: not submitted beta.eternl.io: available Eternl extension
 
 ## v2.0.11.2
 
-{% hint style="info" %}
 released 06.08.2025
-{% endhint %}
 
 ### Midnight Glacier Drop
 
@@ -210,9 +204,7 @@ eternl.io: - not submitted beta.eternl.io: - available Eternl extension: - not s
 
 ## v2.0.10.5
 
-{% hint style="info" %}
 Released 05.08.2025
-{% endhint %}
 
 ### Governance
 
@@ -232,9 +224,7 @@ Simple payment requests, POO claims, advanced payment requests (prefilling the S
 
 + Added support for the new Vector testnet.
 
-{% hint style="info" %}
 <mark style="color:$info;">Please note: AF uses the same address prefix on Prime mainnet and Vector testnet (same as Cardano mainnet).</mark>
-{% endhint %}
 
 ### Added
 
@@ -282,9 +272,7 @@ Simple payment requests, POO claims, advanced payment requests (prefilling the S
 
 Released 26.06.2025&#x20;
 
-{% hint style="info" %}
 Eternl Beta published to Chrome Webstore - beta.eternl.io is up-to-date
-{% endhint %}
 
 SidePanels have too many issues, we are going back to popups for dapp interactions.
 
@@ -323,8 +311,7 @@ Eternl Update v2.0.9 beta
 
 ## v2.0.8
 
-> Released 30.04.2025\
-> {.is-info}
+> Released 30.04.2025
 
 ### Added
 
@@ -355,8 +342,7 @@ Eternl Update v2.0.8
 
 ## v2.0.7
 
-> Released 17.04.2025\
-> {.is-info}
+> Released 17.04.2025
 
 ### Added
 
@@ -375,8 +361,7 @@ Eternl Update v2.0.7
 
 ## v2.0.6
 
-> Released 12.04.2025\
-> {.is-info}
+> Released 12.04.2025
 
 ### Added
 
@@ -395,10 +380,8 @@ Eternl Update v2.0.6
 
 ## v2.0.5
 
-> Eternl v2 is here!\
-> {.is-success}
-> Released 08.04.2025\
-> {.is-info}
+> Eternl v2 is here!
+> Released 08.04.2025
 
 ### Highlights
 
@@ -421,8 +404,7 @@ Eternl Update v2.0.5
 
 ## v1.12.20.1
 
-> Released 18.12.2024\
-> {.is-info}
+> Released 18.12.2024
 
 ### Changed
 
@@ -452,8 +434,7 @@ Eternl Update v .1.12.20.1
 
 ## v1.12.16
 
-> Released 15.10.2024\
-> {.is-info}
+> Released 15.10.2024
 
 (Available as extension and on eternl.io)
 
@@ -470,8 +451,7 @@ Eternl Update v .1.12.16
 
 ## v1.12.15
 
-> Released 10.09.2024\
-> {.is-info}
+> Released 10.09.2024
 
 (all apps awaiting approval)
 
@@ -483,8 +463,7 @@ Eternl Update v .1.12.15
 
 ## v1.12.14
 
-> Released 04.09.2024\
-> {.is-info}
+> Released 04.09.2024
 
 ### Hotfix
 
@@ -494,8 +473,7 @@ Eternl Update v .1.12.14
 
 ## v1.12.13.4
 
-> Released 04.09.2024\
-> {.is-info}
+> Released 04.09.2024
 
 ### Fixed
 
@@ -520,8 +498,7 @@ Eternl Update v .1.12.13.4
 
 ## v1.12.12
 
-> Released 25.08.2024\
-> {.is-info}
+> Released 25.08.2024
 
 (currently only Eternl Beta and beta.eternl.io)
 
@@ -543,8 +520,7 @@ Eternl Update v .1.12.12
 
 ## v1.12.9.4
 
-> Released 08.08.2024\
-> {.is-info}
+> Released 08.08.2024
 
 This release will also be available on iOS and Android.
 
@@ -558,8 +534,7 @@ Eternl Update v .1.12.9.4
 
 ## v1.12.8.7
 
-> Released 06.08.2024\
-> {.is-info}
+> Released 06.08.2024
 
 This release will also be available on iOS and Android.
 
@@ -610,8 +585,7 @@ Eternl Update v .1.12.8.7
 
 ## v1.12.6
 
-> Released 26.06.2024\
-> {.is-info}
+> Released 26.06.2024
 
 ### Added
 
@@ -635,8 +609,7 @@ Eternl Update v .1.12.6
 
 ## v1.12.5
 
-> Released 23.05.2024\
-> {.is-info}
+> Released 23.05.2024
 
 ### Added
 
@@ -663,8 +636,7 @@ Eternl Update v .1.12.5
 
 ## v1.12.4
 
-> Released 15.05.2024\
-> {.is-info}
+> Released 15.05.2024
 
 ### Fixed
 
@@ -677,8 +649,7 @@ Eternl Update v .1.12.4
 
 ## v1.12.3.17
 
-> Released 05.05.2024\
-> {.is-info}
+> Released 05.05.2024
 
 ### Improved
 
@@ -709,8 +680,7 @@ Eternl Update v .1.12.3.17
 
 ## v1.12.3.16 Beta
 
-> Released 24.04.2024\
-> {.is-info}
+> Released 24.04.2024
 
 ### Currently live on
 
@@ -745,8 +715,7 @@ Eternl Update v .1.12.3.16
 
 ## v1.12.2
 
-> Released 27.03.2024\
-> {.is-info}
+> Released 27.03.2024
 
 ### Fixed
 
@@ -760,8 +729,7 @@ Eternl Update v .1.12.2
 
 ## v1.12.1
 
-> Released 25.03.2024\
-> {.is-info}
+> Released 25.03.2024
 
 ### Changes
 
@@ -782,8 +750,7 @@ Eternl Update v .1.12.1
 
 ## v1.12.0
 
-> Released 20.03.2024\
-> {.is-info}
+> Released 20.03.2024
 
 + ### Currently no new iOS/Android app release
 
@@ -799,8 +766,7 @@ And many more internal code changes in preparation for Eternl v2.Eternl Update v
 
 ## v1.12.0 Beta
 
-> Released 10.03.2024\
-> {.is-info}
+> Released 10.03.2024
 
 Today, we introduce Eternl Beta, a new browser extension used for testing upcoming features and changes and collecting feedback.
 
@@ -817,8 +783,7 @@ We invite all dApp developers and interested Cardano users to assist in testing 
 
 ## v1.11.18
 
-> Released 23.12.2023\
-> {.is-info}
+> Released 23.12.2023
 
 ### Changes
 
@@ -832,8 +797,7 @@ Eternl Update v .1.11.18
 
 ## v1.11.17
 
-> Released 05.12.2023\
-> {.is-info}
+> Released 05.12.2023
 
 ### Changes
 
@@ -851,8 +815,7 @@ Eternl Update v .1.11.17
 
 ## v1.11.15 / 16
 
-> Released 29.11.2023\
-> {.is-info}
+> Released 29.11.2023
 
 ### Keystone Hardware Wallet Integration
 
@@ -877,8 +840,7 @@ Dexhunter has been integrated into Eternl's in-wallet swap feature, complementin
 
 + Fixed (.16): Accounts with over 5000 transaction can now synchronize again.
 
-> Note: A complete wallet resync might be necessary (refer to account settings).\
-> {.is-info}
+> Note: A complete wallet resync might be necessary (refer to account settings).
 
 + Fixed string sorting, now utilizing en-US for Nordic languages.
 + Various improvements to Cardano Connect functionality.
@@ -892,8 +854,7 @@ Eternl Update v .1.11.16
 
 ## v1.11.13
 
-> Released 25.08.2023\
-> {.is-info}
+> Released 25.08.2023
 
 ### Changes
 
@@ -907,8 +868,7 @@ Eternl Update v .1.11.13
 
 ## v1.11.12
 
-> Released 23.08.2023\
-> {.is-info}
+> Released 23.08.2023
 
 ### Fixed issues
 
@@ -918,8 +878,7 @@ Eternl Update v .1.11.12
 
 ## v1.11.11
 
-> Released 22.08.2023\
-> {.is-info}
+> Released 22.08.2023
 
 ### Fixed issues
 
@@ -929,8 +888,7 @@ Eternl Update v .1.11.11
 
 ## v1.11.10
 
-> Released 21.08.2023\
-> {.is-info}
+> Released 21.08.2023
 
 ### Changes/Additions
 
@@ -948,8 +906,7 @@ Eternl Update v.1.11.10
 
 ## v1.11.9
 
-> Released 17.08.2023\
-> {.is-info}
+> Released 17.08.2023
 
 (Available on eternl.io and sumitted to the Webstore, awaiting approval by Google)
 
@@ -968,8 +925,7 @@ Eternl Update v.1.11.9
 
 ## v1.11.8
 
-> Released 08.08.2023\
-> {.is-info}
+> Released 08.08.2023
 
 (Android awaiting approval by Google)
 
@@ -983,8 +939,7 @@ Eternl Update v.1.11.8
 
 ## v1.11.7
 
-> Released 07.08.2023\
-> {.is-info}
+> Released 07.08.2023
 
 ### Changes/Additions
 
@@ -999,8 +954,7 @@ Eternl Update v.1.11.7
 
 ## v1.11.6
 
-> Released 03.08.2023\
-> {.is-info}
+> Released 03.08.2023
 
 (Work in progress, just documenting changes)
 
@@ -1015,8 +969,7 @@ Eternl Update v.1.11.6
 
 ## v1.11.5
 
-> Released 03.08.2023\
-> {.is-info}
+> Released 03.08.2023
 
 (Work in progress, just documenting changes)
 
@@ -1033,8 +986,7 @@ Eternl Update v.1.11.5
 
 ## v1.11.4
 
-> Released 02.08.2023\
-> {.is-info}
+> Released 02.08.2023
 
 ### Changes
 
@@ -1051,8 +1003,7 @@ Eternl Update v.1.11.4
 
 ## v1.11.3
 
-> Released 01.08.2023\
-> {.is-info}
+> Released 01.08.2023
 
 ### Fixed issues
 
@@ -1064,8 +1015,7 @@ Eternl Update v.1.11.3
 
 ## v1.11.2
 
-> Released 31.07.2023\
-> {.is-info}
+> Released 31.07.2023
 
 ### Fixed issues
 
@@ -1076,8 +1026,7 @@ Eternl Update v.1.11.2
 
 ## v1.11.1
 
-> Released 29.07.2023\
-> {.is-info}
+> Released 29.07.2023
 
 ### Fixed issues
 
@@ -1090,8 +1039,7 @@ Eternl Update v.1.11.1
 
 ## v1.11.0
 
-> Released 29.07.2023\
-> {.is-info}
+> Released 29.07.2023
 
 Currently in review: Browser extension, iOS app, Android app
 
@@ -1100,7 +1048,7 @@ Now that this milestone is reached, we can focus on the new design of v2.
 
 ### Changes/Additions
 
-Smart Chaining!\
+Smart Chaining!
 Any transaction submitted through Eternl will now be considered when signing additional transactions, allowing for chaining of multiple transactions at the same time. Please note: This only works when they're not (only) submitted through a DApps own endpoint.
 
 Connect everything!\
@@ -1138,8 +1086,7 @@ Eternl Update v.1.11.0
 
 ## v1.10.10
 
-> Released 07.06.2023\
-> {.is-info}
+> Released 07.06.2023
 
 ### Bugfixes
 
@@ -1150,8 +1097,7 @@ Eternl Update v.1.10.10
 
 ## v1.10.9
 
-> Released 07.06.2023\
-> {.is-info}
+> Released 07.06.2023
 
 ### Bugfixes
 
@@ -1167,8 +1113,7 @@ Eternl Update v.1.10.9
 
 ## v1.10.8
 
-> Released 06.06.2023\
-> {.is-info}
+> Released 06.06.2023
 
 ### Changes/Additions
 
@@ -1188,8 +1133,7 @@ Eternl Update v.1.10.8
 
 ## v1.10.7
 
-> Released 17.03.2023\
-> {.is-info}
+> Released 17.03.2023
 
 ### Changes/Additions
 
@@ -1211,8 +1155,7 @@ Eternl Update v.1.10.7
 
 ## v1.10.6
 
-> Released 27.02.2023\
-> {.is-info}
+> Released 27.02.2023
 
 ### Changes/Additions
 
@@ -1227,8 +1170,7 @@ Eternl Update v.1.10.6
 
 ## v1.10.5
 
-> Released 26.02.2023\
-> {.is-info}
+> Released 26.02.2023
 
 ### Changes/Additions
 
@@ -1247,8 +1189,7 @@ Eternl Update v.1.10.5
 
 ## v1.10.4
 
-> Released 17.02.2023\
-> {.is-info}
+> Released 17.02.2023
 
 ### Bugfixes
 
@@ -1262,8 +1203,7 @@ Eternl Update v.1.10.4
 
 ## v1.10.3
 
-> Released 16.02.2023\
-> {.is-info}
+> Released 16.02.2023
 
 ### Changes/Additions
 
@@ -1285,8 +1225,7 @@ Eternl Update v.1.10.3
 
 ## v1.10.2
 
-> Released 25.01.2023\
-> {.is-info}
+> Released 25.01.2023
 
 ### Changes/Additions
 
@@ -1308,8 +1247,7 @@ Eternl Update v.1.10.2
 
 ## v1.10.1
 
-> Released 02.01.2023\
-> {.is-info}
+> Released 02.01.2023
 
 ### Bugfixes
 
@@ -1328,8 +1266,7 @@ Eternl Update v.1.10.1
 
 ## v1.10.0
 
-> Released 31.12.2022\
-> {.is-info}
+> Released 31.12.2022
 
 ### Important
 
@@ -1361,8 +1298,7 @@ Eternl Update v.1.10.0
 
 ## v1.9.10
 
-> Released 06.12.2022\
-> {.is-info}
+> Released 06.12.2022
 
 ### Bugfixes
 
@@ -1376,8 +1312,7 @@ Eternl Update v.1.9.10
 
 ## v1.9.9
 
-> Released 04.12.2022\
-> {.is-info}
+> Released 04.12.2022
 
 ### Changes/Additions
 
@@ -1400,8 +1335,7 @@ Eternl Update v.1.9.9
 
 ## v1.9.8
 
-> Released 27.11.2022\
-> {.is-info}
+> Released 27.11.2022
 
 ### Important
 
@@ -1430,8 +1364,7 @@ Eternl Update v.1.9.8
 
 ## v1.9.7
 
-> Released 06.12.2022\
-> {.is-info}
+> Released 06.12.2022
 
 ### Bugfixes
 
@@ -1447,8 +1380,7 @@ Eternl Update v.1.9.7
 
 ## v1.9.6
 
-> Released 03.11.2022\
-> {.is-info}
+> Released 03.11.2022
 
 ### Changes/Additions
 
@@ -1477,8 +1409,7 @@ Eternl Update v.1.9.6
 
 ## v1.9.5
 
-> Released 27.09.2022\
-> {.is-info}
+> Released 27.09.2022
 
 ### Changes/Additions
 
@@ -1498,8 +1429,7 @@ Eternl Update v.1.9.5
 
 ## v1.9.4
 
-> Released 27.09.2022\
-> {.is-info}
+> Released 27.09.2022
 
 ### Changes/Additions
 
@@ -1529,8 +1459,7 @@ Eternl Update v.1.9.4
 
 ## v1.9.3
 
-> Released 16.09.2022\
-> {.is-info}
+> Released 16.09.2022
 
 ### Bugfixes
 
@@ -1545,8 +1474,7 @@ Eternl Update v.1.9.3
 
 ## v1.9.2
 
-> Released 15.09.2022\
-> {.is-info}
+> Released 15.09.2022
 
 ### Important
 
@@ -1587,8 +1515,7 @@ Eternl Update v.1.9.2
 
 ## v1.9.1
 
-> Released 24.08.2022\
-> {.is-info}
+> Released 24.08.2022
 
 ### Bugfixes
 
@@ -1603,8 +1530,7 @@ Eternl Update v.1.9.1
 
 ## v1.9.0
 
-> Released 22.08.2022\
-> {.is-info}
+> Released 22.08.2022
 
 ### Important
 
@@ -1631,8 +1557,7 @@ Eternl Update v.1.9.0
 
 ## v1.8.3
 
-> Released 28.07.2022\
-> {.is-info}
+> Released 28.07.2022
 
 ### Important
 
@@ -1669,8 +1594,7 @@ Eternl Update v.1.8.3
 
 ## v1.8.2
 
-> Released 20.07.2022\
-> {.is-info}
+> Released 20.07.2022
 
 ### Bugfixes
 
@@ -1684,8 +1608,7 @@ Eternl Update v.1.8.2
 
 ## v1.8.1
 
-> Released 20.07.2022\
-> {.is-info}
+> Released 20.07.2022
 
 ### “Babbage”
 
@@ -1719,8 +1642,7 @@ Eternl Update v.1.8.1
 
 ## v1.7.8
 
-> Released 14.06.2022\
-> {.is-info}
+> Released 14.06.2022
 
 ### Fixes
 
@@ -1737,8 +1659,7 @@ Eternl Update v.1.7.8
 
 ## v1.7.7
 
-> Released 13.06.2022\
-> {.is-info}
+> Released 13.06.2022
 
 ### Highlights
 

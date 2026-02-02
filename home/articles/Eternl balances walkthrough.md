@@ -5,9 +5,11 @@ In Cardano a wallet has 2 types of balances, the balance it can spend on payment
 
 In Eternl we show a breakdown of your funds divided into different categories. It does so for every single account and wallet and those balances are shown on the summary page. Below you can see an example of what this looks like, depending on the structure of the wallet, different balances are shown as not every property is available for every wallet. 
 
-![eternl_balances.png](/announcements/eternl_balances.png)
+<figure><img src="../../../../.gitbook/assets/pictures/eternl_balances.png" alt=""><figcaption></figcaption></figure>
+</details>
 
 ## Total Funds
+
 The first balance shown is the total sum of your owned funds. This will contain both spendable (albeit potentially locked up by tokens) ADA and your staking rewards.
 - **Balance:** Your spendable in-wallet ADA
 - **Rewards:** Staking rewards that are yet to be claimed to your wallet
