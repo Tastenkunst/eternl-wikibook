@@ -5,7 +5,7 @@
 
 ## v2.0.16.0
 
-> Released 16.12.2025
+released 16.12.2025
 
 ## Changed
 
@@ -17,21 +17,20 @@
 
 Thanks to @stakepool_ for reporting it.
 
-Availability
- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-not submitted - Eternl Beta Extension
-    pending   - Android app
-    pending   - iOS app
+### Availability
 
-[Eternl Update v2.0.16.0](/en/updates/2-0-16-0)
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Beta Extension
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) pending - Android app
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) pending - iOS app
 
 ---
 
 ## v2.0.15.0
 
-> Released 14.12.2025
+released 14.12.2025
 
 ## Fixed
 
@@ -44,19 +43,16 @@ not submitted - Eternl Beta Extension
 
 ## Availability
 
- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-not submitted - Eternl Beta Extension
-
-+ submitted - Android app
-+ submitted - iOS app
-
-[Eternl Update v2.0.15.0](/en/updates/2-0-15-0)
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Beta Extension
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) submitted - Android app
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) submitted - iOS app
 
 ## v2.0.14.1
 
-> Released 29.10.2025
+released 29.10.2025
 
 ### MonsterSwap
 
@@ -77,13 +73,18 @@ not submitted - Eternl Beta Extension
 
 ### Availability
 
-![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
 
 FYI: Mobile apps won't be updated until next week or next release
 
 ## v2.0.13.4
 
-> Released 15.10.2025
+released 15.10.2025
 
 ### Added
 
@@ -112,7 +113,12 @@ FYI: Mobile apps won't be updated until next week or next release
 
 #### Availability
 
-![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension not submitted - Android app not submitted - iOS app
+- ![Check mark icon: available](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
+- ![Check mark icon: available](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+- ![Check mark icon: available](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
+- ![Check mark icon: available](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
+- ![Cross or unavailable icon: not submitted](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
+- ![Cross or unavailable icon: not submitted](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
 
 ## v2.0.12.5
 
@@ -155,7 +161,14 @@ released 04.09.2025
 + Some tx building issues after removing previously added assets.
 + DRep card (with no available data) in tx viewer.
 
-Availability eternl.io: not submitted beta.eternl.io: available Eternl extension: not submitted Eternl Beta ext: awaiting approval Android: not submitted iOS: not submitted
+### Availability
+
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) eternl.io: not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: awaiting approval
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Android: not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) iOS: not submitted
 
 ## v2.0.11.2
 
@@ -200,7 +213,12 @@ released 06.08.2025
 
 ### Availability
 
-eternl.io: - not submitted beta.eternl.io: - available Eternl extension: - not submitted Eternl Beta ext: - awaiting approval Android: - not submitted iOS: - not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) eternl.io: - not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: - not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: - awaiting approval
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Android: - not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) iOS: - not submitted
 
 ## v2.0.10.5
 
@@ -261,12 +279,12 @@ Simple payment requests, POO claims, advanced payment requests (prefilling the S
 
 ### Availability
 
-+ eternl.io: available
-+ beta.eternl.io: available
-+ Eternl extension: submitted, awaiting approval
-+ Eternl Beta ext: not submitted
-+ Android: not submitted
-+ iOS: not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) eternl.io: available
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) beta.eternl.io: available
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: submitted, awaiting approval
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) Android: not submitted
+- ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) iOS: not submitted
 
 ## v2.0.9
 
@@ -311,7 +329,7 @@ Eternl Update v2.0.9 beta
 
 ## v2.0.8
 
-> Released 30.04.2025
+released 30.04.2025
 
 ### Added
 
@@ -342,7 +360,7 @@ Eternl Update v2.0.8
 
 ## v2.0.7
 
-> Released 17.04.2025
+released 17.04.2025
 
 ### Added
 
@@ -361,7 +379,7 @@ Eternl Update v2.0.7
 
 ## v2.0.6
 
-> Released 12.04.2025
+released 12.04.2025
 
 ### Added
 
@@ -381,7 +399,7 @@ Eternl Update v2.0.6
 ## v2.0.5
 
 > Eternl v2 is here!
-> Released 08.04.2025
+released 08.04.2025
 
 ### Highlights
 
@@ -404,7 +422,7 @@ Eternl Update v2.0.5
 
 ## v1.12.20.1
 
-> Released 18.12.2024
+released 18.12.2024
 
 ### Changed
 
@@ -434,7 +452,7 @@ Eternl Update v .1.12.20.1
 
 ## v1.12.16
 
-> Released 15.10.2024
+released 15.10.2024
 
 (Available as extension and on eternl.io)
 
@@ -451,7 +469,7 @@ Eternl Update v .1.12.16
 
 ## v1.12.15
 
-> Released 10.09.2024
+released 10.09.2024
 
 (all apps awaiting approval)
 
@@ -463,7 +481,7 @@ Eternl Update v .1.12.15
 
 ## v1.12.14
 
-> Released 04.09.2024
+released 04.09.2024
 
 ### Hotfix
 
@@ -473,7 +491,7 @@ Eternl Update v .1.12.14
 
 ## v1.12.13.4
 
-> Released 04.09.2024
+released 04.09.2024
 
 ### Fixed
 
@@ -498,7 +516,7 @@ Eternl Update v .1.12.13.4
 
 ## v1.12.12
 
-> Released 25.08.2024
+released 25.08.2024
 
 (currently only Eternl Beta and beta.eternl.io)
 
@@ -520,7 +538,7 @@ Eternl Update v .1.12.12
 
 ## v1.12.9.4
 
-> Released 08.08.2024
+released 08.08.2024
 
 This release will also be available on iOS and Android.
 
@@ -534,7 +552,7 @@ Eternl Update v .1.12.9.4
 
 ## v1.12.8.7
 
-> Released 06.08.2024
+released 06.08.2024
 
 This release will also be available on iOS and Android.
 
@@ -585,7 +603,7 @@ Eternl Update v .1.12.8.7
 
 ## v1.12.6
 
-> Released 26.06.2024
+released 26.06.2024
 
 ### Added
 
@@ -609,7 +627,7 @@ Eternl Update v .1.12.6
 
 ## v1.12.5
 
-> Released 23.05.2024
+released 23.05.2024
 
 ### Added
 
@@ -636,7 +654,7 @@ Eternl Update v .1.12.5
 
 ## v1.12.4
 
-> Released 15.05.2024
+released 15.05.2024
 
 ### Fixed
 
@@ -649,7 +667,7 @@ Eternl Update v .1.12.4
 
 ## v1.12.3.17
 
-> Released 05.05.2024
+released 05.05.2024
 
 ### Improved
 
@@ -680,7 +698,7 @@ Eternl Update v .1.12.3.17
 
 ## v1.12.3.16 Beta
 
-> Released 24.04.2024
+released 24.04.2024
 
 ### Currently live on
 
@@ -715,7 +733,7 @@ Eternl Update v .1.12.3.16
 
 ## v1.12.2
 
-> Released 27.03.2024
+released 27.03.2024
 
 ### Fixed
 
@@ -729,7 +747,7 @@ Eternl Update v .1.12.2
 
 ## v1.12.1
 
-> Released 25.03.2024
+released 25.03.2024
 
 ### Changes
 
@@ -750,7 +768,7 @@ Eternl Update v .1.12.1
 
 ## v1.12.0
 
-> Released 20.03.2024
+released 20.03.2024
 
 + ### Currently no new iOS/Android app release
 
@@ -766,7 +784,7 @@ And many more internal code changes in preparation for Eternl v2.Eternl Update v
 
 ## v1.12.0 Beta
 
-> Released 10.03.2024
+released 10.03.2024
 
 Today, we introduce Eternl Beta, a new browser extension used for testing upcoming features and changes and collecting feedback.
 
@@ -783,7 +801,7 @@ We invite all dApp developers and interested Cardano users to assist in testing 
 
 ## v1.11.18
 
-> Released 23.12.2023
+released 23.12.2023
 
 ### Changes
 
@@ -797,7 +815,7 @@ Eternl Update v .1.11.18
 
 ## v1.11.17
 
-> Released 05.12.2023
+released 05.12.2023
 
 ### Changes
 
@@ -815,7 +833,7 @@ Eternl Update v .1.11.17
 
 ## v1.11.15 / 16
 
-> Released 29.11.2023
+released 29.11.2023
 
 ### Keystone Hardware Wallet Integration
 
@@ -854,7 +872,7 @@ Eternl Update v .1.11.16
 
 ## v1.11.13
 
-> Released 25.08.2023
+released 25.08.2023
 
 ### Changes
 
@@ -868,7 +886,7 @@ Eternl Update v .1.11.13
 
 ## v1.11.12
 
-> Released 23.08.2023
+released 23.08.2023
 
 ### Fixed issues
 
@@ -878,7 +896,7 @@ Eternl Update v .1.11.12
 
 ## v1.11.11
 
-> Released 22.08.2023
+released 22.08.2023
 
 ### Fixed issues
 
@@ -888,7 +906,7 @@ Eternl Update v .1.11.11
 
 ## v1.11.10
 
-> Released 21.08.2023
+released 21.08.2023
 
 ### Changes/Additions
 
@@ -906,7 +924,7 @@ Eternl Update v.1.11.10
 
 ## v1.11.9
 
-> Released 17.08.2023
+released 17.08.2023
 
 (Available on eternl.io and sumitted to the Webstore, awaiting approval by Google)
 
@@ -925,7 +943,7 @@ Eternl Update v.1.11.9
 
 ## v1.11.8
 
-> Released 08.08.2023
+released 08.08.2023
 
 (Android awaiting approval by Google)
 
@@ -939,7 +957,7 @@ Eternl Update v.1.11.8
 
 ## v1.11.7
 
-> Released 07.08.2023
+released 07.08.2023
 
 ### Changes/Additions
 
@@ -954,7 +972,7 @@ Eternl Update v.1.11.7
 
 ## v1.11.6
 
-> Released 03.08.2023
+released 03.08.2023
 
 (Work in progress, just documenting changes)
 
@@ -969,7 +987,7 @@ Eternl Update v.1.11.6
 
 ## v1.11.5
 
-> Released 03.08.2023
+released 03.08.2023
 
 (Work in progress, just documenting changes)
 
@@ -986,7 +1004,7 @@ Eternl Update v.1.11.5
 
 ## v1.11.4
 
-> Released 02.08.2023
+released 02.08.2023
 
 ### Changes
 
@@ -1003,7 +1021,7 @@ Eternl Update v.1.11.4
 
 ## v1.11.3
 
-> Released 01.08.2023
+released 01.08.2023
 
 ### Fixed issues
 
@@ -1015,7 +1033,7 @@ Eternl Update v.1.11.3
 
 ## v1.11.2
 
-> Released 31.07.2023
+released 31.07.2023
 
 ### Fixed issues
 
@@ -1026,7 +1044,7 @@ Eternl Update v.1.11.2
 
 ## v1.11.1
 
-> Released 29.07.2023
+released 29.07.2023
 
 ### Fixed issues
 
@@ -1039,7 +1057,7 @@ Eternl Update v.1.11.1
 
 ## v1.11.0
 
-> Released 29.07.2023
+released 29.07.2023
 
 Currently in review: Browser extension, iOS app, Android app
 
@@ -1086,7 +1104,7 @@ Eternl Update v.1.11.0
 
 ## v1.10.10
 
-> Released 07.06.2023
+released 07.06.2023
 
 ### Bugfixes
 
@@ -1097,7 +1115,7 @@ Eternl Update v.1.10.10
 
 ## v1.10.9
 
-> Released 07.06.2023
+released 07.06.2023
 
 ### Bugfixes
 
@@ -1113,7 +1131,7 @@ Eternl Update v.1.10.9
 
 ## v1.10.8
 
-> Released 06.06.2023
+released 06.06.2023
 
 ### Changes/Additions
 
@@ -1133,7 +1151,7 @@ Eternl Update v.1.10.8
 
 ## v1.10.7
 
-> Released 17.03.2023
+released 17.03.2023
 
 ### Changes/Additions
 
@@ -1155,7 +1173,7 @@ Eternl Update v.1.10.7
 
 ## v1.10.6
 
-> Released 27.02.2023
+released 27.02.2023
 
 ### Changes/Additions
 
@@ -1170,7 +1188,7 @@ Eternl Update v.1.10.6
 
 ## v1.10.5
 
-> Released 26.02.2023
+released 26.02.2023
 
 ### Changes/Additions
 
@@ -1189,7 +1207,7 @@ Eternl Update v.1.10.5
 
 ## v1.10.4
 
-> Released 17.02.2023
+released 17.02.2023
 
 ### Bugfixes
 
@@ -1203,7 +1221,7 @@ Eternl Update v.1.10.4
 
 ## v1.10.3
 
-> Released 16.02.2023
+released 16.02.2023
 
 ### Changes/Additions
 
@@ -1225,7 +1243,7 @@ Eternl Update v.1.10.3
 
 ## v1.10.2
 
-> Released 25.01.2023
+released 25.01.2023
 
 ### Changes/Additions
 
@@ -1247,7 +1265,7 @@ Eternl Update v.1.10.2
 
 ## v1.10.1
 
-> Released 02.01.2023
+released 02.01.2023
 
 ### Bugfixes
 
@@ -1266,7 +1284,7 @@ Eternl Update v.1.10.1
 
 ## v1.10.0
 
-> Released 31.12.2022
+released 31.12.2022
 
 ### Important
 
@@ -1298,7 +1316,7 @@ Eternl Update v.1.10.0
 
 ## v1.9.10
 
-> Released 06.12.2022
+released 06.12.2022
 
 ### Bugfixes
 
@@ -1312,7 +1330,7 @@ Eternl Update v.1.9.10
 
 ## v1.9.9
 
-> Released 04.12.2022
+released 04.12.2022
 
 ### Changes/Additions
 
@@ -1335,7 +1353,7 @@ Eternl Update v.1.9.9
 
 ## v1.9.8
 
-> Released 27.11.2022
+released 27.11.2022
 
 ### Important
 
@@ -1364,7 +1382,7 @@ Eternl Update v.1.9.8
 
 ## v1.9.7
 
-> Released 06.12.2022
+released 06.12.2022
 
 ### Bugfixes
 
@@ -1380,7 +1398,7 @@ Eternl Update v.1.9.7
 
 ## v1.9.6
 
-> Released 03.11.2022
+released 03.11.2022
 
 ### Changes/Additions
 
@@ -1409,7 +1427,7 @@ Eternl Update v.1.9.6
 
 ## v1.9.5
 
-> Released 27.09.2022
+released 27.09.2022
 
 ### Changes/Additions
 
@@ -1429,7 +1447,7 @@ Eternl Update v.1.9.5
 
 ## v1.9.4
 
-> Released 27.09.2022
+released 27.09.2022
 
 ### Changes/Additions
 
@@ -1459,7 +1477,7 @@ Eternl Update v.1.9.4
 
 ## v1.9.3
 
-> Released 16.09.2022
+released 16.09.2022
 
 ### Bugfixes
 
@@ -1474,7 +1492,7 @@ Eternl Update v.1.9.3
 
 ## v1.9.2
 
-> Released 15.09.2022
+released 15.09.2022
 
 ### Important
 
@@ -1515,7 +1533,7 @@ Eternl Update v.1.9.2
 
 ## v1.9.1
 
-> Released 24.08.2022
+released 24.08.2022
 
 ### Bugfixes
 
@@ -1530,7 +1548,7 @@ Eternl Update v.1.9.1
 
 ## v1.9.0
 
-> Released 22.08.2022
+released 22.08.2022
 
 ### Important
 
@@ -1557,7 +1575,7 @@ Eternl Update v.1.9.0
 
 ## v1.8.3
 
-> Released 28.07.2022
+released 28.07.2022
 
 ### Important
 
@@ -1594,7 +1612,7 @@ Eternl Update v.1.8.3
 
 ## v1.8.2
 
-> Released 20.07.2022
+released 20.07.2022
 
 ### Bugfixes
 
@@ -1608,7 +1626,7 @@ Eternl Update v.1.8.2
 
 ## v1.8.1
 
-> Released 20.07.2022
+released 20.07.2022
 
 ### “Babbage”
 
@@ -1642,7 +1660,7 @@ Eternl Update v.1.8.1
 
 ## v1.7.8
 
-> Released 14.06.2022
+released 14.06.2022
 
 ### Fixes
 
@@ -1659,7 +1677,7 @@ Eternl Update v.1.7.8
 
 ## v1.7.7
 
-> Released 13.06.2022
+released 13.06.2022
 
 ### Highlights
 

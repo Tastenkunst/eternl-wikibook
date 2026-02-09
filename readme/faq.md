@@ -45,7 +45,7 @@ In older versions of Eternl, a **Persistent Data** toggle was available in the s
 Instead of relying on browser persistence, you should regularly export an **Eternl Wallet Backup**.
 
 * **Encryption:** These backups are exported as `.json` files and are **encrypted with your spending password**. Without this password, the file cannot be used to access your accounts.
-*   **Convenience:** Importing a `.json` file restores your wallet name, account structure, and custom settings—details that a seed phrase alone cannot recover.<br>
+*   **Convenience:** Importing a `.json` file restores your wallet name, account structure, and custom settings—details that a seed phrase alone cannot recover.
 
     <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p><strong>Note:</strong> A backup file is a convenience tool; it <strong>does not</strong> replace your 15 or 24-word recovery phrase. Always keep your physical seed phrase written down in a secure, offline location.</p></div>
 

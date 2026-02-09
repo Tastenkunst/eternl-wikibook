@@ -15,7 +15,7 @@ They can run a personal node on their own hardware, ensuring direct and private 
 ![daedalus_wallet_logo_2.jpeg](/announcements/daedalus_wallet_logo_2.jpeg)
 
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ❌       |         ❌         |       ❌       |    ❌    |          ❌           |         ✔️         |         ✔️         |         ❌           |
 
@@ -94,7 +94,7 @@ Light wallets, like Eternl, Yoroi and Nami, are faster, because they only downlo
 
 [Eternl](eternl.io) is a non-custodial Cardano light wallet by [Tastenkunst GmbH](https://www.tastenkunst.com/) in German for the Cardano community, launched in 2021 (as ccvault. io). Eternl's mission is to implement features requested by the Cardano community. 
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ✔️       |    ✔️    |          ✔️           |         ✔️         |         ✔️         |         ✔️           |
 
@@ -126,7 +126,7 @@ Register to vote in Cardano's decentralized innovation fund directly from the wa
 
 [Lace](lace.io) is a light wallet platform designed to facilitate user interaction with Web3 technologies. It was released by Input Output Global ([IOG](https://iog.io/)), the developer behind the Cardano blockchain. It was released in April 2023. 
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ❌       |    ❌    |          ✔️           |         ✔️         |         ✔️         |         ❌           |
  
@@ -147,7 +147,7 @@ This feature facilitates smoother transactions and interactions between users an
 
 [Nami Wallet](https://www.namiwallet.io/) is a non-custodial, browser-based wallet extension designed specifically for interacting with the Cardano blockchain, initially created by Alessandro Konrad in 2021. Nami was [taken over by IOG in November 2023](https://www.lace.io/blog/lace-says-hello-to-nami?utm_source=lace.io&utm_medium=website&utm_campaign=nami&utm_content=banner).
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ❌       |    ❌    |          ✔️           |         ✔️         |         ✔️         |         ❌           |
 
@@ -169,7 +169,7 @@ Easily accessible as a browser extension, making it straightforward to manage as
 
 [Yoroi](https://yoroi-wallet.com/) is a light wallet developed since 2018 by [EMURGO](https://www.emurgo.io/), a global blockchain technology company and a founding entity of the Cardano protocol.
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ❌       |    ❌    |          ✔️           |         ✔️         |         ✔️         |         ❌           |
 
@@ -201,7 +201,7 @@ Monitor Cardano native tokens, their balances, transaction history, and metadata
 
 [Flint Wallet](https://flint-wallet.com/) is a versatile digital wallet developed by [dcSpark](https://www.dcspark.io/) and designed primarily for handling decentralized finance (DeFi) and non-fungible tokens (NFTs). 
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ❌       |    ❌    |          ✔️           |         ✔️         |         ✔️         |         ❌           |
 
@@ -230,7 +230,7 @@ Move assets to Milkomeda EVM compatible chains.
 
 [GeroWallet](https://www.gerowallet.io/) is a wallet designed specifically for the Cardano blockchain. It was launched in August 2021 and provides a user-friendly interface and secure environment for managing digital assets directly through a browser extension.
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ❌       |    ❌    |          ✔️           |         ✔️         |         ✔️         |         ❌           |
 
@@ -255,7 +255,7 @@ Listen to your music and audio NFTs with the Gero Media Player.
 Typhon Wallet is a digital wallet designed specifically for the Cardano blockchain, suitable for both web and extension use. 
 
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ✔️       |    ❌    |          ✔️           |         ✔️         |         ✔️         |         ✔️           |
 
@@ -293,7 +293,7 @@ Offers a choice between HD wallets for enhanced security and single-address wall
 
 ![begin_logo_150.jpg](/announcements/begin_logo_150.jpg)
 
-| mobile<br>IOS | mobile<br>Android | Web-app | PWA<br>support | browser<br>extension | Ledger<br>support | Trezor<br>support | Keystone<br>support |
+| mobile (IOS) | mobile (Android) | Web-app | PWA support | browser extension | Ledger support | Trezor support | Keystone support |
 |:-------------:|:-----------------:|:--------------:|:-------:|:---------------------:|:-----------------:|:-----------------:|:-------------------:|
 |      ✔️       |         ✔️         |       ❌       |    ❌    |          ✔️           |         ✔️         |         ❌         |         ❌           |
 
@@ -319,35 +319,35 @@ Interact with smart-contracts.
 
 ## Screenshots {.tabset}
 
-### ![eternl-logo-small-vector_25.png](/announcements/eternl-logo-small-vector_25.png) Eternl <br> Summary
+### ![eternl-logo-small-vector_25.png](/announcements/eternl-logo-small-vector_25.png) Eternl Summary
 
 ![eternl_summary.png](/announcements/eternl_summary.png)
 
-### ![eternl-logo-small-vector_25.png](/announcements/eternl-logo-small-vector_25.png) Eternl <br> Token
+### ![eternl-logo-small-vector_25.png](/announcements/eternl-logo-small-vector_25.png) Eternl Token
 
 ![eternl_tokenlist.png](/announcements/eternl_tokenlist.png)
 
-### ![lace_25.jpg](/announcements/lace_25.jpg) Lace <br> home
+### ![lace_25.jpg](/announcements/lace_25.jpg) Lace Home
 
 ![lace.png](/announcements/lace.png)
 
-### ![typhoon_wallet_25.jpg](/announcements/typhoon_wallet_25.jpg) Typhoon  <br> home
+### ![typhoon_wallet_25.jpg](/announcements/typhoon_wallet_25.jpg) Typhoon Home
 
 ![typhoon_home.png](/announcements/typhoon_home.png)
 
-### ![typhoon_wallet_25.jpg](/announcements/typhoon_wallet_25.jpg) Typhoon <br> assets
+### ![typhoon_wallet_25.jpg](/announcements/typhoon_wallet_25.jpg) Typhoon Assets
 
 ![typhoon_assets.png](/announcements/typhoon_assets.png)
 
-### ![yoroi_logo_25.jpg](/announcements/yoroi_logo_25.jpg) Yoroi <br> home
+### ![yoroi_logo_25.jpg](/announcements/yoroi_logo_25.jpg) Yoroi Home
 
 ![yoroi_home.png](/announcements/yoroi_home.png)
 
-### ![yoroi_logo_25.jpg](/announcements/yoroi_logo_25.jpg) Yoroi <br> assets
+### ![yoroi_logo_25.jpg](/announcements/yoroi_logo_25.jpg) Yoroi Assets
 
 ![yoroi_assets.png](/announcements/yoroi_assets.png)
 
-### ![flint_25.jpg](/announcements/flint_25.jpg) Flint <br> wallet
+### ![flint_25.jpg](/announcements/flint_25.jpg) Flint Wallet
 
 ![flint.png](/announcements/flint.png)
 
