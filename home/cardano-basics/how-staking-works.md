@@ -1,14 +1,11 @@
 ---
 description: Staking on Cardano blockchain explained
 ---
-
 # How staking works
-
-## How staking works
 
 <details>
 
-<summary><strong>Abstract</strong></summary>
+<summary>Abstract</summary>
 
 This article outlines how staking works on the Cardano blockchain, contrasting it with Bitcoin's Proof of Work (PoW). Staking involves holding ADA, Cardano's cryptocurrency, to support network operations and secure transactions. Users delegate ADA to stake pools, which then participate in validating transactions and creating new blocks. \
 Unlike Bitcoin, which requires significant computational power, Cardano's Proof of Stake (PoS) system is more energy-efficient and democratic. Validators are chosen based on the amount of ADA they stake, with rewards distributed for their contribution. The system aims to enhance network security and performance, rewarding participants with additional ADA.&#x20;
@@ -19,7 +16,7 @@ The article also compares Cardano's approach to Ethereum's staking, emphasizing 
 
 <details>
 
-<summary><strong>1. Proof of Stake in Cardano</strong></summary>
+<summary>1. Proof of Stake in Cardano</summary>
 
 Cardano's Proof of Stake is a method that secures the network and adds new blocks to the blockchain, but it works differently than Bitcoin's system. Instead of requiring massive amounts of computing power, it lets users lock up some of their Cardano coins as a sign of reliability. The more coins you lock up, or "stake," the better your odds of being selected to check transactions and receive rewards.
 
@@ -27,31 +24,31 @@ Validators on the Cardano network are selected based on the amount of ADA they a
 
 Staking on the Cardano blockchain involves participants (stakeholders) delegating their ADA (Cardano's native cryptocurrency) to a stake pool, which helps secure the network and participate in the Proof-of-Stake (PoS) consensus mechanism. Here's how it generally works:
 
-#### Stakeholders
+## Stakeholders
 
 Anyone who holds ADA cryptocurrency can participate in staking.
 
-#### Stake Pools
+## Stake Pools
 
 Stake pools are entities on the Cardano network that are responsible for processing transactions and creating new blocks. Stake pools consist of a combination of technical infrastructure and the expertise of the pool operator.
 
-#### Delegation
+## Delegation
 
 ADA holders can delegate their ADA to a stake pool of their choice. This process involves selecting a stake pool and delegating their ADA holdings to that pool. Delegation does not involve transferring ownership of ADA; it simply allows the stake pool to include the delegated ADA in its staking power.
 
-#### Rewards
+### Rewards
 
 By delegating their ADA to a stake pool, stakeholders earn rewards in the form of additional ADA. These rewards are distributed periodically, typically every epoch (a fixed period of time on the Cardano blockchain, currently around 5 days), and are proportional to the amount of ADA delegated to the pool.
 
-#### Decentralization and Security
+### Decentralization and Security
 
 Cardano aims to achieve decentralization and security through its PoS mechanism. By participating in staking, ADA holders contribute to the security and decentralization of the network, as stake pools are randomly selected to create blocks based on the amount of ADA delegated to them.
 
-#### Pool Performance
+### Pool Performance
 
 Stake pool operators are incentivized to maintain high-performance servers and secure their operations to attract delegators. Stakeholders often look at a pool's performance, uptime, fees, and other factors before deciding where to delegate their ADA.
 
-#### Pool Operator Rewards
+### Pool Operator Rewards
 
 Stake pool operators also receive rewards for their role in maintaining the network and running a stake pool. These rewards are separate from the rewards earned by delegators.
 
@@ -61,7 +58,7 @@ Overall, staking on the Cardano blockchain provides a way for ADA holders to par
 
 <details>
 
-<summary><strong>2. Rewards Distribution</strong></summary>
+<summary>2. Rewards Distribution</summary>
 
 In the Cardano ecosystem, rewards are generated from two key sources: all transaction fees collected from transactions within a block minted during an epoch, and monetary expansion, which is the process of increasing the circulating ADA supply towards a maximum cap. These rewards are then proportionally distributed to both stakers and pool operators. Pool operators are rewarded for their crucial role in maintaining and securing the network, while the remaining rewards are allocated among the stakers. This system is designed to motivate users to engage in staking their ADA, thus enhancing the network's security and overall performance by ensuring a vested interest in the health and efficiency of Cardano.
 
@@ -69,7 +66,7 @@ In the Cardano ecosystem, rewards are generated from two key sources: all transa
 
 <details>
 
-<summary><strong>3. Return on Stake (RoS)</strong></summary>
+<summary>3. Return on Stake (RoS)</summary>
 
 The RoS in Cardano depends on several factors, including the total amount of ADA staked on the network and the individual stake pool's performance and the amount of ADA staked to the pool. RoS can vary but provides an incentive for ADA holders to participate in staking while keeping full access to spend their ADA whenever.
 
@@ -77,7 +74,7 @@ The RoS in Cardano depends on several factors, including the total amount of ADA
 
 <details>
 
-<summary><strong>4. Cardano vs Ethereum staking mechanisms</strong></summary>
+<summary>4. Cardano vs Ethereum staking mechanisms</summary>
 
 Cardano and Ethereum offer contrasting staking mechanisms, with Cardano featuring a native liquid staking system that allows ADA to remain accessible for spending during staking, without any minimum staking requirements or penalties for misbehavior. This approach promotes decentralization and security by making participation more straightforward and aligning stakeholders' interests with the network's needs. Cardano relies on the Ouroboros Proof-of-Stake consensus and Nash equilibrium theory to encourage honest participation, avoiding the need for slashing as a deterrent.
 
@@ -91,7 +88,7 @@ In the Cardano network, ADA holders have the option to participate directly in t
 
 <details>
 
-<summary><strong>5. About fees</strong></summary>
+<summary>5. About fees</summary>
 
 On the Cardano blockchain, stake pool operators charge two types of fees to cover the costs associated with running a pool and to provide an incentive for their services: a fixed fee and a variable fee.
 
@@ -109,7 +106,7 @@ For example, if a pool earns 5,000 ADA in rewards for an epoch, the pool operato
 
 <details>
 
-<summary><strong>6. Comparison with Bitcoin's Proof of Work</strong></summary>
+<summary>6. Comparison with Bitcoin's Proof of Work</summary>
 
 Bitcoin uses a PoW mechanism, where miners solve complex mathematical problems to validate transactions and create new blocks. This process requires significant computational power and energy. The rewards in Bitcoin come in the form of newly minted bitcoins (block rewards) and transaction fees. Unlike Cardano, Bitcoin's reward system heavily relies on the computational work done by miners, not on the amount of cryptocurrency they hold.
 
@@ -121,23 +118,23 @@ In summary, Cardano's staking mechanism offers a more energy-efficient and poten
 
 <details>
 
-<summary><strong>7. Delegating to a Stake Pool using Eternl wallet</strong></summary>
+<summary>7. Delegating to a Stake Pool using Eternl wallet</summary>
 
-### 7.1 Explore Pools:
+### 7.1 Explore Pools
 
 In Eternl, view available pools. Select one or delegate to multiple pools by adding more accounts to your wallet.
 
-### 7.2 Delegation Process:
+### 7.2 Delegation Process
 
 Navigate to the ‘Staking’ section in Eternl. Choose “Delegate” for the chosen pool. Confirm the transaction with your wallet spending password or hardware device. Verify delegation in “Account” or “Staking” after wallet synchronization.
 
 ### 7.3 Claiming Staking Rewards
 
-#### Manual Claim:
+#### Manual Claim
 
 Use the 'Withdraw Rewards' button under the Account Summary tab of the main menu.
 
-#### Automatic Claim:
+#### Automatic Claim
 
 Enable the Auto Withdrawal option under the Wallet & Account Settings tab
 
@@ -159,4 +156,3 @@ Enable the Auto Withdrawal option under the Wallet & Account Settings tab
 <figure><img src="../../.gitbook/assets/pictures/image (5).png" alt=""><figcaption><p>Based on data from https://ahlnet.nu/wp-content/uploads/2024/02/delegation-flow_v3-1.png and https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/7/1/71036df5e0ef2eb3be6c0e6ce19929f6880e3d0f_2_999x934.png</p></figcaption></figure>
 
 </details>
-
