@@ -20,4 +20,4 @@ If problems persist, your data was most likely permanently deleted by one of the
 Regularly export your wallet data for safekeeping. If your wallet does disappear, you can import this data back into the wallet once the issue is resolved. This backup can be considered a 'secondary seedphrase', and should be treated as such. It is unwise to upload it to cloud storage, and should be kept offline as much as possible. That said, you should always make sure you have the seedphrase to your wallet, an Eternl backup is a nice and easy way to restore your wallet, but doesn't replace a seedphrase.
 
 > In summary, the disappearance of wallets in your Eternl instance could stem from storage limitations, browser or system cleaning processes, or third-party cleaning applications. Taking steps to ensure persistent data, reinstalling the extension when necessary, and practicing safe data storage can help avoid these issues.
-{.is-info}
+

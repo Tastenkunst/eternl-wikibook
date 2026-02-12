@@ -36,12 +36,12 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
     If the chosen account is eligible, you will see the amount of Knight token you can receive.
 
     > To qualify, you must have held at least **$100 worth of ADA on the snapshot day (June 11th, 2025)**.\
-    > {.is-info}
+    >
 5. **Automatic Address Creation**\
    At this step, Eternl automatically creates an **unused Cardano address** for you and submits it to Midnight.\
    This address is linked to your selected account. You don’t need to do anything.\
    If you encounter issues, simply retry.\
-   {.is-info}
+
 6. **Confirm Terms**\
    Click _Next_ again and confirm you have read and understood the terms and conditions of the GlacierDrop.
 7. **Sign Message & Complete**\
@@ -55,7 +55,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 > If you want to participate with multiple accounts:\
 > Simply start a **new claim** for each one.\
-> {.is-info}
+>
 
 ---
 
@@ -65,7 +65,7 @@ For the easiest experience, use the **Eternl Chrome browser extension**.\
 
 > ![Info](../../.gitbook/assets/icons/IconInfo.svg) In Eternl v2.0.11.2 the process was updated as described above.\
 > The previous method (manually disabling _Single Address Mode_) is no longer necessary.\
-> {.is-warning}
+>
 
 ---
 
@@ -79,8 +79,8 @@ Missed the Glacier Drop window? Want to play a bigger part in the future of Midn
 
 This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to everyone, requires **no prerequisites or eligibility criteria**, and specialized hardware is **not required**.
 
-> **Phase Dates**: The Scavenger Mine is live from **October 29th until November 19th (21 days total)**. {.is-info}
-> **What You Do**: You participate by having your device automatically solve cryptographic challenges in the background to earn an allocation of $NIGHT tokens. {.is-info}
+> **Phase Dates**: The Scavenger Mine is live from **October 29th until November 19th (21 days total)**.
+> **What You Do**: You participate by having your device automatically solve cryptographic challenges in the background to earn an allocation of $NIGHT tokens.
 
 **![Settings](../../.gitbook/assets/icons/IconSettings.svg) How to Participate and Start Mining:**
 
@@ -99,7 +99,7 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 
 ---
 
-> How to particpate in phase 2 - Scavenger Mine by entering an unused address manually: [Scavenger Mine guide](https://wiki.eternl.io/en/2_user-guide/scavenger) {.is-info}
+> How to particpate in phase 2 - Scavenger Mine by entering an unused address manually: [Scavenger Mine guide](https://wiki.eternl.io/en/2_user-guide/scavenger)
 
 ---
 
@@ -129,13 +129,13 @@ For each individual allocation, the first thaw falls randomly between days 1 and
 * Each thawed share can be individually redeemed as it unlocks
 * After the last thaw, the full allocation is unlocked and available for redemption
 
-> Claimants can wait until the last thaw to claim their full allocations in one go {.is-info}
+> Claimants can wait until the last thaw to claim their full allocations in one go
 
 ### Redeem your allocation
 
 To complete the process and receive your NIGHT, you must redeem your allocation after it thaws.
 
-> Dates to be confirmed (360 days) {.is-info}
+> Dates to be confirmed (360 days)
 
 Redeeming is the act of transferring thawed tokens into your Destination address during the Redemption period. It’s the final step to complete the process and receive the tokens claimed during Glacier Drop and/or Scavenger Mine.
 

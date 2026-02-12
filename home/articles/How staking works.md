@@ -122,7 +122,7 @@ Use the 'Withdraw Rewards' button in the Staking Dashboard.
 Enable the Auto Withdrawal option in the Account Settings
 
 > If enabled, rewards will automatically be withdrawn if needed when creating a transaction. 
-{.is-success}
+
 
 
 

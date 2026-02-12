@@ -55,4 +55,4 @@ In short, supporting multi-sig wallets with DApps means building a new interacti
 > * There’s a real risk of losing access to your funds.
 > * Web wallet bridge (CIP-30) communication challenges to overcome.
 >
-> Until DApps explicitly support multi-sig, use a standard wallet for interacting with them. {.is-info}
+> Until DApps explicitly support multi-sig, use a standard wallet for interacting with them.

@@ -3,7 +3,7 @@
 <details>
 <summary>Abstract</summary>
 > The (e)UTxO (Extended Unspent Transaction Output) model in Cardano enhances the traditional UTxO system by allowing more complex transactions, such as smart contracts. Unlike the basic UTxO model, which tracks the movement of assets as simple outputs from transactions, (e)UTxO can carry additional data (datum) and scripts, enabling the execution of smart contracts and supporting multi-assets. This model maintains the benefits of UTxO, such as security and transparency, while adding flexibility for developers to create more sophisticated applications on the Cardano blockchain.
-{.is-info}
+
   
 </details>
   

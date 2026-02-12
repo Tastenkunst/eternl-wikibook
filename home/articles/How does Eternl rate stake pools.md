@@ -46,10 +46,10 @@ RoS is often expressed in terms of the e12 epoch, meaning it is calculated based
 > RoS (e12): 5%
 >
 > If the pool has reached its saturation point, delegators can expect to earn a RoS of approximately 5% annually on their staked ADA. The pool operator will take 170 ADA as a fixed fee and 2% of the remaining rewards as a variable fee.
-{.is-info}
+
 
 > By understanding these parameters, users can make informed decisions about which stake pool to delegate their ADA to and what to expect in terms of returns and costs.
-{.is-success}
+
 
 ## How Eternl Determines the Order of Displayed Pools Under "Staking"
 
@@ -85,7 +85,7 @@ The best pool of a multi-pool setup has its score adjusted to be no higher than 
 After all calculations, the pools are sorted by their final scores to determine the display order.
 
 > This method ensures that highly pledged, well-staked, and efficient single-operator pools with low margins are incentivized and prominently displayed.
-{.is-success}
+
 
 
 

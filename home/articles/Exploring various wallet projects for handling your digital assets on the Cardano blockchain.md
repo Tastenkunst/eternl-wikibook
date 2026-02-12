@@ -82,7 +82,7 @@ The [Keystone Wallet](https://keyst.one/?rfsn=7717950.1c87691&utm_source=refersi
 > Hardware wallets can be used in conjunction with light wallets, provided they are supported by the corresponding light wallet, offering the enhanced security of offline key storage and transaction authorization, along with the convenience and fast synchronization of light wallets.
 > 
 > Using these hardware wallets, you can safely store and manage your Ada and Token, protecting them from online threats.
-{.is-info}
+
 
 
 # 3. Light wallets
@@ -317,7 +317,7 @@ Interact with smart-contracts.
 
 # Screenshots
 
-## Screenshots {.tabset}
+## Screenshots
 
 ### ![eternl-logo-small-vector_25.png](/announcements/eternl-logo-small-vector_25.png) Eternl Summary
 

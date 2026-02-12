@@ -9,43 +9,31 @@ To transfer an Eternl wallet to another device or instance, you have two options
 ### 1. Export the public key of an account. (read-only mode)
 
 > Wallet Settings > Export account Key > Export Account Pub key
-{.is-info}
-
 
 ### 2. Eternl Wallet Backup (JSON export)
 
 > Wallet Settings > Wallet Specific Settings > Eternl Wallet Backup (JSON export) > Export Wallet
-{.is-info}
 
 There is also the option to export all wallets in one go under the app settings:
 
 > App Settings > Wallet export (.json) > Export All Wallets
-{.is-info}
-
----
 
 ## Step 2 - Import
 
 ### Import in read-only mode using the extended public key
 
 > Add Wallet > IMPORT > Import Public Account Key (read-only wallet) > Start Import Process
-{.is-info}
 
- **OR**
+### OR
 
-### Import the entire wallet (including the settings) using a JSON file previously exported from Eternl.
+### Import the entire wallet (including the settings) using a JSON file previously exported from Eternl
 
 > Add Wallet > IMPORT > Import Eternl .json wallet > Import wallet
-{.is-info}
-
---- 
 
 The JSON file contains your encrypted private key, safeguarded by the spending password (similar to how it is stored in browser storage), so it's crucial to keep these files secure.
 
-Using JSON files for wallet imports in Eternl is generally more convenient than restoring from a seed phrase. 
+Using JSON files for wallet imports in Eternl is generally more convenient than restoring from a seed phrase.
 
 When using the restore option via seed phrase, the balance, delegation, and other blockchain-stored data will remain accessible, as is the case with any wallet app where you restore your seed phrase.
 
-
 > Local settings such as wallet name, password, number of accounts, advanced UTxO management, token fragmentation, auto-withdrawal, etc., will not be transferred.
-{.is-warning}

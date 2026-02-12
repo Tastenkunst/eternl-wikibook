@@ -74,7 +74,6 @@ Adastat.net focuses on delivering statistical data and growth trends within the 
 The decentralized exchanges (DEXes), marketplaces, and services mentioned above are just a few examples of what the Cardano ecosystem has to offer and are not exhaustive.
 
 > For a comprehensive overview of projects, tools, and DApps available on Cardano, visit CardanoCube.io.
-{.is-info}
 
 ## Conclusion: The Future of Finance on Cardano
 

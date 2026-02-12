@@ -7,7 +7,7 @@ Eternl users can easily connect their wallets to DApps listed within Eternl's in
 For transactions amounting to 100 ADA or more, a convenience fee of 0.1% of the purchase value or 1 ADA, whichever is greater, will be applied.
 
 > This feature is available only for DApps that have opted in.
-{.is-info}
+
 
 Before you can connect to a DApp, you will be asked which wallet/account you want  to use to interact with this DApp. To do this, simply click on the "Connect as DApp account" button under the respective account.
 
@@ -19,7 +19,7 @@ Before visiting the DApp website, activate the desired account from your account
 Once the account is successfully connected, an icon will appear in the upper right corner of the screen, indicating the active connection even if you navigate away from the account list page.
 
 > To do that, activate the account in the account list and press this button ![dapp_connect_.jpg](/announcements/dapp_connect_.jpg)  in the header to turn to this ![dapp_connected_.jpg](/announcements/dapp_connected_.jpg) Once an account is successfully connected, it will be indicated by this icon ! ![dapp_connected_global_25.jpg](/announcements/dapp_connected_global_25.jpg) in the upper right corner of the screen, even if you are leaving the account list page
-{.is-info}
+
 
 1. - Visit the DApp Website
 After selecting your account, visit the DApp website where you intend to connect your wallet.
@@ -27,7 +27,7 @@ After selecting your account, visit the DApp website where you intend to connect
 On the DApp website, initiate the connection process by selecting "Connect Wallet" or a similar link.
 
 > By following these steps, you will connect to DApps using the Eternl wallet browser extension.
-{.is-success}
+
 
 ## 3. CardanoConnect (beta) – (Sundaeswap)
 CardanoConnect is a framework designed specifically for the Cardano blockchain to facilitate the interaction between decentralized applications (DApps) and Cardano wallets. Although it’s not as widely recognized as WalletConnect, it serves a similar purpose in the Cardano ecosystem. It is based on CIP 45, which defines the standard for secure wallet-DApp communication on the Cardano network. Here are some key features:
@@ -42,7 +42,7 @@ It is designed to work seamlessly with various Cardano wallets, such as Eternl, 
 CardanoConnect ensures secure connections between DApps and wallets, leveraging Cardano’s robust security features.
 
 > Currently this feature only works with SundaeSwap, here is a tutorial by SundaeSwap Labs about Cardano Connect (CIP-45) (beta) with Eternl
-{.is-info}
+
 
 ---
 
@@ -67,7 +67,7 @@ Ensures that all communications between the wallet and the DApp are end-to-end e
 Simplifies the user experience by allowing users to interact with DApps without exposing their private keys, improving security and convenience.
 
 > Currently this feature only works with Minswap DEX and WingRiders. 
-{.is-info}
+
 
 The procedure to connect is similar:
 
@@ -75,7 +75,7 @@ The procedure to connect is similar:
 Before visiting the DApp website, activate the desired account from your account list. 
 
 > To do that, activate the account in the account list and press this button ![dapp_connect_.jpg](/announcements/dapp_connect_.jpg)  in the header to turn to this ![dapp_connected_.jpg](/announcements/dapp_connected_.jpg) Once an account is successfully connected, it will be indicated by this icon ! ![dapp_connected_global_25.jpg](/announcements/dapp_connected_global_25.jpg) in the upper right corner of the screen, even if you are leaving the account list page
-{.is-info}
+
 
 ### Visit the DApp Website
 After selecting your account, visit the DApp website, launch the App and choose the WalletConnect option, which will generate a connection string to copy. (or QR code for mobile use) 
@@ -88,7 +88,7 @@ Insert this string in the provided field by Eternl:
 ### Visit the DApp Website
 
 > You are now connected with you chosen account to interact with the DApp.
-{.is-success}
+
 
 
 

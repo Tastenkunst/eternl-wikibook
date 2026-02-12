@@ -14,7 +14,7 @@ In April 2022, browser extensions are the only way to connect to Cardano dApps. 
 
 With CIP-0030, Cardano already has a dapp-connector specification. Reusing this API will contribute to rapid adoption.
 
-### Results {.tabset}
+### Results
 A postMessage bridge to connect to dApps loaded into an iframe.
 
 #### How to: dApps
@@ -135,7 +135,7 @@ Please take a look at:
 [implementation of the Eternl "convenience fee" - Github](https://github.com/Tastenkunst/cardano-dapp-connector-bridge/blob/main/EternlDAppBrowser.md)
 
 ---
-### Results {.tabset}
+### Results
 
 ####  Eternl "convenience fee"
 Integration into the Eternl DApp Browser.
@@ -204,6 +204,6 @@ Please check the browser's dev console network section to find any erros (check 
 Please open a support ticket now and provide us with your staging/production URLs and please also provide an image (728x256px) for the DApp Browser entry.
 We will put your entry in our staging environment and you can do the final tests. Once you are sure it works, we can move it to production. 
 
-![dapp_browser_guidelines.png](/announcements/dapp_browser_guidelines.png){.align-center}
+![dapp_browser_guidelines.png](/announcements/dapp_browser_guidelines.png)
 
 ## more help ... [<span class="mdi mdi-help-circle-outline"></span>:arrow_right:](/en/more-help)
