@@ -5,7 +5,6 @@ icon: rotate-exclamation
 
 # Claiming the Glacier Airdrop in Eternl v2
 
-{% embed url="https://www.youtube.com/watch?v=CRPlXGoFO8w" %}
 
 <details>
 

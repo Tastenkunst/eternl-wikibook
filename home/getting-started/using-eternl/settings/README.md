@@ -21,7 +21,6 @@ Clicking the cogwheel in the upper-right corner opens the settings menu.
 
 {% hint style="info" %}
 Use the search bar at the top to **quickly find settings**.
-{% endhint %}
 
 As soon as you enter the **second character**, the list is **instantly filtered** across the 4 sub menus.
 

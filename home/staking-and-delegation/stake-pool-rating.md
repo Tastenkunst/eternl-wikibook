@@ -29,11 +29,11 @@ The pledge shows the operator’s confidence and commitment to the pool. A highe
 
 There are two main types of fees:
 
-#### Fixed Fee \[₳]
+#### Fixed Fee \ [₳]
 
 A set amount of ADA that is taken from the pool's rewards before they are distributed to delegators. This is typically used to cover the operational costs of running the pool. For quite a while 340 ADA was considered a reasonable fee, but this amount has been reduced to 170 ADA lately.
 
-#### Variable Fee (Margin) \[%]
+#### Variable Fee (Margin) \ [%]
 
 A percentage of the remaining rewards after the fixed fee is deducted. This is the operator’s profit margin.
 
@@ -47,8 +47,6 @@ A percentage of the remaining rewards after the fixed fee is deducted. This is t
 
 RoS is often expressed in terms of the `e12` epoch, meaning it is calculated based on the rewards received over 12 epochs. This metric helps delegators estimate the potential earnings from their staked ADA.
 
-> > \[!INFO]
->
 > #### Example
 >
 > Imagine a stake pool with the following parameters:
@@ -58,9 +56,10 @@ RoS is often expressed in terms of the `e12` epoch, meaning it is calculated bas
 > * **Variable Fee:** 2%
 > * **Saturation Point:** 64 million ADA
 > * **RoS (e12):** 5%
->
-> If the pool has reached its saturation point, delegators can expect to earn a RoS of approximately 5% annually on their staked ADA. The pool operator will take 170 ADA as a fixed fee and 2% of the remaining rewards as a variable fee.
-> \[!SUCCESS]\
+
+---
+ >If the pool has reached its saturation point, delegators can expect to earn a RoS of approximately 5% annually on their staked ADA. The pool operator will take 170 ADA as a fixed fee and 2% of the remaining rewards as a variable fee.
+ ---
 > By understanding these parameters, users can make informed decisions about which stake pool to delegate their ADA to and what to expect in terms of returns and costs.
 
 ## How Eternl Determines the Order of Displayed Pools Under "Staking"
@@ -69,7 +68,7 @@ Eternl uses a comprehensive approach to sort, score, rank, and incentivize or pe
 
 ### 1. Initial Sorting by Pledge
 
-Pools are first sorted by their pledge amount, but only if their margin is below 1%, the pledge is fulfilled, and exceeds 50 ADA.\
+Pools are first sorted by their pledge amount, but only if their margin is below 1%, the pledge is fulfilled, and exceeds 50 ADA.
 Pools not meeting these criteria are moved to the end of the list.
 
 ### 2. Scoring Based on Pledge
@@ -105,8 +104,6 @@ Pools not meeting these criteria are moved to the end of the list.
 
 After all calculations, the pools are sorted by their final scores to determine the display order.
 
-> \[!SUCCESS]
-> \
 > This method ensures that highly pledged, well-staked, and efficient single-operator pools with low margins are incentivized and prominently displayed.
 
 This version will display correctly and cleanly on GitBook, preserving your original formatting intent while using GitBook-supported callouts and structure. Let me know if you'd like it styled with custom GitBook blocks or code injections for enhanced visuals.
