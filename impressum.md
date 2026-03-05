@@ -1,6 +1,4 @@
----
-icon: industry
----
+<!-- markdownlint-disable-file MD033 -->
 
 # Impressum
 
@@ -8,7 +6,7 @@ icon: industry
 | --- | --- |
 | **Firmenadresse** | Tastenkunst GmbH, Hainstraße 11, 04109 Leipzig, Deutschland |
 | **Vertretungsberechtigte** | Marcel Baumberg (Geschäftsführer) |
-| **Firmeninformationen** | • Umsatzsteuer-Identifikationsnummer (USt-ID): **DE264395179**  \n• Handelsregister: Amtsgericht Leipzig, **HRB 24784** |
+| **Firmeninformationen** | • Umsatzsteuer-Identifikationsnummer (USt-ID): **DE264395179**  <br /> • Handelsregister: Amtsgericht Leipzig, **HRB 24784** |
 
 ---
 

@@ -3,7 +3,7 @@
 # Settings
 
 <details>
-<summary><span style="color: #ffffff !important;">Account Settings</span></summary>
+<summary><span style="color: rgb(0, 0, 0) !important;">Account Settings</span></summary>
 
 <figure><img src="../../../../.gitbook/assets/pictures/Account_Settings.png" alt=""><figcaption><p></p></figcaption></figure>
 
@@ -310,7 +310,7 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 <details>
 
-<summary><span style="color: #ffffff !important;">Wallet Settings</span></summary>
+<summary><span style="color: rgb(0, 0, 0) !important;">Wallet Settings</span></summary>
 <figure><img src="../../../../.gitbook/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption><p>Wallet Settings</p></figcaption></figure>
 <details>
 <summary><span style="color: #dc2626;">Name and Group</span></summary>
@@ -349,7 +349,7 @@ Remove the wallet and all its accounts.
 </details>
 
 <details>
-<summary><span style="color: #ffffff !important;">App Settings</span></summary>
+<summary><span style="color: rgb(0, 0, 0) !important;">App Settings</span></summary>
 <figure><img src="../../../../.gitbook/assets/pictures/App_Settings.jpg" alt=""><figcaption><p></p></figcaption></figure>
 <details>
 
@@ -440,7 +440,7 @@ Remove the wallet and all its accounts.
 </details>
 
 <details>
-<summary><span style="color: #ffffff !important;">App Utilities</span></summary>
+<summary><span style="color: rgb(0, 0, 0) !important;">App Utilities</span></summary>
 <figure><img src="../../../../.gitbook/assets/pictures/App_Utilities.jpg" alt=""><figcaption><p></p></figcaption></figure>
 
 <details>

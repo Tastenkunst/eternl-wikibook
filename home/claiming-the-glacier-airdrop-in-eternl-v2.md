@@ -5,7 +5,6 @@ icon: rotate-exclamation
 
 # Claiming the Glacier Airdrop in Eternl v2
 
-
 <details>
 
 <summary>PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th)</summary>
