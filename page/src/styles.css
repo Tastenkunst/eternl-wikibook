@@ -25,8 +25,8 @@
   }
 
   html.light {
-    --color-bg: #ffffff;
-    --color-panel: #f8fafc;
+    --color-bg: #f8fafc;
+    --color-panel: #ffffff;
     --color-border: #e2e8f0;
     --color-border-strong: #cbd5f5;
     --color-text: #0f172a;
@@ -179,16 +179,34 @@
     color: var(--color-text);
   }
 
-  .doc-content h2 {
+  .doc-content h1 {
     margin-top: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: var(--color-text);
+  }
+
+  .doc-content h2 {
+    margin-top: 2.25rem;
+    font-size: 1.6rem;
+    font-weight: 600;
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
     color: var(--color-text);
   }
 
   .doc-content h3 {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: var(--color-text);
+  }
+
+  .doc-content h4 {
+    margin-top: 1.75rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
     color: var(--color-text);
   }
@@ -339,13 +357,18 @@
 
   .doc-section-summary h2 {
     margin: 0;
+    color: #38bdf8;
+  }
+
+  .doc-section[open] .doc-section-summary h2 {
+    color: #fb923c;
   }
 
   .doc-section-chevron {
     width: 1.25rem;
     height: 1.25rem;
     transition: transform 0.3s ease;
-    color: var(--color-accent);
+    filter: invert(58%) sepia(82%) saturate(748%) hue-rotate(18deg) brightness(101%) contrast(97%);
   }
 
   .doc-section[open] .doc-section-chevron {
@@ -364,5 +387,9 @@
   .theme-toggle:hover {
     border-color: var(--color-accent);
     background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  }
+
+  .theme-toggle img {
+    filter: invert(74%) sepia(50%) saturate(390%) hue-rotate(330deg) brightness(110%) contrast(92%);
   }
 }

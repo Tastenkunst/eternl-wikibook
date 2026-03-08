@@ -65,9 +65,13 @@ function wrapSections(html: string): string {
 <details class="doc-section" ${index === 0 ? 'open' : ''}>
   <summary class="doc-section-summary">
     ${section.headingHtml}
-    <svg class="doc-section-chevron" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-      <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
+    <img
+      class="doc-section-chevron"
+      src="/gitbook-assets/icons/ChevronDown.svg"
+      alt=""
+      role="presentation"
+      aria-hidden="true"
+    />
   </summary>
   <div class="doc-section-content">
     ${section.content}

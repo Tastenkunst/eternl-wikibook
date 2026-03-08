@@ -11,7 +11,19 @@ const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
 const theme = ref<'dark' | 'light'>('dark');
 
-const themeIcon = computed(() => (theme.value === 'dark' ? '/gitbook-assets/icons/moon.svg' : '/gitbook-assets/icons/sun.svg'));
+const iconMap = new Map<string, string>([
+  ['Governance', 'GovernanceDRep'],
+  ['Staking', 'StakingOutline'],
+  ['DApp Browser', 'DApp2'],
+]);
+
+function getIconPath(name: string): string {
+  const mapped = iconMap.get(name) ?? name;
+  const clean = mapped.startsWith('Icon') ? mapped.slice(4) : mapped;
+  return `/gitbook-assets/icons/${clean}.svg`;
+}
+
+const themeIcon = computed(() => getIconPath(theme.value === 'dark' ? 'IconSun03' : 'IconMoon02'));
 
 function applyTheme(value: 'dark' | 'light') {
   const root = document.documentElement;
@@ -58,7 +70,7 @@ watch(
           <SearchBox />
           <button
             type="button"
-            class="theme-toggle flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-white transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+            class="theme-toggle flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-[#fdbb2d] transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
             @click="toggleTheme"
             :aria-pressed="theme === 'dark'"
           >
