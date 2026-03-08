@@ -73,9 +73,9 @@ watch(
             class="theme-toggle flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-[#fdbb2d] transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
             @click="toggleTheme"
             :aria-pressed="theme === 'dark'"
+            aria-label="Toggle theme"
           >
-            <img :src="themeIcon" alt="" class="h-4 w-4" />
-            <span>Theme</span>
+            <img :src="themeIcon" alt="Toggle theme" class="h-6 w-6" />
           </button>
         </div>
       </div>
