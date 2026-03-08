@@ -59,7 +59,7 @@ watch(
 <template>
   <div class="min-h-screen bg-[#0f172a] text-white">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="border-b border-white/10 bg-white/5 backdrop-blur">
+    <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur">
       <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div>
           <p class="text-xs uppercase tracking-[0.3em] text-ink-60">Eternl</p>
