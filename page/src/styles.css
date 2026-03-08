@@ -3,11 +3,11 @@
 
 @layer base {
   :root {
-    --color-sand: #f5efe6;
-    --color-ivory: #fff9f0;
-    --color-ink: #1f1a14;
-    --color-accent: #1f6f78;
-    --color-warning: #b45309;
+    --color-sand: #030712;
+    --color-ivory: #0f172a;
+    --color-ink: #e5e7eb;
+    --color-accent: #5eead4;
+    --color-warning: #fb923c;
   }
 
   html {
@@ -15,8 +15,13 @@
   }
 
   body {
-    background: radial-gradient(circle at top, #fffdf8, var(--color-sand));
+    background: radial-gradient(circle at top, #0f172a, #030712);
     color: var(--color-ink);
+  }
+
+  .dark {
+    background-color: #121212;
+    color: #e5e7eb;
   }
 
   * {

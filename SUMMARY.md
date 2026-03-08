@@ -22,6 +22,8 @@
     * [How staking works](home/cardano-basics/how-staking-works.md)
     * [Cardano Addresses](home/cardano-basics/cardano-addresses.md)
     * [Governance & Project Catalyst](home/cardano-basics/governance-and-catalyst.md)
+    * [The eUTxO Model](home/cardano-basics/eutxo-model.md)
+    * [Staking Mechanics](home/cardano-basics/staking-mechanics.md)
   * [Getting Started](home/getting-started/README.md)
     * [Using Eternl](home/getting-started/using-eternl/README.md)
       * [Settings](home/getting-started/using-eternl/settings/settings.md)
