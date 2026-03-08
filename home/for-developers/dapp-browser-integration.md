@@ -1,5 +1,9 @@
 # DApp browser integration
 
+## User Perspective
+
+The new [Using the DApp Browser](../getting-started/using-the-dapp-browser.md) guide walks through the entry points, promoted partners, and category lists that users see before they connect their wallets.
+
 ## Some statistics
 
 | Platform           | User base (monthly) |

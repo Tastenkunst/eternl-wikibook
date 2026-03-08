@@ -26,6 +26,7 @@
     * [Using Eternl](home/getting-started/using-eternl/README.md)
       * [Settings](home/getting-started/using-eternl/settings/settings.md)
       * [Managing Accounts](home/getting-started/managing-accounts.md)
+      * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
     * [Understanding Balances](home/getting-started/understanding-balances.md)
   * [Multi-sig](home/multi-sig.md)
   * [Staking & delegation](home/staking-and-delegation/README.md)
