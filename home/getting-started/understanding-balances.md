@@ -5,7 +5,7 @@ In Cardano a wallet has 2 types of balances, the balance it can spend on payment
 
 In Eternl we show a breakdown of your funds divided into different categories. It does so for every single account and wallet and those balances are shown on the summary page. Below you can see an example of what this looks like, depending on the structure of the wallet, different balances are shown as not every property is available for every wallet.
 
-<figure><img src="../../.gitbook/assets/pictures/eternl_balances.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/eternl_balances.png" alt=""><figcaption></figcaption></figure>
 
 ## Total Funds
 

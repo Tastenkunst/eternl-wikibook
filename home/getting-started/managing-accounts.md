@@ -26,25 +26,25 @@ You manage accounts from the wallet card on both hot wallets and hardware wallet
 Wallet card > Manage Accounts
 {% endhint %}
 
-![Manage accounts layout](../../.gitbook/assets/pictures/v2_manage_accounts.jpg)
+![Manage accounts layout](/gitbook-assets/pictures/v2_manage_accounts.jpg)
 
 {% hint style="info" %}
 every time you click "Add Account" a new account will be added
 {% endhint %}
 
-![Add account](../../.gitbook/assets/pictures/v2_manage_accounts_2.jpg)
+![Add account](/gitbook-assets/pictures/v2_manage_accounts_2.jpg)
 
 {% hint style="info" %}
 you can manage a maximum of up to 30 accounts in Eternl at the same time
 {% endhint %}
 
-![30 account limit](../../.gitbook/assets/pictures/v2_manage_accounts_3.jpg)
+![30 account limit](/gitbook-assets/pictures/v2_manage_accounts_3.jpg)
 
 {% hint style="info" %}
 Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
 {% endhint %}
 
-![Account confirmation](../../.gitbook/assets/pictures/v2_manage_accounts_5.jpg)
+![Account confirmation](/gitbook-assets/pictures/v2_manage_accounts_5.jpg)
 
 ## Technical background
 

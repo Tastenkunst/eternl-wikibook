@@ -1,7 +1,7 @@
 ---
 cover:
-  light: ../../.gitbook/assets/pictures/v1-light.jpg
-  dark: ../../.gitbook/assets/pictures/v1-dark.jpg
+  light: /gitbook-assets/pictures/v1-light.jpg
+  dark: /gitbook-assets/pictures/v1-dark.jpg
 coverY: 0
 ---
 
