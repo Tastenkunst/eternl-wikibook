@@ -88,7 +88,6 @@ Better Security: They're not connected to the internet, so they're safe from onl
 ### Downsides Of Hardware Wallets
 
 Cost: They cost more than free hot wallets (online wallets). Less Convenient: Not as easy to use for frequent trading or quick transactions. Risk of Losing or Breaking Them: They can be lost, stolen, or broken because they're physical objects.
-{% endhint %}
 
 For people who trade a lot or need fast access to their ADA, hot wallets (online wallets) are more practical, but they have some security risks. However, for big transactions and keeping your crypto safe for a long time, it's better to use hardware wallets like Trezor, Ledger, and Keystone. These wallets are known for being really secure and they lower the risk of online dangers. Also, these hardware wallets work with the Eternl wallet, which makes them even more useful for Cardano users.
 
