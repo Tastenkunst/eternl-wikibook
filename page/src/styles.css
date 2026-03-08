@@ -1,27 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --color-sand: #030712;
-    --color-ivory: #0f172a;
-    --color-ink: #e5e7eb;
-    --color-accent: #5eead4;
+    --color-bg: #0f172a;
+    --color-panel: #111827;
+    --color-border: #1f2937;
+    --color-border-strong: #334155;
+    --color-text: #f1f5f9;
+    --color-text-muted: #94a3b8;
+    --color-text-subtle: #cbd5f5;
+    --color-accent: #38bdf8;
+    --color-accent-strong: #0ea5e9;
     --color-warning: #fb923c;
+    --color-success: #22c55e;
+    --color-danger: #f87171;
   }
 
   html {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  html.light {
+    --color-bg: #ffffff;
+    --color-panel: #f8fafc;
+    --color-border: #e2e8f0;
+    --color-border-strong: #cbd5f5;
+    --color-text: #0f172a;
+    --color-text-muted: #475569;
+    --color-text-subtle: #64748b;
+    --color-accent: #0284c7;
+    --color-accent-strong: #0ea5e9;
+    --color-warning: #fb923c;
+    --color-success: #16a34a;
+    --color-danger: #dc2626;
   }
 
   body {
-    background: radial-gradient(circle at top, #0f172a, #030712);
-    color: var(--color-ink);
-  }
-
-  .dark {
-    background-color: #121212;
-    color: #e5e7eb;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
   }
 
   * {
@@ -35,80 +57,76 @@
 }
 
 @layer utilities {
-  .font-display {
-    font-family: 'Fraunces', serif;
-  }
-
   .bg-sand {
-    background-color: var(--color-sand);
+    background-color: var(--color-bg);
   }
 
   .bg-ivory {
-    background-color: var(--color-ivory);
+    background-color: var(--color-panel);
   }
 
   .bg-ivory-70 {
-    background-color: color-mix(in srgb, var(--color-ivory) 70%, transparent);
+    background-color: color-mix(in srgb, var(--color-panel) 70%, transparent);
   }
 
   .bg-ivory-80 {
-    background-color: color-mix(in srgb, var(--color-ivory) 80%, transparent);
+    background-color: color-mix(in srgb, var(--color-panel) 80%, transparent);
   }
 
   .bg-ivory-95 {
-    background-color: color-mix(in srgb, var(--color-ivory) 95%, transparent);
+    background-color: color-mix(in srgb, var(--color-panel) 95%, transparent);
   }
 
   .bg-ink {
-    background-color: var(--color-ink);
+    background-color: var(--color-text);
   }
 
   .bg-ink-5 {
-    background-color: color-mix(in srgb, var(--color-ink) 5%, transparent);
+    background-color: color-mix(in srgb, var(--color-text) 5%, transparent);
   }
 
   .bg-ink-30 {
-    background-color: color-mix(in srgb, var(--color-ink) 30%, transparent);
+    background-color: color-mix(in srgb, var(--color-text) 30%, transparent);
   }
 
   .text-ink {
-    color: var(--color-ink);
+    color: var(--color-text);
   }
 
   .text-ivory {
-    color: var(--color-ivory);
+    color: var(--color-text-muted);
   }
 
   .text-ink-50 {
-    color: color-mix(in srgb, var(--color-ink) 50%, transparent);
+    color: color-mix(in srgb, var(--color-text) 50%, var(--color-border));
   }
 
   .text-ink-60 {
-    color: color-mix(in srgb, var(--color-ink) 60%, transparent);
+    color: color-mix(in srgb, var(--color-text) 60%, var(--color-border));
   }
 
   .text-ink-70 {
-    color: color-mix(in srgb, var(--color-ink) 70%, transparent);
+    color: color-mix(in srgb, var(--color-text) 70%, var(--color-border));
   }
 
   .text-ink-80 {
-    color: color-mix(in srgb, var(--color-ink) 80%, transparent);
+    color: color-mix(in srgb, var(--color-text) 80%, var(--color-border));
   }
 
   .border-ink-10 {
-    border-color: color-mix(in srgb, var(--color-ink) 10%, transparent);
+    border-color: color-mix(in srgb, var(--color-border) 10%, transparent);
   }
 
   .border-ink-20 {
-    border-color: color-mix(in srgb, var(--color-ink) 20%, transparent);
+    border-color: color-mix(in srgb, var(--color-border) 20%, transparent);
   }
 
   .border-ink-40 {
-    border-color: color-mix(in srgb, var(--color-ink) 40%, transparent);
+    border-color: color-mix(in srgb, var(--color-border) 40%, transparent);
   }
 
   .shadow-soft {
-    box-shadow: 0 20px 60px rgba(31, 26, 20, 0.08);
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.55);
   }
 
   .sr-only {
@@ -127,11 +145,11 @@
     position: absolute;
     left: 1rem;
     top: 0.75rem;
-    background: var(--color-ivory);
-    color: var(--color-ink);
+    background: var(--color-panel);
+    color: var(--color-text);
     padding: 0.5rem 0.75rem;
     border-radius: 999px;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 20%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
     transform: translateY(-200%);
     transition: transform 0.2s ease;
     z-index: 50;
@@ -140,35 +158,39 @@
   .skip-link:focus {
     transform: translateY(0);
   }
+
+  .font-display {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  }
 }
 
 @layer components {
   .doc-card {
-    border-radius: 1rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    background-color: color-mix(in srgb, var(--color-ivory) 80%, transparent);
-    padding: 1.5rem;
-    box-shadow: 0 20px 60px rgba(31, 26, 20, 0.08);
+    border-radius: 1.25rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-panel);
+    padding: 1.75rem;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.45);
   }
 
   .doc-content {
-    font-size: 0.875rem;
-    line-height: 1.75rem;
-    color: color-mix(in srgb, var(--color-ink) 80%, transparent);
+    font-size: 0.95rem;
+    line-height: 1.85rem;
+    color: var(--color-text);
   }
 
   .doc-content h2 {
     margin-top: 2.5rem;
     font-size: 1.5rem;
-    font-family: 'Fraunces', serif;
-    color: #dc2626;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: var(--color-text);
   }
 
   .doc-content h3 {
     margin-top: 2rem;
-    font-size: 1.25rem;
-    font-family: 'Fraunces', serif;
-    color: var(--color-ink);
+    font-size: 1.2rem;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: var(--color-text);
   }
 
   .doc-content p {
@@ -179,7 +201,7 @@
     color: var(--color-accent);
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
   }
 
   .doc-content ul,
@@ -194,18 +216,18 @@
 
   .doc-content code {
     border-radius: 0.375rem;
-    background-color: color-mix(in srgb, var(--color-ink) 5%, transparent);
-    padding: 0.125rem 0.375rem;
+    background-color: color-mix(in srgb, var(--color-border) 10%, transparent);
+    padding: 0.125rem 0.35rem;
     font-size: 0.75rem;
-    font-family: 'SFMono-Regular', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-family: 'SFMono-Regular', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace;
   }
 
   .doc-content pre {
     margin-top: 1rem;
     overflow: auto;
     border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    background-color: color-mix(in srgb, var(--color-ivory) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 10%, transparent);
+    background-color: color-mix(in srgb, var(--color-panel) 70%, transparent);
     padding: 1rem;
     font-size: 0.75rem;
   }
@@ -214,24 +236,28 @@
     margin-top: 1.5rem;
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
-    font-size: 0.875rem;
-    display: block;
-    overflow-x: auto;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-panel);
+    overflow: hidden;
   }
 
   .doc-content th,
   .doc-content td {
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+    padding: 0.85rem 1rem;
     vertical-align: top;
+  }
+
+  .doc-content tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--color-panel) 60%, var(--color-border));
   }
 
   .doc-content blockquote {
     margin-top: 1rem;
     border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    background-color: color-mix(in srgb, var(--color-ivory) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 40%, transparent);
+    background-color: color-mix(in srgb, var(--color-panel) 70%, transparent);
     padding: 1rem;
   }
 
@@ -240,79 +266,103 @@
     height: auto;
     margin-top: 1rem;
     border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-  }
-  .doc-content .gb-icon {
-    display: inline-block;
-    width: 1.05em;
-    height: 1.05em;
-    vertical-align: -0.15em;
-    background-color: currentColor;
-    -webkit-mask: var(--gb-icon) no-repeat center / contain;
-    mask: var(--gb-icon) no-repeat center / contain;
-    filter: drop-shadow(0 0 0.6px currentColor);
-  }
-
-  .doc-content figure {
-    margin-top: 1.5rem;
-  }
-
-  .doc-content figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    color: color-mix(in srgb, var(--color-ink) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 10%, transparent);
   }
 
   .doc-content details {
     margin-top: 1rem;
     border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    background-color: color-mix(in srgb, var(--color-ivory) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 10%, transparent);
+    background-color: color-mix(in srgb, var(--color-panel) 70%, transparent);
     padding: 1rem;
   }
 
   .doc-content summary {
     cursor: pointer;
     font-weight: 600;
-    color: #dc2626;
+    color: var(--color-accent);
   }
 
   .gb-hint {
     margin-top: 1rem;
     border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    padding: 0.75rem 1rem;
-    font-size: 0.875rem;
+    border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+    color: var(--color-text);
   }
 
   .gb-hint-info {
-    border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
-    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
   }
 
   .gb-hint-warning {
     border-color: color-mix(in srgb, var(--color-warning) 40%, transparent);
-    background-color: color-mix(in srgb, var(--color-warning) 10%, transparent);
+    background-color: color-mix(in srgb, var(--color-warning) 15%, transparent);
   }
 
-  .gb-embed {
-    margin: 1.5rem 0;
+  .gb-hint-success {
+    border-color: color-mix(in srgb, var(--color-success) 40%, transparent);
+    background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
+  }
+
+  .doc-section {
+    border-radius: 0.85rem;
+    border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+    background-color: var(--color-panel);
+    margin-top: 1.25rem;
     overflow: hidden;
-    border-radius: 1rem;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 10%, transparent);
-    background-color: color-mix(in srgb, var(--color-ivory) 70%, transparent);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .gb-embed iframe {
-    display: block;
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    border: 0;
+  .doc-section-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    gap: 1rem;
   }
 
-  .gb-embed a {
-    display: block;
-    padding: 16px;
+  .doc-section-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .doc-section-heading {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text);
+  }
+
+  .doc-section-summary h2 {
+    margin: 0;
+  }
+
+  .doc-section-chevron {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.3s ease;
     color: var(--color-accent);
+  }
+
+  .doc-section[open] .doc-section-chevron {
+    transform: rotate(180deg);
+  }
+
+  .doc-section-content {
+    border-top: 1px solid color-mix(in srgb, var(--color-border) 20%, transparent);
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .theme-toggle {
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .theme-toggle:hover {
+    border-color: var(--color-accent);
+    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
   }
 }
