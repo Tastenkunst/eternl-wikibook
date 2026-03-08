@@ -4,11 +4,11 @@ The DApp Browser is a built-in, secure environment inside Eternl that lets you i
 
 Clicking the **DApp Browser** entry in the sidebar opens the interface shown below. The sidebar remains visible on desktop, giving you a clear path back to your wallets or other tools at any time.
 
-![Eternl Dashboard](/gitbook-assets/pictures/image_90fd61.jpg)
+![Eternl Dashboard](/gitbook-assets/pictures/v2_dashboard.jpg.png)
 
 The landing view highlights a **Promoted** carousel for Eternl-verified partners above the fold before showing collections divided into the interface's built-in categories (DeFi, Social, Collectibles, Tools, Streaming, and more). Use the tabs and filters to jump straight to the section you care about, or scroll through curated lists that briefly describe each dApp and its focus.
 
-![DApp Browser Interface](/gitbook-assets/pictures/image_90f5bf.jpg)
+![DApp Browser Interface](/gitbook-assets/pictures/v2_dapp_browser.jpg.png)
 
 {% hint style="info" %}
 The DApp Browser is a core feature available on both the Desktop Extension and the Mobile App (iOS/Android), so the same verified partners, categories, and navigation cues show up whether you are at your desk or on the go.
