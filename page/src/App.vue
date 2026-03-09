@@ -2,6 +2,7 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { navTree } from '@/lib/content';
+import { getIconPath } from '@/lib/icons';
 import Sidebar from '@/components/Sidebar.vue';
 import SearchBox from '@/components/SearchBox.vue';
 import MobileNav from '@/components/MobileNav.vue';
@@ -10,18 +11,6 @@ const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
 const theme = ref<'dark' | 'light'>('dark');
-
-const iconMap = new Map<string, string>([
-  ['Governance', 'GovernanceDRep'],
-  ['Staking', 'StakingOutline'],
-  ['DApp Browser', 'DApp2'],
-]);
-
-function getIconPath(name: string): string {
-  const mapped = iconMap.get(name) ?? name;
-  const clean = mapped.startsWith('Icon') ? mapped.slice(4) : mapped;
-  return `/gitbook-assets/icons/${clean}.svg`;
-}
 
 const themeIcon = computed(() => getIconPath(theme.value === 'dark' ? 'IconSun03' : 'IconMoon02'));
 
