@@ -6,6 +6,5 @@ const iconMap = new Map<string, string>([
 
 export function getIconPath(name: string): string {
   const mapped = iconMap.get(name) ?? name;
-  const clean = mapped.startsWith('Icon') ? mapped.slice(4) : mapped;
-  return `/gitbook-assets/icons/${clean}.svg`;
+  return `/gitbook-assets/icons/${mapped}.svg`;
 }

@@ -15,6 +15,9 @@
     --color-warning: #fb923c;
     --color-success: #22c55e;
     --color-danger: #f87171;
+    --theme-icon-filter-dark: invert(74%) sepia(50%) saturate(390%) hue-rotate(330deg) brightness(110%) contrast(92%);
+    --theme-icon-filter-light: brightness(0) saturate(100%);
+    --theme-icon-filter: var(--theme-icon-filter-dark);
   }
 
   html {
@@ -37,6 +40,7 @@
     --color-warning: #fb923c;
     --color-success: #16a34a;
     --color-danger: #dc2626;
+    --theme-icon-filter: var(--theme-icon-filter-light);
   }
 
   body {
@@ -407,7 +411,7 @@
   }
 
   .theme-toggle img {
-    filter: invert(74%) sepia(50%) saturate(390%) hue-rotate(330deg) brightness(110%) contrast(92%);
+    filter: var(--theme-icon-filter);
   }
 
   #doc-search {
@@ -423,6 +427,10 @@
   html:not(.dark) #doc-search {
     background-color: #ffffff;
     color: #0f172a;
+  }
+
+  #doc-search::placeholder {
+    color: color-mix(in srgb, var(--color-text) 60%, transparent);
   }
   
   .sidebar-list {

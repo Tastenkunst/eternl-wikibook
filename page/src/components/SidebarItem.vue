@@ -28,7 +28,7 @@ const isActive = computed(() => {
   return normalizedCurrent.value === props.item.routePath;
 });
 
-const iconName = computed(() => (expanded.value ? 'IconChevronDown' : 'IconChevronRight'));
+const iconName = computed(() => (expanded.value ? 'ChevronDown' : 'ChevronRight'));
 const iconSrc = computed(() => getIconPath(iconName.value));
 
 function toggle(): void {

@@ -11,8 +11,13 @@ const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
 const theme = ref<'dark' | 'light'>('dark');
-const sunIcon = getIconPath('IconSun03');
-const moonIcon = getIconPath('IconMoon02');
+const sunIcon = getIconPath('Sun03');
+const moonIcon = getIconPath('Moon02');
+const bannerImage = computed(() =>
+  theme.value === 'dark'
+    ? '/gitbook-assets/pictures/v1-dark.jpg'
+    : '/gitbook-assets/pictures/v1-light.jpg'
+);
 
 function applyTheme(value: 'dark' | 'light') {
   const root = document.documentElement;
@@ -76,6 +81,17 @@ watch(
         </div>
       </div>
     </header>
+
+    <section class="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
+      <figure class="relative overflow-hidden rounded-[1.5rem] border border-ink-10 bg-black/5 shadow-soft">
+        <img
+          :src="bannerImage"
+          alt="Eternl hero banner"
+          class="h-56 w-full object-cover"
+          loading="lazy"
+        />
+      </figure>
+    </section>
 
     <div class="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6 sm:px-6 lg:grid-cols-[260px_minmax(0,1fr)]">
       <aside class="hidden lg:block">
