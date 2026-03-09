@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { navTree } from '@/lib/content';
-import { getIconPath } from '@/lib/icons';
 import Sidebar from '@/components/Sidebar.vue';
 import SearchBox from '@/components/SearchBox.vue';
 import MobileNav from '@/components/MobileNav.vue';
@@ -11,8 +10,6 @@ const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
 const theme = ref<'dark' | 'light'>('dark');
-const sunIcon = getIconPath('Sun03');
-const moonIcon = getIconPath('Moon02');
 
 function applyTheme(value: 'dark' | 'light') {
   const root = document.documentElement;
@@ -45,39 +42,28 @@ watch(
   <div class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
-      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 app-header-inner">
-        <div class="flex flex-col gap-1 header-brand">
-          <div class="flex items-center gap-3">
-            <img
-              src="/gitbook-assets/pictures/eternl-logo-small-vector.png"
-              alt="Eternl logo"
-              class="h-8 w-auto"
-              loading="lazy"
-            />
-            <span class="sr-only">Eternl Wiki Viewer</span>
-          </div>
-          <p class="text-sm text-ink-70">Support documentation for the Cardano ecosystem.</p>
-        </div>
-        <div class="flex flex-wrap items-center gap-3">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 app-header-inner">
+        <span class="text-xl font-bold">Eternl Wiki</span>
+        <div class="flex items-center gap-3">
           <SearchBox />
           <div class="flex items-center gap-2">
             <button
               type="button"
-              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+              class="theme-toggle flex h-10 w-24 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-semibold uppercase tracking-[0.2em]"
               @click="applyTheme('light')"
               :aria-pressed="theme === 'light'"
               aria-label="Switch to light mode"
             >
-              <img :src="sunIcon" alt="Switch to light mode" class="h-6 w-6" />
+              [ DARK ]
             </button>
             <button
               type="button"
-              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+              class="theme-toggle flex h-10 w-24 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-semibold uppercase tracking-[0.2em]"
               @click="applyTheme('dark')"
               :aria-pressed="theme === 'dark'"
               aria-label="Switch to dark mode"
             >
-              <img :src="moonIcon" alt="Switch to dark mode" class="h-6 w-6" />
+              [ LIGHT ]
             </button>
           </div>
         </div>
