@@ -46,20 +46,36 @@ watch(
         <span class="text-xl font-bold">Eternl Wiki</span>
         <div class="flex items-center gap-3">
           <SearchBox />
-          <button
-            type="button"
-            class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs font-semibold uppercase tracking-[0.2em]"
-            @click="applyTheme(theme === 'dark' ? 'light' : 'dark')"
-            :aria-pressed="theme === 'dark'"
-            :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
-          >
-            <img
-              :src="theme === 'dark' ? '/gitbook-assets/icons/IconSun03.svg' : '/gitbook-assets/icons/IconMoon02.svg'"
-              alt=""
-              aria-hidden="true"
-              class="h-5 w-5"
-            />
-          </button>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5"
+              @click="applyTheme('dark')"
+              :aria-pressed="theme === 'dark'"
+              aria-label="Switch to dark mode"
+              :class="{ 'theme-toggle-active': theme === 'dark' }"
+            >
+              <img
+                src="/gitbook-assets/icons/Moon02.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
+            <button
+              type="button"
+              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5"
+              @click="applyTheme('light')"
+              :aria-pressed="theme === 'light'"
+              aria-label="Switch to light mode"
+              :class="{ 'theme-toggle-active': theme === 'light' }"
+            >
+              <img
+                src="/gitbook-assets/icons/Sun03.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </header>

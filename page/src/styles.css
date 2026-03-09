@@ -15,7 +15,7 @@
     --color-warning: #fb923c;
     --color-success: #22c55e;
     --color-danger: #f87171;
-    --theme-icon-filter-dark: none;
+    --theme-icon-filter-dark: invert(74%) sepia(50%) saturate(390%) hue-rotate(330deg) brightness(110%) contrast(92%);
     --theme-icon-filter-light: brightness(0) saturate(100%);
     --theme-icon-filter: var(--theme-icon-filter-dark);
   }
@@ -424,7 +424,14 @@
   }
 
   .theme-toggle img {
+    width: 20px;
+    height: 20px;
     filter: var(--theme-icon-filter);
+  }
+
+  .theme-toggle-active {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 40%, transparent);
   }
 
   #doc-search {
