@@ -15,7 +15,7 @@
     --color-warning: #fb923c;
     --color-success: #22c55e;
     --color-danger: #f87171;
-    --theme-icon-filter-dark: invert(74%) sepia(50%) saturate(390%) hue-rotate(330deg) brightness(110%) contrast(92%);
+    --theme-icon-filter-dark: none;
     --theme-icon-filter-light: brightness(0) saturate(100%);
     --theme-icon-filter: var(--theme-icon-filter-dark);
   }
