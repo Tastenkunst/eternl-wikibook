@@ -13,11 +13,6 @@ const mainRef = ref<HTMLElement | null>(null);
 const theme = ref<'dark' | 'light'>('dark');
 const sunIcon = getIconPath('Sun03');
 const moonIcon = getIconPath('Moon02');
-const bannerImage = computed(() =>
-  theme.value === 'dark'
-    ? '/gitbook-assets/pictures/v1-dark.jpg'
-    : '/gitbook-assets/pictures/v1-light.jpg'
-);
 
 function applyTheme(value: 'dark' | 'light') {
   const root = document.documentElement;
@@ -49,11 +44,18 @@ watch(
 <template>
   <div class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur">
-      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <div>
-          <p class="text-xs uppercase tracking-[0.3em] text-ink-60">Eternl</p>
-          <p class="font-display text-2xl text-ink">Wiki Viewer</p>
+    <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6 app-header-inner">
+        <div class="flex flex-col gap-1 header-brand">
+          <div class="flex items-center gap-3">
+            <img
+              src="/gitbook-assets/pictures/eternl-logo-small-vector.png"
+              alt="Eternl logo"
+              class="h-8 w-auto"
+              loading="lazy"
+            />
+            <span class="sr-only">Eternl Wiki Viewer</span>
+          </div>
           <p class="text-sm text-ink-70">Support documentation for the Cardano ecosystem.</p>
         </div>
         <div class="flex flex-wrap items-center gap-3">
@@ -81,17 +83,6 @@ watch(
         </div>
       </div>
     </header>
-
-    <section class="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
-      <figure class="relative overflow-hidden rounded-[1.5rem] border border-ink-10 bg-black/5 shadow-soft">
-        <img
-          :src="bannerImage"
-          alt="Eternl hero banner"
-          class="h-56 w-full object-cover"
-          loading="lazy"
-        />
-      </figure>
-    </section>
 
     <div class="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6 sm:px-6 lg:grid-cols-[260px_minmax(0,1fr)]">
       <aside class="hidden lg:block">
