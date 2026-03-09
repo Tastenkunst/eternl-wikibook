@@ -57,6 +57,12 @@
     color: #0f172a;
   }
 
+  html:not(.dark) body,
+  html:not(.dark) #app {
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+
   * {
     scroll-margin-top: 96px;
   }
@@ -410,6 +416,11 @@
   }
 
   html.light #doc-search {
+    background-color: #ffffff;
+    color: #0f172a;
+  }
+
+  html:not(.dark) #doc-search {
     background-color: #ffffff;
     color: #0f172a;
   }

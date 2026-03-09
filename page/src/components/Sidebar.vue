@@ -2,13 +2,6 @@
 import type { NavItem } from '@/lib/content';
 import SidebarItem from '@/components/SidebarItem.vue';
 
-defineProps<{ items: NavItem[]; currentPath: string }>();
-</script>
-
-<script setup lang="ts">
-import type { NavItem } from '@/lib/content';
-import SidebarItem from '@/components/SidebarItem.vue';
-
 const props = defineProps<{ items: NavItem[]; currentPath: string }>();
 </script>
 

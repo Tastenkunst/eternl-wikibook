@@ -11,8 +11,8 @@ const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
 const theme = ref<'dark' | 'light'>('dark');
-
-const themeIcon = computed(() => getIconPath(theme.value === 'dark' ? 'IconSun03' : 'IconMoon02'));
+const sunIcon = getIconPath('IconSun03');
+const moonIcon = getIconPath('IconMoon02');
 
 function applyTheme(value: 'dark' | 'light') {
   const root = document.documentElement;
@@ -20,10 +20,6 @@ function applyTheme(value: 'dark' | 'light') {
   root.classList.add(value);
   localStorage.setItem('wiki-theme', value);
   theme.value = value;
-}
-
-function toggleTheme() {
-  applyTheme(theme.value === 'dark' ? 'light' : 'dark');
 }
 
 onMounted(() => {
@@ -46,7 +42,7 @@ watch(
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#0f172a] text-white">
+  <div class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur">
       <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
@@ -57,15 +53,26 @@ watch(
         </div>
         <div class="flex flex-wrap items-center gap-3">
           <SearchBox />
-          <button
-            type="button"
-            class="theme-toggle flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-[#fdbb2d] transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
-            @click="toggleTheme"
-            :aria-pressed="theme === 'dark'"
-            aria-label="Toggle theme"
-          >
-            <img :src="themeIcon" alt="Toggle theme" class="h-6 w-6" />
-          </button>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+              @click="applyTheme('light')"
+              :aria-pressed="theme === 'light'"
+              aria-label="Switch to light mode"
+            >
+              <img :src="sunIcon" alt="Switch to light mode" class="h-6 w-6" />
+            </button>
+            <button
+              type="button"
+              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 transition hover:border-white/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+              @click="applyTheme('dark')"
+              :aria-pressed="theme === 'dark'"
+              aria-label="Switch to dark mode"
+            >
+              <img :src="moonIcon" alt="Switch to dark mode" class="h-6 w-6" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
