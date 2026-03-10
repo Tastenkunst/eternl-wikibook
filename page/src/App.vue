@@ -49,23 +49,23 @@ watch(
           <div class="flex items-center gap-2">
             <button
               type="button"
-              class="theme-toggle flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/5 px-3 tracking-[0.2em] text-xs uppercase font-semibold"
+              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5"
               @click="applyTheme('dark')"
               :aria-pressed="theme === 'dark'"
               aria-label="Switch to dark mode"
               :class="{ 'theme-toggle-active': theme === 'dark' }"
             >
-              [ DARK ]
+              <img src="/gitbook-assets/icons/Moon02.svg" class="theme-icon" />
             </button>
             <button
               type="button"
-              class="theme-toggle flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/5 px-3 tracking-[0.2em] text-xs uppercase font-semibold"
+              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5"
               @click="applyTheme('light')"
               :aria-pressed="theme === 'light'"
               aria-label="Switch to light mode"
               :class="{ 'theme-toggle-active': theme === 'light' }"
             >
-              [ LIGHT ]
+              <img src="/gitbook-assets/icons/Sun03.svg" class="theme-icon" />
             </button>
           </div>
         </div>

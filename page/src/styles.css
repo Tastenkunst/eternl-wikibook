@@ -16,6 +16,8 @@
     --color-success: #22c55e;
     --color-danger: #f87171;
     --chevron-filter: brightness(0.2);
+    --theme-icon-filter: brightness(0) saturate(100%) invert(43%) sepia(90%) saturate(1145%) hue-rotate(193deg) brightness(95%) contrast(97%);
+    --theme-icon-glow: 0 0 8px rgba(59, 130, 246, 0.25);
   }
 
   html {
@@ -43,6 +45,8 @@
   .dark,
   html.dark {
     --chevron-filter: brightness(0) invert(1);
+    --theme-icon-filter: invert(76%) sepia(26%) saturate(1714%) hue-rotate(359deg) brightness(101%) contrast(101%);
+    --theme-icon-glow: 0 0 10px rgba(255, 144, 62, 0.28);
   }
 
   body {
@@ -437,7 +441,7 @@
   }
 
   .theme-toggle {
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
 
   .theme-toggle:hover {
@@ -445,9 +449,21 @@
     background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
   }
 
+  .theme-toggle:hover .theme-icon {
+    opacity: 0.8;
+  }
+
   .theme-toggle-active {
     border-color: var(--color-accent);
-    box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 40%, transparent);
+    box-shadow: var(--theme-icon-glow);
+  }
+
+  .theme-icon {
+    width: 20px;
+    height: 20px;
+    filter: var(--theme-icon-filter);
+    opacity: 1;
+    transition: opacity 0.2s ease, filter 0.2s ease;
   }
 
   #doc-search {
