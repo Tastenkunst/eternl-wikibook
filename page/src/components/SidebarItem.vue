@@ -63,7 +63,7 @@ function containsRoute(item: NavItem, target: string): boolean {
     >
       <img
         v-if="item.children.length"
-        class="sidebar-chevron"
+        class="sidebar-chevron sidebar-chevron-icon"
         :src="iconSrc"
         alt="Toggle section"
         aria-hidden="true"
