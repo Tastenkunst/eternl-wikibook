@@ -43,37 +43,29 @@ watch(
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 app-header-inner">
-        <span class="text-xl font-bold">Eternl Wiki</span>
+        <span class="text-xl font-bold brand-text">Eternl Wiki</span>
         <div class="flex items-center gap-3">
           <SearchBox />
           <div class="flex items-center gap-2">
             <button
               type="button"
-              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5"
+              class="theme-toggle flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/5 px-3 tracking-[0.2em] text-xs uppercase font-semibold"
               @click="applyTheme('dark')"
               :aria-pressed="theme === 'dark'"
               aria-label="Switch to dark mode"
               :class="{ 'theme-toggle-active': theme === 'dark' }"
             >
-              <img
-                src="/gitbook-assets/icons/Moon02.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              [ DARK ]
             </button>
             <button
               type="button"
-              class="theme-toggle flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5"
+              class="theme-toggle flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/5 px-3 tracking-[0.2em] text-xs uppercase font-semibold"
               @click="applyTheme('light')"
               :aria-pressed="theme === 'light'"
               aria-label="Switch to light mode"
               :class="{ 'theme-toggle-active': theme === 'light' }"
             >
-              <img
-                src="/gitbook-assets/icons/Sun03.svg"
-                alt=""
-                aria-hidden="true"
-              />
+              [ LIGHT ]
             </button>
           </div>
         </div>
