@@ -30,5 +30,7 @@ All versions are fully non-custodial — **you remain in control of your keys** 
 
 ---
 
-<mark style="color:black;">**Tip**</mark><br>
-<mark style="color:green;">Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.</mark>
+<div class="callout-tip">
+**Tip**  
+Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.
+</div>

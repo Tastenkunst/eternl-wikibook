@@ -47,7 +47,9 @@ When enabled, all funds will be held on the first receive address by default.
 
 Alternatively a custom receive address can be set here.
 
-> <mark style="color:red;">Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.</mark>
+<div class="callout-tip">
+Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.
+</div>
 
 </details>
 
