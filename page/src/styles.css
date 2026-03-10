@@ -363,6 +363,22 @@
     background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
   }
 
+  .callout-tip {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #3b82f6;
+    background-color: #f0f7ff;
+    color: #0f172a;
+  }
+
+  .dark .callout-tip,
+  html.dark .callout-tip {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-left-color: #ff903e;
+    color: #f8fafc;
+  }
+
   .doc-section {
     border-radius: 0.85rem;
     border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
