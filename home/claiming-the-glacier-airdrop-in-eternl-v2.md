@@ -15,8 +15,13 @@ You have until **October 20th** to do so.
 For the easiest experience, use the **Eternl Chrome browser extension**.\
 ![Pointing hand](/gitbook-assets/icons/IconFingerTouch03.svg) Check out our tutorials on:
 
-* [How to install the Chrome Browser Eternl extension?](https://www.youtube.com/watch?v=TuIYDx2_0nA)
-* [How to Import Multiple Wallets in Eternl v2?](https://www.youtube.com/watch?v=fXevC1U2OFg)
+How to install the Chrome Browser Eternl extension?
+
+<iframe src="https://www.youtube.com/embed/TuIYDx2_0nA" frameborder="0" allowfullscreen></iframe>
+
+How to import multiple wallets in Eternl v2?
+
+<iframe src="https://www.youtube.com/embed/fXevC1U2OFg" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -104,7 +109,9 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 **For more details:**
 
 * **Eternl Wiki Guide**: https://wiki.eternl.io/en/2\_user-guide/glacier-airdrop
-* **Video Tutorial**: https://www.youtube.com/watch?v=CRPlXGoFO8w
+**Video Tutorial**
+
+<iframe src="https://www.youtube.com/embed/CRPlXGoFO8w" frameborder="0" allowfullscreen></iframe>
 * **Tokenomics & Claim Phases**: Visit https://midnight.io/ and scroll down to "Token allocations" for a breakdown of all three phases: **Glacier Drop**, **Scavenger Mine**, and **Lost-and-Found**.
 
 </details>
