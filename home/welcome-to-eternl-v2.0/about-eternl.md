@@ -2,9 +2,9 @@
 description: Your all-in-one gateway to Cardano DeFi, DApps and NFTs.
 ---
 
-# &#x20;About Eternl&#x20;
+# About Eternl
 
-Eternl: Your Gateway to the Cardano Blockchain.&#x20;
+Eternl: Your Gateway to the Cardano Blockchain
 
 \+ Send and receive Ada and native assets. \
 \+ Liquid Staking: Choose from over 3,000 staking pools for ADA delegation. \
@@ -22,10 +22,9 @@ More features: \
 \+ Portfolio overview.
 
 \+ Catalyst Voting. \
-\+ Cardano on-chain governance.&#x20;
+\+ Cardano on-chain governance.
 
 \
 \+ And much more... \
 \
 Your keys, your crypto! Eternl stores your wallet's encrypted private keys on your computer, not on Eternl servers (non-custodial). Be careful: Keep your seed phrase safe and never enter it on any other website.
-

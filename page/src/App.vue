@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
+import { computed, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { navTree } from '@/lib/content';
 import Sidebar from '@/components/Sidebar.vue';
@@ -9,6 +9,24 @@ import MobileNav from '@/components/MobileNav.vue';
 const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
+const theme = ref<'dark' | 'light'>('dark');
+
+function applyTheme(value: 'dark' | 'light') {
+  const root = document.documentElement;
+  root.classList.remove('dark', 'light');
+  root.classList.add(value);
+  localStorage.setItem('wiki-theme', value);
+  theme.value = value;
+}
+
+onMounted(() => {
+  const saved = localStorage.getItem('wiki-theme');
+  if (saved === 'light' || saved === 'dark') {
+    applyTheme(saved);
+  } else {
+    applyTheme('dark');
+  }
+});
 
 watch(
   () => route.path,
@@ -21,16 +39,36 @@ watch(
 </script>
 
 <template>
-  <div class="min-h-screen bg-sand text-ink">
+  <div class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur">
-      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <div>
-          <p class="text-xs uppercase tracking-[0.3em] text-ink-60">Eternl</p>
-          <p class="font-display text-2xl text-ink">Wiki Viewer</p>
-          <p class="text-sm text-ink-70">Support documentation for the Cardano ecosystem.</p>
+    <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 app-header-inner">
+        <span class="text-xl font-bold brand-text">Eternl Wiki</span>
+        <div class="flex items-center gap-3">
+          <SearchBox />
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="theme-toggle flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/5 px-3 tracking-[0.2em] text-xs uppercase font-semibold"
+              @click="applyTheme('dark')"
+              :aria-pressed="theme === 'dark'"
+              aria-label="Switch to dark mode"
+              :class="{ 'theme-toggle-active': theme === 'dark' }"
+            >
+              [ DARK ]
+            </button>
+            <button
+              type="button"
+              class="theme-toggle flex h-10 items-center justify-center rounded-full border border-white/20 bg-white/5 px-3 tracking-[0.2em] text-xs uppercase font-semibold"
+              @click="applyTheme('light')"
+              :aria-pressed="theme === 'light'"
+              aria-label="Switch to light mode"
+              :class="{ 'theme-toggle-active': theme === 'light' }"
+            >
+              [ LIGHT ]
+            </button>
+          </div>
         </div>
-        <SearchBox />
       </div>
     </header>
 
@@ -46,7 +84,7 @@ watch(
       </main>
     </div>
 
-    <footer class="border-t border-ink-10 bg-ivory-70">
+    <footer class="border-t border-white/10 bg-white/5">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 text-xs text-ink-60 sm:px-6">
         <span>Read-only viewer. Edit Markdown in WebStorm or VSCode.</span>
         <span>Generated from SUMMARY.md and GitBook content.</span>

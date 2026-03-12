@@ -1,4 +1,4 @@
-# Hot wallets vs cold wallets.
+# Hot wallets vs cold wallets
 
 **Hot Wallets vs. Cold Wallets**: Choosing between hot wallets and cold wallets is vital for securing cryptocurrencies, based on your needs and desired security level.&#x20;
 

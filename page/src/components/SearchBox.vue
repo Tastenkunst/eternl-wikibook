@@ -38,7 +38,7 @@ function onKeydown(event: KeyboardEvent): void {
       v-model="query"
       type="search"
       placeholder="Search docs"
-      class="w-full rounded-full border border-ink-20 bg-ivory px-4 py-2 text-sm shadow-sm outline-none transition focus:border-ink-40"
+      class="w-full rounded-full border border-ink-20 bg-ivory px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"
       @keydown="onKeydown"
     />
 

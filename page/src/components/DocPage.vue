@@ -5,16 +5,81 @@ import { getDocByRoute, getPrevNext } from '@/lib/content';
 import Toc from '@/components/Toc.vue';
 
 const route = useRoute();
-
 const routePath = computed(() => normalizePath(route.path));
 const doc = computed(() => getDocByRoute(routePath.value));
 const prevNext = computed(() => getPrevNext(routePath.value));
+
+const processedDocHtml = computed(() => {
+  if (!doc.value?.html) {
+    return '';
+  }
+  if (typeof document === 'undefined') {
+    return doc.value.html;
+  }
+  return wrapSections(doc.value.html);
+});
 
 function normalizePath(path: string): string {
   if (path.length > 1 && path.endsWith('/')) {
     return path.slice(0, -1);
   }
   return path;
+}
+
+function wrapSections(html: string): string {
+  const container = document.createElement('div');
+  container.innerHTML = html;
+  const serializer = new XMLSerializer();
+  const nodes = Array.from(container.childNodes);
+  let intro = '';
+  const sections: Array<{ headingHtml: string; content: string }> = [];
+  let current: { headingHtml: string; content: string } | null = null;
+
+  nodes.forEach((node) => {
+    if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === 'H2') {
+      if (current) {
+        sections.push(current);
+      }
+      current = {
+        headingHtml: (node as Element).outerHTML,
+        content: '',
+      };
+    } else if (current) {
+      current.content += serializer.serializeToString(node);
+    } else {
+      intro += serializer.serializeToString(node);
+    }
+  });
+
+  if (current) {
+    sections.push(current);
+  }
+
+  if (!sections.length) {
+    return html;
+  }
+
+  let result = intro;
+  sections.forEach((section, index) => {
+    result += `
+<details class="doc-section" ${index === 0 ? 'open' : ''}>
+  <summary class="doc-section-summary">
+    ${section.headingHtml}
+    <img
+      class="doc-section-chevron"
+      src="/gitbook-assets/icons/ChevronDown.svg"
+      alt=""
+      role="presentation"
+      aria-hidden="true"
+    />
+  </summary>
+  <div class="doc-section-content">
+    ${section.content}
+  </div>
+</details>`;
+  });
+
+  return result;
 }
 </script>
 
@@ -34,7 +99,7 @@ function normalizePath(path: string): string {
         <Toc :items="doc.toc" />
       </div>
 
-      <div class="doc-content" v-html="doc.html"></div>
+      <div class="doc-content" v-html="processedDocHtml"></div>
 
       <div class="mt-12 flex items-center justify-between gap-4 border-t border-ink-10 pt-6 text-sm">
         <RouterLink
