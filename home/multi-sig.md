@@ -10,7 +10,7 @@ description: How to create simple or complex multi-sig wallets?
 
 ## How to create complex multi-sig structures?
 
-{% embed url="https://www.youtube.com/embed/Amar1nDk0FU" %}
+{% embed url="https://www.youtube.com/Amar1nDk0FU" %}
 
 ## Why multi-sig wallets cannot be a DApp account (for now)
 
