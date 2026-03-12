@@ -29,7 +29,7 @@
       * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
     * [Understanding Balances](home/getting-started/understanding-balances.md)
   * [Multi-sig](home/multi-sig.md)
-  * [Staking & delegation](home/staking-and-delegation/README.md)
+  * [Staking & delegation](home/staking-and-delegation/staking-and-delegation.md)
     * [stake pool rating](home/staking-and-delegation/stake-pool-rating.md)
   * [FAQ](readme/faq.md)
   * [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
