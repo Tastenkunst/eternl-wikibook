@@ -225,34 +225,36 @@
   }
 
   .doc-content h1 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
     color: #ffffff;
   }
 
   .doc-content h2 {
-    margin-top: 2.25rem;
-    margin-bottom: 0.75rem;
-    font-size: 2.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
     color: var(--heading-gold-strong);
   }
 
   .doc-content h3 {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: 0.45rem;
+    font-size: 1.1rem;
+    font-weight: 700;
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
     color: var(--heading-gold-soft);
   }
 
   .doc-content h4 {
-    margin-top: 1.4rem;
-    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+    font-size: 1rem;
     font-weight: 500;
     font-style: italic;
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
@@ -260,7 +262,8 @@
   }
 
   .doc-content h5 {
-    margin-top: 1.2rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.3rem;
     font-size: 1rem;
     font-weight: 500;
     font-style: italic;
