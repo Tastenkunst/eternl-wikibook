@@ -10,6 +10,11 @@ const doc = computed(() => getDocByRoute(routePath.value));
 const prevNext = computed(() => getPrevNext(routePath.value));
 const isDark = ref(false);
 
+const defaultWelcomeBanner = {
+  light: '/gitbook-assets/pictures/v1-light.jpg',
+  dark: '/gitbook-assets/pictures/v1-dark.jpg'
+};
+
 let themeObserver: MutationObserver | null = null;
 
 const coverSrc = computed(() => {
@@ -18,6 +23,9 @@ const coverSrc = computed(() => {
     return undefined;
   }
   if (typeof cover === 'string') {
+    if (cover.endsWith('/pictures/v1-dark.jpg')) {
+      return isDark.value ? defaultWelcomeBanner.dark : defaultWelcomeBanner.light;
+    }
     return cover;
   }
   return isDark.value ? cover.dark || cover.light : cover.light || cover.dark;
@@ -44,7 +52,9 @@ function syncThemeState() {
   if (typeof document === 'undefined') {
     return;
   }
-  isDark.value = document.documentElement.classList.contains('dark');
+  const root = document.documentElement;
+  const body = document.body;
+  isDark.value = root.classList.contains('dark') || body.classList.contains('dark');
 }
 
 onMounted(() => {

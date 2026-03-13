@@ -1,17 +1,16 @@
 <!-- markdownlint-disable MD024 -->
-# Eternl updates / release notes
 
-## Releases
+# Releases
 
 ## v2.0.16.0
 
 released 16.12.2025
 
-## Changed
+### Changed
 
 + Updated second checkbox text on the ToS acceptance overlay to read: "I agree to the immediate start of the service and acknowledge that I waive my 14-day cooling-off period (for the ToS)."
 
-## Fixed
+### Fixed
 
 + Signing with spending password: Shift key not working properly.
 
@@ -32,7 +31,7 @@ Thanks to @stakepool_ for reporting it.
 
 released 14.12.2025
 
-## Fixed
+### Fixed
 
 + Granting initial dapp access resulting in "account changed" error
 + User slippage setting in MonsterSwap being used to build final transactions
@@ -41,7 +40,7 @@ released 14.12.2025
 + Cancel orders using minswap aggregator via MonsterSwap
 + Trying to submit a tx after signing with the first account when more accounts need to sign
 
-## Availability
+### Availability
 
 - ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
 - ![Check](../../.gitbook/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
