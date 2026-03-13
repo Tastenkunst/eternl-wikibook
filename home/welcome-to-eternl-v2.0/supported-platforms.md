@@ -31,6 +31,5 @@ All versions are fully non-custodial — **you remain in control of your keys** 
 ---
 
 <div class="callout-tip">
-**Tip**  
 Install the PWA on your desktop or mobile to enjoy fast access with app-like behavior, without needing the browser extension.
 </div>

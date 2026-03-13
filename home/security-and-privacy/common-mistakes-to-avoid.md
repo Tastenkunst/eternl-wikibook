@@ -4,8 +4,6 @@
 
 Protecting your crypto assets begins with understanding how to properly handle and store your **seed phrase** and credentials. Below are common mistakes users should avoid — along with safer alternatives.
 
----
-
 ### &#x20;Avoid Digital Photos of Your Seed Phrase
 
 Never take a screenshot or photo of your seed phrase. Storing images on phones or computers exposes them to:
@@ -14,9 +12,9 @@ Never take a screenshot or photo of your seed phrase. Storing images on phones o
 * Unauthorized access
 * Cloud service breaches
 
-> &#x20;**Safer Alternative:** Write the seed phrase **on paper** and store it securely offline.
-
----
+<div class="callout-tip">
+&#x20;Safer Alternative: Write the seed phrase **on paper** and store it securely offline.
+</div>
 
 ### &#x20;Use Metal Backups for Long-Term Security
 
