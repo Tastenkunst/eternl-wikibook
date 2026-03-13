@@ -21,8 +21,15 @@ export type DocPage = {
   description?: string;
   html: string;
   toc: TocItem[];
-  cover?: string;
+  cover?: CoverAsset;
 };
+
+export type CoverAsset =
+  | string
+  | {
+      light?: string;
+      dark?: string;
+    };
 
 export type NavItem = {
   id: string;
@@ -560,7 +567,7 @@ function stripQuotes(value: string): string {
   return trimmed;
 }
 
-function normalizeCover(cover: unknown): string | undefined {
+function normalizeCover(cover: unknown): CoverAsset | undefined {
   if (!cover) {
     return undefined;
   }
@@ -569,8 +576,12 @@ function normalizeCover(cover: unknown): string | undefined {
   }
   if (typeof cover === 'object') {
     const record = cover as Record<string, string | undefined>;
-    const candidate = record.light || record.dark;
-    return candidate ? rewriteGitbookAssets(candidate) : undefined;
+    const light = record.light ? rewriteGitbookAssets(record.light) : undefined;
+    const dark = record.dark ? rewriteGitbookAssets(record.dark) : undefined;
+    if (!light && !dark) {
+      return undefined;
+    }
+    return { light, dark };
   }
   return undefined;
 }

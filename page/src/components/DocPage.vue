@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { getDocByRoute, getPrevNext } from '@/lib/content';
 import Toc from '@/components/Toc.vue';
@@ -8,6 +8,20 @@ const route = useRoute();
 const routePath = computed(() => normalizePath(route.path));
 const doc = computed(() => getDocByRoute(routePath.value));
 const prevNext = computed(() => getPrevNext(routePath.value));
+const isDark = ref(false);
+
+let themeObserver: MutationObserver | null = null;
+
+const coverSrc = computed(() => {
+  const cover = doc.value?.cover;
+  if (!cover) {
+    return undefined;
+  }
+  if (typeof cover === 'string') {
+    return cover;
+  }
+  return isDark.value ? cover.dark || cover.light : cover.light || cover.dark;
+});
 
 const processedDocHtml = computed(() => {
   if (!doc.value?.html) {
@@ -25,6 +39,29 @@ function normalizePath(path: string): string {
   }
   return path;
 }
+
+function syncThemeState() {
+  if (typeof document === 'undefined') {
+    return;
+  }
+  isDark.value = document.documentElement.classList.contains('dark');
+}
+
+onMounted(() => {
+  syncThemeState();
+  if (typeof document === 'undefined') {
+    return;
+  }
+  themeObserver = new MutationObserver(syncThemeState);
+  themeObserver.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+});
+
+onBeforeUnmount(() => {
+  themeObserver?.disconnect();
+});
 
 function wrapSections(html: string): string {
   const container = document.createElement('div');
@@ -86,8 +123,8 @@ function wrapSections(html: string): string {
 <template>
   <section v-if="doc" class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px]">
     <article class="doc-card">
-      <div v-if="doc.cover" class="mb-6 overflow-hidden rounded-2xl border border-ink-10">
-        <img :src="doc.cover" alt="" class="h-48 w-full object-cover" />
+      <div v-if="coverSrc" class="mb-6 overflow-hidden rounded-2xl border border-ink-10">
+        <img :src="coverSrc" alt="" class="banner-image h-48 w-full object-cover" />
       </div>
 
       <header class="mb-8">

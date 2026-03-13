@@ -519,6 +519,11 @@
     box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 40%, transparent);
   }
 
+  .banner-image {
+    filter: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
   #doc-search {
     background-color: var(--color-panel);
     color: var(--color-text);
