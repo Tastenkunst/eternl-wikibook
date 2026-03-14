@@ -401,7 +401,11 @@ function replaceIconSvgs(html: string): string {
   return html.replace(
     /<img\b([^>]*?)\bsrc="([^"]*\/gitbook-assets\/icons\/[^"]+\.svg)"([^>]*)>/gi,
     (_match, before, src, after) => {
-      const alt = extractAltText(`${before} ${after}`);
+      const attributes = `${before} ${after}`;
+      if (/\bclass="[^"]*\btheme-icon-inline\b[^"]*"/i.test(attributes)) {
+        return _match;
+      }
+      const alt = extractAltText(attributes);
       if (alt) {
         return `<span class="gb-icon" style="--gb-icon: url('${src}')" role="img" aria-label="${escapeHtml(
           alt

@@ -21,6 +21,8 @@
     --heading-gold-subtle: #d4a373;
     --heading-hover-brightness: 1.08;
     --chevron-filter: brightness(0.2);
+    --theme-icon-inline-filter: invert(38%) sepia(83%) saturate(1535%) hue-rotate(181deg)
+      brightness(91%) contrast(97%);
   }
 
   html {
@@ -47,11 +49,15 @@
     --heading-gold-muted: #b36b2d;
     --heading-gold-soft: #c77a35;
     --heading-gold-subtle: #d4a373;
+    --theme-icon-inline-filter: invert(38%) sepia(83%) saturate(1535%) hue-rotate(181deg)
+      brightness(91%) contrast(97%);
   }
 
   .dark,
   html.dark {
     --chevron-filter: brightness(0) invert(1);
+    --theme-icon-inline-filter: invert(70%) sepia(49%) saturate(1580%) hue-rotate(353deg)
+      brightness(101%) contrast(101%);
   }
 
   body {
@@ -356,6 +362,18 @@
     margin-top: 1rem;
     border-radius: 0.75rem;
     border: 1px solid color-mix(in srgb, var(--color-border) 10%, transparent);
+  }
+
+  .doc-content img.theme-icon-inline {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    margin: 0 0.45rem 0 0;
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: -0.2em;
+    filter: var(--theme-icon-inline-filter);
   }
 
   .doc-content .gb-embed {
