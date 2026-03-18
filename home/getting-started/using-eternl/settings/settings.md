@@ -56,8 +56,6 @@ Setting a custom receive address will make all change outputs and receive addres
 <details>
 <summary>Collateral [option]</summary>
 
-### Use Eternl provided collateral?
-
 <figure><img src="../..//gitbook-assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
 
 ### Collateral (Cardano)
@@ -101,8 +99,6 @@ This means:
 
 <details>
 <summary>Manual sync [option]</summary>
-
-### Set manual sync
 
 <figure><img src="../..//gitbook-assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
@@ -156,8 +152,6 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 <details>
 <summary>History sync [option]</summary>
-
-### Set history sync
 
 <figure><img src="../..//gitbook-assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
 
@@ -271,8 +265,6 @@ Changing this value affects how tokens are distributed across outputs when sendi
 <details>
 <summary>Advanced UTxO Management</summary>
 
-### Use advanced UTxO management on your transactions
-
 <figure><img src="../..//gitbook-assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
 
 When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
@@ -285,8 +277,6 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 <details>
 <summary>Auto Withdrawal [option]</summary>
-
-### Automatically withdraw rewards if needed
 
 <figure><img src="../..//gitbook-assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
 </details>

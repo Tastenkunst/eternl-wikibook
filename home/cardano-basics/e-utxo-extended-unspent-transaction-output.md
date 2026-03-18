@@ -38,8 +38,6 @@ Understanding ADA staking pools in Cardano shows us the blockchain is about buil
 
 <summary>2. The (e)UTxO model</summary>
 
-## 2.1 What is the (e)UTxO Model?
-
 The (e)UTxO model in Cardano, inspired by Bitcoin's reliable UTxO system which has worked well for over a decade, introduces improvements. It keeps Bitcoins strengths in handling transactions securely and efficiently but adds the ability to include more data in transactions, like smart contracts. This makes Cardano's blockchain more versatile, allowing for complex transactions and applications, while maintaining high security and performance standards.
 
 The model also offers flexibility in transaction conditions, expanding the types of applications that can be developed on Cardano, especially those needing detailed transaction logic.
