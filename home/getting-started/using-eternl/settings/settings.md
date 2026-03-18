@@ -445,7 +445,7 @@ Use `Currency` to choose the **fiat display currency** used for value conversion
 <details>
 <summary>Decimal Precision</summary>
 
-![Decimal Precision setting](../../../../.gitbook/assets/pictures/precision.png)
+![Decimal Precision setting](../../../../.gitbook/assets/pictures/app_decimal_precision.png)
 
 Use `Decimal Precision` to control how many decimal places are shown for balances and values.
 
@@ -457,7 +457,7 @@ Use `Decimal Precision` to control how many decimal places are shown for balance
 <details>
 <summary>Access PIN Code</summary>
 
-![Access PIN Code setting](../../../../.gitbook/assets/pictures/pin.png)
+![Access PIN Code setting](../../../../.gitbook/assets/pictures/app_access_pin.png)
 
 Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your device.
 
@@ -487,7 +487,7 @@ Use `Biometrics Auth` for device-level authentication such as **Face ID** or **f
 <details>
 <summary>Sounds</summary>
 
-![Sounds setting](../../../../.gitbook/assets/pictures/sounds.jpg)
+![Sounds setting](../../../../.gitbook/assets/pictures/app_sounds.png)
 
 Use `Sounds` to enable or disable app sounds and notification feedback.
 
@@ -512,10 +512,10 @@ Use `Address Book` to manage saved recipient addresses inside Eternl.
 <details>
 <summary>DApp Allow List</summary>
 
-![DApp Allow List setting](../../../../.gitbook/assets/pictures/whitelisted.jpg)
+![DApp Allow List setting](../../../../.gitbook/assets/pictures/app_dapp_allow_list.png)
 
 Use `DApp Allow List` to control which dApps are allowed to connect to this Eternl app.
-
+whit
 **When to use it:**
 * Review connected dApps periodically.
 * Remove sites you no longer use.
@@ -545,7 +545,7 @@ Use `Export Wallets` to export multiple wallets from the app in one step.
 <details>
 <summary>Transactions: Auto-Submit</summary>
 
-![Transactions Auto-Submit setting](../../../../.gitbook/assets/pictures/transactions_auto_submit.jpg)
+![Transactions Auto-Submit setting](../../../../.gitbook/assets/pictures/app_tx_auto_submit.png)
 
 Use `Transactions: Auto-Submit` to automatically send signed transactions to the network after signing.
 
@@ -589,7 +589,7 @@ Use `Blockchain Explorer` to choose which explorer Eternl opens for different it
 <details>
 <summary>MonsterSwap</summary>
 
-![MonsterSwap setting](../../../../.gitbook/assets/pictures/monitor_swap.jpg)
+![MonsterSwap setting](../../../../.gitbook/assets/pictures/app_swap_settings.png)
 
 Use `MonsterSwap` to manage swap-related settings such as **slippage** and other DEX-specific behavior.
 
@@ -637,17 +637,41 @@ Use `Reset Application` to delete **all wallets** and app data stored in Eternl 
 <details>
 <summary>App Utilities</summary>
 
-<figure><img src="/gitbook-assets/pictures/App_Utilities.jpg" alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src=".gitbook\assets\pictures\App_Utilities.jpg" alt="><figcaption><p></p></figcaption></figure>
 
 <details>
 <summary>Franken Address Generator</summary>
 
+![](/.gitbook/assets/pictures/app_util_franken_address.png)
+
 Create a new address by combining any two addresses.
+
+This is an **advanced utility** for constructing or modifying Cardano addresses. It is typically relevant for testing, analysis, or debugging workflows rather than normal wallet use.
+
+**When to use it:**
+* Testing address formats
+* Advanced wallet or debugging scenarios
+
+**Important:**
+* This is **not** intended for normal users.
+* Incorrect usage can result in unusable or invalid addresses.
 </details>
 
 <details>
 <summary>Sign Data</summary>
 
+![](/.gitbook/assets/pictures/app_util_sign_data.png)
+
 Sign or verify any payload with an address / ID according to the CIP-8 standard.
+
+This utility lets you **sign arbitrary data** with a wallet key. It is commonly used for authentication, verification, or proving ownership of a wallet-controlled identity.
+
+**When to use it:**
+* Verifying wallet ownership
+* Web3 or dApp authentication
+
+**Important:**
+* Never sign unknown or untrusted data.
+* Signing data does **not** send funds, but it can still be used maliciously in the wrong context.
 </details>
 </details>
