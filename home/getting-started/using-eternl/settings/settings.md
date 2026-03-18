@@ -5,26 +5,26 @@
 <details>
 <summary>Account Settings</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/Account_Settings.png" alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/Account_Settings.png" alt=""><figcaption><p></p></figcaption></figure>
 
 <details>
 <summary>Overview</summary>
 
 {% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
-<figure><img src="../..//gitbook-assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
 </details>
 
 <details>
 <summary>Account name / handle</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Export Account Key</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/export_account_key.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/export_account_key.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 ### Cardano Public Account Key Formats
 
@@ -44,7 +44,7 @@ Only use a single address for all transactions.
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="../..//gitbook-assets/pictures/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
 
 Alternatively a custom receive address can be set here.
 
@@ -56,7 +56,7 @@ Setting a custom receive address will make all change outputs and receive addres
 <details>
 <summary>Collateral [option]</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
 
 ### Collateral (Cardano)
 
@@ -95,12 +95,13 @@ This means:
 * Collateral is **never locked** and can be spent in regular (non-contract) transactions.
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
+
 </details>
 
 <details>
 <summary>Manual sync [option]</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
 ### What is Manual Sync?
 
@@ -153,7 +154,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 <details>
 <summary>History sync [option]</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
@@ -207,6 +208,7 @@ Enable **History Sync** if:
 Keep it **disabled** if:
 
 * You want the wallet to load quickly and do not need old records.
+
 </details>
 
 <details>
@@ -214,7 +216,7 @@ Keep it **disabled** if:
 
 ### Reduce transaction fees by fragmenting tokens
 
-<figure><img src="../..//gitbook-assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
 
 **Token Fragmentation** is an advanced sending option that controls how tokens are grouped when a transaction is made.
 
@@ -265,7 +267,7 @@ Changing this value affects how tokens are distributed across outputs when sendi
 <details>
 <summary>Advanced UTxO Management</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
 
 When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
 
@@ -278,14 +280,14 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 <details>
 <summary>Auto Withdrawal [option]</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
 </details>
 </details>
 
 <details>
 <summary>Wallet Settings</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/Settings_WalletSettings.png" alt=""><figcaption><p>Wallet Settings</p></figcaption></figure>
+![Wallet Settings](/gitbook-assets/pictures/Settings_WalletSettings.png)
 
 <details>
 <summary>Name and Group</summary>
@@ -333,115 +335,115 @@ Remove the wallet and all its accounts.
 <details>
 <summary>App Settings</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/App_Settings.jpg" alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/App_Settings.jpg" alt=""><figcaption><p></p></figcaption></figure>
 
 <details>
 <summary>Pro Mode</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/pro_mode.jpg" alt=""><figcaption><p>Switch between Simple and Pro Mode.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/pro_mode.jpg" alt=""><figcaption><p>Switch between Simple and Pro Mode.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Network</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/network_switcher.png" alt=""><figcaption><p>Select the current active network.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/network_switcher.png" alt=""><figcaption><p>Select the current active network.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Language</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/language.png" alt=""><figcaption><p>Select your preferred language, formatting region and timezone.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/language.png" alt=""><figcaption><p>Select your preferred language, formatting region and timezone.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Currency</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/currency.png" alt=""><figcaption><p>Select your preferred currency for conversion.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/currency.png" alt=""><figcaption><p>Select your preferred currency for conversion.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Decimal Precision</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/precision.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/precision.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Access PIN Code</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/pin.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/pin.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Biometrics Auth</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/biometrics.png" alt=""><figcaption><p>Use Face ID (iOS) or native biometric systems for authentication yourself.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/biometrics.png" alt=""><figcaption><p>Use Face ID (iOS) or native biometric systems for authentication yourself.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Sounds</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/sounds.jpg" alt=""><figcaption><p>Enable or disable sound notifications.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/sounds.jpg" alt=""><figcaption><p>Enable or disable sound notifications.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Address Book</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/address_book.jpg" alt=""><figcaption><p>Add, delete, and edit Address Book entries.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/address_book.jpg" alt=""><figcaption><p>Add, delete, and edit Address Book entries.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>DApp Allow List</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/whitelisted.jpg" alt=""><figcaption><p>The list of websites/dApps that are allowed to connect to this Eternl app.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/whitelisted.jpg" alt=""><figcaption><p>The list of websites/dApps that are allowed to connect to this Eternl app.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Export Wallets</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/export_wallets.jpg" alt=""><figcaption><p>This option will export all wallets.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/export_wallets.jpg" alt=""><figcaption><p>This option will export all wallets.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Transactions: Auto-Submit</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/transactions_auto_submit.jpg" alt=""><figcaption><p>Automatically submit transactions when you sign them. Turn this off to let you download the signed transaction data.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/transactions_auto_submit.jpg" alt=""><figcaption><p>Automatically submit transactions when you sign them. Turn this off to let you download the signed transaction data.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Custom Submit Endpoint</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/custom_submit_endpoint.jpg" alt=""><figcaption><p>Send transactions through a custom Cardano node and Cardano Submit API.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/custom_submit_endpoint.jpg" alt=""><figcaption><p>Send transactions through a custom Cardano node and Cardano Submit API.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Blockchain Explorer</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/blockchain_explorer.jpg" alt=""><figcaption><p>Set your preferred blockchain explorer by type.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/blockchain_explorer.jpg" alt=""><figcaption><p>Set your preferred blockchain explorer by type.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>MonsterSwap</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/monitor_swap.jpg" alt=""><figcaption><p>Slippage and Dex settings for MonsterSwap.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/monitor_swap.jpg" alt=""><figcaption><p>Slippage and Dex settings for MonsterSwap.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Reset Application Cache</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/reset_application_cache.jpg" alt=""><figcaption><p>Remove all cached data to reset the application.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/reset_application_cache.jpg" alt=""><figcaption><p>Remove all cached data to reset the application.</p></figcaption></figure>
 </details>
 
 <details>
 <summary>Reset Application</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/delete_application.jpg" alt=""><figcaption><p>Delete all wallets and stored data to reset the application.</p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/delete_application.jpg" alt=""><figcaption><p>Delete all wallets and stored data to reset the application.</p></figcaption></figure>
 </details>
 </details>
 
 <details>
 <summary>App Utilities</summary>
 
-<figure><img src="../..//gitbook-assets/pictures/App_Utilities.jpg" alt=""><figcaption><p></p></figcaption></figure>
+<figure><img src="/gitbook-assets/pictures/App_Utilities.jpg" alt=""><figcaption><p></p></figcaption></figure>
 
 <details>
 <summary>Franken Address Generator</summary>
