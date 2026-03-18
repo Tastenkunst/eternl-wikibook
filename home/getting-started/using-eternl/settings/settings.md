@@ -383,108 +383,254 @@ Funds are **not** deleted from the blockchain. You need the recovery phrase to r
 <details>
 <summary>App Settings</summary>
 
-<figure><img src="/gitbook-assets/pictures/App_Settings.jpg" alt=""><figcaption><p></p></figcaption></figure>
+![App Settings overview](../../../../.gitbook/assets/pictures/App_Settings.jpg)
+
+These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features rather than a single wallet.
 
 <details>
 <summary>Pro Mode</summary>
 
-<figure><img src="/gitbook-assets/pictures/pro_mode.jpg" alt=""><figcaption><p>Switch between Simple and Pro Mode.</p></figcaption></figure>
+![Pro Mode setting](../../../../.gitbook/assets/pictures/pro_mode.jpg)
+
+Use `Pro Mode` to switch between a simpler interface and a more advanced one.
+
+**When to use it:**
+* **Beginners** should usually stay in **Simple** mode.
+* **Advanced users** can use **Pro** mode for more control and more detailed options.
+
+**Important:**
+* More control also means more room for mistakes if you are unfamiliar with the settings.
 </details>
 
 <details>
 <summary>Network</summary>
 
-<figure><img src="/gitbook-assets/pictures/network_switcher.png" alt=""><figcaption><p>Select the current active network.</p></figcaption></figure>
+![Network setting](../../../../.gitbook/assets/pictures/network_switcher.png)
+
+Use `Network` to choose which Cardano environment Eternl connects to, such as **Mainnet** or **Testnet**.
+
+**When to use it:**
+* Use **Mainnet** for normal wallet activity and real funds.
+* Use **Testnet** for testing, development, or learning without real assets.
+
+**Important:**
+* Funds are **not shared** between networks.
+* A wallet on **Mainnet** is separate from a wallet on **Testnet**.
 </details>
 
 <details>
 <summary>Language</summary>
 
-<figure><img src="/gitbook-assets/pictures/language.png" alt=""><figcaption><p>Select your preferred language, formatting region and timezone.</p></figcaption></figure>
+![Language setting](../../../../.gitbook/assets/pictures/language.png)
+
+Use `Language` to change the app interface language and related regional display settings where available.
+
+**When to use it:**
+* Change it if you prefer a different UI language.
+* Adjust it if dates, numbers, or regional formatting should match your locale.
 </details>
 
 <details>
 <summary>Currency</summary>
 
-<figure><img src="/gitbook-assets/pictures/currency.png" alt=""><figcaption><p>Select your preferred currency for conversion.</p></figcaption></figure>
+![Currency setting](../../../../.gitbook/assets/pictures/currency.png)
+
+Use `Currency` to choose the **fiat display currency** used for value conversion inside the app.
+
+**When to use it:**
+* Select the currency you normally use for pricing and portfolio reference.
+* Change it if you want market values shown in another local currency.
 </details>
 
 <details>
 <summary>Decimal Precision</summary>
 
-<figure><img src="/gitbook-assets/pictures/precision.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
+![Decimal Precision setting](../../../../.gitbook/assets/pictures/precision.png)
+
+Use `Decimal Precision` to control how many decimal places are shown for balances and values.
+
+**When to use it:**
+* Use fewer decimals for a cleaner overview.
+* Use more decimals if you want more exact number formatting.
 </details>
 
 <details>
 <summary>Access PIN Code</summary>
 
-<figure><img src="/gitbook-assets/pictures/pin.png" alt=""><figcaption><p>Number of decimal places.</p></figcaption></figure>
+![Access PIN Code setting](../../../../.gitbook/assets/pictures/pin.png)
+
+Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your device.
+
+**When to use it:**
+* Enable it if other people may access your device.
+* Use it for faster everyday protection than entering a wallet recovery phrase.
+
+**Important:**
+* A PIN protects app access, but it is **not** a replacement for your recovery phrase.
 </details>
 
 <details>
 <summary>Biometrics Auth</summary>
 
-<figure><img src="/gitbook-assets/pictures/biometrics.png" alt=""><figcaption><p>Use Face ID (iOS) or native biometric systems for authentication yourself.</p></figcaption></figure>
+![Biometrics Auth setting](../../../../.gitbook/assets/pictures/app_biometrics_auth.png)
+
+Use `Biometrics Auth` for device-level authentication such as **Face ID** or **fingerprint** where supported.
+
+**When to use it:**
+* Enable it for quicker secure access on supported devices.
+* Use it if you already trust the biometric setup of your phone or computer.
+
+**Important:**
+* Availability depends on your device settings and operating system support.
 </details>
 
 <details>
 <summary>Sounds</summary>
 
-<figure><img src="/gitbook-assets/pictures/sounds.jpg" alt=""><figcaption><p>Enable or disable sound notifications.</p></figcaption></figure>
+![Sounds setting](../../../../.gitbook/assets/pictures/sounds.jpg)
+
+Use `Sounds` to enable or disable app sounds and notification feedback.
+
+**When to use it:**
+* Turn it on if you want audible confirmation for actions.
+* Turn it off if you prefer a quieter experience.
 </details>
 
 <details>
 <summary>Address Book</summary>
 
-<figure><img src="/gitbook-assets/pictures/address_book.jpg" alt=""><figcaption><p>Add, delete, and edit Address Book entries.</p></figcaption></figure>
+![Address Book setting](../../../../.gitbook/assets/pictures/app_address_book.png)
+
+Use `Address Book` to manage saved recipient addresses inside Eternl.
+
+**When to use it:**
+* Save addresses you use often.
+* Add labels so contacts are easier to recognize.
+* Import or export address book entries when needed.
 </details>
 
 <details>
 <summary>DApp Allow List</summary>
 
-<figure><img src="/gitbook-assets/pictures/whitelisted.jpg" alt=""><figcaption><p>The list of websites/dApps that are allowed to connect to this Eternl app.</p></figcaption></figure>
+![DApp Allow List setting](../../../../.gitbook/assets/pictures/whitelisted.jpg)
+
+Use `DApp Allow List` to control which dApps are allowed to connect to this Eternl app.
+
+**When to use it:**
+* Review connected dApps periodically.
+* Remove sites you no longer use.
+* Keep access limited to trusted dApps only.
+
+**Important:**
+* Only interact with dApps you trust.
+* This helps prevent malicious or unwanted connections.
 </details>
 
 <details>
 <summary>Export Wallets</summary>
 
-<figure><img src="/gitbook-assets/pictures/export_wallets.jpg" alt=""><figcaption><p>This option will export all wallets.</p></figcaption></figure>
+![Export Wallets setting](../../../../.gitbook/assets/pictures/app_export_wallets.png)
+
+Use `Export Wallets` to export multiple wallets from the app in one step.
+
+**When to use it:**
+* Use it when moving to another Eternl installation.
+* Use it if you need an encrypted backup of wallet data stored in the app.
+
+**Important:**
+* The export includes **encrypted private keys**.
+* Treat the export file with the same care as your **seed phrase**.
 </details>
 
 <details>
 <summary>Transactions: Auto-Submit</summary>
 
-<figure><img src="/gitbook-assets/pictures/transactions_auto_submit.jpg" alt=""><figcaption><p>Automatically submit transactions when you sign them. Turn this off to let you download the signed transaction data.</p></figcaption></figure>
+![Transactions Auto-Submit setting](../../../../.gitbook/assets/pictures/transactions_auto_submit.jpg)
+
+Use `Transactions: Auto-Submit` to automatically send signed transactions to the network after signing.
+
+**When to use it:**
+* Keep it enabled for a faster standard workflow.
+* Disable it if you want to inspect, download, or submit signed transactions manually.
+
+**Important:**
+* Turn it off if you want more manual control over transaction submission.
 </details>
 
 <details>
 <summary>Custom Submit Endpoint</summary>
 
-<figure><img src="/gitbook-assets/pictures/custom_submit_endpoint.jpg" alt=""><figcaption><p>Send transactions through a custom Cardano node and Cardano Submit API.</p></figcaption></figure>
+![Custom Submit Endpoint setting](../../../../.gitbook/assets/pictures/app_custom_submit_endpoint.png)
+
+Use `Custom Submit Endpoint` to send transactions through a custom node or API endpoint instead of the default setup.
+
+**When to use it:**
+* Use it only if you know exactly which endpoint you want to submit through.
+* Useful for specialized infrastructure or advanced testing setups.
+
+**Important:**
+* This is an **advanced** feature.
+* It should only be used by experienced users.
+* A bad or untrusted endpoint can cause transaction failure or unwanted manipulation.
 </details>
 
 <details>
 <summary>Blockchain Explorer</summary>
 
-<figure><img src="/gitbook-assets/pictures/blockchain_explorer.jpg" alt=""><figcaption><p>Set your preferred blockchain explorer by type.</p></figcaption></figure>
+![Blockchain Explorer setting](../../../../.gitbook/assets/pictures/app_blockchain_explorer.png)
+
+Use `Blockchain Explorer` to choose which explorer Eternl opens for different item types.
+
+**When to use it:**
+* Pick the explorer you prefer for **addresses**.
+* Set explorer behavior for **transactions**, **tokens**, **pools**, and **governance** links.
 </details>
 
 <details>
 <summary>MonsterSwap</summary>
 
-<figure><img src="/gitbook-assets/pictures/monitor_swap.jpg" alt=""><figcaption><p>Slippage and Dex settings for MonsterSwap.</p></figcaption></figure>
+![MonsterSwap setting](../../../../.gitbook/assets/pictures/monitor_swap.jpg)
+
+Use `MonsterSwap` to manage swap-related settings such as **slippage** and other DEX-specific behavior.
+
+**When to use it:**
+* Adjust it if a swap needs more flexible slippage settings.
+* Review it before using DEX features that depend on swap execution.
+
+**Important:**
+* Higher slippage settings can increase execution risk and worse pricing.
 </details>
 
 <details>
 <summary>Reset Application Cache</summary>
 
-<figure><img src="/gitbook-assets/pictures/reset_application_cache.jpg" alt=""><figcaption><p>Remove all cached data to reset the application.</p></figcaption></figure>
+![Reset Application Cache setting](../../../../.gitbook/assets/pictures/app_reset_application_cache.png)
+
+Use `Reset application cache` to clear cached app data without removing your wallets.
+
+**When to use it:**
+* Use it if the app behaves oddly after updates or stale cached data.
+* Try it before using more drastic reset options.
+
+**Important:**
+* This clears cached data only.
 </details>
 
 <details>
 <summary>Reset Application</summary>
 
-<figure><img src="/gitbook-assets/pictures/delete_application.jpg" alt=""><figcaption><p>Delete all wallets and stored data to reset the application.</p></figcaption></figure>
+![Reset Application setting](../../../../.gitbook/assets/pictures/app_reset_application.png)
+
+Use `Reset Application` to delete **all wallets** and app data stored in Eternl on this device.
+
+**When to use it:**
+* Use it only if you intentionally want a full local reset of the app.
+* Make sure every wallet is backed up first.
+
+**Important:**
+* This action deletes all local wallets and stored app data.
+* Funds are **not** lost if you still have the correct recovery phrase.
+* Without the recovery phrase, access to the funds is lost **permanently**.
 </details>
 </details>
 
