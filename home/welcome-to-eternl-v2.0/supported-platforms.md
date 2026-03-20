@@ -5,7 +5,14 @@
 
 Eternl is available across multiple platforms, offering flexibility for different use cases and user preferences.
 
-### ![Web Wallet](/gitbook-assets/icons/IconGlobe.svg) Web Wallet
+
+[//]: # (<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiPjxwYXRoIGQ9Ik0zLjUgN0gyMC41Ii8+PHBhdGggZD0iTTIgMTJIMjIiLz48cGF0aCBkPSJNMy41IDE3SDIwLjUiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjwvc3ZnPg==" width="24" height="24" style="display:block; margin-bottom:8px;" />)
+
+[//]: # (![icon]&#40;/gitbook-assets/icons/Globe.svg&#41;)
+
+[//]: # (### Web Wallet)
+
+### ![Web Wallet](/gitbook-assets/icons/Globe.svg) Web Wallet
 
 * Accessible at [eternl.io](https://eternl.io)
 * Works in any modern browser (desktop & mobile)

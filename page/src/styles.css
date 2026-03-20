@@ -23,6 +23,7 @@
     --chevron-filter: brightness(0.2);
     --theme-icon-inline-filter: invert(38%) sepia(83%) saturate(1535%) hue-rotate(181deg)
       brightness(91%) contrast(97%);
+    --gb-icon: none;
   }
 
   html {
@@ -623,7 +624,7 @@
   #doc-search::placeholder {
     color: color-mix(in srgb, var(--color-text) 60%, transparent);
   }
-  
+
   .sidebar-list {
     list-style: none;
     margin: 0;
@@ -692,5 +693,26 @@
 
   .sidebar-item-nested .sidebar-item-row {
     padding-left: 0.25rem;
+  }
+
+  .doc-content .gb-icon {
+    display: inline-block;
+    width: 1.25rem; /* ca. 20px */
+    height: 1.25rem;
+    margin-right: 0.35rem;
+    vertical-align: baseline;
+
+    position: relative;
+    bottom: -0.1em;
+    background-color: currentColor; /* WICHTIG: Nimmt die Farbe des Textes an */
+
+    /* Die Maske nutzt die Variable, die das Skript ins Style-Attribut schreibt */
+    -webkit-mask-image: var(--gb-icon);
+    mask-image: var(--gb-icon);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
   }
 }

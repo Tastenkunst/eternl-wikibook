@@ -374,7 +374,11 @@ function buildToc(tokens: Token[]): TocItem[] {
       const id = token.attrGet('id') || '';
       const item: TocItem = {
         id,
-        title: inline.content,
+        title: inline.content
+          .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // 1. Löscht ![icon](...)
+          .replace(/<img[^>]*>/gi, '')         // 2. Löscht <img ...>
+          .replace(/[*_~`]/g, '')              // 3. Löscht *, _, ~, ` (Formatierung)
+          .trim(),
         level,
         children: []
       };
