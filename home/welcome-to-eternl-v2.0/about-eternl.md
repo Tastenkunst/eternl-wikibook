@@ -4,6 +4,9 @@ description: Your all-in-one gateway to Cardano DeFi, DApps and NFTs.
 
 # About Eternl
 
+
+TEST STEFAN 
+
 Eternl: Your Gateway to the Cardano Blockchain
 
 \+ Send and receive Ada and native assets. \
