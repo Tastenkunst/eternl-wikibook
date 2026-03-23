@@ -38,6 +38,11 @@ const processedDocHtml = computed(() => {
   if (typeof document === 'undefined') {
     return doc.value.html;
   }
+
+  if (doc.value.disableH2Collapse) {
+    return doc.value.html;
+  }
+
   return wrapSections(doc.value.html);
 });
 
@@ -111,7 +116,6 @@ function wrapSections(html: string): string {
     result += `
 <details class="doc-section" ${index === 0 ? 'open' : ''}>
   <summary class="doc-section-summary">
-    ${section.headingHtml}
     <img
       class="doc-section-chevron"
       src="/gitbook-assets/icons/ChevronDown.svg"
@@ -119,6 +123,7 @@ function wrapSections(html: string): string {
       role="presentation"
       aria-hidden="true"
     />
+    ${section.headingHtml}
   </summary>
   <div class="doc-section-content">
     ${section.content}
@@ -138,8 +143,9 @@ function wrapSections(html: string): string {
       </div>
 
       <header class="mb-8">
-        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>
+<!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
         <h1 class="font-display text-3xl text-ink sm:text-4xl">{{ doc.title }}</h1>
+        <p v-if="doc.description" class="text-s text-ink-70">{{ doc.description }}</p>
       </header>
 
       <div class="mb-8 lg:hidden" v-if="doc.toc.length">

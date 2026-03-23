@@ -22,6 +22,7 @@ export type DocPage = {
   html: string;
   toc: TocItem[];
   cover?: CoverAsset;
+  disableH2Collapse?: boolean;
 };
 
 export type CoverAsset =
@@ -202,7 +203,8 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
     description,
     html,
     toc,
-    cover
+    cover,
+    disableH2Collapse: data.disableH2Collapse === true
   };
 }
 

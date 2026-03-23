@@ -1,16 +1,19 @@
 # Table of contents
 
 * [Home](README.md)
+
 * [Welcome to Eternl v2.0](home/welcome-to-eternl-v2.0/README.md)
     * [About Eternl](home/welcome-to-eternl-v2.0/about-eternl.md)
     * [What’s New in v2.0 ?](home/welcome-to-eternl-v2.0/whats-new-in-v2.0.md)
     * [Supported Platforms](home/welcome-to-eternl-v2.0/supported-platforms.md)
+
 * [Getting Started](home/getting-started/README.md)
     * [Using Eternl](home/getting-started/using-eternl/README.md)
         * [Settings](home/getting-started/using-eternl/settings/settings.md)
         * [Managing Accounts](home/getting-started/managing-accounts.md)
         * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
     * [Understanding Balances](home/getting-started/understanding-balances.md)
+  
 * [Security & Privacy](home/security-and-privacy/README.md)
   * [Why security matters.](home/security-and-privacy/why-security-matters..md)
     * [What is a seed phrase?](home/security-and-privacy/what-is-a-seed-phrase.md)
@@ -18,6 +21,21 @@
     * [How to store your seed phrase securely?](home/security-and-privacy/how-to-store-your-seed-phrase-securely.md)
     * [Common mistakes to avoid](home/security-and-privacy/common-mistakes-to-avoid.md)
     * [Eternl Guard](home/security-and-privacy/eternl-guard.md)
+
+* [Staking & delegation](home/staking-and-delegation/staking-and-delegation.md)
+    * [stake pool rating](home/staking-and-delegation/stake-pool-rating.md)
+
+* [Multi-sig](home/multi-sig.md)
+
+* [FAQ](readme/faq.md)
+
+* [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+
+* [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
+
+* [For Developers](for-developers/README.md)
+    * [DApp browser integration](for-developers/dapp-browser-integration.md)
+
 * [Cardano Basics](home/cardano-basics/README.md)
     * [Basic tips for keeping your assets safe and using Eternl Wallet securely](home/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
     * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](home/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md)
@@ -28,16 +46,11 @@
     * [Governance & Project Catalyst](home/cardano-basics/governance-and-catalyst.md)
     * [The eUTxO Model](home/cardano-basics/eutxo-model.md)
     * [Staking Mechanics](home/cardano-basics/staking-mechanics.md)
-* [Multi-sig](home/multi-sig.md)
-* [Staking & delegation](home/staking-and-delegation/staking-and-delegation.md)
-    * [stake pool rating](home/staking-and-delegation/stake-pool-rating.md)
-* [FAQ](readme/faq.md)
-* [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
-* [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
-* [For Developers](for-developers/README.md)
-    * [DApp browser integration](for-developers/dapp-browser-integration.md)
-* [Contact & support](contact-and-support.md)
+
 * [Eternl updates / release notes](eternl-updates-release-notes.md)
+
+* [Contact & support](contact-and-support.md)
+
 * [Impressum](impressum.md)
 
 [//]: # (* [Eternl v2.0 Wiki]&#40;README.md&#41;)

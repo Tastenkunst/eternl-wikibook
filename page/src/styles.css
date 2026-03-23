@@ -405,8 +405,9 @@
   .doc-content summary {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    gap: 0.25rem;
     cursor: pointer;
     margin: 0;
     padding: 0.25rem 0;
@@ -432,7 +433,7 @@
   }
 
   .doc-content details[open] > summary::after {
-    content: '−';
+    content: '-';
   }
 
   .doc-content details > summary + h1,
@@ -551,6 +552,8 @@
 
   .doc-section-summary h2 {
     margin: 0;
+    flex-grow: 1;
+    text-align: left;
     color: var(--heading-gold-muted);
     transition: color 0.2s ease, filter 0.2s ease;
     font-size: 1.5rem;
@@ -572,6 +575,7 @@
   }
 
   .doc-section-chevron {
+    transform: rotate(-90deg);
     width: 1.25rem;
     height: 1.25rem;
     transition: transform 0.3s ease;
@@ -579,7 +583,7 @@
   }
 
   .doc-section[open] .doc-section-chevron {
-    transform: rotate(180deg);
+      transform: rotate(0deg);
   }
 
   .doc-section-content {
