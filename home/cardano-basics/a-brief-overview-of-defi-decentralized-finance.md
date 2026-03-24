@@ -18,7 +18,7 @@ DeFi makes it easier, more efficient, and safer to handle money, allowing people
 
 <summary>2. A Quick Look at how DeFi Started and Grew over Time.</summary>
 
-The story of DeFi, starts with the launch of Bitcoin in 2009. The term "DeFi" became well-known in 2017, thanks to projects like MakerDAO, which introduced decentralized stablecoins. Since then, DeFi has grown a lot, bringing new protocols and applications.
+The story of DeFi starts with the launch of Bitcoin in 2009. The term "DeFi" became well-known in 2017, thanks to projects like MakerDAO, which introduced decentralized stablecoins. Since then, DeFi has grown a lot, bringing new protocols and applications.
 
 By 2019, decentralized exchanges (DEXs) such as Uniswap became popular. These platforms let people swap cryptocurrencies directly, without needing a middleman. This was a big step forward for trading in the DeFi world.
 
@@ -26,9 +26,9 @@ In 2020, DeFi really took off, with the total value locked in smart contracts re
 
 However, this fast growth brought issues like high fees on Ethereum, smart contract bugs and security worries. This led to the rise of other blockchain networks like Binance Smart Chain, Solana, and Polygon, which offer cheaper and faster transactions.
 
-2021 saw even more growth in DeFi, introducing new ideas like decentralized insurance and lending platforms. Even traditional financial companies started getting involved with DeFi projects. Layer 2 solutions, which use Optimistic Roll Ups were invented. In projects like Optimism and Arbitrum this was used to circumvent the slower speed of Ethereum to make it more scalable. In late 2021 the Alonzo hardfork opened the gates for Defi on Cardano. Since then many new projects like Lenfi , Minswap etc have been created.
+2021 saw even more growth in DeFi, introducing new ideas like decentralized insurance and lending platforms. Even traditional financial companies started getting involved with DeFi projects. Layer 2 solutions, which use Optimistic Roll Ups, were invented. In projects like Optimism and Arbitrum this was used to circumvent the slower speed of Ethereum to make it more scalable. In late 2021 the Alonzo hardfork opened the gates for Defi on Cardano. Since then many new projects like Lenfi , Minswap etc have been created.
 
-Today, DeFi is still growing and changing, working on making things scalable, interoperable, and in line with regulations. It's becoming a big part of finance, offering new ways to do financial services, international payments and making financial tools more accessible to everyone.
+Today DeFi is still growing and changing, working on making things scalable, interoperable, and in line with regulations. It's becoming a big part of finance, offering new ways to do financial services, international payments and making financial tools more accessible to everyone.
 
 </details>
 
