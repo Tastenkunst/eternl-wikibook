@@ -6,6 +6,8 @@ import Sidebar from '@/components/Sidebar.vue';
 import SearchBox from '@/components/SearchBox.vue';
 import MobileNav from '@/components/MobileNav.vue';
 
+import logoUrl from '../../.gitbook/assets/pictures/eternl-logo-small-vector.png';
+
 const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
@@ -17,6 +19,10 @@ function applyTheme(value: 'dark' | 'light') {
   root.classList.add(value);
   localStorage.setItem('wiki-theme', value);
   theme.value = value;
+}
+
+function handleLogoClick() {
+  window.dispatchEvent(new CustomEvent('wiki:collapse-nav'));
 }
 
 onMounted(() => {
@@ -43,7 +49,16 @@ watch(
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 app-header-inner">
-        <span class="text-xl font-bold brand-text">Eternl Wiki</span>
+
+        <RouterLink
+            to="/"
+            class="flex items-center gap-1 select-none"
+            @click="handleLogoClick"
+        >
+          <img :src="logoUrl" alt="" class="w-8 h-auto" >
+          <span class="text-xl font-bold brand-text">Eternl Wiki</span>
+        </RouterLink>
+
         <div class="flex items-center gap-3">
           <SearchBox />
           <div class="flex items-center gap-2">
@@ -81,7 +96,7 @@ watch(
       <aside class="hidden lg:block">
         <Sidebar :items="navTree" :current-path="currentPath" />
       </aside>
-      <main id="main-content" ref="mainRef" tabindex="-1" class="min-w-0">
+      <main id="main-content" ref="mainRef" tabindex="-1" class="min-w-0 focus:outline-none">
         <div class="mb-6 lg:hidden">
           <MobileNav :items="navTree" :current-path="currentPath" />
         </div>

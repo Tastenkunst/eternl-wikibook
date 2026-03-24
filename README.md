@@ -7,7 +7,7 @@ coverY: 0
 disableH2Collapse: true
 ---
 
-# Eternl v2.0 Wiki
+# Eternl v2 Wiki
 
 [//]: # (## What´s New in Eternl)
 
@@ -16,5 +16,5 @@ disableH2Collapse: true
 ## Trending Topics
 
 [[custom-nav]]
-* [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+* [Claiming the Glacier Airdrop](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
 [[/custom-nav]]

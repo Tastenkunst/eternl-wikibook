@@ -110,6 +110,25 @@ function syncThemeState() {
   isDark.value = root.classList.contains('dark') || body.classList.contains('dark');
 }
 
+// für ausklappen eingeklappter h2, bei auswahl über toc
+function handleHashChange() {
+  const hash = window.location.hash.slice(1);
+  if (!hash) return;
+
+  const targetElement = document.getElementById(hash);
+  if (targetElement) {
+    // Suche das nächste Eltern-Element vom Typ <details>
+    const parentDetails = targetElement.closest('details');
+    if (parentDetails) {
+      parentDetails.open = true;
+
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
+  }
+}
+
 onMounted(() => {
   syncThemeState();
   if (typeof document === 'undefined') {
@@ -120,10 +139,19 @@ onMounted(() => {
     attributes: true,
     attributeFilter: ['class']
   });
+
+  // Reagiere auf Klicks im TOC (URL Hash ändert sich)
+  window.addEventListener('hashchange', handleHashChange);
+  // Prüfe beim ersten Laden, falls die URL bereits einen Hash hat
+  if (window.location.hash) {
+    handleHashChange();
+  }
 });
 
 onBeforeUnmount(() => {
   themeObserver?.disconnect();
+
+  window.removeEventListener('hashchange', handleHashChange);
 });
 
 function wrapSections(html: string): string {
@@ -227,7 +255,7 @@ function wrapSections(html: string): string {
     </article>
 
     <aside class="hidden lg:block">
-      <Toc v-if="doc.toc.length" :items="doc.toc" />
+      <Toc v-if="doc.toc.length > 2" :items="doc.toc" />
     </aside>
   </section>
 

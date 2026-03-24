@@ -486,6 +486,10 @@
     color: var(--color-text);
   }
 
+  .gb-hint > p {
+      margin-top: 0;
+  }
+
   .gb-hint-info {
     border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
     background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
@@ -499,6 +503,15 @@
   .gb-hint-success {
     border-color: color-mix(in srgb, var(--color-success) 40%, transparent);
     background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
+  }
+  gb-hint-success::before {
+    content: "";
+    background-image: url("../../.gitbook/icons/iconWarning.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    @apply text-green-500 font-bold text-xl;
   }
 
   .callout-tip {
