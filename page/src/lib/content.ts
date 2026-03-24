@@ -22,6 +22,8 @@ export type DocPage = {
   html: string;
   toc: TocItem[];
   cover?: CoverAsset;
+  disableH2Collapse?: boolean;
+  children?: NavItem[];
 };
 
 export type CoverAsset =
@@ -151,6 +153,9 @@ function hydrateNav(items: NavItem[]): void {
         const doc = raw
           ? buildDocPage(repoPath, raw, item.title)
           : buildMissingDoc(repoPath, item.title);
+
+        doc.children = item.children;
+
         docsByRoute.set(routePath, doc);
       }
     }
@@ -202,7 +207,8 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
     description,
     html,
     toc,
-    cover
+    cover,
+    disableH2Collapse: data.disableH2Collapse === true
   };
 }
 
@@ -374,7 +380,11 @@ function buildToc(tokens: Token[]): TocItem[] {
       const id = token.attrGet('id') || '';
       const item: TocItem = {
         id,
-        title: inline.content,
+        title: inline.content
+          .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // 1. Löscht ![icon](...)
+          .replace(/<img[^>]*>/gi, '')         // 2. Löscht <img ...>
+          .replace(/[*_~`]/g, '')              // 3. Löscht *, _, ~, ` (Formatierung)
+          .trim(),
         level,
         children: []
       };

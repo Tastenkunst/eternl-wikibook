@@ -17,7 +17,7 @@ export default defineConfig({
         {
           src: '../.gitbook/assets/pictures/**/*', // Don't use path.resolve for Windows compatibility
           dest: 'gitbook-assets/pictures'
-        }, 
+        },
         {
           src: '../.gitbook/assets/icons/**/*', // Don't use path.resolve for Windows compatibility
           dest: 'gitbook-assets/icons'

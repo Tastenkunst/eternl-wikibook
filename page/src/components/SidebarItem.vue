@@ -1,16 +1,24 @@
 <script setup lang="ts">
 defineOptions({ name: 'SidebarItem' });
-import { computed, ref, watch } from 'vue';
-import { RouterLink } from 'vue-router';
-import type { NavItem } from '@/lib/content';
-import { getIconPath } from '@/lib/icons';
 
-const props = defineProps<{ item: NavItem; currentPath: string; depth?: number }>();
+import {
+  computed,
+  ref,
+  watch,
+  onMounted,
+  onUnmounted
+}                             from 'vue';
+import { RouterLink }         from 'vue-router';
 
-const depth = computed(() => props.depth ?? 0);
-const normalizedCurrent = computed(() => normalizePath(props.currentPath));
+import type { NavItem }       from '@/lib/content';
+import { getIconPath }        from '@/lib/icons';
 
-const expanded = ref(containsRoute(props.item, normalizedCurrent.value));
+const props                   = defineProps<{ item: NavItem; currentPath: string; depth?: number }>();
+
+const depth                   = computed(() => props.depth ?? 0);
+const normalizedCurrent       = computed(() => normalizePath(props.currentPath));
+
+const expanded                = ref(containsRoute(props.item, normalizedCurrent.value));
 
 watch(
   () => normalizedCurrent.value,
@@ -30,6 +38,13 @@ const isActive = computed(() => {
 
 const iconName = computed(() => (expanded.value ? 'ChevronDown' : 'ChevronRight'));
 const iconSrc = computed(() => getIconPath(iconName.value));
+
+function handleRowClick(): void {
+  if (props.item.children.length) {
+    expanded.value = true; // Immer aufklappen beim Navigieren
+  }
+  // Die Navigation selbst passiert automatisch durch den RouterLink im Template
+}
 
 function toggle(): void {
   if (!props.item.children.length) {
@@ -51,6 +66,18 @@ function containsRoute(item: NavItem, target: string): boolean {
   }
   return item.children.some((child) => containsRoute(child, target));
 }
+
+const collapseSelf = () => {
+  expanded.value = false;
+};
+
+onMounted(() => {
+  window.addEventListener('wiki:collapse-nav', collapseSelf);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('wiki:collapse-nav', collapseSelf);
+});
 </script>
 
 <template>
@@ -59,7 +86,7 @@ function containsRoute(item: NavItem, target: string): boolean {
       class="sidebar-item-row"
       :class="[{ 'sidebar-item-row-active': isActive }, depth > 0 ? 'sidebar-item-nested' : '']"
       role="button"
-      @click="toggle"
+      @click="handleRowClick"
     >
       <img
         v-if="item.children.length"

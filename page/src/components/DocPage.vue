@@ -35,11 +35,64 @@ const processedDocHtml = computed(() => {
   if (!doc.value?.html) {
     return '';
   }
+
+  // automatische navigation für child elemente (aus summary)
+  if (doc.value.html.includes('[[child-nav]]')) {
+    const childHtml = renderChildNavigation(doc.value.children);
+    doc.value.html = doc.value.html.replace('[[child-nav]]', childHtml);
+  }
+
+  // manuelle navigation für im markdown übergebene elemente
+  const customNavRegex = /\[\[custom-nav\]\]([\s\S]*?)\[\[\/custom-nav\]\]/g;
+
+  doc.value.html = doc.value.html.replace(customNavRegex, (_, innerContent) => {
+    // Wir suchen nach allen Links im inneren Bereich
+    const linkRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"[^>]*>(.*?)<\/a>/g;
+    const manualItems = [];
+    let match;
+
+    while ((match = linkRegex.exec(innerContent)) !== null) {
+      const title = match[2].replace(/<[^>]*>?/gm, '').trim(); // HTML aus Titel entfernen
+      let routePath = match[1];
+
+      // Optional: .md am Ende entfernen, falls du es im MD mit hingeschrieben hast
+      routePath = routePath.replace(/\.md$/, '');
+      // Sicherstellen, dass der Pfad mit / beginnt, wenn es kein externer Link ist
+      if (!routePath.startsWith('http') && !routePath.startsWith('/')) {
+        routePath = '/' + routePath;
+      }
+
+      manualItems.push({ title, routePath });
+    }
+
+    return manualItems.length > 0 ? renderChildNavigation(manualItems) : '';
+  });
+
   if (typeof document === 'undefined') {
     return doc.value.html;
   }
+
+  // wenn frontmatter disableH2Collapse === true, dann h2 nicht in summary/detail-tags gewrappt
+  if (doc.value.disableH2Collapse) {
+    return doc.value.html;
+  }
+
   return wrapSections(doc.value.html);
 });
+
+// hilfsfunktion für das erstellen von navigations kacheln
+function renderChildNavigation(items?: Array<{ title: string; routePath: string }>) {
+  if (!items || items.length === 0) return '';
+
+  const links = items.map(item => `
+    <a href="${item.routePath}" class="child-nav-card group no-underline">
+      <div class="child-nav-title">${item.title}</div>
+      <span class="child-nav-arrow">→</span>
+    </a>
+  `).join('');
+
+  return `<div class="child-nav-grid">${links}</div>`;
+}
 
 function normalizePath(path: string): string {
   if (path.length > 1 && path.endsWith('/')) {
@@ -57,6 +110,25 @@ function syncThemeState() {
   isDark.value = root.classList.contains('dark') || body.classList.contains('dark');
 }
 
+// für ausklappen eingeklappter h2, bei auswahl über toc
+function handleHashChange() {
+  const hash = window.location.hash.slice(1);
+  if (!hash) return;
+
+  const targetElement = document.getElementById(hash);
+  if (targetElement) {
+    // Suche das nächste Eltern-Element vom Typ <details>
+    const parentDetails = targetElement.closest('details');
+    if (parentDetails) {
+      parentDetails.open = true;
+
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
+  }
+}
+
 onMounted(() => {
   syncThemeState();
   if (typeof document === 'undefined') {
@@ -67,10 +139,19 @@ onMounted(() => {
     attributes: true,
     attributeFilter: ['class']
   });
+
+  // Reagiere auf Klicks im TOC (URL Hash ändert sich)
+  window.addEventListener('hashchange', handleHashChange);
+  // Prüfe beim ersten Laden, falls die URL bereits einen Hash hat
+  if (window.location.hash) {
+    handleHashChange();
+  }
 });
 
 onBeforeUnmount(() => {
   themeObserver?.disconnect();
+
+  window.removeEventListener('hashchange', handleHashChange);
 });
 
 function wrapSections(html: string): string {
@@ -106,12 +187,16 @@ function wrapSections(html: string): string {
     return html;
   }
 
+  // wenn nur eine h2, dann keine ein-/ausklapp funktionalität
+  if (sections.length <= 1) {
+    return html;
+  }
+
   let result = intro;
   sections.forEach((section, index) => {
     result += `
 <details class="doc-section" ${index === 0 ? 'open' : ''}>
   <summary class="doc-section-summary">
-    ${section.headingHtml}
     <img
       class="doc-section-chevron"
       src="/gitbook-assets/icons/ChevronDown.svg"
@@ -119,6 +204,7 @@ function wrapSections(html: string): string {
       role="presentation"
       aria-hidden="true"
     />
+    ${section.headingHtml}
   </summary>
   <div class="doc-section-content">
     ${section.content}
@@ -138,8 +224,9 @@ function wrapSections(html: string): string {
       </div>
 
       <header class="mb-8">
-        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>
+<!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
         <h1 class="font-display text-3xl text-ink sm:text-4xl">{{ doc.title }}</h1>
+        <p v-if="doc.description" class="text-s text-ink-70">{{ doc.description }}</p>
       </header>
 
       <div class="mb-8 lg:hidden" v-if="doc.toc.length">
@@ -168,7 +255,7 @@ function wrapSections(html: string): string {
     </article>
 
     <aside class="hidden lg:block">
-      <Toc v-if="doc.toc.length" :items="doc.toc" />
+      <Toc v-if="doc.toc.length > 2" :items="doc.toc" />
     </aside>
   </section>
 

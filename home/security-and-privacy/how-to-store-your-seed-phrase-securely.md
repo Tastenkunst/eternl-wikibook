@@ -1,4 +1,4 @@
-# How to store your seed phrase securely?
+# How to store your seed phrase securely
 
 ## How to Store Your Seed Phrase Securely
 

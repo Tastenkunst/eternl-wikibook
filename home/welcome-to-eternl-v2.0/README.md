@@ -7,3 +7,4 @@ coverY: 0
 
 # Welcome to Eternl v2.0
 
+[[child-nav]]

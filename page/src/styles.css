@@ -23,6 +23,7 @@
     --chevron-filter: brightness(0.2);
     --theme-icon-inline-filter: invert(38%) sepia(83%) saturate(1535%) hue-rotate(181deg)
       brightness(91%) contrast(97%);
+    --gb-icon: none;
   }
 
   html {
@@ -404,8 +405,9 @@
   .doc-content summary {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    gap: 0.25rem;
     cursor: pointer;
     margin: 0;
     padding: 0.25rem 0;
@@ -431,7 +433,7 @@
   }
 
   .doc-content details[open] > summary::after {
-    content: '−';
+    content: '-';
   }
 
   .doc-content details > summary + h1,
@@ -484,6 +486,10 @@
     color: var(--color-text);
   }
 
+  .gb-hint > p {
+      margin-top: 0;
+  }
+
   .gb-hint-info {
     border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
     background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
@@ -497,6 +503,15 @@
   .gb-hint-success {
     border-color: color-mix(in srgb, var(--color-success) 40%, transparent);
     background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
+  }
+  gb-hint-success::before {
+    content: "";
+    background-image: url("../../.gitbook/icons/iconWarning.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    @apply text-green-500 font-bold text-xl;
   }
 
   .callout-tip {
@@ -550,6 +565,8 @@
 
   .doc-section-summary h2 {
     margin: 0;
+    flex-grow: 1;
+    text-align: left;
     color: var(--heading-gold-muted);
     transition: color 0.2s ease, filter 0.2s ease;
     font-size: 1.5rem;
@@ -571,6 +588,7 @@
   }
 
   .doc-section-chevron {
+    transform: rotate(-90deg);
     width: 1.25rem;
     height: 1.25rem;
     transition: transform 0.3s ease;
@@ -578,7 +596,7 @@
   }
 
   .doc-section[open] .doc-section-chevron {
-    transform: rotate(180deg);
+      transform: rotate(0deg);
   }
 
   .doc-section-content {
@@ -599,6 +617,8 @@
     border-color: var(--color-accent);
     box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 40%, transparent);
   }
+
+
 
   .banner-image {
     filter: none;
@@ -623,7 +643,7 @@
   #doc-search::placeholder {
     color: color-mix(in srgb, var(--color-text) 60%, transparent);
   }
-  
+
   .sidebar-list {
     list-style: none;
     margin: 0;
@@ -693,4 +713,91 @@
   .sidebar-item-nested .sidebar-item-row {
     padding-left: 0.25rem;
   }
+
+  .doc-content .gb-icon {
+    display: inline-block;
+    width: 1.25rem; /* ca. 20px */
+    height: 1.25rem;
+    margin-right: 0.35rem;
+    vertical-align: baseline;
+
+    position: relative;
+    bottom: -0.1em;
+    background-color: currentColor; /* WICHTIG: Nimmt die Farbe des Textes an */
+
+    /* Die Maske nutzt die Variable, die das Skript ins Style-Attribut schreibt */
+    -webkit-mask-image: var(--gb-icon);
+    mask-image: var(--gb-icon);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
+
+    .child-nav-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    @media (min-width: 640px) {
+        .child-nav-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .child-nav-card {
+        display: block;
+        position: relative;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--color-border);
+        background-color: var(--color-panel);
+        text-decoration: none !important; /* Entfernt Unterstreichung */
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .child-nav-card:hover {
+        border-color: var(--color-accent);
+        background-color: color-mix(in srgb, var(--color-accent) 5%, var(--color-panel));
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .child-nav-title {
+        display: block;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--color-text);
+        margin-bottom: 0.25rem;
+    }
+
+    .child-nav-card:hover .child-nav-title {
+        color: var(--color-accent);
+    }
+
+    .child-nav-subtitle {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-muted);
+    }
+
+    .child-nav-arrow {
+        position: absolute;
+        right: 1.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-accent);
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+
+    .child-nav-card:hover .child-nav-arrow {
+        opacity: 1;
+        right: 1rem;
+    }
 }
