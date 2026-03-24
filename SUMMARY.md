@@ -8,19 +8,19 @@
     * [Supported Platforms](home/welcome-to-eternl-v2.0/supported-platforms.md)
 
 * [Getting Started](home/getting-started/README.md)
-    * [Using Eternl](home/getting-started/using-eternl/README.md)
-        * [Settings](home/getting-started/using-eternl/settings/settings.md)
-        * [Managing Accounts](home/getting-started/managing-accounts.md)
-        * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
-    * [Understanding Balances](home/getting-started/understanding-balances.md)
+[//]: # (    * [Using Eternl]&#40;home/getting-started/using-eternl/README.md&#41;)
+  * [Settings](home/getting-started/using-eternl/settings/settings.md)
+  * [Managing Accounts](home/getting-started/managing-accounts.md)
+  * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
+  * [Understanding Balances](home/getting-started/understanding-balances.md)
   
 * [Security & Privacy](home/security-and-privacy/README.md)
-  * [Why security matters.](home/security-and-privacy/why-security-matters..md)
-    * [What is a seed phrase?](home/security-and-privacy/what-is-a-seed-phrase.md)
-    * [Hot wallets vs cold wallets.](home/security-and-privacy/hot-wallets-vs-cold-wallets..md)
-    * [How to store your seed phrase securely?](home/security-and-privacy/how-to-store-your-seed-phrase-securely.md)
-    * [Common mistakes to avoid](home/security-and-privacy/common-mistakes-to-avoid.md)
-    * [Eternl Guard](home/security-and-privacy/eternl-guard.md)
+  * [Why security matters](home/security-and-privacy/why-security-matters..md)
+  * [What is a seed phrase?](home/security-and-privacy/what-is-a-seed-phrase.md)
+  * [Hot wallets vs cold wallets.](home/security-and-privacy/hot-wallets-vs-cold-wallets..md)
+  * [How to store your seed phrase securely?](home/security-and-privacy/how-to-store-your-seed-phrase-securely.md)
+  * [Common mistakes to avoid](home/security-and-privacy/common-mistakes-to-avoid.md)
+  * [Eternl Guard](home/security-and-privacy/eternl-guard.md)
 
 * [Staking & delegation](home/staking-and-delegation/staking-and-delegation.md)
     * [stake pool rating](home/staking-and-delegation/stake-pool-rating.md)
@@ -47,9 +47,9 @@
     * [The eUTxO Model](home/cardano-basics/eutxo-model.md)
     * [Staking Mechanics](home/cardano-basics/staking-mechanics.md)
 
-* [Eternl updates / release notes](eternl-updates-release-notes.md)
+* [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 
-* [Contact & support](contact-and-support.md)
+* [Contact & Support](contact-and-support.md)
 
 * [Impressum](impressum.md)
 

@@ -2,8 +2,7 @@
 
 # Settings
 
-<details>
-<summary>Account Settings</summary>
+## Account Settings
 
 <figure><img src="/gitbook-assets/pictures/Account_Settings.png" alt=""><figcaption><p></p></figcaption></figure>
 
@@ -282,10 +281,9 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 <figure><img src="/gitbook-assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
 </details>
-</details>
 
-<details>
-<summary>Wallet Settings</summary>
+
+## Wallet Settings
 
 ![Wallet Settings](/gitbook-assets/pictures/Settings_WalletSettings.png)
 
@@ -380,10 +378,8 @@ This removes the wallet from the current device and app installation only.
 Funds are **not** deleted from the blockchain. You need the recovery phrase to restore access later. Without the recovery phrase, access to the funds is lost permanently.
 {% endhint %}
 </details>
-</details>
 
-<details>
-<summary>App Settings</summary>
+## App Settings
 
 ![App Settings overview](../../../../.gitbook/assets/pictures/App_Settings.jpg)
 
@@ -679,10 +675,8 @@ Use `Reset Application` to delete **all wallets** and app data stored in Eternl 
 * Without the recovery phrase, access to the funds is lost **permanently**.
 
 </details>
-</details>
 
-<details>
-<summary>App Utilities</summary>
+## App Utilities
 
 ![Application Utilities](../../../../.gitbook/assets/pictures/App_Utilities.jpg)
 

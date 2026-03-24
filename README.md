@@ -14,4 +14,7 @@ disableH2Collapse: true
 [//]: # ([Eternl updates / release notes]&#40;eternl-updates-release-notes.md&#41;)
 
 ## Trending Topics
-[Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+
+[[custom-nav]]
+* [Claiming the Glacier Airdrop in Eternl v2](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+[[/custom-nav]]

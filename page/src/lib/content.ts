@@ -23,6 +23,7 @@ export type DocPage = {
   toc: TocItem[];
   cover?: CoverAsset;
   disableH2Collapse?: boolean;
+  children?: NavItem[];
 };
 
 export type CoverAsset =
@@ -152,6 +153,9 @@ function hydrateNav(items: NavItem[]): void {
         const doc = raw
           ? buildDocPage(repoPath, raw, item.title)
           : buildMissingDoc(repoPath, item.title);
+
+        doc.children = item.children;
+
         docsByRoute.set(routePath, doc);
       }
     }

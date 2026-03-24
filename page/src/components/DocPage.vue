@@ -35,16 +35,64 @@ const processedDocHtml = computed(() => {
   if (!doc.value?.html) {
     return '';
   }
+
+  // automatische navigation für child elemente (aus summary)
+  if (doc.value.html.includes('[[child-nav]]')) {
+    const childHtml = renderChildNavigation(doc.value.children);
+    doc.value.html = doc.value.html.replace('[[child-nav]]', childHtml);
+  }
+
+  // manuelle navigation für im markdown übergebene elemente
+  const customNavRegex = /\[\[custom-nav\]\]([\s\S]*?)\[\[\/custom-nav\]\]/g;
+
+  doc.value.html = doc.value.html.replace(customNavRegex, (_, innerContent) => {
+    // Wir suchen nach allen Links im inneren Bereich
+    const linkRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"[^>]*>(.*?)<\/a>/g;
+    const manualItems = [];
+    let match;
+
+    while ((match = linkRegex.exec(innerContent)) !== null) {
+      const title = match[2].replace(/<[^>]*>?/gm, '').trim(); // HTML aus Titel entfernen
+      let routePath = match[1];
+
+      // Optional: .md am Ende entfernen, falls du es im MD mit hingeschrieben hast
+      routePath = routePath.replace(/\.md$/, '');
+      // Sicherstellen, dass der Pfad mit / beginnt, wenn es kein externer Link ist
+      if (!routePath.startsWith('http') && !routePath.startsWith('/')) {
+        routePath = '/' + routePath;
+      }
+
+      manualItems.push({ title, routePath });
+    }
+
+    return manualItems.length > 0 ? renderChildNavigation(manualItems) : '';
+  });
+
   if (typeof document === 'undefined') {
     return doc.value.html;
   }
 
+  // wenn frontmatter disableH2Collapse === true, dann h2 nicht in summary/detail-tags gewrappt
   if (doc.value.disableH2Collapse) {
     return doc.value.html;
   }
 
   return wrapSections(doc.value.html);
 });
+
+// hilfsfunktion für das erstellen von navigations kacheln
+function renderChildNavigation(items?: Array<{ title: string; routePath: string }>) {
+  if (!items || items.length === 0) return '';
+
+  const links = items.map(item => `
+    <a href="${item.routePath}" class="child-nav-card group no-underline">
+      <div class="child-nav-title">${item.title}</div>
+      <span class="child-nav-arrow">→</span>
+    </a>
+  `).join('');
+
+  return `<div class="child-nav-grid">${links}</div>`;
+}
 
 function normalizePath(path: string): string {
   if (path.length > 1 && path.endsWith('/')) {
@@ -108,6 +156,11 @@ function wrapSections(html: string): string {
   }
 
   if (!sections.length) {
+    return html;
+  }
+
+  // wenn nur eine h2, dann keine ein-/ausklapp funktionalität
+  if (sections.length <= 1) {
     return html;
   }
 
