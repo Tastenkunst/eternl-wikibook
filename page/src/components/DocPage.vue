@@ -10,6 +10,8 @@ const doc = computed(() => getDocByRoute(routePath.value));
 const prevNext = computed(() => getPrevNext(routePath.value));
 const isDark = ref(false);
 
+const chevronSvg = '<svg class="doc-section-chevron" viewBox="0 0 24 24" fill="none" width="25px" height="25px"><path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>'
+
 const defaultWelcomeBanner = {
   light: '/gitbook-assets/pictures/v1-light.jpg',
   dark: '/gitbook-assets/pictures/v1-dark.jpg'
@@ -197,13 +199,14 @@ function wrapSections(html: string): string {
     result += `
 <details class="doc-section" ${index === 0 ? 'open' : ''}>
   <summary class="doc-section-summary">
-    <img
-      class="doc-section-chevron"
-      src="/gitbook-assets/icons/ChevronDown.svg"
-      alt=""
-      role="presentation"
-      aria-hidden="true"
-    />
+<!--    <img-->
+<!--      class="doc-section-chevron"-->
+<!--      src="/gitbook-assets/icons/ChevronDown.svg"-->
+<!--      alt=""-->
+<!--      role="presentation"-->
+<!--      aria-hidden="true"-->
+<!--    />-->
+    ${chevronSvg}
     ${section.headingHtml}
   </summary>
   <div class="doc-section-content">
@@ -217,29 +220,29 @@ function wrapSections(html: string): string {
 </script>
 
 <template>
-  <section v-if="doc" class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px]">
-    <article class="doc-card">
+  <section v-if="doc" class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px] h-full">
+    <article class="doc-card flex flex-col h-full">
       <div v-if="coverSrc" class="mb-6 overflow-hidden rounded-2xl border border-ink-10">
         <img :src="coverSrc" alt="" class="banner-image h-48 w-full object-cover" />
       </div>
 
-      <header class="mb-8">
+      <header class="mb-2">
 <!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
-        <h1 class="font-display text-3xl text-ink sm:text-4xl">{{ doc.title }}</h1>
-        <p v-if="doc.description" class="text-s text-ink-70">{{ doc.description }}</p>
+        <h1 class="font-display text-3xl color-primary sm:text-4xl">{{ doc.title }}</h1>
+        <p v-if="doc.description" class="text-s text-ink">{{ doc.description }}</p>
       </header>
 
       <div class="mb-8 lg:hidden" v-if="doc.toc.length">
         <Toc :items="doc.toc" />
       </div>
 
-      <div class="doc-content" v-html="processedDocHtml"></div>
+      <div class="doc-content flex-grow" v-html="processedDocHtml"></div>
 
       <div class="mt-12 flex items-center justify-between gap-4 border-t border-ink-10 pt-6 text-sm">
         <RouterLink
           v-if="prevNext.prev"
           :to="prevNext.prev.routePath"
-          class="rounded-full border border-ink-20 px-4 py-2 transition hover:border-ink-40"
+          class="bottom-nav rounded-full border border-ink-40 px-4 py-2 transition hover:border-ink-80"
         >
           ← {{ prevNext.prev.title }}
         </RouterLink>
@@ -247,7 +250,7 @@ function wrapSections(html: string): string {
         <RouterLink
           v-if="prevNext.next"
           :to="prevNext.next.routePath"
-          class="rounded-full border border-ink-20 px-4 py-2 text-right transition hover:border-ink-40"
+          class="bottom-nav rounded-full border border-ink-40 px-4 py-2 text-right transition hover:border-ink-80"
         >
           {{ prevNext.next.title }} →
         </RouterLink>

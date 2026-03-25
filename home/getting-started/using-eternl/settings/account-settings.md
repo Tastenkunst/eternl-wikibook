@@ -2,11 +2,7 @@
 
 # Account Settings
 
-[//]: # (<figure><img src="/gitbook-assets/pictures/Account_Settings.png" alt=""><figcaption><p></p></figcaption></figure>)
-
 ## Overview
-
-{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
 <figure><img src="/gitbook-assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
 

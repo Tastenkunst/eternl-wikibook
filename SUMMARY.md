@@ -2,9 +2,9 @@
 
 * [Home](README.md)
 
-* [Welcome to Eternl v2.0](home/welcome-to-eternl-v2.0/README.md)
+* [Welcome to Eternl v2](home/welcome-to-eternl-v2.0/README.md)
     * [About Eternl](home/welcome-to-eternl-v2.0/about-eternl.md)
-    * [What’s New in v2.0 ?](home/welcome-to-eternl-v2.0/whats-new-in-v2.0.md)
+    * [What’s New in v2 ?](home/welcome-to-eternl-v2.0/whats-new-in-v2.0.md)
     * [Supported Platforms](home/welcome-to-eternl-v2.0/supported-platforms.md)
 
 * [Getting Started](home/getting-started/README.md)

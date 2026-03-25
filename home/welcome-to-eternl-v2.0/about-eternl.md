@@ -25,6 +25,13 @@ More features: \
 \+ Cardano on-chain governance.
 
 \
-\+ And much more... \
-\
-Your keys, your crypto! Eternl stores your wallet's encrypted private keys on your computer, not on Eternl servers (non-custodial). Be careful: Keep your seed phrase safe and never enter it on any other website.
+\+ And much more...
+
+<br>
+
+{% hint style="success" %}
+**Your keys, your crypto!** Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
+{% endhint %}
+{% hint style="warning" %}
+**Keep your seed phrase safe and private!** Never enter it on any other website and never share it with anyone. No legitimate person or service will ever ask for your seed phrase.
+{% endhint %}
