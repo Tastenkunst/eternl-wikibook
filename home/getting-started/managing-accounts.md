@@ -1,5 +1,7 @@
 # Managing Accounts
 
+{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
+
 ## Multiple accounts from one seed phrase
 
 The concept of "accounts" refers to the ability to create multiple sub-accounts from a single seed phrase. Each account is derived from the same mnemonic but has its own unique set of addresses and keys, so you can keep funds, staking, and transaction history separated. These wallets share no on-chain link and act as completely stand-alone accounts.
