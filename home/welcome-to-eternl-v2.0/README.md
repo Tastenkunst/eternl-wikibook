@@ -5,6 +5,6 @@ cover:
 coverY: 0
 ---
 
-# Welcome to Eternl v2.0
+# Welcome to Eternl v2
 
 [[child-nav]]

@@ -1,8 +1,18 @@
 <script setup lang="ts">
-import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
-import { useRoute } from 'vue-router';
-import { getDocByRoute, getPrevNext } from '@/lib/content';
-import Toc from '@/components/Toc.vue';
+import {
+  computed,
+  onMounted,
+  onBeforeUnmount,
+  ref }                       from 'vue';
+import { useRoute }           from 'vue-router';
+
+import {
+  getDocByRoute,
+  getPrevNext
+}                             from '@/lib/content';
+
+import Toc                    from '@/components/Toc.vue';
+import NavGrid                from '@/components/NavGrid.vue';
 
 const route = useRoute();
 const routePath = computed(() => normalizePath(route.path));
@@ -31,6 +41,29 @@ const coverSrc = computed(() => {
     return cover;
   }
   return isDark.value ? cover.dark || cover.light : cover.light || cover.dark;
+});
+
+// Daten für die nav-Kacheln aus summary extrahieren
+const navigationItems = computed(() => {
+  if (!doc.value) return [];
+  if (doc.value.html.includes('[[child-nav]]')) return doc.value.children || [];
+
+  const customNavRegex = /\[\[custom-nav\]\]([\s\S]*?)\[\[\/custom-nav\]\]/;
+  const match = doc.value.html.match(customNavRegex);
+  if (match) {
+    const items = [];
+    const linkRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"[^>]*>(.*?)<\/a>/g;
+    let lMatch;
+    while ((lMatch = linkRegex.exec(match[1])) !== null) {
+      const rawTitle = lMatch[2].replace(/<[^>]*>?/gm, '').trim();
+      const [title, icon] = rawTitle.split('::').map(s => s.trim());
+      let routePath = lMatch[1].replace(/\.md$/, '');
+      if (!routePath.startsWith('http') && !routePath.startsWith('/')) routePath = '/' + routePath;
+      items.push({ title, routePath, icon });
+    }
+    return items;
+  }
+  return [];
 });
 
 const processedDocHtml = computed(() => {
@@ -82,8 +115,29 @@ const processedDocHtml = computed(() => {
   return wrapSections(doc.value.html);
 });
 
+const processedDocHtmlParts = computed(() => {
+  if (!doc.value?.html) return { before: '', after: '' };
+
+  // 1. Erstmal das normale HTML (ohne Kachel-Generierung)
+  let html = doc.value.html;
+
+  // 2. WrapSections ausführen (wie bisher)
+  if (!doc.value.disableH2Collapse && typeof document !== 'undefined') {
+    html = wrapSections(html);
+  }
+
+  // 3. Am Platzhalter splitten
+  const navPlaceholderRegex = /\[\[child-nav\]\]|\[\[custom-nav\]\][\s\S]*?\[\[\/custom-nav\]\]/;
+  const parts = html.split(navPlaceholderRegex);
+
+  return {
+    before: parts[0] || '',
+    after: parts[1] || ''
+  };
+});
+
 // hilfsfunktion für das erstellen von navigations kacheln
-function renderChildNavigation(items?: Array<{ title: string; routePath: string }>) {
+function renderChildNavigation(items?: Array<{ title: string; routePath: string; icon?: string }>) {
   if (!items || items.length === 0) return '';
 
   const links = items.map(item => `
@@ -229,14 +283,21 @@ function wrapSections(html: string): string {
       <header class="mb-2">
 <!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
         <h1 class="font-display text-3xl color-primary sm:text-4xl">{{ doc.title }}</h1>
-        <p v-if="doc.description" class="text-s text-ink">{{ doc.description }}</p>
+        <p v-if="doc.description" class="text-s color-secondary italic -mt-3">{{ doc.description }}</p>
       </header>
 
       <div class="mb-8 lg:hidden" v-if="doc.toc.length">
         <Toc :items="doc.toc" />
       </div>
 
-      <div class="doc-content flex-grow" v-html="processedDocHtml"></div>
+<!--      <div class="doc-content flex-grow" v-html="processedDocHtml"></div>-->
+      <div class="doc-content flex-grow">
+        <div v-html="processedDocHtmlParts.before"></div>
+
+        <NavGrid v-if="navigationItems.length > 0" :items="navigationItems" />
+
+        <div v-html="processedDocHtmlParts.after"></div>
+      </div>
 
       <div class="mt-12 flex items-center justify-between gap-4 border-t border-ink-10 pt-6 text-sm">
         <RouterLink

@@ -21,6 +21,10 @@ export default defineConfig({
         {
           src: '../.gitbook/assets/icons/**/*', // Don't use path.resolve for Windows compatibility
           dest: 'gitbook-assets/icons'
+        },
+        {
+          src: '../.gitbook/assets/hugeicons/**/*', // Don't use path.resolve for Windows compatibility
+          dest: 'gitbook-assets/hugeicons'
         }
       ]
     })

@@ -12,10 +12,10 @@
 * [Using Eternl](home/getting-started/using-eternl/README.md)
 
     * [Settings](home/getting-started/using-eternl/settings/README.md)
-        * [Account Settings](home/getting-started/using-eternl/settings/account-settings.md)
-        * [Wallet Settings](home/getting-started/using-eternl/settings/wallet-settings.md)
-        * [App Settings](home/getting-started/using-eternl/settings/app-settings.md)
-        * [App Utilities](home/getting-started/using-eternl/settings/app-utilities.md)
+        * [Account Settings](home/getting-started/using-eternl/settings/account-settings.md)::/gitbook-assets/hugeicons/IconUser.svg
+        * [Wallet Settings](home/getting-started/using-eternl/settings/wallet-settings.md)::/gitbook-assets/icons/Wallet01.svg
+        * [App Settings](home/getting-started/using-eternl/settings/app-settings.md)::/gitbook-assets/icons/Settings.svg
+        * [App Utilities](home/getting-started/using-eternl/settings/app-utilities.md)::/gitbook-assets/hugeicons/IconUtilities.svg
     * [Managing Accounts](home/getting-started/managing-accounts.md)
     * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
     * [Understanding Balances](home/getting-started/understanding-balances.md)

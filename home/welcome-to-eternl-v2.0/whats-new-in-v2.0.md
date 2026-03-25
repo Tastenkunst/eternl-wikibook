@@ -2,7 +2,7 @@
 description: Major enhencements & addition in v2
 ---
 
-# What’s New in v2.0 ?
+# What’s New in v2 ?
 
 * MonsterSwap, the aggregator or aggregators for a smooth and optimized trading experience
 * Added 30+ languages to make Eternl more accessible

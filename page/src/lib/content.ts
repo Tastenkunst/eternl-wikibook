@@ -39,6 +39,7 @@ export type NavItem = {
   href: string;
   routePath?: string;
   external?: boolean;
+  icon?: string;
   children: NavItem[];
 };
 
@@ -111,7 +112,7 @@ function parseSummary(markdown: string): NavItem[] {
   let index = 0;
 
   markdown.split('\n').forEach((line) => {
-    const match = line.match(/^(\s*)\*\s+\[([^\]]+)\]\(([^)]+)\)/);
+    const match = line.match(/^(\s*)\*\s+\[([^\]]+)\]\(([^)]+)\)(?:::(.*))?$/);
     if (!match) {
       return;
     }
@@ -119,11 +120,13 @@ function parseSummary(markdown: string): NavItem[] {
     const level = Math.floor(indent / 2);
     const title = match[2].trim();
     const href = match[3].trim();
+    const icon = match[4]?.trim();
 
     const item: NavItem = {
       id: `nav-${index++}`,
       title,
       href,
+      icon,
       children: []
     };
 
