@@ -11,7 +11,7 @@
 
 * [Using Eternl](home/getting-started/using-eternl/README.md)
 
-    * [Settings](home/getting-started/using-eternl/settings/README.md)
+    * [Settings](home/getting-started/using-eternl/settings/README.md)::/gitbook-assets/icons/Settings.svg
         * [Account Settings](home/getting-started/using-eternl/settings/account-settings.md)::/gitbook-assets/hugeicons/IconUser.svg
         * [Wallet Settings](home/getting-started/using-eternl/settings/wallet-settings.md)::/gitbook-assets/icons/Wallet01.svg
         * [App Settings](home/getting-started/using-eternl/settings/app-settings.md)::/gitbook-assets/icons/Settings.svg

@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import {
   computed,
+  nextTick,
   onMounted,
   onBeforeUnmount,
-  ref }                       from 'vue';
+  ref,
+  watch
+}                             from 'vue';
 import { useRoute }           from 'vue-router';
+
+import mediumZoom             from 'medium-zoom';
 
 import {
   getDocByRoute,
@@ -185,6 +190,42 @@ function handleHashChange() {
   }
 }
 
+let zoomInstance: any = null;
+
+const initZoom = async () => {
+  // 1. Aufräumen: Alte Zoom-Verbindungen lösen
+  if (zoomInstance) {
+    zoomInstance.detach();
+  }
+
+  const images = document.querySelectorAll('.doc-content img');
+
+  images.forEach((img: any) => {
+    const checkAndAttach = () => {
+      // Nur zoomen, wenn das Originalbild breiter ist als die Anzeige im Browser
+      // (Wir geben 10px Puffer für Rundungsdifferenzen)
+      if (img.naturalWidth > img.clientWidth + 50) {
+        if (!zoomInstance) {
+          zoomInstance = mediumZoom({
+            margin: 24,
+            background: 'rgba(0, 0, 0, 0.8)'
+          });
+        }
+        zoomInstance.attach(img);
+        img.style.cursor = 'zoom-in';
+      } else {
+        img.style.cursor = 'default';
+      }
+    };
+
+    if (img.complete) {
+      checkAndAttach();
+    } else {
+      img.onload = checkAndAttach;
+    }
+  });
+};
+
 onMounted(() => {
   syncThemeState();
   if (typeof document === 'undefined') {
@@ -208,7 +249,14 @@ onBeforeUnmount(() => {
   themeObserver?.disconnect();
 
   window.removeEventListener('hashchange', handleHashChange);
+
+  if (zoomInstance) zoomInstance.detach();
 });
+
+watch(() => doc.value?.html, async () => {
+  await nextTick();
+  initZoom();
+}, { immediate: true });
 
 function wrapSections(html: string): string {
   const container = document.createElement('div');
