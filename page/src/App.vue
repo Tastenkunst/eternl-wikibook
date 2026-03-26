@@ -6,7 +6,7 @@ import Sidebar from '@/components/Sidebar.vue';
 import SearchBox from '@/components/SearchBox.vue';
 import MobileNav from '@/components/MobileNav.vue';
 
-import logoUrl from '../../.gitbook/assets/pictures/eternl-logo-small-vector.png';
+import logoUrl from '@assets/pictures/eternl-logo-small-vector.png';
 
 const route = useRoute();
 const currentPath = computed(() => route.path);
@@ -92,12 +92,12 @@ watch(
       </div>
     </header>
 
-    <div class="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6 sm:px-6 lg:grid-cols-[260px_minmax(0,1fr)]">
-      <aside class="hidden lg:block">
+    <div class="mx-auto app-layout-grid gap-6 px-4 pb-16 pt-6 sm:px-6">
+      <aside class="sidebar-aside">
         <Sidebar :items="navTree" :current-path="currentPath" />
       </aside>
       <main id="main-content" ref="mainRef" tabindex="-1" class="min-w-0 focus:outline-none">
-        <div class="mb-6 lg:hidden">
+        <div class="mobile-nav-wrapper">
           <MobileNav :items="navTree" :current-path="currentPath" />
         </div>
         <RouterView />
@@ -112,3 +112,7 @@ watch(
     </footer>
   </div>
 </template>
+
+<style scoped>
+
+</style>

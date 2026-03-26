@@ -7,7 +7,7 @@ defineProps<{ items: TocItem[] }>();
 
 <template>
   <nav
-    class="rounded-2xl border border-ink-10 bg-ivory-70 p-4 text-sm shadow-soft"
+    class="toc-container rounded-2xl border border-ink-10 bg-ivory-70 p-4 text-sm shadow-soft"
     aria-label="On this page"
   >
     <p class="mb-3 text-xs uppercase tracking-[0.3em] text-ink-50">On this page</p>

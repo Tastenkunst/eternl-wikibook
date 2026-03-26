@@ -322,7 +322,7 @@ function wrapSections(html: string): string {
 </script>
 
 <template>
-  <section v-if="doc" class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px] h-full">
+  <section v-if="doc" class="doc-main-grid grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px] h-full">
     <article class="doc-card flex flex-col h-full">
       <div v-if="coverSrc" class="mb-6 overflow-hidden rounded-2xl border border-ink-10">
         <img :src="coverSrc" alt="" class="banner-image h-48 w-full object-cover" />
@@ -331,12 +331,12 @@ function wrapSections(html: string): string {
       <header class="mb-2">
 <!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
         <h1 class="font-display text-3xl color-primary sm:text-4xl">{{ doc.title }}</h1>
-        <p v-if="doc.description" class="text-s color-secondary italic -mt-3">{{ doc.description }}</p>
+        <p v-if="doc.description" class="text-s text-ink-70 italic -mt-3">{{ doc.description }}</p>
       </header>
 
-      <div class="mb-8 lg:hidden" v-if="doc.toc.length">
-        <Toc :items="doc.toc" />
-      </div>
+<!--      <div class="mb-8 lg:hidden" v-if="doc.toc.length">-->
+<!--        <Toc :items="doc.toc" />-->
+<!--      </div>-->
 
 <!--      <div class="doc-content flex-grow" v-html="processedDocHtml"></div>-->
       <div class="doc-content flex-grow">
