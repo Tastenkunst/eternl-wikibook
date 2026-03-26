@@ -80,7 +80,7 @@ watch(() => route.path, () => { isOpen.value = false; });
       <div class="burger-icon-wrapper">
         <div class="burger-icon"></div>
       </div>
-      <span class="trigger-label text-sm font-bold">Navigation</span>
+      <span class="trigger-label text-sm font-bold">Contents</span>
     </button>
 
     <Teleport to="body">
@@ -135,7 +135,7 @@ watch(() => route.path, () => { isOpen.value = false; });
   justify-content: center;
   border-radius: 50%;
   /* Dezenter Glas-Look im Darkmode */
-  background: color-mix(in srgb, var(--color-panel) 90%, white 5%);
+  background: color-mix(in srgb, var(--color-panel) 80%, white 5%);
   border-color: var(--color-border-strong);
 }
 
@@ -155,6 +155,7 @@ watch(() => route.path, () => { isOpen.value = false; });
 
 .trigger-label {
   white-space: nowrap;
+  color: var(--color-text);
   transition: opacity 0.2s;
 }
 
