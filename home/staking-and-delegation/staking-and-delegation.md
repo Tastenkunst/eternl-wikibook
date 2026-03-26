@@ -48,13 +48,9 @@ Stake pool operators also receive rewards for their role in maintaining the netw
 
 Overall, staking on the Cardano blockchain provides a way for ADA holders to participate in securing the network and earn rewards while contributing to the decentralization of the Cardano ecosystem.
 
-\</details>
-
 ### 2. Rewards Distribution
 
 In the Cardano ecosystem, rewards are generated from two key sources: all transaction fees collected from transactions within a block minted during an epoch, and monetary expansion, which is the process of increasing the circulating ADA supply towards a maximum cap. These rewards are then proportionally distributed to both stakers and pool operators. Pool operators are rewarded for their crucial role in maintaining and securing the network, while the remaining rewards are allocated among the stakers. This system is designed to motivate users to engage in staking their ADA, thus enhancing the network's security and overall performance by ensuring a vested interest in the health and efficiency of Cardano.
-
-\</details>
 
 ### Return on Stake (RoS)
 

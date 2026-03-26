@@ -514,14 +514,60 @@
     @apply text-green-500 font-bold text-xl;
   }
 
-  .callout-tip {
+ /* --- Global Callout System --- */
+
+  .callout-tip,
+  .callout-warning,
+  .callout-success {
     margin: 1.5rem 0;
     padding: 1.25rem;
     border-radius: 8px;
+    box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  /* Light Mode (Default) */
+  .callout-tip {
     border-left: 4px solid #3b82f6;
     background-color: #f1f5f9;
     color: #0f172a;
-    box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1);
+  }
+
+  .callout-warning {
+    border-left: 4px solid var(--color-danger);
+    background-color: color-mix(in srgb, var(--color-danger) 8%, #ffffff);
+    color: #0f172a;
+  }
+
+  .callout-success {
+    border-left: 4px solid var(--color-success);
+    background-color: color-mix(in srgb, var(--color-success) 8%, #ffffff);
+    color: #0f172a;
+  }
+
+  /* Dark Mode Overrides */
+  .dark .callout-tip,
+  html.dark .callout-tip {
+    background-color: #1a2234;
+    border-left-color: var(--heading-gold-strong);
+    color: #ffffff;
+    box-shadow: none;
+  }
+
+  .dark .callout-warning,
+  html.dark .callout-warning {
+    background-color: color-mix(in srgb, var(--color-danger) 12%, var(--color-bg));
+    border-left-color: var(--color-danger);
+    color: #ffffff;
+    box-shadow: none;
+  }
+
+  .dark .callout-success,
+  html.dark .callout-success {
+    background-color: color-mix(in srgb, var(--color-success) 12%, var(--color-bg));
+    border-left-color: var(--color-success);
+    color: #ffffff;
+    box-shadow: none;
   }
 
   .dark .callout-tip,
