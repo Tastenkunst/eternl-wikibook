@@ -19,3 +19,13 @@ const props = defineProps<{ items: NavItem[]; currentPath: string }>();
     </ul>
   </nav>
 </template>
+<style scoped>
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+</style>

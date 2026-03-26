@@ -88,14 +88,21 @@ onUnmounted(() => {
       role="button"
       @click="handleRowClick"
     >
-      <img
-        v-if="item.children.length"
-        class="sidebar-chevron sidebar-chevron-icon"
-        :src="iconSrc"
-        alt="Toggle section"
-        aria-hidden="true"
-        @click.stop="toggle"
-      />
+<!--      <img-->
+<!--        v-if="item.children.length"-->
+<!--        class="sidebar-chevron sidebar-chevron-icon"-->
+<!--        :src="iconSrc"-->
+<!--        alt="Toggle section"-->
+<!--        aria-hidden="true"-->
+<!--        @click.stop="toggle"-->
+<!--      />-->
+      <div
+          v-if="item.children.length"
+          class="sidebar-chevron sidebar-chevron-icon"
+          :class="{ 'is-open': expanded }"
+          aria-hidden="true"
+          @click.stop="toggle"
+      ></div>
       <span v-else class="sidebar-chevron-placeholder"></span>
 
       <RouterLink
@@ -120,3 +127,74 @@ onUnmounted(() => {
     </ul>
   </li>
 </template>
+<style scoped>
+.sidebar-item-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.sidebar-item-row:hover {
+  /*background-color: color-mix(in srgb, var(--color-border) 8%, var(--color-panel));*/
+  background-color: var(--color-link-hover);
+}
+
+.sidebar-item-row-active {
+  /*background-color: color-mix(in srgb, var(--color-warning) 10%, var(--color-panel));*/
+}
+
+.sidebar-link {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.sidebar-link-active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.sidebar-children {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0.85rem;
+  border-left: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+}
+
+.sidebar-chevron {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: currentColor;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sidebar-chevron-icon {
+  -webkit-mask-image: url('/gitbook-assets/icons/ChevronDown.svg');
+  mask-image: url('/gitbook-assets/icons/ChevronDown.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  transition: filter 0.2s ease;
+  transform: rotate(-90deg);
+}
+.sidebar-chevron-icon.is-open{
+  transform: rotate(0deg);
+}
+
+.sidebar-chevron-placeholder {
+  width: 0.75rem;
+  height: 0.75rem;
+  display: inline-block;
+  opacity: 0;
+}
+
+.sidebar-item-nested .sidebar-item-row {
+  padding-left: 0.25rem;
+}
+</style>

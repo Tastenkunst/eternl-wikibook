@@ -351,7 +351,7 @@ function wrapSections(html: string): string {
         <RouterLink
           v-if="prevNext.prev"
           :to="prevNext.prev.routePath"
-          class="bottom-nav rounded-full border border-ink-40 px-4 py-2 transition hover:border-ink-80"
+          class="bottom-nav rounded-full border text-ink-50 border-ink-40 px-4 py-2 transition hover:border-ink-80"
         >
           ← {{ prevNext.prev.title }}
         </RouterLink>
@@ -359,7 +359,7 @@ function wrapSections(html: string): string {
         <RouterLink
           v-if="prevNext.next"
           :to="prevNext.next.routePath"
-          class="bottom-nav rounded-full border border-ink-40 px-4 py-2 text-right transition hover:border-ink-80"
+          class="bottom-nav rounded-full border text-ink-50 border-ink-40 px-4 py-2 text-right transition hover:border-ink-80"
         >
           {{ prevNext.next.title }} →
         </RouterLink>
@@ -376,3 +376,11 @@ function wrapSections(html: string): string {
     <p class="mt-2 text-sm text-ink-70">The requested page is not in SUMMARY.md.</p>
   </section>
 </template>
+<style scoped>
+.bottom-nav{
+  color: color-mix(var(--color-text) 40%, transparent);
+}
+.bottom-nav:hover{
+  color: color-mix(var(--color-text) 45%, transparent);
+}
+</style>

@@ -109,6 +109,10 @@
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
   }
+
+  hr {
+      color: color-mix(var(--color-text) 25%, transparent);
+  }
 }
 
 @layer utilities {
@@ -700,8 +704,6 @@
     box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 40%, transparent);
   }
 
-
-
   .banner-image {
     filter: none;
     transition: opacity 0.3s ease-in-out;
@@ -724,77 +726,6 @@
 
   #doc-search::placeholder {
     color: color-mix(in srgb, var(--color-text) 60%, transparent);
-  }
-
-  .sidebar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
-
-  .sidebar-item-row {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 0.75rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-
-  .sidebar-item-row:hover {
-    /*background-color: color-mix(in srgb, var(--color-border) 8%, var(--color-panel));*/
-    background-color: var(--color-link-hover);
-  }
-
-  .sidebar-item-row-active {
-    /*background-color: color-mix(in srgb, var(--color-warning) 10%, var(--color-panel));*/
-  }
-
-  .sidebar-link {
-    flex: 1;
-    font-size: 0.9rem;
-    color: var(--color-text);
-  }
-
-  .sidebar-link-active {
-    color: var(--color-primary);
-    font-weight: 600;
-  }
-
-  .sidebar-children {
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 0.85rem;
-    border-left: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
-  }
-
-  .sidebar-chevron {
-    width: 1rem;
-    height: 1rem;
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-
-  .sidebar-chevron img,
-  .sidebar-chevron-icon {
-    width: 12px;
-    height: 12px;
-    filter: var(--chevron-filter) !important;
-    transition: filter 0.2s ease;
-  }
-
-  .sidebar-chevron-placeholder {
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    opacity: 0;
-  }
-
-  .sidebar-item-nested .sidebar-item-row {
-    padding-left: 0.25rem;
   }
 
   .doc-content .gb-icon {
@@ -825,8 +756,4 @@
     }
 
 
-
-    .bottom-nav:hover{
-        color: var(--color-text-hover);
-    }
 }

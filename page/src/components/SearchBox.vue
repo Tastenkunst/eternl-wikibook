@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-import { useRouter } from 'vue-router';
-import { searchIndex, type SearchEntry } from '@/lib/content';
+import { computed, ref }      from 'vue';
+import { useRouter }          from 'vue-router';
+
+import {
+  searchIndex,
+  type SearchEntry
+}                             from '@/lib/content';
 
 const router = useRouter();
 const query = ref('');
@@ -46,19 +50,38 @@ function onKeydown(event: KeyboardEvent): void {
       v-if="showDropdown"
       class="absolute right-0 top-full z-20 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
     >
-      <div v-if="results.length" class="max-h-64 overflow-auto p-2">
+      <div v-if="results.length" class="overflow-auto p-2">
         <button
           v-for="entry in results"
           :key="entry.routePath"
           type="button"
-          class="w-full rounded-xl px-3 py-2 text-left text-sm text-ink-80 transition hover:bg-ink-5"
+          class="w-full rounded-xl px-3 py-2 text-left text-sm text-ink-80 transition"
           @click="goTo(entry)"
         >
-          <p class="font-medium text-ink">{{ entry.title }}</p>
-          <p class="text-xs text-ink-60">{{ entry.routePath }}</p>
+          <a class="font-medium text-ink">{{ entry.title }}</a>
+<!--          <p class="text-xs text-ink-60">{{ entry.routePath }}</p>-->
         </button>
       </div>
       <p v-else class="px-3 py-3 text-xs text-ink-60">No results yet.</p>
     </div>
   </form>
 </template>
+<style scoped>
+button:hover {
+  background: var(--color-link-hover);
+  cursor: pointer;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: currentColor;
+  -webkit-mask-image: url("/gitbook-assets/icons/Cancel01.svg");
+  mask-image: url("/gitbook-assets/icons/Cancel01.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  cursor: pointer;
+}
+</style>

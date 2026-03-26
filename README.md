@@ -13,6 +13,10 @@ disableH2Collapse: true
 
 [//]: # ([Eternl updates / release notes]&#40;eternl-updates-release-notes.md&#41;)
 
+<br>
+
+---
+
 ## Trending Topics
 
 [[custom-nav]]
