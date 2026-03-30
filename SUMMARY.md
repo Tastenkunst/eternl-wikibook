@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](content/README.md)
+* [Home](README.md)
 
 * [Welcome to Eternl v2](content/welcome-to-eternl-v2/README.md)
     * [About Eternl](content/welcome-to-eternl-v2/about-eternl.md)

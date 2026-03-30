@@ -44,7 +44,7 @@ disableH2Collapse: true
 {% endhint %}
 
 <div class="callout-success">
-**Your keys, your crypto!** Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
+<strong>Your keys, your crypto!</strong> Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
 </div>
 
 <div class="callout-tip">
