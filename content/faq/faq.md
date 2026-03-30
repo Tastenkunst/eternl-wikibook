@@ -8,7 +8,7 @@ description: Frequently Asked Questions
 
 It can be alarming to open Eternl and find your wallet list empty. Because Eternl is a **non-custodial** wallet, your data is stored locally in your browser's database (IndexedDB) rather than on a central server. If this local data is deleted by your system or browser, the wallet "disappears" from the interface.
 
-{% hint style="success" %}
+{% hint style="info" %}
 **Your funds are safe.** Your assets live on the Cardano blockchain, not in the app. You can always regain access using your 15/24-word recovery phrase, your hardware device, or a previously exported backup file.
 {% endhint %}
 

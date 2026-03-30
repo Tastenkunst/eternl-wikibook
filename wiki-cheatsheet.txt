@@ -1,0 +1,61 @@
+wiki - layout - cheatsheet
+
+
+
+
+---
+disableH2Collapse: true
+---
+
+
+
+
+[[child-nav]]
+
+
+
+[[custom-nav]]
+* [Claiming the Glacier Airdrop](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+[[/custom-nav]]
+
+
+
+{% hint style="info" %}					success warning
+Wallet card > Manage Accounts
+{% endhint %}
+
+
+
+ein- ausklappenklappen (bei h2 automatisch - versuchen h2 zu nutzen)
+
+<details>
+<summary>...</summary>
+...
+</details
+
+
+
+vermeiden. meist hint sinnvoller. 
+
+<div class="callout-tip">
+...
+</div>
+
+
+
+bewirkt sehr dezenten rahmen - braucht man das?
+
+>
+
+
+
+icons:
+für nav cards in summary
+bsp: "* [Settings](home/getting-started/using-eternl/settings/README.md)::/gitbook-assets/icons/Settings.svg"
+
+inline bsp:
+"## ![Staking](/gitbook-assets/icons/StakingOutline.svg) Staking Mechanics"
+
+
+
+![Pointing hand]&#40;/gitbook-assets/icons/FingerTouch03.svg&#41; Check out our tutorials on:

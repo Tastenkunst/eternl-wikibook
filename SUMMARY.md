@@ -1,63 +1,63 @@
 # Table of contents
 
-* [Home](README.md)
+* [Home](content/README.md)
 
-* [Welcome to Eternl v2](home/welcome-to-eternl-v2.0/README.md)
-    * [About Eternl](home/welcome-to-eternl-v2.0/about-eternl.md)
-    * [What’s New in v2 ?](home/welcome-to-eternl-v2.0/whats-new-in-v2.0.md)
-    * [Supported Platforms](home/welcome-to-eternl-v2.0/supported-platforms.md)
+* [Welcome to Eternl v2](content/welcome-to-eternl-v2/README.md)
+    * [About Eternl](content/welcome-to-eternl-v2/about-eternl.md)
+    * [What’s New in v2 ?](content/welcome-to-eternl-v2/whats-new-in-v2.0.md)
+    * [Supported Platforms](content/welcome-to-eternl-v2/supported-platforms.md)
 
-* [Getting Started](home/getting-started/README.md)
+* [Getting Started](content/getting-started/README.md)
 
-* [Using Eternl](home/getting-started/using-eternl/README.md)
+* [Using Eternl](content/using-eternl/README.md)
 
-    * [Settings](home/getting-started/using-eternl/settings/README.md)::/gitbook-assets/icons/Settings.svg
-        * [Account Settings](home/getting-started/using-eternl/settings/account-settings.md)::/gitbook-assets/hugeicons/IconUser.svg
-        * [Wallet Settings](home/getting-started/using-eternl/settings/wallet-settings.md)::/gitbook-assets/icons/Wallet01.svg
-        * [App Settings](home/getting-started/using-eternl/settings/app-settings.md)::/gitbook-assets/icons/Settings.svg
-        * [App Utilities](home/getting-started/using-eternl/settings/app-utilities.md)::/gitbook-assets/hugeicons/IconUtilities.svg
-    * [Managing Accounts](home/getting-started/managing-accounts.md)
-    * [Using the DApp Browser](home/getting-started/using-the-dapp-browser.md)
-    * [Understanding Balances](home/getting-started/understanding-balances.md)
+    * [Settings](content/using-eternl/settings/README.md)::/gitbook-assets/icons/Settings.svg
+        * [Account Settings](content/using-eternl/settings/account-settings.md)::/gitbook-assets/hugeicons/IconUser.svg
+        * [Wallet Settings](content/using-eternl/settings/wallet-settings.md)::/gitbook-assets/icons/Wallet01.svg
+        * [App Settings](content/using-eternl/settings/app-settings.md)::/gitbook-assets/icons/Settings.svg
+        * [App Utilities](content/using-eternl/settings/app-utilities.md)::/gitbook-assets/hugeicons/IconUtilities.svg
+    * [Managing Accounts](content/using-eternl/managing-accounts.md)
+    * [Using the DApp Browser](content/using-eternl/using-the-dapp-browser.md)
+    * [Understanding Balances](content/using-eternl/understanding-balances.md)
   
-* [Security & Privacy](home/security-and-privacy/README.md)
-    * [What Is a Seed Phrase?](home/security-and-privacy/what-is-a-seed-phrase.md)
-    * [Hot Wallets vs Cold Wallets](home/security-and-privacy/hot-wallets-vs-cold-wallets..md)
-    * [How to Store Your Seed Phrase Securely](home/security-and-privacy/how-to-store-your-seed-phrase-securely.md)
-    * [Common Mistakes to Avoid](home/security-and-privacy/common-mistakes-to-avoid.md)
-    * [Eternl Guard](home/security-and-privacy/eternl-guard.md)
+* [Security & Privacy](content/security-and-privacy/README.md)
+    * [What Is a Seed Phrase?](content/security-and-privacy/what-is-a-seed-phrase.md)
+    * [Hot Wallets vs Cold Wallets](content/security-and-privacy/hot-wallets-vs-cold-wallets..md)
+    * [How to Store Your Seed Phrase Securely](content/security-and-privacy/how-to-store-your-seed-phrase-securely.md)
+    * [Common Mistakes to Avoid](content/security-and-privacy/common-mistakes-to-avoid.md)
+    * [Eternl Guard](content/security-and-privacy/eternl-guard.md)
 
-* [Staking & Delegation](home/staking-and-delegation/staking-and-delegation.md)
-    * [How Staking Works](home/staking-and-delegation/how-staking-works.md)
-    * [Stake Pool Rating](home/staking-and-delegation/stake-pool-rating.md)
+* [Staking & Delegation](content/staking-and-delegation/staking-and-delegation.md)
+    * [How Staking Works](content/staking-and-delegation/how-staking-works.md)
+    * [Stake Pool Rating](content/staking-and-delegation/stake-pool-rating.md)
 
-* [Multi-Sig](home/multi-sig.md)
+* [Multi-Sig](content/multi-sig.md)
 
-* [FAQ](readme/faq.md)
+* [FAQ](content/faq/faq.md)
 
-* [Claiming the Glacier Airdrop](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+* [Claiming the Glacier Airdrop](content/claiming-the-glacier-airdrop-in-eternl-v2.md)
 
 * [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
 
-* [For Developers](home/for-developers/README.md)
-    * [DApp browser integration](home/for-developers/dapp-browser-integration.md)
+* [For Developers](content/for-developers/README.md)
+    * [DApp browser integration](content/for-developers/dapp-browser-integration.md)
 
-* [Cardano Basics](home/cardano-basics/README.md)
-    * [Basic tips for keeping your assets safe and using Eternl Wallet securely](home/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
-    * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](home/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md)
-    * [Can I migrate my wallet to a hardware device?](home/cardano-basics/can-i-migrate-my-wallet-to-a-hardware-device.md)
-    * [Can I restore my hardware wallet phrase on Eternl?](home/cardano-basics/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
-    * [A brief overview of DeFi (Decentralized Finance)](home/cardano-basics/a-brief-overview-of-defi-decentralized-finance.md)
-    * [Cardano Addresses](home/cardano-basics/cardano-addresses.md)
-    * [Governance & Project Catalyst](home/cardano-basics/governance-and-catalyst.md)
-    * [The eUTxO Model](home/cardano-basics/eutxo-model.md)
-    * [Staking Mechanics](home/cardano-basics/staking-mechanics.md)
+* [Cardano Basics](content/cardano-basics/README.md)
+    * [Basic tips for keeping your assets safe and using Eternl Wallet securely](content/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
+    * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](content/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md)
+    * [Can I migrate my wallet to a hardware device?](content/cardano-basics/can-i-migrate-my-wallet-to-a-hardware-device.md)
+    * [Can I restore my hardware wallet phrase on Eternl?](content/cardano-basics/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
+    * [A brief overview of DeFi (Decentralized Finance)](content/cardano-basics/a-brief-overview-of-defi-decentralized-finance.md)
+    * [Cardano Addresses](content/cardano-basics/cardano-addresses.md)
+    * [Governance & Project Catalyst](content/cardano-basics/governance-and-catalyst.md)
+    * [The eUTxO Model](content/cardano-basics/eutxo-model.md)
+    * [Staking Mechanics](content/cardano-basics/staking-mechanics.md)
 
-* [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
+* [Eternl Updates / Release Notes](content/eternl-updates-release-notes.md)
 
-* [Contact & Support](contact-and-support.md)
+* [Contact & Support](content/contact-and-support.md)
 
-* [Impressum](impressum.md)
+* [Impressum](content/impressum.md)
 
 [//]: # (* [Eternl v2.0 Wiki]&#40;README.md&#41;)
 
