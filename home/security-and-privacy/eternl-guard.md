@@ -21,7 +21,7 @@ After waiting for 10 seconds and confirming you're aware of connecting to a know
 
 ![eternl_guard_2.png](/gitbook-assets/pictures/eternl_guard_2.png)
 
-## 3.Wallet Cleanup
+### 3.Wallet Cleanup
 
 If you view scam tokens under “Assets”, you will see a “Clean up” button. Clicking this button automatically creates the required transaction.
 

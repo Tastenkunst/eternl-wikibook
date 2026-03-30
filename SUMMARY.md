@@ -28,6 +28,7 @@
     * [Eternl Guard](home/security-and-privacy/eternl-guard.md)
 
 * [Staking & Delegation](home/staking-and-delegation/staking-and-delegation.md)
+    * [How Staking Works](home/staking-and-delegation/how-staking-works.md)
     * [Stake Pool Rating](home/staking-and-delegation/stake-pool-rating.md)
 
 * [Multi-Sig](home/multi-sig.md)
@@ -38,8 +39,8 @@
 
 * [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
 
-* [For Developers](for-developers/README.md)
-    * [DApp browser integration](for-developers/dapp-browser-integration.md)
+* [For Developers](home/for-developers/README.md)
+    * [DApp browser integration](home/for-developers/dapp-browser-integration.md)
 
 * [Cardano Basics](home/cardano-basics/README.md)
     * [Basic tips for keeping your assets safe and using Eternl Wallet securely](home/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)

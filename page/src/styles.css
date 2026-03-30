@@ -367,6 +367,10 @@
     margin-top: 1rem;
   }
 
+    .doc-content blockquote p {
+        margin-top: 0;
+    }
+
   .doc-content a {
     color: var(--color-accent);
     text-decoration: underline;

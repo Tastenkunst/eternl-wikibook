@@ -66,7 +66,8 @@ defineProps<{
 .child-nav-icon {
   width: 2rem;
   height: 2rem;
-  background-color: var(--color-secondary);
+  /*background-color: var(--color-secondary);*/
+  background-color: var(--color-text);
   filter: brightness(var(--heading-muted-brightness));
   -webkit-mask-image: var(--gb-icon);
   mask-image: var(--gb-icon);
@@ -85,48 +86,31 @@ defineProps<{
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
-/* Container für Icon + Text */
 .child-nav-content-container {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-/* Das Icon-Styling, damit es sichtbar wird */
-.child-nav-icon {
-  width: 2rem; /* ca. 32px */
-  height: 2rem;
-  background-color: var(--color-secondary);
-  filter: brightness(var(--heading-muted-brightness));
-
-  /* Masken-Logik */
-  -webkit-mask-image: var(--gb-icon);
-  mask-image: var(--gb-icon);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-
-  flex-shrink: 0;
-  transition: all 0.2s ease;
-}
 
 .child-nav-card:hover .child-nav-icon {
   filter: brightness(1);
-  background-color: var(--color-secondary); /* Oder eine spezifische Highlight-Farbe */
+  /*background-color: var(--color-secondary);*/
+  background-color: var(--color-text);
 }
 
 .child-nav-title {
   display: block;
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--color-secondary);
+  /*color: var(--color-secondary);*/
+  color: var(--color-text);
   filter: brightness(var(--heading-muted-brightness));
 }
 
 .child-nav-card:hover .child-nav-title {
-  color: var(--color-secondary);
+  /*color: var(--color-secondary);*/
+  color: var(--color-text);
   filter: brightness(1);
 }
 
@@ -142,7 +126,8 @@ defineProps<{
   right: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-secondary);
+  /*color: var(--color-secondary);*/
+  color: var(--color-text);
   opacity: 0;
   transition: all 0.2s ease;
 }

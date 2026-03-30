@@ -5,27 +5,26 @@ icon: rotate-exclamation
 
 # Claiming the Glacier Airdrop in Eternl v2
 
-<details>
-
-<summary>PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th)</summary>
+## PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th 2025)
 
 Welcome to Eternl. In this video, we'll show you how to participate in the **Glacier Airdrop** and claim your $Night token.\
 You have until **October 20th** to do so.
 
-For the easiest experience, use the **Eternl Chrome browser extension**.\
-![Pointing hand](/gitbook-assets/icons/IconFingerTouch03.svg) Check out our tutorials on:
+For the easiest experience, use the **Eternl Chrome browser extension**
 
-How to install the Chrome Browser Eternl extension?
+Check out our tutorials on:
 
-<iframe src="https://www.youtube.com/embed/TuIYDx2_0nA" frameborder="0" allowfullscreen></iframe>
+How to install the Eternl Chrome Browser Extension
 
-How to import multiple wallets in Eternl v2?
+<iframe src="https://youtube.com/embed/AO72dWDh8RM" frameborder="0" allowfullscreen></iframe>
 
-<iframe src="https://www.youtube.com/embed/fXevC1U2OFg" frameborder="0" allowfullscreen></iframe>
+How to import multiple wallets in Eternl v2
+
+<iframe src="https://www.youtube.com/embed/jw3Ekk8Nv_w" frameborder="0" allowfullscreen></iframe>
 
 ---
 
-## Follow these steps to participate
+### Follow these steps to participate
 
 1. **Open the Claim Website**\
    Navigate to [claim.midnight.gd](https://claim.midnight.gd) and start a new claim.
@@ -72,11 +71,8 @@ How to import multiple wallets in Eternl v2?
 
 ---
 
-</details>
 
-<details>
-
-<summary>PHASE 2: SCAVENGER MINE (CLOSED! Oct 29th to Nov 19th)</summary>
+## PHASE 2: SCAVENGER MINE (CLOSED! Oct 29th to Nov 19th 2025)
 
 Missed the Glacier Drop window? Want to play a bigger part in the future of Midnight? **Scavenger Mine is here and everyone can join!**
 
@@ -109,16 +105,15 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 **For more details:**
 
 * **Eternl Wiki Guide**: https://wiki.eternl.io/en/2\_user-guide/glacier-airdrop
-**Video Tutorial**
+
+* **Video Tutorial**
 
 <iframe src="https://www.youtube.com/embed/CRPlXGoFO8w" frameborder="0" allowfullscreen></iframe>
+
 * **Tokenomics & Claim Phases**: Visit https://midnight.io/ and scroll down to "Token allocations" for a breakdown of all three phases: **Glacier Drop**, **Scavenger Mine**, and **Lost-and-Found**.
 
-</details>
 
-<details open>
-
-<summary>PHASE 3: REDEEM (OPEN until 05. December 2026)</summary>
+## PHASE 3: REDEEM (OPEN until 05. December 2026)
 
 ### Redemption period (360 days)
 
@@ -161,5 +156,3 @@ The NIGHT Claim Portal is the official user interface of the NIGHT token distrib
 ### What happens next
 
 After the Redemption period ends, the NIGHT Claim Portal may be taken offline, and any un-redeemed allocations must be manually redeemed by their owners.
-
-</details>

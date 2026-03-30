@@ -39,15 +39,15 @@ Generally it is advisable to have a ratio of about 20 tokens per 7 ADA to have a
 
 ### There are a few other sub-balances that are not always shown
 
-### Collateral
+#### Collateral
 
 Collateral can be required for interaction with smart contracts. It reserves a small amount of ADA (5) to be spent if the validation of a smart contract fails. If collateral is set for the wallet the amount of ADA locked for collateral will be shown here.
 
-### Currently bound to tokens
+#### Currently bound to tokens
 
 This entry only shows when the current amount of ADA attached to tokens is too little compared to the ideal case of 20 Tokens per 7 ADA. In that case, currently bound will tell you how much is actually attached to tokens at this time.
 
-### Token Fragmentation
+#### Token Fragmentation
 
 This is shown if the “currently bound to tokens” property does not match the optimal degree of fragmentation as described before. It estimates how many ADA would be locked if fragmentation was optimal.
 

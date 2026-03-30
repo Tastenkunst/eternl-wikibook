@@ -3,7 +3,7 @@ description: How Eternl rates stake pools.
 icon: coins
 ---
 
-# stake pool rating
+# Stake Pool Rating
 
 Cardano is a blockchain platform that allows users to stake their ADA cryptocurrency in stake pools to earn rewards. Understanding the parameters of a Cardano stake pool is essential for both pool operators and delegators.
 
