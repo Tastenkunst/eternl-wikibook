@@ -6,11 +6,9 @@
 
 <figure><img src="/gitbook-assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
 
-
 ## Account name / handle
 
 <figure><img src="/gitbook-assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
-
 
 ## Export Account Key
 
@@ -26,7 +24,6 @@ Cardano supports several public account key formats, each used to view wallet in
 
 These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
 
-
 ## Single Address Mode (SAM) [option]
 
 Only use a single address for all transactions.
@@ -40,7 +37,6 @@ Alternatively a custom receive address can be set here.
 <div class="callout-tip">
 Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.
 </div>
-
 
 ## Collateral [option]
 
@@ -83,7 +79,6 @@ This means:
 * Collateral is **never locked** and can be spent in regular (non-contract) transactions.
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
-
 
 ## Manual sync [option]
 
@@ -135,7 +130,6 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 | **Manual**              | User-triggered sync | Power users, low-resource devices, testing |
 
 > **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
-
 
 ## History sync [option]
 
@@ -194,7 +188,6 @@ Keep it **disabled** if:
 
 * You want the wallet to load quickly and do not need old records.
 
-
 Token Fragmentation (TF)
 
 ### Reduce transaction fees by fragmenting tokens
@@ -246,7 +239,6 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 > **Tip:** Lower values are better for minimizing fees in simple wallets. Higher values can be more efficient for wallets handling many tokens or dApp interactions.
 
-
 ## Advanced UTxO Management
 
 <figure><img src="/gitbook-assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
@@ -257,7 +249,6 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 * Additionally, it tries to reserve a dedicated **5 \{{currency\}} collateral UTxO** for use with **smart contract interactions**.
 
 > This setting is especially useful for users interacting with dApps, submitting multiple transactions, or participating in DeFi.
-
 
 Auto Withdrawal [option]
 

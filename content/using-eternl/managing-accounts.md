@@ -12,13 +12,15 @@ Account 3: `m/1852'/1815'/2'`
 ...
 Account 30: `m/1852'/1815'/29'`
 
-{% hint style="success" %}
+<div class="callout-tip">
 You also have the option to freely select the indexes for these 30 accounts.
-{% endhint %}
+</div>
 
 This setup makes it easy to organize multiple wallets inside one seed while staying within the 30-account boundary enforced by Eternl v2.
 
 ## Manage accounts
+
+{% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
 You manage accounts from the wallet card on both hot wallets and hardware wallets. Eternl allows account indexes up to 10,000, but the UI only registers 30 accounts at any time; picking custom indexes gives you flexibility to rotate which accounts are active without exceeding the 30-account limit.
 
