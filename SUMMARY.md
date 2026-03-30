@@ -40,7 +40,7 @@
 * [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
 
 * [For Developers](content/for-developers/README.md)
-    * [DApp browser integration](content/for-developers/dapp-browser-integration.md)
+    * [DApp Browser Integration](content/for-developers/dapp-browser-integration.md)
 
 * [Cardano Basics](content/cardano-basics/README.md)
     * [Basic tips for keeping your assets safe and using Eternl Wallet securely](content/cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
