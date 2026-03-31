@@ -26,7 +26,7 @@ On supported browsers, look for the **install option** in the address bar to add
 ### ![Mobile App](/gitbook-assets/icons/Application.svg) Mobile App _(Beta / Limited)_
 
 * Android version available via direct APK or third-party stores
-* iOS is not officially supported (yet)
+* iOS supported in web and via app
 
 <br>
 
