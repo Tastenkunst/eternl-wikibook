@@ -103,7 +103,16 @@ function normalizeRoutePath(path: string): string {
 }
 
 function normalizeRepoPath(path: string): string {
-  return path.replace(/^(\.\.\/)+/, '').replace(/^\//, '');
+  const normalized = path.replace(/\\/g, '/').replace(/^\/@fs\//, '');
+  const repoRelativeMatch = normalized.match(
+    /(?:^|\/)((?:content|home|for-developers|readme|page)\/.*|README\.md|SUMMARY\.md|notes\.md)$/
+  );
+
+  if (repoRelativeMatch) {
+    return repoRelativeMatch[1];
+  }
+
+  return normalized.replace(/^(\.\.\/)+/, '').replace(/^\/+/, '');
 }
 
 function parseSummary(markdown: string): NavItem[] {

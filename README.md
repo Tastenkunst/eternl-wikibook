@@ -20,5 +20,5 @@ disableH2Collapse: true
 ## Trending Topics
 
 [[custom-nav]]
-* [Claiming the Glacier Airdrop](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+* [Claiming the Glacier Airdrop](content/claiming-the-glacier-airdrop-in-eternl-v2.md)
 [[/custom-nav]]

@@ -2,7 +2,7 @@
 
 ## User Perspective
 
-The new [Using the DApp Browser](../getting-started/using-the-dapp-browser.md) guide walks through the entry points, promoted partners, and category lists that users see before they connect their wallets.
+The new [Using the DApp Browser](../using-eternl/using-the-dapp-browser.md) guide walks through the entry points, promoted partners, and category lists that users see before they connect their wallets.
 
 ## Some statistics
 
