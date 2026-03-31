@@ -7,10 +7,10 @@ import {
   type SearchEntry
 }                             from '@/lib/content';
 
-const router = useRouter();
-const query = ref('');
+const router                  = useRouter();
+const query                   = ref('');
 
-const results = computed(() => {
+const results = computed(()   => {
   const q = query.value.trim().toLowerCase();
   if (q.length < 2) {
     return [] as SearchEntry[];
@@ -32,6 +32,9 @@ function onKeydown(event: KeyboardEvent): void {
     goTo(results.value[0]);
   }
 }
+
+const formatPath = (path: string) => path.replaceAll('/content/', '');
+
 </script>
 
 <template>
@@ -48,7 +51,7 @@ function onKeydown(event: KeyboardEvent): void {
 
     <div
       v-if="showDropdown"
-      class="absolute right-0 top-full z-20 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
+      class="absolute right-0 top-full z-50 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
     >
       <div v-if="results.length" class="overflow-auto p-2">
         <button
@@ -59,7 +62,7 @@ function onKeydown(event: KeyboardEvent): void {
           @click="goTo(entry)"
         >
           <a class="font-medium text-ink">{{ entry.title }}</a>
-<!--          <p class="text-xs text-ink-60">{{ entry.routePath }}</p>-->
+          <p class="text-xs text-ink-60">{{ formatPath(entry.routePath) }}</p>
         </button>
       </div>
       <p v-else class="px-3 py-3 text-xs text-ink-60">No results yet.</p>

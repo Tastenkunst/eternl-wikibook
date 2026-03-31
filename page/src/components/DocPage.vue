@@ -92,10 +92,9 @@ const processedDocHtml = computed(() => {
     let match;
 
     while ((match = linkRegex.exec(innerContent)) !== null) {
-      const title = match[2].replace(/<[^>]*>?/gm, '').trim(); // HTML aus Titel entfernen
+      const title = match[2].replace(/<[^>]*>?/gm, '').trim();
       let routePath = match[1];
 
-      // Optional: .md am Ende entfernen, falls du es im MD mit hingeschrieben hast
       routePath = routePath.replace(/\.md$/, '');
       // Sicherstellen, dass der Pfad mit / beginnt, wenn es kein externer Link ist
       if (!routePath.startsWith('http') && !routePath.startsWith('/')) {
@@ -291,7 +290,7 @@ function wrapSections(html: string): string {
     return html;
   }
 
-  // wenn nur eine h2, dann keine ein-/ausklapp funktionalität
+  // wenn length gleich 1 keine ein-/ausklapp funktionalität für h2
   if (sections.length <= 1) {
     return html;
   }

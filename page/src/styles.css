@@ -651,6 +651,7 @@
     box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1);
     transition: background-color 0.3s ease, border-color 0.3s ease;
     position: relative;
+    /*line-height: 1.5rem;*/
   }
 
   .callout-tip::before,
@@ -659,9 +660,9 @@
     content: '';
     position: absolute;
     top: 1.25rem;
-    left: 1.25rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    left: 0.75rem;
+    width: 2rem;
+    height: 2rem;
     background-color: var(--callout-accent);
     -webkit-mask-size: contain;
     mask-size: contain;
@@ -677,8 +678,10 @@
   }
 
   .callout-warning::before {
-    -webkit-mask-image: url('/gitbook-assets/icons/ExclamationRound.svg');
-    mask-image: url('/gitbook-assets/icons/ExclamationRound.svg');
+    /*-webkit-mask-image: url('/gitbook-assets/icons/ExclamationRound.svg');
+    mask-image: url('/gitbook-assets/icons/ExclamationRound.svg');*/
+    -webkit-mask-image: url("/gitbook-assets/icons/Alert02.svg");
+    mask-image: url("/gitbook-assets/icons/Alert02.svg");
   }
 
   .callout-success::before {
@@ -712,7 +715,7 @@
   .dark .callout-tip,
   html.dark .callout-tip {
     background-color: #1a2234;
-    --callout-accent: var(--heading-gold-strong);
+    /*--callout-accent: var(--heading-gold-strong);*/
     border-left-color: var(--callout-accent);
     color: #ffffff;
     box-shadow: none;
