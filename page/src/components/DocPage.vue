@@ -14,7 +14,7 @@ import mediumZoom             from 'medium-zoom';
 import {
   getDocByRoute,
   getPrevNext
-}                             from '@/lib/content';
+}                             from '../lib/content';
 
 import Toc                    from '@/components/Toc.vue';
 import NavGrid                from '@/components/NavGrid.vue';

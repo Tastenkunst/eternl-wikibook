@@ -37,8 +37,6 @@
 
 * [Claiming the Glacier Airdrop](content/claiming-the-glacier-airdrop-in-eternl-v2.md)
 
-* [Governance Tool Guide](https://docs.gov.tools/cardano-govtool/using-govtool/storing-information-offline)
-
 * [For Developers](content/for-developers/README.md)
     * [DApp Browser Integration](content/for-developers/dapp-browser-integration.md)
 
