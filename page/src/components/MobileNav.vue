@@ -46,7 +46,7 @@ watch(isOpen, async (opened) => {
 });
 
 const handleScroll = () => {
-  isSticky.value = window.scrollY > 80;
+  isSticky.value = window.scrollY > 20;
 };
 
 const handleResize = () => {
@@ -127,7 +127,7 @@ watch(() => route.path, () => { isOpen.value = false; });
 
 .nav-trigger.is-sticky {
   position: fixed !important;
-  top: 1rem;
+  top: 69px;
   left: 1rem;
   z-index: 999;
   width: 48px;
@@ -182,13 +182,11 @@ watch(() => route.path, () => { isOpen.value = false; });
 .morph-container {
   position: relative;
   z-index: 10001;
-  /* Origin: Wenn Button oben im Header sitzt (Default) */
-  transform-origin: 32px 88px;
+  transform-origin: 32px 91px;
 }
 
 .origin-compact {
-  /* Origin: Wenn Button rund/sticky ist (Mitte des Kreises) */
-  transform-origin: 24px 24px !important;
+  transform-origin: 24px 71px !important;
 }
 
 .morph-content {

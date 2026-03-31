@@ -51,7 +51,7 @@ const formatPath = (path: string) => path.replaceAll('/content/', '');
 
     <div
       v-if="showDropdown"
-      class="absolute right-0 top-full z-50 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
+      class="absolute right-0 top-full z-20 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
     >
       <div v-if="results.length" class="overflow-auto p-2">
         <button

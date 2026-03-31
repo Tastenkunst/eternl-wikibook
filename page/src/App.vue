@@ -47,7 +47,7 @@ watch(
 <template>
   <div class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="relative top-0 z-50 border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
+    <header class="sticky top-0 z-50 border-b border-ink-10 bg-ivory-80 backdrop-blur app-header">
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 app-header-inner">
 
         <RouterLink
