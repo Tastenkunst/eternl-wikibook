@@ -120,8 +120,8 @@ function parseSummary(markdown: string): NavItem[] {
   const stack: Array<{ indent: number; children: NavItem[] }> = [{ indent: -1, children: root }];
   let index = 0;
 
-  markdown.split('\n').forEach((line) => {
-    const match = line.match(/^(\s*)\*\s+\[([^\]]+)\]\(([^)]+)\)(?:::(.*))?$/);
+  markdown.split(/\r?\n/).forEach((line) => {
+    const match = line.match(/^(\s*)\*\s+\[([^\]]+)\]\(([^)]+)\)(?:::(.*))?\s*$/);
     if (!match) {
       return;
     }
