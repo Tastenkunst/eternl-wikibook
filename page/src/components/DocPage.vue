@@ -299,7 +299,8 @@ function wrapSections(html: string): string {
   let result = intro;
   sections.forEach((section, index) => {
     result += `
-<details class="doc-section" ${index === 0 ? 'open' : ''}>
+<!--<details class="doc-section" ${index === 0 ? 'open' : ''}>-->
+<details class="doc-section">
   <summary class="doc-section-summary">
 <!--    <img-->
 <!--      class="doc-section-chevron"-->
@@ -367,7 +368,7 @@ function wrapSections(html: string): string {
     </article>
 
     <aside class="hidden lg:block">
-      <Toc v-if="doc.toc.length > 2" :items="doc.toc" />
+      <Toc v-if="doc.toc.length" :items="doc.toc" />
     </aside>
   </section>
 

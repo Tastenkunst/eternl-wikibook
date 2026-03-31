@@ -1,4 +1,4 @@
-# DApp browser integration
+# DApp Browser Integration
 
 ## User Perspective
 

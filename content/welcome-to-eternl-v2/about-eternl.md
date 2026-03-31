@@ -1,10 +1,11 @@
 ---
 description: Your all-in-one gateway to Cardano DeFi, DApps and NFTs.
+disableH2Collapse: true
 ---
 
 # About Eternl
 
-Eternl: Your Gateway to the Cardano Blockchain
+## Eternl: Your Gateway to the Cardano Blockchain
 
 <ul style="list-style-type: '+ ">
 <li>Send and receive Ada and native assets.</li>
@@ -13,7 +14,8 @@ Eternl: Your Gateway to the Cardano Blockchain
 </ul>
 
 <br>
-More features:
+
+## More features:
 <ul style="list-style-type: '+ ">
 <li>Blazingly fast syncing.</li>
 <li>In-wallet swap for ADA/CNTs.</li>
@@ -42,7 +44,7 @@ More features:
 {% endhint %}
 
 <div class="callout-success">
-**Your keys, your crypto!** Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
+<strong>Your keys, your crypto!</strong> Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
 </div>
 
 <div class="callout-tip">
