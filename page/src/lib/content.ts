@@ -1,4 +1,5 @@
-import MarkdownIt, { Token } from 'markdown-it';
+import MarkdownIt from 'markdown-it';
+import type Token from 'markdown-it/lib/token.mjs';
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItContainer from 'markdown-it-container';
 import GithubSlugger from 'github-slugger';
@@ -135,6 +136,7 @@ function parseSummary(markdown: string): NavItem[] {
       id: `nav-${index++}`,
       title,
       href,
+      routePath: '',
       icon,
       children: []
     };
@@ -236,7 +238,7 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
   });
 
   md.use(markdownItContainer, 'hint', {
-    render(tokens, idx) {
+    render(tokens: Token[], idx: number) {
       const token = tokens[idx];
       if (token.nesting === 1) {
         const parts = token.info.trim().split(/\s+/);
