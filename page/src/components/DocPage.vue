@@ -12,8 +12,10 @@ import { useRoute }           from 'vue-router';
 import mediumZoom             from 'medium-zoom';
 
 import {
+  type NavItem,
   getDocByRoute,
-  getPrevNext
+  getPrevNext,
+  resolveNavigationLink
 }                             from '@/lib/content';
 
 import Toc                    from '@/components/Toc.vue';
@@ -48,26 +50,48 @@ const coverSrc = computed(() => {
   return isDark.value ? cover.dark || cover.light : cover.light || cover.dark;
 });
 
-// Daten für die nav-Kacheln aus summary extrahieren
-const navigationItems = computed(() => {
+const navigationItems = computed<NavItem[]>(() => {
   if (!doc.value) return [];
-  if (doc.value.html.includes('[[child-nav]]')) return doc.value.children || [];
 
+  // Fall A: Icons/Daten kommen fix und fertig als NavItem[] aus der content.ts
+  if (doc.value.html.includes('[[child-nav]]')) {
+    return doc.value.children || [];
+  }
+
+  // Fall B: Manuelle Kacheln via [[custom-nav]]
   const customNavRegex = /\[\[custom-nav\]\]([\s\S]*?)\[\[\/custom-nav\]\]/;
   const match = doc.value.html.match(customNavRegex);
+
   if (match) {
-    const items = [];
-    const linkRegex = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"[^>]*>(.*?)<\/a>/g;
-    let lMatch;
-    while ((lMatch = linkRegex.exec(match[1])) !== null) {
-      const rawTitle = lMatch[2].replace(/<[^>]*>?/gm, '').trim();
-      const [title, icon] = rawTitle.split('::').map(s => s.trim());
-      let routePath = lMatch[1].replace(/\.md$/, '');
-      if (!routePath.startsWith('http') && !routePath.startsWith('/')) routePath = '/' + routePath;
-      items.push({ title, routePath, icon });
-    }
-    return items;
+    const parser = new DOMParser();
+    const tempDoc = parser.parseFromString(`<div>${match[1]}</div>`, 'text/html');
+    const links = tempDoc.querySelectorAll('a');
+
+    return Array.from(links).map((link, idx) => {
+      const nextNode = link.nextSibling;
+      const trailingText = (nextNode && nextNode.nodeType === Node.TEXT_NODE)
+          ? nextNode.textContent
+          : undefined;
+
+      const resolved = resolveNavigationLink(
+          link.textContent || '',
+          link.getAttribute('href') || '',
+          trailingText
+      );
+
+      // Wir bauen ein vollständiges NavItem Objekt zusammen
+      return {
+        id: `custom-nav-${idx}`,
+        title: resolved.title,
+        href: link.getAttribute('href') || '',
+        routePath: resolved.routePath,
+        external: resolved.external,
+        icon: resolved.icon,
+        children: [] // Pflichtfeld laut Interface
+      };
+    });
   }
+
   return [];
 });
 
@@ -122,16 +146,17 @@ const processedDocHtml = computed(() => {
 const processedDocHtmlParts = computed(() => {
   if (!doc.value?.html) return { before: '', after: '' };
 
-  // 1. Erstmal das normale HTML (ohne Kachel-Generierung)
   let html = doc.value.html;
 
-  // 2. WrapSections ausführen (wie bisher)
+  // 1. H2-Wrapping (Einklapp-Logik)
   if (!doc.value.disableH2Collapse && typeof document !== 'undefined') {
     html = wrapSections(html);
   }
 
-  // 3. Am Platzhalter splitten
+  // 2. Platzhalter finden (regex deckt beides ab)
   const navPlaceholderRegex = /\[\[child-nav\]\]|\[\[custom-nav\]\][\s\S]*?\[\[\/custom-nav\]\]/;
+
+  // Wir splitten das HTML in zwei Teile
   const parts = html.split(navPlaceholderRegex);
 
   return {

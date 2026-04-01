@@ -21,4 +21,6 @@ disableH2Collapse: true
 
 [[custom-nav]]
 * [Claiming the Glacier Airdrop](content/claiming-the-glacier-airdrop-in-eternl-v2.md)
+* [FAQ & Troubleshooting](content/faq/faq.md)
+* [test](https://google.de)
 [[/custom-nav]]

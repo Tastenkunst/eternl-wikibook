@@ -12,7 +12,12 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["../.gitbook/assets/*"]
+    }
   },
   "include": ["src", "vite.config.ts", "vite.config.js"]
 }

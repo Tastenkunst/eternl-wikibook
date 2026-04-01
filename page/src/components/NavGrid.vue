@@ -1,35 +1,54 @@
 <template>
   <div class="child-nav-grid">
-    <router-link
-        v-for="item in items"
-        :key="item.routePath"
-        :to="item.routePath"
-        class="child-nav-card group no-underline"
-    >
-      <div class="child-nav-main-content">
-        <div
-            v-if="item.icon"
-            class="child-nav-icon"
-            :style="{ '--gb-icon': `url(${item.icon})` }"
-        ></div>
+    <template v-for="item in items" :key="item.routePath">
 
-        <div class="child-nav-title">{{ item.title }}</div>
-      </div>
+      <a
+          v-if="item.external"
+          :href="item.routePath"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="child-nav-card group no-underline"
+      >
+        <div class="child-nav-main-content">
+          <div
+              v-if="item.icon"
+              class="child-nav-icon"
+              :style="{ '--gb-icon': `url(${item.icon})` }"
+          ></div>
+          <div class="child-nav-title">{{ item.title }}</div>
+        </div>
+        <span class="child-nav-arrow">↗</span> </a>
 
-      <span class="child-nav-arrow">→</span>
-    </router-link>
+      <router-link
+          v-else
+          :to="item.routePath"
+          class="child-nav-card group no-underline"
+      >
+        <div class="child-nav-main-content">
+          <div
+              v-if="item.icon"
+              class="child-nav-icon"
+              :style="{ '--gb-icon': `url(${item.icon})` }"
+          ></div>
+          <div class="child-nav-title">{{ item.title }}</div>
+        </div>
+        <span class="child-nav-arrow">→</span>
+      </router-link>
+
+    </template>
   </div>
 </template>
 
 <script setup lang="ts">
+
+import { type NavItem }       from '@/lib/content';
+
 defineProps<{
-  items: Array<{
-    title: string;
-    routePath: string;
-    icon?: string;
-  }>
+  items: NavItem[]
 }>();
+
 </script>
+
 <style scoped>
 .child-nav-grid {
   display: grid;

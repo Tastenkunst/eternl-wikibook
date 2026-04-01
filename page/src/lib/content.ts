@@ -37,7 +37,7 @@ export type NavItem = {
   id: string;
   title: string;
   href: string;
-  routePath?: string;
+  routePath: string;
   external?: boolean;
   icon?: string;
   children: NavItem[];
@@ -614,4 +614,40 @@ function normalizeCover(cover: unknown): CoverAsset | undefined {
 
 function isExternalLink(href: string): boolean {
   return /^(https?:)/.test(href);
+}
+
+export function resolveNavigationLink(title: string, href: string, trailingText?: string | null) {
+  let icon = undefined;
+
+  // 1. Icon-Logik (unverändert, da sie funktioniert)
+  if (trailingText) {
+    const iconMatch = trailingText.trim().match(/^::(\S+)/);
+    if (iconMatch) {
+      icon = iconMatch[1];
+    }
+  }
+
+  const isExternal = /^(https?:\/\/|mailto:|tel:)/.test(href);
+  let routePath = href;
+
+  if (isExternal) {
+    return {
+      title: title.trim(),
+      routePath: href, // Die URL bleibt exakt so, wie sie im MD steht
+      icon,
+      external: true
+    };
+  }
+
+  routePath = href.replace(/\.md$/, '');
+  if (!routePath.startsWith('/') && !routePath.startsWith('#')) {
+    routePath = '/' + routePath;
+  }
+
+  return {
+    title: title.trim(),
+    routePath,
+    icon,
+    external: false
+  };
 }
