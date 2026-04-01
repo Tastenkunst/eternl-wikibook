@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { computed, ref }      from 'vue';
+import {
+  computed,
+  ref,
+  onMounted,
+  onUnmounted
+}                             from 'vue';
 import { useRouter }          from 'vue-router';
-
 import {
   searchIndex,
   type SearchEntry
@@ -9,36 +13,60 @@ import {
 
 const router                  = useRouter();
 const query                   = ref('');
+const searchContainer         = ref<HTMLElement | null>(null);
 
-const results = computed(()   => {
+const results = computed(() => {
   const q = query.value.trim().toLowerCase();
-  if (q.length < 2) {
-    return [] as SearchEntry[];
-  }
+  if (q.length < 2) return [] as SearchEntry[];
   return searchIndex
-    .filter((entry) => entry.title.toLowerCase().includes(q) || entry.text.toLowerCase().includes(q))
-    .slice(0, 8);
+      .filter((entry) => entry.title.toLowerCase().includes(q) || entry.text.toLowerCase().includes(q))
+      .slice(0, 8);
 });
 
 const showDropdown = computed(() => query.value.trim().length >= 2);
 
-function goTo(entry: SearchEntry): void {
+function closeSearch() {
   query.value = '';
+}
+
+function goTo(entry: SearchEntry): void {
+  closeSearch();
   router.push(entry.routePath);
 }
 
+function handleClickOutside(event: MouseEvent) {
+  if (searchContainer.value && !searchContainer.value.contains(event.target as Node)) {
+    closeSearch();
+  }
+}
+
 function onKeydown(event: KeyboardEvent): void {
+  if (event.key === 'Escape') {
+    closeSearch();
+  }
   if (event.key === 'Enter' && results.value.length) {
     goTo(results.value[0]);
   }
 }
 
-const formatPath = (path: string) => path.replaceAll('/content/', '');
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
 
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside);
+});
+
+const formatPath = (path: string) => path.replaceAll('/content/', '');
 </script>
 
 <template>
-  <form class="relative w-full sm:w-64" role="search" @submit.prevent>
+  <form
+      ref="searchContainer"
+      class="relative w-full sm:w-64"
+      role="search"
+      @submit.prevent
+  >
     <label class="sr-only" for="doc-search">Search documentation</label>
     <input
       id="doc-search"
