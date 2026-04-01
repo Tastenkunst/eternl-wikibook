@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file MD033 -->
 # Managing Accounts
 
 ## Multiple accounts from one seed phrase

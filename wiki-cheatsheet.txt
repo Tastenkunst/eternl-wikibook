@@ -59,3 +59,23 @@ inline bsp:
 
 
 ![Pointing hand]&#40;/gitbook-assets/icons/FingerTouch03.svg&#41; Check out our tutorials on:
+
+>>> first line in a markdown file to disable errors:
+
+<!-- markdownlint-disable-file MD033 -->
+
+
+syntax for callout boxes:
+
+
+<div class="callout-tip">
+lorem ipsum
+</div>
+
+<div class="callout-success">
+lorem ipsum
+</div>
+
+<div class="callout-warning">
+lorem ipsum
+</div>
