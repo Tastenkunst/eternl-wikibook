@@ -92,9 +92,21 @@
         .doc-main-grid {
             grid-template-columns: 1fr !important;
         }
+
+        .app-layout-grid {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-top: 1rem !important;
+            gap: 0.5rem !important;
+        }
+
+        details.doc-section {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
         .app-layout-grid {
             grid-template-columns: 1fr;
         }
@@ -106,6 +118,16 @@
         .mobile-nav-wrapper {
             display: block;
         }
+
+        .doc-content {
+            font-size: 0.9375rem;
+            line-height: 1.5 !important;
+        }
+
+        .doc-card{
+            padding: 1.5rem !important;
+        }
+        
     }
 
   /*.dark,*/
@@ -292,18 +314,67 @@
     letter-spacing: -0.01em;
   }
 
-  .app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-  }
+    .app-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+        margin-bottom: 0;
+    }
 
-  .app-header-inner {
-    gap: 0.75rem;
-    padding-block: 0.5rem;
-    width: 100%;
-  }
+    .app-header-inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 0.75rem;
+    }
+
+    .brand-text {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 520px) {
+        .app-header {
+            height: 64px !important;
+            min-height: 64px !important;
+            max-height: 64px !important;
+        }
+
+        .app-header-inner img {
+            width: 32px !important;
+            height: 32px !important;
+            min-width: 32px !important;
+            flex-shrink: 0 !important;
+            object-fit: contain !important;
+        }
+
+        .brand-text {
+            font-size: 0.9rem !important;
+            line-height: 1.1 !important;
+            white-space: normal !important;
+            max-width: 85px;
+            word-break: break-word;
+        }
+
+        .app-header-inner .flex.items-center.shrink-0 {
+            gap: 0.5rem !important;
+        }
+
+        .search-container {
+            min-width: 125px;
+            flex-shrink: 1;
+        }
+
+        .theme-toggle {
+            width: 32px !important;
+            height: 32px !important;
+            padding: 0 !important;
+        }
+    }
 
   .doc-content {
     font-size: 1rem;
@@ -799,7 +870,9 @@
   .doc-section-chevron {
     transform: rotate(-90deg);
     width: 1.25rem;
+    min-width: 16px;
     height: 1.25rem;
+    min-height: 16px;
     transition: transform 0.3s ease;
     border: none !important;
   }
@@ -810,7 +883,7 @@
 
   .doc-section-content {
     border-top: 1px solid color-mix(in srgb, var(--color-border) 20%, transparent);
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 1.0rem 1.5rem;
   }
 
   .theme-toggle {
