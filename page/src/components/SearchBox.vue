@@ -3,7 +3,8 @@ import {
   computed,
   ref,
   onMounted,
-  onUnmounted
+  onUnmounted,
+  watch
 }                             from 'vue';
 import { useRouter }          from 'vue-router';
 import {
@@ -14,6 +15,7 @@ import {
 const router                  = useRouter();
 const query                   = ref('');
 const searchContainer         = ref<HTMLElement | null>(null);
+const selectedIndex           = ref(-1);
 
 const results = computed(() => {
   const q = query.value.trim().toLowerCase();
@@ -23,10 +25,15 @@ const results = computed(() => {
       .slice(0, 8);
 });
 
+watch(results, () => {
+  selectedIndex.value = -1;
+});
+
 const showDropdown = computed(() => query.value.trim().length >= 2);
 
 function closeSearch() {
   query.value = '';
+  selectedIndex.value = -1;
 }
 
 function goTo(entry: SearchEntry): void {
@@ -43,9 +50,27 @@ function handleClickOutside(event: MouseEvent) {
 function onKeydown(event: KeyboardEvent): void {
   if (event.key === 'Escape') {
     closeSearch();
+    return;
   }
-  if (event.key === 'Enter' && results.value.length) {
-    goTo(results.value[0]);
+
+  if (event.key === 'ArrowDown') {
+    event.preventDefault(); // Verhindert Cursor-Bewegung im Input
+    if (selectedIndex.value < results.value.length - 1) {
+      selectedIndex.value++;
+    }
+  }
+  else if (event.key === 'ArrowUp') {
+    event.preventDefault();
+    if (selectedIndex.value > 0) {
+      selectedIndex.value--;
+    }
+  }
+  else if (event.key === 'Enter') {
+    if (results.value.length > 0) {
+      // Wenn nichts selektiert ist (-1), nimm den ersten Eintrag (0)
+      const indexToOpen = selectedIndex.value >= 0 ? selectedIndex.value : 0;
+      goTo(results.value[indexToOpen]);
+    }
   }
 }
 
@@ -69,27 +94,29 @@ const formatPath = (path: string) => path.replaceAll('/content/', '');
   >
     <label class="sr-only" for="doc-search">Search documentation</label>
     <input
-      id="doc-search"
-      v-model="query"
-      type="search"
-      placeholder="Search docs"
-      class="w-full rounded-full border border-ink-40 bg-ivory px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"
-      @keydown="onKeydown"
+        id="doc-search"
+        v-model="query"
+        type="search"
+        placeholder="Search docs"
+        class="w-full rounded-full border border-ink-40 bg-ivory px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"
+        @keydown="onKeydown"
     />
 
     <div
-      v-if="showDropdown"
-      class="absolute right-0 top-full z-20 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
+        v-if="showDropdown"
+        class="absolute right-0 top-full z-20 mt-2 w-full overflow-hidden rounded-2xl border border-ink-10 bg-ivory-95 shadow-soft"
     >
       <div v-if="results.length" class="overflow-auto p-2">
         <button
-          v-for="entry in results"
-          :key="entry.routePath"
-          type="button"
-          class="w-full rounded-xl px-3 py-2 text-left text-sm text-ink-80 transition"
-          @click="goTo(entry)"
+            v-for="(entry, index) in results"
+            :key="entry.routePath"
+            type="button"
+            class="w-full rounded-xl px-3 py-2 text-left text-sm transition"
+            :class="{ 'bg-active-selection': selectedIndex === index, 'text-ink-80': selectedIndex !== index }"
+            @click="goTo(entry)"
+            @mouseenter="selectedIndex = index"
         >
-          <a class="font-medium text-ink">{{ entry.title }}</a>
+          <span class="font-medium text-ink">{{ entry.title }}</span>
           <p class="text-xs text-ink-60">{{ formatPath(entry.routePath) }}</p>
         </button>
       </div>
@@ -97,11 +124,15 @@ const formatPath = (path: string) => path.replaceAll('/content/', '');
     </div>
   </form>
 </template>
+
 <style scoped>
+/* Wir nutzen eine Klasse für das Keyboard-Hovering, damit es konsistent zum Maus-Hover ist */
+.bg-active-selection,
 button:hover {
   background: var(--color-link-hover);
   cursor: pointer;
 }
+
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 0.75rem;
