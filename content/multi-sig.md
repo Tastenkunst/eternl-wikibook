@@ -1,14 +1,14 @@
 ---
-description: How to create simple or complex multi-sig wallets?
+description: How to create simple or complex multi-sig wallets
 ---
 
 # Multi-sig
 
-## How to create a multi-sig wallet?
+## How to create a multi-sig wallet
 
 {% embed url="https://youtu.be/vUvHKuJyDlE" %}
 
-## How to create complex multi-sig structures?
+## How to create complex multi-sig structures
 
 {% embed url="https://youtu.be/Amar1nDk0FU" %}
 
