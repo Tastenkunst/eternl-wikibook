@@ -737,97 +737,25 @@
     color: var(--heading-gold-strong);
   }
 
-  .gb-hint {
-    margin-top: 1rem;
-    border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
-    padding: 0.85rem 1rem;
-    font-size: 1rem;
-    color: var(--color-text);
-    @apply flex items-center;
-  }
-
-  .gb-hint > p {
-    margin-top: 0;
-  }
-
-  .gb-hint-info {
-    border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
-    background-color: color-mix(in srgb, var(--color-accent) 15%, transparent);
-  }
-
-  .gb-hint-warning {
-    border-color: color-mix(in srgb, var(--color-warning) 40%, transparent);
-    background-color: color-mix(in srgb, var(--color-warning) 15%, transparent);
-  }
-
-  .gb-hint-success {
-    border-color: color-mix(in srgb, var(--color-success) 40%, transparent);
-    background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
-  }
-
-  .gb-hint > p {
-    line-height: 1.3rem;
-    font-weight: 500;
-  }
-
-  .gb-hint-success::before, .gb-hint-info::before, .gb-hint-warning::before {
-    content: "";
-    background-color: var(--color-success-txt);
-    -webkit-mask-image: url("/gitbook-assets/icons/Warning.svg");
-    mask-image: url("/gitbook-assets/icons/Warning.svg");
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    flex-shrink: 0;
-    margin-right: 0.5rem;
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .gb-hint-success::before {
-    background-color: var(--color-success-txt);
-  }
-
-  .gb-hint-success > p {
-    color: var(--color-success-txt);
-  }
-
-  .gb-hint-info > p {
-    color: var(--color-accent-strong);
-  }
-
-  .gb-hint-info::before {
-    background-color: var(--color-accent-strong);
-  }
-
-  .gb-hint-warning > p {
-    color: var(--color-warning);
-  }
-
-  .gb-hint-warning::before {
-    background-color: var(--color-warning);
-  }
-
-  /* --- Global Callout System --- */
   .callout-tip,
   .callout-warning,
-  .callout-success {
+  .callout-success,
+  .gb-hint {
     margin: 1.5rem 0;
     padding: 1.25rem;
     padding-left: 3.5rem;
     border-radius: 8px;
-    box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
     position: relative;
-    /*line-height: 1.5rem;*/
+    line-height: 1.6rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 20px 35px rgba(15, 23, 42, 0.1);
   }
 
+  /* Gemeinsame Icon-Basis */
   .callout-tip::before,
   .callout-warning::before,
-  .callout-success::before {
+  .callout-success::before,
+  .gb-hint::before {
     content: '';
     position: absolute;
     top: 1.25rem;
@@ -843,71 +771,70 @@
     mask-position: center;
   }
 
-  .callout-tip::before {
-    -webkit-mask-image: url('/gitbook-assets/icons/Info.svg');
-    mask-image: url('/gitbook-assets/icons/Info.svg');
+  /* Entferne Margin-Top von P-Tags in beiden Systemen */
+  .callout-tip > p, .callout-warning > p, .callout-success > p,
+  .gb-hint > p {
+    margin-top: 0;
+    color: inherit; /* Nutzt die Farbe des Containers */
   }
 
-  .callout-warning::before {
-    /*-webkit-mask-image: url('/gitbook-assets/icons/ExclamationRound.svg');
-    mask-image: url('/gitbook-assets/icons/ExclamationRound.svg');*/
-    -webkit-mask-image: url("/gitbook-assets/icons/Alert02.svg");
-    mask-image: url("/gitbook-assets/icons/Alert02.svg");
-  }
+  /* --- Typ-Spezifische Zuweisungen (Mapping) --- */
 
-  .callout-success::before {
-    -webkit-mask-image: url('/gitbook-assets/icons/Checkmark.svg');
-    mask-image: url('/gitbook-assets/icons/Checkmark.svg');
-  }
-
-  /* Light Mode (Default) */
-  .callout-tip {
+  /* 1. INFO / TIP */
+  .callout-tip, .gb-hint-info {
     --callout-accent: #3b82f6;
     border-left: 4px solid var(--callout-accent);
     background-color: #f1f5f9;
     color: #0f172a;
   }
+  .callout-tip::before, .gb-hint-info::before {
+    -webkit-mask-image: url('/gitbook-assets/icons/Info.svg');
+    mask-image: url('/gitbook-assets/icons/Info.svg');
+  }
 
-  .callout-warning {
+  /* 2. WARNING */
+  .callout-warning, .gb-hint-warning {
     --callout-accent: var(--color-danger);
     border-left: 4px solid var(--callout-accent);
     background-color: color-mix(in srgb, var(--color-danger) 8%, #ffffff);
     color: #0f172a;
   }
+  .callout-warning::before, .gb-hint-warning::before {
+    -webkit-mask-image: url("/gitbook-assets/icons/Alert02.svg");
+    mask-image: url("/gitbook-assets/icons/Alert02.svg");
+  }
 
-  .callout-success {
+  /* 3. SUCCESS */
+  .callout-success, .gb-hint-success {
     --callout-accent: var(--color-success);
     border-left: 4px solid var(--callout-accent);
     background-color: color-mix(in srgb, var(--color-success) 8%, #ffffff);
     color: #0f172a;
   }
+  .callout-success::before, .gb-hint-success::before {
+    -webkit-mask-image: url('/gitbook-assets/icons/Checkmark.svg');
+    mask-image: url('/gitbook-assets/icons/Checkmark.svg');
+  }
 
-  /* Dark Mode Overrides */
-  .dark .callout-tip,
-  html.dark .callout-tip {
+  /* --- Dark Mode Overrides (Zusammengefasst) --- */
+
+  .dark .callout-tip, .dark .gb-hint-info,
+  .dark .callout-warning, .dark .gb-hint-warning,
+  .dark .callout-success, .dark .gb-hint-success {
+    color: #ffffff;
+    box-shadow: none;
+  }
+
+  .dark .callout-tip, .dark .gb-hint-info {
     background-color: #1a2234;
-    /*--callout-accent: var(--heading-gold-strong);*/
-    border-left-color: var(--callout-accent);
-    color: #ffffff;
-    box-shadow: none;
   }
 
-  .dark .callout-warning,
-  html.dark .callout-warning {
+  .dark .callout-warning, .dark .gb-hint-warning {
     background-color: color-mix(in srgb, var(--color-danger) 12%, var(--color-bg));
-    --callout-accent: var(--color-danger);
-    border-left-color: var(--callout-accent);
-    color: #ffffff;
-    box-shadow: none;
   }
 
-  .dark .callout-success,
-  html.dark .callout-success {
+  .dark .callout-success, .dark .gb-hint-success {
     background-color: color-mix(in srgb, var(--color-success) 12%, var(--color-bg));
-    --callout-accent: var(--color-success);
-    border-left-color: var(--callout-accent);
-    color: #ffffff;
-    box-shadow: none;
   }
 
   .doc-section {
