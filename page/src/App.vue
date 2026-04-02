@@ -104,12 +104,12 @@ watch(
       </main>
     </div>
 
-    <footer class="border-t border-white/10 bg-white/5">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 text-xs text-ink-60 sm:px-6">
-        <span>Read-only viewer. Edit Markdown in WebStorm or VSCode.</span>
-        <span>Generated from SUMMARY.md and GitBook content.</span>
-      </div>
-    </footer>
+<!--    <footer class="border-t border-white/10 bg-white/5">-->
+<!--      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 text-xs text-ink-60 sm:px-6">-->
+<!--        <span>Read-only viewer. Edit Markdown in WebStorm or VSCode.</span>-->
+<!--        <span>Generated from SUMMARY.md and GitBook content.</span>-->
+<!--      </div>-->
+<!--    </footer>-->
   </div>
 </template>
 
