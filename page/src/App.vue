@@ -20,6 +20,14 @@ function applyTheme(value: 'dark' | 'light') {
   root.classList.add(value);
   localStorage.setItem('wiki-theme', value);
   theme.value = value;
+
+  requestAnimationFrame(() => {
+    // Ein minimaler Timeout stellt sicher, dass der CSS-Reflow
+    // für die neuen Farben komplett abgeschlossen ist.
+    setTimeout(() => {
+      root.classList.remove('no-transitions');
+    }, 1);
+  });
 }
 
 function handleLogoClick() {

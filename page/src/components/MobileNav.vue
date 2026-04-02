@@ -126,7 +126,7 @@ watch(() => route.path, () => { isOpen.value = false; });
 .nav-trigger.is-sticky {
   position: fixed !important;
   top: 69px;
-  left: 1rem;
+  left: 0.5rem;
   z-index: 999;
   width: 48px;
   padding: 0;
