@@ -64,6 +64,10 @@ inline bsp:
 
 <!-- markdownlint-disable-file MD033 -->
 
+syntax to insert pictures:
+
+<figure><img src="/gitbook-assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
+
 
 syntax for callout boxes:
 

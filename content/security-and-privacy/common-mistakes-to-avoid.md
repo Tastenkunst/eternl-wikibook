@@ -12,9 +12,9 @@ Never take a screenshot or photo of your seed phrase. Storing images on phones o
 * Unauthorized access
 * Cloud service breaches
 
-{% hint style="success" %}
-Safer Alternative: Write the seed phrase **on a physical medium** and store it securely offline.
-{% endhint %}
+<div class="callout-warning">
+Safer Alternative: Write the seed phrase <strong>on a physical medium</strong> and store it securely offline.
+</div>
 
 [//]: # (<div class="callout-tip">)
 
@@ -22,7 +22,7 @@ Safer Alternative: Write the seed phrase **on a physical medium** and store it s
 
 [//]: # (</div>)
 
-### &#x20;Use Metal Backups for Long-Term Security
+### Use Metal Backups for Long-Term Security
 
 To protect your seed phrase from physical damage:
 
@@ -32,9 +32,7 @@ To protect your seed phrase from physical damage:
 [//]: # (> Great for long-term HODLers or secure cold storage.)
 <br>
 
----
-
-### &#x20;Never Save Your Seed Phrase Digitally
+### Never Save Your Seed Phrase Digitally
 
 Avoid saving your seed phrase in:
 
@@ -42,30 +40,22 @@ Avoid saving your seed phrase in:
 * Note-taking apps
 * Screenshots or email drafts
 
-{% hint style="warning" %}
+<div class="callout-warning">
 Any digital record can be breached or leaked.
-{% endhint %}
-> 
----
+</div>
 
-### &#x20;Use Strong Spending Passwords (Hot Wallets)
+### Use Strong Spending Passwords (Hot Wallets)
 
 When using hot wallets like Eternl:
 
 * Set a **strong, unique spending password**
 * Used to **authorize transactions** and prevent unauthorized access
 
-{% hint style="warning" %}
-
-[//]: # (But beware: passwords are still vulnerable to digital threats.)
+<div class="callout-warning">
 Be aware: Passwords remain vulnerable to digital threats.
-{% endhint %}
+</div>
 
-<br>
-
----
-
-### &#x20;Defend Against Malware and Keyloggers
+### Defend Against Malware and Keyloggers
 
 Spending passwords can be intercepted by:
 
@@ -84,8 +74,7 @@ Spending passwords can be intercepted by:
 
 ---
 
-{% hint style="info" %}
-
-[//]: # (**Tip:** Stay informed. Most losses happen due to small oversights, not sophisticated attacks.)
-**Tip:** Vigilance is key. Simple human errors and minor oversights are often more costly than sophisticated cyberattacks.
-{% endhint %}
+<div class="callout-tip">
+<strong>Tip:</strong><br> 
+Vigilance is key. Simple human errors and minor oversights are often more costly than sophisticated cyberattacks.
+</div>

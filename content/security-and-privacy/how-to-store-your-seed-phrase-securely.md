@@ -11,6 +11,8 @@ If someone else gains access to your seed phrase, they can control your cryptocu
 ### Best Practices for Secure Storage
 
 [//]: # (1. **Use Physical Backup**: Write down your seed phrase on paper or a non-digital medium, like a metal sheet, to protect it from digital theft and natural disasters.)
-{% hint style="warning" %}
-**Use Physical Backup**: Write down your seed phrase on paper or a non-digital medium, like a metal sheet, to protect it from digital theft and natural disasters.
-{% endhint %}
+
+<div class="callout-warning">
+<strong>Use Physical Backup:</strong><br>
+Write down your seed phrase on paper or a non-digital medium, like a metal sheet, to protect it from digital theft and natural disasters.
+</div>
