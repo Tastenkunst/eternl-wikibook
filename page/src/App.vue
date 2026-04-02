@@ -15,6 +15,7 @@ const theme = ref<'dark' | 'light'>('dark');
 
 function applyTheme(value: 'dark' | 'light') {
   const root = document.documentElement;
+  root.classList.add('no-transitions');
   root.classList.remove('dark', 'light');
   root.classList.add(value);
   localStorage.setItem('wiki-theme', value);
@@ -90,6 +91,7 @@ watch(
           </div>
         </div>
       </div>
+      <div class="gradient-line"></div>
     </header>
 
     <div class="mx-auto app-layout-grid gap-6 px-4 pb-16 pt-6 sm:px-6">

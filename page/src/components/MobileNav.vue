@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue';
-import { useRoute } from 'vue-router';
-import type { NavItem } from '@/lib/content';
-import Sidebar from '@/components/Sidebar.vue';
+import {
+  ref,
+  onMounted,
+  onUnmounted,
+  watch,
+  nextTick
+}                             from 'vue';
+import { useRoute }           from 'vue-router';
+import type { NavItem }       from '@/lib/content';
+import Sidebar                from '@/components/Sidebar.vue';
 
 const props = defineProps<{ items: NavItem[]; currentPath: string }>();
 const isOpen = ref(false);
@@ -13,40 +19,33 @@ const route = useRoute();
 
 let resizeObserver: ResizeObserver | null = null;
 
-// Die Logik: Prüft, ob der Inhalt unten abgeschnitten ist
 const handleMenuHeightChange = () => {
   if (!morphBodyRef.value) return;
   const el = morphBodyRef.value;
-  // Ist die Gesamthöhe größer als der sichtbare Bereich + kleiner Puffer?
   showScrollHint.value = el.scrollHeight > (el.clientHeight + el.scrollTop + 5);
 };
 
-// Überwachung starten/stoppen
 watch(isOpen, async (opened) => {
   if (opened) {
     await nextTick(); // Warten bis DOM gerendert ist
     if (morphBodyRef.value) {
-      // 1. Initial prüfen
       handleMenuHeightChange();
 
-      // 2. Auf Scroll-Events reagieren
       morphBodyRef.value.addEventListener('scroll', handleMenuHeightChange);
 
-      // 3. Auf Inhaltsänderungen reagieren (Aufklappen von Menüpunkten)
       resizeObserver = new ResizeObserver(handleMenuHeightChange);
       // Wir beobachten das erste Kind-Element (die Sidebar), da diese wächst
       const content = morphBodyRef.value.firstElementChild;
       if (content) resizeObserver.observe(content);
     }
   } else {
-    // Aufräumen
     morphBodyRef.value?.removeEventListener('scroll', handleMenuHeightChange);
     resizeObserver?.disconnect();
   }
 });
 
 const handleScroll = () => {
-  isSticky.value = window.scrollY > 20;
+  isSticky.value = window.scrollY > 12;
 };
 
 const handleResize = () => {
@@ -108,7 +107,6 @@ watch(() => route.path, () => { isOpen.value = false; });
   position: relative;
 }
 
-/* --- 1. TRIGGER BUTTON --- */
 .nav-trigger {
   display: flex;
   align-items: center;
@@ -134,7 +132,6 @@ watch(() => route.path, () => { isOpen.value = false; });
   padding: 0;
   justify-content: center;
   border-radius: 50%;
-  /* Dezenter Glas-Look im Darkmode */
   background: color-mix(in srgb, var(--color-panel) 80%, white 5%);
   border-color: var(--color-border-strong);
 }
@@ -162,7 +159,6 @@ watch(() => route.path, () => { isOpen.value = false; });
 .is-compact .trigger-label { display: none; }
 .is-hidden { opacity: 0; pointer-events: none; }
 
-/* --- 2. OVERLAY & CONTAINER --- */
 .morph-overlay {
   position: fixed;
   inset: 0;
@@ -199,11 +195,10 @@ watch(() => route.path, () => { isOpen.value = false; });
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: relative; /* Wichtig für den Schatten-Pseudo-Element */
+  position: relative;
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-/* Der Schatten-Effekt am unteren Ende des Menüs */
 .morph-content::after {
   content: '';
   position: absolute;
@@ -223,12 +218,10 @@ watch(() => route.path, () => { isOpen.value = false; });
   opacity: 1;
 }
 
-/* --- 3. SCROLLBAR VERSTECKEN --- */
 .morph-body {
   flex: 1;
   overflow-y: auto;
   padding: 1.5rem 1rem;
-  /* Versteckt Scrollbars in allen Browsern */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -237,13 +230,11 @@ watch(() => route.path, () => { isOpen.value = false; });
   display: none;
 }
 
-/* --- 4. TRANSITIONS (MASTER) --- */
 .mobile-nav-transition-enter-active,
 .mobile-nav-transition-leave-active {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Backdrop Fade */
 .mobile-nav-transition-enter-active .morph-backdrop,
 .mobile-nav-transition-leave-active .morph-backdrop {
   transition: opacity 0.3s ease-in-out;
@@ -253,7 +244,6 @@ watch(() => route.path, () => { isOpen.value = false; });
   opacity: 0;
 }
 
-/* Panel Morph (Wachsen & Schrumpfen) */
 .mobile-nav-transition-enter-active .morph-container,
 .mobile-nav-transition-leave-active .morph-container {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -265,7 +255,6 @@ watch(() => route.path, () => { isOpen.value = false; });
   opacity: 0;
 }
 
-/* Inhalt im Panel sanft einblenden */
 .mobile-nav-transition-enter-active .morph-body {
   transition: opacity 0.2s ease-out 0.2s;
 }
