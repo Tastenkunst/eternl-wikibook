@@ -588,6 +588,10 @@
     font-size: 0.75rem;
   }
 
+  .doc-content .table-wrapper {
+    overflow-x: auto;
+  }
+
   .doc-content table {
     margin-top: 1.5rem;
     width: 100%;
@@ -603,6 +607,10 @@
     border-bottom: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
     padding: 0.85rem 1rem;
     vertical-align: top;
+  }
+
+  .doc-content td {
+    font-variant-numeric: tabular-nums;
   }
 
   .doc-content tbody tr:nth-child(even) {

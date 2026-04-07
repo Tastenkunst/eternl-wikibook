@@ -251,6 +251,33 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
     }
   });
 
+  md.use(markdownItContainer, 'tip', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-tip">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItContainer, 'warning', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-warning">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItContainer, 'success', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-success">'
+        : '</div>\n';
+    }
+  });
+
   md.use(markdownItFootnote)
 
   const defaultLinkOpen = md.renderer.rules.link_open ?? ((tokens, idx, options, _env, self) => {
@@ -273,6 +300,9 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
     }
     return defaultLinkOpen(tokens, idx, options, _env, self);
   };
+
+  md.renderer.rules.table_open = () => '<div class="table-wrapper"><table>';
+  md.renderer.rules.table_close = () => '</table></div>';
 
   return md;
 }
