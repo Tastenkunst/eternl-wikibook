@@ -738,6 +738,56 @@
     color: var(--heading-gold-strong);
   }
 
+  .footnotes-sep {
+    margin-top: 3rem;
+  }
+
+  .footnotes {
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Die Standard-Nummerierung der Liste ausblenden */
+  .doc-content .footnotes-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* Eigene Nummerierung mit eckigen Klammern aufbauen */
+  .doc-content .footnote-item {
+    counter-increment: footnote-counter;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .doc-content .footnote-item::before {
+    content: "[" counter(footnote-counter) "] ";
+    margin-right: 0.75rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    min-width: 1.5rem;
+  }
+
+  .footnote-ref a {
+    text-decoration: none;
+  }
+
+  a.footnote-backref {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 2px;
+    margin: 0
+  }
+
+  .footnote-backref {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: var(--color-accent);
+  }
+
   .callout-tip,
   .callout-warning,
   .callout-success,

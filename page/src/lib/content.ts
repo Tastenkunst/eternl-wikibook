@@ -1,10 +1,11 @@
-import MarkdownIt from 'markdown-it';
-import type Token from 'markdown-it/lib/token.mjs';
-import markdownItAnchor from 'markdown-it-anchor';
-import markdownItContainer from 'markdown-it-container';
-import GithubSlugger from 'github-slugger';
+import MarkdownIt             from 'markdown-it';
+import type Token             from 'markdown-it/lib/token.mjs';
+import markdownItAnchor       from 'markdown-it-anchor';
+import markdownItContainer    from 'markdown-it-container';
+import markdownItFootnote     from 'markdown-it-footnote';
+import GithubSlugger          from 'github-slugger';
 
-import summaryRaw from '../../../SUMMARY.md?raw';
+import summaryRaw             from '../../../SUMMARY.md?raw';
 
 type RawDocs = Record<string, string>;
 
@@ -230,7 +231,8 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
   const slugger = new GithubSlugger();
   const md = new MarkdownIt({
     html: true,
-    linkify: true
+    linkify: true,
+    typographer: true
   });
 
   md.use(markdownItAnchor, {
@@ -248,6 +250,8 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
       return '</div>';
     }
   });
+
+  md.use(markdownItFootnote)
 
   const defaultLinkOpen = md.renderer.rules.link_open ?? ((tokens, idx, options, _env, self) => {
     return self.renderToken(tokens, idx, options);

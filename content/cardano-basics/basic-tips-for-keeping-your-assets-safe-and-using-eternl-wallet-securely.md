@@ -6,7 +6,7 @@ description: security basics
 
 ## 1. Keep your seed phrase safe
 
-A seed phrase in cryptocurrency is a list of words (usually 12, 15, or 24) that works like a main key to open and get back your crypto wallet. This phrase contains all the details needed to get back and control the money in your wallet.. If you lose your wallet, it breaks, or you forget your password, you can use this phrase to access your cryptocurrency again. It's very important to keep your seed phrase secret because anyone who knows it can take all your assets. This means you should NEVER share this with anyone for any reason and only enter it on trusted wallets.
+A seed phrase in cryptocurrency is a list of words (usually 12, 15, or 24) that works like a main key to open and get back your crypto wallet. This phrase contains all the details needed to get back and control the money in your wallet.. If you lose your wallet, it breaks, or you forget your password, you can use this phrase to access your cryptocurrency again. It's very important to keep your seed phrase secret because anyone who knows it can take all your assets. This means you should NEVER share this with anyone for any reason and only enter it on trusted wallets.[^1]
 
 ### 1.1 Best practices
 
@@ -79,3 +79,6 @@ Keep your wallet software up-to-date and follow general best practices for digit
 Stay informed by watching tutorials and reading guides on how to effectively use Eternl.
 
 Remember, the key to security is not just the tools you use but also your practices in managing them.
+
+
+[^1]: Das ist der Text der Fußnote, der am Ende der Seite erscheint.
