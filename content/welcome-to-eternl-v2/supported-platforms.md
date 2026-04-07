@@ -30,6 +30,8 @@ On supported browsers, look for the **install option** in the address bar to add
 
 <br>
 
+---
+
 {% hint style="success" %}
 **Security Note**\
 All versions are fully non-custodial — **you remain in control of your keys** at all times.
