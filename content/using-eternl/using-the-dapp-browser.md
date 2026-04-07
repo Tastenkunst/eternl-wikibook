@@ -10,9 +10,9 @@ The landing view highlights a **Promoted** carousel for Eternl-verified partners
 
 ![DApp Browser Interface](/gitbook-assets/pictures/v2_dapp_browser.png)
 
-{% hint style="info" %}
+<div class="callout-tip">
 The DApp Browser is a core feature available on both the Desktop Extension and the Mobile App (iOS/Android), so the same verified partners, categories, and navigation cues show up whether you are at your desk or on the go.
-{% endhint %}
+</div>
 
 ## Connecting your Wallet
 

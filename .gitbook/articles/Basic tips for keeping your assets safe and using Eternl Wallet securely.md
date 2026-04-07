@@ -1,8 +1,7 @@
 ---
-description: security basics
+Description: Security Basics
 ---
-
-# Basic tips for keeping your assets safe and using Eternl Wallet securely
+<!-- markdownlint-disable-file MD033 MD041 -->
 
 ## 1. Keep your seed phrase safe
 
@@ -10,17 +9,30 @@ A seed phrase in cryptocurrency is a list of words (usually 12, 15, or 24) that 
 
 ### 1.1 Best practices
 
-* Offline Storage\
-  Store your seed phrase offline. This means not using internet connected devices for storage, as they are vulnerable to hacking and malware attacks​​. Keep in mind that different types of storage have different advantages and disadvantages.
-* Physical Writing\
-  Write the seed phrase on paper or, preferably, on a more durable material like metal (e.g., cryptosteel) that is resistant to fire, water, and other environmental hazards. This provides long term security against physical damag​​​​e. Writing on paper is a start but keep in mind that ink may bleach out or can’t be readable after a long period of time.
-* Secure Location\
-  Keep the written seed phrase in a safe and secure location, such as a safe or a locked drawer. It’s important to choose a place where it is protected from theft, loss, and unauthorized acces​​​s.
-* Avoid Digital Storage\
-  Refrain from storing your seed phrase digitally, such as in screenshots, photos, text files, or cloud storage, as these methods are vulnerable to cyber threat​s.
+- Offline Storage
 
-Keep your seed phrase safe in several ways\
+Store your seed phrase offline. This means not using internet connected devices for storage, as they are vulnerable to hacking and malware attacks​​. Keep in mind that different types of storage have different advantages and disadvantages.
+
+- Physical Writing
+
+Write the seed phrase on paper or, preferably, on a more durable material like metal (e.g., cryptosteel) that is resistant to fire, water, and other environmental hazards. This provides long term security against physical damag​​​​e. Writing on paper is a start but keep in mind that ink may bleach out or can’t be readable after a long period of time.
+
+- Secure Location
+
+Keep the written seed phrase in a safe and secure location, such as a safe or a locked drawer. It’s important to choose a place where it is protected from theft, loss, and unauthorized acces​​​s.
+
+- Avoid Digital Storage
+
+<div class="callout-warning">
+Refrain from storing your seed phrase digitally, such as in screenshots, photos, text files, or cloud storage, as these methods are vulnerable to cyber threat​s.
+</div>
+<br>
+<div class="callout-tip">
+<strong>
+Keep your seed phrase safe in several ways
+</strong><br>
 It's wise to have more than one secure method to keep your seed phrase protected. This means you could have a paper copy stored safely and another copy on a durable material like metal that won't easily get damaged. This way, if one copy gets lost or ruined, you still have another copy to use. Make sure to store these copies in different spots. If something bad happens to one spot, the other copy will still be safe. Doing this helps ensure you can always access your seed phrase, no matter what.
+</div>
 
 ## 2. Use trusted wallets for Cardano (ADA)
 
@@ -42,7 +54,7 @@ Be careful about people who contact you and make sure they are who they say they
 
 A VPN (Virtual Private Network) helps to keep your online activities private and safe, especially when you're doing things like buying or selling online or using your online wallet. A VPN hides what you do on the internet by changing your internet connection to make it secret and secure. This means it's hard for anyone to see or track what you're doing online. But it's very important to choose a VPN service that is reliable and doesn't keep records of your online activities. This helps to make sure your privacy and safety are well-protected.
 
-## 7. Hot wallet vs cold wallet
+## 7.Hot wallet vs cold wallet
 
 In the context of crypto, a hot wallet and a cold wallet refer to two types of cryptocurrency storage methods with different security and connectivity features:
 
@@ -56,13 +68,22 @@ A cold wallet is different because it's not connected to the internet. It's used
 
 Hardware wallets are small physical devices that keep your private keys (like secret codes for your crypto) safe and offline. This makes it hard for hackers to get to them.
 
-#### Good Things About Hardware Wallets
+<div class="callout-success">
+<strong> Good Things About Hardware Wallets:</strong>
 
-Better Security: They're not connected to the internet, so they're safe from online hacking. Control Over Your Keys: You have full control of your private keys. Strong and Lasting: They are made to be tough and long-lasting. Can Hold Many Types of Crypto: They usually support different cryptocurrencies, not just ADA.
+> Better Security: They're not connected to the internet, so they're safe from online hacking.
+> Control Over Your Keys: You have full control of your private keys.
+> Strong and Lasting: They are made to be tough and long-lasting.
+> Can Hold Many Types of Crypto: They usually support different cryptocurrencies, not just ADA.
+</div>
 
-#### Downsides Of Hardware Wallets
+<div class="callout-warning">
+<strong> Downsides  Of Hardware Wallets:</strong>
 
-Cost: They cost more than free hot wallets (online wallets). Less Convenient: Not as easy to use for frequent trading or quick transactions. Risk of Losing or Breaking Them: They can be lost, stolen, or broken because they're physical objects.
+> Cost: They cost more than free hot wallets (online wallets).
+> Less Convenient: Not as easy to use for frequent trading or quick transactions.
+> Risk of Losing or Breaking Them: They can be lost, stolen, or broken because they're physical objects.
+</div>
 
 For people who trade a lot or need fast access to their ADA, hot wallets (online wallets) are more practical, but they have some security risks. However, for big transactions and keeping your crypto safe for a long time, it's better to use hardware wallets like Trezor, Ledger, and Keystone. These wallets are known for being really secure and they lower the risk of online dangers. Also, these hardware wallets work with the Eternl wallet, which makes them even more useful for Cardano users.
 

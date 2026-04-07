@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file MD033 -->
 # Managing Accounts
 
 ## Multiple accounts from one seed phrase
@@ -24,27 +25,19 @@ This setup makes it easy to organize multiple wallets inside one seed while stay
 
 You manage accounts from the wallet card on both hot wallets and hardware wallets. Eternl allows account indexes up to 10,000, but the UI only registers 30 accounts at any time; picking custom indexes gives you flexibility to rotate which accounts are active without exceeding the 30-account limit.
 
-<div class="callout-tip">
-Wallet card > Manage Accounts
-</div>
+### 1. Wallet card > Manage Accounts
 
 ![Manage accounts layout](/gitbook-assets/pictures/v2_manage_accounts.jpg)
 
-<div class="callout-tip">
-every time you click "Add Account" a new account will be added
-</div>
+### 2. every time you click "Add Account" a new account will be added
 
 ![Add account](/gitbook-assets/pictures/v2_manage_accounts_2.jpg)
 
-<div class="callout-tip">
-you can manage a maximum of up to 30 accounts in Eternl at the same time
-</div>
+### 3. you can manage a maximum of up to 30 accounts in Eternl at the same time
 
 ![30 account limit](/gitbook-assets/pictures/v2_manage_accounts_3.jpg)
 
-<div class="callout-tip">
-Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
-</div>
+### 4. Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
 
 ![Account confirmation](/gitbook-assets/pictures/v2_manage_accounts_5.jpg)
 
