@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file MD033 -->
+
 # Using the DApp Browser
 
 The DApp Browser is a built-in, secure environment inside Eternl that lets you interact with Cardano dApps without leaving the wallet experience. The browser speaks CIP-30 directly, isolates the dApp in an iframe, and keeps your keys locked safely inside the wallet while the dApp requests only the permissions you allow.
