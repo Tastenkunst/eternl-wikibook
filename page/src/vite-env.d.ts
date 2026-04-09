@@ -7,3 +7,5 @@ declare module '*.vue' {
 }
 
 declare module 'markdown-it-container';
+
+declare module 'markdown-it-footnote';

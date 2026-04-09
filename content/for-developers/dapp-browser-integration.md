@@ -7,7 +7,7 @@ The new [Using the DApp Browser](../using-eternl/using-the-dapp-browser.md) guid
 ## Some statistics
 
 | Platform           | User base (monthly) |
-| ------------------ | ------------------: |
+|:-------------------|--------------------:|
 | Browser extension  |                130k |
 | Android mobile app |                 20k |
 | iOS mobile app     |                  8k |
@@ -17,15 +17,15 @@ The new [Using the DApp Browser](../using-eternl/using-the-dapp-browser.md) guid
 
 Eternl v2 supports 4 app types and 7 different connection methods:
 
-| App/Connector            |               API | Fee Address |
-| ------------------------ | ----------------: | ----------: |
-| Connector: Extension     |  API Injected (1) |          NO |
-| Dapp Browser: Extension  |  API Injected (1) |         YES |
-| Dapp Browser: iOS        |  API Injected (1) |         YES |
-| Dapp Browser: Android    |  API Injected (1) |         YES |
-| Dapp Browser: eternl.io  | PWA JS Bridge (2) |         YES |
-| WalletConnect: all apps  | WalletConnect (3) |         YES |
-| CardanoConnect: all apps |         CIP45 (4) |         YES |
+| App/Connector            |                API | Fee Address |
+|:-------------------------|-------------------:| ----------: |
+| Connector: Extension     |   API Injected (1) |          NO |
+| Dapp Browser: Extension  |   API Injected (1) |         YES |
+| Dapp Browser: iOS        |   API Injected (1) |         YES |
+| Dapp Browser: Android    |   API Injected (1) |         YES |
+| Dapp Browser: eternl.io  |  PWA JS Bridge (2) |         YES |
+| WalletConnect: all apps  |  WalletConnect (3) |         YES |
+| CardanoConnect: all apps |          CIP45 (4) |         YES |
 
 **All connection types adhere to the CIP30 API.**
 
@@ -92,7 +92,7 @@ Fill out the following JSON structure.
   }
 ```
 
-## Convenience fee
+### Convenience fee
 
 The convenience fee is our way to monetize Eternl wallet to keep the lights on and delevop it further. To be listed on the Dapp Browser it's a requirement to implement the fee.
 
@@ -105,12 +105,12 @@ The convenience fee is our way to monetize Eternl wallet to keep the lights on a
 
 ### Integration test
 
-## **API Injected (1): Eternl Beta browser extension**
+#### **API Injected (1): Eternl Beta browser extension**
 
 If you want to test against a localhost, that's only available on the Eternl Beta extension, not in production.\
 The dapp page is embedded in an iframe, which needs to be allowed by the dApp page.
 
-**PWA JS Bridge (2): https://staging.eternl.io/**
+#### PWA JS Bridge (2): https://staging.eternl.io/**
 
 For integration tests of the PWA JS Bridge, please use: https://staging.eternl.io/
 

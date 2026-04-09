@@ -6,8 +6,6 @@ import Sidebar from '@/components/Sidebar.vue';
 import SearchBox from '@/components/SearchBox.vue';
 import MobileNav from '@/components/MobileNav.vue';
 
-import logoUrl from '@assets/pictures/eternl-logo-small-vector.png';
-
 const route = useRoute();
 const currentPath = computed(() => route.path);
 const mainRef = ref<HTMLElement | null>(null);
@@ -64,7 +62,7 @@ watch(
             class="flex items-center gap-1 select-none"
             @click="handleLogoClick"
         >
-          <img :src="logoUrl" alt="" class="w-8 h-auto" >
+          <img src="/images/eternl-logo-small-vector.png" alt="" class="w-8 h-auto" >
           <span class="text-xl font-bold brand-text">Eternl Wiki</span>
         </RouterLink>
 

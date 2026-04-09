@@ -9,10 +9,6 @@ disableH2Collapse: true
 
 # Eternl v2 Wiki
 
-[//]: # (## What´s New in Eternl)
-
-[//]: # ([Eternl updates / release notes]&#40;eternl-updates-release-notes.md&#41;)
-
 <br>
 
 ---
