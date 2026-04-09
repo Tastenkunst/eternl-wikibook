@@ -6,7 +6,7 @@ description: security basics
 
 <details>
 
-<summary><strong>1.</strong> Keep your seed phrase safe</summary>
+<summary><strong>1.</strong> Keep your very seed phrase safe</summary>
 
 A seed phrase in cryptocurrency is a list of words (usually 12, 15, or 24) that works like a main key to open and get back your crypto wallet. This phrase contains all the details needed to get back and control the money in your wallet.. If you lose your wallet, it breaks, or you forget your password, you can use this phrase to access your cryptocurrency again. It's very important to keep your seed phrase secret because anyone who knows it can take all your assets. This means you should NEVER share this with anyone for any reason and only enter it on trusted wallets.
 
