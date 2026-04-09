@@ -175,7 +175,17 @@
     }
 
     .doc-card {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
       padding: 0.75rem !important;
+      display: block !important;
+      overflow-x: hidden;
+    }
+
+    .doc-content {
+      width: 100% !important;
+      overflow-x: auto !important;
     }
 
     div.bg::before,
@@ -590,6 +600,7 @@
 
   .doc-content .table-wrapper {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .doc-content table {
