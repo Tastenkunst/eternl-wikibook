@@ -47,7 +47,7 @@ You can manage your accounts here. Using accounts is supported on both hotwallet
 
 2. >Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
 
-# What technical logic is used to achieve this?
+## What technical logic is used to achieve this?
 
 Eternls multi-account on one seedphrase feature is based on CIP-1852[^1], also referred to as the HD Wallet standard[^1]. This standard is built on top of the BIP-44[^2] Each wallet generated from a seedphrase has its own 'path'. Paths are structured as:
 
@@ -57,4 +57,3 @@ By default, Eternl uses index 0 till 29 for users depending on how many accounts
 
 [^1]: https://cips.cardano.org/cip/CIP-1852/.
 [^2]: https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
-
