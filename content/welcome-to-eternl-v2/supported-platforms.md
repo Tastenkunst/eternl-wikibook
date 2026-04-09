@@ -32,5 +32,5 @@ On supported browsers, look for the install option in the address bar to add Ete
 ---
 
 <div class="callout-success">
-<strong>All versions are fully non-custodial — **you remain in control of your keys** at all times.</strong>
+<strong>All versions are fully non-custodial — you remain in control of your keys at all times.</strong>
 </div>
