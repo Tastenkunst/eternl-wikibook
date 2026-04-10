@@ -256,7 +256,7 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
 
 function createMarkdownRenderer(filePath: string): MarkdownIt {
   const slugger = new GithubSlugger();
-  const md = new MarkdownIt({
+  const md:MarkdownIt = new MarkdownIt({
     html: true,
     linkify: true,
     typographer: true,
@@ -271,7 +271,7 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
             transformers: [
               {
                 name: 'line-numbers',
-                line(node, line) {
+                line(node: any, line: number) {
                   node.properties['data-line'] = line;
                 }
               }
