@@ -3,6 +3,13 @@ import type Token             from 'markdown-it/lib/token.mjs';
 import markdownItAnchor       from 'markdown-it-anchor';
 import markdownItContainer    from 'markdown-it-container';
 import markdownItFootnote     from 'markdown-it-footnote';
+
+import shiki                  from '@shikijs/markdown-it';
+import {
+  transformerNotationDiff
+}                             from '@shikijs/transformers';
+import { createHighlighter }  from 'shiki';
+
 import GithubSlugger          from 'github-slugger';
 
 import summaryRaw             from '../../../SUMMARY.md?raw';
@@ -56,6 +63,23 @@ export type SearchEntry = {
   text: string;
 };
 
+const SHIKI_THEMES = {
+  light: 'vitesse-light',
+  dark: 'one-dark-pro'
+};
+
+const SHIKI_LANGS = ['javascript', 'typescript', 'json', 'html', 'css', 'bash', 'markdown'];
+
+let highlighter: any = null;
+
+async function initShiki() {
+  if (highlighter) return;
+  highlighter = await createHighlighter({
+    themes: Object.values(SHIKI_THEMES),
+    langs: SHIKI_LANGS
+  });
+}
+
 const rawDocs = import.meta.glob('../../../**/*.md', {
   eager: true,
   query: '?raw',
@@ -71,15 +95,18 @@ Object.entries(rawDocs).forEach(([path, raw]) => {
   repoDocs.set(repoPath, raw);
 });
 
-const navTree = parseSummary(summaryRaw);
-const docsByRoute = new Map<string, DocPage>();
-const flatNav: NavLink[] = [];
+const navTree                 = parseSummary(summaryRaw);
+const docsByRoute             = new Map<string, DocPage>();
+const flatNav: NavLink[]      = [];
 
-hydrateNav(navTree);
 
-const searchIndex = buildSearchIndex();
+// hydrateNav(navTree);
 
-export { navTree, docsByRoute, flatNav, searchIndex };
+// const searchIndex = buildSearchIndex();
+
+let searchIndex: SearchEntry[] = [];
+
+// export { navTree, docsByRoute, flatNav, searchIndex };
 
 export function getDocByRoute(routePath: string): DocPage | undefined {
   return docsByRoute.get(normalizeRoutePath(routePath));
@@ -232,7 +259,34 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
   const md = new MarkdownIt({
     html: true,
     linkify: true,
-    typographer: true
+    typographer: true,
+    highlight: (code, lang) => {
+      if (highlighter) {
+        const validLang = lang || 'text';
+        try {
+          return highlighter.codeToHtml(code, {
+            lang,
+            themes: SHIKI_THEMES,
+            defaultColor: false,
+            transformers: [
+              {
+                name: 'line-numbers',
+                line(node, line) {
+                  node.properties['data-line'] = line;
+                }
+              }
+            ]
+          });
+        }
+        catch (e) {
+          return highlighter.codeToHtml(code, {
+            lang: 'text',
+            themes: SHIKI_THEMES
+          });
+        }
+      }
+      return md.utils.escapeHtml(code);
+    }
   });
 
   md.use(markdownItAnchor, {
@@ -252,6 +306,15 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
   });
 
   md.use(markdownItContainer, 'tip', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-tip">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItContainer, 'info', {
     render: (tokens: Token[], idx: number) => {
       const token = tokens[idx];
       return token.nesting === 1
@@ -655,7 +718,6 @@ function isExternalLink(href: string): boolean {
 export function resolveNavigationLink(title: string, href: string, trailingText?: string | null) {
   let icon = undefined;
 
-  // 1. Icon-Logik (unverändert, da sie funktioniert)
   if (trailingText) {
     const iconMatch = trailingText.trim().match(/^::(\S+)/);
     if (iconMatch) {
@@ -669,7 +731,7 @@ export function resolveNavigationLink(title: string, href: string, trailingText?
   if (isExternal) {
     return {
       title: title.trim(),
-      routePath: href, // Die URL bleibt exakt so, wie sie im MD steht
+      routePath: href,
       icon,
       external: true
     };
@@ -687,3 +749,18 @@ export function resolveNavigationLink(title: string, href: string, trailingText?
     external: false
   };
 }
+
+export async function initWiki() {
+  await initShiki();
+
+  hydrateNav(navTree);
+
+  searchIndex = buildSearchIndex();
+}
+
+export {
+  navTree,
+  docsByRoute,
+  flatNav,
+  searchIndex
+};

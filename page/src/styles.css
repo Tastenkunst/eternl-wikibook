@@ -134,6 +134,7 @@
     margin-bottom: 1.5rem;
   }
 
+  /* MAX-WIDTH 1160px  */
   @media (max-width: 1160px) {
     .doc-main-grid aside {
       display: none !important;
@@ -156,6 +157,7 @@
     }
   }
 
+  /* MAX-WIDTH 768px */
   @media (max-width: 768px) {
     .app-layout-grid {
       grid-template-columns: 1fr;
@@ -172,6 +174,14 @@
     .doc-content {
       font-size: 0.9375rem;
       line-height: 1.5 !important;
+      width: 100% !important;
+      overflow-x: auto !important;
+    }
+
+
+    .doc-content details,
+    .doc-section-content {
+      padding-right: 0 !important;
     }
 
     .doc-card {
@@ -183,11 +193,6 @@
       overflow-x: hidden;
     }
 
-    .doc-content {
-      width: 100% !important;
-      overflow-x: auto !important;
-    }
-
     div.bg::before,
     html.light div.bg::before,
     html:not(.dark) div.bg::before {
@@ -197,7 +202,6 @@
     header {
       background-color: var(--color-panel) !important;
     }
-
   }
 
   .banner-image {
@@ -580,22 +584,72 @@
     transform: scale(1.01);
   }
 
-  .doc-content code {
-    border-radius: 0.375rem;
-    background-color: color-mix(in srgb, var(--color-border) 10%, transparent);
-    padding: 0.125rem 0.35rem;
-    font-size: 0.75rem;
+  .doc-content pre {
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border);
+    font-size: 0.8rem;
     font-family: 'SFMono-Regular', ui-monospace, Menlo, Consolas, 'Liberation Mono', monospace;
+    line-height: 1.6;
+    max-width: 100%;
   }
 
-  .doc-content pre {
-    margin-top: 1rem;
-    overflow: auto;
-    border-radius: 0.75rem;
-    border: 1px solid color-mix(in srgb, var(--color-border) 10%, transparent);
-    background-color: color-mix(in srgb, var(--color-panel) 70%, transparent);
-    padding: 1rem;
-    font-size: 0.75rem;
+  pre.shiki code {
+    display: grid;
+    min-width: 100%;
+  }
+
+  pre.shiki .line {
+    display: block;
+    position: relative;
+  }
+
+  pre.shiki .line::before {
+    position: sticky;
+    display: inline-block;
+    content: attr(data-line);
+    left: 0;
+    width: 2.5rem;
+    text-align: right;
+    padding-right: 0.75rem;
+    color: var(--color-text-muted);
+    user-select: none;
+    border-right: 1px solid var(--color-border);
+
+    padding-left: 0.5rem;
+    background-color: var(--shiki-dark-bg) !important;
+    opacity: 0.85;
+    z-index: 1;
+  }
+
+  pre.shiki {
+    background-color: var(--shiki-dark-bg) !important;
+    color: var(--shiki-dark) !important;
+  }
+
+  pre.shiki span {
+    color: var(--shiki-dark) !important;
+  }
+
+  html.light pre.shiki {
+    background-color: var(--shiki-light-bg) !important;
+    color: var(--shiki-light) !important;
+  }
+
+  html.light pre.shiki span {
+    color: var(--shiki-light) !important;
+  }
+
+  html.dark pre.shiki .line::before {
+    background-color: var(--shiki-dark-bg) !important;
+    color: color-mix(in srgb, var(--shiki-dark), var(--shiki-dark-bg) 50%) !important;
+  }
+
+  html.light pre.shiki .line::before {
+    background-color: var(--shiki-light-bg) !important;
+    color: color-mix(in srgb, var(--shiki-light), var(--shiki-light-bg) 60%) !important;
   }
 
   .doc-content .table-wrapper {

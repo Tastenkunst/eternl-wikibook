@@ -60,7 +60,7 @@ Fill out the following JSON structure.
 * banner: projectname-728x256.jpg promotional banner, optional, only necessary, if you want to be placed in a promoted spot.
 * link: list of your social links, e.g. x, discord, youtube, telegram, github, medium, forum, linkedin, reddit
 
-```json
+```js
   {
     label:                    'MinSwap',
     caption:                  'Where the community trades on Cardano.',
