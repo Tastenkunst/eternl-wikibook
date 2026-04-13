@@ -25,6 +25,7 @@ export type DocPage = {
   title: string;
   description?: string;
   html: string;
+  footnotesHtml?: string;
   toc: TocItem[];
   cover?: CoverAsset;
   disableH2Collapse?: boolean;
@@ -236,7 +237,20 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
   const { title, tokens: trimmedTokens } = extractTitle(tokens, fallbackTitle);
   const toc = buildToc(trimmedTokens);
   const rawHtml = md.renderer.render(trimmedTokens, md.options, {});
-  const html = replaceIconSvgs(rawHtml);
+
+  const footnoteSearchStr = '<section class="footnotes">';
+  const footnoteIndex = rawHtml.indexOf(footnoteSearchStr);
+
+  let mainHtml = rawHtml;
+  let footnotesHtml = '';
+
+  if (footnoteIndex !== -1) {
+    mainHtml = rawHtml.slice(0, footnoteIndex);
+    footnotesHtml = rawHtml.slice(footnoteIndex);
+  }
+
+  const html = replaceIconSvgs(mainHtml);
+  const finalFootnotes = replaceIconSvgs(footnotesHtml);
 
   return {
     routePath: toRoutePath(filePath),
@@ -244,6 +258,7 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
     title,
     description,
     html,
+    footnotesHtml: finalFootnotes,
     toc,
     cover,
     disableH2Collapse: data.disableH2Collapse === true
@@ -338,6 +353,15 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
   });
 
   md.use(markdownItFootnote)
+
+  md.use(markdownItContainer, 'footnotes', {
+    render(tokens: Token[], idx: number) {
+      if (tokens[idx].nesting === 1) {
+        return `<section class="footnotes-container">`;
+      }
+      return `</section>`;
+    }
+  });
 
   const defaultLinkOpen = md.renderer.rules.link_open ?? ((tokens, idx, options, _env, self) => {
     return self.renderToken(tokens, idx, options);

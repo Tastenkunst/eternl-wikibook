@@ -850,6 +850,13 @@
     color: var(--heading-gold-strong);
   }
 
+  footer.doc-footer{
+    margin: 1rem;
+    padding: 0 1rem;
+    border-top: 2px solid var(--color-border);
+    line-height: 1.2rem;
+  }
+
   .footnotes-sep {
     margin-top: 3rem;
   }
@@ -860,13 +867,11 @@
     color: var(--color-text-muted);
   }
 
-  /* Die Standard-Nummerierung der Liste ausblenden */
   .doc-content .footnotes-list {
     list-style-type: none;
     padding-left: 0;
   }
 
-  /* Eigene Nummerierung mit eckigen Klammern aufbauen */
   .doc-content .footnote-item {
     counter-increment: footnote-counter;
     margin-bottom: 0.5rem;
@@ -877,7 +882,7 @@
   .doc-content .footnote-item::before {
     content: "[" counter(footnote-counter) "] ";
     margin-right: 0.75rem;
-    color: var(--color-accent);
+    color: var(--color-text);
     flex-shrink: 0;
     min-width: 1.5rem;
   }

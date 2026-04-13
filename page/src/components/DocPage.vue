@@ -370,6 +370,8 @@ function wrapSections(html: string): string {
         <NavGrid v-if="navigationItems.length > 0" :items="navigationItems" />
 
         <div v-html="processedDocHtmlParts.after"></div>
+
+        <footer v-if="doc.footnotesHtml" class="doc-footer" v-html="doc.footnotesHtml"></footer>
       </div>
 
       <div class="mt-12 flex items-center justify-between gap-4 border-t border-ink-10 pt-6 text-sm">
