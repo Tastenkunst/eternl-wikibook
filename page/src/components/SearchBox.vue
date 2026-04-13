@@ -98,7 +98,7 @@ const formatPath = (path: string) => path.replaceAll('/content/', '');
         v-model="query"
         type="search"
         placeholder="Search docs"
-        class="w-full rounded-full border border-ink-40 bg-ivory px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"
+        class="w-full rounded-full border border-ink-40 px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"
         @keydown="onKeydown"
     />
 
@@ -126,7 +126,11 @@ const formatPath = (path: string) => path.replaceAll('/content/', '');
 </template>
 
 <style scoped>
-/* Wir nutzen eine Klasse für das Keyboard-Hovering, damit es konsistent zum Maus-Hover ist */
+
+#doc-search {
+  background: var(--color-bg-search);
+}
+
 .bg-active-selection,
 button:hover {
   background: var(--color-link-hover);

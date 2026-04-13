@@ -33,7 +33,9 @@ Eternl v2 supports 4 app types and 7 different connection methods:
 * (2) Legacy Dapp Browser handling: Dapps implement Eternl's PWA JS bridge.\
   This method loads the MAIN/SPECIAL URL (some dapps choose to have the handling on a separate URL, but that's not mandatory).
 * (3) WalletConnect: Relies on centralized servers.
-* (4) Cardano Connect: A decentralized, P2P alternative to WalletConnect CIP-45.
+* (4) Cardano Connect: A decentralized, P2P alternative to WalletConnect CIP-45. 
+
+<br>
 
 **Deciding whether to support PWA user base.**
 

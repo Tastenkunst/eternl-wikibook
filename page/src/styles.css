@@ -41,6 +41,15 @@
         #ffb719 75%,
         #d153d1 100%
     );
+    --color-bg-mobile-nav: linear-gradient(
+        45deg,
+        #44fff9 0%,
+        #7188ff 25%,
+        #ff5178 50%,
+        #ffb719 75%,
+        #d153d1 100%
+    );
+    --color-bg-search: color-mix(in srgb, var(--color-bg), #ffffff 10%);
   }
 
   html {
@@ -76,6 +85,11 @@
     --heading-hover-brightness: 0.96;
     --heading-muted-brightness: 1.06;
     --theme-icon-inline-filter: invert(38%) sepia(83%) saturate(1535%) hue-rotate(181deg) brightness(91%) contrast(97%);
+    --color-bg-search: color-mix(in srgb, var(--color-bg), #44fff9 1%);
+  }
+
+  hr {
+    margin: 1rem 0;
   }
 
   .no-transitions * {
@@ -204,6 +218,46 @@
     }
   }
 
+  /* MAX-WIDTH 520px */
+  @media (max-width: 520px) {
+    .app-header {
+      height: 64px !important;
+      min-height: 64px !important;
+      max-height: 64px !important;
+    }
+
+    .app-header-inner img {
+      width: 32px !important;
+      height: 32px !important;
+      min-width: 32px !important;
+      flex-shrink: 0 !important;
+      object-fit: contain !important;
+    }
+
+    .brand-text {
+      font-size: 0.9rem !important;
+      line-height: 1.1 !important;
+      white-space: normal !important;
+      max-width: 85px;
+      word-break: break-word;
+    }
+
+    .app-header-inner .flex.items-center.shrink-0 {
+      gap: 0.5rem !important;
+    }
+
+    .search-container {
+      min-width: 125px;
+      flex-shrink: 1;
+    }
+
+    .theme-toggle {
+      width: 32px !important;
+      height: 32px !important;
+      padding: 0 !important;
+    }
+  }
+
   .banner-image {
     width: 100%;
     aspect-ratio: 620 / 240;
@@ -265,7 +319,7 @@
   }
 
   hr {
-    color: color-mix(var(--color-text) 25%, transparent);
+    color: color-mix(in srgb, var(--color-text) 25%, transparent);
   }
 }
 
@@ -445,44 +499,7 @@
     white-space: nowrap;
   }
 
-  @media (max-width: 520px) {
-    .app-header {
-      height: 64px !important;
-      min-height: 64px !important;
-      max-height: 64px !important;
-    }
 
-    .app-header-inner img {
-      width: 32px !important;
-      height: 32px !important;
-      min-width: 32px !important;
-      flex-shrink: 0 !important;
-      object-fit: contain !important;
-    }
-
-    .brand-text {
-      font-size: 0.9rem !important;
-      line-height: 1.1 !important;
-      white-space: normal !important;
-      max-width: 85px;
-      word-break: break-word;
-    }
-
-    .app-header-inner .flex.items-center.shrink-0 {
-      gap: 0.5rem !important;
-    }
-
-    .search-container {
-      min-width: 125px;
-      flex-shrink: 1;
-    }
-
-    .theme-toggle {
-      width: 32px !important;
-      height: 32px !important;
-      padding: 0 !important;
-    }
-  }
 
   .doc-content {
     font-size: 1rem;
@@ -655,10 +672,32 @@
   .doc-content .table-wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    position: relative;
+
+    -webkit-mask-image: none;
+    mask-image: none;
+
+    transition: -webkit-mask-image 0.3s ease;
+  }
+
+  .table-wrapper.can-scroll-right {
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  }
+
+  .table-wrapper.can-scroll-left {
+    -webkit-mask-image: linear-gradient(to left, black 90%, transparent 100%);
+    mask-image: linear-gradient(to left, black 90%, transparent 100%);
+  }
+
+  .table-wrapper.can-scroll-left.can-scroll-right {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
   }
 
   .doc-content table {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     width: 100%;
     border-collapse: collapse;
     border-radius: 0.75rem;
@@ -1036,7 +1075,7 @@
 
   .doc-section-content {
     border-top: 1px solid color-mix(in srgb, var(--color-border) 20%, transparent);
-    padding: 0 1.0rem 1.5rem;
+    padding: 0 1rem;
   }
 
   .theme-toggle {

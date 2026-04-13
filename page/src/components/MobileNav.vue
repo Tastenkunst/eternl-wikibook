@@ -27,18 +27,19 @@ const handleMenuHeightChange = () => {
 
 watch(isOpen, async (opened) => {
   if (opened) {
-    await nextTick(); // Warten bis DOM gerendert ist
+    document.body.style.overflow = 'hidden';
+
+    await nextTick();
     if (morphBodyRef.value) {
       handleMenuHeightChange();
-
       morphBodyRef.value.addEventListener('scroll', handleMenuHeightChange);
-
       resizeObserver = new ResizeObserver(handleMenuHeightChange);
-      // Wir beobachten das erste Kind-Element (die Sidebar), da diese wächst
       const content = morphBodyRef.value.firstElementChild;
       if (content) resizeObserver.observe(content);
     }
   } else {
+    document.body.style.overflow = '';
+
     morphBodyRef.value?.removeEventListener('scroll', handleMenuHeightChange);
     resizeObserver?.disconnect();
   }
@@ -132,7 +133,7 @@ watch(() => route.path, () => { isOpen.value = false; });
   padding: 0;
   justify-content: center;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--color-panel) 80%, white 5%);
+  background: color-mix(in srgb, var(--color-panel) 95%, white 5%);
   border-color: var(--color-border-strong);
 }
 
@@ -186,12 +187,12 @@ watch(() => route.path, () => { isOpen.value = false; });
 }
 
 .morph-content {
-  background: var(--color-bg);
+  background: var(--color-bg-mobile-nav);
   border: 1px solid var(--color-border);
   border-radius: 20px;
   width: 320px;
   max-width: calc(100vw - 2rem);
-  max-height: 85vh;
+  max-height: 95dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -221,9 +222,12 @@ watch(() => route.path, () => { isOpen.value = false; });
 .morph-body {
   flex: 1;
   overflow-y: auto;
-  padding: 1.5rem 1rem;
+  margin: 0.25rem;
+  border: 1px solid var(--color-bg);
+  border-radius: 20px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background: var(--color-bg)
 }
 
 .morph-body::-webkit-scrollbar {
@@ -255,9 +259,6 @@ watch(() => route.path, () => { isOpen.value = false; });
   opacity: 0;
 }
 
-.mobile-nav-transition-enter-active .morph-body {
-  transition: opacity 0.2s ease-out 0.2s;
-}
 .mobile-nav-transition-enter-from .morph-body {
   opacity: 0;
 }

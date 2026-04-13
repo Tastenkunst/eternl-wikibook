@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
-import { navTree } from '@/lib/content';
-import Sidebar from '@/components/Sidebar.vue';
-import SearchBox from '@/components/SearchBox.vue';
-import MobileNav from '@/components/MobileNav.vue';
+import {
+  computed,
+  nextTick,
+  onMounted,
+  ref,
+  watch
+}                             from 'vue';
+import { useRoute }           from 'vue-router';
+import { navTree }            from '@/lib/content';
+import Sidebar                from '@/components/Sidebar.vue';
+import SearchBox              from '@/components/SearchBox.vue';
+import MobileNav              from '@/components/MobileNav.vue';
 
 const route = useRoute();
 const currentPath = computed(() => route.path);
@@ -32,6 +38,59 @@ function handleLogoClick() {
   window.dispatchEvent(new CustomEvent('wiki:collapse-nav'));
 }
 
+const activeTableWrappers = ref<HTMLElement[]>([]);
+
+const updateTableShadows = () => {
+  // Wir iterieren über die aktuell gespeicherten Wrapper
+  activeTableWrappers.value.forEach(el => {
+    const isScrollable = el.scrollWidth > el.clientWidth;
+    // Wir prüfen, ob noch Platz zum Scrollen nach rechts ist (mit 2px Toleranz)
+    const canScrollRight = isScrollable && (el.scrollLeft + el.clientWidth < el.scrollWidth - 2);
+    const canScrollLeft = el.scrollLeft > 2;
+
+    el.classList.toggle('can-scroll-right', canScrollRight);
+    el.classList.toggle('can-scroll-left', canScrollLeft);
+  });
+};
+
+function cleanupTableListeners() {
+  activeTableWrappers.value.forEach(el => {
+    el.removeEventListener('scroll', updateTableShadows);
+  });
+  activeTableWrappers.value = [];
+}
+
+const initTableLogic = async () => {
+  cleanupTableListeners();
+
+  // Wir warten kurz, bis RouterView und Markdown-Renderer wirklich fertig sind
+  await nextTick();
+  setTimeout(() => {
+    const wrappers = document.querySelectorAll('.table-wrapper');
+
+    wrappers.forEach(wrapper => {
+      const el = wrapper as HTMLElement;
+      el.addEventListener('scroll', updateTableShadows, { passive: true });
+      activeTableWrappers.value.push(el);
+    });
+
+    updateTableShadows();
+  }, 100); // 100ms Puffer für den Content-Render
+};
+
+watch(
+    () => route.path,
+    async () => {
+
+      requestAnimationFrame(() => {
+        mainRef.value?.focus();
+      });
+
+      await initTableLogic()
+
+    }
+);
+
 onMounted(() => {
   const saved = localStorage.getItem('wiki-theme');
   if (saved === 'light' || saved === 'dark') {
@@ -39,16 +98,10 @@ onMounted(() => {
   } else {
     applyTheme('dark');
   }
+
+  initTableLogic()
 });
 
-watch(
-  () => route.path,
-  () => {
-    requestAnimationFrame(() => {
-      mainRef.value?.focus();
-    });
-  }
-);
 </script>
 
 <template>
