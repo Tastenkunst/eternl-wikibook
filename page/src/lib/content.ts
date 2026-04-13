@@ -4,10 +4,6 @@ import markdownItAnchor       from 'markdown-it-anchor';
 import markdownItContainer    from 'markdown-it-container';
 import markdownItFootnote     from 'markdown-it-footnote';
 
-import shiki                  from '@shikijs/markdown-it';
-import {
-  transformerNotationDiff
-}                             from '@shikijs/transformers';
 import { createHighlighter }  from 'shiki';
 
 import GithubSlugger          from 'github-slugger';
