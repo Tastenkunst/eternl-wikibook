@@ -1150,5 +1150,12 @@
     list-style: decimal;
   }
 
+  .medium-zoom-overlay, .medium-zoom-image {
+    z-index: 9000;
+  }
+
+  .medium-zoom-image--opened {
+    cursor: zoom-out !important;
+  }
 
 }
