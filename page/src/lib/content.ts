@@ -234,31 +234,33 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
 
   const md = createMarkdownRenderer(filePath);
   const tokens = md.parse(processed, {});
-  const { title, tokens: trimmedTokens } = extractTitle(tokens, fallbackTitle);
-  const toc = buildToc(trimmedTokens);
-  const rawHtml = md.renderer.render(trimmedTokens, md.options, {});
 
-  const footnoteSearchStr = '<section class="footnotes">';
-  const footnoteIndex = rawHtml.indexOf(footnoteSearchStr);
+  const footnoteIndex = tokens.findIndex(t => t.type === 'footnote_block_open');
 
-  let mainHtml = rawHtml;
-  let footnotesHtml = '';
+  let mainTokens = tokens;
+  let footnoteTokens: Token[] = [];
 
   if (footnoteIndex !== -1) {
-    mainHtml = rawHtml.slice(0, footnoteIndex);
-    footnotesHtml = rawHtml.slice(footnoteIndex);
+    // Sauber trennen: Alles davor ist Content, alles ab da sind Fußnoten
+    mainTokens = tokens.slice(0, footnoteIndex);
+    footnoteTokens = tokens.slice(footnoteIndex);
   }
 
-  const html = replaceIconSvgs(mainHtml);
-  const finalFootnotes = replaceIconSvgs(footnotesHtml);
+  const { title, tokens: trimmedTokens } = extractTitle(mainTokens, fallbackTitle);
+  const toc = buildToc(trimmedTokens);
+
+  const mainHtml = md.renderer.render(trimmedTokens, md.options, {});
+  const footnotesHtml = footnoteTokens.length > 0
+    ? md.renderer.render(footnoteTokens, md.options, {})
+    : '';
 
   return {
     routePath: toRoutePath(filePath),
     filePath,
     title,
     description,
-    html,
-    footnotesHtml: finalFootnotes,
+    html: replaceIconSvgs(mainHtml),
+    footnotesHtml: replaceIconSvgs(footnotesHtml),
     toc,
     cover,
     disableH2Collapse: data.disableH2Collapse === true

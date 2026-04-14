@@ -858,7 +858,7 @@
   }
 
   .footnotes-sep {
-    margin-top: 3rem;
+    display: none !important;
   }
 
   .footnotes {
