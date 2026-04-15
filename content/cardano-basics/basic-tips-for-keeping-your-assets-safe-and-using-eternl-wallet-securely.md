@@ -80,5 +80,4 @@ Stay informed by watching tutorials and reading guides on how to effectively use
 
 Remember, the key to security is not just the tools you use but also your practices in managing them.
 
-
 [^1]: Das ist der Text der Fußnote, der am Ende der Seite erscheint.
