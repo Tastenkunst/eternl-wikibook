@@ -45,7 +45,7 @@ You manage accounts from the wallet card on both hot wallets and hardware wallet
 
 ![30 account limit](/gitbook-assets/pictures/v2_manage_accounts_3.jpg)
 
-### 4. Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
+### 4. Finally, you need to confirm by entering your spending password or approving it with your hardware wallet
 
 ![Account confirmation](/gitbook-assets/pictures/v2_manage_accounts_5.jpg)
 
