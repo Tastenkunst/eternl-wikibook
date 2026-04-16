@@ -172,7 +172,7 @@ watch(() => route.path, () => { isOpen.value = false; });
 .morph-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
 }
 
@@ -187,7 +187,7 @@ watch(() => route.path, () => { isOpen.value = false; });
 }
 
 .morph-content {
-  background: var(--color-bg-mobile-nav);
+  background: var(--color-border-mobile-nav);
   border: 1px solid var(--color-border);
   border-radius: 20px;
   width: 320px;
@@ -222,7 +222,7 @@ watch(() => route.path, () => { isOpen.value = false; });
 .morph-body {
   flex: 1;
   overflow-y: auto;
-  margin: 0.25rem;
+  margin: 3px;
   border: 1px solid var(--color-bg);
   border-radius: 20px;
   scrollbar-width: none;

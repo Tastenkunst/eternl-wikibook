@@ -41,7 +41,7 @@
         #ffb719 75%,
         #d153d1 100%
     );
-    --color-bg-mobile-nav: linear-gradient(
+    --color-border-mobile-nav: linear-gradient(
         45deg,
         #44fff9 0%,
         #7188ff 25%,
@@ -706,7 +706,12 @@
     overflow: hidden;
   }
 
-  .doc-content th,
+
+  .doc-content th {
+    border-bottom: 2px solid var(--color-border);
+    padding: 0.85rem 1rem;
+    vertical-align: bottom;
+  }
   .doc-content td {
     border-bottom: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
     padding: 0.85rem 1rem;

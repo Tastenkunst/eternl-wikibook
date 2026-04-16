@@ -155,4 +155,10 @@ defineProps<{
   opacity: 1;
   right: 1rem;
 }
+
+@media (hover: none) {
+  .child-nav-arrow {
+    display: none !important;
+  }
+}
 </style>

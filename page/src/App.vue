@@ -40,6 +40,8 @@ function handleLogoClick() {
 
 const activeTableWrappers = ref<HTMLElement[]>([]);
 
+let tableResizeObserver: ResizeObserver | null = null;
+
 const updateTableShadows = () => {
   // Wir iterieren über die aktuell gespeicherten Wrapper
   activeTableWrappers.value.forEach(el => {
@@ -57,6 +59,12 @@ function cleanupTableListeners() {
   activeTableWrappers.value.forEach(el => {
     el.removeEventListener('scroll', updateTableShadows);
   });
+
+  if (tableResizeObserver) {
+    tableResizeObserver.disconnect();
+    tableResizeObserver = null;
+  }
+
   activeTableWrappers.value = [];
 }
 
@@ -68,14 +76,22 @@ const initTableLogic = async () => {
   setTimeout(() => {
     const wrappers = document.querySelectorAll('.table-wrapper');
 
+    if (wrappers.length === 0) return;
+
+    tableResizeObserver = new ResizeObserver(() => {
+      updateTableShadows();
+    });
+
     wrappers.forEach(wrapper => {
       const el = wrapper as HTMLElement;
       el.addEventListener('scroll', updateTableShadows, { passive: true });
       activeTableWrappers.value.push(el);
+
+      tableResizeObserver?.observe(el);
     });
 
     updateTableShadows();
-  }, 100); // 100ms Puffer für den Content-Render
+  }, 100);
 };
 
 watch(
