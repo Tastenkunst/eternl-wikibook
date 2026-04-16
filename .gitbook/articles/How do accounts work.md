@@ -1,7 +1,7 @@
-
+<!-- markdownlint-disable-file MD033 -->
 # A very brief introduction of the concept of accounts
 
-The concept of "accounts" refers to the ability to create multiple sub-accounts from a single seed phrase. 
+The concept of "accounts" refers to the ability to create multiple sub-accounts from a single seed phrase.
 
 Each of these accounts is derived from the same seed phrase but has its own unique set of addresses and keys, allowing for separation of funds, staking, and transaction history. The additional wallet(s) generated from a seed phrase share no on-chain connection and are completely stand-alone.
 
@@ -45,7 +45,7 @@ You can manage your accounts here. Using accounts is supported on both hotwallet
 
 ![v2_manage_accounts_5.jpg](/announcements/v2_manage_accounts_5.jpg){.align-center}
 
-2. >Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
+2.>Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
 
 ## What technical logic is used to achieve this?
 

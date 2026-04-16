@@ -1,6 +1,7 @@
 ---
 description: Safeguard Your Seed Phrase!
 ---
+<!-- markdownlint-disable-file MD033 -->
 
 # What is a seed phrase?
 

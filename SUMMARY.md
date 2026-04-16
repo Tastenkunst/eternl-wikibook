@@ -19,7 +19,8 @@
     * [Managing Accounts](content/using-eternl/managing-accounts.md)
     * [Using the DApp Browser](content/using-eternl/using-the-dapp-browser.md)
     * [Understanding Balances](content/using-eternl/understanding-balances.md)
-  
+    * [DApp connect options](content/using-eternl/Dapp-connect-options.md)
+
 * [Security & Privacy](content/security-and-privacy/README.md)
     * [What Is a Seed Phrase?](content/security-and-privacy/what-is-a-seed-phrase.md)
     * [Hot Wallets vs Cold Wallets](content/security-and-privacy/hot-wallets-vs-cold-wallets..md)
@@ -50,6 +51,7 @@
     * [Governance & Project Catalyst](content/cardano-basics/governance-and-catalyst.md)
     * [The eUTxO Model](content/cardano-basics/eutxo-model.md)
     * [Staking Mechanics](content/cardano-basics/staking-mechanics.md)
+    * [Cardano Timeline](content/cardano-basics/cardano-timeline.md)
 
 * [Eternl Updates / Release Notes](content/eternl-updates-release-notes.md)
 
