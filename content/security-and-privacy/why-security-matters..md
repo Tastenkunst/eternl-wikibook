@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file MD033 -->
 # Why security matters
 
 Security is paramount in the crypto world due to the decentralized and pseudonymous nature of blockchain technology, which, while offering transparency, also presents unique risks. \
