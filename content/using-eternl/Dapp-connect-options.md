@@ -98,7 +98,7 @@ The procedure to connect is similar:
 Before visiting the DApp website, activate the desired account from your account list.
 
 <div class="callout-tip">
-> To do that, activate the account in the account list and press this button ![dapp_connect_.jpg](/announcements/dapp_connect_.jpg)  in the header to turn to this ![dapp_connected_.jpg](/announcements/dapp_connected_.jpg) Once an account is successfully connected, it will be indicated by this icon ! ![dapp_connected_global_25.jpg](/announcements/dapp_connected_global_25.jpg) in the upper right corner of the screen, even if you are leaving the account list page
+To do that, activate the account in the account list and choose from the 3 dot menu on the right "Set as Forced DApp Account".
 </div>
 
 ### Visit the DApp Website
