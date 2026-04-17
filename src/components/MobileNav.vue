@@ -145,8 +145,8 @@ watch(() => route.path, () => { isOpen.value = false; });
   width: 20px;
   height: 20px;
   background-color: var(--color-text);
-  -webkit-mask-image: url("/gitbook-assets/icons/Menu.svg");
-  mask-image: url("/gitbook-assets/icons/Menu.svg");
+  -webkit-mask-image: url("/assets/icons/Menu.svg");
+  mask-image: url("/assets/icons/Menu.svg");
   mask-size: contain;
   mask-repeat: no-repeat;
 }

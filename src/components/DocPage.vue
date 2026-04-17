@@ -30,8 +30,8 @@ const isDark = ref(false);
 const chevronSvg = '<svg class="doc-section-chevron" viewBox="0 0 24 24" fill="none" width="25px" height="25px"><path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>'
 
 const defaultWelcomeBanner = {
-  light: '/gitbook-assets/pictures/v1-light.jpg',
-  dark: '/gitbook-assets/pictures/v1-dark.jpg'
+  light: '/assets/pictures/v1-light.jpg',
+  dark: '/assets/pictures/v1-dark.jpg'
 };
 
 let themeObserver: MutationObserver | null = null;
@@ -328,7 +328,7 @@ function wrapSections(html: string): string {
   <summary class="doc-section-summary">
 <!--    <img-->
 <!--      class="doc-section-chevron"-->
-<!--      src="/gitbook-assets/icons/ChevronDown.svg"-->
+<!--      src="/assets/icons/ChevronDown.svg"-->
 <!--      alt=""-->
 <!--      role="presentation"-->
 <!--      aria-hidden="true"-->

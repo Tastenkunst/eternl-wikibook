@@ -20,9 +20,7 @@ disableH2Collapse: true
 
 
 
-{% hint style="info" %}					success warning
-Wallet card > Manage Accounts
-{% endhint %}
+
 
 
 
@@ -34,15 +32,6 @@ ein- ausklappenklappen (bei h2 automatisch - versuchen h2 zu nutzen)
 </details
 
 
-
-vermeiden. meist hint sinnvoller. 
-
-<div class="callout-tip">
-...
-</div>
-
-
-
 bewirkt sehr dezenten rahmen - braucht man das?
 
 >
@@ -51,35 +40,69 @@ bewirkt sehr dezenten rahmen - braucht man das?
 
 icons:
 für nav cards in summary
-bsp: "* [Settings](home/getting-started/using-eternl/settings/README.md)::/gitbook-assets/icons/Settings.svg"
+bsp: "* [Settings](home/getting-started/using-eternl/settings/README.md)::/assets/icons/Settings.svg"
 
 inline bsp:
-"## ![Staking](/gitbook-assets/icons/StakingOutline.svg) Staking Mechanics"
+"## ![Staking](/assets/icons/StakingOutline.svg) Staking Mechanics"
 
 
 
-![Pointing hand]&#40;/gitbook-assets/icons/FingerTouch03.svg&#41; Check out our tutorials on:
+![Pointing hand]&#40;/assets/icons/FingerTouch03.svg&#41; Check out our tutorials on:
 
 >>> first line in a markdown file to disable errors:
 
 <!-- markdownlint-disable-file MD033 -->
 
+
+
 syntax to insert pictures:
 
-<figure><img src="/gitbook-assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
+
 
 
 syntax for callout boxes:
 
+::: tip
+lorem ipsum
+:::
 
-<div class="callout-tip">
+::: success
+lorem ipsum
+:::
+
+::: warning
+lorem ipsum
+:::
+
+
+alternativ geht auch
+{% hint style="info" %}					success warning
+lorem ipsum
+{% endhint %}
+
+und
+
+<div class="callout-tip">               callout-tip callout-warning
 lorem ipsum
 </div>
 
-<div class="callout-success">
-lorem ipsum
-</div>
 
-<div class="callout-warning">
-lorem ipsum
-</div>
+
+
+footnotes
+
+text[^1]
+
+[^1] fußnotentext
+
+(die 1 dient dabei nur der zuordnung verweis zu fußnote. kann z.bsp. auch text verwenden. - nummerierung erfolgt automatisch anhand der reihenfolge in der sie im text verwendet werden und unhabhängig von den verwendeten ziffern oder buchstaben)
+
+
+
+
+tables
+
+:----   linksbündige spalte
+----:   rechtsbündige spalte
+:---:   mittige spalte

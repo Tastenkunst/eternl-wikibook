@@ -4,15 +4,15 @@
 
 ## Overview
 
-<figure><img src="/gitbook-assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
 
 ## Account name / handle
 
-<figure><img src="/gitbook-assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
+<figure><img src="/assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
 ## Export Account Key
 
-<figure><img src="/gitbook-assets/pictures/export_account_key.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
+<figure><img src="/assets/pictures/export_account_key.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 ### Cardano Public Account Key Formats
 
@@ -30,7 +30,7 @@ Only use a single address for all transactions.
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="/gitbook-assets/pictures/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
+<figure><img src="/assets/pictures/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
 
 Alternatively a custom receive address can be set here.
 
@@ -40,7 +40,7 @@ Setting a custom receive address will make all change outputs and receive addres
 
 ## Collateral [option]
 
-<figure><img src="/gitbook-assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
+<figure><img src="/assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
 
 ### Collateral (Cardano)
 
@@ -82,7 +82,7 @@ This means:
 
 ## Manual sync [option]
 
-<figure><img src="/gitbook-assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+<figure><img src="/assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
 ### What is Manual Sync?
 
@@ -133,7 +133,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 ## History sync [option]
 
-<figure><img src="/gitbook-assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
@@ -192,7 +192,7 @@ Token Fragmentation (TF)
 
 ### Reduce transaction fees by fragmenting tokens
 
-<figure><img src="/gitbook-assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
 
 **Token Fragmentation** is an advanced sending option that controls how tokens are grouped when a transaction is made.
 
@@ -241,7 +241,7 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 ## Advanced UTxO Management
 
-<figure><img src="/gitbook-assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
 
 When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
 
@@ -252,4 +252,4 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 Auto Withdrawal [option]
 
-<figure><img src="/gitbook-assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>

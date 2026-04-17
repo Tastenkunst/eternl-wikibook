@@ -4,11 +4,11 @@
 
 ## Overview
 
-<figure><img src="/gitbook-assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
 
 ## Name and Group
 
-<figure><img src="/gitbook-assets/pictures/wallet_name_&_group.png" alt=""><figcaption><p>Update wallet name and assign it to a group.</p></figcaption></figure>
+<figure><img src="/assets/pictures/wallet_name_&_group.png" alt=""><figcaption><p>Update wallet name and assign it to a group.</p></figcaption></figure>
 
 Use this section to customize how your wallet appears inside Eternl:
 
@@ -31,7 +31,7 @@ Losing this password does **not** mean your funds are lost, but you will need to
 
 ## Wallet Icon
 
-<figure><img src="/gitbook-assets/pictures/wallet_icon.png" alt=""><figcaption><p>Customize or generate a wallet icon.</p></figcaption></figure>
+<figure><img src="/assets/pictures/wallet_icon.png" alt=""><figcaption><p>Customize or generate a wallet icon.</p></figcaption></figure>
 
 Choose a visual identifier for the wallet to make it easier to recognize at a glance:
 
@@ -42,7 +42,7 @@ Choose a visual identifier for the wallet to make it easier to recognize at a gl
 
 ## Export Wallet
 
-<figure><img src="/gitbook-assets/pictures/wallet_export_wallet.png" alt=""><figcaption><p>Export wallet as encrypted JSON file.</p></figcaption></figure>
+<figure><img src="/assets/pictures/wallet_export_wallet.png" alt=""><figcaption><p>Export wallet as encrypted JSON file.</p></figcaption></figure>
 
 Export your wallet as an encrypted JSON file for use in another Eternl instance:
 
@@ -80,7 +80,7 @@ Your recovery phrase gives full control over your funds. Never share it with any
 
 ## Delete Wallet
 
-<figure><img src="/gitbook-assets/pictures/wallet_delete_wallet.png" alt=""><figcaption><p>Permanently remove a wallet from the app.</p></figcaption></figure>
+<figure><img src="/assets/pictures/wallet_delete_wallet.png" alt=""><figcaption><p>Permanently remove a wallet from the app.</p></figcaption></figure>
 
 This removes the wallet from the current device and app installation only.
 

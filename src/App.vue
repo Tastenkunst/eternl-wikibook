@@ -131,7 +131,7 @@ onMounted(() => {
             class="flex items-center gap-1 select-none"
             @click="handleLogoClick"
         >
-          <img src="/images/eternl-logo-small-vector.png" alt="" class="w-8 h-auto" >
+          <img src="/assets/pictures/eternl-logo-small-vector.png" alt="" class="w-8 h-auto" >
           <span class="text-xl font-bold brand-text">Eternl Wiki</span>
         </RouterLink>
 

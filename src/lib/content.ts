@@ -8,7 +8,7 @@ import { createHighlighter }  from 'shiki';
 
 import GithubSlugger          from 'github-slugger';
 
-import summaryRaw             from '../../../SUMMARY.md?raw';
+import summaryRaw             from '../../content/SUMMARY.md?raw';
 
 type RawDocs = Record<string, string>;
 
@@ -77,7 +77,7 @@ async function initShiki() {
   });
 }
 
-const rawDocs = import.meta.glob('../../../**/*.md', {
+const rawDocs = import.meta.glob('../../content/**/*.md', {
   eager: true,
   query: '?raw',
   import: 'default'
@@ -86,9 +86,6 @@ const rawDocs = import.meta.glob('../../../**/*.md', {
 const repoDocs = new Map<string, string>();
 Object.entries(rawDocs).forEach(([path, raw]) => {
   const repoPath = normalizeRepoPath(path);
-  if (repoPath.startsWith('page/')) {
-    return;
-  }
   repoDocs.set(repoPath, raw);
 });
 
@@ -130,15 +127,12 @@ function normalizeRoutePath(path: string): string {
 
 function normalizeRepoPath(path: string): string {
   const normalized = path.replace(/\\/g, '/').replace(/^\/@fs\//, '');
-  const repoRelativeMatch = normalized.match(
-    /(?:^|\/)((?:content|home|for-developers|readme|page)\/.*|README\.md|SUMMARY\.md|notes\.md)$/
-  );
 
-  if (repoRelativeMatch) {
-    return repoRelativeMatch[1];
+  const match = normalized.match(/content\/(.*)$/);
+  if (match) {
+    return `content/${match[1]}`;
   }
-
-  return normalized.replace(/^(\.\.\/)+/, '').replace(/^\/+/, '');
+  return normalized;
 }
 
 function parseSummary(markdown: string): NavItem[] {
@@ -182,20 +176,20 @@ function hydrateNav(items: NavItem[]): void {
     if (isExternalLink(item.href)) {
       item.external = true;
     } else if (item.href.endsWith('.md')) {
-      const repoPath = normalizeRepoPath(item.href);
+      // Wir bauen den Map-Key: "content/" + Pfad aus der SUMMARY
+      const repoPath = `content/${item.href.replace(/^\//, '')}`;
       const routePath = toRoutePath(repoPath);
+
       item.routePath = routePath;
       flatNav.push({ title: item.title, routePath });
 
-      if (!docsByRoute.has(routePath)) {
-        const raw = repoDocs.get(repoPath);
-        const doc = raw
-          ? buildDocPage(repoPath, raw, item.title)
-          : buildMissingDoc(repoPath, item.title);
-
+      const raw = repoDocs.get(repoPath);
+      if (raw) {
+        const doc = buildDocPage(repoPath, raw, item.title);
         doc.children = item.children;
-
         docsByRoute.set(routePath, doc);
+      } else {
+        docsByRoute.set(routePath, buildMissingDoc(repoPath, item.title));
       }
     }
 
@@ -393,7 +387,7 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
 }
 
 function preprocessGitbook(content: string): string {
-  let output = rewriteGitbookAssets(content);
+  let output = content;
 
   output = output.replace(/\{%\s*hint\s+style="([^"]+)"\s*%\}/g, (_match, style) => {
     return `::: hint ${style}\n`;
@@ -406,10 +400,6 @@ function preprocessGitbook(content: string): string {
   });
 
   return output;
-}
-
-function rewriteGitbookAssets(value: string): string {
-  return value.replace(/(?:\.\.\/)*\.gitbook\/assets\//g, '/gitbook-assets/');
 }
 
 function renderEmbed(url: string): string {
@@ -467,14 +457,18 @@ function resolveRelativePath(baseFilePath: string, relativePath: string): string
 }
 
 function toRoutePath(repoPath: string): string {
-  const normalized = repoPath.replace(/\\/g, '/');
-  if (normalized === 'README.md') {
-    return '/';
+  let normalized = repoPath.replace(/\\/g, '/');
+
+  if (normalized.startsWith('content/')) {
+    normalized = normalized.substring(8);
   }
+
+  if (normalized === 'README.md') return '/';
+
   if (normalized.endsWith('/README.md')) {
-    const trimmed = normalized.replace(/\/README\.md$/, '');
-    return `/${trimmed}`;
+    return `/${normalized.replace(/\/README\.md$/, '')}`;
   }
+
   return `/${normalized.replace(/\.md$/, '')}`;
 }
 
@@ -542,7 +536,7 @@ function stripHtml(html: string): string {
 
 function replaceIconSvgs(html: string): string {
   return html.replace(
-    /<img\b([^>]*?)\bsrc="([^"]*\/gitbook-assets\/icons\/[^"]+\.svg)"([^>]*)>/gi,
+    /<img\b([^>]*?)\bsrc="([^"]*\/assets\/(?:icons|hugeicons)\/[^"]+\.svg)"([^>]*)>/gi,
     (_match, before, src, after) => {
       const attributes = `${before} ${after}`;
       if (/\bclass="[^"]*\btheme-icon-inline\b[^"]*"/i.test(attributes)) {
@@ -719,12 +713,12 @@ function normalizeCover(cover: unknown): CoverAsset | undefined {
     return undefined;
   }
   if (typeof cover === 'string') {
-    return rewriteGitbookAssets(cover);
+    return cover;
   }
   if (typeof cover === 'object') {
     const record = cover as Record<string, string | undefined>;
-    const light = record.light ? rewriteGitbookAssets(record.light) : undefined;
-    const dark = record.dark ? rewriteGitbookAssets(record.dark) : undefined;
+    const light = record.light ? record.light : undefined;
+    const dark = record.dark ? record.dark : undefined;
     if (!light && !dark) {
       return undefined;
     }

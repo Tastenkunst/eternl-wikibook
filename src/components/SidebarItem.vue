@@ -174,8 +174,8 @@ onUnmounted(() => {
 }
 
 .sidebar-chevron-icon {
-  -webkit-mask-image: url('/gitbook-assets/icons/ChevronDown.svg');
-  mask-image: url('/gitbook-assets/icons/ChevronDown.svg');
+  -webkit-mask-image: url('/assets/icons/ChevronDown.svg');
+  mask-image: url('/assets/icons/ChevronDown.svg');
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;

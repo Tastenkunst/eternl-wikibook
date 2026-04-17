@@ -7,11 +7,11 @@
 
 These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features rather than a single wallet.
 
-<figure><img src="/gitbook-assets/pictures/App_Settings.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/App_Settings.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Pro Mode
 
-![Pro Mode setting](../../../../.gitbook/assets/pictures/pro_mode.jpg)
+![Pro Mode setting](/assets/pictures/pro_mode.jpg)
 
 Use `Pro Mode` to switch between a simpler interface and a more advanced one.
 
@@ -27,7 +27,7 @@ Use `Pro Mode` to switch between a simpler interface and a more advanced one.
 
 ## Network
 
-![Network setting](../../../../.gitbook/assets/pictures/network_switcher.png)
+![Network setting](/assets/pictures/network_switcher.png)
 
 Use `Network` to choose which Cardano environment Eternl connects to, such as **Mainnet** or **Testnet**.
 
@@ -44,7 +44,7 @@ Use `Network` to choose which Cardano environment Eternl connects to, such as **
 
 ## Language
 
-![Language setting](../../../../.gitbook/assets/pictures/language.png)
+![Language setting](/assets/pictures/language.png)
 
 Use `Language` to change the app interface language and related regional display settings where available.
 
@@ -56,7 +56,7 @@ Use `Language` to change the app interface language and related regional display
 
 ## Currency
 
-![Currency setting](../../../../.gitbook/assets/pictures/currency.png)
+![Currency setting](/assets/pictures/currency.png)
 
 Use `Currency` to choose the **fiat display currency** used for value conversion inside the app.
 
@@ -68,7 +68,7 @@ Use `Currency` to choose the **fiat display currency** used for value conversion
 
 ## Decimal Precision
 
-![Decimal Precision setting](../../../../.gitbook/assets/pictures/app_decimal_precision.png)
+![Decimal Precision setting](/assets/pictures/app_decimal_precision.png)
 
 Use `Decimal Precision` to control how many decimal places are shown for balances and values.
 
@@ -80,7 +80,7 @@ Use `Decimal Precision` to control how many decimal places are shown for balance
 
 ## Access PIN Code
 
-![Access PIN Code setting](../../../../.gitbook/assets/pictures/app_access_pin.png)
+![Access PIN Code setting](/assets/pictures/app_access_pin.png)
 
 Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your device.
 
@@ -96,7 +96,7 @@ Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your
 
 ## Biometrics Auth
 
-![Biometrics Auth setting](../../../../.gitbook/assets/pictures/app_biometrics_auth.png)
+![Biometrics Auth setting](/assets/pictures/app_biometrics_auth.png)
 
 Use `Biometrics Auth` for device-level authentication such as **Face ID** or **fingerprint** where supported.
 
@@ -112,7 +112,7 @@ Use `Biometrics Auth` for device-level authentication such as **Face ID** or **f
 
 ##Sounds
 
-![Sounds setting](../../../../.gitbook/assets/pictures/app_sounds.png)
+![Sounds setting](/assets/pictures/app_sounds.png)
 
 Use `Sounds` to enable or disable app sounds and notification feedback.
 
@@ -124,7 +124,7 @@ Use `Sounds` to enable or disable app sounds and notification feedback.
 
 ## Address Book
 
-![Address Book setting](../../../../.gitbook/assets/pictures/app_address_book.png)
+![Address Book setting](/assets/pictures/app_address_book.png)
 
 Use `Address Book` to manage saved recipient addresses inside Eternl.
 
@@ -137,7 +137,7 @@ Use `Address Book` to manage saved recipient addresses inside Eternl.
 
 ## DApp Allow List
 
-![DApp Allow List setting](../../../../.gitbook/assets/pictures/app_dapp_allow_list.png)
+![DApp Allow List setting](/assets/pictures/app_dapp_allow_list.png)
 
 Use `DApp Allow List` to control which dApps are allowed to connect to this Eternl app.
 whit
@@ -155,7 +155,7 @@ whit
 
 ## Export Wallets
 
-![Export Wallets setting](../../../../.gitbook/assets/pictures/app_export_wallets.png)
+![Export Wallets setting](/assets/pictures/app_export_wallets.png)
 
 Use `Export Wallets` to export multiple wallets from the app in one step.
 
@@ -172,7 +172,7 @@ Use `Export Wallets` to export multiple wallets from the app in one step.
 
 ## Transactions: Auto-Submit
 
-![Transactions Auto-Submit setting](../../../../.gitbook/assets/pictures/app_tx_auto_submit.png)
+![Transactions Auto-Submit setting](/assets/pictures/app_tx_auto_submit.png)
 
 Use `Transactions: Auto-Submit` to automatically send signed transactions to the network after signing.
 
@@ -188,7 +188,7 @@ Use `Transactions: Auto-Submit` to automatically send signed transactions to the
 
 ## Custom Submit Endpoint
 
-![Custom Submit Endpoint setting](../../../../.gitbook/assets/pictures/app_custom_submit_endpoint.png)
+![Custom Submit Endpoint setting](/assets/pictures/app_custom_submit_endpoint.png)
 
 Use `Custom Submit Endpoint` to send transactions through a custom node or API endpoint instead of the default setup.
 
@@ -206,7 +206,7 @@ Use `Custom Submit Endpoint` to send transactions through a custom node or API e
 
 ## Blockchain Explorer
 
-![Blockchain Explorer setting](../../../../.gitbook/assets/pictures/app_blockchain_explorer.png)
+![Blockchain Explorer setting](/assets/pictures/app_blockchain_explorer.png)
 
 Use `Blockchain Explorer` to choose which explorer Eternl opens for different item types.
 
@@ -218,7 +218,7 @@ Use `Blockchain Explorer` to choose which explorer Eternl opens for different it
 
 ## MonsterSwap
 
-![MonsterSwap setting](../../../../.gitbook/assets/pictures/app_swap_settings.png)
+![MonsterSwap setting](/assets/pictures/app_swap_settings.png)
 
 Use `MonsterSwap` to manage swap-related settings such as **slippage** and other DEX-specific behavior.
 
@@ -235,7 +235,7 @@ Use `MonsterSwap` to manage swap-related settings such as **slippage** and other
 
 ## Reset Application Cache
 
-![Reset Application Cache setting](../../../../.gitbook/assets/pictures/app_reset_application_cache.png)
+![Reset Application Cache setting](/assets/pictures/app_reset_application_cache.png)
 
 Use `Reset application cache` to clear cached app data without removing your wallets.
 
@@ -251,7 +251,7 @@ Use `Reset application cache` to clear cached app data without removing your wal
 
 Reset Application
 
-![Reset Application setting](../../../../.gitbook/assets/pictures/app_reset_application.png)
+![Reset Application setting](/assets/pictures/app_reset_application.png)
 
 Use `Reset Application` to delete **all wallets** and app data stored in Eternl on this device.
 

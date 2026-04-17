@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@assets/*": ["../.gitbook/assets/*"]
+      "@assets/*": ["public/assets/*"]
     }
   },
   "include": ["src", "vite.config.ts", "vite.config.js"]

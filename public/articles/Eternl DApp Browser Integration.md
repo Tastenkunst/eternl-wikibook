@@ -223,4 +223,4 @@ Please check the browser's dev console network section to find any erros (check 
 Please open a support ticket now and provide us with your staging/production URLs and please also provide an image (728x256px) for the DApp Browser entry.
 We will put your entry in our staging environment and you can do the final tests. Once you are sure it works, we can move it to production. 
 
-<figure><img src="/gitbook-assets/pictures/dapp_browser_guidelines.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/dapp_browser_guidelines.png" alt=""><figcaption></figcaption></figure>

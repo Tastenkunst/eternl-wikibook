@@ -112,7 +112,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("/images/static_sand_bw.jpeg");
+    background-image: url("../public/assets/pictures/static_sand_bw.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@
 
   html.light div.bg::before,
   html:not(.dark) div.bg::before {
-    background-image: url("/images/static_sand_bw-inverted.jpg");
+    background-image: url("../public/assets/pictures/static_sand_bw-inverted.jpg");
   }
 
   * {
@@ -961,8 +961,8 @@
     color: #0f172a;
   }
   .callout-tip::before, .gb-hint-info::before {
-    -webkit-mask-image: url('/gitbook-assets/icons/Info.svg');
-    mask-image: url('/gitbook-assets/icons/Info.svg');
+    -webkit-mask-image: url('../public/assets/icons/Info.svg');
+    mask-image: url('../public/assets/icons/Info.svg');
   }
 
   /* 2. WARNING */
@@ -973,8 +973,8 @@
     color: #0f172a;
   }
   .callout-warning::before, .gb-hint-warning::before {
-    -webkit-mask-image: url("/gitbook-assets/icons/Alert02.svg");
-    mask-image: url("/gitbook-assets/icons/Alert02.svg");
+    -webkit-mask-image: url("../public/assets/icons/Alert02.svg");
+    mask-image: url("../public/assets/icons/Alert02.svg");
   }
 
   /* 3. SUCCESS */
@@ -985,8 +985,8 @@
     color: #0f172a;
   }
   .callout-success::before, .gb-hint-success::before {
-    -webkit-mask-image: url('/gitbook-assets/icons/Checkmark.svg');
-    mask-image: url('/gitbook-assets/icons/Checkmark.svg');
+    -webkit-mask-image: url('../public/assets/icons/Checkmark.svg');
+    mask-image: url('../public/assets/icons/Checkmark.svg');
   }
 
   /* --- Dark Mode Overrides (Zusammengefasst) --- */

@@ -142,8 +142,8 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 0.75rem;
   width: 0.75rem;
   background-color: currentColor;
-  -webkit-mask-image: url("/gitbook-assets/icons/Cancel01.svg");
-  mask-image: url("/gitbook-assets/icons/Cancel01.svg");
+  -webkit-mask-image: url("/assets/icons/Cancel01.svg");
+  mask-image: url("/assets/icons/Cancel01.svg");
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
