@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { TocItem } from '@/lib/content';
-import TocItemRow from '@/components/TocItem.vue';
+import type { TocItem }       from '@/lib/content';
+import TocItemRow             from '@/components/TocItem.vue';
 
 defineProps<{ items: TocItem[] }>();
 </script>

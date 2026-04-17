@@ -79,7 +79,7 @@ defineProps<{
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding-right: 2rem; /* Platz für den absoluten Pfeil */
+  padding-right: 2rem;
 }
 
 .child-nav-icon {

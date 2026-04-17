@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TocItem } from '@/lib/content';
+import type { TocItem }       from '@/lib/content';
 
 defineOptions({ name: 'TocItem' });
 
