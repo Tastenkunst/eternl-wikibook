@@ -32,7 +32,7 @@ If you want to keep your cryptocurrency safe for a long time, it's better to use
 
 ## 4. Use two-step verification (2FA)
 
-Two-Factor Authentication (2FA) is like adding a second authentication method to your online accounts. It makes it harder for someone else to gain access to your accounts. When you use 2FA, you need two different ways to prove it's you. This could be something like a password and then a code shown in your authenticator app.
+Two-Factor Authentication (2FA) is like adding a second authentication method to your online accounts. It makes it harder for someone else to gain access to your accounts. When you use 2FA, you need two different ways to prove it's you. [^test1] This could be something like a password and then a code shown in your authenticator app.
 
 ## 5. Check who contacts you
 
@@ -76,7 +76,7 @@ Eternl wallets ensure that master keys are encrypted with a spending password an
 
 Keep your wallet software up-to-date and follow general best practices for digital security.
 
-Stay informed by watching tutorials and reading guides on how to effectively use Eternl.
+Stay informed by watching tutorials and reading guides on how to effectively use Eternl.[^3]
 
 Remember, the key to security is not just the tools you use but also your practices in managing them.
 
