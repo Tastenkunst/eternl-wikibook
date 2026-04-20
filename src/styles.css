@@ -112,7 +112,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("../public/assets/pictures/static_sand_bw.jpeg");
+    background-image: url("/assets/pictures/static_sand_bw.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@
 
   html.light div.bg::before,
   html:not(.dark) div.bg::before {
-    background-image: url("../public/assets/pictures/static_sand_bw-inverted.jpg");
+    background-image: url("/assets/pictures/static_sand_bw-inverted.jpg");
   }
 
   * {
