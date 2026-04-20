@@ -6,11 +6,11 @@ description: How to Move Your Digital Wallet to a Physical Device
 
 Here is a brief overview of selected Cardano light wallets offering hardware wallet compatibility (list not exhaustive).
 
-| Device                        | Cardano light wallet                                               |
-| ----------------------------- | ------------------------------------------------------------------ |
-| Ledger (Nano X, S and S Plus) | <p>Eternl, Gero, Lace,</p><p>Vespr (on mobile ony), Yoroi</p>      |
-| Trezor                        | Eternl, Lace, Yoroi                                                |
-| Keystone                      | <p>Eternl, Vespr (on mobile ony)</p>                               |
+| Device                        | Cardano light wallet                                           |
+|:------------------------------|:---------------------------------------------------------------|
+| Ledger (Nano X, S and S Plus) | <p>Eternl, Gero, Lace,</p><p>Vespr (on mobile only), Yoroi</p> |
+| Trezor                        | Eternl, Lace, Yoroi                                            |
+| Keystone                      | <p>Eternl, Vespr (on mobile ony)</p>                           |
 
 While you cannot directly transfer the wallet itself to a hardware device, you can securely move your assets to a new wallet created on a hardware device, such as through Eternl wallet.
 

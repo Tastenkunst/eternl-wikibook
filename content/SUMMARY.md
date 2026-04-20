@@ -37,9 +37,6 @@
 
 * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
 
-* [For Developers](for-developers/README.md)
-    * [DApp Browser Integration](for-developers/dapp-browser-integration.md)
-
 * [Cardano Basics](cardano-basics/README.md)
     * [Basic tips for keeping your assets safe and using Eternl Wallet securely](cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
     * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md)
@@ -51,6 +48,9 @@
     * [The eUTxO Model](cardano-basics/eutxo-model.md)
     * [How Staking Works](cardano-basics/how-staking-works.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
+
+* [For Developers](for-developers/README.md)
+    * [DApp Browser Integration](for-developers/dapp-browser-integration.md)
 
 * [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 
