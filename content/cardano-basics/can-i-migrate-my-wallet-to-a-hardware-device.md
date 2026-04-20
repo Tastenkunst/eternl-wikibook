@@ -34,6 +34,6 @@ Choose the option to pair with either Keystone, Trezor or Ledger wallet, dependi
 
 To transfer all assets to your hardware wallet, first obtain the receiving address. This can be done by accessing the receive option in the Eternl wallet and copying the provided address. Utilize this address to relocate all your assets, from the wallet you're moving from.
 
-{% hint style="success" %}
+::: success
 After your transactions have been registered on the blockchain, you'll successfully receive all assets from your original wallet in your hardware wallet, thus completing the process.
-{% endhint %}
+:::

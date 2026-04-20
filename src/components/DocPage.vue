@@ -353,10 +353,10 @@ function wrapSections(html: string): string {
         <img :src="coverSrc" alt="" class="banner-image h-48 w-full object-cover" />
       </div>
 
-      <header>
+      <header class="mb-1.5">
 <!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
-        <h1 class="font-display text-3xl color-primary sm:text-4xl">{{ doc.title }}</h1>
-        <p v-if="doc.description" class="text-s text-ink-70 italic -mt-3">{{ doc.description }}</p>
+        <h1 class="font-display text-3xl color-primary sm:text-4xl mb-0">{{ doc.title }}</h1>
+        <p v-if="doc.description" class="text-s text-ink-70 italic mb-0">{{ doc.description }}</p>
       </header>
 
 <!--      <div class="mb-8 lg:hidden" v-if="doc.toc.length">-->

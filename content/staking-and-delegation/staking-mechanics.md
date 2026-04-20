@@ -1,4 +1,5 @@
-﻿# How Staking Works
+﻿
+# Staking Mechanics
 
 Cardano epochs (currently 5 days long) serve as the heartbeat of staking. Each epoch begins with a snapshot of the ledger so the network knows which stake keys are eligible to produce blocks and which stake pools to delegate to. Eternl keeps your payment and stake addresses separate: payment credentials control the UTxOs that hold ADA, while stake credentials point to your reward account and decide how your stake is assigned.
 
