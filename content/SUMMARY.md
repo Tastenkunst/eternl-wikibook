@@ -29,7 +29,7 @@
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
 
 * [Staking & Delegation](staking-and-delegation/staking-and-delegation.md)
-    * [How Staking Works](staking-and-delegation/how-staking-works.md)
+    * [Staking Mechanics](staking-and-delegation/staking-mechanics.md)
     * [Stake Pool Rating](staking-and-delegation/stake-pool-rating.md)
 
 * [Multi-Sig](multi-sig.md)
@@ -50,8 +50,8 @@
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
     * [The eUTxO Model](cardano-basics/eutxo-model.md)
-    * [Staking Mechanics](cardano-basics/staking-mechanics.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
+    * [How Staking Works](staking-and-delegation/how-staking-works.md)
 
 * [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 
