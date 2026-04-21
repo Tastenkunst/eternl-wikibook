@@ -32,9 +32,9 @@ To date, Catalyst rounds have distributed millions of ADA to hundreds of project
 | **Fund 12** | May 2024 | 50,000,000 ADA | TBD | TBD |
 | **Fund 13** | Dec 2024 | 46,476,623 ADA | 1,639 | 199 |
 
-<div class="callout-tip">
-> Fund 13 saw over **310,000 votes cast**, with a significant focus on enterprise R&D and developer-centric tooling.
-</div>
+::: info
+Fund 13 saw over **310,000 votes cast**, with a significant focus on enterprise R&D and developer-centric tooling.
+:::
 
 ---
 

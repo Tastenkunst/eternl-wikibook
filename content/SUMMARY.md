@@ -18,7 +18,7 @@
     * [Managing Accounts](using-eternl/managing-accounts.md)
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)
     * [Understanding Balances](using-eternl/understanding-balances.md)
-    * [DApp connect options](using-eternl/Dapp-connect-options.md)
+    * [DApp Connection Options](using-eternl/dapp-connection-options.md)
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
