@@ -33,7 +33,8 @@
 
 * [Multi-Sig](multi-sig.md)
 
-* [FAQ](faq/faq.md)
+* [FAQ](faq/README.md)
+  * [Why My Wallets Dissapeared?](faq/why-my-wallets-disappeared.md)
 
 * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
 

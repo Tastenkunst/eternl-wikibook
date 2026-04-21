@@ -176,7 +176,6 @@ function hydrateNav(items: NavItem[]): void {
     if (isExternalLink(item.href)) {
       item.external = true;
     } else if (item.href.endsWith('.md')) {
-      // Wir bauen den Map-Key: "content/" + Pfad aus der SUMMARY
       const repoPath = `content/${item.href.replace(/^\//, '')}`;
       const routePath = toRoutePath(repoPath);
 
@@ -235,7 +234,6 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
   let footnoteTokens: Token[] = [];
 
   if (footnoteIndex !== -1) {
-    // Sauber trennen: Alles davor ist Content, alles ab da sind Fußnoten
     mainTokens = tokens.slice(0, footnoteIndex);
     footnoteTokens = tokens.slice(footnoteIndex);
   }

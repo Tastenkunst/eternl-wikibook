@@ -1,10 +1,4 @@
----
-description: Frequently Asked Questions
----
-
-# FAQ
-
-## My Wallets Disappeared
+# Why My Wallets Disappeared?
 
 It can be alarming to open Eternl and find your wallet list empty. Because Eternl is a **non-custodial** wallet, your data is stored locally in your browser's database (IndexedDB) rather than on a central server. If this local data is deleted by your system or browser, the wallet "disappears" from the interface.
 
@@ -12,17 +6,17 @@ It can be alarming to open Eternl and find your wallet list empty. Because Etern
 **Your funds are safe.** Your assets live on the Cardano blockchain, not in the app. You can always regain access using your 15/24-word recovery phrase, your hardware device, or a previously exported backup file.
 :::
 
-### Common Causes
+## Common Causes
 
-#### 1. Full Disk or Storage Constraints
+### 1. Full Disk or Storage Constraints
 
 If your device's main drive (e.g., **C:/ drive**) is nearly full, your operating system may automatically trigger a cleanup of "unnecessary" data. Browser cache and local storage are often the first targets for these automated deletions to ensure the OS continues to run smoothly.
 
-#### 2. Browser "Garbage" Collection
+### 2. Browser "Garbage" Collection
 
 Modern browsers (Chrome, Brave, Edge) periodically perform maintenance to optimize performance. This routine cleanup can occasionally wipe the **IndexedDB** storage where Eternl keeps your wallet metadata and preferences.
 
-#### 3. 3rd Party Cleanup Tools
+### 3. 3rd Party Cleanup Tools
 
 Software such as **CCleaner** or system "Optimize" apps on mobile devices often identify browser extension data as junk. If these programs are set to run automatically, they may delete your Eternl configuration.
 
@@ -40,7 +34,7 @@ In older versions of Eternl, a **Persistent Data** toggle was available in the s
 
 ---
 
-### The Best Protection: .json Backups
+## The Best Protection: .json Backups
 
 Instead of relying on browser persistence, you should regularly export an **Eternl Wallet Backup**.
 
@@ -49,7 +43,7 @@ Instead of relying on browser persistence, you should regularly export an **Eter
 
 >Note: A backup file is a convenience tool; it does not >replace your 15 or 24-word recovery phrase. Always keep your >physical seed phrase written down in a secure, offline > location.
 
-### How to Restore Your Wallets
+## How to Restore Your Wallets
 
 If your wallets have disappeared and you have your backup file ready, follow these exact steps to restore them:
 
@@ -62,7 +56,7 @@ If your wallets have disappeared and you have your backup file ready, follow the
 
 ---
 
-#### Troubleshooting
+### Troubleshooting
 
 <details>
 
