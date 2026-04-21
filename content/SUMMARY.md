@@ -27,7 +27,7 @@
     * [Common Mistakes to Avoid](security-and-privacy/common-mistakes-to-avoid.md)
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
 
-* [Staking & Delegation](staking-and-delegation/staking-and-delegation.md)
+* [Staking & Delegation](staking-and-delegation/README.md)
     * [Staking Mechanics](staking-and-delegation/staking-mechanics.md)
     * [Stake Pool Rating](staking-and-delegation/stake-pool-rating.md)
 

@@ -56,9 +56,9 @@ Cardano's development is divided into five distinct phases:
 * **CIPs (Cardano Improvement Proposals)**: Formalized process for new features or protocol adjustments, inspired by Bitcoin’s BIP process.
 * **Protocol Decisions**: ADA holders can propose and vote on core protocol changes, ensuring decisions are made collectively rather than by a central entity.
 
-{% hint style="info" %}
+::: info
 **Key Distinction**: Catalyst funds **external community projects**, while Governance manages **internal protocol amendments** and treasury resource allocation.
-{% endhint %}
+:::
 
 ## References
 * Kiayias, A., & Lazos, P. (2022, September). *SoK: Blockchain Governance—IOHK Research*.
