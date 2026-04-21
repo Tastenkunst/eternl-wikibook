@@ -22,7 +22,8 @@ On supported browsers, look for the install option in the address bar to add Ete
 * Available for **Chrome**, **Brave**, and other Chromium-based browsers
 * Lightweight and ideal for seamless dApp integration
 
-### ![Mobile App](/assets/icons/Application.svg) Mobile App _(Beta / Limited)_
+<!-- ### ![Mobile App](/assets/icons/Application.svg) Mobile App _(Beta / Limited)_ -->
+### Mobile App _(Beta / Limited)_
 
 * Android version available via direct APK or third-party stores
 * iOS supported in web and via app

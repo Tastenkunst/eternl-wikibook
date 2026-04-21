@@ -461,7 +461,7 @@ function toRoutePath(repoPath: string): string {
     normalized = normalized.substring(8);
   }
 
-  if (normalized === 'README.md') return '/';
+  if (normalized === 'README.md') return '/home';
 
   if (normalized.endsWith('/README.md')) {
     return `/${normalized.replace(/\/README\.md$/, '')}`;

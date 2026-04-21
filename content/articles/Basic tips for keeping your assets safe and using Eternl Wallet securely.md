@@ -23,16 +23,15 @@ Keep the written seed phrase in a safe and secure location, such as a safe or a 
 
 - Avoid Digital Storage
 
-<div class="callout-warning">
+::: warning
 Refrain from storing your seed phrase digitally, such as in screenshots, photos, text files, or cloud storage, as these methods are vulnerable to cyber threat​s.
-</div>
+:::
 <br>
-<div class="callout-tip">
-<strong>
-Keep your seed phrase safe in several ways
-</strong><br>
+::: info
+**Keep your seed phrase safe in several ways**
+<br>
 It's wise to have more than one secure method to keep your seed phrase protected. This means you could have a paper copy stored safely and another copy on a durable material like metal that won't easily get damaged. This way, if one copy gets lost or ruined, you still have another copy to use. Make sure to store these copies in different spots. If something bad happens to one spot, the other copy will still be safe. Doing this helps ensure you can always access your seed phrase, no matter what.
-</div>
+:::
 
 ## 2. Use trusted wallets for Cardano (ADA)
 

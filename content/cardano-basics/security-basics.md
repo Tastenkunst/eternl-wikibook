@@ -1,8 +1,8 @@
 ---
-description: security basics
+description: Basic tips for keeping your assets safe and using Eternl Wallet securely
 ---
 
-# Basic tips for keeping your assets safe and using Eternl Wallet securely
+# Security Basics
 
 ## 1. Keep your seed phrase safe
 

@@ -18,7 +18,7 @@
     * [Managing Accounts](using-eternl/managing-accounts.md)
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)
     * [Understanding Balances](using-eternl/understanding-balances.md)
-    * [DApp connect options](using-eternl/Dapp-connect-options.md)
+    * [DApp Connection Options](using-eternl/dapp-connection-options.md)
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
@@ -27,7 +27,7 @@
     * [Common Mistakes to Avoid](security-and-privacy/common-mistakes-to-avoid.md)
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
 
-* [Staking & Delegation](staking-and-delegation/staking-and-delegation.md)
+* [Staking & Delegation](staking-and-delegation/README.md)
     * [Staking Mechanics](staking-and-delegation/staking-mechanics.md)
     * [Stake Pool Rating](staking-and-delegation/stake-pool-rating.md)
 
@@ -41,13 +41,13 @@
   * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
 
 * [Cardano Basics](cardano-basics/README.md)
-    * [Basic tips for keeping your assets safe and using Eternl Wallet securely](cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
-    * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem.md)
-    * [A brief overview of DeFi (Decentralized Finance)](cardano-basics/a-brief-overview-of-defi-decentralized-finance.md)
+    * [Security Basics](cardano-basics/security-basics.md)
+    * [How Staking Works](cardano-basics/how-staking-works.md)
+    * [DeFi (Decentralized Finance)](cardano-basics/defi-decentralized-finance.md)
+    * [DEXes & Marketplaces](cardano-basics/dexes-and-marketplaces.md)
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
     * [The eUTxO Model](cardano-basics/eutxo-model.md)
-    * [How Staking Works](cardano-basics/how-staking-works.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
 
 * [For Developers](for-developers/README.md)

@@ -32,9 +32,9 @@ To date, Catalyst rounds have distributed millions of ADA to hundreds of project
 | **Fund 12** | May 2024 | 50,000,000 ADA | TBD | TBD |
 | **Fund 13** | Dec 2024 | 46,476,623 ADA | 1,639 | 199 |
 
-<div class="callout-tip">
-> Fund 13 saw over **310,000 votes cast**, with a significant focus on enterprise R&D and developer-centric tooling.
-</div>
+::: info
+Fund 13 saw over **310,000 votes cast**, with a significant focus on enterprise R&D and developer-centric tooling.
+:::
 
 ---
 
@@ -56,9 +56,9 @@ Cardano's development is divided into five distinct phases:
 * **CIPs (Cardano Improvement Proposals)**: Formalized process for new features or protocol adjustments, inspired by Bitcoin’s BIP process.
 * **Protocol Decisions**: ADA holders can propose and vote on core protocol changes, ensuring decisions are made collectively rather than by a central entity.
 
-{% hint style="info" %}
+::: info
 **Key Distinction**: Catalyst funds **external community projects**, while Governance manages **internal protocol amendments** and treasury resource allocation.
-{% endhint %}
+:::
 
 ## References
 * Kiayias, A., & Lazos, P. (2022, September). *SoK: Blockchain Governance—IOHK Research*.

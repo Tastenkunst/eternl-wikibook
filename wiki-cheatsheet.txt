@@ -1,9 +1,10 @@
 wiki - layout - cheatsheet
 
 
-
+frontmatter:
 
 ---
+description: lorem ipsum
 disableH2Collapse: true
 ---
 
@@ -66,7 +67,7 @@ syntax to insert pictures:
 
 syntax for callout boxes:
 
-::: tip
+::: tip   			info geht auch. identisches styling
 lorem ipsum
 :::
 
@@ -79,7 +80,7 @@ lorem ipsum
 :::
 
 
-alternativ geht auch
+alternativ geht auch, sollte aber nicht mehr genutzt werden
 {% hint style="info" %}					success warning
 lorem ipsum
 {% endhint %}

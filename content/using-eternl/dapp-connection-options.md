@@ -1,20 +1,21 @@
 ---
-Description: In-wallet DApp browser, browser extensions, CardanoConnect, WalletConnect
+description: 
 ---
 <!-- markdownlint-disable-file MD033 -->
 
-# In-wallet DApp browser, browser extensions, CardanoConnect, WalletConnect
+<!-- # In-wallet DApp browser, browser extensions, CardanoConnect, WalletConnect -->
+# DApp Connection Options
 
-Eternl wallet offers four distinct methods for interacting with decentralized applications (DApps).
+<!-- Eternl wallet offers four distinct methods for interacting with decentralized applications (DApps). -->
 
 ## 1. DApp Browser (In-Wallet)
 
 Eternl users can easily connect their wallets to DApps listed within Eternl's integrated DApp Browser. This feature, designed for user convenience, includes a small transaction fee to support the ongoing development of Eternl
 For transactions amounting to 100 ADA or more, a convenience fee of 0.1% of the purchase value or 1 ADA, whichever is greater, will be applied.
 
-<div class="callout-tip">
-> This feature is available only for DApps that have opted in.
-</div>
+::: info
+This feature is available only for DApps that have opted in.
+:::
 
 Before you can connect to a DApp, you will be asked which wallet/account you want  to use to interact with this DApp. To do this, simply click on the "Connect as DApp account" button under the respective account.
 
@@ -26,18 +27,23 @@ Before visiting the DApp website, activate the desired account from your account
 
 Once the account is successfully connected, an icon will appear in the upper right corner of the screen, indicating the active connection even if you navigate away from the account list page.
 
-<div class="callout-tip">
-> To do that, activate the account in the account list and choose the 3 dots menue on the right side of the account card. There you choose "Set as Forced DApp Account"
-</div>
+::: info
+To do that, activate the account in the account list and choose the 3 dots menue on the right side of the account card. There you choose "Set as Forced DApp Account"
+:::
 
-1. - Visit the DApp Website
+
+### Steps
+
+1. Visit the DApp Website
 After selecting your account, visit the DApp website where you intend to connect your wallet.
-1. - Connect Your Wallet
+2. Connect Your Wallet
 On the DApp website, initiate the connection process by selecting "Connect Wallet" or a similar link.
 
-<div class="callout-success">
+<!--
+::: success
 By following these steps, you will connect to DApps using the Eternl wallet browser extension.
-</div>
+:::
+-->
 
 <!--
 ## 3. CardanoConnect (beta) – (Sundaeswap)
@@ -53,9 +59,9 @@ It is designed to work seamlessly with various Cardano wallets, such as Eternl, 
 **- Security and Privacy**
 CardanoConnect ensures secure connections between DApps and wallets, leveraging Cardano’s robust security features.
 
-<div class="callout-tip">
+::: info
 > Currently this feature only works with SundaeSwap, here is a tutorial by SundaeSwap Labs about Cardano Connect (CIP-45) (beta) with Eternl
-</div>
+:::
 
 ---
 
@@ -88,9 +94,9 @@ Ensures that all communications between the wallet and the DApp are end-to-end e
 **- User Experience**
 Simplifies the user experience by allowing users to interact with DApps without exposing their private keys, improving security and convenience.
 
-<div class="callout-tip">
+::: info
 Currently this feature only works with Minswap DEX and WingRiders.
-</div>
+:::
 
 The procedure to connect is similar:
 
@@ -98,9 +104,9 @@ The procedure to connect is similar:
 
 Before visiting the DApp website, activate the desired account from your account list.
 
-<div class="callout-tip">
+::: info
 To do that, activate the account in the account list and choose from the 3 dot menu on the right "Set as Forced DApp Account".
-</div>
+:::
 
 ### Visit the DApp Website
 
@@ -112,7 +118,7 @@ Insert this string in the provided field by Eternl:
 
 **[ All DApp connection Options > WalletConnect > Connect DApp and Confirm ]**
 
-<div class="callout-success">
+::: success
 > You are now connected with you chosen account to interact with the DApp.
-</div>
+:::
 -->
