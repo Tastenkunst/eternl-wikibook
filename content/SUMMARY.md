@@ -35,14 +35,14 @@
 
 * [FAQ](faq/README.md)
   * [Why My Wallets Dissapeared?](faq/why-my-wallets-disappeared.md)
+  * [Can I migrate my wallet to a hardware device?](faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
+  * [Can I restore my hardware wallet phrase on Eternl?](faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
 
 * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
 
 * [Cardano Basics](cardano-basics/README.md)
     * [Basic tips for keeping your assets safe and using Eternl Wallet securely](cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
-    * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md)
-    * [Can I migrate my wallet to a hardware device?](cardano-basics/can-i-migrate-my-wallet-to-a-hardware-device.md)
-    * [Can I restore my hardware wallet phrase on Eternl?](cardano-basics/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
+    * [An Overview of DEXes and Marketplaces pertinent to the Cardano Ecosystem.](cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem.md)
     * [A brief overview of DeFi (Decentralized Finance)](cardano-basics/a-brief-overview-of-defi-decentralized-finance.md)
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)

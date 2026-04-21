@@ -49,6 +49,9 @@ inline bsp:
 
 ![Pointing hand]&#40;/assets/icons/FingerTouch03.svg&#41; Check out our tutorials on:
 
+
+
+Kommentarsyntax
 >>> first line in a markdown file to disable errors:
 
 <!-- markdownlint-disable-file MD033 -->

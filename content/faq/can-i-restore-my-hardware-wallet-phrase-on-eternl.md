@@ -10,9 +10,9 @@ Eternl, the Cardano Community wallet, has many useful features like bringing bac
 However, it's not a good idea to use your hardware wallet's recovery phrase on Eternl or any other software wallet to set it up for regular use.
 :::
 
-{% hint style="danger" %}
+::: warning
 Doing this goes against the main reason you'd use a hardware wallet in the first place.\
 Hardware wallets are made to keep your digital money safe by storing your details offline, away from hackers.
-{% endhint %}
+:::
 
 When you put your hardware wallet's recovery phrase into a software wallet, you risk making it less secure. It's always best to use another hardware wallet if you need to recover your account.
