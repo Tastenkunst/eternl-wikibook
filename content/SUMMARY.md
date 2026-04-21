@@ -51,8 +51,7 @@
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
     * [The eUTxO Model](cardano-basics/eutxo-model.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
-    * [How Staking Works](staking-and-delegation/how-staking-works.md)
-
+    * [How Staking Works](cardano-basics/how-staking-works.md)
 * [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 
 * [Contact & Support](contact-and-support.md)
