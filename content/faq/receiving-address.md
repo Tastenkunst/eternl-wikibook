@@ -15,4 +15,4 @@ Description: How do I find my receiving address?
 1. On the main screen of the mobile app, tap the black **`Receive`** button in the lower part of your wallet card.
 2. Your receiving address and the corresponding QR code will be displayed.
 
-<figure><img src="/assets/pictures/receive_address_mobile.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/assets/pictures/receive_address_mobile.jpg" alt=""><figcaption></figcaption></figure>

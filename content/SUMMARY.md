@@ -36,6 +36,7 @@
 * [FAQ](faq/README.md)
   * [How do I find my receiving address?](faq/receiving-address.md)
   * [Why My Wallets Dissapeared?](faq/why-my-wallets-disappeared.md)
+  * [What is a Recovery Phrase and why is it so important?](faq/recovery-phrase.md)
   * [Can I migrate my wallet to a hardware device?](faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
   * [Can I restore my hardware wallet phrase on Eternl?](faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
   * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
