@@ -680,21 +680,29 @@
     transition: -webkit-mask-image 0.3s ease;
   }
 
-  .table-wrapper.can-scroll-right {
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  @media (pointer: coarse) {
+    .table-wrapper.can-scroll-right {
+      -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+      mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    }
+
+    .table-wrapper.can-scroll-left {
+      -webkit-mask-image: linear-gradient(to left, black 90%, transparent 100%);
+      mask-image: linear-gradient(to left, black 90%, transparent 100%);
+    }
+
+    .table-wrapper.can-scroll-left.can-scroll-right {
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
+    }
   }
 
-  .table-wrapper.can-scroll-left {
-    -webkit-mask-image: linear-gradient(to left, black 90%, transparent 100%);
-    mask-image: linear-gradient(to left, black 90%, transparent 100%);
+  @media (pointer: fine) {
+    .table-wrapper {
+      -webkit-mask-image: none !important;
+      mask-image: none !important;
+    }
   }
-
-  .table-wrapper.can-scroll-left.can-scroll-right {
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 85%, transparent 100%);
-  }
-
   .doc-content table {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
