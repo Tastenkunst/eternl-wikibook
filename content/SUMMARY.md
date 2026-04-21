@@ -34,11 +34,11 @@
 * [Multi-Sig](multi-sig.md)
 
 * [FAQ](faq/README.md)
+  * [How do I find my receiving address?](faq/receiving-address.md)
   * [Why My Wallets Dissapeared?](faq/why-my-wallets-disappeared.md)
   * [Can I migrate my wallet to a hardware device?](faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
   * [Can I restore my hardware wallet phrase on Eternl?](faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
-
-* [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
+  * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
 
 * [Cardano Basics](cardano-basics/README.md)
     * [Basic tips for keeping your assets safe and using Eternl Wallet securely](cardano-basics/basic-tips-for-keeping-your-assets-safe-and-using-eternl-wallet-securely.md)
@@ -58,3 +58,7 @@
 * [Contact & Support](contact-and-support.md)
 
 * [Impressum](impressum.md)
+
+
+[def]: faq/receiving-address.md
+[def2]: faq/why-my-wallets-disappeared.md
