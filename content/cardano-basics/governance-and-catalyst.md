@@ -15,22 +15,22 @@ Project Catalyst gives ADA holders the power to propose and vote on ideas that c
 
 To date, Catalyst rounds have distributed millions of ADA to hundreds of projects. Fund 13 specifically targeted high-impact technical development through specialized tracks like "Cardano Partners" and "Cardano Open: Developers."
 
-| Fund | Date | Amount Distributed | Proposals Submitted | Proposals Funded |
-| :--- | :--- | :--- | :--- | :--- |
-| **Fund 0 (Pilot)** | Sept 2020 | 0 ADA | Not documented | 3 |
-| **Fund 1** | September 2020 | 0 USD equivalent in ADA | 56 | 11 |
-| **Fund 2** | Dec 2020 | 205,570 USD (in ADA) | 78 | 12 |
-| **Fund 3** | March 2021 | 399,465 USD equivalent in ADA | 150 | 20 |
-| **Fund 4** | June 2021 | 734,097 USD equivalent in ADA | 279 | 52 |
-| **Fund 5** | September 2021 | 1,689,524 USD equivalent in ADA | 271 | 69 |
-| **Fund 6** | Nov 2021 | 3,170,178 USD (in ADA) | 711 | 151 |
-| **Fund 7** | January 2022 | 5,806,665 USD equivalent in ADA | 936 | 264 |
-| **Fund 8** | March 2022 | 11,893,874 USD equivalent in ADA | 1,134 | 367 |
-| **Fund 9** | July 2022 | 10,845,861 USD equivalent in ADA | 1,166 | 207 |
-| **Fund 10** | June 2023 | 23,550,024 ADA | 1,467 | 192 |
-| **Fund 11** | Jan 2024 | 9,492,056 ADA | 920 | 300 |
-| **Fund 12** | May 2024 | 50,000,000 ADA | TBD | TBD |
-| **Fund 13** | Dec 2024 | 46,476,623 ADA | 1,639 | 199 |
+| Fund               | Date           | Amount Distributed               | Proposals Submitted | Proposals Funded |
+|:-------------------|:---------------|:---------------------------------|:--------------------|:-----------------|
+| **Fund 0 (Pilot)** | Sept 2020      | 0 ADA                            | Not documented      | 3                |
+| **Fund 1**         | September 2020 | 0 USD equivalent in ADA          | 56                  | 11               |
+| **Fund 2**         | Dec 2020       | 205,570 USD (in ADA)             | 78                  | 12               |
+| **Fund 3**         | March 2021     | 399,465 USD equivalent in ADA    | 150                 | 20               |
+| **Fund 4**         | June 2021      | 734,097 USD equivalent in ADA    | 279                 | 52               |
+| **Fund 5**         | September 2021 | 1,689,524 USD equivalent in ADA  | 271                 | 69               |
+| **Fund 6**         | Nov 2021       | 3,170,178 USD (in ADA)           | 711                 | 151              |
+| **Fund 7**         | January 2022   | 5,806,665 USD equivalent in ADA  | 936                 | 264              |
+| **Fund 8**         | March 2022     | 11,893,874 USD equivalent in ADA | 1,134               | 367              |
+| **Fund 9**         | July 2022      | 10,845,861 USD equivalent in ADA | 1,166               | 207              |
+| **Fund 10**        | June 2023      | 23,550,024 ADA                   | 1,467               | 192              |
+| **Fund 11**        | Jan 2024       | 9,492,056 ADA                    | 920                 | 300              |
+| **Fund 12**        | May 2024       | 50,000,000 ADA                   | TBD                 | TBD              |
+| **Fund 13**        | Dec 2024       | 46,476,623 ADA                   | 1,639               | 199              |
 
 ::: info
 Fund 13 saw over **310,000 votes cast**, with a significant focus on enterprise R&D and developer-centric tooling.
