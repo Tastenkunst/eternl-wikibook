@@ -6,7 +6,7 @@ Cardano is built on the Extended Unspent Transaction Output (eUTxO) model, which
 
 Every transaction stamps the UTxO with metadata about the payment address (which mixes a payment script or multisig key) and the stake credential that ties it to your staking reward destination. The Eternl viewer stays in the dark theme so these diagrams stand out, blending the azure highlights with the deep background used throughout the docs.
 
-## Estimated Locked vs Estimated Available
+## Estimated Locked vs. Estimated Available
 
 Eternl surfaces two helpful balance buckets when you open a wallet:
 

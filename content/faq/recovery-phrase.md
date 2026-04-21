@@ -1,8 +1,8 @@
 
-# What is a Recovery Phrase and why is it so important?
+# What Is a Recovery Phrase and Why Is It So Important?
 <!---
 -->
-Your 24-word recovery phrase (seed phrase) is the **master key** to your entire wallet. Its purpose is to restore access to your funds on a new device if yours is lost, stolen, or broken. Anyone who has this phrase has **full control** of your funds.
+Your 24-word recovery phrase ([seed phrase](../security-and-privacy/what-is-a-seed-phrase.md)) is the **master key** to your entire wallet. Its purpose is to restore access to your funds on a new device if yours is lost, stolen, or broken. Anyone who has this phrase has **full control** of your funds.
 
 ::: warning
 **CRITICAL SECURITY RULES:**

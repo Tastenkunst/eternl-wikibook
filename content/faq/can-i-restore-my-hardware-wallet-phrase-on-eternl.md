@@ -2,7 +2,7 @@
 description: Is it possible to recover my hardware wallet's secret phrase using Eternl?
 ---
 
-# Can I restore my hardware wallet phrase on Eternl?
+# Can I Restore My Hardware Wallet Phrase on Eternl?
 
 Eternl, the Cardano Community wallet, has many useful features like bringing back old wallets using a recovery phrase. That said, not all seed phrases are created equally, for example Ledger uses a custom format, which intentionally is not supported to restore within Eternl.
 

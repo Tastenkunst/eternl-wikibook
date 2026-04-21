@@ -3,7 +3,7 @@ description: Cardano roadmap overview - A journey towards a decentralized future
 ---
 <!-- markdownlint-disable-file MD033 -->
 
-# Cardano roadmap overview - A journey towards a decentralized future
+# Cardano Roadmap Overview - A Journey Towards a Decentralized Future
 
 Cardano, a third-generation blockchain platform, was launched in 2017. Cardano's development roadmap consists of multiple eras, each with distinct goals and achievements. These eras include Byron, Shelley, Goguen, Basho, and Voltaire, focusing sequentially on laying the foundational network, decentralization, smart contracts implementation, scalability improvements, and finally, self-sustainability through governance.
 

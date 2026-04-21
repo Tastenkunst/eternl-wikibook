@@ -46,7 +46,7 @@ By following these steps, you will connect to DApps using the Eternl wallet brow
 -->
 
 <!--
-## 3. CardanoConnect (beta) – (Sundaeswap)
+## 3. CardanoConnect (Beta) – (Sundaeswap)
 
 CardanoConnect is a framework designed specifically for the Cardano blockchain to facilitate the interaction between decentralized applications (DApps) and Cardano wallets. Although it’s not as widely recognized as WalletConnect, it serves a similar purpose in the Cardano ecosystem. It is based on CIP 45, which defines the standard for secure wallet-DApp communication on the Cardano network. Here are some key features:
 
@@ -78,7 +78,7 @@ CardanoConnect ensures secure connections between DApps and wallets, leveraging 
   <figcaption>Cardano Connect (CIP-45) Tutorial</figcaption>
 </figure>
 
-## 4. WalletConnect (beta) – (Minswap, Wingriders)
+## 4. WalletConnect (Beta) – (Minswap, Wingriders)
 
 WalletConnect is an open-source protocol that allows users to connect their cryptocurrency wallets to DApps across multiple blockchain platforms. Key aspects include:
 
@@ -100,7 +100,7 @@ Currently this feature only works with Minswap DEX and WingRiders.
 
 The procedure to connect is similar:
 
-### Select Your Account to Interact with the DApp
+### Select Your Account to Interact With the DApp
 
 Before visiting the DApp website, activate the desired account from your account list.
 

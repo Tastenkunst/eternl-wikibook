@@ -3,15 +3,15 @@ Description: How to integrate my DApp into Eternl DApp Browser
 ---
 <!-- markdownlint-disable-file MD031 MD033 -->
 
-# How to integrate my DApp into Eternl DApp Browser?
+# How to Integrate My DApp Into Eternl DApp Browser?
 
-## Technical requirements
+## Technical Requirements
 
 To be included in the DApp Browser, some technical hurdles have to be overcome.
 
 First of all, the bridge:  
 
-### Cardano dapp connector bridge
+### Cardano DApp Connector Bridge
 
 A postMessage bridge to connect to dApps loaded into an iframe.
 
@@ -102,7 +102,7 @@ var bridgeFullApi = {
 The API objects will be automatically recreated on the dApp side using postMessage calls.
 See cardano-dapp-connector-bridge-init-wallet.js for more hints on how to implement it.
 
-### Response headers
+### Response Headers
 
 There are two options available.
 

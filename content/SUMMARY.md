@@ -1,4 +1,4 @@
-# Table of contents
+# Table of Contents
 
 * [Home](README.md)
 
@@ -22,7 +22,7 @@
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
-    * [Hot Wallets vs Cold Wallets](security-and-privacy/hot-wallets-vs-cold-wallets..md)
+    * [Hot Wallets vs Cold Wallets](security-and-privacy/hot-wallets-vs-cold-wallets.md)
     * [How to Store Your Seed Phrase Securely](security-and-privacy/how-to-store-your-seed-phrase-securely.md)
     * [Common Mistakes to Avoid](security-and-privacy/common-mistakes-to-avoid.md)
     * [Eternl Guard](security-and-privacy/eternl-guard.md)

@@ -4,7 +4,7 @@
 
 The new [Using the DApp Browser](../using-eternl/using-the-dapp-browser.md) guide walks through the entry points, promoted partners, and category lists that users see before they connect their wallets.
 
-## Some statistics
+## Some Statistics
 
 | Platform           | User base (monthly) |
 |:-------------------|--------------------:|
@@ -13,7 +13,7 @@ The new [Using the DApp Browser](../using-eternl/using-the-dapp-browser.md) guid
 | iOS mobile app     |                  8k |
 | PWA (eternl.io)    |                  5k |
 
-## Connection types
+## Connection Types
 
 Eternl v2 supports 4 app types and 7 different connection methods:
 
@@ -43,7 +43,7 @@ Although implementing the PWA JS Bridge involves extra effort, it provides the b
 
 Bridge snippet and example implementation:  [cardano-dapp-connector-bridge](https://github.com/Tastenkunst/cardano-dapp-connector-bridge)
 
-## Technical requirements
+## Technical Requirements
 
 Please open a support ticket with us on Discord to provide the following information:
 
@@ -94,7 +94,7 @@ Fill out the following JSON structure.
   }
 ```
 
-### Convenience fee
+### Convenience Fee
 
 The convenience fee is our way to monetize Eternl wallet to keep the lights on and delevop it further. To be listed on the Dapp Browser it's a requirement to implement the fee.
 
@@ -105,7 +105,7 @@ The convenience fee is our way to monetize Eternl wallet to keep the lights on a
 
 ---
 
-### Integration test
+### Integration Test
 
 #### **API Injected (1): Eternl Beta browser extension**
 

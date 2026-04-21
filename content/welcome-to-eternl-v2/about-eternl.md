@@ -15,7 +15,7 @@ disableH2Collapse: true
 
 <br>
 
-## More features:
+## More Features:
 <ul style="list-style-type: '+ ">
 <li>Blazingly fast syncing.</li>
 <li>In-wallet swap for ADA/CNTs.</li>

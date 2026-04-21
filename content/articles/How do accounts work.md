@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-file MD033 -->
-# A very brief introduction of the concept of accounts
+# A Very Brief Introduction of the Concept of Accounts
 
 The concept of "accounts" refers to the ability to create multiple sub-accounts from a single seed phrase.
 
@@ -23,7 +23,7 @@ You also have the option to freely select the indexes for these 30 accounts.
 
 This setup helps you manage multiple accounts easily within a single wallet.
 
-## Manage accounts
+## Manage Accounts
 
 You can manage your accounts here. Using accounts is supported on both hotwallets and hardware wallets. Eternl allows you to use account #0 to #10000.
 
@@ -47,7 +47,7 @@ You can manage your accounts here. Using accounts is supported on both hotwallet
 
 2.>Finally, you need to confirm by entering your spending password or approving it with your hardware wallet.
 
-## What technical logic is used to achieve this?
+## What Technical Logic Is Used to Achieve This?
 
 Eternls multi-account on one seedphrase feature is based on CIP-1852[^1], also referred to as the HD Wallet standard[^1]. This standard is built on top of the BIP-44[^2] Each wallet generated from a seedphrase has its own 'path'. Paths are structured as:
 

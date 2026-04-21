@@ -3,7 +3,7 @@ description: Safeguard Your Seed Phrase!
 ---
 <!-- markdownlint-disable-file MD033 -->
 
-# What is a seed phrase?
+# What Is a Seed Phrase?
 
 A seed phrase, often referred to as a recovery phrase or mnemonic phrase, acts as the master key to your cryptocurrency wallet.
 

@@ -6,7 +6,7 @@
 
 The (e)UTxO (Extended Unspent Transaction Output) model in Cardano enhances the traditional UTxO system by allowing more complex transactions, such as smart contracts. Unlike the basic UTxO model, which tracks the movement of assets as simple outputs from transactions, (e)UTxO can carry additional data (datum) and scripts, enabling the execution of smart contracts and supporting multi-assets. This model maintains the benefits of UTxO, such as security and transparency, while adding flexibility for developers to create more sophisticated applications on the Cardano blockchain.
 
-## 1. What is Cardano?
+## 1. What Is Cardano?
 
 Cardano is a blockchain that focuses on being secure and flexible. It was made using science and research. Its main goals are to be sustainable, work reliably, and be clear about how it works. Cardano is open to everyone and wants to help people worldwide, especially those without bank services. It uses a special computer language to make sure it is very secure. Cardano is also creating a system for smart contracts, which are agreements that work automatically, to support new kinds of apps and to keep improving over time.
 
@@ -28,15 +28,15 @@ Open participation: Anyone with ADA can help make decisions for Cardano. This me
 
 Understanding ADA staking pools in Cardano shows us the blockchain is about building a fair digital world for all, not just technology. With many staking pools and chances for ADA owners to join, Cardano shows its dedication to shared control and people-powered governance. For more about staking, see "How staking works"
 
-## 2. The (e)UTxO model
+## 2. The (e)UTxO Model
 
-### 2.1 What is the (e)UTxO Model?
+### 2.1 What Is the (e)UTxO Model?
 
 The (e)UTxO model in Cardano, inspired by Bitcoin's reliable UTxO system which has worked well for over a decade, introduces improvements. It keeps Bitcoins strengths in handling transactions securely and efficiently but adds the ability to include more data in transactions, like smart contracts. This makes Cardano's blockchain more versatile, allowing for complex transactions and applications, while maintaining high security and performance standards.
 
 The model also offers flexibility in transaction conditions, expanding the types of applications that can be developed on Cardano, especially those needing detailed transaction logic.
 
-### 2.2 Why is (e)UTxO Important?
+### 2.2 Why Is (e)UTxO Important?
 
 - More than just storing money
 In Cardano, the (e)UTxO model doesn't just keep track of how much digital currency someone has. It also stores rules about how that money can be spent. This is especially useful for things like smart contracts.
@@ -63,7 +63,7 @@ The "e" in (e)UTxO signifies "extended," enhancing the Unspent Transaction Outpu
 ![utxo_model.jpg](/announcements/utxo_model.jpg)
 [^2]
 
-### 3.1 The (e)UTxO model integrates the following transaction mechanisms
+### 3.1 The (e)UTxO Model Integrates the Following Transaction Mechanisms
 
 ![2a_eutxo_components.jpg](/announcements/2a_eutxo_components.jpg)
 [^3]
@@ -129,7 +129,7 @@ Another focus of the (e)UTxO model is to ensure transactions are done predictabl
 
 In short, Cardanos (e)UTxO model was created to take the best parts of other blockchain systems while fixing their issues. Its main goals include keeping the system secure, making transactions for smart contracts better, and ensuring everything runs efficiently and predictably.
 
-## 5. Comparison with Traditional UTXO Model
+## 5. Comparison With Traditional UTxO Model
 
 Let's compare Cardanos (e)UTxO model with the traditional UTXO model used in blockchains like Bitcoin to understand their differences in simpler terms.
 
@@ -138,7 +138,7 @@ The infographic below, created by IOG, shows a comparison between the two models
 ![iohk_-_eutxo_vs_account-based-models.png](/announcements/iohk_-_eutxo_vs_account-based-models.png)
 [^4]
 
-### 5.1 Traditional UTXO model (example)
+### 5.1 Traditional UTxO Model (Example)
 
 Like getting exact change: Think of the traditional UTxO model as getting change from a cash transaction. For example, if you buy something for $5 and pay with a $10 bill, you get $5 back as change.
 

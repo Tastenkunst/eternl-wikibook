@@ -2,6 +2,6 @@
 description: Frequently Asked Questions
 ---
 
-# FAQ
+# Faq
 
 [[child-nav]]

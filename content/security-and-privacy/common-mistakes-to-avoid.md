@@ -1,10 +1,10 @@
-# Common mistakes to avoid
+# Common Mistakes to Avoid
 
-## &#x20;Common Mistakes to Avoid
+## Common Mistakes to Avoid
 
 Protecting your crypto assets begins with understanding how to properly handle and store your **seed phrase** and credentials. Below are common mistakes users should avoid — along with safer alternatives.
 
-### &#x20;Avoid Digital Photos of Your Seed Phrase
+### Avoid Digital Photos of Your Seed Phrase
 
 Never take a screenshot or photo of your seed phrase. Storing images on phones or computers exposes them to:
 

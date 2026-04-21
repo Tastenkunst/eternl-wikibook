@@ -6,7 +6,7 @@
 
 <figure><img src="/assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
 
-## Account name / handle
+## Account Name / Handle
 
 <figure><img src="/assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
 
@@ -24,7 +24,7 @@ Cardano supports several public account key formats, each used to view wallet in
 
 These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
 
-## Single Address Mode (SAM) [option]
+## Single Address Mode (SAM) [Option]
 
 Only use a single address for all transactions.
 
@@ -38,13 +38,13 @@ Alternatively a custom receive address can be set here.
 Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.
 </div>
 
-## Collateral [option]
+## Collateral [Option]
 
 <figure><img src="/assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
 
 ### Collateral (Cardano)
 
-### What is Collateral?
+### What Is Collateral?
 
 In the Cardano blockchain, **collateral** is a special UTxO (Unspent Transaction Output) set aside to cover transaction fees if a smart contract (Plutus script) **fails** during execution.
 
@@ -80,11 +80,11 @@ This means:
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
 
-## Manual sync [option]
+## Manual Sync [Option]
 
 <figure><img src="/assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
 
-### What is Manual Sync?
+### What Is Manual Sync?
 
 In Eternl, **Manual Sync** is an optional setting that allows you to control **when** your wallet fetches the latest data (such as balances, UTxOs, and transaction history) from the blockchain.
 
@@ -100,7 +100,7 @@ By default, this setting is **OFF**, meaning the wallet performs **automatic syn
 
 ---
 
-### Manual Sync (When turned ON)
+### Manual Sync (When Turned On)
 
 When enabled, syncing will **only occur when you manually trigger it** by pressing the **sync button** in the interface.
 
@@ -131,7 +131,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
-## History sync [option]
+## History Sync [Option]
 
 <figure><img src="/assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
 
@@ -141,7 +141,7 @@ The **History Sync** option controls whether your Eternl wallet **syncs your ful
 
 ---
 
-### What is History Sync?
+### What Is History Sync?
 
 Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or with **full history sync**. This setting determines which mode Eternl uses.
 
@@ -150,7 +150,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 
 ---
 
-### Advantages of History Sync (ON)
+### Advantages of History Sync (On)
 
 * See your full transaction history in-app.
 * Useful for auditing, record keeping, or tax purposes.
@@ -190,7 +190,7 @@ Keep it **disabled** if:
 
 Token Fragmentation (TF)
 
-### Reduce transaction fees by fragmenting tokens
+### Reduce Transaction Fees by Fragmenting Tokens
 
 <figure><img src="/assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
 
@@ -203,7 +203,7 @@ Token Fragmentation (TF)
 
 This helps **reduce UTxO bloat** and improves **token management** by avoiding overly large token bundles in change.
 
-### How it works
+### How It Works
 
 * During a transaction, if the wallet detects that the change output would include **more tokens than the set limit**, it will **automatically split** them into smaller, more manageable outputs.
 * This behavior depends on your wallet's current **UTxO and token distribution**.
@@ -226,7 +226,7 @@ The **Token Bundle Size** setting defines the **maximum number of tokens** each 
 > **Default value:** `20` tokens per UTxO\
 > This value is adjustable based on your specific needs.
 
-### What does it affect?
+### What Does It Affect?
 
 Changing this value affects how tokens are distributed across outputs when sending transactions:
 
