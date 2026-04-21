@@ -1,6 +1,7 @@
 ---
-Description: Decentralized Finance explained
+description: A brief overview of DeFi (Decentralized Finance)
 ---
+
 # Decentralized Finance explained
 
 ## 1. Understanding Decentralized Finance (DeFi)
