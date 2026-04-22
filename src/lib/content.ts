@@ -103,7 +103,17 @@ let searchIndex: SearchEntry[] = [];
 // export { navTree, docsByRoute, flatNav, searchIndex };
 
 export function getDocByRoute(routePath: string): DocPage | undefined {
-  return docsByRoute.get(normalizeRoutePath(routePath));
+  let normalized = normalizeRoutePath(routePath);
+
+  if (normalized === '/home') {
+    normalized = '/';
+  }
+
+  if (normalized === '') {
+    normalized = '/';
+  }
+
+  return docsByRoute.get(normalized);
 }
 
 export function getPrevNext(routePath: string): { prev?: NavLink; next?: NavLink } {
@@ -212,7 +222,7 @@ function buildSearchIndex(): SearchEntry[] {
       }
       return {
         title: doc.title,
-        routePath: doc.routePath,
+        routePath: doc.routePath === '/' ? '/home' : doc.routePath,
         text: stripHtml(doc.html)
       };
     })
@@ -223,7 +233,7 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
   const { data, content } = parseFrontMatter(raw);
   const description = typeof data.description === 'string' ? data.description : undefined;
   const cover = normalizeCover(data.cover);
-  const processed = preprocessGitbook(content);
+  const processed = preprocessGitbook(content.trim());
 
   const md = createMarkdownRenderer(filePath);
   const tokens = md.parse(processed, {});
@@ -461,7 +471,7 @@ function toRoutePath(repoPath: string): string {
     normalized = normalized.substring(8);
   }
 
-  if (normalized === 'README.md') return '/home';
+  if (normalized === 'README.md') return '/';
 
   if (normalized.endsWith('/README.md')) {
     return `/${normalized.replace(/\/README\.md$/, '')}`;
@@ -475,14 +485,15 @@ function extractTitle(tokens: Token[], fallbackTitle: string): {
   tokens: Token[];
 } {
   const trimmedTokens = [...tokens];
-  for (let i = 0; i < trimmedTokens.length; i += 1) {
-    const token = trimmedTokens[i];
-    if (token.type === 'heading_open' && token.tag === 'h1') {
-      const inline = trimmedTokens[i + 1];
-      const title = inline?.type === 'inline' ? inline.content.trim() : fallbackTitle;
-      trimmedTokens.splice(i, 3);
-      return { title: title || fallbackTitle, tokens: trimmedTokens };
-    }
+  const h1Index = trimmedTokens.findIndex(t => t.type === 'heading_open' && t.tag === 'h1');
+
+  if (h1Index !== -1) {
+    const inline = trimmedTokens[h1Index + 1];
+    let titleHtml = inline?.type === 'inline' ? inline.content : fallbackTitle;
+    titleHtml = titleHtml.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">');
+    const finalTitle = replaceIconSvgs(titleHtml);
+    trimmedTokens.splice(0, h1Index + 3);
+    return { title: finalTitle, tokens: trimmedTokens };
   }
   return { title: fallbackTitle, tokens: trimmedTokens };
 }

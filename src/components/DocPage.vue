@@ -355,7 +355,8 @@ function wrapSections(html: string): string {
 
       <header class="mb-1.5">
 <!--        <p v-if="doc.description" class="text-sm text-ink-70">{{ doc.description }}</p>-->
-        <h1 class="font-display text-3xl color-primary sm:text-4xl mb-0">{{ doc.title }}</h1>
+<!--        <h1 class="font-display text-3xl color-primary sm:text-4xl mb-0">{{ doc.title }}</h1>-->
+        <h1 v-html="doc.title" class="font-display text-3xl color-primary sm:text-4xl mb-0"></h1>
         <p v-if="doc.description" class="text-s text-ink-70 italic mb-0">{{ doc.description }}</p>
       </header>
 

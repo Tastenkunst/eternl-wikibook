@@ -16,7 +16,7 @@ disableH2Collapse: true
 ## Trending Topics
 
 [[custom-nav]]
-* [Claiming the Glacier Airdrop](content/claiming-the-glacier-airdrop-in-eternl-v2.md)
-* [FAQ & Troubleshooting](content/faq/faq.md)
-* [test external link](https://google.de)::/assets/hugeicons/IconUser.svg
+* [Claiming the Glacier Airdrop](faq/claiming-the-glacier-airdrop-in-eternl-v2.md)::/assets/icons/Receive.svg
+* [FAQ & Troubleshooting](faq/README.md)::/assets/icons/Warning.svg
+<!-- * [test external link](https://google.de)::/assets/hugeicons/IconUser.svg -->
 [[/custom-nav]]

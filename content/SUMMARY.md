@@ -15,10 +15,10 @@
         * [Wallet Settings](using-eternl/settings/wallet-settings.md)::/assets/icons/Wallet01.svg
         * [App Settings](using-eternl/settings/app-settings.md)::/assets/icons/Settings.svg
         * [App Utilities](using-eternl/settings/app-utilities.md)::/assets/hugeicons/IconUtilities.svg
-    * [Managing Accounts](using-eternl/managing-accounts.md)
-    * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)
-    * [Understanding Balances](using-eternl/understanding-balances.md)
-    * [DApp Connection Options](using-eternl/dapp-connection-options.md)
+    * [Managing Accounts](using-eternl/managing-accounts.md)::/assets/hugeicons/IconUser.svg
+    * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
+    * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
+    * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
@@ -39,7 +39,7 @@
   * [What is a Recovery Phrase and why is it so important?](faq/recovery-phrase.md)
   * [Can I migrate my wallet to a hardware device?](faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
   * [Can I restore my hardware wallet phrase on Eternl?](faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
-  * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)
+  * [Claiming the Glacier Airdrop](faq/claiming-the-glacier-airdrop-in-eternl-v2.md)
 
 * [Cardano Basics](cardano-basics/README.md)
     * [Security Basics](cardano-basics/security-basics.md)
@@ -48,7 +48,7 @@
     * [DEXes & Marketplaces](cardano-basics/dexes-and-marketplaces.md)
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
-    * [The eUTxO Model](cardano-basics/eutxo-model.md)
+    * [The eUTxO Model](cardano-basics/the-eutxo-model.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
 
 * [For Developers](for-developers/README.md)
