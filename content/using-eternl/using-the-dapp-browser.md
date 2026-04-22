@@ -16,6 +16,6 @@ The landing view highlights a **Promoted** carousel for Eternl-verified partners
 The DApp Browser is a core feature available on both the Desktop Extension and the Mobile App (iOS/Android), so the same verified partners, categories, and navigation cues show up whether you are at your desk or on the go.
 </div>
 
-## Connecting your Wallet
+## Connecting Your Wallet
 
 When you open a dApp and tap **Connect wallet**, Eternl Guard steps in as a safety layer. The guard screen shows the URL, the CIP-30 permissions requested, and any automated transaction hooks the dApp wants to run. It also surfaces reputation signals for promoted partners and blocks unknown sites until you explicitly allow the connection. This lets you confirm every dApp session with a single tap while keeping the connection sandboxed until you trust the interaction.

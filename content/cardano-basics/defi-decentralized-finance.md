@@ -2,7 +2,7 @@
 description: A brief overview of DeFi (Decentralized Finance)
 ---
 
-# Decentralized Finance explained
+# Decentralized Finance Explained
 
 ## 1. Understanding Decentralized Finance (DeFi)
 
@@ -10,7 +10,7 @@ Decentralized Finance, or DeFi for short, is a new kind of financial technology 
 
 DeFi makes it easier, more efficient, and safer to handle money, allowing people to lend, borrow, and trade directly with each other without the extra costs and rules that usually come with traditional banks.
 
-## 2. A Quick Look at how DeFi Started and Grew over Time
+## 2. A Quick Look at How DeFi Started and Grew Over Time
 
 The story of DeFi, starts with the launch of Bitcoin in 2009. The term "DeFi" became well-known in 2017, thanks to projects like MakerDAO, which introduced decentralized stablecoins. Since then, DeFi has grown a lot, bringing new protocols and applications.
 
@@ -26,7 +26,7 @@ In late 2021 the Alonzo hardfork opened the gates for Defi on Cardano. Since the
 
 Today, DeFi is still growing and changing, working on making things scalable, interoperable, and in line with regulations. It's becoming a big part of finance, offering new ways to do financial services, international payments and making financial tools more accessible to everyone.
 
-## 3. DeFi is Crucial in Today's Financial World for Many Reasons
+## 3. DeFi Is Crucial in Today's Financial World for Many Reasons
 
 - Expanding Financial Inclusion through DeFi
 DeFi democratizes access to the global financial community by enabling individuals without traditional banking services to participate, particularly in regions without access to a traditional banking system. By eliminating intermediaries and gatekeepers, it simplifies engagement in financial activities such as lending, borrowing, and investing, broadening access for a larger audience.
@@ -66,7 +66,7 @@ Interoperability across diverse blockchain networks allows for seamless interact
 In the blockchain exosystem tokens refer to assets that can hold value and information, thus allowing transfer and storage. There are a ton of different tokens available that can be categorized by their use case. Examples are security tokens, utility tokens or currency tokens.
 Tokenization plays a crucial role as it enables onverting real-world assets into digital tokens for easy trading and integration into the DeFi space.
 
-### 4.4 Decentralized Exchanges (DEXs)
+### 4.4 Decentralized Exchanges (Dexs)
 
 DEXs allow for direct asset trading between parties without central intermediaries. Unlike Centralized Exchanges (CEXs), which are operated by a single entity holding users' funds, DEXs enable users to retain control over their assets, trading directly from their wallets. This model offers increased security, privacy, and control, though it may face challenges in transaction speed and liquidity compared to CEXs.
 
@@ -98,7 +98,7 @@ Decentralization means you don't have to trust one central group, like a bank. I
 
 When data and tasks are spread out over many computers, decentralized systems can better handle problems, attacks, and attempts to block information. This makes DeFi platforms safer and more reliable, because there's no single point that can be easily attacked or broken.
 
-### 5.3 Everything is Open
+### 5.3 Everything Is Open
 
 In decentralized systems, you can see and check all the transaction data and the rules of smart contracts on the blockchain. This openness helps build trust and makes sure everyone is playing fair.
 
@@ -110,9 +110,9 @@ Decentralization makes it possible for more people to get into financial service
 
 Decentralization encourages new ideas and working together by letting developers use and improve upon existing systems and codes. This leads to better financial products and services being created in the DeFi world.
 
-## 6.Regulatory Uncertainty
+## 6. Regulatory Uncertainty
 
-### 6.1 Global perspective on DeFi regulation
+### 6.1 Global Perspective on DeFi Regulation
 
 DeFi (Decentralized Finance) is growing fast, but rules around it are not clear everywhere. Different countries are trying to figure out how to manage it. Some places are thinking about strict rules, while others are more open. This uncertainty makes it hard for DeFi projects and users to know what is allowed and what is not. This situation can slow down innovation and make companies cautious about starting DeFi services​​.
 
@@ -135,7 +135,7 @@ The future of Decentralized Finance (DeFi) looks exciting with new trends poppin
 
 DeFi is not just a new trend; it's starting to really change how the world deals with money. It's making finance more open and inclusive.The ongoing developments in DeFi technology could also lead to safer and more efficient financial transactions, changing how we send, receive, and invest our money on a global scale.
 
-### 7.3 Innovations and future prospects
+### 7.3 Innovations and Future Prospects
 
 Looking ahead, DeFi is set to bring even more innovations. We might see new kinds of financial services that don't even exist today, making it easier and cheaper to handle our money. There could also be more focus on making DeFi more secure and user-friendly, attracting more people to use these services. The future of DeFi is all about breaking old limits and creating a financial world that's open to everyone, no matter where they are.
 

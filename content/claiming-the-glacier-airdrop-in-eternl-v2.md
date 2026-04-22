@@ -5,7 +5,7 @@ icon: rotate-exclamation
 
 # Claiming the Glacier Airdrop in Eternl v2
 
-## PHASE 1: GLACIER AIRDROP (CLOSED! AUG 5th to OCT 20th 2025)
+## Phase 1: Glacier Airdrop (Closed! Aug 5th to Oct 20th 2025)
 
 Welcome to Eternl. In this video, we'll show you how to participate in the **Glacier Airdrop** and claim your $Night token.\
 You have until **October 20th** to do so.
@@ -24,7 +24,7 @@ How to import multiple wallets in Eternl v2
 
 ---
 
-### Follow these steps to participate
+### Follow These Steps to Participate
 
 1. **Open the Claim Website**\
    Navigate to [claim.midnight.gd](https://claim.midnight.gd) and start a new claim.
@@ -72,7 +72,7 @@ How to import multiple wallets in Eternl v2
 ---
 
 
-## PHASE 2: SCAVENGER MINE (CLOSED! Oct 29th to Nov 19th 2025)
+## Phase 2: Scavenger Mine (Closed! Oct 29th to Nov 19th 2025)
 
 Missed the Glacier Drop window? Want to play a bigger part in the future of Midnight? **Scavenger Mine is here and everyone can join!**
 
@@ -113,9 +113,9 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 * **Tokenomics & Claim Phases**: Visit https://midnight.io/ and scroll down to "Token allocations" for a breakdown of all three phases: **Glacier Drop**, **Scavenger Mine**, and **Lost-and-Found**.
 
 
-## PHASE 3: REDEEM (OPEN until 05. December 2026)
+## Phase 3: Redeem (Open Until 05. December 2026)
 
-### Redemption period (360 days)
+### Redemption Period (360 Days)
 
 Wait for your allocation(s) to thaw Allocations must thaw before they can be redeemed.
 
@@ -123,7 +123,7 @@ During the **Redemption period**, token allocations thaw and become **redeemable
 
 For each individual allocation, the first thaw falls randomly between days 1 and 90, with subsequent thaws following every 90 days.
 
-### What you need to do
+### What You Need to Do
 
 * At each thaw, a 25% share of the allocation unlocks
 * Each thawed share can be individually redeemed as it unlocks
@@ -131,7 +131,7 @@ For each individual allocation, the first thaw falls randomly between days 1 and
 
 > Claimants can wait until the last thaw to claim their full allocations in one go
 
-### Redeem your allocation
+### Redeem Your Allocation
 
 To complete the process and receive your NIGHT, you must redeem your allocation after it thaws.
 
@@ -141,7 +141,7 @@ Redeeming is the act of transferring thawed tokens into your Destination address
 
 You may choose to redeem each share of your allotted tokens as they thaw, or wait until they fully unlock to redeem the whole allocation at once. Each redemption involves a Cardano transaction, requiring you to cover the cost of the Cardano network transaction fee.
 
-### How to redeem your allocation
+### How to Redeem Your Allocation
 
 #### 01. Access the NIGHT Claim Portal
 
@@ -153,6 +153,6 @@ The NIGHT Claim Portal is the official user interface of the NIGHT token distrib
 
 #### 04. Redeem thawed tokens
 
-### What happens next
+### What Happens Next
 
 After the Redemption period ends, the NIGHT Claim Portal may be taken offline, and any un-redeemed allocations must be manually redeemed by their owners.

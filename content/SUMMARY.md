@@ -1,4 +1,4 @@
-# Table of contents
+# Table of Contents
 
 * [Home](README.md)
 
@@ -22,7 +22,7 @@
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
-    * [Hot Wallets vs Cold Wallets](security-and-privacy/hot-wallets-vs-cold-wallets..md)
+    * [Hot Wallets vs Cold Wallets](security-and-privacy/hot-wallets-vs-cold-wallets.md)
     * [How to Store Your Seed Phrase Securely](security-and-privacy/how-to-store-your-seed-phrase-securely.md)
     * [Common Mistakes to Avoid](security-and-privacy/common-mistakes-to-avoid.md)
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
@@ -36,6 +36,7 @@
 * [FAQ](faq/README.md)
   * [How do I find my receiving address?](faq/receiving-address.md)
   * [Why My Wallets Dissapeared?](faq/why-my-wallets-disappeared.md)
+  * [What is a Recovery Phrase and why is it so important?](faq/recovery-phrase.md)
   * [Can I migrate my wallet to a hardware device?](faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
   * [Can I restore my hardware wallet phrase on Eternl?](faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
   * [Claiming the Glacier Airdrop](claiming-the-glacier-airdrop-in-eternl-v2.md)

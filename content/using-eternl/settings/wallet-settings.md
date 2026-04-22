@@ -54,7 +54,7 @@ This file is sensitive and should be stored securely. It does **not** replace a 
 :::
 
 
-## Re-sync wallet
+## Re-Sync Wallet
 
 Re-syncing forces the wallet to rebuild its state from blockchain data:
 
@@ -66,7 +66,7 @@ This process may take some time, depending on the wallet history.
 :::
 
 
-## Recovery phrase verification
+## Recovery Phrase Verification
 
 Use this check to confirm that your recovery phrase was stored correctly:
 

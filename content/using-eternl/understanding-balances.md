@@ -1,4 +1,4 @@
-# Understanding balances displayed in Eternl
+# Understanding Balances Displayed in Eternl
 
 In a regular wallet there is only one balance that determines the amount of money one owns and is able to spend. In crypto and especially Cardano things work differently.
 In Cardano a wallet has 2 types of balances, the balance it can spend on payment credentials, and the balance that counts towards your stake on your stake credentials. These 2 can be dynamically put together and/or split and merged with others, resulting in franken addresses.
@@ -37,7 +37,7 @@ Generally it is advisable to have a ratio of about 20 tokens per 7 ADA to have a
 
 - **Estimated Locked:** Estimated amount of ADA attached to tokens
 
-### There are a few other sub-balances that are not always shown
+### There Are a Few Other Sub-Balances That Are Not Always Shown
 
 #### Collateral
 

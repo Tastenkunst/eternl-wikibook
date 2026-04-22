@@ -54,7 +54,7 @@ In the Cardano ecosystem, rewards are generated from two key sources: all transa
 
 The RoS in Cardano depends on several factors, including the total amount of ADA staked on the network and the individual stake pool's performance and the amount of ADA staked to the pool. RoS can vary but provides an incentive for ADA holders to participate in staking while keeping full access to spend their ADA whenever.
 
-### Cardano vs Ethereum staking mechanisms
+### Cardano vs. Ethereum Staking Mechanisms
 
 Cardano and Ethereum offer contrasting staking mechanisms, with Cardano featuring a native liquid staking system that allows ADA to remain accessible for spending during staking, without any minimum staking requirements or penalties for misbehavior. This approach promotes decentralization and security by making participation more straightforward and aligning stakeholders' interests with the network's needs. Cardano relies on the Ouroboros Proof-of-Stake consensus and Nash equilibrium theory to encourage honest participation, avoiding the need for slashing as a deterrent.
 
@@ -64,7 +64,7 @@ Cardano's model is highlighted for its potential to maintain a more decentralize
 
 In the Cardano network, ADA holders have the option to participate directly in the network's consensus by operating active nodes or to delegate their participation rights to a stake pool. This delegation process allows those who may not have the capacity or desire to maintain active participation to still contribute to the network's security and decision-making processes. When selecting a stake pool, it's crucial to understand that a lower variable commission does not automatically translate to higher rewards. The annual return difference between delegating to a pool with a 1% commission versus a 5% commission is relatively minor, around 1/4% of the expected annual return. The primary considerations for choosing a stake pool should be the operator's reliability in keeping the nodes safe and operational and the pool's saturation level. Saturation occurs when a pool has a high level of staking, leading to diminished rewards for its delegates due to the distribution of rewards across a larger number of participants. The rewards from staking are automatically delegated to the stake pool, generating additional rewards over time. Any changes in the delegation preferences are processed after the next epoch. The Return on ADA (ROA) is a critical metric for assessing a stake pool's performance, calculated as the direct result of the blocks produced by the stake pool divided by the total amount of ADA staked in the pool for each epoch. The number of blocks a stake pool is assigned in each epoch is determined through a lottery process, contributing to the variability in ROA% across different epochs. For ADA holders looking to track their rewards and estimate future earnings, resources are available to provide detailed historical and predictive insights into the rewards process.
 
-### About fees
+### About Fees
 
 On the Cardano blockchain, stake pool operators charge two types of fees to cover the costs associated with running a pool and to provide an incentive for their services: a fixed fee and a variable fee.
 
@@ -82,7 +82,7 @@ For example, if a pool earns 5,000 ADA in rewards for an epoch, the pool operato
 
 It's important for delegators to understand these fees when choosing a stake pool, as they can affect the overall rewards received from staking ADA. Lower fees do not necessarily mean higher returns, as the performance and reliability of the pool are also crucial factors.
 
-### Comparison with Bitcoin's Proof of Work
+### Comparison With Bitcoin's Proof of Work
 
 Bitcoin uses a PoW mechanism, where miners solve complex mathematical problems to validate transactions and create new blocks. This process requires significant computational power and energy. The rewards in Bitcoin come in the form of newly minted bitcoins (block rewards) and transaction fees. Unlike Cardano, Bitcoin's reward system heavily relies on the computational work done by miners, not on the amount of cryptocurrency they hold.
 
@@ -90,7 +90,7 @@ Environmental Impact and Efficiency: Cardano's PoS is more energy-efficient comp
 
 In summary, Cardano's staking mechanism offers a more energy-efficient and potentially more democratic way to participate in the blockchain's security and governance, compared to Bitcoin's computationally intensive PoW mechanism.
 
-### Delegating to a Stake Pool using Eternl wallet
+### Delegating to a Stake Pool Using Eternl Wallet
 
 #### Explore Pools
 

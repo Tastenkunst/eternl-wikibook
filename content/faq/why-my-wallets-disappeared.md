@@ -22,7 +22,7 @@ Software such as **CCleaner** or system "Optimize" apps on mobile devices often 
 
 ---
 
-### Why is "Persistent Data" Gone?
+### Why Is "Persistent Data" Gone?
 
 In older versions of Eternl, a **Persistent Data** toggle was available in the settings. This option requested that the browser exclude Eternl from automatic cleanup.
 

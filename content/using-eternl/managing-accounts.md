@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-file MD033 -->
 # Managing Accounts
 
-## Multiple accounts from one seed phrase
+## Multiple Accounts From One Seed Phrase
 
 The concept of "accounts" refers to the ability to create multiple sub-accounts from a single seed phrase. Each account is derived from the same mnemonic but has its own unique set of addresses and keys, so you can keep funds, staking, and transaction history separated. These wallets share no on-chain link and act as completely stand-alone accounts.
 
@@ -27,29 +27,29 @@ You also have the option to freely select the indexes for these 30 accounts.
 
 This setup makes it easy to organize multiple wallets inside one seed while staying within the 30-account boundary enforced by Eternl v2.
 
-## Manage accounts
+## Manage Accounts
 
 {% embed url="https://www.youtube.com/watch?v=iCS7JRTifQg" %}
 
 You manage accounts from the wallet card on both hot wallets and hardware wallets. Eternl allows account indexes up to 10,000, but the UI only registers 30 accounts at any time; picking custom indexes gives you flexibility to rotate which accounts are active without exceeding the 30-account limit.
 
-### 1. Wallet card > Manage Accounts
+### 1. Wallet Card > Manage Accounts
 
 ![Manage accounts layout](/assets/pictures/v2_manage_accounts.jpg)
 
-### 2. every time you click "Add Account" a new account will be added
+### 2. Every Time You Click "Add Account" a New Account Will Be Added
 
 ![Add account](/assets/pictures/v2_manage_accounts_2.jpg)
 
-### 3. you can manage a maximum of up to 30 accounts in Eternl at the same time
+### 3. You Can Manage a Maximum of up to 30 Accounts in Eternl at the Same Time
 
 ![30 account limit](/assets/pictures/v2_manage_accounts_3.jpg)
 
-### 4. Finally, you need to confirm by entering your spending password or approving it with your hardware wallet
+### 4. Finally, You Need to Confirm by Entering Your Spending Password or Approving It With Your Hardware Wallet
 
 ![Account confirmation](/assets/pictures/v2_manage_accounts_5.jpg)
 
-## Technical background
+## Technical Background
 
 Eternl's multi-account feature is built on CIP-1852, the HD wallet standard that extends BIP-44 for Cardano. Each wallet derived from a seed has its own derivation path. By default, Eternl uses indexes 0 through 29 depending on how many accounts you activate.
 

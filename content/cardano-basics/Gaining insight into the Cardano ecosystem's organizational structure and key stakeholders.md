@@ -1,4 +1,4 @@
-# A brief intro to Cardano
+# A Brief Intro to Cardano
 
 ## Introduction
 
@@ -16,7 +16,7 @@ One of the core technologies of Cardano is its Ouroboros consensus algorithm. Un
 
 Cardano’s vision extends beyond just technical advancements. The platform aims to provide a more inclusive and sustainable global financial system. It is especially involved in Africa trying to deliver services to a broad public that does not have access to financial services. It is uniquely positioned to impact several areas critically, including education, retail, agriculture, and government. Cardano's objective is not just to provide a platform for transactions but to create a platform for social and financial systems to operate openly and without intermediaries.
 
-### Cardano is controlled by three entities
+### Cardano Is Controlled by Three Entities
 
 #### 1 Cardano foundation
 

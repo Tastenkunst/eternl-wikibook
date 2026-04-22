@@ -2,21 +2,21 @@
 description: How to create simple or complex multi-sig wallets
 ---
 
-# Multi-sig
+# Multi-Sig
 
-## How to create a multi-sig wallet
+## How to Create a Multi-Sig Wallet
 
 {% embed url="https://youtu.be/vUvHKuJyDlE" %}
 
-## How to create complex multi-sig structures
+## How to Create Complex Multi-Sig Structures
 
 {% embed url="https://youtu.be/Amar1nDk0FU" %}
 
-## Why multi-sig wallets cannot be a DApp account (for now)
+## Why Multi-Sig Wallets Cannot Be a DApp Account (for Now)
 
 Multi-Sig wallets on Cardano like those created in Eternl, use script-based addresses, while most DApps expect standard wallets that are based on a payment key.
 
-## Key vs Script-Based Wallets
+## Key vs. Script-Based Wallets
 
 * Standard wallets: Owned by one person using a private key (payment key).
 * Multi-Sig wallets: Controlled by multiple signers via a script.
@@ -35,7 +35,7 @@ For a DApp to work with a multi-sig wallet, its smart contract must be designed 
 
 MonsterSwap is a DEX aggregator developed by the Eternl team and integrated into Eternl v2. While we designed the aggregator, it relies on the underlying DEXs to execute swaps. Since most DEXs only support standard (key-based) wallets, multi-sig wallets are not compatible—these contracts do not recognize or handle script-based addresses.
 
-## Web wallet bridge (CIP-30)
+## Web Wallet Bridge (Cip-30)
 
 Multi-Sig support for DApp interaction has additional challenges when it comes to the web wallet bridge (CIP-30) communication flow.
 

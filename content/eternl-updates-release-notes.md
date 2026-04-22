@@ -131,7 +131,7 @@ released 04.09.2025
 
 + Translations are now their own microservice decoupeling them from the syncing backend.
 
-### Send page
+### Send Page
 
 + Address input is now an auto-complete input field: Enter wallet names or address book labels to quickly select your own or stored wallets/accounts.
 + Put "Select account", "Select from addressbook" and "QR code" to a context menu.
@@ -181,7 +181,7 @@ released 06.08.2025
 
 + Translations are now their own microservice decoupeling them from the syncing backend.
 
-### Send page
+### Send Page
 
 + Address input is now an auto-complete input field: Enter wallet names or address book labels to quickly select your own or stored wallets/accounts.
 + Put "Select account", "Select from addressbook" and "QR code" to a context menu.
@@ -575,7 +575,7 @@ This release will also be available on iOS and Android.
 + Stake registration certificate with explicit deposit
 + Voting related tx changes
 
-### Other changes
+### Other Changes
 
 + Updated: CSL -> 12.0.0-beta.3
 + Updated: Trezor Connect -> 9.3.0
@@ -699,7 +699,7 @@ Eternl Update v .1.12.3.17
 
 released 24.04.2024
 
-### Currently live on
+### Currently Live On
 
 + Browser extension "Eternl Beta"
 + https://beta.eternl.io/
@@ -791,7 +791,7 @@ We invite all dApp developers and interested Cardano users to assist in testing 
 
 [Eternl Beta](https://chromewebstore.google.com/detail/eternl-beta/aafgiaaomjbkmgainbdgjpcndnodkajp?hl=de)
 
-### Main features
+### Main Features
 
 + New CIP30 (dApp connector) implementation. Please help us test it.
 + "Eternl Guard" marks scam tokens in your wallet
@@ -806,7 +806,7 @@ released 23.12.2023
 
 + Collateral set back to 5 ADA (from 3 ADA) as requested by dapps
 
-### Fixed issues
+### Fixed Issues
 
 + Spending password reset via pw reset and seed phrase validation
 
@@ -820,7 +820,7 @@ released 05.12.2023
 
 + Improved submit transaction errors
 
-### Fixed issues
+### Fixed Issues
 
 + Sync workers connecting to mainnet instead of selected testnet
 + Fee calculation for some Keystone transactions
@@ -853,7 +853,7 @@ Dexhunter has been integrated into Eternl's in-wallet swap feature, complementin
 + Reduced the minimum collateral value from 5 ADA to 3 ADA.
 + Updated collateral handling: Collateral UTXOs will be automatically used in transactions if they are the only ones available, resolving issues in newly funded accounts for staking delegation.
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed (.16): Accounts with over 5000 transaction can now synchronize again.
 
@@ -877,7 +877,7 @@ released 25.08.2023
 
 + Improved pending transactions, which were sometimes falsely reported as invalid when in fact they ended up on chain.
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: delegating might fail sometimes
 
@@ -887,7 +887,7 @@ Eternl Update v .1.11.13
 
 released 23.08.2023
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: getUtxos() returning an empty array after one swap
 
@@ -897,7 +897,7 @@ Eternl Update v .1.11.12
 
 released 22.08.2023
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: Send button being active even with empty address field, sending to the Eternl fee address instead
 
@@ -911,7 +911,7 @@ released 21.08.2023
 
 + Added: Collect UTxOs, up to 10 transactions at a time (but needs wider testing)
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: regression in utxo cache (filtering out too many utxos)
 + Fixed: rewards chart not loading
@@ -932,7 +932,7 @@ released 17.08.2023
 + Optimized: Transaction building (using in-memory utxo cache, cancel tx build for new tx build requests etc.)
 + Added: Multi tx sign support as well as CIP30 signTxs() (beta)
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: swap cancal for collateral on address index other than 0
 + Fixed: reward info not always loading correctly on re-delegation within epoch.
@@ -946,7 +946,7 @@ released 08.08.2023
 
 (Android awaiting approval by Google)
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed issues
 + Fixed: Testnets chainTip and epochParams
@@ -963,7 +963,7 @@ released 07.08.2023
 1. No Connection was caused by the client device time setting being in the future. For older version, check your time settings first. This version includes a time sync with the backend to prevent local settings getting in the way of syncing.
 2. In v1.11.0 we introduced sockets for syncing to reduce the overhead of constantly establishing connections to the backend. This is now rolled back to normal HTTP calls as sockets didn't work for ALL users.
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: Utxos with attached plutusData preventing getUtxos by DApps.
 
@@ -990,7 +990,7 @@ released 03.08.2023
 
 (Work in progress, just documenting changes)
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: multi-sig on roundtable
 + Fixed: collateral outputs wrong format for ledger/trezor
@@ -1010,7 +1010,7 @@ released 02.08.2023
 + Changes: optimized submitTx (cip30) to reflect account balances sooner.\
   (We encourage all dapps to (also) submit transactions through the cip30 endpoint, so Eternl can reflect pending transactions).
 
-### Fixed issues
+### Fixed Issues
 
 + Tested and fixed more dapp transaction using Ledger/Trezor.
 
@@ -1022,7 +1022,7 @@ Eternl Update v.1.11.4
 
 released 01.08.2023
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: send to Byron addresses with Ledger/Trezor
 
@@ -1034,7 +1034,7 @@ Eternl Update v.1.11.3
 
 released 31.07.2023
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: signData returning empty results
 + Fixed: some account settings not being honord when importing or migrating
@@ -1045,7 +1045,7 @@ Eternl Update v.1.11.2
 
 released 29.07.2023
 
-### Fixed issues
+### Fixed Issues
 
 + Fixed: socket connection wss
 + Fixed: Voting register button
@@ -1095,7 +1095,7 @@ Also:
 + New settings: Transaction History Sync. Enable it to be able to export CSV and use advanced filtering on the Tx History page.
 + Removed ADAHandle allowlist/blocklist (use address book instead)
 
-### Known issues
+### Known Issues
 
 + Clicking Register on the Voting page does not open a transaction to sign
 
@@ -1121,7 +1121,7 @@ released 07.06.2023
 + Fixed slippage settings buttons in Safari
 + Fixed signData address in protected header
 
-### Known issues
+### Known Issues
 
 Entering an ADA Handle on the Send page will not enable the Next button.\
 Workaround: copy the resolved address into the input field, hit next.
@@ -1627,7 +1627,7 @@ Eternl Update v.1.8.2
 
 released 20.07.2022
 
-### “Babbage”
+### “babbage”
 
 (Apps submitted, awaiting approval)
 
@@ -1697,7 +1697,7 @@ released 13.06.2022
 
 + undefined arguments from DApps
 
-### Known issues
+### Known Issues
 
 + Format for date/time is in UTC instead of local time zone
 

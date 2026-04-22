@@ -2,7 +2,7 @@
 description: Understanding the Expanded Version of UTxO in Cardano in a Simple Way
 ---
 
-# (e)UTxO - extended Unspent Transaction Output
+# (e)UTxO - Extended Unspent Transaction Output
 
 <details>
 <summary>Abstract</summary>
@@ -42,7 +42,7 @@ The (e)UTxO model in Cardano, inspired by Bitcoin's reliable UTxO system which h
 
 The model also offers flexibility in transaction conditions, expanding the types of applications that can be developed on Cardano, especially those needing detailed transaction logic.
 
-## 2.2 Why is (e)UTxO Important?
+## 2.2 Why Is (e)UTxO Important?
 
 * More than just storing money In Cardano, the (e)UTxO model doesn't just keep track of how much digital currency someone has. It also stores rules about how that money can be spent. This is especially useful for things like smart contracts.
 * Security and efficiency The (e)UTxO model stands out for its security, ensuring transactions comply with set rules, and efficiency, by processing multiple transactions simultaneously. Moreover, its underlying UTxO mode has a proven track record as the longest tested account model as it is utilized by Bitcoin for over a decade without issues.
@@ -67,7 +67,7 @@ The "e" in (e)UTxO signifies "extended," enhancing the Unspent Transaction Outpu
 
 <figure><img src="/assets/pictures/image (1) (1).png" alt=""><figcaption><p>EUtxO vs UTxO Model ([https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/a/9/a9af3c665177df48ab5ed3b249b466db82dc59b7_2_1000x562.jpeg](https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/a/9/a9af3c665177df48ab5ed3b249b466db82dc59b7_2_1000x562.jpeg)) </p></figcaption></figure>
 
-## 3.1 The (e)UTxO model integrates the following transaction mechanisms
+## 3.1 The (e)UTxO Model Integrates the Following Transaction Mechanisms
 
 <figure><img src="/assets/pictures/image (2) (1).png" alt=""><figcaption><p>EUTxO Components ([https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/b/3/b3351160eb9145c7cfc6a3cf80171547f09a8318_2_1000x533.jpeg](https://global.discourse-cdn.com/business4/uploads/cardano/optimized/3X/b/3/b3351160eb9145c7cfc6a3cf80171547f09a8318_2_1000x533.jpeg)) </p></figcaption></figure>
 
@@ -129,7 +129,7 @@ The infographic below, created by IOG, shows a comparison between the two models
 
 <figure><img src="/assets/pictures/image (3) (1).png" alt=""><figcaption><p>Infographic Eutxo v. account-based-models ([https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F466e4cd4-7871-4fe9-a6c0-8dd66f06e0cc%2F&#x26;w=3840&#x26;q=75](https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F466e4cd4-7871-4fe9-a6c0-8dd66f06e0cc%2F&#x26;w=3840&#x26;q=75))</p></figcaption></figure>
 
-## 5.1 Traditional UTXO model (example)
+## 5.1 Traditional UTxO Model (Example)
 
 Like getting exact change: Think of the traditional UTxO model as getting change from a cash transaction. For example, if you buy something for $5 and pay with a $10 bill, you get $5 back as change.
 

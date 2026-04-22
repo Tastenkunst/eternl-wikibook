@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-file MD033 -->
 
-# Contact & support
+# Contact & Support
 
 If you need help, have questions, or want to get in touch with us, you can reach us through the following channels:
 
