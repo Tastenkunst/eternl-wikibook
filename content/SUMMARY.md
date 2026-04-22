@@ -58,7 +58,7 @@
 
 * [Contact & Support](contact-and-support.md)
 
-* [Impressum](impressum.md)
+* [Legal Notice](legal-notice.md)
 
 
 [def]: faq/receiving-address.md
