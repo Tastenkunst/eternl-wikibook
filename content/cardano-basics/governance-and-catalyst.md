@@ -1,4 +1,5 @@
-﻿# Governance & Project Catalyst
+﻿
+# Governance & Project Catalyst
 
 Cardano is characterized by its commitment to security, scalability, and decentralization. Two key components that reflect this commitment are **Catalyst voting** and broader **blockchain governance**. While they share the goal of community-driven evolution, they operate at different layers of the ecosystem.
 

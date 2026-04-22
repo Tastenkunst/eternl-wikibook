@@ -1,4 +1,5 @@
-﻿# The eUTxO Model
+﻿
+# The eUTxO Model
 
 Cardano is built on the Extended Unspent Transaction Output (eUTxO) model, which keeps ADA locked inside an ever-shifting set of outputs instead of a single account balance. Each time you send funds, Eternl chooses one or more UTxOs and creates new ones that split ADA between recipients and change addresses. Think of them as sealed recipe cards: you can only spend a UTxO if you present the key that matches the payment credential inside it. Every on-chain address you create in Eternl combines a payment credential with a stake credential, so your ADA can feed a UTxO while simultaneously pointing to a stake key that collects rewards.
 

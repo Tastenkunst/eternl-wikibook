@@ -6,6 +6,7 @@ frontmatter:
 ---
 description: lorem ipsum
 disableH2Collapse: true
+cover: 
 ---
 
 
@@ -52,7 +53,8 @@ inline bsp:
 
 
 
-Kommentarsyntax
+Kommentarsyntax <!-- loem ipsum -->
+
 >>> first line in a markdown file to disable errors:
 
 <!-- markdownlint-disable-file MD033 -->
@@ -107,6 +109,6 @@ text[^1]
 
 tables
 
-:----   linksbündige spalte
-----:   rechtsbündige spalte
+:---   linksbündige spalte
+---:   rechtsbündige spalte
 :---:   mittige spalte
