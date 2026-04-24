@@ -1,5 +1,5 @@
 ---
-description: Troubleshooting for common Errors
+description: Troubleshooting for common errors
 ---
 
 # Troubleshooting

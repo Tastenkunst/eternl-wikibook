@@ -1,5 +1,5 @@
 ---
-description: Frequently Asked Questions & Troubleshooting For Common Errors
+description: Frequently Asked Questions & Troubleshooting for common errors
 ---
 
 # FAQ & Troubleshooting
