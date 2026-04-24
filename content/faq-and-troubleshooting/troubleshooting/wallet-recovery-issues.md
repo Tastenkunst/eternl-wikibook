@@ -1,4 +1,4 @@
-# Restore Wallet doesn´t work
+# Wallet Recovery Issues
 
 TODO 
 
