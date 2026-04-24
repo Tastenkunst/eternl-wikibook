@@ -33,13 +33,15 @@
 
 * [Multi-Sig](multi-sig.md)
 
-* [FAQ](faq/README.md)
-  * [How do I find my receiving address?](faq/receiving-address.md)
-  * [Why My Wallets Dissapeared?](faq/why-my-wallets-disappeared.md)
-  * [What is a Recovery Phrase and why is it so important?](faq/recovery-phrase.md)
-  * [Can I migrate my wallet to a hardware device?](faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
-  * [Can I restore my hardware wallet phrase on Eternl?](faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
-  * [Claiming the Glacier Airdrop](faq/claiming-the-glacier-airdrop-in-eternl-v2.md)
+* [FAQ & Troubleshooting](faq/README.md)
+  *  [Frequently Asked Questions](faq/frequently-asked-questions/README.md)
+    * [How do I find my receiving address?](faq/frequently-asked-questions/receiving-address.md)
+    * [Why My Wallets Dissapeared?](faq/frequently-asked-questions/why-my-wallets-disappeared.md)
+    * [What is a Recovery Phrase and why is it so important?](faq/frequently-asked-questions/recovery-phrase.md)
+    * [Can I migrate my wallet to a hardware device?](faq/frequently-asked-questions/can-i-migrate-my-wallet-to-a-hardware-device.md)
+    * [Can I restore my hardware wallet phrase on Eternl?](faq/frequently-asked-questions/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
+    * [Claiming the Glacier Airdrop](faq/frequently-asked-questions/claiming-the-glacier-airdrop-in-eternl-v2.md)
+  * [Common Errors](faq/common-errors/README.md)
 
 * [Cardano Basics](cardano-basics/README.md)
     * [Security Basics](cardano-basics/security-basics.md)
@@ -49,6 +51,7 @@
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
     * [The eUTxO Model](cardano-basics/the-eutxo-model.md)
+    * [eUTxO](cardano-basics/e-utxo-extended-unspent-transaction-output.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
 
 * [For Developers](for-developers/README.md)
@@ -59,7 +62,3 @@
 * [Contact & Support](contact-and-support.md)
 
 * [Legal Notice](legal-notice.md)
-
-
-[def]: faq/receiving-address.md
-[def2]: faq/why-my-wallets-disappeared.md
