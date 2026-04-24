@@ -28,11 +28,11 @@ A little late to the party Cardano introduced smart contracts a while after Ethe
 Alongside Plutus which requires extensive technical knowledge Marlowe was released. It offers OpenSource tools which allow the creation of complex smart contracts without having to write Haskell code. In order to promote SC creation and usage on Cardano udemy courses were created explaining Plutus and Marlowe in detail.
 Notably the Cardano core was updated by Goguen as well. It now allows for natively supported tokens via a multi currency ledger. With this update it is possible to create fungible tokens as well as non-fungible-tokens, opening the world of NFTs for Cardano users.
 
-## Basho Era: Scaling (2021-Present)
+## Basho Era: Scaling (2021-2024)
 
 We are now approaching the current state of blockchain which is the Basho era. It is focused on improving the scalability and interoperability of Cardano. One of the primary components of Basho is the introduction of sidechains, which are new blockchains that are interoperable with the main Cardano chain and can off-load work to increase capacity.
 
-## Voltaire Era: Governance (Future Era)
+## Voltaire Era: Governance (2024-Present)
 
 Voltaire is designed to give the full control over the development of the blockchain back to the people. It will add voting and treasury systems, enabling network participants to use their stakes to vote on key protocol updates and developments. This era aims to make Cardano a self-sustaining network that is completely decentralized and no longer under the control of any single authority.
 This means IOHK will no longer be managing Cardanos development.
@@ -43,12 +43,12 @@ Allows stakeholders to influence the future development of the network through a
 
 ### Treasury System
 
-Collects a fraction of transaction fees to fund network development and community initiatives.
+Collects a fraction of transaction fees and a portion of the monetary reserves each epoch to fund network development and community initiatives.
 
 ---
-<div class="callout-tip">
+::: info
 Cardano's roadmap is a strategic plan aimed at creating a robust, decentralized platform that addresses the needs of users and developers through advanced features and an emphasis on security and sustainability. Each era builds on the last, progressively enhancing the capabilities of the network to support a wide range of applications and services in a decentralized and efficient manner. With its research-driven approach and pioneering technologies, Cardano is set to be a leading player in the blockchain space. (IOHK, 2024, May 2nd)
-</div>
+:::
 
 ## References
 

@@ -274,8 +274,21 @@
   /*  --theme-icon-inline-filter: invert(70%) sepia(49%) saturate(1580%) hue-rotate(353deg)*/
   /*    brightness(101%) contrast(101%);*/
   /*}*/
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
   figcaption {
-    margin-top: -1rem;
+    margin-top: -0.95rem;
     opacity: 0.8;
     font-size: 0.8rem;
   }
