@@ -4,7 +4,7 @@ TODO
 
 wrong seed phrase (recovery phrase)
 
-had manually set a account-index
+had manually set an account-index
 
 the wallet was created by a hardware wallet, which use another algorithm
 

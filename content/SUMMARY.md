@@ -18,8 +18,8 @@
     * [Managing Accounts](using-eternl/managing-accounts.md)::/assets/hugeicons/IconUser.svg
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
     * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
-    * [How Eternl uses the eUTxO Model](using-eternl/how-eternl-uses-the-eutxo-model.md)
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
+    * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
