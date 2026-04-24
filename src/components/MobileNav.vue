@@ -224,7 +224,7 @@ watch(() => route.path, () => { isOpen.value = false; });
   overflow-y: auto;
   margin: 3px;
   border: 1px solid var(--color-bg);
-  border-radius: 20px;
+  border-radius: 17px;
   scrollbar-width: none;
   -ms-overflow-style: none;
   background: var(--color-bg)
