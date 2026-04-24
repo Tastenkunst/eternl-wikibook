@@ -23,7 +23,6 @@ On supported browsers, look for the install option in the address bar to add Ete
 * Lightweight and ideal for seamless dApp integration
 
 ### ![Mobile App](/assets/icons/mobile-icon.svg) Mobile App _(Beta / Limited)_
-### Mobile App _(beta / Limited)_
 
 * Android version available via direct APK or third-party stores
 * iOS supported in web and via app
