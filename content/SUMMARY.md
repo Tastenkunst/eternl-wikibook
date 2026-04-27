@@ -44,6 +44,7 @@
     * [Claiming the Glacier Airdrop](faq-and-troubleshooting/faq/claiming-the-glacier-airdrop-in-eternl-v2.md)
   * [Troubleshooting](faq-and-troubleshooting/troubleshooting/README.md)
     * [Error Creating a TX](faq-and-troubleshooting/troubleshooting/error-creating-a-tx.md)
+    * [Error Signing a TX](faq-and-troubleshooting/troubleshooting/error-signing-a-tx.md)
     * [Error Submitting a TX](faq-and-troubleshooting/troubleshooting/error-submitting-a-tx.md)
     * [Wallet Recovery Issues](faq-and-troubleshooting/troubleshooting/wallet-recovery-issues.md)
     * [DApp Connection Issues](faq-and-troubleshooting/troubleshooting/dapp-connection-issues.md)
