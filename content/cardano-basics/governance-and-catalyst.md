@@ -62,6 +62,7 @@ Cardano's development is divided into five distinct phases:
 :::
 
 ## References
-* Kiayias, A., & Lazos, P. (2022, September). *SoK: Blockchain Governance—IOHK Research*.
+
+* Kiayias, A., & Lazos, P. (2022, September). *SoK: Blockchain Governance—IOHK Research*
 * Döllel, D. (2024, April 19). *“Dezentrale Governance”: Cardano steht vor neuer Ära*. BTC-Echo.
 * Project Catalyst. (2024, December). *Fund 13 Results and Onboarding*.
