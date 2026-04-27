@@ -1,5 +1,5 @@
 ---
-Description: Decentralized Finance explained
+Description: (x) A brief overview of DeFi (Decentralized Finance)
 ---
 # Decentralized Finance Explained
 

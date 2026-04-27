@@ -60,3 +60,8 @@ Eternl's multi-account feature is built on CIP-1852, the HD wallet standard that
 ---
 
 By picking custom indexes, you can use accounts 0 through 10,000 across the derivation tree. The theoretical maximum within the standard is 2,147,483,648 unique accounts (sub-wallets), so Eternl's 30-account window gives you a practical slice of that range without overwhelming the interface.
+
+### References
+
+[^1] https://cips.cardano.org/cip/CIP-1852/ <br>
+[^2] https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki

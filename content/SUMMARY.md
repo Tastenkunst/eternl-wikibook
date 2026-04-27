@@ -22,10 +22,10 @@
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
+    * [Security Best Practices](security-and-privacy/Security-Best-Practices.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
     * [Hot Wallets vs Cold Wallets](security-and-privacy/hot-wallets-vs-cold-wallets.md)
     * [How to Store Your Seed Phrase Securely](security-and-privacy/how-to-store-your-seed-phrase-securely.md)
-    * [Common Mistakes to Avoid](security-and-privacy/common-mistakes-to-avoid.md)
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
 
 * [Staking & Delegation](staking-and-delegation/README.md)
@@ -56,6 +56,7 @@
     * [DeFi (Decentralized Finance)](cardano-basics/defi-decentralized-finance.md)
     * [DEXes & Marketplaces](cardano-basics/dexes-and-marketplaces.md)
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
+    * [Decentralized Finance explained](cardano-basics/decentralized-finance.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
     * [Understanding Cardano’s (e)UTxO Model](cardano-basics/understanding-cardanos-eutxo-model.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
