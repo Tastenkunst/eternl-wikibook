@@ -46,6 +46,7 @@
     * [Error Creating a TX](faq-and-troubleshooting/troubleshooting/error-creating-a-tx.md)
     * [Error Submitting a TX](faq-and-troubleshooting/troubleshooting/error-submitting-a-tx.md)
     * [Wallet Recovery Issues](faq-and-troubleshooting/troubleshooting/wallet-recovery-issues.md)
+    * [DApp Connection Issues](faq-and-troubleshooting/troubleshooting/dapp-connection-issues.md)
 
 * [Cardano Basics](cardano-basics/README.md)
     * [A Brief Intro to Cardano](cardano-basics/a-brief-intro-to-cardano.md)

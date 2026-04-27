@@ -33,6 +33,8 @@ disableH2Collapse: true
 
 <br>
 
+---
+
 ::: success
 **Your keys, your crypto!** Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
 :::

@@ -543,7 +543,7 @@
   }
 
   .doc-content h3 {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.4rem;
     font-size: 1.25rem;
     line-height: 1.35;
@@ -935,7 +935,7 @@
   .callout-warning,
   .callout-success,
   .gb-hint {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     padding: 1.25rem;
     padding-left: 3.5rem;
     border-radius: 8px;
