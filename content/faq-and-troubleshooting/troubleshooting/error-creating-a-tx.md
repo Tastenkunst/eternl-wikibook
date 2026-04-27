@@ -1,14 +1,10 @@
 # Error Creating a Transaction
 
-If you encounter an error while building or signing a transaction, please check the following common causes:
+If you encounter an error while building a transaction, please check the following common causes:
 
 ### Governance & DRep Issues
 * **Problem:** The transaction fails because it tries to claim staking rewards automatically.
 * **Solution:** Since the Voltaire era, claiming rewards requires delegation to an **active DRep**. Please check if you are delegated to a DRep and ensure they are still active.
-
-### Hardware Wallet Issues
-* **Transaction hash mismatch:** This usually means your hardware wallet's **firmware** or the Cardano app on the device is outdated. Please update your device via Ledger Live / Trezor Suite.
-* **Wrong Device:** If you use multiple hardware wallets, ensure you have connected and unlocked the specific device that belongs to the account you are currently using in Eternl.
 
 ### Insufficient Funds / Min-ADA
 * **Problem:** "Insufficient funds" or "Output too small" errors.
