@@ -49,14 +49,14 @@ Maintain multiple copies in different secure locations (e.g., a safe or locked d
 
 ## Using Wallets Securely
 
-### 2.1 Hot Wallets vs. Cold Wallets
+### Hot Wallets vs. Cold Wallets
 
-| Feature                |            Hot Wallet (e.g., Eternl Mobile/Web)           |              Cold Wallet (Hardware Wallet) |
-|:-----------------------|:---------------------------------------------------------:|-------------------------------------------:|
-| Connectivity           |                Connected to the internet.        |                      Always offline. |
-| Security               |        Vulnerable to online hacks/malware.    |      Highest security; keys never leave device. |
-| Convenience            |             Fast for frequent trading.           |             Less convenient for quick moves. |
-| Cost                   |                    Usually free.              |             Requires purchasing hardware. |
+| Feature | Hot Wallet<br>(e.g. Eternl Mobile) | Cold Wallet<br>(Hardware Wallet) |
+| :--- | :---: | :---: |
+| Connectivity | Connected to the internet. | Always offline. |
+| Security | Vulnerable to online hacks/malware. | Highest security; keys never leave device. |
+| Convenience | Fast for frequent trading. | Less convenient for quick moves. |
+| Cost | Usually free. | Requires purchasing hardware. |
 
 ### Using Eternl with Hardware Wallets
 
