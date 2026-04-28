@@ -49,7 +49,7 @@ Maintain multiple copies in different secure locations (e.g., a safe or locked d
 
 ## Using Wallets Securely
 
-### Hot Wallets vs. Cold Wallets
+### [Hot Wallets vs. Cold Wallets](./hot-wallets-vs-cold-wallets.md)
 
 | Feature | Hot Wallet<br>(e.g. Eternl Mobile) | Cold Wallet<br>(Hardware Wallet) |
 | :--- | :---: | :---: |
