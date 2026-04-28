@@ -190,7 +190,7 @@ Cardano's Extended Unspent Transaction Output ((e)UTxO) model is an advanced ver
 
 ---
 
-[^1]: EUtxO Model vs Account Model (https://developers.cardano.org/assets/images/eutxo-vs-account-model-3d9efc60bb4980008d27ca67cb9b027a.jpg)
+[^1]: EUtxO Model vs Account Model on [cardano.org](https://developers.cardano.org/assets/images/eutxo-vs-account-model-3d9efc60bb4980008d27ca67cb9b027a.jpg)
   
 [^2]: EUtxO vs UTxO Model (https://media.licdn.com/dms/image/v2/D4D12AQHFmHw1Gntbhw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1722515711606?e=1778716800&v=beta&t=FloINn0g5M3PpzirrkMes8Uzgea5MskZ2qjH56RzfA8)
 
