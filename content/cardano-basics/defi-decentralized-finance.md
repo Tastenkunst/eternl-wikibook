@@ -90,7 +90,7 @@ Governance tokens give users a say in the development and operation of DeFi prot
 
 Decentralization means spreading out power, control, and decision-making to many people instead of just one organization. For DeFi (Decentralized Finance), this idea is crucial as the name states already, because:
 
-## 5.1 No Need for Trust
+### 5.1 No Need for Trust
 
 Decentralization means you don't have to trust one central group, like a bank. Instead, people can do transactions directly with each other using smart contracts.
 

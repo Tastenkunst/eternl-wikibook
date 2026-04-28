@@ -56,13 +56,13 @@
     * [DeFi (Decentralized Finance)](cardano-basics/defi-decentralized-finance.md)
     * [DEXes & Marketplaces](cardano-basics/dexes-and-marketplaces.md)
     * [Cardano Addresses](cardano-basics/cardano-addresses.md)
-    * [Decentralized Finance explained](cardano-basics/decentralized-finance.md)
     * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
     * [Understanding Cardano’s (e)UTxO Model](cardano-basics/understanding-cardanos-eutxo-model.md)
     * [Cardano Timeline](cardano-basics/cardano-timeline.md)
 
 * [For Developers](for-developers/README.md)
     * [DApp Browser Integration](for-developers/dapp-browser-integration.md)
+<!-- [Eternl DApp Browser Integration](for-developers/eternl-dapp-browser-integration.md) -->
 
 * [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 

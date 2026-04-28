@@ -107,12 +107,12 @@ The convenience fee is our way to monetize Eternl wallet to keep the lights on a
 
 ### Integration Test
 
-#### **API Injected (1): Eternl Beta browser extension**
+#### API Injected (1): Eternl Beta browser extension
 
 If you want to test against a localhost, that's only available on the Eternl Beta extension, not in production.\
 The dapp page is embedded in an iframe, which needs to be allowed by the dApp page.
 
-#### PWA JS Bridge (2): https://staging.eternl.io/**
+#### PWA JS Bridge (2): https://staging.eternl.io/
 
 For integration tests of the PWA JS Bridge, please use: https://staging.eternl.io/
 

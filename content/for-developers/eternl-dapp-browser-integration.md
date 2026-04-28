@@ -28,7 +28,8 @@ A postMessage bridge to connect to dApps loaded into an iframe.
 #### How to: dApps
 
 DApp includes cardano-dapp-connector-bridge.js and calls:
-```// Calling this function is mandatory.
+```js
+// Calling this function is mandatory.
 initCardanoDAppConnectorBridge(async (walletApi) => {
 
   // Bridge was established by the wallet.
@@ -54,7 +55,7 @@ initCardanoDAppConnectorBridge(async (walletApi) => {
 #### How to: wallets
 
 Wallets need to provide their API object as usual, but replace all functions with a simple string:
-```
+```js
 var bridgeInitialApi          = {
 
   isBridge:                   true,
