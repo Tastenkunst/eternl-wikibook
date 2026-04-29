@@ -70,16 +70,16 @@ To withdraw staking rewards, your wallet must:
 - Be delegated to a stake pool
 - Have a governance delegation configured
 
+:::warning
+Without governance delegation configured, reward withdrawals are restricted by the Cardano protocol.
+:::
+
 This can be done by:
 
 - Delegating to a DRep (Delegated Representative), or
 - Selecting **Always Abstain**
 
 The **Always Abstain** option allows reward withdrawals without actively participating in governance voting.
-
-:::warning
-Without governance delegation configured, reward withdrawals are restricted by the Cardano protocol.
-:::
 
 :::success
 You can manage governance delegation inside the **Governance** section of Eternl.
@@ -94,6 +94,10 @@ Staking rewards are automatically added to your delegated stake.
 This means rewards continue contributing to future rewards without requiring manual compounding.
 
 Rewards are stored separately from your spendable wallet balance until withdrawn.
+
+:::warning
+Remember that reward withdrawals still require DRep delegation due to Cardano governance rules.
+:::
 
 ---
 
@@ -138,10 +142,6 @@ To manually withdraw rewards:
 2. Locate "Unclaimed Ada" card
 3. Click the **Claim rewards** button
 4. Review and confirm the transaction
-
-:::warning
-Remember that reward withdrawals still require DRep delegation due to Cardano governance rules.
-:::
 
 ---
 
