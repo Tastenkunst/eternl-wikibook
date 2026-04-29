@@ -6,7 +6,7 @@ frontmatter:
 ---
 description: lorem ipsum
 disableH2Collapse: true
-cover: 
+cover:
 ---
 
 
@@ -112,3 +112,14 @@ tables
 :---   linksbündige spalte
 ---:   rechtsbündige spalte
 :---:   mittige spalte
+
+
+
+
+images
+
+![eternl_guard_2.png](/assets/pictures/eternl_guard_2.png)
+--> text in eckigen klammern alt text. erzeugt nur einfaches image tag. keine bildunterschrift. platzierung links.
+
+<figure><img src="/assets/pictures/eternl_guard_2.png" alt=""><figcaption></figcaption></figure>
+--> mit bildunterschrift. platzierung mittig

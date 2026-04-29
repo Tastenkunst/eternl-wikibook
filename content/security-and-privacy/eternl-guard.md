@@ -20,6 +20,7 @@ When connecting to a known malicious DApp, Eternl will now show a soft-blocking 
 After waiting for 10 seconds and confirming you're aware of connecting to a known malicious DApp, you can hide this warning and connect like you're used to. This warning will only show while the connection has not been approved yet. If you connect once and add the DApp to your allowlist, it will not show again.
 
 ![eternl_guard_2.png](/assets/pictures/eternl_guard_2.png)
+<!-- <figure><img src="/assets/pictures/eternl_guard_2.png" alt=""><figcaption></figcaption></figure> -->
 
 ### 3. Wallet Cleanup
 

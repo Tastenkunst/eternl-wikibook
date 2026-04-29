@@ -13,12 +13,12 @@
     --color-border-strong: #383838;
     --color-primary: #ea576d;
     --color-secondary: #ed7253;
-    --color-link: #7188ff;
     --color-link-hover: #242424;
     --color-text: #cbcbcb;
     --color-text-hover: #cfcfcf;
     --color-text-muted: #94a3b8;
     --color-text-subtle: #cbd5f5;
+    --color-text-link: color-mix(in srgb, #7188ff, var(--color-text) 30%);
     --color-accent: #38bdf8;
     --color-accent-strong: #0ea5e9;
     --color-warning: #ff0f0f;
@@ -74,6 +74,7 @@
     --color-text-hover: #081023;
     --color-text-muted: #475569;
     --color-text-subtle: #64748b;
+    --color-text-link: color-mix(in srgb, #7188ff, var(--color-text) 30%);
     --color-accent: #0284c7;
     --color-accent-strong: #0ea5e9;
     --color-warning: #ff0f0f;
@@ -583,7 +584,7 @@
   }
 
   .doc-content a {
-    color: var(--color-link);
+    color: var(--color-text-link);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
@@ -607,11 +608,10 @@
     height: auto;
     width: auto;
     border-radius: 0.5rem;
-    cursor: zoom-in;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
-  .doc-content img:hover {
+  .doc-content img.medium-zoom-image:hover {
     transform: scale(1.01);
   }
 

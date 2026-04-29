@@ -2,6 +2,8 @@
 
 Protecting your cryptocurrency assets begins with understanding how to properly handle and store your credentials. In a decentralized system, you act as your own bank: because transactions are irreversible and cannot be undone by any authority, the safety of your funds depends entirely on your security practices. This guide combines essential principles with specific tips for Eternl Wallet to help you avoid both technical breaches and human error.
 
+---
+
 ## The Golden Rule: Your Seed Phrase
 
 A seed phrase (usually 12, 15, or 24 words) is the master key to your wallet. It contains all the data required to recover and control your funds. If you lose access to your device or forget your password, this phrase is your only way back in.

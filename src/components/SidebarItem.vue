@@ -156,7 +156,7 @@ onUnmounted(() => {
 
 .sidebar-link-active {
   color: var(--color-primary);
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 
 .sidebar-children {

@@ -1,4 +1,4 @@
-# Staking ADA in Eternl v2
+# Staking ADA in Eternl
 
 Staking on Cardano allows you to delegate your ADA to a stake pool and earn staking rewards while keeping full control over your funds.
 

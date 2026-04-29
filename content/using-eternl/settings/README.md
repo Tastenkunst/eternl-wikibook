@@ -1,6 +1,5 @@
 ---
-description: >- 
-    Account-, Wallet- and Application settings and App Utilities
+description:
 ---
 
 # Settings
