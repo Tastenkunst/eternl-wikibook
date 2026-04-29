@@ -27,6 +27,7 @@
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
 
 * [Staking & Delegation](staking-and-delegation/README.md)
+    * [Staking your Ada](staking-and-delegation/staking-your-ada.md)
     * [Staking Mechanics](staking-and-delegation/staking-mechanics.md)
     * [Stake Pool Rating](staking-and-delegation/stake-pool-rating.md)
 
