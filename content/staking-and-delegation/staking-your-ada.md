@@ -23,7 +23,7 @@ The staking dashboard displays:
 - Your stake key
 - Stake pool management options
 
-![Staking Dashboard](/public/assets/pictures/staking_dashboard.png)
+![Staking Dashboard](//assets/pictures/staking_dashboard.png)
 
 ---
 
@@ -42,7 +42,7 @@ You can:
 - Review pool statistics
 - Delegate directly from the list
 
-![Stake Pool List](/public/assets/pictures/stake_pool_list.png)
+![Stake Pool List](/assets/pictures/stake_pool_list.png)
 
 Each stake pool displays useful information such as:
 
