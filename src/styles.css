@@ -24,6 +24,7 @@
     --color-warning: #ff0f0f;
     --color-success: #22c55e;
     --color-success-txt: #059669;
+    --color-danger: #f87171;
     --heading-gold-strong: #ff903e;
     --heading-gold-muted: #b36b2d;
     --heading-gold-soft: #d99252;
@@ -78,6 +79,7 @@
     --color-accent-strong: #0ea5e9;
     --color-warning: #ff0f0f;
     --color-success: #16a34a;
+    --color-danger: #dc2626;
     --heading-gold-strong: #ff903e;
     --heading-gold-muted: #b36b2d;
     --heading-gold-soft: #c77a35;
