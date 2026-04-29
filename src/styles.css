@@ -13,6 +13,7 @@
     --color-border-strong: #383838;
     --color-primary: #ea576d;
     --color-secondary: #ed7253;
+    --color-link: #7188ff;
     --color-link-hover: #242424;
     --color-text: #cbcbcb;
     --color-text-hover: #cfcfcf;
@@ -582,7 +583,7 @@
   }
 
   .doc-content a {
-    color: var(--color-accent);
+    color: var(--color-link);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;

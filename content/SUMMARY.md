@@ -22,10 +22,8 @@
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
-    * [Security Best Practices](security-and-privacy/Security-Best-Practices.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
-    * [Hot Wallets vs Cold Wallets](security-and-privacy/hot-wallets-vs-cold-wallets.md)
-    * [How to Store Your Seed Phrase Securely](security-and-privacy/how-to-store-your-seed-phrase-securely.md)
+    * [Security Best Practices](security-and-privacy/Security-Best-Practices.md)
     * [Eternl Guard](security-and-privacy/eternl-guard.md)
 
 * [Staking & Delegation](staking-and-delegation/README.md)
