@@ -47,7 +47,7 @@ You can:
 Each stake pool displays useful information such as:
 
 | Field | Description |
-|---|---|
+| --- | --- |
 | Saturation | Indicates how full the pool is |
 | Pledge | ADA committed by the pool operator |
 | Fees | Pool operating fees |
@@ -148,7 +148,7 @@ Remember that reward withdrawals still require DRep delegation due to Cardano go
 ## Notes
 
 - Rewards are distributed automatically by the Cardano protocol
-- Delegation changes require several epochs before rewards begin
+- Delegation changes require [several epochs](http://localhost:5174/staking-and-delegation/staking-mechanics) before rewards begin
 - Your ADA always remain under your control
 - Staking does not lock your funds
 - You can change stake pools at any time
