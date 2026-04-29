@@ -23,7 +23,7 @@ The staking dashboard displays:
 - Your stake key
 - Stake pool management options
 
-![Staking Dashboard](.gitbook/assets/pictures/staking_dashboard_v2.png)
+![Staking Dashboard](/public/assets/pictures/staking_dashboard.png)
 
 ---
 
@@ -42,7 +42,7 @@ You can:
 - Review pool statistics
 - Delegate directly from the list
 
-![Stake Pool List](.gitbook/assets/pictures/stakepool_list_v2.png)
+![Stake Pool List](/public/assets/pictures/stake_pool_list.png)
 
 Each stake pool displays useful information such as:
 
@@ -61,18 +61,29 @@ To delegate:
 
 ---
 
-## Important: Governance Requirement for Reward Withdrawals
+### Important: Governance Requirement for Reward Withdrawals
 
 Due to changes in the Cardano protocol introduced with on-chain governance, staking reward withdrawals now require governance participation.
 
 To withdraw staking rewards, your wallet must:
 
 - Be delegated to a stake pool
-- Have a delegated DRep (Delegated Representative)
+- Have a governance delegation configured
 
-Without DRep delegation, reward withdrawals are restricted by the protocol.
+This can be done by:
 
+- Delegating to a DRep (Delegated Representative), or
+- Selecting **Always Abstain**
+
+The **Always Abstain** option allows reward withdrawals without actively participating in governance voting.
+
+:::warning
+Without governance delegation configured, reward withdrawals are restricted by the Cardano protocol.
+:::
+
+:::success
 You can manage governance delegation inside the **Governance** section of Eternl.
+:::
 
 ---
 
@@ -124,11 +135,13 @@ If Auto Withdrawal is disabled, rewards can still be withdrawn manually.
 To manually withdraw rewards:
 
 1. Open the **Staking** page
-2. Locate available rewards
-3. Click the **Withdraw** button
+2. Locate "Unclaimed Ada" card
+3. Click the **Claim rewards** button
 4. Review and confirm the transaction
 
+:::warning
 Remember that reward withdrawals still require DRep delegation due to Cardano governance rules.
+:::
 
 ---
 
@@ -136,6 +149,6 @@ Remember that reward withdrawals still require DRep delegation due to Cardano go
 
 - Rewards are distributed automatically by the Cardano protocol
 - Delegation changes require several epochs before rewards begin
-- Your ADA always remains under your control
+- Your ADA always remain under your control
 - Staking does not lock your funds
 - You can change stake pools at any time
