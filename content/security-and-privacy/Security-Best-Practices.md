@@ -1,6 +1,6 @@
 # Security Best Practices and Common Mistakes
 
-Protecting your cryptocurrency assets begins with understanding how to properly handle and store your credentials. In a decentralized system, you act as your own bank: because transactions are irreversible and cannot be undone by any authority, the safety of your funds depends entirely on your security practices. This guide combines essential principles with specific tips for Eternl Wallet to help you avoid both technical breaches and human error.
+Protecting your cryptocurrency assets begins with understanding how to properly handle and store your credentials. In a decentralized system, you act as your own bank: because **transactions are irreversible** and **cannot be undone by any authority**, the safety of your funds depends entirely on your security practices. This guide combines essential principles with specific tips for Eternl Wallet to help you avoid both technical breaches and human error.
 
 ---
 
@@ -38,13 +38,25 @@ Since your seed phrase must never touch a digital environment, its physical reco
 
 ---
 
+## Using Wallets Securely
+
+### Hot Wallets vs. Cold Wallets
+
+#### Hot Wallets
+
+* are internet-connected digital wallets that offer convenience for frequent transactions
+* Eternl v2.0 for example supports integrations with hardware wallets for enhanced security.
+
+#### Cold Wallets
+
+* function offline, reducing hack risks. 
+
+Hardware wallets like Ledger Nano S, Trezor, and Keystone are common choices. Eternl v2.0 supports these hardware wallets, with more integrations planned, making it adaptable and secure for user needs. Investing in a hardware wallet is advisable when you manage amounts exceeding the hardware's cost.
+
 :::warning
 Regardless of the wallet type, safeguarding the **seed phrase** is essential, as losing it can permanently prevent access to your assets. Always store the seed phrase securely offline to protect from digital and physical threats.
 :::
 
-## Using Wallets Securely
-
-### Hot Wallets vs. Cold Wallets 
 
 | Feature      | Hot Wallet<br>(e.g. Eternl Mobile)  |      Cold Wallet<br>(Hardware Wallet)      |
 |:-------------|:-----------------------------------:|:------------------------------------------:|
