@@ -36,7 +36,7 @@
 * [FAQ & Troubleshooting](faq-and-troubleshooting/README.md)
   *  [FAQ](faq-and-troubleshooting/faq/README.md)
     * [How do I find my receiving address?](faq-and-troubleshooting/faq/receiving-address.md)
-    * [Why My Wallets Disappeared?](faq-and-troubleshooting/faq/why-my-wallets-disappeared.md)
+    * [Why my wallets disappeared?](faq-and-troubleshooting/faq/why-my-wallets-disappeared.md)
     * [What is a Recovery Phrase and why is it so important?](faq-and-troubleshooting/faq/recovery-phrase.md)
     * [Can I migrate my wallet to a hardware device?](faq-and-troubleshooting/faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
     * [Can I restore my hardware wallet phrase on Eternl?](faq-and-troubleshooting/faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)

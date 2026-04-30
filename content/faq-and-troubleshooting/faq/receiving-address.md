@@ -1,8 +1,9 @@
 ---
-Description: How do I find my receiving address?
+description: 
 ---
-<!--- 
---->
+
+# How Do I Find My Receiving Address?
+
 ## On Desktop
 
 1. In the desktop application, click the **`Receive`** tab in the main menu on the left.
