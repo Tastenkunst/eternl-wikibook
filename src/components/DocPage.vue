@@ -347,8 +347,8 @@ function wrapSections(html: string): string {
 </script>
 
 <template>
-  <section v-if="doc" class="doc-main-grid grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px] h-full">
-    <article class="doc-card flex flex-col h-full">
+  <section v-if="doc" class="doc-main-grid grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px]">
+    <article class="doc-card flex flex-col">
       <div v-if="coverSrc" class="mb-6 overflow-hidden rounded-2xl border border-ink-10">
         <img :src="coverSrc" alt="" class="banner-image h-48 w-full object-cover" />
       </div>
