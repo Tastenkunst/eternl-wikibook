@@ -15,6 +15,7 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
+    allowedHosts: [ ".eternl.art", "eternl.io", ".eternl.io", "localhost", ".localhost"],
     fs: {
       allow: [path.resolve(__dirname, '..')]
     }
