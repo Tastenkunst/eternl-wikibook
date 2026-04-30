@@ -1,0 +1,791 @@
+import MarkdownIt             from 'markdown-it';
+import type Token             from 'markdown-it/lib/token.mjs';
+import markdownItAnchor       from 'markdown-it-anchor';
+import markdownItContainer    from 'markdown-it-container';
+import markdownItFootnote     from 'markdown-it-footnote';
+
+import { createHighlighter }  from 'shiki';
+
+import GithubSlugger          from 'github-slugger';
+
+import summaryRaw             from '../../content/SUMMARY.md?raw';
+
+type RawDocs = Record<string, string>;
+
+export type TocItem = {
+  id: string;
+  title: string;
+  level: number;
+  children: TocItem[];
+};
+
+export type DocPage = {
+  routePath: string;
+  filePath: string;
+  title: string;
+  description?: string;
+  html: string;
+  footnotesHtml?: string;
+  toc: TocItem[];
+  cover?: CoverAsset;
+  disableH2Collapse?: boolean;
+  children?: NavItem[];
+};
+
+export type CoverAsset =
+  | string
+  | {
+      light?: string;
+      dark?: string;
+    };
+
+export type NavItem = {
+  id: string;
+  title: string;
+  href: string;
+  routePath: string;
+  external?: boolean;
+  icon?: string;
+  children: NavItem[];
+};
+
+export type NavLink = {
+  title: string;
+  routePath: string;
+};
+
+export type SearchEntry = {
+  title: string;
+  routePath: string;
+  text: string;
+};
+
+const SHIKI_THEMES = {
+  light: 'vitesse-light',
+  dark: 'one-dark-pro'
+};
+
+const SHIKI_LANGS = ['javascript', 'typescript', 'json', 'html', 'css', 'bash', 'markdown'];
+
+let highlighter: any = null;
+
+async function initShiki() {
+  if (highlighter) return;
+  highlighter = await createHighlighter({
+    themes: Object.values(SHIKI_THEMES),
+    langs: SHIKI_LANGS
+  });
+}
+
+const rawDocs = import.meta.glob('../../content/**/*.md', {
+  eager: true,
+  query: '?raw',
+  import: 'default'
+}) as RawDocs;
+
+const repoDocs = new Map<string, string>();
+Object.entries(rawDocs).forEach(([path, raw]) => {
+  const repoPath = normalizeRepoPath(path);
+  repoDocs.set(repoPath, raw);
+});
+
+const navTree                 = parseSummary(summaryRaw);
+const docsByRoute             = new Map<string, DocPage>();
+const flatNav: NavLink[]      = [];
+
+
+// hydrateNav(navTree);
+
+// const searchIndex = buildSearchIndex();
+
+let searchIndex: SearchEntry[] = [];
+
+// export { navTree, docsByRoute, flatNav, searchIndex };
+
+export function getDocByRoute(routePath: string): DocPage | undefined {
+  let normalized = normalizeRoutePath(routePath);
+
+  if (normalized === '/home') {
+    normalized = '/';
+  }
+
+  if (normalized === '') {
+    normalized = '/';
+  }
+
+  return docsByRoute.get(normalized);
+}
+
+export function getPrevNext(routePath: string): { prev?: NavLink; next?: NavLink } {
+  const normalized = normalizeRoutePath(routePath);
+  const index = flatNav.findIndex((item) => item.routePath === normalized);
+  if (index === -1) {
+    return {};
+  }
+  return {
+    prev: flatNav[index - 1],
+    next: flatNav[index + 1]
+  };
+}
+
+function normalizeRoutePath(path: string): string {
+  if (path.length > 1 && path.endsWith('/')) {
+    return path.slice(0, -1);
+  }
+  return path;
+}
+
+function normalizeRepoPath(path: string): string {
+  const normalized = path.replace(/\\/g, '/').replace(/^\/@fs\//, '');
+
+  const match = normalized.match(/content\/(.*)$/);
+  if (match) {
+    return `content/${match[1]}`;
+  }
+  return normalized;
+}
+
+function parseSummary(markdown: string): NavItem[] {
+  const root: NavItem[] = [];
+  const stack: Array<{ indent: number; children: NavItem[] }> = [{ indent: -1, children: root }];
+  let index = 0;
+
+  markdown.split(/\r?\n/).forEach((line) => {
+    const match = line.match(/^(\s*)\*\s+\[([^\]]+)\]\(([^)]+)\)(?:::(.*))?\s*$/);
+    if (!match) {
+      return;
+    }
+    const indent = match[1].length;
+    const level = Math.floor(indent / 2);
+    const title = match[2].trim();
+    const href = match[3].trim();
+    const icon = match[4]?.trim();
+
+    const item: NavItem = {
+      id: `nav-${index++}`,
+      title,
+      href,
+      routePath: '',
+      icon,
+      children: []
+    };
+
+    while (stack.length && stack[stack.length - 1].indent >= level) {
+      stack.pop();
+    }
+
+    stack[stack.length - 1].children.push(item);
+    stack.push({ indent: level, children: item.children });
+  });
+
+  return root;
+}
+
+function hydrateNav(items: NavItem[]): void {
+  items.forEach((item) => {
+    if (isExternalLink(item.href)) {
+      item.external = true;
+    } else if (item.href.endsWith('.md')) {
+      const repoPath = `content/${item.href.replace(/^\//, '')}`;
+      const routePath = toRoutePath(repoPath);
+
+      item.routePath = routePath;
+      flatNav.push({ title: item.title, routePath });
+
+      const raw = repoDocs.get(repoPath);
+      if (raw) {
+        const doc = buildDocPage(repoPath, raw, item.title);
+        doc.children = item.children;
+        docsByRoute.set(routePath, doc);
+      } else {
+        docsByRoute.set(routePath, buildMissingDoc(repoPath, item.title));
+      }
+    }
+
+    if (item.children.length) {
+      hydrateNav(item.children);
+    }
+  });
+}
+
+function buildMissingDoc(filePath: string, title: string): DocPage {
+  const message = `# ${title}\n\nThis page is referenced in SUMMARY.md but the file is missing.`;
+  return buildDocPage(filePath, message, title);
+}
+
+function buildSearchIndex(): SearchEntry[] {
+  return flatNav
+    .map((item) => {
+      const doc = docsByRoute.get(item.routePath);
+      if (!doc) {
+        return null;
+      }
+      return {
+        title: doc.title,
+        routePath: doc.routePath === '/' ? '/home' : doc.routePath,
+        text: stripHtml(doc.html)
+      };
+    })
+    .filter((entry): entry is SearchEntry => entry !== null);
+}
+
+function buildDocPage(filePath: string, raw: string, fallbackTitle: string): DocPage {
+  const { data, content } = parseFrontMatter(raw);
+  const description = typeof data.description === 'string' ? data.description : undefined;
+  const cover = normalizeCover(data.cover);
+  const processed = preprocessGitbook(content.trim());
+
+  const md = createMarkdownRenderer(filePath);
+  const tokens = md.parse(processed, {});
+
+  const footnoteIndex = tokens.findIndex(t => t.type === 'footnote_block_open');
+
+  let mainTokens = tokens;
+  let footnoteTokens: Token[] = [];
+
+  if (footnoteIndex !== -1) {
+    mainTokens = tokens.slice(0, footnoteIndex);
+    footnoteTokens = tokens.slice(footnoteIndex);
+  }
+
+  const { title, tokens: trimmedTokens } = extractTitle(mainTokens, fallbackTitle);
+  const toc = buildToc(trimmedTokens);
+
+  const mainHtml = md.renderer.render(trimmedTokens, md.options, {});
+  const footnotesHtml = footnoteTokens.length > 0
+    ? md.renderer.render(footnoteTokens, md.options, {})
+    : '';
+
+  return {
+    routePath: toRoutePath(filePath),
+    filePath,
+    title,
+    description,
+    html: replaceIconSvgs(mainHtml),
+    footnotesHtml: replaceIconSvgs(footnotesHtml),
+    toc,
+    cover,
+    disableH2Collapse: data.disableH2Collapse === true
+  };
+}
+
+function createMarkdownRenderer(filePath: string): MarkdownIt {
+  const slugger = new GithubSlugger();
+  const md:MarkdownIt = new MarkdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+    highlight: (code, lang) => {
+      if (highlighter) {
+        const validLang = lang || 'text';
+        try {
+          return highlighter.codeToHtml(code, {
+            lang,
+            themes: SHIKI_THEMES,
+            defaultColor: false,
+            transformers: [
+              {
+                name: 'line-numbers',
+                line(node: any, line: number) {
+                  node.properties['data-line'] = line;
+                }
+              }
+            ]
+          });
+        }
+        catch (e) {
+          return highlighter.codeToHtml(code, {
+            lang: 'text',
+            themes: SHIKI_THEMES
+          });
+        }
+      }
+      return md.utils.escapeHtml(code);
+    }
+  });
+
+  md.use(markdownItAnchor, {
+    slugify: (value: string) => slugger.slug(value)
+  });
+
+  md.use(markdownItContainer, 'hint', {
+    render(tokens: Token[], idx: number) {
+      const token = tokens[idx];
+      if (token.nesting === 1) {
+        const parts = token.info.trim().split(/\s+/);
+        const style = parts[1] || 'note';
+        return `<div class="gb-hint gb-hint-${style}">`;
+      }
+      return '</div>';
+    }
+  });
+
+  md.use(markdownItContainer, 'tip', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-tip">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItContainer, 'info', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-tip">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItContainer, 'warning', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-warning">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItContainer, 'success', {
+    render: (tokens: Token[], idx: number) => {
+      const token = tokens[idx];
+      return token.nesting === 1
+        ? '<div class="callout-success">'
+        : '</div>\n';
+    }
+  });
+
+  md.use(markdownItFootnote)
+
+  md.use(markdownItContainer, 'footnotes', {
+    render(tokens: Token[], idx: number) {
+      if (tokens[idx].nesting === 1) {
+        return `<section class="footnotes-container">`;
+      }
+      return `</section>`;
+    }
+  });
+
+  const defaultLinkOpen = md.renderer.rules.link_open ?? ((tokens, idx, options, _env, self) => {
+    return self.renderToken(tokens, idx, options);
+  });
+
+  md.renderer.rules.link_open = (tokens, idx, options, _env, self) => {
+    const token = tokens[idx];
+    const hrefIdx = token.attrIndex('href');
+    if (hrefIdx >= 0) {
+      const href = token.attrs?.[hrefIdx]?.[1];
+      if (href) {
+        const { resolved, external } = resolveHref(href, filePath);
+        token.attrs![hrefIdx][1] = resolved;
+        if (external) {
+          token.attrSet('target', '_blank');
+          token.attrSet('rel', 'noreferrer');
+        }
+      }
+    }
+    return defaultLinkOpen(tokens, idx, options, _env, self);
+  };
+
+  md.renderer.rules.table_open = () => '<div class="table-wrapper"><table>';
+  md.renderer.rules.table_close = () => '</table></div>';
+
+  return md;
+}
+
+function preprocessGitbook(content: string): string {
+  let output = content;
+
+  output = output.replace(/\{%\s*hint\s+style="([^"]+)"\s*%\}/g, (_match, style) => {
+    return `::: hint ${style}\n`;
+  });
+
+  output = output.replace(/\{%\s*endhint\s*%\}/g, ':::');
+
+  output = output.replace(/\{%\s*embed\s+url="([^"]+)"\s*%\}/g, (_match, url) => {
+    return renderEmbed(url);
+  });
+
+  return output;
+}
+
+function renderEmbed(url: string): string {
+  const youtubeId = getYoutubeId(url);
+  if (youtubeId) {
+    const src = `https://www.youtube.com/embed/${youtubeId}`;
+    return `\n<div class="gb-embed">\n  <iframe src="${src}" title="Embedded video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n</div>\n`;
+  }
+  return `\n<div class="gb-embed">\n  <a href="${url}" target="_blank" rel="noreferrer">${url}</a>\n</div>\n`;
+}
+
+function getYoutubeId(url: string): string | null {
+  if (url.includes('youtu.be/')) {
+    const id = url.split('youtu.be/')[1]?.split(/[?&#]/)[0];
+    return id || null;
+  }
+  if (url.includes('youtube.com')) {
+    const match = url.match(/[?&]v=([^&]+)/);
+    return match ? match[1] : null;
+  }
+  return null;
+}
+
+function resolveHref(href: string, filePath: string): { resolved: string; external: boolean } {
+  if (href.startsWith('#')) {
+    return { resolved: href, external: false };
+  }
+  if (/^(https?:|mailto:|tel:)/.test(href)) {
+    return { resolved: href, external: true };
+  }
+
+  const [pathPart, hash] = href.split('#');
+  if (!pathPart) {
+    return { resolved: href, external: false };
+  }
+
+  if (!pathPart.endsWith('.md')) {
+    return { resolved: href, external: false };
+  }
+
+  const resolvedPath = pathPart.startsWith('/')
+    ? pathPart.replace(/^\//, '')
+    : resolveRelativePath(filePath, pathPart);
+  const routePath = toRoutePath(resolvedPath);
+  const resolved = hash ? `${routePath}#${hash}` : routePath;
+  return { resolved, external: false };
+}
+
+function resolveRelativePath(baseFilePath: string, relativePath: string): string {
+  const baseDir = baseFilePath.includes('/')
+    ? baseFilePath.slice(0, baseFilePath.lastIndexOf('/') + 1)
+    : '';
+  const url = new URL(relativePath, `https://docs.local/${baseDir}`);
+  return url.pathname.replace(/^\//, '');
+}
+
+function toRoutePath(repoPath: string): string {
+  let normalized = repoPath.replace(/\\/g, '/');
+
+  if (normalized.startsWith('content/')) {
+    normalized = normalized.substring(8);
+  }
+
+  if (normalized === 'README.md') return '/';
+
+  if (normalized.endsWith('/README.md')) {
+    return `/${normalized.replace(/\/README\.md$/, '')}`;
+  }
+
+  return `/${normalized.replace(/\.md$/, '')}`;
+}
+
+function extractTitle(tokens: Token[], fallbackTitle: string): {
+  title: string;
+  tokens: Token[];
+} {
+  const trimmedTokens = [...tokens];
+  const h1Index = trimmedTokens.findIndex(t => t.type === 'heading_open' && t.tag === 'h1');
+
+  if (h1Index !== -1) {
+    const inline = trimmedTokens[h1Index + 1];
+    let titleHtml = inline?.type === 'inline' ? inline.content : fallbackTitle;
+    titleHtml = titleHtml.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">');
+    const finalTitle = replaceIconSvgs(titleHtml);
+    trimmedTokens.splice(0, h1Index + 3);
+    return { title: finalTitle, tokens: trimmedTokens };
+  }
+  return { title: fallbackTitle, tokens: trimmedTokens };
+}
+
+function buildToc(tokens: Token[]): TocItem[] {
+  const toc: TocItem[] = [];
+  let currentH2: TocItem | null = null;
+
+  for (let i = 0; i < tokens.length; i += 1) {
+    const token = tokens[i];
+    if (token.type === 'heading_open') {
+      const level = Number.parseInt(token.tag.replace('h', ''), 10);
+      if (level < 2 || level > 3) {
+        continue;
+      }
+      const inline = tokens[i + 1];
+      if (!inline || inline.type !== 'inline') {
+        continue;
+      }
+      const id = token.attrGet('id') || '';
+      const item: TocItem = {
+        id,
+        title: inline.content
+          .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // 1. Löscht ![icon](...)
+          .replace(/<img[^>]*>/gi, '')         // 2. Löscht <img ...>
+          .replace(/[*_~`]/g, '')              // 3. Löscht *, _, ~, ` (Formatierung)
+          .trim(),
+        level,
+        children: []
+      };
+
+      if (level === 2) {
+        toc.push(item);
+        currentH2 = item;
+      } else if (currentH2) {
+        currentH2.children.push(item);
+      } else {
+        toc.push(item);
+      }
+    }
+  }
+
+  return toc;
+}
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function replaceIconSvgs(html: string): string {
+  return html.replace(
+    /<img\b([^>]*?)\bsrc="([^"]*\/assets\/(?:icons|hugeicons)\/[^"]+\.svg)"([^>]*)>/gi,
+    (_match, before, src, after) => {
+      const attributes = `${before} ${after}`;
+      if (/\bclass="[^"]*\btheme-icon-inline\b[^"]*"/i.test(attributes)) {
+        return _match;
+      }
+      const alt = extractAltText(attributes);
+      if (alt) {
+        return `<span class="gb-icon" style="--gb-icon: url('${src}')" role="img" aria-label="${escapeHtml(
+          alt
+        )}"></span>`;
+      }
+      return `<span class="gb-icon" style="--gb-icon: url('${src}')" aria-hidden="true"></span>`;
+    }
+  );
+}
+
+function extractAltText(attributes: string): string | null {
+  const match = attributes.match(/\balt="([^"]*)"/i);
+  const value = match ? match[1].trim() : '';
+  return value || null;
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function parseFrontMatter(raw: string): { data: Record<string, unknown>; content: string } {
+  const lines = raw.split(/\r?\n/);
+  if (lines[0]?.trim() !== '---') {
+    return { data: {}, content: raw };
+  }
+
+  let endIndex = -1;
+  for (let i = 1; i < lines.length; i += 1) {
+    if (lines[i].trim() === '---') {
+      endIndex = i;
+      break;
+    }
+  }
+
+  if (endIndex === -1) {
+    return { data: {}, content: raw };
+  }
+
+  const frontLines = lines.slice(1, endIndex);
+  const content = lines.slice(endIndex + 1).join('\n');
+  const data = parseFrontMatterLines(frontLines);
+
+  return { data, content };
+}
+
+function parseFrontMatterLines(lines: string[]): Record<string, unknown> {
+  const data: Record<string, unknown> = {};
+  let currentObjectKey: string | null = null;
+  let currentBlock:
+    | {
+        key: string;
+        style: '>' | '|';
+        indent: number;
+        lines: string[];
+      }
+    | null = null;
+
+  const flushBlock = () => {
+    if (!currentBlock) {
+      return;
+    }
+    const joined =
+      currentBlock.style === '>'
+        ? currentBlock.lines.join(' ').replace(/\s+/g, ' ').trim()
+        : currentBlock.lines.join('\n').replace(/\s+$/, '');
+    data[currentBlock.key] = joined;
+  };
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) {
+      continue;
+    }
+
+    const indent = line.match(/^(\s*)/)?.[1].length ?? 0;
+
+    if (currentBlock) {
+      if (indent > currentBlock.indent) {
+        const sliceIndex = Math.min(line.length, currentBlock.indent + 2);
+        currentBlock.lines.push(line.slice(sliceIndex));
+        continue;
+      }
+      flushBlock();
+      currentBlock = null;
+    }
+
+    if (indent > 0 && currentObjectKey && indent >= 2) {
+      const nested = parseKeyValue(trimmed);
+      if (nested) {
+        const [key, rawValue] = nested;
+        const object = (data[currentObjectKey] as Record<string, unknown>) ?? {};
+        object[key] = parseScalar(rawValue);
+        data[currentObjectKey] = object;
+      }
+      continue;
+    }
+
+    if (indent === 0) {
+      currentObjectKey = null;
+    }
+
+    const match = parseKeyValue(trimmed);
+    if (!match) {
+      continue;
+    }
+    const [key, rawValue] = match;
+    if (!rawValue) {
+      data[key] = {};
+      currentObjectKey = key;
+      continue;
+    }
+    if (rawValue.startsWith('>') || rawValue.startsWith('|')) {
+      currentBlock = {
+        key,
+        style: rawValue[0] as '>' | '|',
+        indent,
+        lines: []
+      };
+      continue;
+    }
+    data[key] = parseScalar(rawValue);
+  }
+
+  if (currentBlock) {
+    flushBlock();
+  }
+
+  return data;
+}
+
+function parseKeyValue(value: string): [string, string] | null {
+  const match = value.match(/^([^:]+):\s*(.*)$/);
+  if (!match) {
+    return null;
+  }
+  return [match[1].trim(), match[2].trim()];
+}
+
+function parseScalar(value: string): string | number | boolean {
+  const unquoted = stripQuotes(value);
+  if (/^(true|false)$/i.test(unquoted)) {
+    return unquoted.toLowerCase() === 'true';
+  }
+  if (/^-?\d+(\.\d+)?$/.test(unquoted)) {
+    return Number(unquoted);
+  }
+  return unquoted;
+}
+
+function stripQuotes(value: string): string {
+  const trimmed = value.trim();
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
+    return trimmed.slice(1, -1);
+  }
+  return trimmed;
+}
+
+function normalizeCover(cover: unknown): CoverAsset | undefined {
+  if (!cover) {
+    return undefined;
+  }
+  if (typeof cover === 'string') {
+    return cover;
+  }
+  if (typeof cover === 'object') {
+    const record = cover as Record<string, string | undefined>;
+    const light = record.light ? record.light : undefined;
+    const dark = record.dark ? record.dark : undefined;
+    if (!light && !dark) {
+      return undefined;
+    }
+    return { light, dark };
+  }
+  return undefined;
+}
+
+function isExternalLink(href: string): boolean {
+  return /^(https?:)/.test(href);
+}
+
+export function resolveNavigationLink(title: string, href: string, trailingText?: string | null) {
+  let icon = undefined;
+
+  if (trailingText) {
+    const iconMatch = trailingText.trim().match(/^::(\S+)/);
+    if (iconMatch) {
+      icon = iconMatch[1];
+    }
+  }
+
+  const isExternal = /^(https?:\/\/|mailto:|tel:)/.test(href);
+  let routePath = href;
+
+  if (isExternal) {
+    return {
+      title: title.trim(),
+      routePath: href,
+      icon,
+      external: true
+    };
+  }
+
+  routePath = href.replace(/\.md$/, '');
+  if (!routePath.startsWith('/') && !routePath.startsWith('#')) {
+    routePath = '/' + routePath;
+  }
+
+  return {
+    title: title.trim(),
+    routePath,
+    icon,
+    external: false
+  };
+}
+
+export async function initWiki() {
+  await initShiki();
+
+  hydrateNav(navTree);
+
+  searchIndex = buildSearchIndex();
+}
+
+export {
+  navTree,
+  docsByRoute,
+  flatNav,
+  searchIndex
+};

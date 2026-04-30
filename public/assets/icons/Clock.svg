@@ -1,0 +1,13 @@
+<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px">
+  <style>
+    svg { color: #1f1a14; }
+    @media (prefers-color-scheme: dark) {
+      svg { color: #f5efe6; }
+    }
+  </style>
+
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 8v4l2 2"/>
+    </g>
+  </svg>

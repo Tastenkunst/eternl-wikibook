@@ -1,0 +1,125 @@
+wiki - layout - cheatsheet
+
+
+frontmatter:
+
+---
+description: lorem ipsum
+disableH2Collapse: true
+cover:
+---
+
+
+
+
+[[child-nav]]
+
+
+
+[[custom-nav]]
+* [Claiming the Glacier Airdrop](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
+[[/custom-nav]]
+
+
+
+
+
+
+
+ein- ausklappenklappen (bei h2 automatisch - versuchen h2 zu nutzen)
+
+<details>
+<summary>...</summary>
+...
+</details
+
+
+bewirkt sehr dezenten rahmen - braucht man das?
+
+>
+
+
+
+icons:
+für nav cards in summary
+bsp: "* [Settings](home/getting-started/using-eternl/settings/README.md)::/assets/icons/Settings.svg"
+
+inline bsp:
+"## ![Staking](/assets/icons/StakingOutline.svg) Staking Mechanics"
+
+
+
+![Pointing hand]&#40;/assets/icons/FingerTouch03.svg&#41; Check out our tutorials on:
+
+
+
+Kommentarsyntax <!-- loem ipsum -->
+
+>>> first line in a markdown file to disable errors:
+
+<!-- markdownlint-disable-file MD033 -->
+
+
+
+syntax to insert pictures:
+
+<figure><img src="/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
+
+
+
+syntax for callout boxes:
+
+::: tip   			info geht auch. identisches styling
+lorem ipsum
+:::
+
+::: success
+lorem ipsum
+:::
+
+::: warning
+lorem ipsum
+:::
+
+
+alternativ geht auch, sollte aber nicht mehr genutzt werden
+{% hint style="info" %}					success warning
+lorem ipsum
+{% endhint %}
+
+und
+
+<div class="callout-tip">               callout-tip callout-warning
+lorem ipsum
+</div>
+
+
+
+
+footnotes
+
+text[^1]
+
+[^1] fußnotentext
+
+(die 1 dient dabei nur der zuordnung verweis zu fußnote. kann z.bsp. auch text verwenden. - nummerierung erfolgt automatisch anhand der reihenfolge in der sie im text verwendet werden und unhabhängig von den verwendeten ziffern oder buchstaben)
+
+
+
+
+tables
+
+:---   linksbündige spalte
+---:   rechtsbündige spalte
+:---:   mittige spalte
+
+
+
+
+images
+
+![eternl_guard_2.png](/assets/pictures/eternl_guard_2.png)
+--> text in eckigen klammern alt text. erzeugt nur einfaches image tag. keine bildunterschrift. platzierung links.
+
+<figure><img src="/assets/pictures/eternl_guard_2.png" alt=""><figcaption></figcaption></figure>
+--> mit bildunterschrift. platzierung mittig
