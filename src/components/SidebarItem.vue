@@ -150,7 +150,7 @@ onUnmounted(() => {
 
 .sidebar-link {
   flex: 1;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--color-text);
 }
 
