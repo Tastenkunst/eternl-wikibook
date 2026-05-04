@@ -93,12 +93,23 @@ const formatPath = (path: string) => path.replaceAll('/content/', '');
       @submit.prevent
   >
     <label class="sr-only" for="doc-search">Search documentation</label>
+
+<!--    <input-->
+<!--        id="doc-search"-->
+<!--        v-model="query"-->
+<!--        type="search"-->
+<!--        placeholder="Search docs"-->
+<!--        class="w-full rounded-full border border-ink-40 px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"-->
+<!--        @keydown="onKeydown"-->
+<!--    />-->
+
     <input
         id="doc-search"
-        v-model="query"
+        :value="query"
         type="search"
         placeholder="Search docs"
         class="w-full rounded-full border border-ink-40 px-4 py-2 text-sm text-ink shadow-sm outline-none transition focus:border-ink-40"
+        @input="query = ($event.target as HTMLInputElement).value"
         @keydown="onKeydown"
     />
 
