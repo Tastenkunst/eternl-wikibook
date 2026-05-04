@@ -114,7 +114,8 @@ watch(() => route.path, () => { isOpen.value = false; });
   gap: 0.75rem;
   height: 48px;
   padding: 0 1.25rem;
-  background: var(--color-panel);
+  background: color-mix(in srgb, var(--color-panel) 70%, transparent 30%);
+  backdrop-filter: blur(3px);
   border: 1px solid var(--color-border);
   border-radius: 14px;
   color: var(--color-text);
@@ -133,7 +134,6 @@ watch(() => route.path, () => { isOpen.value = false; });
   padding: 0;
   justify-content: center;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--color-panel) 95%, white 5%);
   border-color: var(--color-border-strong);
 }
 

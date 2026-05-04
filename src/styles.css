@@ -129,6 +129,7 @@
 
   header.app-header {
     border: none !important;
+    background-color: color-mix(in srgb, var(--color-panel), transparent 50%) !important;
   }
 
   header.app-header .gradient-line {
