@@ -6,7 +6,7 @@
 
 Released - 23.06.2026
 
-## New Features
+### New Features
 
 ### Eternl Hub - connect your wallets across devices
 
@@ -340,11 +340,11 @@ More to come...
 
 released 16.12.2025
 
-## Changed
+### Changed
 
 + Updated second checkbox text on the ToS acceptance overlay to read: "I agree to the immediate start of the service and acknowledge that I waive my 14-day cooling-off period (for the ToS)."
 
-## Fixed
+### Fixed
 
 + Signing with spending password: Shift key not working properly.
 
