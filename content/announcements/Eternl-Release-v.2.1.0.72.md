@@ -1,6 +1,7 @@
+
 # Eternl v2.1.0.72 release
 
-## Released-23.06.2026
+Released - 23.06.2026
 
 ## New Features
 
@@ -156,9 +157,9 @@ More to come...
 
 #### Availability
 
- ✓  available - eternl.io
- ✓  available - beta.eternl.io
- ✓  available - Eternl Extension
- ✓  available - Eternl Beta Extension
- ✓  available - Android app
-    submitted - iOS app
+> - ✓ available - [eternl.io](https://eternl.io)
+> - ✓ available - [beta.eternl.io](https://beta.eternl.io)
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta Extension
+> - ✓ available - Android app
+> - submitted - iOS app
