@@ -2,7 +2,7 @@
 
 # Releases
 
-## Eternl v2.1.0.72 release
+## v2.1.0.72
 
 Released - 23.06.2026
 
