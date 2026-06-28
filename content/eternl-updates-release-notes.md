@@ -2,6 +2,108 @@
 
 # Releases
 
+<details open>
+## v2.1.2.0
+
+Released - 27.06.2026:
+
+## Browser extension connection handling
+
+- Added a health check and recovery attempts for lost dApp connections.
+- Added logging for further investigations why some users report lost dApp connections.
+
+> - not submitted - eternl.io
+> - not submitted - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - not submitted - Eternl Beta Extension
+> - not submitted - Android app
+> - not submitted - iOS app
+
+</details>
+
+---
+
+<details open>
+## v2.1.1.0
+
+Released - 26.06.2026
+
+### New Features
+
+- Send page and transaction handling
+- Added visible "building" transaction items while send-page transactions are being built.
+- Added delete buttons for transactions shown in send-page transaction lists.
+- Added support for importing transaction CBOR as a Transaction option.
+- Improved MAX and max coin calculations for large, asset-heavy accounts and multiple-output transactions.
+- Bound account Smart Asset Management settings into the send-page transaction options.
+- Improved DRep and pool chooser rendering in the send flow.
+
+### Governance and DRep flows
+
+- Added an "Update DRep compensation" transaction option.
+- Reworked the DRep vote list so vote modals hydrate from on-chain data first, local draft data second, - and default not-voted state last.
+- Removed the old governance voting system and old vote modal flow.
+- Added smaller DRep display cards used by send/governance transaction sections.
+
+### Address book import
+
+- Added address book import support for Eternl backups.
+- Added address badges to address book entries and receive-list entries.
+- Removed the address-book verify-address button.
+- Preserved and updated existing address book IndexedDB records after upgrading from legacy Dexie-backed storage.
+
+---
+
+### Improvements
+
+- Transaction building and signing
+- Preserved external transaction CBOR witness-set structure when signing, caching, and submitting fixed transactions.
+- Added raw CBOR witness-set merge support in @eternl/cbor so vkey/bootstrap witnesses can be injected without re-encoding redeemers, datums, scripts, transaction body, or auxiliary data.
+- Improved script integrity hash diagnostics and validation for decoded transactions with Plutus witness datums.
+- Improved partial UTxO collection for asset-heavy wallets with Smart Asset Management both enabled and disabled.
+- Improved collect-UTxO max-size checks by using signed transaction size estimates and trimming oversized builds.
+
+### Hardware wallets
+
+- Fixed a Ledger CIP-30 signTx transaction-hash mismatch.
+- Applied the same signing-path fix to OneKey.
+- Updated Trezor integration for Trezor Suite 26.6.1 pairing changes.
+- Fixed signTx popup countdown behavior.
+
+### App reset, cache reset, and storage cleanup
+
+- Fixed app reset and cache reset settings.
+- Added explicit reset helpers for local IndexedDB state, including Hub data, governance proposal/vote drafts, JPG Store recovery scans, translations, TOS acceptance, transaction notes, entity lists, guard recovery data, and stored transaction cache data.
+- Improved Hub reset cleanup through local Hub IndexedDB cleanup.
+
+### UI polish
+
+- Replaced transaction remove badges with clearer footer buttons.
+- Added more obvious buttons in affected transaction and modal surfaces.
+- Fine-tuned asset list sizes and SignTxConfirm checkbox/open-button layout.
+- Fixed autofocus behavior during modal animations so input focus no longer shifts sliding modal containers.
+- Applied the full selected theme earlier during load.
+- Fixed seed phrase input handling (4 characters + Enter + autofocus next input field).
+- Fixed wallet delete button behavior.
+- Fixed AccountName handling.
+
+### Transaction list behavior
+
+- Show pending transactions only for the selected account in transaction lists.
+- Force account sync once a pending transaction is registered on-chain.
+- Improved pending transaction cache handling after on-chain registration.
+
+> - ✓ available - [eternl.io](https://eternl.io)
+> - ✓ available - [beta.eternl.io](https://beta.eternl.io)
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta Extension
+> - ✓ available - Android app
+> - submitted - iOS app
+
+</details>
+
+---
+
 ## v2.1.0.72
 
 Released - 23.06.2026
@@ -166,6 +268,8 @@ More to come...
 > - ✓ available - Eternl Beta Extension
 > - ✓ available - Android app
 > - submitted - iOS app
+
+---
 
 ## v2.1.0.50 (Beta)
 
