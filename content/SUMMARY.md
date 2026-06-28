@@ -64,8 +64,7 @@
 <!-- [Eternl DApp Browser Integration](for-developers/eternl-dapp-browser-integration.md) -->
 
 * [Eternl Announcements](announcements/README.md)
-    * [Eternl Beta extension v2.1.0.50](announcements/Eternl-Beta-extension-v2.1.0.50.md)
-    * [Eternl Release v2.1.0.72](announcements/Eternl-Release-v.2.1.0.72.md)
+    * [Eternl v2.1.0: the basic Update](announcements/eternl-v2.1.0-basic-update.md)
 
 * [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 
