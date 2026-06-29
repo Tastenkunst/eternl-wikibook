@@ -1,29 +1,116 @@
-The wiki seems to be a JavaScript-rendered SPA. Let me try fetching the sitemap or robots.txt to understand the structure, and also try alternative approaches.Good, now I have the wiki structure. Let me fetch the release notes page and more existing wiki pages to understand the full structure.The wiki is fully client-side rendered (JavaScript SPA), so direct fetching can't get the content. Let me search for the specific features of this release.Now let me search specifically for the v2.1.0 X announcement thread to learn the specific features of this major version.Now I have enough context to build a comprehensive, well-informed plan. Let me now render the wiki planning document.Now I have all the information needed. Let me build the comprehensive wiki planning document.I have enough to build a thorough, well-structured wiki plan. Let me create the artifact now.
+# Eternl Wiki — Structural Implementation Guide for v2.1.x
 
-Based on my research, here's what I found about the existing wiki structure and the v2.1.0.72 release (which went live June 23, 2026 and is described as "a foundational update across performance, wallet workflows, governance, Hub, and Pro features"):Here's the full plan, along with a summary of how I got there.
+> **Scope:** Create files and folders, add frontmatter/nav stubs, update sidebar/nav config.
+> **Out of scope:** Article body content. Every new file gets a stub only — full content is authored separately.
+> **Releases covered:** v2.1.0.72 · v2.1.1.0 · v2.1.2.0
 
 ---
 
-**What I found about the existing wiki**
+## Step 1 — Append release-notes entries
 
-The wiki at wiki.eternl.io is a JavaScript SPA that can't be read directly by a crawler, so I reconstructed its structure from Google's index. It has five confirmed top-level sections: *Getting Started* (basics, security, wallet), *User Guide* (application, how-to, multiple-instances, staking, multi-sig), *FAQ* (errors), *Updates* (one page per release), and *For Developers* (dapp-integration), plus a fresh *Announcements* section where the v2.1.0.72 page lives.
+**File:** `content/eternl-updates-release-notes.md`
 
-**What v2.1.0.72 actually contains**
+Append three new changelog entries at the top of the file (most recent first), each using whatever heading level and divider style already exists in the file.
 
-The Chrome Web Store listing confirms it shipped on June 23, 2026. Eternl's own X/Twitter announcement describes it as "a foundational update across five pillars: **Performance, Wallet Workflows, Governance, Hub, and Pro**." Combining that with what's visible from the incremental 2.0.x update notes, the material new features are:
+Entry order (top to bottom):
+1. v2.1.2.0 — June 27, 2026 — Extension only
+2. v2.1.1.0 — June 26, 2026 — All platforms
+3. v2.1.0.72 — June 23, 2026 — All platforms (iOS delayed)
 
-- All-new transaction builder (Pro)
-- Eternl Hub (collaborative/DAO workspace)
-- Eternl Pro tier
-- Bulk DRep governance voting (multiple proposals, one tx)
-- Expanded governance dashboard
-- MonsterSwap DEX aggregator (slippage, DEX toggling, order history)
-- Portfolio overview with real-time prices + fiat on-ramp (Mercuryo, Guardarian, Transak)
-- OneKey hardware wallet support
-- QR-code wallet export/import
-- web+cardano:// deep-link scheme (CIP-0013/0099/0157/0158)
-- Decentralized Ada Handle resolution (DeMi)
+Each entry is a **stub**: heading + release date + platform availability list + section placeholders (Added / Changed / Fixed / Removed as applicable). No body text.
 
-**The plan: 11 new articles + 8 updates**
+---
 
-Every new feature that's substantial enough for user questions gets its own article (`monster-swap`, `governance`, `eternl-pro`, `eternl-hub`, `transaction-builder`, `portfolio`, `hardware-wallets`, `qr-wallet-transfer`, `cardano-url-scheme`, `ada-handle`, and the release note itself). Smaller additions land as new sections in existing articles. The priority order puts the release announcement and the two biggest user-visible gaps (governance bulk voting, MonsterSwap) at the top.
+## Step 2 — Create new wiki article stubs
+
+Create each file listed below. Every file gets:
+- Frontmatter matching the existing article format in the repo (copy structure from any existing article)
+- A single `# Title` H1
+- Placeholder comment: `<!-- content to be authored -->`
+- No body text
+
+### 2.1 Getting Started section
+
+| File path | Title |
+|---|---|
+| `content/en/1_getting-started/hardware-wallets.md` | Hardware Wallets |
+
+### 2.2 User Guide section
+
+| File path | Title |
+|---|---|
+| `content/en/2_user-guide/eternl-pro.md` | Eternl Pro |
+| `content/en/2_user-guide/eternl-hub.md` | Eternl Hub |
+| `content/en/2_user-guide/transaction-builder.md` | Transaction Builder |
+| `content/en/2_user-guide/governance.md` | Governance & DRep Voting |
+| `content/en/2_user-guide/address-book.md` | Address Book |
+| `content/en/2_user-guide/monster-swap.md` | MonsterSwap |
+| `content/en/2_user-guide/portfolio.md` | Portfolio & On-Ramp |
+| `content/en/2_user-guide/qr-wallet-transfer.md` | QR Wallet Transfer |
+| `content/en/2_user-guide/cardano-url-scheme.md` | Cardano URL Scheme |
+| `content/en/2_user-guide/ada-handle.md` | Ada Handle |
+
+> **Note on `governance.md`:** Check whether a governance stub already exists. If it does, **replace** it entirely — the old governance voting system was removed in v2.1.1.0 and any existing content is incorrect.
+
+---
+
+## Step 3 — Register new articles in navigation / sidebar
+
+Add all new articles from Step 2 to whatever nav/sidebar config file the wiki uses (e.g. `sidebar.js`, `nav.json`, `config.ts` — check the repo).
+
+Ordering within each section:
+
+**1_getting-started** — insert after `security`:
+```
+hardware-wallets
+```
+
+**2_user-guide** — insert in this order after existing entries:
+```
+governance
+address-book
+eternl-pro
+eternl-hub
+transaction-builder
+monster-swap
+portfolio
+qr-wallet-transfer
+cardano-url-scheme
+ada-handle
+```
+
+---
+
+## Step 4 — Update existing articles (structure only)
+
+For each article below, add a `<!-- UPDATE NEEDED -->` comment at the relevant location. Do **not** change existing content.
+
+| Article file | Where to add comment |
+|---|---|
+| `content/en/2_user-guide/application.md` | After last paragraph of body |
+| `content/en/2_user-guide/eternl-howto.md` | After last paragraph of body |
+| `content/en/2_user-guide/multiple-instances.md` | After last paragraph of body |
+| `content/en/2_user-guide/staking.md` | After last paragraph of body |
+| `content/en/2_user-guide/multi-sig.md` | After last paragraph of body |
+| `content/en/1_getting-started/security.md` | After last paragraph of body |
+| `content/en/1_getting-started/wallet.md` | After last paragraph of body |
+| `content/en/3_frequently-asked-questions/errors.md` | After last paragraph of body |
+| `content/en/5_for-developers/dapp-integration.md` | After last paragraph of body |
+
+Comment to insert (copy exactly):
+```
+<!-- UPDATE NEEDED — see docs/update_implementation.md Step 4 -->
+```
+
+---
+
+## Step 5 — Verify
+
+Confirm the following before closing:
+
+- [ ] `content/eternl-updates-release-notes.md` has three new stubs at the top
+- [ ] All 11 new article files from Step 2 exist with frontmatter and H1
+- [ ] All 11 new articles appear in the nav/sidebar config
+- [ ] All 9 existing articles from Step 4 have the update comment
+- [ ] No existing article body content has been changed
+- [ ] `governance.md` is a clean new stub (not the old content)
