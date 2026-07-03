@@ -3,6 +3,108 @@
 # Releases
 
 <details open>
+
+## v2.1.3.3
+
+Released - 01.07.2026
+
+(Changes since v2.1.1.0)
+
+### New Features
+
+- HTML NFT and media viewing
+- Added a live HTML NFT viewer in asset details.
+- Added a sandboxed browser-extension page for rendering HTML NFTs safely.
+- Added a dedicated Media tab in asset details, with fullscreen option.
+- Improved media source detection, metadata parsing, and media player behavior for images, music, and HTML-backed assets.
+
+### Browser extension CIP-30 reliability
+
+- Added browser-extension health checks for service worker, content script, DOM script, and offscreen page connectivity.
+- Added reinjection and readiness handling for content/DOM script communication.
+- Extended user input request lifetime for signTx and signData to 5 minutes.
+- Added pending transaction submission handling through the offscreen page.
+- Fixed auto-submit settings in the extension signTx popup.
+
+### Eternl Hub
+
+- Adjusted the Hub wallet sharing toggle placement.
+- Improved basic-mode Hub connection handling.
+- Added remote-sign device selection improvements so the signTx flow can choose the intended paired device more clearly.
+
+### Developer tools
+
+- Added developer mode support and a DevTools visual-effects benchmark page.
+- Added a developer badge and related home/theme setting support.
+- Expanded glass/theme surface styling used by the visual effects benchmark.
+
+---
+
+### Improvements
+
+### Signing and diagnostics
+
+- Added a signer credential hint when a transaction hash mismatch occurs, so the UI can show which device has signed.
+- Added return-witness-set helpers and tests for CIP-30 signing flows.
+- Added more verbose CIP-30 logging.
+- Added hardware wallet firmware metadata plus request/response payloads to the signing debug download.
+- Improved CIP-30 signTx status overlay and debug download behavior.
+- Added license app ID handling and Apple license flow adjustments.
+- Prevented test networks from starting Pro purchase flows.
+- Added toast notifications when license server requests fail.
+
+### DApp account and sync readiness
+
+- Tightened dApp account readiness in eternl-core so offscreen account exposure waits for loaded UTxOs.
+- Added CIP-30 refresh waiting for fresh or loaded account UTxOs before UTxO-sensitive methods continue.
+- Fixed the dApp account availability flag in the offscreen page.
+- Fixed offscreen sync/isSyncLeader handling.
+- Added a dApp browser bridge helper for improved external account and bridge diagnostics.
+
+### Balance and transaction cache behavior
+
+- Fixed a balance calculation issue where pending transactions already marked on-chain could still add to balances.
+- Hid expired signed transactions from the submit-ready list while keeping invalid transactions available for review.
+- Added a pending-transaction remove button on the send page.
+- Added pending transaction timestamps so consumers can delay manual removal of newly submitted pending transactions.
+- Added package-level filtering so transaction builds ignore UTxO candidates already consumed by cached submitted, pending, or on-chain transactions.
+- Preserved fixed transaction CBOR during witness-only mutations so CIP-30 signing keeps incoming witness-set encoding details.
+- Fixed reward withdrawal input selection when withdrawals cover the requested lovelace but a real UTxO input is still required, including token-only input scenarios.
+
+### Address book
+
+- Repaired existing IndexedDB address book databases when the address book store or networkId index is missing.
+- Cleared stale cached address book DB handles after transaction setup failures.
+
+### Fixes
+
+- Fixed extension CIP-30 connection health checks and script readiness.
+- Fixed pending transaction submission through the offscreen page.
+- Fixed dApp account exposure when UTxOs have not loaded yet.
+- Fixed offscreen sync-leader behavior during dApp account sync.
+- Fixed transaction balance inflation from already-synced pending transactions.
+- Fixed expired signed transaction handling on the send page.
+- Fixed pending transaction removal timing by tracking when transactions enter the pending list.
+- Fixed withdrawal transaction building when all selected inputs contain tokens.
+- Fixed transaction hash mismatch diagnostics to identify the signing wallet.
+- Fixed fixed-transaction witness-set merging again so witness-only updates do not normalize away caller-provided CBOR details.
+- Fixed address book IndexedDB upgrade/repair edge cases.
+- Fixed fresh-app Eternl backup imports that include multi-sig data.
+- Fixed resource generation for the HTML/media viewer.
+- Fixed Pro purchase availability on test networks.
+- Fixed license server failures being silent by surfacing toast notifications.
+
+---
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta Extension
+> - ✓ available - Android app
+> - ✓ available - iOS app
+
+---
+
 ## v2.1.2.0
 
 Released - 27.06.2026:
@@ -23,7 +125,6 @@ Released - 27.06.2026:
 
 ---
 
-<details open>
 ## v2.1.1.0
 
 Released - 26.06.2026
