@@ -1,8 +1,9 @@
+# update_implementation.md
 # Eternl Wiki — Structural Implementation Guide for v2.1.x
 
 > **Scope:** Create files and folders, add frontmatter/nav stubs, update sidebar/nav config.
 > **Out of scope:** Article body content. Every new file gets a stub only — full content is authored separately.
-> **Releases covered:** v2.1.0.72 · v2.1.1.0 · v2.1.2.0
+> **Releases covered:** v2.1.0.72 · v2.1.1.0 · v2.1.2.0 · v2.1.3.3
 
 ---
 
@@ -10,12 +11,13 @@
 
 **File:** `content/eternl-updates-release-notes.md`
 
-Append three new changelog entries at the top of the file (most recent first), each using whatever heading level and divider style already exists in the file.
+Append four new changelog entries at the top of the file (most recent first), each using whatever heading level and divider style already exists in the file.
 
 Entry order (top to bottom):
-1. v2.1.2.0 — June 27, 2026 — Extension only
-2. v2.1.1.0 — June 26, 2026 — All platforms
-3. v2.1.0.72 — June 23, 2026 — All platforms (iOS delayed)
+1. v2.1.3.3 — July 1, 2026 — All platforms
+2. v2.1.2.0 — June 27, 2026 — Extension only
+3. v2.1.1.0 — June 26, 2026 — All platforms
+4. v2.1.0.72 — June 23, 2026 — All platforms (iOS delayed)
 
 Each entry is a **stub**: heading + release date + platform availability list + section placeholders (Added / Changed / Fixed / Removed as applicable). No body text.
 
@@ -49,6 +51,7 @@ Create each file listed below. Every file gets:
 | `content/en/2_user-guide/qr-wallet-transfer.md` | QR Wallet Transfer |
 | `content/en/2_user-guide/cardano-url-scheme.md` | Cardano URL Scheme |
 | `content/en/2_user-guide/ada-handle.md` | Ada Handle |
+| `content/en/2_user-guide/nft-media-viewer.md` | NFT & Media Viewer |
 
 > **Note on `governance.md`:** Check whether a governance stub already exists. If it does, **replace** it entirely — the old governance voting system was removed in v2.1.1.0 and any existing content is incorrect.
 
@@ -77,6 +80,7 @@ portfolio
 qr-wallet-transfer
 cardano-url-scheme
 ada-handle
+nft-media-viewer
 ```
 
 ---
@@ -108,9 +112,9 @@ Comment to insert (copy exactly):
 
 Confirm the following before closing:
 
-- [ ] `content/eternl-updates-release-notes.md` has three new stubs at the top
-- [ ] All 11 new article files from Step 2 exist with frontmatter and H1
-- [ ] All 11 new articles appear in the nav/sidebar config
+- [ ] `content/eternl-updates-release-notes.md` has four new stubs at the top
+- [ ] All 12 new article files from Step 2 exist with frontmatter and H1
+- [ ] All 12 new articles appear in the nav/sidebar config
 - [ ] All 9 existing articles from Step 4 have the update comment
 - [ ] No existing article body content has been changed
 - [ ] `governance.md` is a clean new stub (not the old content)
