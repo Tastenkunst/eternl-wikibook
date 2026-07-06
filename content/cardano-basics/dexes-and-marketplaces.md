@@ -56,7 +56,7 @@ JPG Store has recently focused on expanding its global reach by enhancing site l
 
 ### DripDropz. Io
 
-[DripDropz.io](an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#dripdropz.-io) is a service designed to distribute Cardano tokens. Users can enter their wallet or stake address on the website to claim various tokens distributed during different epochs (periods of blockchain operation). It’s user-friendly and supports small projects by offering a platform for token distribution
+[DripDropz.io](https://github.com/Tastenkunst/eternl-wikibook/blob/main/content/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#dripdropz.-io) is a service designed to distribute Cardano tokens. Users can enter their wallet or stake address on the website to claim various tokens distributed during different epochs (periods of blockchain operation). It’s user-friendly and supports small projects by offering a platform for token distribution
 
 ### Taptools. Io
 
@@ -68,17 +68,15 @@ JPG Store has recently focused on expanding its global reach by enhancing site l
 
 ### Cexplorer. Io
 
-[Cexplorer.io](../../) is another explorer that provides insights and analytics for the Cardano network, helping users understand and navigate its complex data.
+[Cexplorer.io](https://github.com/Tastenkunst/eternl-wikibook/blob/main/README.md) is another explorer that provides insights and analytics for the Cardano network, helping users understand and navigate its complex data.
 
 ### Adastat. Net
 
-[Adastat.net](an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#adastat.-net) focuses on delivering statistical data and growth trends within the Cardano ecosystem, useful for researchers and analysts.
+[Adastat.net](https://github.com/Tastenkunst/eternl-wikibook/blob/main/content/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#adastat.-net) focuses on delivering statistical data and growth trends within the Cardano ecosystem, useful for researchers and analysts.
 
 The decentralized exchanges (DEXes), marketplaces, and services mentioned above are just a few examples of what the Cardano ecosystem has to offer and are not exhaustive.
 
-::: success
-For a comprehensive overview of projects, tools, and DApps available on Cardano, visit CardanoCube.io.
-:::
+::: success For a comprehensive overview of projects, tools, and DApps available on Cardano, visit CardanoCube.io. :::
 
 ## Conclusion: The Future of Finance on Cardano
 

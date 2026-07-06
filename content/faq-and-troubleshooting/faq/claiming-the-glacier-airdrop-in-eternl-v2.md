@@ -16,13 +16,9 @@ Check out our tutorials on:
 
 How to install the Eternl Chrome Browser Extension
 
-<iframe src="https://youtube.com/embed/AO72dWDh8RM" frameborder="0" allowfullscreen></iframe>
-
 How to import multiple wallets in Eternl v2
 
-<iframe src="https://www.youtube.com/embed/jw3Ekk8Nv_w" frameborder="0" allowfullscreen></iframe>
-
----
+***
 
 ### Follow These Steps to Participate
 
@@ -34,43 +30,38 @@ How to import multiple wallets in Eternl v2
    Select **Browser Wallet**, click _Continue_, then choose **Eternl**.\
    A pop-up window will open to connect the selected account in your Eternl wallet to the Midnight website.\
    → Click **Grant Access**.
-4. **Eligibility Check**\
+4.  **Eligibility Check**\
     If the chosen account is eligible, you will see the amount of Knight token you can receive.
 
-    > To qualify, you must have held at least **$100 worth of ADA on the snapshot day (June 11th, 2025)**.\
-    >
+    > To qualify, you must have held at least **$100 worth of ADA on the snapshot day (June 11th, 2025)**.\\
 5. **Automatic Address Creation**\
    At this step, Eternl automatically creates an **unused Cardano address** for you and submits it to Midnight.\
    This address is linked to your selected account. You don’t need to do anything.\
-   If you encounter issues, simply retry.\
-
+   If you encounter issues, simply retry.\\
 6. **Confirm Terms**\
    Click _Next_ again and confirm you have read and understood the terms and conditions of the GlacierDrop.
 7. **Sign Message & Complete**\
    Sign the message with your account to prove ownership of the address.\
    Then click **Complete Claim**.
 
----
+***
 
-![Checkmark](/assets/icons/IconCheckmark.svg) Your claim is now successfully completed.\
-![Download](/assets/icons/IconDownload.svg) It is recommended to download your **claim summary** for your records.
+&#x20;Your claim is now successfully completed.\
+&#x20;It is recommended to download your **claim summary** for your records.
 
 > If you want to participate with multiple accounts:\
-> Simply start a **new claim** for each one.\
->
+> Simply start a **new claim** for each one.\\
 
----
+***
 
-![Link](/assets/icons/IconLinkSquare01.svg) Try out this feature and many more at [eternl.io](https://eternl.io).
+&#x20;Try out this feature and many more at [eternl.io](https://eternl.io).
 
----
+***
 
-> ![Info](/assets/icons/IconInfo.svg) In Eternl v2.0.11.2 the process was updated as described above.\
-> The previous method (manually disabling _Single Address Mode_) is no longer necessary.\
->
+> &#x20;In Eternl v2.0.11.2 the process was updated as described above.\
+> The previous method (manually disabling _Single Address Mode_) is no longer necessary.\\
 
----
-
+***
 
 ## Phase 2: Scavenger Mine (Closed! Oct 29th to Nov 19th 2025)
 
@@ -78,10 +69,9 @@ Missed the Glacier Drop window? Want to play a bigger part in the future of Midn
 
 This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to everyone, requires **no prerequisites or eligibility criteria**, and specialized hardware is **not required**.
 
-> **Phase Dates**: The Scavenger Mine is live from **October 29th until November 19th (21 days total)**.
-> **What You Do**: You participate by having your device automatically solve cryptographic challenges in the background to earn an allocation of $NIGHT tokens.
+> **Phase Dates**: The Scavenger Mine is live from **October 29th until November 19th (21 days total)**. **What You Do**: You participate by having your device automatically solve cryptographic challenges in the background to earn an allocation of $NIGHT tokens.
 
-**![Settings](/assets/icons/IconSettings.svg) How to Participate and Start Mining:**
+&#x20;**How to Participate and Start Mining:**
 
 1. **Go to the Website**: Navigate to the claim portal at `claim.midnight.gd` and select the **Scavenger Mine** tab.
 2. **Choose a Destination Address**:
@@ -90,28 +80,23 @@ This phase reallocates all tokens unclaimed from the Glacier Drop. It is open to
 4. **Sign Message**: Sign the unique claim message. This registers your address and binds it to your current browser session.
 5. **Click Start Session**: Click **Start session** to begin. Your Scavenger Mine instance will start looking for solutions to the most current challenge for as long as your device/browser is running (or until the end of the claim phase).
 
-**![Chart](/assets/icons/IconChart.svg) Scavenger Mine Mechanics (How You Earn):**
+&#x20;**Scavenger Mine Mechanics (How You Earn):**
 
 * **24h Claim Cycles**: The event is structured into **21 distinct claim cycles**, each lasting 24 hours. The total token pool for this phase is divided equally across these cycles.
 * **Solving Challenges**: Your device automatically accepts, solves, and submits cryptographic challenges in the background. The system issues one new challenge per hour, totaling 24 challenges per cycle.
 * **Determining Allocation**: Your final token allocation for a cycle is **proportional** to the number of solutions your device submitted relative to the total solutions submitted by all participants in that specific 24-hour cycle.
 
----
+***
 
 > How to particpate in phase 2 - Scavenger Mine by entering an unused address manually: [Scavenger Mine guide](https://wiki.eternl.io/en/2_user-guide/scavenger)
 
----
+***
 
 **For more details:**
 
 * **Eternl Wiki Guide**: https://wiki.eternl.io/en/2\_user-guide/glacier-airdrop
-
 * **Video Tutorial**
-
-<iframe src="https://www.youtube.com/embed/CRPlXGoFO8w" frameborder="0" allowfullscreen></iframe>
-
 * **Tokenomics & Claim Phases**: Visit https://midnight.io/ and scroll down to "Token allocations" for a breakdown of all three phases: **Glacier Drop**, **Scavenger Mine**, and **Lost-and-Found**.
-
 
 ## Phase 3: Redeem (Open Until 05. December 2026)
 

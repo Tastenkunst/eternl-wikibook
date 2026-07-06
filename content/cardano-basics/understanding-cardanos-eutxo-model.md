@@ -42,10 +42,6 @@ The model also offers flexibility in transaction conditions, expanding the types
 
 Cardano employs the extended Unspent Transaction Output ((e)UTxO) accounting framework, which is distinct from Ethereums account-based system. In the Ethereum model, each user maintains an account that holds a balance. As funds are transferred between accounts, these balances are accordingly adjusted.
 
-<figure><img src="/assets/pictures/UTxO_vs_Account.png" alt=""><figcaption><p>EUtxO vs Account-based Modell</p></figcaption></figure>
-
-[^1]
-
 Comparison diagram showing two blockchain transaction models side by side. Left side depicts the (e)UTxO model with transaction outputs represented as separate unspent boxes, each containing value and optional smart contract data. Right side shows the account-based model with a single account balance that decreases and increases with each transaction. The diagram uses arrows and labels to illustrate how the two systems fundamentally differ in tracking and managing cryptocurrency ownership and transaction execution.
 
 * Transaction outputs as piggy banks
@@ -58,19 +54,9 @@ The 'Extended' in (e)UTxO means that these piggy banks can hold more than just A
 
 The "e" in (e)UTxO signifies "extended," enhancing the Unspent Transaction Output (UTxO) model. Unlike UTxO smart contracts, which only engage with direct requests to verify a transaction, the (e)UTxO model in Cardano offers advancements beyond this basic functionality.
 
-<figure><img src="/assets/pictures/UTxO_Modell.png" alt=""><figcaption><p>UtxO vs eUTxO Modells</p></figcaption></figure>
-
-[^2]
-
 ### 3.1 The (e)UTxO Model Integrates the Following Transaction Mechanisms
 
-<figure><img src="/assets/pictures/EUTxO_Components.png" alt=""><figcaption><p>Components of the eUTxO modell</p></figcaption></figure>
-
-[^3]
-
-:::success
-The (e)UTxO model is a bit like a sophisticated way of tracking who owns what on the Cardano blockchain.
-:::
+:::success The (e)UTxO model is a bit like a sophisticated way of tracking who owns what on the Cardano blockchain. :::
 
 Let's break it down:
 
@@ -117,10 +103,6 @@ In short, Cardanos (e)UTxO model was created to take the best parts of other blo
 Let's compare Cardanos (e)UTxO model with the traditional UTXO model used in blockchains like Bitcoin to understand their differences in simpler terms.
 
 The infographic below, created by IOG, shows a comparison between the two models:
-
-<figure><img src="/assets/pictures/EUTxO_vs_Accout_based_Modell.png" alt=""><figcaption><p>Infographic Eutxo v. account-based-models</p></figcaption></figure>
-
-[^4]
 
 ### 5.1 Traditional UTxO Model (Example)
 
@@ -187,11 +169,3 @@ While there are hurdles, it's crucial to remember that the (e)UTxO model marks a
 ## 8. Wrapping up Cardano's (e)UTxO Model: A Fusion of Innovation and Flexibility in Blockchain Technology
 
 Cardano's Extended Unspent Transaction Output ((e)UTxO) model is an advanced version of the traditional UTxO system, integrating complex data and rules within transactions. This enhancement allows for smart contracts to be directly embedded in transactions, facilitating not only the transfer of value but also the execution of specific instructions under defined conditions. It maintains the advantages of the original UTxO model, such as predictability and the ability to process transactions in parallel, while also introducing the capability to support intricate decentralized applications. Despite its complexity and the challenges it presents in managing numerous transactions simultaneously, the (e)UTxO model represents a significant progress in blockchain technology. It enhances security, increases the capacity for activity, and demonstrates Cardano's commitment to expanding the utility of blockchain beyond mere digital currency, towards a diverse ecosystem of decentralized applications and services.
-
-[^1]: EUtxO Model vs Account Model [cardano.org](https://developers.cardano.org/assets/images/eutxo-vs-account-model-3d9efc60bb4980008d27ca67cb9b027a.jpg)
-  
-[^2]: EUtxO vs UTxO Model [cardano.org](https://forum.cardano.org/t/brief-introduction-to-cardanos-eutxo-accounting-model/100893)
-
-[^3]: EUTxO Components [IOHK Twitter post](https://twitter.com/InputOutputHK/status/1523661194594521090)
-
-[^4]: Infographic Eutxo v. account-based-models [essentialcardano.io](https://www.essentialcardano.io/_next/image?url=https%3A%2F%2Fucarecdn.com%2F536196ac-ada6-4ced-abbe-886a62cce4da%2F&w=1920&q=75)

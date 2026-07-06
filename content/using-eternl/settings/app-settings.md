@@ -1,17 +1,10 @@
-<!-- markdownlint-disable-file MD033 -->
-
-
 # App Settings
 
 ## Overview
 
 These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features rather than a single wallet.
 
-<figure><img src="/assets/pictures/App_Settings.jpg" alt=""><figcaption></figcaption></figure>
-
 ## Pro Mode
-
-![Pro Mode setting](/assets/pictures/pro_mode.jpg)
 
 Use `Pro Mode` to switch between a simpler interface and a more advanced one.
 
@@ -24,10 +17,7 @@ Use `Pro Mode` to switch between a simpler interface and a more advanced one.
 
 * More control also means more room for mistakes if you are unfamiliar with the settings.
 
-
 ## Network
-
-![Network setting](/assets/pictures/network_switcher.png)
 
 Use `Network` to choose which Cardano environment Eternl connects to, such as **Mainnet** or **Testnet**.
 
@@ -41,10 +31,7 @@ Use `Network` to choose which Cardano environment Eternl connects to, such as **
 * Funds are **not shared** between networks.
 * A wallet on **Mainnet** is separate from a wallet on **Testnet**.
 
-
 ## Language
-
-![Language setting](/assets/pictures/language.png)
 
 Use `Language` to change the app interface language and related regional display settings where available.
 
@@ -53,10 +40,7 @@ Use `Language` to change the app interface language and related regional display
 * Change it if you prefer a different UI language.
 * Adjust it if dates, numbers, or regional formatting should match your locale.
 
-
 ## Currency
-
-![Currency setting](/assets/pictures/currency.png)
 
 Use `Currency` to choose the **fiat display currency** used for value conversion inside the app.
 
@@ -65,10 +49,7 @@ Use `Currency` to choose the **fiat display currency** used for value conversion
 * Select the currency you normally use for pricing and portfolio reference.
 * Change it if you want market values shown in another local currency.
 
-
 ## Decimal Precision
-
-![Decimal Precision setting](/assets/pictures/app_decimal_precision.png)
 
 Use `Decimal Precision` to control how many decimal places are shown for balances and values.
 
@@ -77,10 +58,7 @@ Use `Decimal Precision` to control how many decimal places are shown for balance
 * Use fewer decimals for a cleaner overview.
 * Use more decimals if you want more exact number formatting.
 
-
 ## Access PIN Code
-
-![Access PIN Code setting](/assets/pictures/app_access_pin.png)
 
 Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your device.
 
@@ -93,10 +71,7 @@ Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your
 
 * A PIN protects app access, but it is **not** a replacement for your recovery phrase.
 
-
 ## Biometrics Auth
-
-![Biometrics Auth setting](/assets/pictures/app_biometrics_auth.png)
 
 Use `Biometrics Auth` for device-level authentication such as **Face ID** or **fingerprint** where supported.
 
@@ -109,10 +84,7 @@ Use `Biometrics Auth` for device-level authentication such as **Face ID** or **f
 
 * Availability depends on your device settings and operating system support.
 
-
-##Sounds
-
-![Sounds setting](/assets/pictures/app_sounds.png)
+\##Sounds
 
 Use `Sounds` to enable or disable app sounds and notification feedback.
 
@@ -121,10 +93,7 @@ Use `Sounds` to enable or disable app sounds and notification feedback.
 * Turn it on if you want audible confirmation for actions.
 * Turn it off if you prefer a quieter experience.
 
-
 ## Address Book
-
-![Address Book setting](/assets/pictures/app_address_book.png)
 
 Use `Address Book` to manage saved recipient addresses inside Eternl.
 
@@ -134,14 +103,9 @@ Use `Address Book` to manage saved recipient addresses inside Eternl.
 * Add labels so contacts are easier to recognize.
 * Import or export address book entries when needed.
 
-
 ## DApp Allow List
 
-![DApp Allow List setting](/assets/pictures/app_dapp_allow_list.png)
-
-Use `DApp Allow List` to control which dApps are allowed to connect to this Eternl app.
-whit
-**When to use it:**
+Use `DApp Allow List` to control which dApps are allowed to connect to this Eternl app. whit **When to use it:**
 
 * Review connected dApps periodically.
 * Remove sites you no longer use.
@@ -152,10 +116,7 @@ whit
 * Only interact with dApps you trust.
 * This helps prevent malicious or unwanted connections.
 
-
 ## Export Wallets
-
-![Export Wallets setting](/assets/pictures/app_export_wallets.png)
 
 Use `Export Wallets` to export multiple wallets from the app in one step.
 
@@ -169,10 +130,7 @@ Use `Export Wallets` to export multiple wallets from the app in one step.
 * The export includes **encrypted private keys**.
 * Treat the export file with the same care as your **seed phrase**.
 
-
 ## Transactions: Auto-Submit
-
-![Transactions Auto-Submit setting](/assets/pictures/app_tx_auto_submit.png)
 
 Use `Transactions: Auto-Submit` to automatically send signed transactions to the network after signing.
 
@@ -185,10 +143,7 @@ Use `Transactions: Auto-Submit` to automatically send signed transactions to the
 
 * Turn it off if you want more manual control over transaction submission.
 
-
 ## Custom Submit Endpoint
-
-![Custom Submit Endpoint setting](/assets/pictures/app_custom_submit_endpoint.png)
 
 Use `Custom Submit Endpoint` to send transactions through a custom node or API endpoint instead of the default setup.
 
@@ -203,10 +158,7 @@ Use `Custom Submit Endpoint` to send transactions through a custom node or API e
 * It should only be used by experienced users.
 * A bad or untrusted endpoint can cause transaction failure or unwanted manipulation.
 
-
 ## Blockchain Explorer
-
-![Blockchain Explorer setting](/assets/pictures/app_blockchain_explorer.png)
 
 Use `Blockchain Explorer` to choose which explorer Eternl opens for different item types.
 
@@ -215,10 +167,7 @@ Use `Blockchain Explorer` to choose which explorer Eternl opens for different it
 * Pick the explorer you prefer for **addresses**.
 * Set explorer behavior for **transactions**, **tokens**, **pools**, and **governance** links.
 
-
 ## MonsterSwap
-
-![MonsterSwap setting](/assets/pictures/app_swap_settings.png)
 
 Use `MonsterSwap` to manage swap-related settings such as **slippage** and other DEX-specific behavior.
 
@@ -231,11 +180,7 @@ Use `MonsterSwap` to manage swap-related settings such as **slippage** and other
 
 * Higher slippage settings can increase execution risk and worse pricing.
 
-
-
 ## Reset Application Cache
-
-![Reset Application Cache setting](/assets/pictures/app_reset_application_cache.png)
 
 Use `Reset application cache` to clear cached app data without removing your wallets.
 
@@ -248,10 +193,7 @@ Use `Reset application cache` to clear cached app data without removing your wal
 
 * This clears cached data only.
 
-
 Reset Application
-
-![Reset Application setting](/assets/pictures/app_reset_application.png)
 
 Use `Reset Application` to delete **all wallets** and app data stored in Eternl on this device.
 
@@ -265,5 +207,3 @@ Use `Reset Application` to delete **all wallets** and app data stored in Eternl 
 * This action deletes all local wallets and stored app data.
 * Funds are **not** lost if you still have the correct recovery phrase.
 * Without the recovery phrase, access to the funds is lost **permanently**.
-
-

@@ -1,14 +1,8 @@
-<!-- markdownlint-disable-file MD033 -->
-
 # App Utilities
 
 ## Overview
 
-<figure><img src="/assets/pictures/App_Utilities.jpg" alt=""><figcaption></figcaption></figure>
-
 ## Franken Address Generator
-
-![Franken Address](/assets/pictures/app_util_franken_address.png)
 
 Create a new address by combining any two addresses.
 
@@ -24,10 +18,7 @@ This is an **advanced utility** for constructing or modifying Cardano addresses.
 * This is **not** intended for normal users.
 * Incorrect usage can result in unusable or invalid addresses.
 
-
 ## Sign Data
-
-![Sign Data](/assets/pictures/app_util_sign_data.png)
 
 Sign or verify any payload with an address / ID according to the CIP-8 standard.
 

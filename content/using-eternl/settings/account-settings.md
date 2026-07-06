@@ -1,18 +1,10 @@
-<!-- markdownlint-disable-file MD033 -->
-
 # Account Settings
 
 ## Overview
 
-<figure><img src="/assets/pictures/Settings_AccountSettings.png" alt=""><figcaption></figcaption></figure>
-
 ## Account Name / Handle
 
-<figure><img src="/assets/pictures/account_name.png" alt=""><figcaption><p>Here you can choose an account name to be displayed or choose one of the $handles in your active account to be displayed.</p></figcaption></figure>
-
 ## Export Account Key
-
-<figure><img src="/assets/pictures/export_account_key.png" alt=""><figcaption><p>Here you can export the public key of your current account.</p></figcaption></figure>
 
 ### Cardano Public Account Key Formats
 
@@ -24,23 +16,17 @@ Cardano supports several public account key formats, each used to view wallet in
 
 These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
 
-## Single Address Mode (SAM) [Option]
+## Single Address Mode (SAM) \[Option]
 
 Only use a single address for all transactions.
 
 When enabled, all funds will be held on the first receive address by default.
 
-<figure><img src="/assets/pictures/single_address_mode.png" alt=""><figcaption><p>Option switch Single Address Mode (SAM)</p></figcaption></figure>
-
 Alternatively a custom receive address can be set here.
 
-<div class="callout-tip">
 Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.
-</div>
 
-## Collateral [Option]
-
-<figure><img src="/assets/pictures/collateral.png" alt=""><figcaption><p>Option - Switch Collateral</p></figcaption></figure>
+## Collateral \[Option]
 
 ### Collateral (Cardano)
 
@@ -55,7 +41,7 @@ This system ensures users are responsible for failed executions, helping to prot
 
 > The **collateral is never locked.** It can still be spent in any transaction that does **not** require collateral.
 
----
+***
 
 ### Using Collateral in Eternl
 
@@ -71,7 +57,7 @@ This means:
 
 > This helps ensure secure and seamless usage of smart contracts on Cardano through the Eternl wallet.
 
----
+***
 
 ### Collateral Summary
 
@@ -80,9 +66,7 @@ This means:
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
 
-## Manual Sync [Option]
-
-<figure><img src="/assets/pictures/manual_sync.png" alt=""><figcaption><p>Manual sync option</p></figcaption></figure>
+## Manual Sync \[Option]
 
 ### What Is Manual Sync?
 
@@ -90,7 +74,7 @@ In Eternl, **Manual Sync** is an optional setting that allows you to control **w
 
 By default, this setting is **OFF**, meaning the wallet performs **automatic syncing** in the background.
 
----
+***
 
 ### Automatic Sync (Default)
 
@@ -98,13 +82,13 @@ By default, this setting is **OFF**, meaning the wallet performs **automatic syn
 * Keeps balances and UTxOs **up to date** without user input.
 * Convenient for most users.
 
----
+***
 
 ### Manual Sync (When Turned On)
 
 When enabled, syncing will **only occur when you manually trigger it** by pressing the **sync button** in the interface.
 
----
+***
 
 ### Advantages of Manual Sync
 
@@ -112,7 +96,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 * **More control**: Ideal for advanced users who want to control when blockchain state updates.
 * **Useful in testing/debugging scenarios** where state consistency is critical.
 
----
+***
 
 ### Disadvantages of Manual Sync
 
@@ -120,7 +104,7 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 * **Extra effort**: Requires remembering to sync before sending transactions or interacting with dApps.
 * **May cause confusion**: New users might not realize data is not current.
 
----
+***
 
 ### Sync Summary
 
@@ -131,15 +115,13 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
-## History Sync [Option]
-
-<figure><img src="/assets/pictures/history_sync.png" alt=""><figcaption></figcaption></figure>
+## History Sync \[Option]
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
 > When **enabled**, Eternl will fetch your complete historical activity (incoming/outgoing transactions, metadata, etc.).
 
----
+***
 
 ### What Is History Sync?
 
@@ -148,7 +130,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 * **ON**: Full transaction history is retrieved and displayed.
 * **OFF**: Only your current balance and available UTxOs are shown, not past transactions.
 
----
+***
 
 ### Advantages of History Sync (On)
 
@@ -156,7 +138,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 * Useful for auditing, record keeping, or tax purposes.
 * Easier to track smart contract interactions or NFT transfers.
 
----
+***
 
 ### Disadvantages
 
@@ -164,7 +146,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 * Higher memory and data usage.
 * Not needed for simple transfers or light use.
 
----
+***
 
 ### Summary Table
 
@@ -175,7 +157,7 @@ Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or w
 
 > **Tip:** If you just need to send/receive ADA or NFTs, you can leave this **OFF** for quicker syncs.
 
----
+***
 
 ### Recommendation
 
@@ -192,12 +174,9 @@ Token Fragmentation (TF)
 
 ### Reduce Transaction Fees by Fragmenting Tokens
 
-<figure><img src="/assets/pictures/Token_fragmentation.png" alt=""><figcaption></figcaption></figure>
-
 **Token Fragmentation** is an advanced sending option that controls how tokens are grouped when a transaction is made.
 
-> When enabled, the wallet will **split tokens into bundles** if the number of tokens in the **change output** exceeds a defined threshold.
-> **Default value:** `20` tokens per UTxO
+> When enabled, the wallet will **split tokens into bundles** if the number of tokens in the **change output** exceeds a defined threshold. **Default value:** `20` tokens per UTxO
 
 ### Purpose
 
@@ -215,7 +194,7 @@ To get optimal results:
 * You may need to **adjust the threshold value** based on your wallet's token composition.
 * Different distributions may require different configurations to achieve the desired outcome.
 
----
+***
 
 > **Tip:** Token Fragmentation can help avoid failed transactions caused by oversized outputs or complex UTxO sets.
 
@@ -241,8 +220,6 @@ Changing this value affects how tokens are distributed across outputs when sendi
 
 ## Advanced UTxO Management
 
-<figure><img src="/assets/pictures/advanced_utxo_management.png" alt=""><figcaption></figcaption></figure>
-
 When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
 
 * It attempts to maintain at least **10 available UTxOs** to support **parallel transaction execution**, improving performance and responsiveness.
@@ -250,6 +227,4 @@ When this feature is **enabled**, Eternl applies advanced logic to optimize how 
 
 > This setting is especially useful for users interacting with dApps, submitting multiple transactions, or participating in DeFi.
 
-Auto Withdrawal [option]
-
-<figure><img src="/assets/pictures/auto_withdrawal.png" alt=""><figcaption></figcaption></figure>
+Auto Withdrawal \[option]

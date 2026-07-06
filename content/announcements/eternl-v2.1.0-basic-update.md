@@ -1,22 +1,19 @@
 # Eternl v2.1.0: The Basic Update
 
-Juni 2026
-Dieses Release ist das Ergebnis von **fünf Monaten Arbeit** an der wallet-Erfahrung, der App-Leistung, den Governance-Tools und den Grundlagen, auf denen wir für zukünftige Entwicklungen aufbauen.
+Juni 2026 Dieses Release ist das Ergebnis von **fünf Monaten Arbeit** an der wallet-Erfahrung, der App-Leistung, den Governance-Tools und den Grundlagen, auf denen wir für zukünftige Entwicklungen aufbauen.
 
 Es ist ein **grundlegendes Release**. Einige Änderungen sind sofort sichtbar, während andere unter der Haube stattfinden und die App **leichter, schneller und einfacher zu warten** machen.
 
-![Eternl v2.1.0 Release](/assets/pictures/eternl_2.1_post_1280x512.jpg)
-
 ## Highlights
 
-+ **Eternl Pro plans**, supporting advanced features and the sustainability of ongoing Eternl development.
-+ **NEW Eternl Hub:** for pairing wallets and connecting dApps across devices.
-+ **Global Search**, across wallets, accounts, assets, transactions, governance, and settings.
-+ **Themes** Pro users can experience the first two new theme: Classic and Monochrome.
-+ **Redesigned Send page** for more transaction options, multi-account funding, UTxO consolidation, and background transaction building.
-+ **Expanded mobile hardware wallet support** with Bluetooth for Ledger and OneKey, in addition to the Keystone support already available.
-+ **Governance and DRep workflows** for voting, proposals, metadata, references, and treasury donation transactions.
-+ **Performance work** across startup, sync, restore, key derivation, transaction building, and app responsiveness.
+* **Eternl Pro plans**, supporting advanced features and the sustainability of ongoing Eternl development.
+* **NEW Eternl Hub:** for pairing wallets and connecting dApps across devices.
+* **Global Search**, across wallets, accounts, assets, transactions, governance, and settings.
+* **Themes** Pro users can experience the first two new theme: Classic and Monochrome.
+* **Redesigned Send page** for more transaction options, multi-account funding, UTxO consolidation, and background transaction building.
+* **Expanded mobile hardware wallet support** with Bluetooth for Ledger and OneKey, in addition to the Keystone support already available.
+* **Governance and DRep workflows** for voting, proposals, metadata, references, and treasury donation transactions.
+* **Performance work** across startup, sync, restore, key derivation, transaction building, and app responsiveness.
 
 ## Eternl Pro and sustainability
 
@@ -38,8 +35,7 @@ The **Send page** has also been redesigned. You can fund a transaction from mult
 
 **Eternl Hub** now makes it possible to pair Eternl instances across devices without moving keys off the device. Paired devices can support **remote signing**, and dApp connections use a clearer consent flow that shows what a dApp may access before you approve it.
 
-**Governance work** is a major part of this release. The wallet now supports submitting pending votes in one transaction, creating on-chain governance action proposals, treasury donation transactions, improved DRep flows, proposal metadata rendering, reference document viewing, and a redesigned voting area.
-For Pro users, the new **Bridges page** starts with USDCx Cardano to Ethereum support, including recipient validation, history, progress tracking, and recovery support for edge cases.
+**Governance work** is a major part of this release. The wallet now supports submitting pending votes in one transaction, creating on-chain governance action proposals, treasury donation transactions, improved DRep flows, proposal metadata rendering, reference document viewing, and a redesigned voting area. For Pro users, the new **Bridges page** starts with USDCx Cardano to Ethereum support, including recipient validation, history, progress tracking, and recovery support for edge cases.
 
 **Developer tools** have also been expanded with a draggable panel for address and credential conversion, asset inspection, UTxO exploration, transaction viewing, signing utilities, and related workflows.
 
@@ -51,6 +47,6 @@ We also removed the legacy WASM Cardano Serialization Library from this path and
 
 **Hardware wallet support**, transaction viewing, backup export and import, dApp connections, settings, staking, restore flows, and cache handling all received practical improvements.
 
-<h2 style="font-size: 2.5rem;">Thank you!</h2>
+## Thank you!
 
 Thank you for using Eternl and for supporting the work behind this release. Pro plans are an important step toward making that work sustainable while keeping Eternl moving forward.

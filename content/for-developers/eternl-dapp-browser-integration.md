@@ -1,7 +1,6 @@
 ---
 Description: How to integrate my DApp into Eternl DApp Browser
 ---
-<!-- markdownlint-disable-file MD031 MD033 -->
 
 # How to Integrate My DApp Into Eternl DApp Browser?
 
@@ -9,7 +8,7 @@ Description: How to integrate my DApp into Eternl DApp Browser
 
 To be included in the DApp Browser, some technical hurdles have to be overcome.
 
-First of all, the bridge:  
+First of all, the bridge:
 
 ### Cardano DApp Connector Bridge
 
@@ -28,6 +27,7 @@ A postMessage bridge to connect to dApps loaded into an iframe.
 #### How to: dApps
 
 DApp includes cardano-dapp-connector-bridge.js and calls:
+
 ```js
 // Calling this function is mandatory.
 initCardanoDAppConnectorBridge(async (walletApi) => {
@@ -55,6 +55,7 @@ initCardanoDAppConnectorBridge(async (walletApi) => {
 #### How to: wallets
 
 Wallets need to provide their API object as usual, but replace all functions with a simple string:
+
 ```js
 var bridgeInitialApi          = {
 
@@ -100,15 +101,15 @@ var bridgeFullApi = {
   }
 }
 ```
-The API objects will be automatically recreated on the dApp side using postMessage calls.
-See cardano-dapp-connector-bridge-init-wallet.js for more hints on how to implement it.
+
+The API objects will be automatically recreated on the dApp side using postMessage calls. See cardano-dapp-connector-bridge-init-wallet.js for more hints on how to implement it.
 
 ### Response Headers
 
 There are two options available.
 
 1. Allow your page to be loaded in ANY web context (local, online, app, anywhere). This might be necessary to make third party services work correctly.
-1. Restrict your page to be loaded only on certain domains.
+2. Restrict your page to be loaded only on certain domains.
 
 Both options need to remove:
 
@@ -119,6 +120,7 @@ For option 1 minimize response headers and remove any cross-origin or content-se
 For option 2, to be able to load a dApp page into an iframe, ALL response headers must be configured correctly. This includes pages, images (CDNs) etc.
 
 Add:
+
 ```
 content-security-policy: frame-ancestors https://*.eternl.io/ https://eternl.io/ ionic: capacitor: chrome-extension: http://localhost:*/ https://localhost:*/;
 
@@ -129,11 +131,7 @@ cross-origin-resource-policy: cross-origin
 
 What frame-ancestors do?
 
-`
-https://*.eternl.io/ https://eternl.io/ -- page can be embedded on eternl pages.  
-ionic: capacitor: chrome-extension: -- page can be embedded in apps.  
-http://localhost:*/ https://localhost:*/ -- page can be embedded in development environments.
-`
+`https://*.eternl.io/ https://eternl.io/ -- page can be embedded on eternl pages. ionic: capacitor: chrome-extension: -- page can be embedded in apps. http://localhost:*/ https://localhost:*/ -- page can be embedded in development environments.`
 
 [Cardano dapp connector bridge - Github link](https://github.com/Tastenkunst/cardano-dapp-connector-bridge)
 
@@ -145,61 +143,61 @@ Please take a look at:
 
 [implementation of the Eternl "convenience fee" - Github](https://github.com/Tastenkunst/cardano-dapp-connector-bridge/blob/main/EternlDAppBrowser.md)
 
----
+***
+
 ### Results {.tabset}
 
 #### Eternl "convenience fee"
 
-Integration into the Eternl DApp Browser.
-The Eternl DApp Browser is the first comfort feature for users, that we will monetize.
+Integration into the Eternl DApp Browser. The Eternl DApp Browser is the first comfort feature for users, that we will monetize.
 
 #### Advantages for the User
 
-+ mobile dApps (iOS/Android apps and website)
-+ favorite dApps in one place
-+ optional feature (can use browser extension instead)
+* mobile dApps (iOS/Android apps and website)
+* favorite dApps in one place
+* optional feature (can use browser extension instead)
 
 #### Advantage for dApp
 
-+ higher volume through mobile traffic
+* higher volume through mobile traffic
 
 #### User Fee for Comfort Feature
 
-+ 0.1% or 1 ADA (whichever is higher) on every buy order/swap >= 100 ADA.
-+ no fee on list, delist, cancel, price update etc.
-+ no fee on buy orders/swaps < 100 ADA
+* 0.1% or 1 ADA (whichever is higher) on every buy order/swap >= 100 ADA.
+* no fee on list, delist, cancel, price update etc.
+* no fee on buy orders/swaps < 100 ADA
 
-| Order Amount | Fee   | %   |
-|--------------|-------|-----|
-| 100 ADA      | 1 ADA | 1.0%|
-| 200 ADA      | 1 ADA | 0.5%|
-| 500 ADA      | 1 ADA | 0.2%|
-| 1000 ADA     | 1 ADA | 0.1%|
-| 2000 ADA     | 2 ADA | 0.1%|
+| Order Amount | Fee   | %    |
+| ------------ | ----- | ---- |
+| 100 ADA      | 1 ADA | 1.0% |
+| 200 ADA      | 1 ADA | 0.5% |
+| 500 ADA      | 1 ADA | 0.2% |
+| 1000 ADA     | 1 ADA | 0.1% |
+| 2000 ADA     | 2 ADA | 0.1% |
 
 ### Examples
 
 #### Browser Extension:
 
-- 5000 ADA - buy order for NFT
-- 125 ADA - marketplace fee 2.5%
-- 5000 ADA - paid by buyer
-	- 4875 ADA - for the seller
-	- 125 ADA - for the marketplace
+* 5000 ADA - buy order for NFT
+* 125 ADA - marketplace fee 2.5%
+* 5000 ADA - paid by buyer
+  * 4875 ADA - for the seller
+  * 125 ADA - for the marketplace
 
 #### DApp Browser, comfort fee paid by user:
 
-- 5000 ADA - buy order for NFT
-- 125 ADA - marketplace fee 2.5%
-- 5 ADA - Eternl fee 0.1%
-- 5005 ADA - paid by buyer
-	- 4875 ADA - for the seller
-	-	125 ADA - for the marketplace
-	- 5 ADA - for Eternl
+* 5000 ADA - buy order for NFT
+* 125 ADA - marketplace fee 2.5%
+* 5 ADA - Eternl fee 0.1%
+* 5005 ADA - paid by buyer
+  * 4875 ADA - for the seller
+  * 125 ADA - for the marketplace
+  * 5 ADA - for Eternl
 
 ### Easy Implementation
 
-- Add an additional output to the BUY transactions
+* Add an additional output to the BUY transactions
 
 For dApps there are no downsides to this concept. The fee can be clearly communicated to be an addition for using the Eternl DApp Browser. Users are free to use the browser extension instead, if they want to avoid the comfort fee.
 
@@ -215,13 +213,10 @@ Please check the browser's dev console network section to find any erros (check 
 
 ### Checklist
 
-+ no errors while loading the page in the DApp Browser
-+ the page works on mobile browsers (iOS: Safari, Android: Chrome)
-+ the Eternl convenience fee is implemented (or for minting projects a 0.5% commision is accepted)
+* no errors while loading the page in the DApp Browser
+* the page works on mobile browsers (iOS: Safari, Android: Chrome)
+* the Eternl convenience fee is implemented (or for minting projects a 0.5% commision is accepted)
 
 ## Integration
 
-Please open a support ticket now and provide us with your staging/production URLs and please also provide an image (728x256px) for the DApp Browser entry.
-We will put your entry in our staging environment and you can do the final tests. Once you are sure it works, we can move it to production. 
-
-<figure><img src="/assets/pictures/dapp_browser_guidelines.png" alt=""><figcaption></figcaption></figure>
+Please open a support ticket now and provide us with your staging/production URLs and please also provide an image (728x256px) for the DApp Browser entry. We will put your entry in our staging environment and you can do the final tests. Once you are sure it works, we can move it to production.

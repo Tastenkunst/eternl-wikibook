@@ -1,27 +1,21 @@
 # Understanding Balances Displayed in Eternl
 
-In a regular wallet there is only one balance that determines the amount of money one owns and is able to spend. In crypto and especially Cardano things work differently.
-In Cardano a wallet has 2 types of balances, the balance it can spend on payment credentials, and the balance that counts towards your stake on your stake credentials. These 2 can be dynamically put together and/or split and merged with others, resulting in franken addresses.
+In a regular wallet there is only one balance that determines the amount of money one owns and is able to spend. In crypto and especially Cardano things work differently. In Cardano a wallet has 2 types of balances, the balance it can spend on payment credentials, and the balance that counts towards your stake on your stake credentials. These 2 can be dynamically put together and/or split and merged with others, resulting in franken addresses.
 
 In Eternl we show a breakdown of your funds divided into different categories. It does so for every single account and wallet and those balances are shown on the summary page. Below you can see an example of what this looks like, depending on the structure of the wallet, different balances are shown as not every property is available for every wallet.
-
-<figure><img src="/assets/pictures/eternl_balances.png" alt=""><figcaption>Displayed when clicking the Available card on the send page </figcaption></figure>
 
 ## Total Funds
 
 The first balance shown is the total sum of your owned funds. This will contain both spendable (albeit potentially locked up by tokens) ADA and your staking rewards.
 
-- **Balance:** Your spendable in-wallet ADA
-- **Rewards:** Staking rewards that are yet to be claimed to your wallet
-(*Reward balance does not contribute to your Catalyst voting power*)
+* **Balance:** Your spendable in-wallet ADA
+* **Rewards:** Staking rewards that are yet to be claimed to your wallet (_Reward balance does not contribute to your Catalyst voting power_)
 
 ## Stake Breakdown
 
-- **Controlled stake:** Funds staked to your stake key regardless of if you own them or not
-
-- **Staked externally:** Funds owned by this wallet, but staked to another stake key (franken address)
-
-- **Not staked:** Funds owned by this wallet, but on a enterprise address without stake credentials.
+* **Controlled stake:** Funds staked to your stake key regardless of if you own them or not
+* **Staked externally:** Funds owned by this wallet, but staked to another stake key (franken address)
+* **Not staked:** Funds owned by this wallet, but on a enterprise address without stake credentials.
 
 ## Available Funds
 
@@ -33,9 +27,8 @@ Eternl has a feature called “Token fragmentation” available through settings
 
 Generally it is advisable to have a ratio of about 20 tokens per 7 ADA to have a good tradeoff between the 2.
 
-- **Estimated Available:** Estimated available ADA that are not attached to tokens.
-
-- **Estimated Locked:** Estimated amount of ADA attached to tokens
+* **Estimated Available:** Estimated available ADA that are not attached to tokens.
+* **Estimated Locked:** Estimated amount of ADA attached to tokens
 
 ### There Are a Few Other Sub-Balances That Are Not Always Shown
 
