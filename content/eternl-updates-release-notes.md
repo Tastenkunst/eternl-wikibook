@@ -186,7 +186,7 @@ Released - 01.07.2026
 
 Released - 27.06.2026:
 
-## Browser extension connection handling
+### Browser extension connection handling
 
 - Added a health check and recovery attempts for lost dApp connections.
 - Added logging for further investigations why some users report lost dApp connections.
