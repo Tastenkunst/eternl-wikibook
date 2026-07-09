@@ -4,6 +4,83 @@
 
 <details open>
 
+## v2.1.4.1
+
+Released 09.07.2026:
+
+(Changes since v2.1.3.3)
+
+### New Features
+
+### Explorer Choice
+
+- Added a first-run blockchain explorer picker for explorer links.
+- Added per-network explorer-choice confirmation storage in eternl-core.
+- Added support for choosing an explorer for one link type or applying the same provider to all compatible link types.
+- Updated explorer links so unconfirmed explorer types prompt the user before opening the link.
+- Updated Explorer settings to reflect the explicit choice flow instead of silently persisting defaults.
+
+### Wallet Safety
+
+- Added a mnemonic wallet warning for seed-phrase wallets holding more than the USD threshold.
+- Added a warning banner to wallet cards and compact wallet list rows.
+- Added a security warning modal with options to hide the warning for the current wallet or for all wallets.
+
+### Eternl Hub
+
+- Allowed wallet-to-wallet Hub connections to be created without selecting or sharing a wallet.
+- Updated empty-wallet transfer handling so a new paired instance returns to the add-wallet setup flow instead of timing out.
+
+### Governance Vote Drafts
+
+- Added selection checkboxes for stored vote drafts so users can submit only selected pending votes.
+- Added a clear action for stored vote drafts.
+- Updated standalone vote creation so it submits the current vote draft instead of every pending vote draft by default.
+
+### Reporting V2 (work in progress)
+
+- Added the Reporting V2 reports workspace with dedicated Reports, Ledger, DATEV, Raw Data, and Settings areas.
+- Added DATEV export generation for accounting periods, including booking CSV output, SuSa-style summaries, and account-sheet PDF exports.
+- Added ledger snapshot generation, account projection, report-file management, and export settings for entity/year-specific reporting workspaces.
+- Added Kraken trade ingestion and normalization for Reporting V2 projections.
+- Added legacy report migration helpers so older reporting artifacts can be incorporated into the new workspace layout.
+- Added reward-history download support and reward-history workspace files.
+- Added account-list and account-settings UI for Reporting V2 so accounts can be reviewed and configured inside the reporting flow.
+- Made the Reporting V2 navigation toggle persistent through local storage while the feature remains beta-gated.
+
+---
+
+## Fixes
+
+- Fixed dApp-supplied Conway transaction signing where witness-set merging could change the signed transaction body hash.
+- Fixed multi-transaction signTx sessions where later transactions depended on outputs from earlier session transactions.
+- Fixed Hub connection-only pairing so sharing zero wallets is a valid transfer state.
+- Fixed fresh paired instances returning to setup when no wallets are shared.
+- Fixed governance action display when the vote references an action that is not available in the local action list.
+- Fixed missing governance action metadata in the signTx popup.
+- Fixed pending vote submission so selected vote drafts can be submitted without unintentionally including unrelated drafts.
+
+---
+
+## Improvements
+
+- Signing and DApp transactions
+- Fixed the voting.cardanofoundation.org signing path by preserving transaction body hashes when witness-set signatures are added.
+- Added session UTxO hydration for signTx batches, so later transactions in the same signing session can resolve outputs created by earlier session transactions.
+- Improved Keystone hash-signing finalization by carrying the device transaction hash through the signed-transaction result.
+- Improved vote-draft submission requests so the send page can receive a targeted governance action list.
+
+---
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - not submitted - Eternl Beta Extension
+> - not submitted - Android app
+> - not submitted - iOS app
+
+</details>
+
 ## v2.1.3.3
 
 Released - 01.07.2026
@@ -120,8 +197,6 @@ Released - 27.06.2026:
 > - not submitted - Eternl Beta Extension
 > - not submitted - Android app
 > - not submitted - iOS app
-
-</details>
 
 ---
 
