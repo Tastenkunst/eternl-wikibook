@@ -4,10 +4,28 @@
 
 <details open>
 
+## v2.1.5.0
+
+Released 10.07.2026
+(Changes since v2.1.4.1)
+
+### Ledger Signing Hotfix
+
+- Fixed ordinary Send transactions being rejected during Ledger signing with Tx missing resolved input UTxO lists.
+
+---
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta Extension
+> - ✓ available - Android app
+> - ✓ submitted - iOS app
+
+
 ## v2.1.4.1
 
 Released 09.07.2026:
-
 (Changes since v2.1.3.3)
 
 ### New Features
@@ -84,7 +102,6 @@ Released 09.07.2026:
 ## v2.1.3.3
 
 Released - 01.07.2026
-
 (Changes since v2.1.1.0)
 
 ### New Features
