@@ -4,6 +4,44 @@
 
 <details open>
 
+## v2.1.6.5
+
+Released 19.08.2026
+(Changes since v2.1.5.0.)
+
+### New Features
+
+- Optional ISO date and time formatting.
+- Ledger Cardano app 8 can submit multiple DRep votes in one transaction while app 7 wallets keep their established signing flow.
+  
+### Changes
+
+- Terms documents can be accepted while reading.
+- Pool chooser shows the current delegation.
+- Pending transactions stay sorted and removable.
+- Trezor verifies the connected wallet before signing.
+- Single-choice explorer links open without prompts.
+- Mobile visitors see app-store download buttons.
+- Fiat prices stay hidden outside Cardano mainnet.
+
+### Fixes
+
+- Legacy version one wallet backups import again.
+- SteelSwap orders can be cancelled.
+- Fixed transaction input resolution on pasting cbor for singing.
+- Partial UTxO resolution no longer loses inputs.
+- UTC and Bosnian date formatting corrected.
+- Mobile CIP-99 claims now work reliably.
+- Imported mobile wallets synchronize immediately.
+- Mobile feature-gated menus appear immediately.
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - submitted - Eternl Beta Extension
+> - submitted - Android app
+> - submitted - iOS app
+
 ## v2.1.5.0
 
 Released 10.07.2026
@@ -22,6 +60,7 @@ Released 10.07.2026
 > - ✓ available - Android app
 > - ✓ submitted - iOS app
 
+</details>
 
 ## v2.1.4.1
 
@@ -96,8 +135,6 @@ Released 09.07.2026:
 > - not submitted - Eternl Beta Extension
 > - not submitted - Android app
 > - not submitted - iOS app
-
-</details>
 
 ## v2.1.3.3
 
