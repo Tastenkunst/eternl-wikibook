@@ -5,17 +5,17 @@ frontmatter:
 
 ---
 description: lorem ipsum
-disableH2Collapse: true
+disableH2Collapse: true                         deaktiviert das automatische einklappen von h2s für die aktuelle seite
 cover:
 ---
 
 
 
-
+erzeugt navigations kacheln anhand der angaben in der summary.md
 [[child-nav]]
 
 
-
+ermöglicht manuell eine kachel navigation zu erstellen.
 [[custom-nav]]
 * [Claiming the Glacier Airdrop](home/claiming-the-glacier-airdrop-in-eternl-v2.md)
 [[/custom-nav]]
@@ -23,10 +23,7 @@ cover:
 
 
 
-
-
-
-ein- ausklappenklappen (bei h2 automatisch - versuchen h2 zu nutzen)
+ein- ausklappen (bei h2 automatisch -> wo sinnvoll h2, statt detail-tags nutzen)
 
 <details>
 <summary>...</summary>
@@ -34,8 +31,11 @@ ein- ausklappenklappen (bei h2 automatisch - versuchen h2 zu nutzen)
 </details
 
 
-bewirkt sehr dezenten rahmen - braucht man das?
+mit "{open}" markierte h2 werden ausgeklappt
+## überschrift zweiter ebene {open}
 
+
+bewirkt sehr dezenten rahmen - braucht man das?
 >
 
 
@@ -123,3 +123,8 @@ images
 
 <figure><img src="/assets/pictures/eternl_guard_2.png" alt=""><figcaption></figcaption></figure>
 --> mit bildunterschrift. platzierung mittig
+
+
+
+bullet points
+*
