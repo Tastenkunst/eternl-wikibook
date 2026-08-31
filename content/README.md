@@ -16,10 +16,10 @@ disableH2Collapse: true
 ## Trending Topics
 
 [[custom-nav]]
-* [Eternl Release Notes](eternl-updates-release-notes.md)::/assets/icons/Warning.svg
+<!-- * * [Eternl Release Notes](eternl-updates-release-notes.md)::/assets/icons/InformationCircle.svg -->
+* [Eternl Analytics](using-eternl/eternl-analytics.md)::/assets/hugeicons/IconAnalyticsUp.svg
+* [Eternl Release Notes](eternl-updates-release-notes.md)::/assets/icons/Notebook.svg
 * [FAQ & Troubleshooting](faq-and-troubleshooting/README.md)::/assets/icons/Warning.svg
 * [Claiming the Glacier Airdrop](faq-and-troubleshooting/faq/claiming-the-glacier-airdrop-in-eternl-v2.md)::/assets/icons/Receive.svg
 <!-- * [test external link](https://google.de)::/assets/hugeicons/IconUser.svg -->
 [[/custom-nav]]
-
-content\
