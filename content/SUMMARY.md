@@ -17,10 +17,11 @@
         * [App Utilities](using-eternl/settings/app-utilities.md)::/assets/hugeicons/IconUtilities.svg
     * [Managing Accounts](using-eternl/managing-accounts.md)::/assets/hugeicons/IconUser.svg
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
+    * [Eternl Analytics](using-eternl/eternl-analytics.md)::/assets/hugeicons/IconAnalyticsUp.svg
     * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
-    * [trezor-passphrase-wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/IconAccess.svg
+    * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/IconAccess.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
@@ -64,9 +65,9 @@
     * [DApp Browser Integration](for-developers/dapp-browser-integration.md)
 <!-- [Eternl DApp Browser Integration](for-developers/eternl-dapp-browser-integration.md) -->
 
-* [Eternl Announcements](announcements/README.md)
-    * [Eternl Beta extension v2.1.0.50](announcements/Eternl-Beta-extension-v2.1.0.50.md)
-    * [Eternl Release v2.1.0.72](announcements/Eternl-Release-v.2.1.0.72.md)
+<!-- * [Eternl Announcements](announcements/README.md) -->
+<!--     * [Eternl Beta extension v2.1.0.50](announcements/Eternl-Beta-extension-v2.1.0.50.md) -->
+<!--     * [Eternl Release v2.1.0.72](announcements/Eternl-Release-v.2.1.0.72.md) -->
 
 * [Eternl Updates / Release Notes](eternl-updates-release-notes.md)
 
