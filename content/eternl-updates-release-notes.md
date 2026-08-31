@@ -2,9 +2,7 @@
 
 # Releases
 
-<details open>
-
-## v2.1.6.5
+## v2.1.6.5 {open}
 
 Released 19.08.2026
 (Changes since v2.1.5.0.)
@@ -13,7 +11,7 @@ Released 19.08.2026
 
 - Optional ISO date and time formatting.
 - Ledger Cardano app 8 can submit multiple DRep votes in one transaction while app 7 wallets keep their established signing flow.
-  
+
 ### Changes
 
 - Terms documents can be accepted while reading.
@@ -60,7 +58,6 @@ Released 10.07.2026
 > - ✓ available - Android app
 > - ✓ submitted - iOS app
 
-</details>
 
 ## v2.1.4.1
 
@@ -107,7 +104,7 @@ Released 09.07.2026:
 
 ---
 
-## Fixes
+### Fixes
 
 - Fixed dApp-supplied Conway transaction signing where witness-set merging could change the signed transaction body hash.
 - Fixed multi-transaction signTx sessions where later transactions depended on outputs from earlier session transactions.
@@ -119,7 +116,7 @@ Released 09.07.2026:
 
 ---
 
-## Improvements
+### Improvements
 
 - Signing and DApp transactions
 - Fixed the voting.cardanofoundation.org signing path by preserving transaction body hashes when witness-set signatures are added.
@@ -135,6 +132,7 @@ Released 09.07.2026:
 > - not submitted - Eternl Beta Extension
 > - not submitted - Android app
 > - not submitted - iOS app
+
 
 ## v2.1.3.3
 
@@ -329,8 +327,6 @@ Released - 26.06.2026
 > - ✓ available - Eternl Beta Extension
 > - ✓ available - Android app
 > - submitted - iOS app
-
-</details>
 
 ---
 
