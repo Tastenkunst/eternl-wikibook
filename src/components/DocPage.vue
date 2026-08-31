@@ -137,7 +137,7 @@ const processedDocHtml = computed(() => {
 
   // wenn frontmatter disableH2Collapse === true, dann h2 nicht in summary/detail-tags gewrappt
   if (doc.value.disableH2Collapse) {
-    return doc.value.html;
+    return stripSectionOpenMarkers(doc.value.html);
   }
 
   return wrapSections(doc.value.html);
@@ -151,6 +151,8 @@ const processedDocHtmlParts = computed(() => {
   // 1. H2-Wrapping (Einklapp-Logik)
   if (!doc.value.disableH2Collapse && typeof document !== 'undefined') {
     html = wrapSections(html);
+  } else if (doc.value.disableH2Collapse) {
+    html = stripSectionOpenMarkers(html);
   }
 
   // 2. Platzhalter finden (regex deckt beides ab)
@@ -164,6 +166,10 @@ const processedDocHtmlParts = computed(() => {
     after: parts[1] || ''
   };
 });
+
+function stripSectionOpenMarkers(html: string): string {
+  return html.replace(/\sdata-section-open="true"/g, '');
+}
 
 // hilfsfunktion für das erstellen von navigations kacheln
 function renderChildNavigation(items?: Array<{ title: string; routePath: string; icon?: string }>) {
@@ -288,17 +294,21 @@ function wrapSections(html: string): string {
   const serializer = new XMLSerializer();
   const nodes = Array.from(container.childNodes);
   let intro = '';
-  const sections: Array<{ headingHtml: string; content: string }> = [];
-  let current: { headingHtml: string; content: string } | null = null;
+  const sections: Array<{ headingHtml: string; content: string; open: boolean }> = [];
+  let current: { headingHtml: string; content: string; open: boolean } | null = null;
 
   nodes.forEach((node) => {
     if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === 'H2') {
       if (current) {
         sections.push(current);
       }
+      const heading = node as HTMLElement;
+      const open = heading.dataset.sectionOpen === 'true';
+      heading.removeAttribute('data-section-open');
       current = {
-        headingHtml: (node as Element).outerHTML,
+        headingHtml: heading.outerHTML,
         content: '',
+        open,
       };
     } else if (current) {
       current.content += serializer.serializeToString(node);
@@ -321,10 +331,9 @@ function wrapSections(html: string): string {
   }
 
   let result = intro;
-  sections.forEach((section, index) => {
+  sections.forEach((section) => {
     result += `
-<!--<details class="doc-section" ${index === 0 ? 'open' : ''}>-->
-<details class="doc-section">
+<details class="doc-section"${section.open ? ' open' : ''}>
   <summary class="doc-section-summary">
 <!--    <img-->
 <!--      class="doc-section-chevron"-->

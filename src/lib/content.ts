@@ -308,6 +308,38 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
     slugify: (value: string) => slugger.slug(value)
   });
 
+  // Strip the marker before markdown-it-anchor creates the heading id.
+  const h2OpenMarker = /\s+\{open\}\s*$/;
+  md.core.ruler.before('anchor', 'h2-open-marker', (state) => {
+    for (let i = 0; i < state.tokens.length - 1; i += 1) {
+      const heading = state.tokens[i];
+      const inline = state.tokens[i + 1];
+
+      if (
+        heading.type !== 'heading_open' ||
+        heading.tag !== 'h2' ||
+        inline.type !== 'inline' ||
+        !h2OpenMarker.test(inline.content)
+      ) {
+        continue;
+      }
+
+      inline.content = inline.content.replace(h2OpenMarker, '');
+
+      const children = inline.children ?? [];
+      inline.children = children;
+      const lastChild = children[children.length - 1];
+      if (lastChild?.type === 'text') {
+        lastChild.content = lastChild.content.replace(h2OpenMarker, '');
+        if (!lastChild.content) {
+          children.pop();
+        }
+      }
+
+      heading.attrSet('data-section-open', 'true');
+    }
+  });
+
   md.use(markdownItContainer, 'hint', {
     render(tokens: Token[], idx: number) {
       const token = tokens[idx];
