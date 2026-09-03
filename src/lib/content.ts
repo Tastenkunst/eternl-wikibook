@@ -1,5 +1,6 @@
 import MarkdownIt             from 'markdown-it';
 import type Token             from 'markdown-it/lib/token.mjs';
+import type StateInline       from 'markdown-it/lib/rules_inline/state_inline.mjs';
 import markdownItAnchor       from 'markdown-it-anchor';
 import markdownItContainer    from 'markdown-it-container';
 import markdownItFootnote     from 'markdown-it-footnote';
@@ -248,8 +249,8 @@ function buildDocPage(filePath: string, raw: string, fallbackTitle: string): Doc
     footnoteTokens = tokens.slice(footnoteIndex);
   }
 
-  const { title, tokens: trimmedTokens } = extractTitle(mainTokens, fallbackTitle);
-  const toc = buildToc(trimmedTokens);
+  const { title, tokens: trimmedTokens } = extractTitle(mainTokens, fallbackTitle, md);
+  const toc = buildToc(trimmedTokens, md);
 
   const mainHtml = md.renderer.render(trimmedTokens, md.options, {});
   const footnotesHtml = footnoteTokens.length > 0
@@ -423,7 +424,110 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
   md.renderer.rules.table_open = () => '<div class="table-wrapper"><table>';
   md.renderer.rules.table_close = () => '</table></div>';
 
+  md.inline.ruler.before('link', 'pro_button', (state: StateInline, silent: boolean) => {
+    const marker = '[[ProButton]]';
+    if (!state.src.startsWith(marker, state.pos)) {
+      return false;
+    }
+
+    let end = state.pos + marker.length;
+    let href: string | undefined;
+
+    if (state.src[end] === '(') {
+      const closingParenthesis = findProButtonLinkEnd(state.src, end + 1);
+      if (closingParenthesis === -1) {
+        return false;
+      }
+
+      href = state.src
+        .slice(end + 1, closingParenthesis)
+        .trim()
+        .replace(/\\([\\()])/g, '$1');
+      end = closingParenthesis + 1;
+    }
+
+    if (!silent) {
+      const token = state.push('pro_button', 'span', 0);
+      if (href) {
+        token.attrSet('href', href);
+      }
+    }
+
+    state.pos = end;
+    return true;
+  });
+
+  md.renderer.rules.pro_button = (tokens, idx) => {
+    return renderProButtonPlaceholder(tokens[idx].attrGet('href') ?? undefined);
+  };
+
   return md;
+}
+
+function renderProButtonPlaceholder(href: string | undefined): string {
+  const attributes: Record<string, string> = {};
+  if (href) {
+    const resolved = resolveProButtonHref(href);
+    attributes.href = resolved.resolved;
+    if (resolved.external) {
+      attributes.target = '_blank';
+    }
+  }
+
+  const dataAttributes = Object.entries(attributes)
+    .map(([name, value]) => ` data-pro-button-${name}="${escapeHtml(value)}"`)
+    .join('');
+
+  return `<span class="markdown-pro-button" data-eternl-pro-button${dataAttributes}></span>`;
+}
+
+function resolveProButtonHref(href: string): { resolved: string; external: boolean } {
+  if (href.startsWith('#')) {
+    return { resolved: href, external: false };
+  }
+  if (/^(https?:|mailto:|tel:)/.test(href)) {
+    return { resolved: href, external: true };
+  }
+
+  const [pathPart, hash] = href.split('#');
+  if (!pathPart) {
+    return { resolved: href, external: false };
+  }
+
+  const absolutePath = pathPart
+    .replace(/^\/+/, '')
+    .replace(/^\.\//, '');
+  const routePath = absolutePath.endsWith('.md')
+    ? toRoutePath(absolutePath)
+    : `/${absolutePath}`;
+  const resolved = hash ? `${routePath}#${hash}` : routePath;
+
+  return { resolved, external: false };
+}
+
+function findProButtonLinkEnd(source: string, start: number): number {
+  let nesting = 0;
+
+  for (let index = start; index < source.length; index += 1) {
+    const character = source[index];
+    if (character === '\\') {
+      index += 1;
+      continue;
+    }
+    if (character === '(') {
+      nesting += 1;
+      continue;
+    }
+    if (character !== ')') {
+      continue;
+    }
+    if (nesting === 0) {
+      return index;
+    }
+    nesting -= 1;
+  }
+
+  return -1;
 }
 
 function preprocessGitbook(content: string): string {
@@ -512,7 +616,7 @@ function toRoutePath(repoPath: string): string {
   return `/${normalized.replace(/\.md$/, '')}`;
 }
 
-function extractTitle(tokens: Token[], fallbackTitle: string): {
+function extractTitle(tokens: Token[], fallbackTitle: string, md: MarkdownIt): {
   title: string;
   tokens: Token[];
 } {
@@ -521,8 +625,9 @@ function extractTitle(tokens: Token[], fallbackTitle: string): {
 
   if (h1Index !== -1) {
     const inline = trimmedTokens[h1Index + 1];
-    let titleHtml = inline?.type === 'inline' ? inline.content : fallbackTitle;
-    titleHtml = titleHtml.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1">');
+    let titleHtml = inline?.type === 'inline'
+      ? md.renderer.renderInline(inline.children ?? [], md.options, {})
+      : fallbackTitle;
     const finalTitle = replaceIconSvgs(titleHtml);
     trimmedTokens.splice(0, h1Index + 3);
     return { title: finalTitle, tokens: trimmedTokens };
@@ -530,7 +635,7 @@ function extractTitle(tokens: Token[], fallbackTitle: string): {
   return { title: fallbackTitle, tokens: trimmedTokens };
 }
 
-function buildToc(tokens: Token[]): TocItem[] {
+function buildToc(tokens: Token[], md: MarkdownIt): TocItem[] {
   const toc: TocItem[] = [];
   let currentH2: TocItem | null = null;
 
@@ -548,10 +653,14 @@ function buildToc(tokens: Token[]): TocItem[] {
       const id = token.attrGet('id') || '';
       const item: TocItem = {
         id,
-        title: inline.content
-          .replace(/!\[[^\]]*\]\([^)]+\)/g, '') // 1. Löscht ![icon](...)
-          .replace(/<img[^>]*>/gi, '')         // 2. Löscht <img ...>
-          .replace(/[*_~`]/g, '')              // 3. Löscht *, _, ~, ` (Formatierung)
+        title: md.renderer.renderInlineAsText(
+          (inline.children ?? []).filter(child => child.type !== 'image'),
+          md.options,
+          {}
+        )
+          .replace(/\[\[ProButton\]\](?:\([^)]*\))?/g, '')
+          .replace(/<img[^>]*>/gi, '')
+          .replace(/[*_~`]/g, '')
           .trim(),
         level,
         children: []

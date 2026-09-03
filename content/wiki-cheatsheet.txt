@@ -66,11 +66,17 @@ syntax to insert pictures:
 <figure><img src="/assets/pictures/Settings_WalletSettings.png" alt=""><figcaption></figcaption></figure>
 
 
+ProButton:
+
+[[ProButton]]
+[[ProButton]](using-eternl/settings/account-settings.md)
+
+
 
 syntax for callout boxes:
 
 ::: tip   			info geht auch. identisches styling
-lorem ipsum
+lorem ipsum         (Achtung: nicht eingerückt! sonst wird styling zerschossen )
 :::
 
 ::: success
@@ -127,4 +133,12 @@ images
 
 
 bullet points
-*
+*                   unordered list
+
+
+*kursiver text*
+**gefetteter text**
+~~durchgestrichen~~
+
+
+\                   line break

@@ -60,6 +60,6 @@
   * [Welcome to Eternl v2](content/welcome-to-eternl-v2/README.md)
     * [About Eternl](content/welcome-to-eternl-v2/about-eternl.md)
     * [Supported Platforms](content/welcome-to-eternl-v2/supported-platforms.md)
-    * [What’s New in v2?](content/welcome-to-eternl-v2/whats-new-in-v2.0.md)
+    * [What’s New in v2?](content/welcome-to-eternl-v2/whats-new-in-v2.md)
 * [docs](docs/README.md)
   * [IMPLEMENTATION\_PLAN\_CLAUDE](docs/IMPLEMENTATION_PLAN_CLAUDE.md)

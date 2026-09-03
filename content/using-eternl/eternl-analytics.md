@@ -1,10 +1,15 @@
-# Eternl Analytics
+# Eternl Analytics [[ProButton]]
 
 The Eternl Analytics suite is divided into four primary tabs: Portfolio, Discover, Wallet Profiler, and Multichart — designed to offer deep insights into market data and account performance.
 
+::: info
+Only available for Eternl Pro users.
+:::
 
 ## Portfolio {open}
 The Portfolio tab provides an overview of the selected account's total value over time, alongside a breakdown of held assets.
+
+![Eternl Analytics - Portfolio Tab](/assets/pictures/eternl_analytics_portfolio.jpg)
 
 * Portfolio Chart: Displays total portfolio value history, allowing quick performance toggling across different timeframes.
 
@@ -17,6 +22,8 @@ Note: The asset table displays significant holdings; micro-balances or low-value
 
 The Discover tab serves as a market overview, providing high-level Cardano ecosystem stats along with a live leaderboard of tracked tokens.
 
+![Eternl Analytics - Discover Tab](/assets/pictures/eternl_analytics_discover.jpg)
+
 * Ecosystem Metrics: Displays overall network health indicators at the top, including Total Market Cap, 24h DEX Volume, Active Addresses, and Total Tokens Tracked.
 
 * Market Leaderboard: Lists tracked tokens with real-time market data, including current prices, market cap, valuation metrics, liquidity, volume, and multi-frame price performance.
@@ -26,6 +33,8 @@ The Discover tab serves as a market overview, providing high-level Cardano ecosy
 
 ## Wallet Profiler
 The Wallet Profiler tab allows you to inspect on-chain details for any specified address, ADA Handle, or connected account.
+
+![Eternl Analytics - Wallet Profiler Tab](/assets/pictures/eternl_analytics_wallet_profiler.jpg)
 
 * Address Input & Hotlinks: Enter an address/handle manually, select from contacts, choose an internal account, or scan a QR code. Click Add to hotlinks (star icon) to pin the wallet as a quick-access button at the top bar.
 
@@ -37,6 +46,8 @@ The Wallet Profiler tab allows you to inspect on-chain details for any specified
 ## Multichart
 
 The Multichart tab allows you to monitor price action for multiple Cardano tokens simultaneously in a side-by-side grid layout.
+
+![Eternl Analytics - Multichart Tab](/assets/pictures/eternl_analytics_multichart.jpg)
 
 * Adding Chart Tiles: Search for a token in the top search bar and select it from the list to add a new chart tile to your screen. You can repeat this process to view multiple token charts at the same time.
 

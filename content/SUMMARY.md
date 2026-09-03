@@ -4,8 +4,9 @@
 
 * [Welcome to Eternl v2](welcome-to-eternl-v2/README.md)
     * [About Eternl](welcome-to-eternl-v2/about-eternl.md)
-    * [What’s New in v2 ?](welcome-to-eternl-v2/whats-new-in-v2.0.md)
+    * [What’s New in v2](welcome-to-eternl-v2/whats-new-in-v2.md)
     * [Supported Platforms](welcome-to-eternl-v2/supported-platforms.md)
+    * [Become a Beta Tester](welcome-to-eternl-v2/beta-extension.md)
 
 * [Getting Started](getting-started/README.md)
 
@@ -15,6 +16,7 @@
         * [Wallet Settings](using-eternl/settings/wallet-settings.md)::/assets/icons/Wallet01.svg
         * [App Settings](using-eternl/settings/app-settings.md)::/assets/icons/Settings.svg
         * [App Utilities](using-eternl/settings/app-utilities.md)::/assets/hugeicons/IconUtilities.svg
+        * [Developer Settings](using-eternl/settings/developer-settings.md)::/assets/icons/TestTube03.svg
     * [Managing Accounts](using-eternl/managing-accounts.md)::/assets/hugeicons/IconUser.svg
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
     * [Eternl Analytics](using-eternl/eternl-analytics.md)::/assets/hugeicons/IconAnalyticsUp.svg

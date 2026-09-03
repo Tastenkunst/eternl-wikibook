@@ -1,0 +1,45 @@
+---
+description: Learn how to install the Eternl Beta browser extension and help shape the future of Eternl as a beta tester.
+disableH2Collapse: false
+---
+
+# How to Become a Beta Tester
+
+::: info
+We frequently release upcoming features early in our Beta extension to gather valuable community feedback. Your testing and insights directly influence Eternl's development — thank you for your support!
+:::
+
+## How to Get Started
+
+### 1. Back Up Your Data
+Before switching to the Beta version, export your existing configuration:
+1. Click the **three-dot menu** in the top-right corner of the Eternl app.
+2. Go to **Settings**.
+3. Choose one of the following:
+    * **App Settings → Export Data:** To export all wallets, custom settings, and preferences at once (recommended).
+    * **Wallet Settings → Export Wallet:** To export only your currently active wallet.
+
+### 2. Install Eternl Beta
+1. Open Google Chrome (or any Chromium-based browser like Brave or Edge).
+2. Open the Chrome menu, navigate to **Extensions**, and select **Visit Chrome Web Store**.
+3. Search for **Eternl Beta** and click **Add to Chrome**.
+
+### 3. Import Your Data
+1. Open the newly installed **Eternl Beta** extension.
+2. Click the **three-dot menu** in the top-right corner → **Settings** → **App Settings** → **Import Data**.
+3. Drag and drop your exported file into the window, or click the file picker to select it.
+
+### 4. Test & Share Feedback
+You’re all set! Explore the new capabilities, test fresh features, and let us know what you think.
+
+Found a bug, have feedback, or want to share a suggestion? Reach out to us directly:
+* Join our community on [Discord](https://discord.gg/eternlwallet)
+* Chat with us on [Telegram](https://t.me/eternlio)
+
+::: tip
+Pro features are often available for free in the Beta extension for a limited time!
+:::
+
+---
+
+> *Every bit of feedback helps us build a better experience for everyone. Thank you so much for taking the time to test with us and support the project!*

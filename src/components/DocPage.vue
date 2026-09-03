@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {
   computed,
+  createApp,
   nextTick,
   onMounted,
   onBeforeUnmount,
@@ -20,6 +21,7 @@ import {
 
 import Toc                    from '@/components/Toc.vue';
 import NavGrid                from '@/components/NavGrid.vue';
+import ProButton              from '@/components/ProButton.vue';
 
 const route = useRoute();
 const routePath = computed(() => normalizePath(route.path));
@@ -221,6 +223,40 @@ function handleHashChange() {
 }
 
 let zoomInstance: any = null;
+const mountedProButtons: Array<{
+  host: HTMLElement;
+  app: ReturnType<typeof createApp>;
+}> = [];
+
+function cleanupProButtons() {
+  mountedProButtons.forEach(({ app }) => app.unmount());
+  mountedProButtons.length = 0;
+}
+
+async function initProButtons() {
+  cleanupProButtons();
+
+  if (typeof document === 'undefined') {
+    return;
+  }
+
+  await nextTick();
+
+  document.querySelectorAll<HTMLElement>('[data-eternl-pro-button]').forEach((host) => {
+    const props: Record<string, string> = {};
+
+    for (const name of ['label', 'size', 'href', 'target', 'title']) {
+      const value = host.dataset[`proButton${name[0].toUpperCase()}${name.slice(1)}`];
+      if (value !== undefined) {
+        props[name] = value;
+      }
+    }
+
+    const app = createApp(ProButton, props);
+    app.mount(host);
+    mountedProButtons.push({ host, app });
+  });
+}
 
 const initZoom = async () => {
   // 1. Aufräumen: Alte Zoom-Verbindungen lösen
@@ -277,6 +313,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   themeObserver?.disconnect();
+  cleanupProButtons();
 
   window.removeEventListener('hashchange', handleHashChange);
 
@@ -286,6 +323,7 @@ onBeforeUnmount(() => {
 watch(() => doc.value?.html, async () => {
   await nextTick();
   initZoom();
+  await initProButtons();
 }, { immediate: true });
 
 function wrapSections(html: string): string {
