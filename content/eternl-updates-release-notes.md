@@ -2,7 +2,38 @@
 
 # Releases
 
-## v2.1.6.5 {open}
+## v2.1.7.1 {open}
+
+Released 05.09.2026:
+(Changes since v2.1.6.5.)
+
+### Changes
+
+- Startup time is significantly reduced.
+- Multi-Sig notifications show clearer signing and submission status.
+- Multi-Sig transactions can be submitted once enough signatures are collected, while optional signing and sharing remain available.
+- Send options and Add recipient now appear above the recipient list.
+
+### Fixes
+
+- Multi-Sig signatures and reference scripts are verified consistently.
+- Transaction badges update correctly after another wallet signs or submits.
+- Transactions remain viewable when input details cannot be loaded.
+- Selected inputs stay in sync and no longer carry over into unrelated Send transactions.
+- Fixed ADA sends failing on token-heavy wallets when smaller inputs can fund the payment.
+- Fixed No account set errors when switching dApp accounts within the same wallet.
+- Fixed Ledger signing for transactions with mixed CBOR set tags.
+- Fixed staking transactions on Apex Fusion Prime and other Babbage networks.
+- Fixed larger USDCx bridge withdrawals and transaction validation.
+
+> - ✓ available - eternl.io
+> - won't submit - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - won't submit - Eternl Beta Extension
+> - submitted - Android app
+> - submitted - iOS app
+
+## v2.1.6.5
 
 Released 19.08.2026
 (Changes since v2.1.5.0.)
@@ -57,7 +88,6 @@ Released 10.07.2026
 > - ✓ available - Eternl Beta Extension
 > - ✓ available - Android app
 > - ✓ submitted - iOS app
-
 
 ## v2.1.4.1
 
