@@ -2,208 +2,130 @@
 
 ## Overview
 
-These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features rather than a single wallet.
+These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features.
 
-## Pro Mode
+![App Settings](/assets/pictures/settings_app_settings_overview.jpg)
 
-Use `Pro Mode` to switch between a simpler interface and a more advanced one.
+## General
 
-**When to use it:**
+Select options to define your Eternl experience, UI behavior, and home dashboard elements.
 
-* **Beginners** should usually stay in **Simple** mode.
-* **Advanced users** can use **Pro** mode for more control and more detailed options.
-
-**Important:**
-
-* More control also means more room for mistakes if you are unfamiliar with the settings.
+**Key Options:**
+* **App Experience:** Toggle options like automatically opening the transaction preview when signing, enabling demanding visual effects (e.g., blurred backgrounds), or showing the dApp connector button in the header.
+* **Home Dashboard Elements:** Add or remove specific widgets from your dashboard, such as the ADA chart, account stake key, rewards chart, chosen stake pool, Delegated Representative (DRep), or MonsterSwap interface.
+* **Experimental Settings:** Enable specialized options like filtering the wallet list by selected entity or showing Developer Settings.
 
 ## Network
 
-Use `Network` to choose which Cardano environment Eternl connects to, such as **Mainnet** or **Testnet**.
+Select the current active network (e.g., **Mainnet** or **Testnet**).
 
 **When to use it:**
-
 * Use **Mainnet** for normal wallet activity and real funds.
 * Use **Testnet** for testing, development, or learning without real assets.
 
 **Important:**
-
 * Funds are **not shared** between networks.
 * A wallet on **Mainnet** is separate from a wallet on **Testnet**.
 
-## Language
+## Localization
 
-Use `Language` to change the app interface language and related regional display settings where available.
+Manage language, regional formatting, timezone settings, **fiat display currency**, and **number decimal precision**.
 
-**When to use it:**
+## Security
 
-* Change it if you prefer a different UI language.
-* Adjust it if dates, numbers, or regional formatting should match your locale.
+PIN and biometric authentication settings.
 
-## Currency
-
-Use `Currency` to choose the **fiat display currency** used for value conversion inside the app.
-
-**When to use it:**
-
-* Select the currency you normally use for pricing and portfolio reference.
-* Change it if you want market values shown in another local currency.
-
-## Decimal Precision
-
-Use `Decimal Precision` to control how many decimal places are shown for balances and values.
-
-**When to use it:**
-
-* Use fewer decimals for a cleaner overview.
-* Use more decimals if you want more exact number formatting.
-
-## Access PIN Code
-
-Use `Access PIN Code` to add an extra app-level lock when opening Eternl on your device.
-
-**When to use it:**
-
-* Enable it if other people may access your device.
-* Use it for faster everyday protection than entering a wallet recovery phrase.
+* **Access PIN Code:** Set up an extra app-level lock when opening Eternl on your device.
+* **Biometric Auth:** Enable device-level authentication such as **Face ID** or **fingerprint** on supported devices for faster access.
 
 **Important:**
+* PIN and biometric security protect local app access, but they are **not** a replacement for your recovery phrase.
 
-* A PIN protects app access, but it is **not** a replacement for your recovery phrase.
+## Sounds
 
-## Biometrics Auth
-
-Use `Biometrics Auth` for device-level authentication such as **Face ID** or **fingerprint** where supported.
-
-**When to use it:**
-
-* Enable it for quicker secure access on supported devices.
-* Use it if you already trust the biometric setup of your phone or computer.
-
-**Important:**
-
-* Availability depends on your device settings and operating system support.
-
-\##Sounds
-
-Use `Sounds` to enable or disable app sounds and notification feedback.
-
-**When to use it:**
-
-* Turn it on if you want audible confirmation for actions.
-* Turn it off if you prefer a quieter experience.
+Enable or disable sound notifications for audible confirmation of app actions.
 
 ## Address Book
 
-Use `Address Book` to manage saved recipient addresses inside Eternl.
+Add, delete, and edit Address Book entries to easily manage saved recipient addresses and custom labels.
+
+## Eternl Hub
+
+Enable or disable **Eternl Hub** to pair multiple Eternl instances, sync wallets, and sign transactions remotely.
+
+**Main Features:**
+* **Pair Wallet:** Share a pairing code or QR code to sync wallets across devices (includes Temporary Mode for Pro users).
+* **Connect DApp:** Generate connection codes to link dApps remotely.
+* **Join:** Connect to another Eternl instance or dApp by entering a code or scanning a QR code.
+* **Connections:** View and manage all actively paired instances and connected dApps.
+
+[//]: # (::: info)
+
+[//]: # (For a detailed guide on multi-device pairing and remote signing, see the dedicated **[Eternl Hub documentation]&#40;/app-settings/eternl-hub&#41;**.)
+
+[//]: # (:::)
+
+## DApp Allowlist
+
+Manage the list of websites and dApps that are allowed to connect to this Eternl app.
 
 **When to use it:**
-
-* Save addresses you use often.
-* Add labels so contacts are easier to recognize.
-* Import or export address book entries when needed.
-
-## DApp Allow List
-
-Use `DApp Allow List` to control which dApps are allowed to connect to this Eternl app. whit **When to use it:**
-
-* Review connected dApps periodically.
-* Remove sites you no longer use.
-* Keep access limited to trusted dApps only.
+* Review connected dApps periodically and remove sites you no longer use.
 
 **Important:**
+* Only interact with dApps you trust to prevent malicious or unwanted connections.
 
-* Only interact with dApps you trust.
-* This helps prevent malicious or unwanted connections.
+## Export Data
 
-## Export Wallets
-
-Use `Export Wallets` to export multiple wallets from the app in one step.
-
-**When to use it:**
-
-* Use it when moving to another Eternl installation.
-* Use it if you need an encrypted backup of wallet data stored in the app.
+Create a comprehensive encrypted backup file of all your wallets, custom settings, and app preferences stored on this device.
 
 **Important:**
+* The export file contains **encrypted private keys**. Treat it with the same level of care as your **seed phrase**.
 
-* The export includes **encrypted private keys**.
-* Treat the export file with the same care as your **seed phrase**.
+## Import Data
 
-## Transactions: Auto-Submit
+Restore all your wallets, custom settings, and app preferences from a previously exported backup file (`.json`).
 
-Use `Transactions: Auto-Submit` to automatically send signed transactions to the network after signing.
+## Transactions
 
-**When to use it:**
+Manage auto-submit behavior and custom node endpoints.
 
-* Keep it enabled for a faster standard workflow.
-* Disable it if you want to inspect, download, or submit signed transactions manually.
-
-**Important:**
-
-* Turn it off if you want more manual control over transaction submission.
-
-## Custom Submit Endpoint
-
-Use `Custom Submit Endpoint` to send transactions through a custom node or API endpoint instead of the default setup.
-
-**When to use it:**
-
-* Use it only if you know exactly which endpoint you want to submit through.
-* Useful for specialized infrastructure or advanced testing setups.
-
-**Important:**
-
-* This is an **advanced** feature.
-* It should only be used by experienced users.
-* A bad or untrusted endpoint can cause transaction failure or unwanted manipulation.
+* **Auto-Submit:** Automatically broadcast signed transactions to the network. Disable this if you want to inspect, download, or submit signed transactions manually.
+* **Custom Submit Endpoint:** Send transactions through a custom node or API endpoint instead of the default setup (advanced users only).
 
 ## Blockchain Explorer
 
-Use `Blockchain Explorer` to choose which explorer Eternl opens for different item types.
-
-**When to use it:**
-
-* Pick the explorer you prefer for **addresses**.
-* Set explorer behavior for **transactions**, **tokens**, **pools**, and **governance** links.
+Set your preferred blockchain explorer by type (e.g., for addresses, transactions, tokens, pools, and governance links).
 
 ## MonsterSwap
 
-Use `MonsterSwap` to manage swap-related settings such as **slippage** and other DEX-specific behavior.
+Configure slippage tolerance and DEX-specific settings for the built-in MonsterSwap feature.
 
-**When to use it:**
+## Themes
 
-* Adjust it if a swap needs more flexible slippage settings.
-* Review it before using DEX features that depend on swap execution.
+Customize the visual appearance, typography, component colors, and backgrounds of the Eternl interface.
 
-**Important:**
+**Available Options:**
+* **Eternl Standard:** The modern, standard Eternl appearance.
+* **Legacy Themes:** Choose between **Classic** (classic styling) or **Monochrome** (a reduced black-and-white theme).
 
-* Higher slippage settings can increase execution risk and worse pricing.
+## Data Organization
+
+Inspect and manage local storage usage scoped to the currently selected network.
+
+**Key Information:**
+* **Storage Overview:** View total browser quota usage for Eternl data.
+* **Message Index:** Shows the status of indexed transaction messages and offers an option to **Re-index older transactions**.
+* **Per-Wallet Storage:** Breaks down local storage consumption across individual wallets.
 
 ## Reset Application Cache
 
-Use `Reset application cache` to clear cached app data without removing your wallets.
+Remove all cached application data to resolve potential sync or display issues without deleting your stored wallets.
 
-**When to use it:**
+## Reset Application
 
-* Use it if the app behaves oddly after updates or stale cached data.
-* Try it before using more drastic reset options.
-
-**Important:**
-
-* This clears cached data only.
-
-Reset Application
-
-Use `Reset Application` to delete **all wallets** and app data stored in Eternl on this device.
-
-**When to use it:**
-
-* Use it only if you intentionally want a full local reset of the app.
-* Make sure every wallet is backed up first.
+Delete all wallets and stored data to completely reset the application on this device.
 
 **Important:**
-
-* This action deletes all local wallets and stored app data.
-* Funds are **not** lost if you still have the correct recovery phrase.
-* Without the recovery phrase, access to the funds is lost **permanently**.
+* Make sure every wallet is backed up before resetting.
+* Without your recovery phrase, access to your funds will be lost **permanently**.

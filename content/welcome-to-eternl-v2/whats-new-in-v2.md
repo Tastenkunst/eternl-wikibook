@@ -4,7 +4,7 @@ description: Major enhencements & additions in v2
 
 ## What´s New in v2.1 {open}
 
-* Eternl Pro
+* Eternl Pro [[ProButton]]
 * Global Search
 * Redesigned Send Page with new possibilities
 * Entities - to organize your wallets
