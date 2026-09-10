@@ -6,6 +6,7 @@
     * [About Eternl](welcome-to-eternl-v2/about-eternl.md)
     * [What’s New in v2](welcome-to-eternl-v2/whats-new-in-v2.md)
     * [Supported Platforms](welcome-to-eternl-v2/supported-platforms.md)
+    * [Eternl Pro](welcome-to-eternl-v2/eternl-pro.md)
     * [Become a Beta Tester](welcome-to-eternl-v2/beta-extension.md)
 
 * [Getting Started](getting-started/README.md)
