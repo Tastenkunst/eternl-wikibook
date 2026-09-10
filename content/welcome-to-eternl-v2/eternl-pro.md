@@ -8,7 +8,7 @@ disableH2Collapse: false
 **Eternl Pro** is a premium subscription tier designed to offer powerful utilities for power users, DReps, traders, and developers, while directly funding both the ongoing daily operations and the long-term, independent development of Eternl.
 
 ::: info
-Core wallet functionality—such as sending/receiving assets, staking, dApp connections, and account management—remains **100% free** for all users.
+Core wallet functionality — such as sending/receiving assets, staking, dApp connections, and account management — remains **100% free** for all users.
 :::
 
 ---
@@ -45,6 +45,15 @@ Subscribing to Eternl Pro unlocks an expanding list of advanced tools across the
 
 ---
 
+## Privacy & Anonymity
+
+Your privacy and security remain Eternl’s top priority. Introducing a paid tier does not compromise our non-custodial and privacy-first architecture.
+
+* **No Tracking of Wallet Data:** Eternl never tracks, transmits, or logs your wallet balances, seed phrases, or private key data during or after the subscription process.
+* **No Link Between Identity and Wallet Addresses:** Neither Eternl, nor payment providers, nor any third party can link your personal identity or payment details to any of your wallet addresses or entities. Subscription verification relies on encrypted authorization data, keeping your on-chain assets completely decoupled from real-world personal information.
+* **On-Chain & Pseudonymous Options:** Payments executed via the USDCx bridge rely purely on standard, pseudonymous blockchain transactions, ensuring no personal identity data is required to unlock Pro features.
+
+---
 
 ## How to Activate Eternl Pro
 
@@ -53,13 +62,3 @@ Activating Eternl Pro is fast and flexible. Subscriptions can be initiated direc
 Once activated for a specific wallet entity, Eternl Pro automatically unlocks all Pro features for **all accounts and wallets belonging to that same Entity**.
 
 [//]: # (> For a detailed walkthrough on payment methods, multi-device activation, and managing your subscription, see our step-by-step guide: **[Activating & Managing Eternl Pro]&#40;/eternl-pro/activation&#41;**.)
-
----
-
-## Privacy & Anonymity
-
-Your privacy and security remain Eternl’s top priority. Introducing a paid tier does not compromise our non-custodial and privacy-first architecture.
-
-* **No Tracking of Wallet Data:** Eternl never tracks, transmits, or logs your wallet balances, seed phrases, or private key data during or after the subscription process.
-* **No Link Between Identity and Wallet Addresses:** Neither Eternl, nor payment providers, nor any third party can link your personal identity or payment details to any of your wallet addresses or entities. Subscription verification relies on encrypted authorization data, keeping your on-chain assets completely decoupled from real-world personal information.
-* **On-Chain & Pseudonymous Options:** Payments executed via the USDCx bridge rely purely on standard, pseudonymous blockchain transactions, ensuring no personal identity data is required to unlock Pro features.
