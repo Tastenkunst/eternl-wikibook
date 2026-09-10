@@ -28,7 +28,7 @@ To ensure **financial independence, long-term stability, and continuous innovati
 
 ## Subscription Plans & Scope
 
-Eternl Pro licenses are applied to the currently selected **Entity** (e.g., your personal seed/hardware wallet grouping) and support both individual and organization use cases:
+Eternl Pro licenses are applied to the currently selected **Entity** and support both individual and organization use cases:
 
 * **Individual Yearly ($96 USD / year):** Designed for individual power users. Allows usage on up to **three (3) Eternl app instances** (devices) per entity.
 * **Business Yearly ($360 USD / year):** Designed for companies, teams, and institutions. Includes a minimum of **3 seats** with easy address-based seat management and option to add more seats on demand.
@@ -39,6 +39,8 @@ Eternl Pro licenses are applied to the currently selected **Entity** (e.g., your
 
 Subscribing to Eternl Pro unlocks an extensive suite of advanced tools across the application:
 
+* **Eternl Analytics:** Full access to the analytics suite, including portfolio charts, Multichart customization, and the Wallet Profiler.
+* **Eternl Hub:** Full wallet and settings sharing with other Eternl instances, including Temporary Mode.
 * **Multi-sig Wallets:** Creation of both simple and advanced Multi-sig wallets, as well as importing existing Multi-sig wallets.
 * **Governance Tools:** Voting, proposal creation, DRep registration, and metadata pinning for active governance participants.
 * **Developer & Power-User Tools:**
@@ -48,8 +50,6 @@ Subscribing to Eternl Pro unlocks an extensive suite of advanced tools across th
     * Manual `signData` signing and verification
     * Calidus key assistance & CLI key import
     * Read-only account key and address wallet imports
-* **Eternl Hub:** Full wallet and settings sharing with other Eternl instances, including Temporary Mode.
-* **Eternl Analytics:** Full access to the analytics suite, including portfolio charts, Multichart customization, and the Wallet Profiler.
 * **Cross-Chain Bridge:** Direct USDCx to Ethereum bridging functionality.
 * **Convenience Utilities:** Global search across the wallet and custom Transaction notes.
 
