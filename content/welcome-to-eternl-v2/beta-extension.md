@@ -19,6 +19,27 @@ Before switching to the Beta version, export your existing configuration:
     * **App Settings → Export Data:** To export an encrypted backup of all wallets, custom settings, and preferences at once (recommended).
     * **Wallet Settings → Export Wallet:** To export only your currently active wallet.
 
+[[carousel title="Beta extension setup" steps=true]]
+
+### Open the three-dot menu
+Open the three-dot menu in the top-right corner of the Eternl app.
+![Back Up Your Data - Step 1](/assets/pictures/beta_extension_1_1.jpg)
+
+### Open the Settings
+![Back Up Your Data - Step 2](/assets/pictures/beta_extension_1_2.jpg)
+
+### Open the App Settings
+![Back Up Your Data - Step 3](/assets/pictures/beta_extension_1_3.jpg)
+
+### Click Export Data
+![Back Up Your Data - Step 4](/assets/pictures/beta_extension_1_4.jpg)
+
+### Download Backup
+Enter a safe password an click Download Backup
+![Back Up Your Data - Step 5](/assets/pictures/beta_extension_1_5.jpg)
+
+[[/carousel]]
+
 ### 2. Install Eternl Beta
 1. Open Google Chrome (or any Chromium-based browser like Brave or Edge).
 2. Open the Chrome menu, navigate to **Extensions**, and select **Visit Chrome Web Store**.

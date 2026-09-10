@@ -72,6 +72,15 @@ ProButton:
 [[ProButton]](using-eternl/settings/account-settings.md)
 
 
+Carousel / Schrittfolge:
+
+[[carousel title="Optional title" steps=true start=1]]
+### Step title
+Optionaler Text.
+![Alt text](/assets/pictures/example.png)
+[[/carousel]]
+--> `steps=true` nummeriert; ohne die Option werden Punkte angezeigt. `start` ist optional.
+
 
 syntax for callout boxes:
 
@@ -141,4 +150,5 @@ bullet points
 ~~durchgestrichen~~
 
 
-\                   line break
+zeilenumbruch / line break
+\ oder 2x  leerzeichen
