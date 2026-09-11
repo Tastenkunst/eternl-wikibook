@@ -41,8 +41,8 @@ Enter a safe password an click Download Backup
 [[/carousel]]
 
 ### 2. Disable Eternl
-1. Visit the [extension list](chrome://extensions/)
-2. Find Eternl and click the toggle to disable the extension (don't deinstall)
+1. Open a new Chrome tab, paste `chrome://extensions/` into the address bar, and press **Enter**. You can also use Chrome's **three-dot menu → Extensions → Manage extensions**.
+2. Find **Eternl** and turn off its toggle to disable the extension (don't uninstall it).
 
 ### 3. Install Eternl Beta
 1. Visit the Eternl Beta page on the [Chrome Web Store](https://chromewebstore.google.com/detail/eternl-beta/aafgiaaomjbkmgainbdgjpcndnodkajp)
