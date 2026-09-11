@@ -30,6 +30,7 @@ const imageButton = ref<HTMLButtonElement | null>(null);
 const previousFocus = ref<HTMLElement | null>(null);
 
 const carouselId = `steps-carousel-${Math.random().toString(36).slice(2, 9)}`;
+const SWIPE_THRESHOLD = 48;
 
 const activeStep = computed(() => props.items[activeIndex.value]);
 const hasPrevious = computed(() => activeIndex.value > 0);
@@ -95,6 +96,8 @@ function handleCarouselKeydown(event: KeyboardEvent) {
 }
 
 let gestureStart: { x: number; y: number } | null = null;
+let suppressNextImageClick = false;
+let suppressClickTimer: number | undefined;
 
 function handlePointerStart(event: PointerEvent) {
   if (event.pointerType === 'mouse' && event.buttons !== 1) {
@@ -102,6 +105,10 @@ function handlePointerStart(event: PointerEvent) {
     return;
   }
   gestureStart = { x: event.clientX, y: event.clientY };
+
+  if (event.currentTarget instanceof HTMLElement) {
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
 }
 
 function handlePointerEnd(event: PointerEvent) {
@@ -113,15 +120,45 @@ function handlePointerEnd(event: PointerEvent) {
   const deltaY = event.clientY - gestureStart.y;
   gestureStart = null;
 
-  if (Math.abs(deltaX) < 45 || Math.abs(deltaX) <= Math.abs(deltaY)) {
+  if (event.currentTarget instanceof HTMLElement && event.currentTarget.hasPointerCapture(event.pointerId)) {
+    event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+
+  if (Math.abs(deltaX) < SWIPE_THRESHOLD || Math.abs(deltaX) <= Math.abs(deltaY)) {
     return;
   }
+
+  suppressNextImageClick = true;
+  if (suppressClickTimer !== undefined) {
+    window.clearTimeout(suppressClickTimer);
+  }
+  suppressClickTimer = window.setTimeout(() => {
+    suppressNextImageClick = false;
+    suppressClickTimer = undefined;
+  }, 500);
 
   if (deltaX < 0) {
     goNext();
   } else {
     goPrevious();
   }
+}
+
+function handlePointerCancel(event: PointerEvent) {
+  gestureStart = null;
+  if (event.currentTarget instanceof HTMLElement && event.currentTarget.hasPointerCapture(event.pointerId)) {
+    event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+}
+
+function handleImageButtonClick(event: MouseEvent) {
+  if (suppressNextImageClick) {
+    event.preventDefault();
+    event.stopPropagation();
+    suppressNextImageClick = false;
+    return;
+  }
+  openLightbox();
 }
 
 function handleImageError() {
@@ -185,6 +222,9 @@ onMounted(() => {
 onBeforeUnmount(() => {
   document.removeEventListener('keydown', handleGlobalKeydown);
   document.body.classList.remove('steps-lightbox-open');
+  if (suppressClickTimer !== undefined) {
+    window.clearTimeout(suppressClickTimer);
+  }
 });
 </script>
 
@@ -197,8 +237,6 @@ onBeforeUnmount(() => {
     :aria-labelledby="[props.showSteps ? `${carouselId}-status` : '', props.title ? `${carouselId}-title` : ''].filter(Boolean).join(' ') || undefined"
     tabindex="0"
     @keydown="handleCarouselKeydown"
-    @pointerdown="handlePointerStart"
-    @pointerup="handlePointerEnd"
   >
     <div class="steps-carousel__meta">
       <div v-if="props.showSteps" :id="`${carouselId}-status`" class="steps-carousel__status" aria-live="polite">
@@ -218,43 +256,56 @@ onBeforeUnmount(() => {
 
       <div v-if="activeStep.bodyHtml" class="steps-carousel__body" v-html="activeStep.bodyHtml"></div>
 
-      <div v-if="activeError" class="steps-carousel__error" role="alert">
-        <strong>Item {{ activeIndex + 1 }} cannot be displayed.</strong>
-        <span>{{ activeError }}</span>
-      </div>
+      <div class="steps-carousel__media">
+        <div v-if="activeError" class="steps-carousel__error" role="alert">
+          <strong>Item {{ activeIndex + 1 }} cannot be displayed.</strong>
+          <span>{{ activeError }}</span>
+        </div>
 
-      <button
-        v-else
-        ref="imageButton"
-        type="button"
-        class="steps-carousel__image-button"
-        :style="imageFrameStyle"
-        :aria-label="`Enlarge image: ${activeStep.title || activeStep.imageAlt || `Item ${activeIndex + 1}`}`"
-        @click="openLightbox"
-      >
-        <img
-          :src="activeStep.imageSrc"
-          :alt="activeStep.imageAlt"
-          :loading="activeIndex === 0 ? 'eager' : 'lazy'"
-          draggable="false"
-          @load="handleImageLoad"
-          @error="handleImageError"
-        />
-      </button>
+        <button
+          v-else
+          ref="imageButton"
+          type="button"
+          class="steps-carousel__image-button"
+          :style="imageFrameStyle"
+          :aria-label="`Enlarge image: ${activeStep.title || activeStep.imageAlt || `Item ${activeIndex + 1}`}`"
+          @click="handleImageButtonClick"
+          @pointerdown="handlePointerStart"
+          @pointerup="handlePointerEnd"
+          @pointercancel="handlePointerCancel"
+        >
+          <img
+            :src="activeStep.imageSrc"
+            :alt="activeStep.imageAlt"
+            :loading="activeIndex === 0 ? 'eager' : 'lazy'"
+            draggable="false"
+            @load="handleImageLoad"
+            @error="handleImageError"
+          />
+        </button>
+
+        <button
+          v-if="hasPrevious"
+          type="button"
+          class="steps-carousel__arrow steps-carousel__arrow--media steps-carousel__arrow--previous"
+          aria-label="Previous item"
+          @click="goPrevious"
+        >
+          <span aria-hidden="true">←</span>
+        </button>
+        <button
+          v-if="hasNext"
+          type="button"
+          class="steps-carousel__arrow steps-carousel__arrow--media steps-carousel__arrow--next"
+          aria-label="Next item"
+          @click="goNext"
+        >
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
     </article>
 
     <nav v-if="props.items.length > 1" class="steps-carousel__navigation" :aria-label="props.showSteps ? 'Step navigation' : 'Carousel navigation'">
-      <button
-        v-if="hasPrevious"
-        type="button"
-        class="steps-carousel__arrow"
-        aria-label="Previous item"
-        @click="goPrevious"
-      >
-        <span aria-hidden="true">←</span>
-      </button>
-      <span v-else class="steps-carousel__arrow-placeholder" aria-hidden="true"></span>
-
       <div class="steps-carousel__indicators" :aria-label="props.showSteps ? 'Select step' : 'Select item'">
         <button
           v-for="(_, index) in props.items"
@@ -271,16 +322,6 @@ onBeforeUnmount(() => {
         </button>
       </div>
 
-      <button
-        v-if="hasNext"
-        type="button"
-        class="steps-carousel__arrow"
-        aria-label="Next item"
-        @click="goNext"
-      >
-        <span aria-hidden="true">→</span>
-      </button>
-      <span v-else class="steps-carousel__arrow-placeholder" aria-hidden="true"></span>
     </nav>
   </section>
 
@@ -289,8 +330,6 @@ onBeforeUnmount(() => {
       v-if="lightboxOpen && activeStep && !activeError"
       class="steps-lightbox-overlay"
       @click.self="closeLightbox"
-      @pointerdown="handlePointerStart"
-      @pointerup="handlePointerEnd"
     >
       <div
         class="steps-lightbox"
@@ -305,6 +344,7 @@ onBeforeUnmount(() => {
               <div v-if="props.title" class="steps-lightbox__carousel-title">{{ props.title }}</div>
             </div>
             <h2 v-if="activeStep.titleHtml" class="steps-lightbox__title" v-html="activeStep.titleHtml"></h2>
+            <div v-if="activeStep.bodyHtml" class="steps-lightbox__description" v-html="activeStep.bodyHtml"></div>
           </div>
           <button
             ref="closeButton"
@@ -321,29 +361,36 @@ onBeforeUnmount(() => {
           <button
             v-if="hasPrevious"
             type="button"
-            class="steps-lightbox__arrow"
+            class="steps-lightbox__arrow steps-lightbox__arrow--previous"
             aria-label="Previous item"
             @click="goPrevious"
           >
             <span aria-hidden="true">←</span>
           </button>
-          <span v-else class="steps-lightbox__arrow-placeholder" aria-hidden="true"></span>
+          <span v-else class="steps-lightbox__arrow-placeholder steps-lightbox__arrow--previous" aria-hidden="true"></span>
 
-          <img :src="activeStep.imageSrc" :alt="activeStep.imageAlt" @load="handleImageLoad" @error="handleImageError" />
+          <img
+            class="steps-lightbox__image"
+            :src="activeStep.imageSrc"
+            :alt="activeStep.imageAlt"
+            @load="handleImageLoad"
+            @error="handleImageError"
+            @pointerdown="handlePointerStart"
+            @pointerup="handlePointerEnd"
+            @pointercancel="handlePointerCancel"
+          />
 
           <button
             v-if="hasNext"
             type="button"
-            class="steps-lightbox__arrow"
+            class="steps-lightbox__arrow steps-lightbox__arrow--next"
             aria-label="Next item"
             @click="goNext"
           >
             <span aria-hidden="true">→</span>
           </button>
-          <span v-else class="steps-lightbox__arrow-placeholder" aria-hidden="true"></span>
+          <span v-else class="steps-lightbox__arrow-placeholder steps-lightbox__arrow--next" aria-hidden="true"></span>
         </div>
-
-        <div v-if="activeStep.bodyHtml" class="steps-lightbox__description" v-html="activeStep.bodyHtml"></div>
       </div>
     </div>
   </Teleport>

@@ -19,10 +19,10 @@ Before switching to the Beta version, export your existing configuration:
     * **App Settings → Export Data:** To export an encrypted backup of all wallets, custom settings, and preferences at once (recommended).
     * **Wallet Settings → Export Wallet:** To export only your currently active wallet.
 
-[[carousel title="Beta extension setup" steps=true]]
+[[carousel title="Back Up Your Data" steps=true]]
 
 ### Open the three-dot menu
-Open the three-dot menu in the top-right corner of the Eternl app.
+Click the three-dot icon in the top-right corner of the Eternl app.
 ![Back Up Your Data - Step 1](/assets/pictures/beta_extension_1_1.jpg)
 
 ### Open the Settings

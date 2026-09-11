@@ -75,7 +75,7 @@ ProButton:
 Carousel / Schrittfolge:
 
 [[carousel title="Optional title" steps=true start=1]]
-### Step title
+### optional Step title
 Optionaler Text.
 ![Alt text](/assets/pictures/example.png)
 [[/carousel]]
