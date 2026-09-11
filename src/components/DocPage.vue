@@ -22,6 +22,7 @@ import {
 import Toc                    from '@/components/Toc.vue';
 import NavGrid                from '@/components/NavGrid.vue';
 import ProButton              from '@/components/ProButton.vue';
+import StepsCarousel          from '@/components/StepsCarousel.vue';
 
 const route = useRoute();
 const routePath = computed(() => normalizePath(route.path));
@@ -227,10 +228,40 @@ const mountedProButtons: Array<{
   host: HTMLElement;
   app: ReturnType<typeof createApp>;
 }> = [];
+const mountedStepsCarousels: Array<{
+  host: HTMLElement;
+  app: ReturnType<typeof createApp>;
+}> = [];
 
 function cleanupProButtons() {
   mountedProButtons.forEach(({ app }) => app.unmount());
   mountedProButtons.length = 0;
+}
+
+function cleanupStepsCarousels() {
+  mountedStepsCarousels.forEach(({ app }) => app.unmount());
+  mountedStepsCarousels.length = 0;
+}
+
+async function initStepsCarousels() {
+  cleanupStepsCarousels();
+
+  if (typeof document === 'undefined') {
+    return;
+  }
+
+  await nextTick();
+
+  document.querySelectorAll<HTMLElement>('[data-carousel]').forEach((host) => {
+    try {
+      const config = JSON.parse(host.dataset.carousel || '{}');
+      const app = createApp(StepsCarousel, config);
+      app.mount(host);
+      mountedStepsCarousels.push({ host, app });
+    } catch (error) {
+      console.warn('Could not initialize a carousel.', error);
+    }
+  });
 }
 
 async function initProButtons() {
@@ -267,6 +298,10 @@ const initZoom = async () => {
   const images = document.querySelectorAll('.doc-content img');
 
   images.forEach((img: any) => {
+    if (img.closest('.steps-carousel')) {
+      return;
+    }
+
     const checkAndAttach = () => {
       // Nur zoomen, wenn das Originalbild breiter ist als die Anzeige im Browser
       // (Wir geben 10px Puffer für Rundungsdifferenzen)
@@ -314,6 +349,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   themeObserver?.disconnect();
   cleanupProButtons();
+  cleanupStepsCarousels();
 
   window.removeEventListener('hashchange', handleHashChange);
 
@@ -322,6 +358,7 @@ onBeforeUnmount(() => {
 
 watch(() => doc.value?.html, async () => {
   await nextTick();
+  await initStepsCarousels();
   initZoom();
   await initProButtons();
 }, { immediate: true });

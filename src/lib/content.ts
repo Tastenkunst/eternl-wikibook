@@ -61,6 +61,22 @@ export type SearchEntry = {
   text: string;
 };
 
+export type StepsCarouselItem = {
+  title: string;
+  titleHtml: string;
+  bodyHtml: string;
+  imageSrc: string;
+  imageAlt: string;
+  error?: string;
+};
+
+export type CarouselConfig = {
+  items: StepsCarouselItem[];
+  title: string;
+  showSteps: boolean;
+  start: number;
+};
+
 const SHIKI_THEMES = {
   light: 'vitesse-light',
   dark: 'one-dark-pro'
@@ -309,6 +325,48 @@ function createMarkdownRenderer(filePath: string): MarkdownIt {
     slugify: (value: string) => slugger.slug(value)
   });
 
+  md.block.ruler.before('paragraph', 'carousel', (state: any, startLine: number, endLine: number, silent: boolean) => {
+    const markerLine = state.getLines(startLine, startLine + 1, state.blkIndent, false).trim();
+    const openingMatch = markerLine.match(/^\[\[(steps|carousel)(?:\s+([^\]]+))?\]\]$/);
+    if (!openingMatch) {
+      return false;
+    }
+
+    const markerName = openingMatch[1];
+    const closePattern = markerName === 'steps' ? /^\[\[\/steps\]\]$/ : /^\[\[\/carousel\]\]$/;
+
+    let closeLine = startLine + 1;
+    while (closeLine < endLine) {
+      const line = state.getLines(closeLine, closeLine + 1, state.blkIndent, false).trim();
+      if (closePattern.test(line)) {
+        break;
+      }
+      closeLine += 1;
+    }
+
+    if (closeLine >= endLine) {
+      // Leave malformed blocks to the normal Markdown parser so the source
+      // remains readable instead of silently disappearing.
+      return false;
+    }
+
+    if (silent) {
+      return true;
+    }
+
+    const token = state.push('carousel', 'div', 0);
+    token.block = true;
+    token.map = [startLine, closeLine + 1];
+    token.content = state.getLines(startLine + 1, closeLine, state.blkIndent, true);
+    token.meta = parseCarouselOptions(markerName, openingMatch[2] || '');
+    state.line = closeLine + 1;
+    return true;
+  });
+
+  md.renderer.rules.carousel = (tokens, idx) => {
+    return renderCarouselPlaceholder(tokens[idx].content, md, filePath, tokens[idx].meta);
+  };
+
   // Strip the marker before markdown-it-anchor creates the heading id.
   const h2OpenMarker = /\s+\{open\}\s*$/;
   md.core.ruler.before('anchor', 'h2-open-marker', (state) => {
@@ -544,6 +602,137 @@ function preprocessGitbook(content: string): string {
   });
 
   return output;
+}
+
+function parseCarouselOptions(markerName: string, attributes: string): Omit<CarouselConfig, 'items'> {
+  const titleMatch = attributes.match(/(?:^|\s)title\s*=\s*"([^"]*)"/i);
+  const stepsMatch = attributes.match(/(?:^|\s)steps(?:\s*=\s*(true|false))?(?=\s|$)/i);
+  const startMatch = attributes.match(/(?:^|\s)start\s*=\s*(\d+)(?=\s|$)/i);
+  const parsedStart = startMatch ? Number.parseInt(startMatch[1], 10) : 1;
+
+  return {
+    title: titleMatch?.[1]?.trim() || '',
+    showSteps: markerName === 'steps' || stepsMatch?.[1]?.toLowerCase() === 'true' || stepsMatch?.[1] === undefined && Boolean(stepsMatch),
+    start: Number.isFinite(parsedStart) ? Math.max(1, parsedStart) : 1
+  };
+}
+
+function renderCarouselPlaceholder(
+  content: string,
+  md: MarkdownIt,
+  filePath: string,
+  options?: Partial<Omit<CarouselConfig, 'items'>>
+): string {
+  const items = parseCarouselItems(content, md, filePath);
+
+  if (items.length === 0) {
+    return `<div class="steps-carousel-error" role="alert">A carousel block must contain at least one <code>###</code> item heading.</div>`;
+  }
+
+  const config: CarouselConfig = {
+    items,
+    title: options?.title || '',
+    showSteps: options?.showSteps ?? false,
+    start: options?.start || 1
+  };
+
+  return `<div class="markdown-carousel-placeholder" data-carousel="${escapeHtml(
+    JSON.stringify(config)
+  )}"></div>`;
+}
+
+function parseCarouselItems(content: string, md: MarkdownIt, filePath: string): StepsCarouselItem[] {
+  const headingPattern = /^###(?:[ \t]+(.*?))?[ \t]*$/gm;
+  const headings: Array<{ start: number; end: number; title: string }> = [];
+  let match: RegExpExecArray | null;
+
+  while ((match = headingPattern.exec(content)) !== null) {
+    headings.push({
+      start: match.index,
+      end: headingPattern.lastIndex,
+      title: (match[1] || '').trim()
+    });
+  }
+
+  return headings.map((heading, index) => {
+    const nextHeading = headings[index + 1];
+    const stepMarkdown = content
+      .slice(heading.end, nextHeading?.start ?? content.length)
+      .trim();
+    const parsed = parseStepContent(stepMarkdown, md);
+
+    if (parsed.error) {
+      console.warn(`[carousel] ${filePath}, item ${index + 1}: ${parsed.error}`);
+    }
+
+    return {
+      title: heading.title,
+      titleHtml: heading.title ? md.renderInline(heading.title) : '',
+      bodyHtml: parsed.bodyHtml,
+      imageSrc: parsed.imageSrc,
+      imageAlt: parsed.imageAlt,
+      error: parsed.error
+    };
+  });
+}
+
+function parseStepContent(markdown: string, md: MarkdownIt): {
+  bodyHtml: string;
+  imageSrc: string;
+  imageAlt: string;
+  error?: string;
+} {
+  const tokens = md.parse(markdown, {});
+  const imageTokens: Token[] = [];
+
+  tokens.forEach((token) => {
+    if (token.type !== 'inline') {
+      return;
+    }
+
+    (token.children ?? []).forEach((child) => {
+      if (child.type === 'image') {
+        imageTokens.push(child);
+      }
+    });
+  });
+
+  const imageToken = imageTokens[0];
+  const imageSrc = imageToken?.attrGet('src') || '';
+  const imageAlt = imageToken?.attrGet('alt') || imageToken?.content || '';
+
+  for (let index = tokens.length - 1; index >= 0; index -= 1) {
+    const token = tokens[index];
+    if (!token || token.type !== 'inline') {
+      continue;
+    }
+
+    token.children = (token.children ?? []).filter((child) => child.type !== 'image');
+
+    if (
+      token.children.length === 0 &&
+      tokens[index - 1]?.type === 'paragraph_open' &&
+      tokens[index + 1]?.type === 'paragraph_close'
+    ) {
+      tokens.splice(index - 1, 3);
+    }
+  }
+
+  let error: string | undefined;
+  if (imageTokens.length === 0) {
+    error = 'This item does not contain an image.';
+  } else if (imageTokens.length > 1) {
+    error = 'An item may contain only one image.';
+  } else if (!imageSrc) {
+    error = 'The image does not have a valid path.';
+  }
+
+  return {
+    bodyHtml: md.renderer.render(tokens, md.options, {}),
+    imageSrc,
+    imageAlt,
+    error
+  };
 }
 
 function renderEmbed(url: string): string {
