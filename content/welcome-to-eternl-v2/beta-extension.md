@@ -40,30 +40,27 @@ Enter a safe password an click Download Backup
 
 [[/carousel]]
 
-### 2. Install Eternl Beta
-1. Open Google Chrome (or any Chromium-based browser like Brave or Edge).
-2. Open the Chrome menu, navigate to **Extensions**, and select **Visit Chrome Web Store**.
-3. Search for **Eternl Beta** and click **Add to Chrome**.
+### 2. Disable Eternl
+1. Visit chrome://extensions/ 
+2. Find Eternl and click the toggle to disable the extension (don't deinstall)
+
+### 3. Install Eternl Beta
+1. Visit the Eternl Beta page on the [Chrome Web Store](https://chromewebstore.google.com/detail/eternl-beta/aafgiaaomjbkmgainbdgjpcndnodkajp)
+2. Click **Add to Chrome**
 
 ::: info
-Running the standard and Beta extensions simultaneously in the same browser profile may cause conflicts. We recommend either disabling the standard extension temporarily or using a separate browser profile for the Beta version.
+Running the **Eternl** and **Eternl Beta** extensions simultaneously in the same browser profile may cause conflicts. We recommend either disabling the standard extension temporarily or using a separate browser profile for the Beta version.
 :::
 
-### 3. Import Your Data
-1. Open the newly installed **Eternl Beta** extension.
-2. Click the **three-dot menu** in the top-right corner → **Settings** → **App Settings** → **Import Data**.
-3. Drag and drop your exported file into the window, or click the file picker to select it.
+### 4. Import Your Data
+If you just have installed **Eternl Beta**, it will walk you through the setup. Once it asks to add a wallet, click **More**, them **Import Backup** and select the file that you just created in the regular **Eternl** extension.
 
-### 4. Test & Share Feedback
+### 5. Test & Share Feedback
 You’re all set! Explore the new capabilities, test fresh features, and let us know what you think.
 
 Found a bug, have feedback, or want to share a suggestion? Reach out to us directly:
 * Join our community on [Discord](https://discord.gg/eternlwallet)
-* Chat with us on [Telegram](https://t.me/eternlio)
-
-::: tip
-Even Pro features are often available for free in the Beta extension for a limited time!
-:::
+* Or fill out a quick [feedback from](https://docs.google.com/forms/d/e/1FAIpQLSfagslgrdgqmpP4PJ4uATRYn_PeUI36xreTqNYDV-DF8EQCOg/viewform?usp=publish-editor)
 
 ---
 
