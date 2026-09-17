@@ -1,6 +1,6 @@
 # Wallet Settings
 
-## Overview
+## Overview {open}
 
 These settings apply specifically to your **currently active wallet** and affect all accounts within it.
 

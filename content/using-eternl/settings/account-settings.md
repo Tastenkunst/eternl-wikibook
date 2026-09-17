@@ -1,6 +1,6 @@
 # Account Settings
 
-## Overview
+## Overview {open}
 
 These settings apply specifically to your **currently active account**. Any changes made here affect only the selected account and will not impact other accounts or wallets.
 

@@ -1,6 +1,6 @@
 # App Settings
 
-## Overview
+## Overview {open}
 
 These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features.
 
