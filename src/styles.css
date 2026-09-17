@@ -1477,6 +1477,24 @@
     background: currentColor;
   }
 
+  .steps-carousel__indicator.is-dot {
+    border-color: transparent;
+    background: transparent;
+  }
+
+  .steps-carousel__indicator.is-dot:hover,
+  .steps-carousel__indicator.is-dot.is-active {
+    border-color: transparent;
+    background: transparent;
+    color: var(--color-text);
+  }
+
+  .steps-carousel__indicator.is-dot.is-active .steps-carousel__indicator-dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: var(--color-accent);
+  }
+
   .steps-carousel__indicator:hover,
   .steps-carousel__indicator.is-active {
     border-color: var(--color-accent);
@@ -1582,6 +1600,8 @@
     object-fit: contain;
     border: 0;
     border-radius: 0.5rem;
+    touch-action: none;
+    will-change: transform;
   }
 
   .steps-lightbox__arrow {

@@ -31,6 +31,8 @@ const previousFocus = ref<HTMLElement | null>(null);
 
 const carouselId = `steps-carousel-${Math.random().toString(36).slice(2, 9)}`;
 const SWIPE_THRESHOLD = 48;
+const MIN_LIGHTBOX_SCALE = 1;
+const MAX_LIGHTBOX_SCALE = 4;
 
 const activeStep = computed(() => props.items[activeIndex.value]);
 const hasPrevious = computed(() => activeIndex.value > 0);
@@ -44,6 +46,12 @@ const imageFrameStyle = computed(() => {
 const stepNumber = (index: number) => props.start + index;
 const totalStepNumber = computed(() => props.start + props.items.length - 1);
 const activeStepNumber = computed(() => stepNumber(activeIndex.value));
+const lightboxScale = ref(MIN_LIGHTBOX_SCALE);
+const lightboxTransformOrigin = ref('50% 50%');
+const lightboxImageStyle = computed(() => ({
+  transform: `scale(${lightboxScale.value})`,
+  transformOrigin: lightboxTransformOrigin.value
+}));
 const activeStepLabel = computed(() => {
   const title = activeStep.value?.title || `Item ${activeIndex.value + 1}`;
   return props.showSteps
@@ -61,6 +69,7 @@ watch(() => props.items.length, (length) => {
 
 watch(activeIndex, () => {
   runtimeImageError.value = undefined;
+  resetLightboxZoom();
 });
 
 function goTo(index: number) {
@@ -95,23 +104,116 @@ function handleCarouselKeydown(event: KeyboardEvent) {
   }
 }
 
-let gestureStart: { x: number; y: number } | null = null;
+type PointerPosition = { x: number; y: number };
+type PinchGesture = { distance: number; scale: number };
+
+let gestureStart: PointerPosition | null = null;
+const activePointers = new Map<number, PointerPosition>();
+let pinchGesture: PinchGesture | null = null;
 let suppressNextImageClick = false;
 let suppressClickTimer: number | undefined;
+
+function resetLightboxZoom() {
+  lightboxScale.value = MIN_LIGHTBOX_SCALE;
+  lightboxTransformOrigin.value = '50% 50%';
+  activePointers.clear();
+  gestureStart = null;
+  pinchGesture = null;
+}
+
+function clampLightboxScale(scale: number) {
+  return Math.min(MAX_LIGHTBOX_SCALE, Math.max(MIN_LIGHTBOX_SCALE, scale));
+}
+
+function distanceBetweenPointers(first: PointerPosition, second: PointerPosition) {
+  return Math.hypot(second.x - first.x, second.y - first.y);
+}
+
+function setPinchOrigin(target: EventTarget | null) {
+  if (!(target instanceof HTMLElement)) {
+    return;
+  }
+
+  const [first, second] = Array.from(activePointers.values());
+  const rect = target.getBoundingClientRect();
+  const centerX = (first.x + second.x) / 2;
+  const centerY = (first.y + second.y) / 2;
+
+  if (rect.width > 0 && rect.height > 0) {
+    const originX = Math.min(100, Math.max(0, ((centerX - rect.left) / rect.width) * 100));
+    const originY = Math.min(100, Math.max(0, ((centerY - rect.top) / rect.height) * 100));
+    lightboxTransformOrigin.value = `${originX}% ${originY}%`;
+  }
+}
+
+function releasePointerCapture(event: PointerEvent) {
+  if (event.currentTarget instanceof HTMLElement && event.currentTarget.hasPointerCapture(event.pointerId)) {
+    event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+}
 
 function handlePointerStart(event: PointerEvent) {
   if (event.pointerType === 'mouse' && event.buttons !== 1) {
     gestureStart = null;
     return;
   }
-  gestureStart = { x: event.clientX, y: event.clientY };
+
+  activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
 
   if (event.currentTarget instanceof HTMLElement) {
     event.currentTarget.setPointerCapture(event.pointerId);
   }
+
+  if (activePointers.size >= 2) {
+    gestureStart = null;
+    if (lightboxOpen.value && !pinchGesture) {
+      const [first, second] = Array.from(activePointers.values());
+      pinchGesture = {
+        distance: distanceBetweenPointers(first, second),
+        scale: lightboxScale.value
+      };
+      setPinchOrigin(event.currentTarget);
+    }
+    return;
+  }
+
+  gestureStart = { x: event.clientX, y: event.clientY };
+}
+
+function handlePointerMove(event: PointerEvent) {
+  const pointer = activePointers.get(event.pointerId);
+  if (!pointer) {
+    return;
+  }
+
+  pointer.x = event.clientX;
+  pointer.y = event.clientY;
+
+  if (!pinchGesture || activePointers.size < 2) {
+    return;
+  }
+
+  const [first, second] = Array.from(activePointers.values());
+  const currentDistance = distanceBetweenPointers(first, second);
+  if (pinchGesture.distance <= 0 || currentDistance <= 0) {
+    return;
+  }
+
+  event.preventDefault();
+  lightboxScale.value = clampLightboxScale(pinchGesture.scale * (currentDistance / pinchGesture.distance));
 }
 
 function handlePointerEnd(event: PointerEvent) {
+  const wasPinching = pinchGesture !== null || activePointers.size > 1;
+  activePointers.delete(event.pointerId);
+  releasePointerCapture(event);
+
+  if (wasPinching) {
+    pinchGesture = null;
+    gestureStart = null;
+    return;
+  }
+
   if (!gestureStart) {
     return;
   }
@@ -119,10 +221,6 @@ function handlePointerEnd(event: PointerEvent) {
   const deltaX = event.clientX - gestureStart.x;
   const deltaY = event.clientY - gestureStart.y;
   gestureStart = null;
-
-  if (event.currentTarget instanceof HTMLElement && event.currentTarget.hasPointerCapture(event.pointerId)) {
-    event.currentTarget.releasePointerCapture(event.pointerId);
-  }
 
   if (Math.abs(deltaX) < SWIPE_THRESHOLD || Math.abs(deltaX) <= Math.abs(deltaY)) {
     return;
@@ -145,9 +243,12 @@ function handlePointerEnd(event: PointerEvent) {
 }
 
 function handlePointerCancel(event: PointerEvent) {
+  const wasPinching = pinchGesture !== null || activePointers.size > 1;
+  activePointers.delete(event.pointerId);
+  releasePointerCapture(event);
   gestureStart = null;
-  if (event.currentTarget instanceof HTMLElement && event.currentTarget.hasPointerCapture(event.pointerId)) {
-    event.currentTarget.releasePointerCapture(event.pointerId);
+  if (wasPinching) {
+    pinchGesture = null;
   }
 }
 
@@ -181,6 +282,7 @@ async function openLightbox() {
   previousFocus.value = document.activeElement instanceof HTMLElement
     ? document.activeElement
     : null;
+  resetLightboxZoom();
   lightboxOpen.value = true;
   document.body.classList.add('steps-lightbox-open');
   await nextTick();
@@ -189,6 +291,7 @@ async function openLightbox() {
 
 function closeLightbox() {
   lightboxOpen.value = false;
+  resetLightboxZoom();
   document.body.classList.remove('steps-lightbox-open');
   nextTick(() => {
     if (previousFocus.value && document.contains(previousFocus.value)) {
@@ -222,6 +325,8 @@ onMounted(() => {
 onBeforeUnmount(() => {
   document.removeEventListener('keydown', handleGlobalKeydown);
   document.body.classList.remove('steps-lightbox-open');
+  activePointers.clear();
+  pinchGesture = null;
   if (suppressClickTimer !== undefined) {
     window.clearTimeout(suppressClickTimer);
   }
@@ -312,7 +417,7 @@ onBeforeUnmount(() => {
           :key="index"
           type="button"
           class="steps-carousel__indicator"
-          :class="{ 'is-active': index === activeIndex }"
+          :class="{ 'is-active': index === activeIndex, 'is-dot': !props.showSteps }"
           :aria-label="`${props.showSteps ? 'Show step' : 'Show item'} ${stepNumber(index)}`"
           :aria-current="index === activeIndex ? 'step' : undefined"
           @click="goTo(index)"
@@ -371,11 +476,14 @@ onBeforeUnmount(() => {
 
           <img
             class="steps-lightbox__image"
+            :style="lightboxImageStyle"
             :src="activeStep.imageSrc"
             :alt="activeStep.imageAlt"
+            draggable="false"
             @load="handleImageLoad"
             @error="handleImageError"
             @pointerdown="handlePointerStart"
+            @pointermove="handlePointerMove"
             @pointerup="handlePointerEnd"
             @pointercancel="handlePointerCancel"
           />
