@@ -2,21 +2,38 @@
 
 ## Overview
 
+![App Settings](/assets/pictures/settings_account_settings_overview.jpg)
+
+
 ## Account Name / Handle
+
+Set or update the name of your currently active account or pick/unpick an ADA Handle.
+
 
 ## Export Account Key
 
-### Cardano Public Account Key Formats
+Export the public key of your currently active account. 
 
-Cardano supports several public account key formats, each used to view wallet information but **not to sign transactions**. When imported, these keys create **read-only wallets**:
+::: info
+Importing a public key lets you see the account history in read-only mode, without being able to sign.
+:::
 
-* **`acct_xvk`**: A Cardano-specific extended account public key (Bech32), including both the public key and chain code. Used for deriving address keys in hierarchical deterministic (HD) wallets.
-* **`xpub`**: A general extended public key (Base58 or hex) from standards like BIP32, also containing a chain code. Used for address derivation across various wallet systems.
-* **`acct_vk`**: A non-extended account public key (Bech32) that includes only the public key. Used for viewing wallet details or verifying signatures.
+[//]: # (### Cardano Public Account Key Formats)
 
-These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.
+[//]: # ()
+[//]: # (Cardano supports several public account key formats, each used to view wallet information but **not to sign transactions**. When imported, these keys create **read-only wallets**:)
 
-## Single Address Mode (SAM) \[Option]
+[//]: # ()
+[//]: # (* **`acct_xvk`**: A Cardano-specific extended account public key &#40;Bech32&#41;, including both the public key and chain code. Used for deriving address keys in hierarchical deterministic &#40;HD&#41; wallets.)
+
+[//]: # (* **`xpub`**: A general extended public key &#40;Base58 or hex&#41; from standards like BIP32, also containing a chain code. Used for address derivation across various wallet systems.)
+
+[//]: # (* **`acct_vk`**: A non-extended account public key &#40;Bech32&#41; that includes only the public key. Used for viewing wallet details or verifying signatures.)
+
+[//]: # ()
+[//]: # (These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.)
+
+## Single Address Mode (SAM) 
 
 Only use a single address for all transactions.
 
@@ -26,7 +43,8 @@ Alternatively a custom receive address can be set here.
 
 Setting a custom receive address will make all change outputs and receive address switch to this address, even if not owned by this account. Please be sure to verify that the correct address is set.
 
-## Collateral \[Option]
+
+## Collateral 
 
 ### Collateral (Cardano)
 
@@ -66,7 +84,8 @@ This means:
 * Eternl automates collateral management when the **Collateral Switch** is enabled.
 * Collateral UTxOs are only consumed **if a transaction fails**, and only to cover **fees**.
 
-## Manual Sync \[Option]
+
+## Manual Sync 
 
 ### What Is Manual Sync?
 
@@ -115,7 +134,8 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 
 > **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
-## History Sync \[Option]
+
+## History Sync 
 
 The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
 
@@ -170,7 +190,8 @@ Keep it **disabled** if:
 
 * You want the wallet to load quickly and do not need old records.
 
-Token Fragmentation (TF)
+
+## Token Fragmentation (TF)
 
 ### Reduce Transaction Fees by Fragmenting Tokens
 
@@ -223,8 +244,36 @@ Changing this value affects how tokens are distributed across outputs when sendi
 When this feature is **enabled**, Eternl applies advanced logic to optimize how your wallet handles UTxOs during transactions.
 
 * It attempts to maintain at least **10 available UTxOs** to support **parallel transaction execution**, improving performance and responsiveness.
-* Additionally, it tries to reserve a dedicated **5 \{{currency\}} collateral UTxO** for use with **smart contract interactions**.
+* Additionally, it tries to reserve a dedicated **5 ADA collateral UTxO** for use with **smart contract interactions**.
 
 > This setting is especially useful for users interacting with dApps, submitting multiple transactions, or participating in DeFi.
 
-Auto Withdrawal \[option]
+
+## Auto Withdrawal
+
+Automatically claims and withdraws your accrued staking rewards whenever you send an outgoing transaction. This setting is **enabled by default**.
+
+---
+
+**When to use it:**
+* Keep it enabled to seamlessly collect pending staking rewards alongside regular transactions, saving time and extra network fees.
+* Disable it if you prefer to accumulate rewards on-chain or need to resolve transaction errors caused by missing or inactive DRep delegation.
+
+---
+
+**Active DRep Delegation Required (CIP-1694)**
+
+When **Auto Withdrawal** is enabled, Eternl attaches a reward withdrawal directly to every outgoing transaction. Under Cardano's governance rules, claiming staking rewards **requires an active delegation to an active DRep** (or choosing **Abstain** / **No Confidence**).
+
+::: warning
+Transactions will **fail** when Auto Withdrawal is enabled if:
+* You have not delegated to a DRep yet.
+* Your current DRep has become **inactive**.
+:::
+
+::: info
+**How to fix transaction errors:**
+1. Turn off **Auto Withdrawal** in Account Settings.
+2. Delegate to an **active DRep** (or select Abstain / No Confidence).
+3. Re-enable **Auto Withdrawal** if you wish to automatically collect rewards in future transactions.
+:::

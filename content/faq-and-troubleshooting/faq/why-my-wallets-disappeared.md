@@ -78,6 +78,6 @@ Yes. Since the \`.json\` file is encrypted and contains your configuration, you 
 
 <summary>What if I don't have a backup or a seed phrase?</summary>
 
-If you have lost both your recovery phrase and your encrypted backup file, and the local data has been cleared, there is no way to recover the wallet. \*\*Neither the Eternl team nor anyone else can reset your password or recover your keys.\*\*
+If you have lost both your recovery phrase and your encrypted backup file, and the local data has been cleared, there is no way to recover the wallet. **Neither the Eternl team nor anyone else can reset your password or recover your keys.**
 
 </details>
