@@ -13,7 +13,7 @@ description:
 Eternl users can easily connect their wallets to DApps listed within Eternl's integrated DApp Browser. This feature, designed for user convenience, includes a small transaction fee to support the ongoing development of Eternl
 For transactions amounting to 100 ADA or more, a convenience fee of 0.1% of the purchase value or 1 ADA, whichever is greater, will be applied.
 
-::: info
+:::info
 This feature is available only for DApps that have opted in.
 :::
 
@@ -27,7 +27,7 @@ Before visiting the DApp website, activate the desired account from your account
 
 Once the account is successfully connected, an icon will appear in the upper right corner of the screen, indicating the active connection even if you navigate away from the account list page.
 
-::: info
+:::info
 To do that, activate the account in the account list and choose the 3 dots menue on the right side of the account card. There you choose "Set as Forced DApp Account"
 :::
 
@@ -40,7 +40,7 @@ After selecting your account, visit the DApp website where you intend to connect
 On the DApp website, initiate the connection process by selecting "Connect Wallet" or a similar link.
 
 <!--
-::: success
+:::success
 By following these steps, you will connect to DApps using the Eternl wallet browser extension.
 :::
 -->
@@ -59,7 +59,7 @@ It is designed to work seamlessly with various Cardano wallets, such as Eternl, 
 **- Security and Privacy**
 CardanoConnect ensures secure connections between DApps and wallets, leveraging Cardano’s robust security features.
 
-::: info
+:::info
 > Currently this feature only works with SundaeSwap, here is a tutorial by SundaeSwap Labs about Cardano Connect (CIP-45) (beta) with Eternl
 :::
 
@@ -94,7 +94,7 @@ Ensures that all communications between the wallet and the DApp are end-to-end e
 **- User Experience**
 Simplifies the user experience by allowing users to interact with DApps without exposing their private keys, improving security and convenience.
 
-::: info
+:::info
 Currently this feature only works with Minswap DEX and WingRiders.
 :::
 
@@ -104,7 +104,7 @@ The procedure to connect is similar:
 
 Before visiting the DApp website, activate the desired account from your account list.
 
-::: info
+:::info
 To do that, activate the account in the account list and choose from the 3 dot menu on the right "Set as Forced DApp Account".
 :::
 
@@ -118,7 +118,7 @@ Insert this string in the provided field by Eternl:
 
 **[ All DApp connection Options > WalletConnect > Connect DApp and Confirm ]**
 
-::: success
+:::success
 > You are now connected with you chosen account to interact with the DApp.
 :::
 -->

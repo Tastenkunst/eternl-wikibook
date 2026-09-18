@@ -59,7 +59,7 @@ Enable or disable **Eternl Hub** to pair multiple Eternl instances, sync wallets
 * **Join:** Connect to another Eternl instance or dApp by entering a code or scanning a QR code.
 * **Connections:** View and manage all actively paired instances and connected dApps.
 
-[//]: # (::: info)
+[//]: # (:::info)
 
 [//]: # (For a detailed guide on multi-device pairing and remote signing, see the dedicated **[Eternl Hub documentation]&#40;/app-settings/eternl-hub&#41;**.)
 

@@ -23,6 +23,6 @@ Staking on Cardano is liquid, meaning your ADA never leave your wallet and are n
 ### Switched Pools - Old Pool is still showing
 * **Problem:** You switched your delegation to a new pool, but Eternl still shows the old pool name.
 * **Explanation:** Due to the epoch-based snapshot system, your delegation to the new pool only becomes active after a certain period.
-::: info
+:::info
 The "Current" pool will update automatically according to the blockchain's timeline. You don't need to take any further action.
 :::

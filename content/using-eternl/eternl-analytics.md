@@ -2,7 +2,7 @@
 
 The Eternl Analytics suite is divided into four primary tabs: Portfolio, Discover, Wallet Profiler, and Multichart — designed to offer deep insights into market data and account performance.
 
-::: info
+:::info
 Only available for Eternl Pro users.
 :::
 

@@ -26,7 +26,7 @@ This is an **advanced utility** for constructing or modifying Cardano addresses.
 * This is **not** intended for normal users.
 * Incorrect usage can result in unusable or invalid addresses.
 
-::: info
+:::info
 This feature requires an active [[ProButton]](welcome-to-eternl-v2/eternl-pro.md) subscription.
 :::
 
@@ -46,6 +46,6 @@ This utility lets you **sign arbitrary data** with a wallet key. It is commonly 
 * Never sign unknown or untrusted data.
 * Signing data does **not** send funds, but it can still be used maliciously in the wrong context.
 
-::: info
+:::info
 This feature requires an active [[ProButton]](welcome-to-eternl-v2/eternl-pro.md) subscription.
 :::

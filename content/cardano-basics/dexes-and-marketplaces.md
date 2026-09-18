@@ -76,7 +76,9 @@ JPG Store has recently focused on expanding its global reach by enhancing site l
 
 The decentralized exchanges (DEXes), marketplaces, and services mentioned above are just a few examples of what the Cardano ecosystem has to offer and are not exhaustive.
 
-::: success For a comprehensive overview of projects, tools, and DApps available on Cardano, visit CardanoCube.io. :::
+:::success
+For a comprehensive overview of projects, tools, and DApps available on Cardano, visit CardanoCube.io.
+:::
 
 ## Conclusion: The Future of Finance on Cardano
 

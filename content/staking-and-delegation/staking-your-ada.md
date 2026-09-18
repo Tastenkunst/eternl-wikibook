@@ -68,7 +68,9 @@ To withdraw staking rewards, your wallet must:
 * Be delegated to a stake pool
 * Have a governance delegation configured
 
-:::warning Without governance delegation configured, reward withdrawals are restricted by the Cardano protocol. :::
+:::warning
+Without governance delegation configured, reward withdrawals are restricted by the Cardano protocol.
+:::
 
 This can be done by:
 
@@ -77,7 +79,9 @@ This can be done by:
 
 The **Always Abstain** option allows reward withdrawals without actively participating in governance voting.
 
-:::success You can manage governance delegation inside the **Governance** section of Eternl. :::
+:::success
+You can manage governance delegation inside the **Governance** section of Eternl.
+:::
 
 ***
 
@@ -89,7 +93,9 @@ This means rewards continue contributing to future rewards without requiring man
 
 Rewards are stored separately from your spendable wallet balance until withdrawn.
 
-:::warning Remember that reward withdrawals still require DRep delegation due to Cardano governance rules. :::
+:::warning
+Remember that reward withdrawals still require DRep delegation due to Cardano governance rules.
+:::
 
 ***
 

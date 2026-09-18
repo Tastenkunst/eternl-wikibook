@@ -56,7 +56,9 @@ The "e" in (e)UTxO signifies "extended," enhancing the Unspent Transaction Outpu
 
 ### 3.1 The (e)UTxO Model Integrates the Following Transaction Mechanisms
 
-:::success The (e)UTxO model is a bit like a sophisticated way of tracking who owns what on the Cardano blockchain. :::
+:::success
+The (e)UTxO model is a bit like a sophisticated way of tracking who owns what on the Cardano blockchain.
+:::
 
 Let's break it down:
 

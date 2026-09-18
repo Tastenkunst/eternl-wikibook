@@ -5,7 +5,7 @@ disableH2Collapse: false
 
 # How to Become a Beta Tester
 
-::: info
+:::info
 We frequently release upcoming features early in our Beta extension to gather valuable community feedback. Your testing and insights directly influence Eternl's development — thank you for your support!
 :::
 
@@ -48,7 +48,7 @@ Enter a safe password an click Download Backup
 1. Visit the Eternl Beta page on the [Chrome Web Store](https://chromewebstore.google.com/detail/eternl-beta/aafgiaaomjbkmgainbdgjpcndnodkajp)
 2. Click **Add to Chrome**
 
-::: info
+:::info
 Running the **Eternl** and **Eternl Beta** extensions simultaneously in the same browser profile may cause conflicts. We recommend either disabling the standard extension temporarily or using a separate browser profile for the Beta version.
 :::
 

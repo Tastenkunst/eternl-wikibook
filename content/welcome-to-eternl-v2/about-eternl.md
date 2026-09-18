@@ -35,10 +35,10 @@ disableH2Collapse: true
 
 ---
 
-::: success
+:::success
 **Your keys, your crypto!** Eternl stores your wallet's encrypted private keys only on your computer or your hardware wallet device, never on Eternl servers (non-custodial).
 :::
 
-::: warning
+:::warning
 **Your responsibility:** Keep your seed phrase safe and private! Never enter it on any other website and never share it with anyone. No legitimate person or service will ever ask for your seed phrase.
 :::

@@ -589,7 +589,7 @@ function findProButtonLinkEnd(source: string, start: number): number {
 }
 
 function preprocessGitbook(content: string): string {
-  let output = content;
+  let output = normalizeSingleLineCallouts(content);
 
   output = output.replace(/\{%\s*hint\s+style="([^"]+)"\s*%\}/g, (_match, style) => {
     return `::: hint ${style}\n`;
@@ -602,6 +602,26 @@ function preprocessGitbook(content: string): string {
   });
 
   return output;
+}
+
+/**
+ * markdown-it-container expects the closing marker on its own line. Keep
+ * accepting compact callouts in content files by expanding complete one-line
+ * callouts before Markdown parsing.
+ */
+function normalizeSingleLineCallouts(content: string): string {
+  return content.replace(
+    /^([ \t]*):::[ \t]*(info|tip|success|warning)(?:[ \t]+(.*?))?[ \t]*:::[ \t]*$/gim,
+    (_match, indent: string, style: string, body = '') => {
+      const normalizedBody = body.trim();
+      const opening = `${indent}:::${style.toLowerCase()}`;
+      const closing = `${indent}:::`;
+
+      return normalizedBody
+        ? `${opening}\n${indent}${normalizedBody}\n${closing}`
+        : `${opening}\n${closing}`;
+    }
+  );
 }
 
 function parseCarouselOptions(markerName: string, attributes: string): Omit<CarouselConfig, 'items'> {

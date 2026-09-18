@@ -20,7 +20,9 @@ The theoretical limit of accounts that can be derived from a single seed is extr
 
 ***
 
-::: info You also have the option to freely select the indexes for these 30 accounts. :::
+:::info
+You also have the option to freely select the indexes for these 30 accounts.
+:::
 
 This setup makes it easy to organize multiple wallets inside one seed while staying within the 30-account boundary enforced by Eternl v2.
 

@@ -46,7 +46,7 @@ Allows stakeholders to influence the future development of the network through a
 Collects a fraction of transaction fees and a portion of the monetary reserves each epoch to fund network development and community initiatives.
 
 ---
-::: info
+:::info
 Cardano's roadmap is a strategic plan aimed at creating a robust, decentralized platform that addresses the needs of users and developers through advanced features and an emphasis on security and sustainability. Each era builds on the last, progressively enhancing the capabilities of the network to support a wide range of applications and services in a decentralized and efficient manner. With its research-driven approach and pioneering technologies, Cardano is set to be a leading player in the blockchain space. (IOHK, 2024, May 2nd)
 :::
 

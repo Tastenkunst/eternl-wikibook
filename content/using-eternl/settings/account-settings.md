@@ -16,7 +16,7 @@ Set or update the name of your currently active account or pick/unpick an ADA Ha
 
 Export the public key of your currently active account. 
 
-::: info
+:::info
 Importing a public key lets you see the account history in read-only mode, without being able to sign.
 :::
 
@@ -267,13 +267,13 @@ Automatically claims and withdraws your accrued staking rewards whenever you sen
 
 When **Auto Withdrawal** is enabled, Eternl attaches a reward withdrawal directly to every outgoing transaction. Under Cardano's governance rules, claiming staking rewards **requires an active delegation to an active DRep** (or choosing **Abstain** / **No Confidence**).
 
-::: warning
+:::warning
 Transactions will **fail** when Auto Withdrawal is enabled if:
 * You have not delegated to a DRep yet.
 * Your current DRep has become **inactive**.
 :::
 
-::: info
+:::info
 **How to fix transaction errors:**
 1. Turn off **Auto Withdrawal** in Account Settings.
 2. Delegate to an **active DRep** (or select Abstain / No Confidence).

@@ -20,7 +20,7 @@ Any digital record can be breached, leaked, or intercepted. Avoid the following:
 
 ---
 
-::: warning
+:::warning
 Safer Alternative: Write the seed phrase **on a physical medium** and store it securely offline.
 :::
 
@@ -73,7 +73,7 @@ Eternl v2 currently supports these integrations, with more hardware wallet provi
 Eternl ensures master keys are encrypted with a spending password and stored locally.
 When paired with hardware, your private keys remain offline, and you must physically approve every transaction on the device.
 
-::: info
+:::info
 Note: Investing in a hardware wallet is generally advisable once the value of your cryptocurrency exceeds the cost of the device itself.
 :::
 
@@ -81,7 +81,7 @@ Note: Investing in a hardware wallet is generally advisable once the value of yo
 
 If you use a hot wallet, set a strong, unique spending password. This password is required to authorize transactions, though it remains more vulnerable to digital threats than a hardware wallet.
 
-::: warning
+:::warning
 Be aware: Passwords remain vulnerable to digital threats.
 :::
 
@@ -122,6 +122,6 @@ The decentralized nature of blockchain means you act as your own bank. Every act
 
 ---
 
-::: info
+:::info
 Vigilance is key. Simple human errors and minor oversights are often more costly than sophisticated cyberattacks. Always double-check your practices and stay informed through official tutorials and guides.
 :::

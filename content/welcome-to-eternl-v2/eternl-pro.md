@@ -6,7 +6,7 @@ description: Learn about Eternl Pro, why it was introduced, tier pricing, and th
 
 **Eternl Pro** is a premium subscription plan designed to offer advanced tools for power users, DReps, traders, teams, and developers, while directly funding both the ongoing daily operations and the long-term, independent development of Eternl.
 
-::: info
+:::info
 Core wallet functionality—such as sending and receiving assets, staking, basic dApp connections, and standard account management—remains **100% free** for all users.
 :::
 
@@ -53,7 +53,7 @@ Subscribing to Eternl Pro unlocks an extensive suite of advanced tools across th
 * **Cross-Chain Bridge:** Direct USDCx to Ethereum bridging functionality.
 * **Convenience Utilities:** Global search across the wallet and custom Transaction notes.
 
-::: tip
+:::tip
 **Testing Pro Features:** You don't always need an active Pro subscription to test upcoming tools. Pro features are frequently unlocked for free for a limited time inside the **Eternl Beta extension** for community testing!
 :::
 
