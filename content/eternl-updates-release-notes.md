@@ -2,7 +2,45 @@
 
 # Releases
 
-## v2.1.7.1 {open}
+## v2.2.0.13 {open}
+
+Released - 21.09.2026
+(Changes since v2.1.7.1.)
+
+### Changes
+
+- Added Eternl Analytics on Cardano mainnet: Discover market leaderboards, token charts, Wallet Profiler, and Multichart. Includes token favorites, technical indicators, saved chart settings, and wallet trade history.
+- Expanded Portfolio with value history, allocation summaries, liquidity positions, and price-change charts. Analytics and Portfolio require the corresponding Pro or feature-grant access.
+- Added a Media library for audio and video NFTs across your wallets, with search, a persistent player, playback queue, shuffle, repeat, and custom IPFS gateways. Offline downloads are available on supported desktop browsers.
+- Added DFX Open CryptoPay (beta): scan a supported merchant QR code, review the quote and merchant details, choose a funding account, and pay with ADA on Cardano mainnet. Payment progress and recovery details are saved; DFX payment status and Cardano block confirmation are displayed separately.
+- Added optional password protection for individual wallet JSON exports.
+- Added native dApp connections through CIP-0186 deep links, including transaction signing, data signing, and transaction submission through Eternl's approval flows.
+- Added DRep delegation links (CIP-0162) that open the delegation picker for the requested DRep.
+- Added CIP-0113 programmable-token support on Preview testnet, including asset balances, transaction review, and supported native transfers. Native transfers require the experimental setting and are disabled by default.
+
+### Fixes and improvements
+
+- Improved wallet imports: compatible accounts can be merged while preserving existing data and selection, duplicate imports are skipped, and failed replacements attempt to restore the original wallet. Imported wallets and groups expand automatically.
+- An active PIN session now continues when switching networks, without extending its original expiry.
+- Improved Pro company-seat discovery and activation, including licenses held on additional receiving addresses. Reduced repeated license checks and improved recovery from temporary service failures.
+- Fixed browser-extension authentication following the wrong entity and restored eligible Beta Analytics access in extension windows.
+- Improved startup progress, background account loading, and asset-list responsiveness. Media discovery runs when the library or its settings are opened; missing-duration scans are started explicitly.
+- Fixed dApp signing results being lost when a completed signing window closes.
+- Fixed Cardano links with encoded destinations or query strings, refreshed delegation-picker filters when opening links, and kept the QR scanner open after rejected input.
+- Fixed missing translations in extension popups and disabled autocorrect in the dApp browser address field.
+- Fixed compact ADA formatting and copying full values from compact number displays.
+- Restored epoch-progress percentages in the header tooltip and Chain Stats.
+- Improved Analytics token labels, chart settings, Multichart search and layout, mobile navigation, and error feedback.
+- Fixed an iOS secure-storage initialization failure.
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta Extension
+> - submitted - Android app
+> - submitted - iOS app
+
+## v2.1.7.1
 
 Released 05.09.2026:
 (Changes since v2.1.6.5.)
