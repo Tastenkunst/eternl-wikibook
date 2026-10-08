@@ -2,7 +2,35 @@
 
 # Releases
 
-## v2.2.0.13 {open}
+## v2.2.1.2 {open}
+
+Released - 06.10.2026
+(Changes since v2.2.0.13.)
+
+### Changes
+
+- Updated CIP-0113 programmable-token support to the final official deployments on Cardano mainnet, Preprod, and Preview. CIP-0113 settings are now available on all three networks; mainnet automatically uses the official deployment, while testnets retain version selection.
+- Added clearer transaction badges for supported programmable-token operations: Membership added, Membership removed, and Holder status changed, alongside CIP-0113. These labels appear consistently during signing review, while pending, and in transaction history, and apply automatically to tokens using the recognized modules.
+- Updated programmable-token terminology from substandard to module and improved recognition of supported membership transactions that previously fell back to a generic Contract badge.
+
+Native programmable-token transfers remain experimental, require enabling the transfer setting, and depend on support for the token's rules. Balances and transaction labels remain available with native transfers disabled.
+
+### Fixes and improvements
+
+Added clearer Ledger compatibility errors before opening the device when a transaction contains an unsupported asset ordering or collateral-return address.
+Fixed Byron-address network detection, including Send validation for Preprod and Preview recipients.
+The Analytics token-page swap widget now respects the active network's swap availability.
+
+> - won't submit yet - eternl.io
+> - won't submit yet - beta.eternl.io
+> -        submitted - Eternl Extension
+> - won't submit yet - Eternl Beta Extension
+> - won't submit yet - Android app
+> - won't submit yet - iOS app
+
+We just wanted to provide the final CIP-0113 deployment for a showcase at TOKEN2049.
+
+## v2.2.0.13
 
 Released - 21.09.2026
 (Changes since v2.1.7.1.)
@@ -200,7 +228,6 @@ Released 09.07.2026:
 > - not submitted - Eternl Beta Extension
 > - not submitted - Android app
 > - not submitted - iOS app
-
 
 ## v2.1.3.3
 
