@@ -18,13 +18,14 @@
         * [App Settings](using-eternl/settings/app-settings.md)::/assets/icons/Settings.svg
         * [App Utilities](using-eternl/settings/app-utilities.md)::/assets/hugeicons/IconUtilities.svg
         * [Developer Settings](using-eternl/settings/developer-settings.md)::/assets/icons/TestTube03.svg
-    * [Managing Accounts](using-eternl/managing-accounts.md)::/assets/hugeicons/IconUser.svg
+    * [Manage Accounts](using-eternl/manage-accounts.md)::/assets/hugeicons/IconUser.svg
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
     * [Eternl Analytics](using-eternl/eternl-analytics.md)::/assets/hugeicons/IconAnalyticsUp.svg
+    * [Eternl Hub](using-eternl/eternl-hub.md)::/assets/icons/Connection.svg
     * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
-    * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/IconAccess.svg
+    * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/Access.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
@@ -39,19 +40,20 @@
 * [Multi-Sig](multi-sig.md)
 
 * [FAQ & Troubleshooting](faq-and-troubleshooting/README.md)
-  *  [FAQ](faq-and-troubleshooting/faq/README.md)
+  *  [FAQ](faq-and-troubleshooting/faq/README.md)::/assets/icons/Question.svg
     * [How do I find my receiving address?](faq-and-troubleshooting/faq/receiving-address.md)
     * [Why my wallets disappeared?](faq-and-troubleshooting/faq/why-my-wallets-disappeared.md)
     * [What is a Recovery Phrase and why is it so important?](faq-and-troubleshooting/faq/recovery-phrase.md)
     * [Can I migrate my wallet to a hardware device?](faq-and-troubleshooting/faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
     * [Can I restore my hardware wallet phrase on Eternl?](faq-and-troubleshooting/faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
     * [Claiming the Glacier Airdrop](faq-and-troubleshooting/faq/claiming-the-glacier-airdrop-in-eternl-v2.md)
-  * [Troubleshooting](faq-and-troubleshooting/troubleshooting/README.md)
-    * [Transaction Errors](faq-and-troubleshooting/troubleshooting/transaction-errors.md)
-    * [Wallet Recovery Issues](faq-and-troubleshooting/troubleshooting/wallet-recovery-issues.md)
-    * [DApp Connection Issues](faq-and-troubleshooting/troubleshooting/dapp-connection-issues.md)
-    * [Staking & Rewards](faq-and-troubleshooting/troubleshooting/staking-and-rewards.md)
-    * [MonsterSwap Issues](faq-and-troubleshooting/troubleshooting/monster-swap-issues.md)
+  * [Troubleshooting](faq-and-troubleshooting/troubleshooting/README.md)::/assets/icons/Error01.svg
+    * [Transaction Errors](faq-and-troubleshooting/troubleshooting/transaction-errors.md)::/assets/icons/Send.svg
+    * [Wallet Recovery Issues](faq-and-troubleshooting/troubleshooting/wallet-recovery-issues.md)::/assets/icons/Wallet01.svg
+    * [DApp Connection Issues](faq-and-troubleshooting/troubleshooting/dapp-connection-issues.md)::/assets/icons/DApp2.svg
+    * [Staking & Rewards](faq-and-troubleshooting/troubleshooting/staking-and-rewards.md)::/assets/icons/StakingOutline.svg
+    * [MonsterSwap Issues](faq-and-troubleshooting/troubleshooting/monster-swap-issues.md)::/assets/icons/ArrowHorizontal.svg
+    * [Trezor Issues](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/Access.svg
 
 * [Cardano Basics](cardano-basics/README.md)
     * [A Brief Intro to Cardano](cardano-basics/a-brief-intro-to-cardano.md)
