@@ -820,6 +820,27 @@
     transition: color 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
   }
 
+  /* Raw details use the same leading chevron as the generated H2 sections. */
+  .doc-content details:not(.doc-section) > summary {
+    gap: 0.55rem;
+  }
+
+  .doc-content details:not(.doc-section) > summary::before {
+    content: '';
+    flex: 0 0 0.45rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    margin: 0 0.2rem 0 0.15rem;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .doc-content details:not(.doc-section)[open] > summary::before {
+    transform: rotate(45deg);
+  }
+
   .doc-content summary::-webkit-details-marker {
     display: none;
   }
@@ -876,6 +897,25 @@
 
   .doc-content details[open] > summary::after {
     color: var(--heading-gold-strong);
+  }
+
+  /*
+   * Details blocks directly following an H3 use the smaller H3-style
+   * summary treatment. H2 collapsible sections are rendered as .doc-section
+   * and are intentionally left unchanged.
+   */
+  .doc-content h3 + details:not(.doc-section) > summary,
+  .doc-content .doc-section-content > details:not(.doc-section) > summary {
+    font-size: 1.1rem;
+    line-height: 1.35;
+    font-weight: 600;
+    color: var(--heading-gold-soft);
+  }
+
+  .doc-content h3 + details:not(.doc-section) > summary::after,
+  .doc-content .doc-section-content > details:not(.doc-section) > summary::after {
+    font-size: 1rem;
+    color: var(--heading-gold-soft);
   }
 
   footer.doc-footer{
