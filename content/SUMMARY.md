@@ -21,7 +21,8 @@
     * [Manage Accounts](using-eternl/manage-accounts.md)::/assets/hugeicons/IconUser.svg
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
     * [Eternl Analytics](using-eternl/eternl-analytics.md)::/assets/hugeicons/IconAnalyticsUp.svg
-    * [Eternl Hub](using-eternl/eternl-hub.md)::/assets/icons/Connection.svg
+
+[//]: # (    * [Eternl Hub]&#40;using-eternl/eternl-hub.md&#41;::/assets/icons/Connection.svg)
     * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg

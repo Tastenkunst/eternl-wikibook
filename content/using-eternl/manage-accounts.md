@@ -16,6 +16,8 @@ The limit of 100 accounts is specific to Eternl. A seed phrase can be used to de
 2. Find the wallet whose accounts you want to manage. If its account list is collapsed, click the arrow on the right side of the wallet to expand it.
 3. Click **Add Account** below that wallet's accounts to open the Account Manager for this wallet.
 
+Clicking **Manage** activates management mode. The button remains highlighted while this mode is active. Click **Manage** again when you are finished to leave management mode and return to the regular wallet list.
+
 [[carousel title="Open the Account Manager" steps=true start=1]]
 ### Click "Manage" in the Wallet List
 ![Open Account Manager - Step 1](/assets/pictures/manage_accounts_add-0.jpg)
@@ -53,16 +55,16 @@ You can rename an account directly from the wallet list without opening the acco
 
 1. Open the three-dot menu on the account you want to rename.
 2. Select **Rename account**.
-3. Enter the new name in the drop-down menu.
+3. Enter the new name in the dialog.
 4. Click **Save** to apply the new name.
 
 Changing an account name only changes its label in the Eternl instance. It does not change the account’s index.
 
 [[carousel title="Rename an Account" steps=true start=1]]
-### Open the three-dot-menu of the account
+### Open the three-dot menu of the account
 ![Rename an Account - Step 1](/assets/pictures/manage_accounts_rename-0.jpg)
 
-### Choose "Rename account" in the drop-down menu
+### Select "Rename account"
 ![Rename an Account - Step 2](/assets/pictures/manage_accounts_rename-1.jpg)
 
 ### Enter the new name
@@ -91,7 +93,7 @@ Changing an account name only changes its label in the Eternl instance. It does 
 ![Remove an Account - Step 3](/assets/pictures/manage_accounts_remove-1.jpg)
 
 ### Click "Save"
-![Remove an Account - Step 3](/assets/pictures/manage_accounts_remove-2.jpg)
+![Remove an Account - Step 4](/assets/pictures/manage_accounts_remove-2.jpg)
 
 [[/carousel]]
 
