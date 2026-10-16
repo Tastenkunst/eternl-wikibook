@@ -8,19 +8,13 @@ Full Eternl Hub functionality is available for **[Eternl Pro](../welcome-to-eter
 
 ## General {open}
 
-### How Eternl Hub Works
+Eternl Hub allows selected wallets and accounts to be shared between paired Eternl instances. It also supports remote transaction signing. Pairing does not require you to enter a recovery phrase on the other device or share private keys with it.
 
-One Eternl instance creates a short-lived pairing code or QR code. Another Eternl instance enters or scans this code, and the first instance can then share selected wallets and accounts with it.
-
-Wallet synchronization and remote signing use encrypted session messages between the paired instances. The Hub service is part of the connection and transport path, so Eternl Hub should not be described as a direct, server-free peer-to-peer connection. Pairing also avoids entering a recovery phrase on the second device.
-
-In technical terms, both instances derive a shared session key during pairing and use it to encrypt wallet synchronization and signing messages.
+Depending on the selected sharing mode, shared wallets are available temporarily or remain on the other instance with **Full Sync Mode**.
 
 ### Key Advantages & Use Cases
 
-Eternl Hub connects Eternl instances across devices and browsers. It allows selected wallets and accounts to be made available to another instance, transactions to be prepared on one device and signed on another, and compatible dApps to work with multiple selected wallets and accounts. In remote-signing workflows, the person preparing the transaction does not need to restore the wallet or receive its recovery phrase.
-
-Wallet sharing can be temporary, or selected wallets can remain available on another device with **Full Sync Mode**.
+The main advantages of Eternl Hub are flexible control over wallet sharing, access to selected wallets across devices, remote transaction signing, and the ability to connect multiple wallets and accounts to a dApp.
 
 Examples include:
 
@@ -29,14 +23,22 @@ Examples include:
 * **Temporary access:** Share selected wallets or accounts for a specific task and revoke access when the task is complete.
 * **Multi-wallet dApp workflows:** A compatible dApp can be connected to multiple selected wallets and accounts, while the user controls which ones are made available.
 
-## Open Eternl Hub and Check Its Status
+## Access and Status
 
 ### Open Eternl Hub
 
-You can open Eternl Hub in either of these ways:
+You can open Eternl Hub using either of the following methods.
 
-1. Click the lightning icon in the top navigation bar. Its menu contains **Paired Devices**, **Connected DApps**, and **Manage Connections**. Click **Manage Connections** to open the Eternl Hub window.
-2. Open **Settings > App Settings > Eternl Hub**.
+#### From the Lightning Menu
+
+1. Click the lightning icon in the top navigation bar.
+2. Select **Paired Devices**, **Connected DApps**, or **Manage Connections**.
+
+#### From Settings
+
+1. Open **Settings**.
+2. Select **App Settings**.
+3. Select **Eternl Hub**.
 
 ### Hub Status
 
@@ -48,14 +50,14 @@ To disable Eternl Hub, open **Settings > App Settings** and turn off the Eternl 
 
 When Eternl Hub is disabled, the lightning icon is completely hidden from the top navigation bar. You can show it again by enabling the setting.
 
-## Pair Two Eternl Instances
+### Pair Two Eternl Instances
 
-Pairing is a single workflow involving two Eternl instances. The instance that shares wallets creates the pairing code. The other instance joins with that code.
+Pairing connects two Eternl instances. One instance initiates the pairing by generating a pairing code, and the other joins by entering or scanning it. Before sharing the pairing code, the initiating instance can select which wallets and accounts to share. After the connection has been established, either instance can use **Connections > Edit Wallet Shares** to select or change which of its wallets and accounts it shares.
 
-### On the Instance That Shares the Wallets
+### On the Instance That Initiates the Pairing
 
 1. Open Eternl Hub and select **Pair Wallet**.
-2. Eternl displays a six-digit pairing code and a QR code. The code expires after a short time and is replaced automatically.
+2. Eternl displays a six-digit pairing code and a QR code. The code expires after a short time (30 sec) and is replaced automatically.
 3. Select the wallets and accounts that should be available on the other instance. You can select complete wallets or individual accounts.
 4. Choose the sharing mode:
 
