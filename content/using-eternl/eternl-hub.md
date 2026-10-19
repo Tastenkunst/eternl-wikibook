@@ -89,8 +89,6 @@ The **Connections** tab provides an overview of the active Hub connections:
 * **Paired Instances** lists the Eternl instances paired for wallet sharing and remote signing. You can revoke access to a paired instance.
 * **Connected DApps** lists dApps connected through Remote Connect. You can disconnect a dApp connection there.
 
-The lightning icon also provides direct access to **Paired Devices** and **Connected DApps** from its menu.
-
 ## Security Considerations
 
 * Pair only devices that you control or explicitly trust.
