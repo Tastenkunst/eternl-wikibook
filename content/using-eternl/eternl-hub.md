@@ -144,10 +144,37 @@ You can review and disconnect dApp connections in the **Connections** tab.
 
 ## Manage Connections
 
-The **Connections** tab provides an overview of the active Hub connections:
+The **Connections** tab provides an overview of your paired Eternl instances and connected dApps. It lets you review shared wallets and accounts and remove connections.
 
-* **Paired Instances** lists the Eternl instances paired for wallet sharing and remote signing. You can revoke access to a paired instance.
-* **Connected DApps** lists dApps connected through Remote Connect. You can disconnect a dApp connection there.
+### Paired Instances
+
+The **Paired Instances** section lists your existing connections to other Eternl instances. Each entry shows the instance name, platform, connection status, pairing date, and last-seen time.
+
+For each paired instance, Eternl shows separate counts for the wallets you share and the wallets shared with you. Click the arrow next to either count to expand the corresponding list and view the wallet names and account counts.
+
+#### Edit Wallet Shares
+
+Click **Edit Wallet Shares** to review and change which of your wallets and accounts are shared with the paired instance. Either side can use this option to select the wallets and accounts it shares with the other instance.
+
+#### Ping
+
+Click **Ping** to check whether the paired instance is currently reachable. If it responds, Eternl displays the response time in milliseconds. If no response is received, the button shows **timeout**. A timeout does not remove the pairing; it only means that the instance could not be reached at that moment.
+
+#### Remove Paired Instances
+
+Click **Remove** to remove an individual paired instance. The devices must be paired again to sync wallets or request signatures.
+
+Click **Remove All Instances** to remove all paired instances. All devices must be paired again afterward.
+
+### Connected DApps
+
+The **Connected DApps** section lists dApps connected through Remote Connect. Each entry shows the dApp name, network, connection status, connection time, last activity, and the accounts shared with it.
+
+Click the arrow next to the shared-account count to expand the list of shared accounts.
+
+Click **Remove** to delete an individual dApp connection. 
+
+Click **Remove All DApps** to delete all dApp connections. 
 
 ## Security Considerations
 
