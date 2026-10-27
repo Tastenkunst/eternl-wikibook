@@ -1,6 +1,6 @@
 # Eternl Analytics [[ProButton]]
 
-The Eternl Analytics suite is divided into four primary tabs: Portfolio, Discover, Wallet Profiler, and Multichart — designed to offer deep insights into market data and account performance.
+The Eternl Analytics suite combines four main areas — Portfolio, Discover, Wallet Profiler, and Multichart — with Token Analytics available from the Discover leaderboard. Together, these tools provide insights into Cardano market data, token activity, wallet activity, and portfolio performance.
 
 :::info
 Only available for Eternl Pro users.
@@ -19,7 +19,6 @@ The Portfolio tab provides an overview of the selected account's total value ove
 
 Note: The asset table displays significant holdings; micro-balances or low-value assets may be excluded automatically based on default display thresholds.
 
-
 ## Discover
 
 The Discover tab serves as a market overview, providing high-level Cardano ecosystem stats along with a live leaderboard of tracked tokens.
@@ -34,6 +33,11 @@ The Discover tab serves as a market overview, providing high-level Cardano ecosy
 
 * **Favorites:** Click the star icon next to any token to mark it as a favorite. Favorited assets are automatically pinned to the top of the leaderboard for easier tracking.
 
+### Token Analytics
+
+Each token in the leaderboard can be selected to open its **Token Analytics** view. It provides detailed information about the selected token, including price and market data, interactive price charts, recent trades, holder distribution, and liquidity pools. Use the links at the top to jump to the **Price**, **Trades**, **Holders**, and **Pools** sections.
+
+![Eternl Analytics - Token Analytics](/assets/pictures/eternl_analytics_discover_token_analytics.jpg)
 
 ## Wallet Profiler
 

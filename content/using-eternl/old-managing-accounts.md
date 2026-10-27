@@ -32,13 +32,10 @@ This setup makes it easy to organize multiple wallets inside one seed while stay
 
 You manage accounts from the wallet card on both hot wallets and hardware wallets. Eternl allows account indexes up to 10,000, but the UI only registers 30 accounts at any time; picking custom indexes gives you flexibility to rotate which accounts are active without exceeding the 30-account limit.
 
-### 1. Wallet Card > Manage Accounts
-
-### 2. Every Time You Click "Add Account" a New Account Will Be Added
-
-### 3. You Can Manage a Maximum of up to 30 Accounts in Eternl at the Same Time
-
-### 4. Finally, You Need to Confirm by Entering Your Spending Password or Approving It With Your Hardware Wallet
+1. Wallet Card > Manage Accounts
+2. Every Time You Click "Add Account" a New Account Will Be Added
+3. You Can Manage a Maximum of up to 30 Accounts in Eternl at the Same Time
+4. Finally, You Need to Confirm by Entering Your Spending Password or Approving It With Your Hardware Wallet
 
 ## Technical Background
 
