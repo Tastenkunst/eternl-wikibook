@@ -2,7 +2,52 @@
 
 # Releases
 
-## v2.2.1.2 {open}
+## v2.2.6.1 {open}
+
+Released - 26.10.2026
+(Changes since v2.2.0.10, including the changes previously released only in browser extension v2.2.1.2.)
+
+### Changes
+
+- Made transaction import under Send → Transaction options free again, including file import and pasted transactions, with no Pro subscription required. This leaves a way for manually sharing multi-sig transactions for multi-sig wallet that preexisted in Eternl before Pro was introduced.
+- Expanded CIP-0113 programmable-token support to the official deployments on Cardano mainnet, Preprod and Preview.
+- Added clearer programmable-token details and transaction reviews, showing transfer requirements, administrator controls, holder movements and membership changes, with issuer verification files for supported transfers.
+- Reworked transaction history with improved search and filters, resumable downloads, clearer progress and CSV exports for complete years or filtered results.
+- Expanded UTxO filtering with asset names, tickers, identifiers, token types and amount ranges; applied filters and sorting remain active when switching accounts.
+- Added Eternl Analytics Discover leaderboard controls for ticker search, favorites, quick sorting and column visibility.
+- Added token hover cards in transaction lists with prices, price changes, market cap, current holdings and an Analytics shortcut.
+- Added clearer wallet and account deletion controls, with protection for account zero and the last account.
+
+Native programmable-token transfers remain experimental, require enabling the transfer setting and depend on support for the token's rules.
+
+### Fixes and improvements
+
+- Improved pending-transaction recovery, including USDCx bridge transfers, so temporary errors or closed signing windows do not lose track of accepted transactions.
+- Fixed open transaction details remaining Pending or appearing Expired after confirmation, and made pending-removal controls consistent across Send and Transactions.
+- Improved background synchronization and history-loading speed while keeping transaction cards, progress and pagination stable during refreshes.
+- Made transaction and UTxO filters more predictable, with consistent Apply/Cancel behavior and checks that prevent incomplete transaction-history CSV exports.
+- Improved programmable-token balances, transaction labels and refresh behavior across accounts and networks, and expanded signing support for recognized token operations.
+- Improved automatic collateral selection for smart-contract transactions and made Send errors and verification-file controls clearer.
+- Fixed transaction signing through native dApp links and Eternl Hub, and continued signing directly after successful biometric unlock.
+- Added clearer Ledger compatibility errors and fixed Byron-address validation on test networks.
+- Fixed testnet asset details incorrectly opening the Pro dialog and made the Analytics swap widget follow network availability.
+- Fixed missing swap icons, restored square NFT hover previews and displayed unavailable token price changes correctly.
+- Improved narrow-screen navigation, transaction-detail tabs, token-holder pagination and notification-counter positioning.
+- Prevented password-manager autofill from interfering with global search or transaction signing.
+- Improved staking deposit refunds and withdrawal compatibility, and preserved emoji and other Unicode text when decrypting saved data.
+- Restricted Reporting beta to Cardano mainnet and stopped reporting jobs safely when switching networks.
+- Updated translations, hardware-wallet integrations and mobile dependencies while preserving existing wallet and recovery-phrase compatibility.
+
+Platform status:
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - submitted - Eternl Beta Extension
+> - submitted - Android app
+> - submitted - iOS app
+
+## v2.2.1.2
 
 Released - 06.10.2026
 (Changes since v2.2.0.13.)
