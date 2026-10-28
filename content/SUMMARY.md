@@ -27,6 +27,7 @@
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
     * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/Access.svg
+    * [Media](using-eternl/media.md)::/assets/icons/MusicNote03.svg
 
 * [Security & Privacy](security-and-privacy/README.md)
     * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
