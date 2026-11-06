@@ -2,7 +2,29 @@
 
 # Releases
 
-## v2.2.6.1 {open}
+## v2.3.0.2 {open}
+
+Released - 05.11.2026
+(Changes since v2.2.6.1, the previous 2.2.6 release now available on all platforms.)
+
+### Fixes and improvements
+
+- Fixed **confirmed transactions remaining Pending** after account synchronization, including transactions involving several accounts or replacing an account's outputs without changing its balance.
+- Improved **consecutive dApp transactions and recovery after reopening Eternl.** Transactions can use pending outputs restored from an earlier session, while outputs already spent remain protected from being selected again. Completing a parent transaction preserves transactions that depend on it.
+- Fixed missing **transaction history for reward-address watch wallets.**
+- Improved **Portfolio scrolling on phones**, keeping asset names visible without covering their values. Made Discover and Wallet Profiler tables more compact and improved long column headings.
+- Fixed **Analytics percentages disappearing on iOS.**
+
+Platform status:
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta
+> - ✓ available - Andoid app
+> - submitted - iOS app
+
+## v2.2.6.1
 
 Released - 26.10.2026
 (Changes since v2.2.0.10, including the changes previously released only in browser extension v2.2.1.2.)
