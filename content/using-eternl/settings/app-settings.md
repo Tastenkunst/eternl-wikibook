@@ -4,7 +4,7 @@
 
 These settings apply **globally** to the Eternl app on this device. They affect the overall app behavior, display, connectivity, and convenience features.
 
-![App Settings](/assets/pictures/settings_app_settings_overview.jpg)
+![App Settings](/assets/pictures/settings_app_settings_overview2.jpg)
 
 ## General
 
@@ -31,6 +31,10 @@ Select the current active network (e.g., **Mainnet** or **Testnet**).
 
 Manage language, regional formatting, timezone settings, **fiat display currency**, and **number decimal precision**.
 
+## Programmable token deployment
+
+This section controls Eternl’s experimental support for CIP-0113 programmable tokens. Enable Enable CIP-0113 transfers (experimental) to allow Eternl to build programmable token transfers. If multiple testnet deployments are available, use the selector to choose which deployment Eternl uses for programmable token balances and transactions. Each deployment has its own tokens and receiving addresses.
+
 ## Security
 
 PIN and biometric authentication settings.
@@ -44,6 +48,10 @@ PIN and biometric authentication settings.
 ## Sounds
 
 Enable or disable sound notifications for audible confirmation of app actions.
+
+## Notifications
+
+Enable Receive notifications for all entities to display notifications for all entities. When disabled, Eternl displays notifications only for the active entity.
 
 ## Address Book
 
@@ -96,6 +104,15 @@ Manage auto-submit behavior and custom node endpoints.
 ## Blockchain Explorer
 
 Set your preferred blockchain explorer by type (e.g., for addresses, transactions, tokens, pools, and governance links).
+
+## Media
+
+The Media settings control how Eternl stores and retrieves audio and video NFTs.
+- **Offline media folder**: Choose a local folder for downloaded audio and video files. This folder is kept separate from the reporting folder. If no folder is selected, media is streamed from IPFS.
+- **Download all**: Download available media files to the selected offline media folder.
+- **Custom IPFS gateway**: Use a custom IPFS gateway instead of Eternl’s built-in gateways.
+- **Media information**: Some NFTs do not include a duration in their metadata. Fetch missing loads the media to determine missing durations, processing a maximum of two items at a time. This only runs when requested.
+- **Rescan wallets**: Check all wallets for newly received or removed media NFTs. Existing tracks and fetched durations are kept. Only new items are added, and items that are no longer present are removed.
 
 ## MonsterSwap
 

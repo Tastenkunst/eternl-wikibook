@@ -4,7 +4,7 @@
 
 These settings apply specifically to your **currently active account**. Any changes made here affect only the selected account and will not impact other accounts or wallets.
 
-![App Settings](/assets/pictures/settings_account_settings_overview.jpg)
+![App Settings](/assets/pictures/settings_account_settings_overview2.jpg)
 
 
 ## Account Name / Handle
@@ -34,6 +34,10 @@ Importing a public key lets you see the account history in read-only mode, witho
 
 [//]: # ()
 [//]: # (These key formats enable wallet **monitoring and address generation**, but **cannot be used to access funds or sign transactions**.)
+
+## Global Search
+
+When enabled (the default), the selected account’s name, tokens, transactions, and UTxOs are included in global search results. When disabled, they are excluded from global search.
 
 ## Single Address Mode (SAM) 
 
@@ -137,60 +141,95 @@ When enabled, syncing will **only occur when you manually trigger it** by pressi
 > **Tip:** If you're unsure, it's best to leave Manual Sync **off** for a smoother experience.
 
 
-## History Sync 
+[//]: # (## History Sync )
 
-The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.
+[//]: # ()
+[//]: # (The **History Sync** option controls whether your Eternl wallet **syncs your full transaction history** with the blockchain.)
 
-> When **enabled**, Eternl will fetch your complete historical activity (incoming/outgoing transactions, metadata, etc.).
+[//]: # ()
+[//]: # (> When **enabled**, Eternl will fetch your complete historical activity &#40;incoming/outgoing transactions, metadata, etc.&#41;.)
 
-***
+[//]: # ()
+[//]: # (***)
 
-### What Is History Sync?
+[//]: # ()
+[//]: # (### What Is History Sync?)
 
-Cardano wallets can operate with **minimal sync** (just balances and UTxOs) or with **full history sync**. This setting determines which mode Eternl uses.
+[//]: # ()
+[//]: # (Cardano wallets can operate with **minimal sync** &#40;just balances and UTxOs&#41; or with **full history sync**. This setting determines which mode Eternl uses.)
 
-* **ON**: Full transaction history is retrieved and displayed.
-* **OFF**: Only your current balance and available UTxOs are shown, not past transactions.
+[//]: # ()
+[//]: # (* **ON**: Full transaction history is retrieved and displayed.)
 
-***
+[//]: # (* **OFF**: Only your current balance and available UTxOs are shown, not past transactions.)
 
-### Advantages of History Sync (On)
+[//]: # ()
+[//]: # (***)
 
-* See your full transaction history in-app.
-* Useful for auditing, record keeping, or tax purposes.
-* Easier to track smart contract interactions or NFT transfers.
+[//]: # ()
+[//]: # (### Advantages of History Sync &#40;On&#41;)
 
-***
+[//]: # ()
+[//]: # (* See your full transaction history in-app.)
 
-### Disadvantages
+[//]: # (* Useful for auditing, record keeping, or tax purposes.)
 
-* **Slower sync time**, especially for older or busy wallets.
-* Higher memory and data usage.
-* Not needed for simple transfers or light use.
+[//]: # (* Easier to track smart contract interactions or NFT transfers.)
 
-***
+[//]: # ()
+[//]: # (***)
 
-### Summary Table
+[//]: # ()
+[//]: # (### Disadvantages)
 
-| Setting           | Sync Behavior                      | Best For                           |
-| ----------------- | ---------------------------------- | ---------------------------------- |
-| **ON**            | Full transaction history is synced | Power users, bookkeeping, audits   |
-| **OFF** (default) | Faster sync, no history loaded     | Everyday users, faster performance |
+[//]: # ()
+[//]: # (* **Slower sync time**, especially for older or busy wallets.)
 
-> **Tip:** If you just need to send/receive ADA or NFTs, you can leave this **OFF** for quicker syncs.
+[//]: # (* Higher memory and data usage.)
 
-***
+[//]: # (* Not needed for simple transfers or light use.)
 
-### Recommendation
+[//]: # ()
+[//]: # (***)
 
-Enable **History Sync** if:
+[//]: # ()
+[//]: # (### Summary Table)
 
-* You need to track past transactions or use the wallet for business or DeFi.
-* You are troubleshooting contract calls or asset transfers.
+[//]: # ()
+[//]: # (| Setting           | Sync Behavior                      | Best For                           |)
 
-Keep it **disabled** if:
+[//]: # (| ----------------- | ---------------------------------- | ---------------------------------- |)
 
-* You want the wallet to load quickly and do not need old records.
+[//]: # (| **ON**            | Full transaction history is synced | Power users, bookkeeping, audits   |)
+
+[//]: # (| **OFF** &#40;default&#41; | Faster sync, no history loaded     | Everyday users, faster performance |)
+
+[//]: # ()
+[//]: # (> **Tip:** If you just need to send/receive ADA or NFTs, you can leave this **OFF** for quicker syncs.)
+
+[//]: # ()
+[//]: # (***)
+
+[//]: # ()
+[//]: # (### Recommendation)
+
+[//]: # ()
+[//]: # (Enable **History Sync** if:)
+
+[//]: # ()
+[//]: # (* You need to track past transactions or use the wallet for business or DeFi.)
+
+[//]: # (* You are troubleshooting contract calls or asset transfers.)
+
+[//]: # ()
+[//]: # (Keep it **disabled** if:)
+
+[//]: # ()
+[//]: # (* You want the wallet to load quickly and do not need old records.)
+
+## Batch load transactions
+
+Use Batch load transactions to load older transaction details so they can be searched and included in transaction history exports. Eternl shows the loading progress. Loading continues when you switch to another app or window, but pauses when you navigate to another page in Eternl, close the dialog, or switch accounts. You can resume the process later.
 
 
 ## Token Fragmentation (TF)
