@@ -20,13 +20,13 @@ Clicking **Manage** activates management mode. The button remains highlighted wh
 
 [[carousel title="Open the Account Manager" steps=true start=1]]
 ### Click "Manage" in the Wallet List
-![Open Account Manager - Step 1](/assets/pictures/manage_accounts_add-0.jpg)
+![Open Account Manager - Step 1](/assets/pictures/manage_accounts_add-0_v2-3-0-3.jpg)
 
-### Expand Wallet
-![Open Account Manager - Step 2](/assets/pictures/manage_accounts_add-1.jpg)
+### Expand Wallet (if collapsed)
+![Open Account Manager - Step 2](/assets/pictures/manage_accounts_add-1_v2-3-0-3.jpg)
 
 ### Click "Add Account"
-![Open Account Manager - Step 3](/assets/pictures/manage_accounts_add-2.jpg)
+![Open Account Manager - Step 3](/assets/pictures/manage_accounts_add-2_v2-3-0-3.jpg)
 
 ### Account Manager is opened
 ![Open Account Manager - Step 4](/assets/pictures/manage_accounts_account_manager.jpg)
@@ -48,6 +48,8 @@ The account manager lists the existing accounts with their names and indexes. Wh
 [//]: # (:::)
 
 ![Add Account](/assets/pictures/manage_accounts_add-3.jpg)
+
+To close the account manager without applying unsaved changes, click **X** instead of **Save**.
 
 ## Rename an Account
 
@@ -77,28 +79,36 @@ Changing an account name only changes its label in the Eternl instance. It does 
 
 ## Remove an Account
 
-1. Open the **Account Manager** as described above.
-2. When the account manager opens, it prepares a new unsaved account entry. Click the **−** button next to this entry to remove it.
-3. Click the trash-can icon next to the existing account you want to remove.
-4. Click **Save** to apply the change and close the account manager.
+1. Click **Manage** at the bottom of the wallet list.
+2. Find the wallet whose accounts you want to manage. If its account list is collapsed, click the arrow on the right side of the wallet to expand it.
+3. Click the **trash-can** icon in the row of the account you want to remove.
+4. In the "Delete Account" panel, enable the **confirmation switch** to acknowledge that the account's local settings will be lost. To add the account again later, a software wallet requires its spending password; a hardware wallet requires the connected hardware wallet.
+5. Enter the account name exactly as shown in the panel. You can use the copy icon next to the name to copy it.
+6. Click **Delete**.
+
+Clicking **Manage** activates management mode. The button remains highlighted while this mode is active. Click **Manage** again when you are finished to leave management mode and return to the regular wallet list.
 
 [[carousel title="Remove an Account" steps=true start=1]]
-### Open the Account Manager
-![Remove an Account - Step 1](/assets/pictures/manage_accounts_add-2.jpg)
+### Click "Manage" in the Wallet List
+![Remove an Account - Step 1](/assets/pictures/manage_accounts_add-0_v2-3-0-3.jpg)
 
-### Click "-" to remove the new unsaved Account
-![Remove an Account - Step 2](/assets/pictures/manage_accounts_remove-0.jpg)
+### Expand Wallet (if collapsed)
+![Remove an Account - Step 2](/assets/pictures/manage_accounts_add-1_v2-3-0-3.jpg)
 
-### Click the trash-can icon 
-![Remove an Account - Step 3](/assets/pictures/manage_accounts_remove-1.jpg)
+### Click the trash-can icon next to the account
+![Remove an Account - Step 3](/assets/pictures/manage_accounts_remove-0_v2-3-0-3.jpg)
 
-### Click "Save"
-![Remove an Account - Step 4](/assets/pictures/manage_accounts_remove-2.jpg)
+### Enable the confirmation switch
+![Remove an Account - Step 4](/assets/pictures/manage_accounts_remove-1_v2-3-0-3.jpg)
+
+### Enter the account name
+![Remove an Account - Step 5](/assets/pictures/manage_accounts_remove-2_v2-3-0-3.jpg)
+
+### Click "Delete"
+![Remove an Account - Step 6](/assets/pictures/manage_accounts_remove-3_v2-3-0-3.jpg)
 
 [[/carousel]]
 
 :::info
 Removing an account only removes it from this Eternl instance. It does not affect the account’s addresses or any funds associated with it. You can add the account again later by creating a new account with the same index.
 :::
-
-To close the account manager without applying unsaved changes, click **X** instead of **Save**.
