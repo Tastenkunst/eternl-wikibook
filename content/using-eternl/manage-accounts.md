@@ -109,6 +109,38 @@ Clicking **Manage** activates management mode. The button remains highlighted wh
 
 [[/carousel]]
 
+---
+
+Alternatively, you can delete an account through **Account Settings**. The **Delete Account** entry is not available for the wallet’s first account. Opening **Account Settings** from an account’s three-dot menu selects that account automatically:
+
+1. Open the three-dot menu on the account you want to remove.
+2. Select **Account Settings**.
+3. Click **Delete Account**.
+4. Enable the **confirmation switch** to acknowledge that the account's local settings will be lost.
+5. Enter the account name exactly as shown in the panel. You can use the copy icon next to the name to copy it.
+6. Click **Delete**.
+
+[[carousel title="Remove an Account through Account Settings" steps=true start=1]]
+### Open the three-dot menu on the account you want to remove
+![Remove an Account - Step 1](/assets/pictures/manage_accounts_remove_settings-0_v2-3-0-3.jpg)
+
+### Select "Account Settings"
+![Remove an Account - Step 2](/assets/pictures/manage_accounts_remove_settings-1_v2-3-0-3.jpg)
+
+### Click "Delete Account"
+![Remove an Account - Step 3](/assets/pictures/manage_accounts_remove_settings-2_v2-3-0-3.jpg)
+
+### Enable the confirmation switch
+![Remove an Account - Step 4](/assets/pictures/manage_accounts_remove-1_v2-3-0-3.jpg)
+
+### Enter the account name
+![Remove an Account - Step 5](/assets/pictures/manage_accounts_remove-2_v2-3-0-3.jpg)
+
+### Click "Delete"
+![Remove an Account - Step 6](/assets/pictures/manage_accounts_remove-3_v2-3-0-3.jpg)
+
+[[/carousel]]
+
 :::info
-Removing an account only removes it from this Eternl instance. It does not affect the account’s addresses or any funds associated with it. You can add the account again later by creating a new account with the same index.
+Removing an account only removes it from this Eternl instance. It does not affect the account’s addresses or any funds associated with it. You can add the account again later by creating a new account with the same index. The account’s name and other local settings will be lost.
 :::

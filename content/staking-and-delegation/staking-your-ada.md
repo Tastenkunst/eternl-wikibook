@@ -23,7 +23,8 @@ The staking dashboard displays:
 * Your stake key
 * Stake pool management options
 
-![Staking Dashboard](https://assets/pictures/staking_dashboard.png)
+[//]: # (![Staking Dashboard]&#40;https://assets/pictures/staking_dashboard.png&#41;)
+![Staking Dashboard](/assets/pictures/staking_dashboard.png)
 
 ***
 
@@ -146,7 +147,7 @@ To manually withdraw rewards:
 ## Notes
 
 * Rewards are distributed automatically by the Cardano protocol
-* Delegation changes require [several epochs](http://localhost:5174/staking-and-delegation/staking-mechanics) before rewards begin
+* Delegation changes require [several epochs](/staking-and-delegation/staking-mechanics.md) before rewards begin
 * Your ADA always remain under your control
 * Staking does not lock your funds
 * You can change stake pools at any time

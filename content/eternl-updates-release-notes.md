@@ -819,12 +819,12 @@ More to come...
 
 ### Availability
 
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - eternl.io 
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Extension
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - eternl.io 
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - Eternl Extension
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - Eternl Beta Extension
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - Android app
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - iOS app
 
 ---
 
@@ -844,12 +844,12 @@ Thanks to @stakepool_ for reporting it.
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Beta Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) pending - Android app
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) pending - iOS app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - Eternl Beta Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) pending - Android app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) pending - iOS app
 
 ---
 
@@ -868,12 +868,12 @@ released 14.12.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Beta Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) submitted - Android app
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) submitted - iOS app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - Eternl Beta Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) submitted - Android app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) submitted - iOS app
 
 ## v2.0.14.1
 
@@ -898,12 +898,12 @@ released 29.10.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Beta Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - Android app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - iOS app
 
 FYI: Mobile apps won't be updated until next week or next release
 
@@ -938,12 +938,12 @@ released 15.10.2025
 
 #### Availability
 
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - Eternl Beta Extension
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - Android app
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - iOS app
 
 ## v2.0.12.5
 
@@ -988,12 +988,12 @@ released 04.09.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) eternl.io: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: awaiting approval
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Android: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) iOS: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) eternl.io: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl extension: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl Beta ext: awaiting approval
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Android: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) iOS: not submitted
 
 ## v2.0.11.2
 
@@ -1038,12 +1038,12 @@ released 06.08.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) eternl.io: - not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: - not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: - awaiting approval
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Android: - not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) iOS: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) eternl.io: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl extension: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl Beta ext: - awaiting approval
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Android: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) iOS: - not submitted
 
 ## v2.0.10.5
 
@@ -1104,12 +1104,12 @@ Simple payment requests, POO claims, advanced payment requests (prefilling the S
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) eternl.io: available
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) beta.eternl.io: available
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: submitted, awaiting approval
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Android: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) iOS: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) eternl.io: available
++ ![Check](/assets/icons/CheckmarkCircle02.svg) beta.eternl.io: available
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl extension: submitted, awaiting approval
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl Beta ext: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Android: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) iOS: not submitted
 
 ## v2.0.9
 

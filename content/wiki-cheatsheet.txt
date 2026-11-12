@@ -140,6 +140,10 @@ images
 --> mit bildunterschrift. platzierung mittig
 
 
+interne links
+[angezeigter text](url-relativ.md)
+[angezeigter text](/url-absolut.md)
+
 
 bullet points
 *                   unordered list
@@ -152,3 +156,4 @@ bullet points
 
 zeilenumbruch / line break
 \ oder 2x  leerzeichen
+

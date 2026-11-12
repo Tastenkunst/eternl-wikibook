@@ -114,7 +114,7 @@ If enabled, rewards will automatically be withdrawn if needed when creating a tr
 
 #### Un-staking or De-registering
 
-1. Choose “Wallet Settings” from the main menu.
+1. Choose “Account Settings” from the main menu.
 2. Select “Unstake wallet / Deregister wallet”
 3. Confirm the transaction with by confirming the warning “I understand, that any pending reward will be lost”
 4. Confirm the transaction with your spending password or hardware device.
