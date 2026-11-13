@@ -147,7 +147,7 @@ To manually withdraw rewards:
 ## Notes
 
 * Rewards are distributed automatically by the Cardano protocol
-* Delegation changes require [several epochs](/staking-and-delegation/staking-mechanics.md) before rewards begin
+* Delegation changes require [several epochs](/using-eternl/staking/staking-mechanics.md) before rewards begin
 * Your ADA always remain under your control
 * Staking does not lock your funds
 * You can change stake pools at any time
