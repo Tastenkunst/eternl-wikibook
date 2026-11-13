@@ -90,37 +90,56 @@ Environmental Impact and Efficiency: Cardano's PoS is more energy-efficient comp
 
 In summary, Cardano's staking mechanism offers a more energy-efficient and potentially more democratic way to participate in the blockchain's security and governance, compared to Bitcoin's computationally intensive PoW mechanism.
 
-### Delegating to a Stake Pool Using Eternl Wallet
+[//]: # (### Delegating to a Stake Pool Using Eternl Wallet)
 
-#### Explore Pools
+[//]: # ()
+[//]: # (#### Explore Pools)
 
-In Eternl, view available pools. Select one or delegate to multiple pools by adding more accounts to your wallet.
+[//]: # ()
+[//]: # (In Eternl, view available pools. Select one or delegate to multiple pools by adding more accounts to your wallet.)
 
-#### Delegation Process
+[//]: # ()
+[//]: # (#### Delegation Process)
 
-Navigate to the ‘Staking’ section in Eternl. Choose “Delegate” for the chosen pool. Confirm the transaction with your wallet spending password or hardware device. Verify delegation in “Account” or “Staking” after wallet synchronization.
+[//]: # ()
+[//]: # (Navigate to the ‘Staking’ section in Eternl. Choose “Delegate” for the chosen pool. Confirm the transaction with your wallet spending password or hardware device. Verify delegation in “Account” or “Staking” after wallet synchronization.)
 
-#### Claiming Staking Rewards
+[//]: # ()
+[//]: # (#### Claiming Staking Rewards)
 
-**Manual Claim:**
+[//]: # ()
+[//]: # (**Manual Claim:**)
 
-Use the 'Withdraw Rewards' button in the Staking Dashboard.
+[//]: # ()
+[//]: # (Use the 'Withdraw Rewards' button in the Staking Dashboard.)
 
-**Automatic Claim:**
+[//]: # ()
+[//]: # (**Automatic Claim:**)
 
-Enable the Auto Withdrawal option in the Account Settings
+[//]: # ()
+[//]: # (Enable the Auto Withdrawal option in the Account Settings)
 
-If enabled, rewards will automatically be withdrawn if needed when creating a transaction.
+[//]: # ()
+[//]: # (If enabled, rewards will automatically be withdrawn if needed when creating a transaction.)
 
-#### Un-staking or De-registering
+[//]: # ()
+[//]: # (#### Un-staking or De-registering)
 
-1. Choose “Account Settings” from the main menu.
-2. Select “Unstake wallet / Deregister wallet”
-3. Confirm the transaction with by confirming the warning “I understand, that any pending reward will be lost”
-4. Confirm the transaction with your spending password or hardware device.
-5. Check “Staking” or “Account” to verify de-registration.
+[//]: # ()
+[//]: # (1. Choose “Account Settings” from the main menu.)
 
-#### Timing of Rewards
+[//]: # (2. Select “Unstake wallet / Deregister wallet”)
 
-* Initial Rewards: It typically takes 15-20 days to receive your first rewards after delegating your ADA to a pool.
-* Subsequent Rewards: After the initial period, rewards are distributed every epoch, approximately every 5 days.
+[//]: # (3. Confirm the transaction with by confirming the warning “I understand, that any pending reward will be lost”)
+
+[//]: # (4. Confirm the transaction with your spending password or hardware device.)
+
+[//]: # (5. Check “Staking” or “Account” to verify de-registration.)
+
+[//]: # ()
+[//]: # (#### Timing of Rewards)
+
+[//]: # ()
+[//]: # (* Initial Rewards: It typically takes 15-20 days to receive your first rewards after delegating your ADA to a pool.)
+
+[//]: # (* Subsequent Rewards: After the initial period, rewards are distributed every epoch, approximately every 5 days.)
