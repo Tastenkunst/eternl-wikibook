@@ -10,7 +10,7 @@
     * [Become a Beta Tester](welcome-to-eternl-v2/beta-extension.md)
 
 * [Getting Started](getting-started/README.md)
-  * [Getting Started With Eternl](getting-started/getting-started-with-eternl.md)
+[//]: # (  * [Getting Started With Eternl]&#40;getting-started/getting-started-with-eternl.md&#41;)
   * [Security & Privacy](getting-started/security-and-privacy/README.md)
     * [What Is a Seed Phrase?](getting-started/security-and-privacy/what-is-a-seed-phrase.md)
     * [Security Best Practices](getting-started/security-and-privacy/Security-Best-Practices.md)

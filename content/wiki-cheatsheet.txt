@@ -84,15 +84,15 @@ Optionaler Text.
 
 syntax for callout boxes:
 
-::: tip   			info geht auch. identisches styling. Acgtung: zeilenumbruch danach erforderlich!
+:::tip   			info geht auch. identisches styling. Acgtung: zeilenumbruch danach erforderlich!
 lorem ipsum         (Achtung: nicht eingerückt! sonst wird styling zerschossen )
 :::
 
-::: success
+:::success
 lorem ipsum
 :::
 
-::: warning
+:::warning
 lorem ipsum
 :::
 

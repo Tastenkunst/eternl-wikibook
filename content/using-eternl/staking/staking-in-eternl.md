@@ -8,11 +8,12 @@ Your ADA never leaves your wallet during staking and remains spendable at any ti
 
 ## Open the Staking Dashboard
 
-To access staking features in Eternl v2:
+To access staking features in Eternl:
 
-1. Open Eternl
-2. Select your wallet
-3. Click **Staking** in the left sidebar
+1. Click **Staking** in the left sidebar
+2. Select the wallet and account you want to use in the wallet list
+
+<br>
 
 The staking dashboard displays:
 
@@ -23,8 +24,7 @@ The staking dashboard displays:
 * Your stake key
 * Stake pool management options
 
-[//]: # (![Staking Dashboard]&#40;https://assets/pictures/staking_dashboard.png&#41;)
-![Staking Dashboard](/assets/pictures/staking_dashboard.png)
+![Staking Dashboard](/assets/pictures/staking_dashboard.jpg)
 
 ***
 
@@ -58,27 +58,19 @@ To delegate:
 2. Review the transaction
 3. Confirm and sign the transaction
 
-***
 
-### Important: Governance Requirement for Reward Withdrawals
+## Important: Governance Requirement for Reward Withdrawals
 
-Due to changes in the Cardano protocol introduced with on-chain governance, staking reward withdrawals now require governance participation.
+Due to changes in the Cardano protocol introduced with on-chain governance, staking reward withdrawals require a governance delegation.
 
-To withdraw staking rewards, your wallet must:
+Rewards can continue accruing without one, but they cannot be withdrawn.
 
-* Be delegated to a stake pool
-* Have a governance delegation configured
-
-:::warning
-Without governance delegation configured, reward withdrawals are restricted by the Cardano protocol.
-:::
-
-This can be done by:
+You can set a governance delegation by:
 
 * Delegating to a DRep (Delegated Representative), or
-* Selecting **Always Abstain**
+* Selecting **Always Abstain** or **Always No Confidence**
 
-The **Always Abstain** option allows reward withdrawals without actively participating in governance voting.
+The built-in options allow reward withdrawals without selecting a DRep.
 
 :::success
 You can manage governance delegation inside the **Governance** section of Eternl.
@@ -88,23 +80,21 @@ You can manage governance delegation inside the **Governance** section of Eternl
 
 ## Staking Rewards
 
-Staking rewards are automatically added to your delegated stake.
-
-This means rewards continue contributing to future rewards without requiring manual compounding.
+Unclaimed rewards remain in the reward account and contribute to the account's stake. They do not need to be manually compounded.
 
 Rewards are stored separately from your spendable wallet balance until withdrawn.
 
 :::warning
-Remember that reward withdrawals still require DRep delegation due to Cardano governance rules.
+Reward withdrawals require a governance delegation.
 :::
 
 ***
 
 ## Auto Withdrawal
 
-Eternl v2 includes an optional **Auto Withdrawal** feature.
+Eternl includes an optional **Auto Withdrawal** feature.
 
-When enabled, staking rewards are automatically withdrawn whenever you send a transaction from your wallet.
+When enabled, staking rewards are automatically withdrawn whenever you create a transaction from the selected account.
 
 This helps:
 
@@ -138,16 +128,36 @@ If Auto Withdrawal is disabled, rewards can still be withdrawn manually.
 To manually withdraw rewards:
 
 1. Open the **Staking** page
-2. Locate "Unclaimed Ada" card
+2. Locate the **Unclaimed ADA** card
 3. Click the **Claim rewards** button
 4. Review and confirm the transaction
 
 ***
 
-## Notes
+## Notes on Staking
 
 * Rewards are distributed automatically by the Cardano protocol
 * Delegation changes require [several epochs](/using-eternl/staking/staking-mechanics.md) before rewards begin
-* Your ADA always remain under your control
+* Your ADA always remains under your control
 * Staking does not lock your funds
 * You can change stake pools at any time
+
+## Unstake an Account
+
+To unstake an account, follow these steps:
+
+1. Open the **three-dot menu** in the top bar
+2. Select **Settings**
+3. Open **Account Settings**
+4. Click **Unstake Account**
+5. Enable the **confirmation switch**
+6. Click **De-register Account**
+7. **Sign** the transaction
+
+:::warning
+Eternl automatically withdraws any currently available staking rewards as part of the de-registration transaction. However, pending rewards that have not yet been credited, including pending Catalyst rewards, will be lost.
+:::
+
+:::info
+The account needs enough available ADA to pay the transaction fee.
+:::

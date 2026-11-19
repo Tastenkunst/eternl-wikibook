@@ -66,7 +66,7 @@ Cost: They cost more than free hot wallets (online wallets). Less Convenient: No
 
 For people who trade a lot or need fast access to their ADA, hot wallets (online wallets) are more practical, but they have some security risks. However, for big transactions and keeping your crypto safe for a long time, it's better to use hardware wallets like Trezor, Ledger, and Keystone. These wallets are known for being really secure and they lower the risk of online dangers. Also, these hardware wallets work with the Eternl wallet, which makes them even more useful for Cardano users.
 
-## 8. How to Manage Your Finances Securely With Eternl Wallet?
+## 8. Using the Eternl Wallet Securely
 
 Everything mentioned before also applies to using Eternl. The most crucial thing is to securely store your seed phrase.
 
@@ -76,6 +76,9 @@ Eternl wallets ensure that master keys are encrypted with a spending password an
 
 Keep your wallet software up-to-date and follow general best practices for digital security.
 
-Stay informed by watching tutorials and reading guides on how to effectively use Eternl.[^3]
+Stay informed by watching tutorials[^1] and reading guides on how to effectively use Eternl.
 
 Remember, the key to security is not just the tools you use but also your practices in managing them.
+
+
+[^1]: [Eternl on YouTube](https://www.youtube.com/@eternlio)
