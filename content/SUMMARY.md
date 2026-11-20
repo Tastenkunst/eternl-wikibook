@@ -27,6 +27,7 @@
     * [Cardano Timeline](getting-started/cardano-basics/cardano-timeline.md)
 
 * [Using Eternl](using-eternl/README.md)
+    * [UI Overview](using-eternl/ui-overview.md)::/assets/icons/MenuSquare.svg
     * [Settings](using-eternl/settings/README.md)::/assets/icons/Settings.svg
       * [Account Settings](using-eternl/settings/account-settings.md)::/assets/hugeicons/IconUser.svg
       * [Wallet Settings](using-eternl/settings/wallet-settings.md)::/assets/icons/Wallet01.svg

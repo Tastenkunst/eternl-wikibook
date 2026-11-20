@@ -38,11 +38,15 @@ const activeStep = computed(() => props.items[activeIndex.value]);
 const hasPrevious = computed(() => activeIndex.value > 0);
 const hasNext = computed(() => activeIndex.value < props.items.length - 1);
 const activeError = computed(() => runtimeImageError.value || activeStep.value?.error);
-const imageFrameStyle = computed(() => {
+const activeImageAspectRatio = computed(() => {
   const imageSrc = activeStep.value?.imageSrc;
-  const aspectRatio = imageSrc ? imageAspectRatios.value[imageSrc] : undefined;
+  return imageSrc ? imageAspectRatios.value[imageSrc] : undefined;
+});
+const imageFrameStyle = computed(() => {
+  const aspectRatio = activeImageAspectRatio.value;
   return aspectRatio ? { aspectRatio: `${aspectRatio}` } : undefined;
 });
+const hasShallowImage = computed(() => (activeImageAspectRatio.value ?? 0) > 4);
 const stepNumber = (index: number) => props.start + index;
 const totalStepNumber = computed(() => props.start + props.items.length - 1);
 const activeStepNumber = computed(() => stepNumber(activeIndex.value));
@@ -372,6 +376,7 @@ onBeforeUnmount(() => {
           ref="imageButton"
           type="button"
           class="steps-carousel__image-button"
+          :class="{ 'steps-carousel__image-button--shallow': hasShallowImage }"
           :style="imageFrameStyle"
           :aria-label="`Enlarge image: ${activeStep.title || activeStep.imageAlt || `Item ${activeIndex + 1}`}`"
           @click="handleImageButtonClick"
