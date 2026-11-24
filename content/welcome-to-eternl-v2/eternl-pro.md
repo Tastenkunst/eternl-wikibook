@@ -73,7 +73,6 @@ Your privacy and security remain Eternl’s top priority. Introducing a paid tie
 
 Subscriptions can be initiated directly within the Eternl interface by opening the **Pro plan** window.
 
-Payment processing and checkout are handled securely by **Dodo Payments** as the Merchant of Record, or executed on-chain via the **USDCx to ETH Bridge**. If you already hold an active license on another device, click **Check Pro Access** inside the modal to restore your subscription status.
+Payment processing and checkout are handled by **Dodo Payments** as the Merchant of Record. Available payment methods, including stablecoins where offered, are shown in checkout. If you already hold an active license on another device, click **Check Pro Access** inside the modal to restore your subscription status.
 
-[//]: # (> For a detailed walkthrough on payment methods, multi-device activation, and managing your subscription, see our step-by-step guide: **[Activating & Managing Eternl Pro]&#40;/using-eternl/pro-activation&#41;** .)
-> For a detailed walkthrough on payment methods, multi-device activation, and managing your subscription, see our step-by-step guide: (coming soon).
+For information about checking access, purchase, and device activation, see [Activating Eternl Pro](/using-eternl/activating-and-managing-eternl-pro.md).
