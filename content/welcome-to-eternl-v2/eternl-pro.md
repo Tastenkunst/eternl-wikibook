@@ -75,4 +75,4 @@ Subscriptions can be initiated directly within the Eternl interface by opening t
 
 Payment processing and checkout are handled by **Dodo Payments** as the Merchant of Record. Available payment methods, including stablecoins where offered, are shown in checkout. If you already hold an active license on another device, click **Check Pro Access** inside the modal to restore your subscription status.
 
-For information about checking access, purchase, and device activation, see [Activating Eternl Pro](/using-eternl/activating-and-managing-eternl-pro.md).
+For information about checking access, purchase, and device activation, see [Activating Eternl Pro](/using-eternl/activating-eternl-pro.md).

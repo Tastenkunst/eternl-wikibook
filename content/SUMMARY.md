@@ -28,7 +28,7 @@
 
 * [Using Eternl](using-eternl/README.md)
     * [UI Overview](using-eternl/ui-overview.md)::/assets/icons/MenuSquare.svg
-    * [Activating Eternl Pro](using-eternl/activating-and-managing-eternl-pro.md)::/assets/icons/License.svg
+    * [Activating Eternl Pro](using-eternl/activating-eternl-pro.md)::/assets/icons/License.svg
     * [Settings](using-eternl/settings/README.md)::/assets/icons/Settings.svg
       * [Account Settings](using-eternl/settings/account-settings.md)::/assets/hugeicons/IconUser.svg
       * [Wallet Settings](using-eternl/settings/wallet-settings.md)::/assets/icons/Wallet01.svg
