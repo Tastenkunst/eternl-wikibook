@@ -9,25 +9,28 @@
     * [Eternl Pro](welcome-to-eternl-v2/eternl-pro.md)
     * [Become a Beta Tester](welcome-to-eternl-v2/beta-extension.md)
 
-* [Getting Started](getting-started/README.md)
-[//]: # (  * [Getting Started With Eternl]&#40;getting-started/getting-started-with-eternl.md&#41;)
-  * [Security & Privacy](getting-started/security-and-privacy/README.md)
-    * [What Is a Seed Phrase?](getting-started/security-and-privacy/what-is-a-seed-phrase.md)
-    * [Security Best Practices](getting-started/security-and-privacy/Security-Best-Practices.md)
-    * [Eternl Guard](getting-started/security-and-privacy/eternl-guard.md)
-  * [Cardano Basics](getting-started/cardano-basics/README.md)
-    * [A Brief Intro to Cardano](getting-started/cardano-basics/a-brief-intro-to-cardano.md)
-    * [Security Basics](getting-started/cardano-basics/security-basics.md)
-    * [How Staking Works](getting-started/cardano-basics/how-staking-works.md)
-    * [DeFi (Decentralized Finance)](getting-started/cardano-basics/defi-decentralized-finance.md)
-    * [DEXes & Marketplaces](getting-started/cardano-basics/dexes-and-marketplaces.md)
-    * [Cardano Addresses](getting-started/cardano-basics/cardano-addresses.md)
-    * [Governance & Project Catalyst](getting-started/cardano-basics/governance-and-catalyst.md)
-    * [Understanding Cardano’s (e)UTxO Model](getting-started/cardano-basics/understanding-cardanos-eutxo-model.md)
-    * [Cardano Timeline](getting-started/cardano-basics/cardano-timeline.md)
+* [Crypto & Cardano Basics](crypto-and-cardano-basics/README.md)
+  * [Security & Privacy](crypto-and-cardano-basics/security-and-privacy/README.md)
+    * [What Is a Seed Phrase?](crypto-and-cardano-basics/security-and-privacy/what-is-a-seed-phrase.md)
+    * [Security Best Practices](crypto-and-cardano-basics/security-and-privacy/Security-Best-Practices.md)
+    * [Eternl Guard](crypto-and-cardano-basics/security-and-privacy/eternl-guard.md)
+  * [Cardano Basics](crypto-and-cardano-basics/cardano-basics/README.md)
+    * [A Brief Intro to Cardano](crypto-and-cardano-basics/cardano-basics/a-brief-intro-to-cardano.md)
+    * [Security Basics](crypto-and-cardano-basics/cardano-basics/security-basics.md)
+    * [How Staking Works](crypto-and-cardano-basics/cardano-basics/how-staking-works.md)
+    * [DeFi (Decentralized Finance)](crypto-and-cardano-basics/cardano-basics/defi-decentralized-finance.md)
+    * [DEXes & Marketplaces](crypto-and-cardano-basics/cardano-basics/dexes-and-marketplaces.md)
+    * [Cardano Addresses](crypto-and-cardano-basics/cardano-basics/cardano-addresses.md)
+    * [Governance & Project Catalyst](crypto-and-cardano-basics/cardano-basics/governance-and-catalyst.md)
+    * [Understanding Cardano’s (e)UTxO Model](crypto-and-cardano-basics/cardano-basics/understanding-cardanos-eutxo-model.md)
+    * [Cardano Timeline](crypto-and-cardano-basics/cardano-basics/cardano-timeline.md)
 
 * [Using Eternl](using-eternl/README.md)
     * [UI Overview](using-eternl/ui-overview.md)::/assets/icons/MenuSquare.svg
+    * [Getting Started](using-eternl/getting-started-with-eternl/README.md)::/assets/icons/Book.svg
+      * [Set Up Eternl and Create a Wallet](using-eternl/getting-started-with-eternl/set-up-eternl-and-create-a-wallet.md)::/assets/icons/CreateWallet.svg
+      * [Add an Existing Wallet](using-eternl/getting-started-with-eternl/add-an-existing-wallet.md)::/assets/icons/RestoreWalletOutline.svg
+[//]: # (      * [Receive & Send]&#40;using-eternl/getting-started-with-eternl/receive-and-send.md&#41;::/assets/icons/ReceiveAndSend.svg)
     * [Activating Eternl Pro](using-eternl/activating-eternl-pro.md)::/assets/icons/License.svg
     * [Settings](using-eternl/settings/README.md)::/assets/icons/Settings.svg
       * [Account Settings](using-eternl/settings/account-settings.md)::/assets/hugeicons/IconUser.svg

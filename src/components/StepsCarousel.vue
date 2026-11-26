@@ -15,13 +15,15 @@ const props = withDefaults(defineProps<{
   title?: string;
   showSteps?: boolean;
   start?: number;
+  initial?: number;
 }>(), {
   title: '',
   showSteps: false,
-  start: 1
+  start: 1,
+  initial: 1
 });
 
-const activeIndex = ref(0);
+const activeIndex = ref(Math.max(0, Math.min(props.initial - 1, props.items.length - 1)));
 const lightboxOpen = ref(false);
 const runtimeImageError = ref<string | undefined>();
 const imageAspectRatios = ref<Record<string, number>>({});
