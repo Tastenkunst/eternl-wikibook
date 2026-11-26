@@ -2,7 +2,7 @@
 
 **Eternl Hub** connects Eternl instances on different devices. It lets you share selected wallets and accounts with another Eternl instance, request remote transaction signing, and connect dApps through a Remote Connect code.
 
-::: info
+:::info
 Full Eternl Hub functionality is available for **[Eternl Pro](../welcome-to-eternl-v2/eternl-pro.md)** users.
 :::
 
@@ -185,7 +185,7 @@ Click **Edit Wallet Shares** to review and change which of your wallets and acco
 
 When **Edit Wallet Shares** is opened, the mode selector defaults to **Temporary Mode**. It applies only to wallets being shared for the first time in the current pairing and does not change the mode of wallets already shared in that pairing. Additional accounts are shared using the wallet's existing mode.
 
-::: warning
+:::warning
 If a wallet was initially shared using **Full Sync Mode**, any additional accounts selected from that wallet are added to the persistent wallet on the paired instance. They remain persistent even when the mode selector in **Edit Wallet Shares** shows **Temporary Mode**.
 :::
 

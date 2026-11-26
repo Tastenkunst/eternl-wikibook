@@ -1367,6 +1367,10 @@
     cursor: zoom-in;
   }
 
+  .steps-carousel__image-button.steps-carousel__image-button--shallow {
+    padding: 0 0.5rem;
+  }
+
   .steps-carousel__image-button:focus-visible,
   .steps-lightbox__close:focus-visible,
   .steps-lightbox__arrow:focus-visible,

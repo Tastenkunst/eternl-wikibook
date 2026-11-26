@@ -72,27 +72,18 @@ ProButton:
 [[ProButton]](using-eternl/settings/account-settings.md)
 
 
-Carousel / Schrittfolge:
-
-[[carousel title="Optional title" steps=true start=1]]
-### optional Step title
-Optionaler Text.
-![Alt text](/assets/pictures/example.png)
-[[/carousel]]
---> `steps=true` nummeriert; ohne die Option werden Punkte angezeigt. `start` ist optional.
-
 
 syntax for callout boxes:
 
-::: tip   			info geht auch. identisches styling. Acgtung: zeilenumbruch danach erforderlich!
+:::tip   			info geht auch. identisches styling. Acgtung: zeilenumbruch danach erforderlich!
 lorem ipsum         (Achtung: nicht eingerückt! sonst wird styling zerschossen )
 :::
 
-::: success
+:::success
 lorem ipsum
 :::
 
-::: warning
+:::warning
 lorem ipsum
 :::
 
@@ -140,6 +131,22 @@ images
 --> mit bildunterschrift. platzierung mittig
 
 
+Carousel / Schrittfolge:
+
+[[carousel title="Optional title" steps=true start=1]]
+### optional Step title
+Optionaler Text.
+![Alt text](/assets/pictures/example.png)
+[[/carousel]]
+--> `steps=true` nummeriert; ohne die Option werden Punkte angezeigt. `start` ist optional.
+
+
+
+
+interne links
+[angezeigter text](url-relativ.md)
+[angezeigter text](/url-absolut.md)
+
 
 bullet points
 *                   unordered list
@@ -152,3 +159,4 @@ bullet points
 
 zeilenumbruch / line break
 \ oder 2x  leerzeichen
+

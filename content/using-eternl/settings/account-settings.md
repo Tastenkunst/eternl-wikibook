@@ -4,7 +4,7 @@
 
 These settings apply specifically to your **currently active account**. Any changes made here affect only the selected account and will not impact other accounts or wallets.
 
-![App Settings](/assets/pictures/settings_account_settings_overview2.jpg)
+![Account Settings](/assets/pictures/settings_account_settings_overview_v2-3-0-3.jpg)
 
 
 ## Account Name / Handle
@@ -317,4 +317,33 @@ Transactions will **fail** when Auto Withdrawal is enabled if:
 1. Turn off **Auto Withdrawal** in Account Settings.
 2. Delegate to an **active DRep** (or select Abstain / No Confidence).
 3. Re-enable **Auto Withdrawal** if you wish to automatically collect rewards in future transactions.
+:::
+
+## Delete Account
+
+:::info
+The **Delete Account** entry is available only when an account other than the wallet’s first account (index 0) is selected. The first account cannot be removed.
+:::
+
+Select the Delete Account entry to remove the selected account from this Eternl instance:
+
+1. Enable the **confirmation switch** to acknowledge that the account's local settings will be lost.
+2. Enter the account name exactly as shown in the panel. You can use the copy icon next to the name to copy it.
+3. Click **Delete**.
+
+[[carousel title="Delete Account Panel" steps=true start=1]]
+
+### Enable the confirmation switch
+![Delete Account - Step 1](/assets/pictures/manage_accounts_remove-1_v2-3-0-3.jpg)
+
+### Enter the account name
+![Delete Account - Step 2](/assets/pictures/manage_accounts_remove-2_v2-3-0-3.jpg)
+
+### Click "Delete"
+![Delete Account - Step 3](/assets/pictures/manage_accounts_remove-3_v2-3-0-3.jpg)
+
+[[/carousel]]
+
+:::info
+Removing an account only removes it from this Eternl instance. It does not affect the account’s addresses or any funds associated with it. You can add the account again later by creating a new account with the same index. The account’s name and other local settings will be lost.
 :::

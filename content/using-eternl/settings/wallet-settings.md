@@ -11,7 +11,7 @@ These settings apply specifically to your **currently active wallet** and affect
 Use this section to customize how your wallet appears inside Eternl:
 
 * Rename the wallet for easier identification.
-* Assign the wallet to a group to organize multiple wallets more clearly.
+* Create a group or assign the wallet to an existing group to organize multiple wallets more clearly.
 * These labels are local to the app and have no impact on the blockchain.
 
 ## Wallet Spending Password
