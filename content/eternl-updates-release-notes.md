@@ -13,10 +13,10 @@ Released — 25.11.2026
 
 ### Fixes and improvements
 
-- Improved startup and account-switching responsiveness, especially with larger wallet collections.
-- Load the selected account's transaction history sooner while other wallets are still initializing.
-- Improved transaction-history loading progress with live download counts.
-- Made Pro license checks more efficient especially during startup.
+- Improved **startup and account-switching responsiveness**, especially with larger wallet collections.
+- Load the **selected account's transaction history sooner** while other wallets are still initializing.
+- Improved **transaction-history loading progress** with live download counts.
+- Made **Pro license checks more efficient** especially during startup.
 
 Deployment status
 
@@ -44,21 +44,21 @@ You can save your Eternl data, including wallets, settings, transaction notes, a
 
 ### Fixes and improvements
 
-- Added support for the Musashi and Dijkstra testnets, including account synchronization, transaction history, and sending and receiving test ADA.
-- Added balance-first synchronization. Account balances become ready while older transaction history continues loading in the background, with separate progress and an option to prioritize an account's history.
-- Improved wallet import and reopening. Saved transactions appear while Eternl checks for updates, without background status messages shifting the account overview. Wallet totals remain stable during synchronization, and interrupted imports and incomplete account caches recover more reliably.
-- Expanded receive and change address discovery to find funds beyond larger unused-address gaps. The first sync after opening the main wallet and a manual wallet resync use an extended scan; later syncs use the normal shorter scan. Custom addresses are preserved.
-- Expanded Sign with HUB to transaction and message-signing requests from dApps, including browser-extension signing windows. A paired device can return the signature to the requesting dApp.
-- Improved Hub pairing and wallet sharing, including QR transfers, reconnecting, online/offline status, editing shared accounts, unpairing and cancellation. Added temporary wallet-copy expiry information in wallet settings.
-- Improved mobile navigation. Android Back closes the topmost overlay first. On iPhone, swipe down from a sheet's header or handle to dismiss it, or use a left-edge Back gesture. Dismissing password or signing dialogs cancels unfinished requests.
-- Improved Trezor connections with connection progress, clearer errors, Retry and Cancel actions, and diagnostics without wallet data. Fixed Suite mobile permission and error handling after the Connect 10 upgrade.
-- Fixed Ledger message signing on mobile and improved Bluetooth signing-window recovery in the extension. Preserved Keystone support for higher account numbers and multisignature accounts after its SDK update.
-- Improved Pro license recovery during temporary service outages, within the license's offline allowance. Added a search for assigned business seats across an entity's receiving and change addresses. Licenses restored on another installation require activation there; existing local activations are preserved during upgrade.
-- Added BTC Direct checkout support in Buy / Sell ADA where enabled by the provider service.
-- Fixed Open CryptoPay payment links opening Eternl without reaching payment review. Links also wait until initial setup is complete and a wallet is available.
-- Fixed governance voting deadlines so expired proposals leave active lists and voting choices promptly. Unavailable governance and staking statistics now display as unknown, and unranked stake pools remain selectable.
-- Kept Internal, received-transfer and Withdrawal badges consistent before opening transaction details, after synchronization and when returning to history. Improved transaction-loading progress and allowed old pending-list entries to be dismissed after five minutes without stopping confirmed-transaction recovery.
-- Improved browser-extension background recovery so overlapping dApp requests do not repeatedly restart the hidden wallet service or continue after their deadline.
+- Added support for the **Musashi and Dijkstra testnets**, including account synchronization, transaction history, and sending and receiving test ADA.
+- Added **balance-first synchronization**. Account balances become ready while older transaction history continues loading in the background, with separate progress and an option to prioritize an account's history.
+- Improved **wallet import and reopening**. Saved transactions appear while Eternl checks for updates, without background status messages shifting the account overview. Wallet totals remain stable during synchronization, and interrupted imports and incomplete account caches recover more reliably.
+- Expanded **receive and change address discovery** to find funds beyond larger unused-address gaps. The first sync after opening the main wallet and a manual wallet resync use an extended scan; later syncs use the normal shorter scan. Custom addresses are preserved.
+- Expanded **Sign with HUB** to transaction and message-signing requests from dApps, including browser-extension signing windows. A paired device can return the signature to the requesting dApp.
+- Improved **Hub pairing and wallet sharing**, including QR transfers, reconnecting, online/offline status, editing shared accounts, unpairing and cancellation. Added temporary wallet-copy expiry information in wallet settings.
+- Improved **mobile navigation**. Android Back closes the topmost overlay first. On iPhone, swipe down from a sheet's header or handle to dismiss it, or use a left-edge Back gesture. Dismissing password or signing dialogs cancels unfinished requests.
+- Improved **Trezor connections** with connection progress, clearer errors, Retry and Cancel actions, and diagnostics without wallet data. Fixed Suite mobile permission and error handling after the Connect 10 upgrade.
+- Fixed **Ledger message signing on mobile** and improved Bluetooth signing-window recovery in the extension. Preserved Keystone support for higher account numbers and multisignature accounts after its SDK update.
+- Improved **Pro license recovery** during temporary service outages, within the license's offline allowance. Added a search for assigned business seats across an entity's receiving and change addresses. Licenses restored on another installation require activation there; existing local activations are preserved during upgrade.
+- Added **BTC Direct checkout support** in Buy / Sell ADA where enabled by the provider service.
+- Fixed **Open CryptoPay payment links** opening Eternl without reaching payment review. Links also wait until initial setup is complete and a wallet is available.
+- Fixed **governance voting deadlines** so expired proposals leave active lists and voting choices promptly. Unavailable governance and staking statistics now display as unknown, and unranked stake pools remain selectable.
+- Kept **Internal, received-transfer and Withdrawal badges** consistent before opening transaction details, after synchronization and when returning to history. Improved transaction-loading progress and allowed old pending-list entries to be dismissed after five minutes without stopping confirmed-transaction recovery.
+- Improved **browser-extension background recovery** so overlapping dApp requests do not repeatedly restart the hidden wallet service or continue after their deadline.
 
 Platform status:
 
