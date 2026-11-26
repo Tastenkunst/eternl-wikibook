@@ -1,5 +1,5 @@
 ---
-description: An overview of Eternl's configuration options, including account, wallet, app, utility, and developer settings.
+#description: An overview of Eternl's configuration options, including account, wallet, app, utility, and developer settings.
 ---
 
 # Settings

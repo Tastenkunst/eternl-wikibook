@@ -6,7 +6,9 @@ Clicking the **DApp Browser** entry in the sidebar opens the interface shown bel
 
 The landing view highlights a **Promoted** carousel for Eternl-verified partners above the fold before showing collections divided into the interface's built-in categories (DeFi, Social, Collectibles, Tools, Streaming, and more). Use the tabs and filters to jump straight to the section you care about, or scroll through curated lists that briefly describe each dApp and its focus.
 
-::: info The DApp Browser is a core feature available on both the Desktop Extension and the Mobile App (iOS/Android), so the same verified partners, categories, and navigation cues show up whether you are at your desk or on the go. :::
+:::info
+The DApp Browser is a core feature available on both the Desktop Extension and the Mobile App (iOS/Android), so the same verified partners, categories, and navigation cues show up whether you are at your desk or on the go.
+:::
 
 ## Connecting Your Wallet
 

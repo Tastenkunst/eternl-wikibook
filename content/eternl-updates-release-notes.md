@@ -2,7 +2,207 @@
 
 # Releases
 
-## v2.1.7.1 {open}
+## v2.3.3.0 {open}
+
+Released — 25.11.2026  
+(Changes since v2.3.2.5)
+
+### Summary
+
+- Made start-up much faster.
+
+### Fixes and improvements
+
+- Improved startup and account-switching responsiveness, especially with larger wallet collections.
+- Load the selected account's transaction history sooner while other wallets are still initializing.
+- Improved transaction-history loading progress with live download counts.
+- Made Pro license checks more efficient especially during startup.
+
+Deployment status
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - submitted - Eternl Extension
+> - submitted - Eternl Beta
+> - submitted - Android app
+> - submitted - iOS app
+
+We will be releasing the extension tomorrow, 26th Nov.
+
+## v2.3.2.5
+
+Released — 24.11.2026
+(Changes since v2.3.0.2)
+
+### Important
+
+This installation will resync all wallets, which might take a while initially, if you have a lot of accounts or your accounts have a lot of transactions.
+
+### Reminder
+
+You can save your Eternl data, including wallets, settings, transaction notes, addressbook entries, etc. via Settings > App Settings > Export Data
+
+### Fixes and improvements
+
+- Added support for the Musashi and Dijkstra testnets, including account synchronization, transaction history, and sending and receiving test ADA.
+- Added balance-first synchronization. Account balances become ready while older transaction history continues loading in the background, with separate progress and an option to prioritize an account's history.
+- Improved wallet import and reopening. Saved transactions appear while Eternl checks for updates, without background status messages shifting the account overview. Wallet totals remain stable during synchronization, and interrupted imports and incomplete account caches recover more reliably.
+- Expanded receive and change address discovery to find funds beyond larger unused-address gaps. The first sync after opening the main wallet and a manual wallet resync use an extended scan; later syncs use the normal shorter scan. Custom addresses are preserved.
+- Expanded Sign with HUB to transaction and message-signing requests from dApps, including browser-extension signing windows. A paired device can return the signature to the requesting dApp.
+- Improved Hub pairing and wallet sharing, including QR transfers, reconnecting, online/offline status, editing shared accounts, unpairing and cancellation. Added temporary wallet-copy expiry information in wallet settings.
+- Improved mobile navigation. Android Back closes the topmost overlay first. On iPhone, swipe down from a sheet's header or handle to dismiss it, or use a left-edge Back gesture. Dismissing password or signing dialogs cancels unfinished requests.
+- Improved Trezor connections with connection progress, clearer errors, Retry and Cancel actions, and diagnostics without wallet data. Fixed Suite mobile permission and error handling after the Connect 10 upgrade.
+- Fixed Ledger message signing on mobile and improved Bluetooth signing-window recovery in the extension. Preserved Keystone support for higher account numbers and multisignature accounts after its SDK update.
+- Improved Pro license recovery during temporary service outages, within the license's offline allowance. Added a search for assigned business seats across an entity's receiving and change addresses. Licenses restored on another installation require activation there; existing local activations are preserved during upgrade.
+- Added BTC Direct checkout support in Buy / Sell ADA where enabled by the provider service.
+- Fixed Open CryptoPay payment links opening Eternl without reaching payment review. Links also wait until initial setup is complete and a wallet is available.
+- Fixed governance voting deadlines so expired proposals leave active lists and voting choices promptly. Unavailable governance and staking statistics now display as unknown, and unranked stake pools remain selectable.
+- Kept Internal, received-transfer and Withdrawal badges consistent before opening transaction details, after synchronization and when returning to history. Improved transaction-loading progress and allowed old pending-list entries to be dismissed after five minutes without stopping confirmed-transaction recovery.
+- Improved browser-extension background recovery so overlapping dApp requests do not repeatedly restart the hidden wallet service or continue after their deadline.
+
+Platform status:
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - submitted - Eternl Beta
+> - submitted - Android app
+> - submitted - iOS app
+
+## v2.3.0.2
+
+Released - 05.11.2026
+(Changes since v2.2.6.1, the previous 2.2.6 release now available on all platforms.)
+
+### Fixes and improvements
+
+- Fixed **confirmed transactions remaining Pending** after account synchronization, including transactions involving several accounts or replacing an account's outputs without changing its balance.
+- Improved **consecutive dApp transactions and recovery after reopening Eternl.** Transactions can use pending outputs restored from an earlier session, while outputs already spent remain protected from being selected again. Completing a parent transaction preserves transactions that depend on it.
+- Fixed missing **transaction history for reward-address watch wallets.**
+- Improved **Portfolio scrolling on phones**, keeping asset names visible without covering their values. Made Discover and Wallet Profiler tables more compact and improved long column headings.
+- Fixed **Analytics percentages disappearing on iOS.**
+
+Platform status:
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta
+> - ✓ available - Andoid app
+> - submitted - iOS app
+
+## v2.2.6.1
+
+Released - 26.10.2026
+(Changes since v2.2.0.10, including the changes previously released only in browser extension v2.2.1.2.)
+
+### Changes
+
+- Made transaction import under Send → Transaction options free again, including file import and pasted transactions, with no Pro subscription required. This leaves a way for manually sharing multi-sig transactions for multi-sig wallet that preexisted in Eternl before Pro was introduced.
+- Expanded CIP-0113 programmable-token support to the official deployments on Cardano mainnet, Preprod and Preview.
+- Added clearer programmable-token details and transaction reviews, showing transfer requirements, administrator controls, holder movements and membership changes, with issuer verification files for supported transfers.
+- Reworked transaction history with improved search and filters, resumable downloads, clearer progress and CSV exports for complete years or filtered results.
+- Expanded UTxO filtering with asset names, tickers, identifiers, token types and amount ranges; applied filters and sorting remain active when switching accounts.
+- Added Eternl Analytics Discover leaderboard controls for ticker search, favorites, quick sorting and column visibility.
+- Added token hover cards in transaction lists with prices, price changes, market cap, current holdings and an Analytics shortcut.
+- Added clearer wallet and account deletion controls, with protection for account zero and the last account.
+
+Native programmable-token transfers remain experimental, require enabling the transfer setting and depend on support for the token's rules.
+
+### Fixes and improvements
+
+- Improved pending-transaction recovery, including USDCx bridge transfers, so temporary errors or closed signing windows do not lose track of accepted transactions.
+- Fixed open transaction details remaining Pending or appearing Expired after confirmation, and made pending-removal controls consistent across Send and Transactions.
+- Improved background synchronization and history-loading speed while keeping transaction cards, progress and pagination stable during refreshes.
+- Made transaction and UTxO filters more predictable, with consistent Apply/Cancel behavior and checks that prevent incomplete transaction-history CSV exports.
+- Improved programmable-token balances, transaction labels and refresh behavior across accounts and networks, and expanded signing support for recognized token operations.
+- Improved automatic collateral selection for smart-contract transactions and made Send errors and verification-file controls clearer.
+- Fixed transaction signing through native dApp links and Eternl Hub, and continued signing directly after successful biometric unlock.
+- Added clearer Ledger compatibility errors and fixed Byron-address validation on test networks.
+- Fixed testnet asset details incorrectly opening the Pro dialog and made the Analytics swap widget follow network availability.
+- Fixed missing swap icons, restored square NFT hover previews and displayed unavailable token price changes correctly.
+- Improved narrow-screen navigation, transaction-detail tabs, token-holder pagination and notification-counter positioning.
+- Prevented password-manager autofill from interfering with global search or transaction signing.
+- Improved staking deposit refunds and withdrawal compatibility, and preserved emoji and other Unicode text when decrypting saved data.
+- Restricted Reporting beta to Cardano mainnet and stopped reporting jobs safely when switching networks.
+- Updated translations, hardware-wallet integrations and mobile dependencies while preserving existing wallet and recovery-phrase compatibility.
+
+Platform status:
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - submitted - Eternl Beta Extension
+> - submitted - Android app
+> - submitted - iOS app
+
+## v2.2.1.2
+
+Released - 06.10.2026
+(Changes since v2.2.0.13.)
+
+### Changes
+
+- Updated CIP-0113 programmable-token support to the final official deployments on Cardano mainnet, Preprod, and Preview. CIP-0113 settings are now available on all three networks; mainnet automatically uses the official deployment, while testnets retain version selection.
+- Added clearer transaction badges for supported programmable-token operations: Membership added, Membership removed, and Holder status changed, alongside CIP-0113. These labels appear consistently during signing review, while pending, and in transaction history, and apply automatically to tokens using the recognized modules.
+- Updated programmable-token terminology from substandard to module and improved recognition of supported membership transactions that previously fell back to a generic Contract badge.
+
+Native programmable-token transfers remain experimental, require enabling the transfer setting, and depend on support for the token's rules. Balances and transaction labels remain available with native transfers disabled.
+
+### Fixes and improvements
+
+Added clearer Ledger compatibility errors before opening the device when a transaction contains an unsupported asset ordering or collateral-return address.
+Fixed Byron-address network detection, including Send validation for Preprod and Preview recipients.
+The Analytics token-page swap widget now respects the active network's swap availability.
+
+> - won't submit yet - eternl.io
+> - won't submit yet - beta.eternl.io
+> -        submitted - Eternl Extension
+> - won't submit yet - Eternl Beta Extension
+> - won't submit yet - Android app
+> - won't submit yet - iOS app
+
+We just wanted to provide the final CIP-0113 deployment for a showcase at TOKEN2049.
+
+## v2.2.0.13
+
+Released - 21.09.2026
+(Changes since v2.1.7.1.)
+
+### Changes
+
+- Added Eternl Analytics on Cardano mainnet: Discover market leaderboards, token charts, Wallet Profiler, and Multichart. Includes token favorites, technical indicators, saved chart settings, and wallet trade history.
+- Expanded Portfolio with value history, allocation summaries, liquidity positions, and price-change charts. Analytics and Portfolio require the corresponding Pro or feature-grant access.
+- Added a Media library for audio and video NFTs across your wallets, with search, a persistent player, playback queue, shuffle, repeat, and custom IPFS gateways. Offline downloads are available on supported desktop browsers.
+- Added DFX Open CryptoPay (beta): scan a supported merchant QR code, review the quote and merchant details, choose a funding account, and pay with ADA on Cardano mainnet. Payment progress and recovery details are saved; DFX payment status and Cardano block confirmation are displayed separately.
+- Added optional password protection for individual wallet JSON exports.
+- Added native dApp connections through CIP-0186 deep links, including transaction signing, data signing, and transaction submission through Eternl's approval flows.
+- Added DRep delegation links (CIP-0162) that open the delegation picker for the requested DRep.
+- Added CIP-0113 programmable-token support on Preview testnet, including asset balances, transaction review, and supported native transfers. Native transfers require the experimental setting and are disabled by default.
+
+### Fixes and improvements
+
+- Improved wallet imports: compatible accounts can be merged while preserving existing data and selection, duplicate imports are skipped, and failed replacements attempt to restore the original wallet. Imported wallets and groups expand automatically.
+- An active PIN session now continues when switching networks, without extending its original expiry.
+- Improved Pro company-seat discovery and activation, including licenses held on additional receiving addresses. Reduced repeated license checks and improved recovery from temporary service failures.
+- Fixed browser-extension authentication following the wrong entity and restored eligible Beta Analytics access in extension windows.
+- Improved startup progress, background account loading, and asset-list responsiveness. Media discovery runs when the library or its settings are opened; missing-duration scans are started explicitly.
+- Fixed dApp signing results being lost when a completed signing window closes.
+- Fixed Cardano links with encoded destinations or query strings, refreshed delegation-picker filters when opening links, and kept the QR scanner open after rejected input.
+- Fixed missing translations in extension popups and disabled autocorrect in the dApp browser address field.
+- Fixed compact ADA formatting and copying full values from compact number displays.
+- Restored epoch-progress percentages in the header tooltip and Chain Stats.
+- Improved Analytics token labels, chart settings, Multichart search and layout, mobile navigation, and error feedback.
+- Fixed an iOS secure-storage initialization failure.
+
+> - ✓ available - eternl.io
+> - ✓ available - beta.eternl.io
+> - ✓ available - Eternl Extension
+> - ✓ available - Eternl Beta Extension
+> - submitted - Android app
+> - submitted - iOS app
+
+## v2.1.7.1
 
 Released 05.09.2026:
 (Changes since v2.1.6.5.)
@@ -162,7 +362,6 @@ Released 09.07.2026:
 > - not submitted - Eternl Beta Extension
 > - not submitted - Android app
 > - not submitted - iOS app
-
 
 ## v2.1.3.3
 
@@ -687,12 +886,12 @@ More to come...
 
 ### Availability
 
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - eternl.io 
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Extension
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - eternl.io 
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - Eternl Extension
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - Eternl Beta Extension
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - Android app
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - iOS app
 
 ---
 
@@ -712,12 +911,12 @@ Thanks to @stakepool_ for reporting it.
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Beta Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) pending - Android app
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) pending - iOS app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - Eternl Beta Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) pending - Android app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) pending - iOS app
 
 ---
 
@@ -736,12 +935,12 @@ released 14.12.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Eternl Beta Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) submitted - Android app
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) submitted - iOS app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - Eternl Beta Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) submitted - Android app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) submitted - iOS app
 
 ## v2.0.14.1
 
@@ -766,12 +965,12 @@ released 29.10.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - Eternl Beta Extension
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - Android app
++ ![Check](/assets/icons/CheckmarkCircle02.svg) not submitted - iOS app
 
 FYI: Mobile apps won't be updated until next week or next release
 
@@ -806,12 +1005,12 @@ released 15.10.2025
 
 #### Availability
 
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - eternl.io
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Extension
-+ ![Check mark icon: available](/assets/icons/IconCheckmarkCircle02.svg) available - Eternl Beta Extension
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - Android app
-+ ![Cross or unavailable icon: not submitted](/assets/icons/IconCheckmarkCircle02.svg) not submitted - iOS app
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - eternl.io
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - Eternl Extension
++ ![Check mark icon: available](/assets/icons/CheckmarkCircle02.svg) available - Eternl Beta Extension
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - Android app
++ ![Cross or unavailable icon: not submitted](/assets/icons/CheckmarkCircle02.svg) not submitted - iOS app
 
 ## v2.0.12.5
 
@@ -856,12 +1055,12 @@ released 04.09.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) eternl.io: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: awaiting approval
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Android: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) iOS: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) eternl.io: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl extension: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl Beta ext: awaiting approval
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Android: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) iOS: not submitted
 
 ## v2.0.11.2
 
@@ -906,12 +1105,12 @@ released 06.08.2025
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) eternl.io: - not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) available - beta.eternl.io
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: - not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: - awaiting approval
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Android: - not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) iOS: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) eternl.io: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) available - beta.eternl.io
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl extension: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl Beta ext: - awaiting approval
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Android: - not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) iOS: - not submitted
 
 ## v2.0.10.5
 
@@ -972,12 +1171,12 @@ Simple payment requests, POO claims, advanced payment requests (prefilling the S
 
 ### Availability
 
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) eternl.io: available
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) beta.eternl.io: available
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl extension: submitted, awaiting approval
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Eternl Beta ext: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) Android: not submitted
-+ ![Check](/assets/icons/IconCheckmarkCircle02.svg) iOS: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) eternl.io: available
++ ![Check](/assets/icons/CheckmarkCircle02.svg) beta.eternl.io: available
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl extension: submitted, awaiting approval
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Eternl Beta ext: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) Android: not submitted
++ ![Check](/assets/icons/CheckmarkCircle02.svg) iOS: not submitted
 
 ## v2.0.9
 

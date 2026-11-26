@@ -10,59 +10,61 @@
     * [Become a Beta Tester](welcome-to-eternl-v2/beta-extension.md)
 
 * [Getting Started](getting-started/README.md)
+[//]: # (  * [Getting Started With Eternl]&#40;getting-started/getting-started-with-eternl.md&#41;)
+  * [Security & Privacy](getting-started/security-and-privacy/README.md)
+    * [What Is a Seed Phrase?](getting-started/security-and-privacy/what-is-a-seed-phrase.md)
+    * [Security Best Practices](getting-started/security-and-privacy/Security-Best-Practices.md)
+    * [Eternl Guard](getting-started/security-and-privacy/eternl-guard.md)
+  * [Cardano Basics](getting-started/cardano-basics/README.md)
+    * [A Brief Intro to Cardano](getting-started/cardano-basics/a-brief-intro-to-cardano.md)
+    * [Security Basics](getting-started/cardano-basics/security-basics.md)
+    * [How Staking Works](getting-started/cardano-basics/how-staking-works.md)
+    * [DeFi (Decentralized Finance)](getting-started/cardano-basics/defi-decentralized-finance.md)
+    * [DEXes & Marketplaces](getting-started/cardano-basics/dexes-and-marketplaces.md)
+    * [Cardano Addresses](getting-started/cardano-basics/cardano-addresses.md)
+    * [Governance & Project Catalyst](getting-started/cardano-basics/governance-and-catalyst.md)
+    * [Understanding Cardano’s (e)UTxO Model](getting-started/cardano-basics/understanding-cardanos-eutxo-model.md)
+    * [Cardano Timeline](getting-started/cardano-basics/cardano-timeline.md)
 
 * [Using Eternl](using-eternl/README.md)
+    * [UI Overview](using-eternl/ui-overview.md)::/assets/icons/MenuSquare.svg
+    * [Activating Eternl Pro](using-eternl/activating-eternl-pro.md)::/assets/icons/License.svg
     * [Settings](using-eternl/settings/README.md)::/assets/icons/Settings.svg
-        * [Account Settings](using-eternl/settings/account-settings.md)::/assets/hugeicons/IconUser.svg
-        * [Wallet Settings](using-eternl/settings/wallet-settings.md)::/assets/icons/Wallet01.svg
-        * [App Settings](using-eternl/settings/app-settings.md)::/assets/icons/Settings.svg
-        * [App Utilities](using-eternl/settings/app-utilities.md)::/assets/hugeicons/IconUtilities.svg
-        * [Developer Settings](using-eternl/settings/developer-settings.md)::/assets/icons/TestTube03.svg
-    * [Managing Accounts](using-eternl/managing-accounts.md)::/assets/hugeicons/IconUser.svg
+      * [Account Settings](using-eternl/settings/account-settings.md)::/assets/hugeicons/IconUser.svg
+      * [Wallet Settings](using-eternl/settings/wallet-settings.md)::/assets/icons/Wallet01.svg
+      * [App Settings](using-eternl/settings/app-settings.md)::/assets/icons/Settings.svg
+      * [App Utilities](using-eternl/settings/app-utilities.md)::/assets/hugeicons/IconUtilities.svg
+      * [Developer Settings](using-eternl/settings/developer-settings.md)::/assets/icons/TestTube03.svg
+    * [Manage Accounts](using-eternl/manage-accounts.md)::/assets/hugeicons/IconUser.svg
+    * [Staking](using-eternl/staking/README.md)::/assets/icons/StakingOutline.svg
+      * [Staking in Eternl](using-eternl/staking/staking-in-eternl.md)
+      * [Staking Mechanics](using-eternl/staking/staking-mechanics.md)
+      * [Stake Pool Rating](using-eternl/staking/stake-pool-rating.md)
+    * [Multi-Sig](using-eternl/multi-sig.md)::/assets/icons/MultiSigGradient.svg
     * [Using the DApp Browser](using-eternl/using-the-dapp-browser.md)::/assets/icons/Globe.svg
     * [Eternl Analytics](using-eternl/eternl-analytics.md)::/assets/hugeicons/IconAnalyticsUp.svg
+    * [Eternl Hub](using-eternl/eternl-hub.md)::/assets/icons/Connection.svg
     * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
     * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
-    * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/IconAccess.svg
-
-* [Security & Privacy](security-and-privacy/README.md)
-    * [What Is a Seed Phrase?](security-and-privacy/what-is-a-seed-phrase.md)
-    * [Security Best Practices](security-and-privacy/Security-Best-Practices.md)
-    * [Eternl Guard](security-and-privacy/eternl-guard.md)
-
-* [Staking & Delegation](staking-and-delegation/README.md)
-    * [Staking Your ADA](staking-and-delegation/staking-your-ada.md)
-    * [Staking Mechanics](staking-and-delegation/staking-mechanics.md)
-    * [Stake Pool Rating](staking-and-delegation/stake-pool-rating.md)
-
-* [Multi-Sig](multi-sig.md)
+    * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/Access.svg
+    * [Media](using-eternl/media.md)::/assets/icons/MusicNote03.svg
 
 * [FAQ & Troubleshooting](faq-and-troubleshooting/README.md)
-  *  [FAQ](faq-and-troubleshooting/faq/README.md)
+  *  [FAQ](faq-and-troubleshooting/faq/README.md)::/assets/icons/Question.svg
     * [How do I find my receiving address?](faq-and-troubleshooting/faq/receiving-address.md)
     * [Why my wallets disappeared?](faq-and-troubleshooting/faq/why-my-wallets-disappeared.md)
     * [What is a Recovery Phrase and why is it so important?](faq-and-troubleshooting/faq/recovery-phrase.md)
     * [Can I migrate my wallet to a hardware device?](faq-and-troubleshooting/faq/can-i-migrate-my-wallet-to-a-hardware-device.md)
     * [Can I restore my hardware wallet phrase on Eternl?](faq-and-troubleshooting/faq/can-i-restore-my-hardware-wallet-phrase-on-eternl.md)
     * [Claiming the Glacier Airdrop](faq-and-troubleshooting/faq/claiming-the-glacier-airdrop-in-eternl-v2.md)
-  * [Troubleshooting](faq-and-troubleshooting/troubleshooting/README.md)
-    * [Transaction Errors](faq-and-troubleshooting/troubleshooting/transaction-errors.md)
-    * [Wallet Recovery Issues](faq-and-troubleshooting/troubleshooting/wallet-recovery-issues.md)
-    * [DApp Connection Issues](faq-and-troubleshooting/troubleshooting/dapp-connection-issues.md)
-    * [Staking & Rewards](faq-and-troubleshooting/troubleshooting/staking-and-rewards.md)
-    * [MonsterSwap Issues](faq-and-troubleshooting/troubleshooting/monster-swap-issues.md)
-
-* [Cardano Basics](cardano-basics/README.md)
-    * [A Brief Intro to Cardano](cardano-basics/a-brief-intro-to-cardano.md)
-    * [Security Basics](cardano-basics/security-basics.md)
-    * [How Staking Works](cardano-basics/how-staking-works.md)
-    * [DeFi (Decentralized Finance)](cardano-basics/defi-decentralized-finance.md)
-    * [DEXes & Marketplaces](cardano-basics/dexes-and-marketplaces.md)
-    * [Cardano Addresses](cardano-basics/cardano-addresses.md)
-    * [Governance & Project Catalyst](cardano-basics/governance-and-catalyst.md)
-    * [Understanding Cardano’s (e)UTxO Model](cardano-basics/understanding-cardanos-eutxo-model.md)
-    * [Cardano Timeline](cardano-basics/cardano-timeline.md)
+  * [Troubleshooting](faq-and-troubleshooting/troubleshooting/README.md)::/assets/icons/Error01.svg
+    * [Transaction Errors](faq-and-troubleshooting/troubleshooting/transaction-errors.md)::/assets/icons/Send.svg
+    * [Wallet Recovery Issues](faq-and-troubleshooting/troubleshooting/wallet-recovery-issues.md)::/assets/icons/Wallet01.svg
+    * [DApp Connection Issues](faq-and-troubleshooting/troubleshooting/dapp-connection-issues.md)::/assets/icons/DApp2.svg
+    * [Staking & Rewards](faq-and-troubleshooting/troubleshooting/staking-and-rewards.md)::/assets/icons/StakingOutline.svg
+    * [MonsterSwap Issues](faq-and-troubleshooting/troubleshooting/monster-swap-issues.md)::/assets/icons/ArrowHorizontal.svg
+    * [Trezor Issues](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/Access.svg
 
 * [For Developers](for-developers/README.md)
     * [DApp Browser Integration](for-developers/dapp-browser-integration.md)

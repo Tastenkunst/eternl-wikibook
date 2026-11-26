@@ -13,6 +13,6 @@ If you need help, have questions, or want to get in touch with us, you can reach
 
 ---
 
-::: tip
+:::tip
 Discord is the best place to get fast support since we use a dedicated ticket system.
 :::
