@@ -1,88 +1,57 @@
 # A Brief Intro to Cardano
 
-## Introduction
+Cardano is a public, open-source blockchain network. It lets people transfer value, create and hold native tokens, use decentralized applications (DApps), and participate in staking and governance. Its native currency is **ada** (ADA).
 
-In the rapidly evolving world of blockchain technology Cardano stands out for its individual approach. It is considered as a level 3 blockchain meaning it includes many lessons learnt from BTC (level 1 blockchain) and Ethereum (level2). It was founded by Charles Hoskinson who was a co founder of Ethereum. What differentiates Cardano from other level 3 blockchain is its scientifically driven approach. Everything that is developed for Cardano is based on “real” peer reviewed science. It pays special attention to scalability, interoperability, and sustainability faced by earlier blockchain platforms.
+## Blockchain Basics
 
-The organizational structure of Cardano is decentralized. This article takes a look at the key stakeholders, how they interact and what their roles are in the organizational structure of Cardano.
+A **blockchain** is a shared record of transactions and other information. It is maintained by computers called **nodes** that communicate with one another and follow the network's rules. Transactions are collected in blocks, which are linked together to form a chain. This allows participants to verify the history of the network without relying on a single organization to maintain the record.
 
-## Organizational Structure of Cardano
+A **transaction** records an action on the blockchain, such as sending ADA, transferring tokens or delegating to a stake pool. When you approve a transaction in your wallet, it is signed and submitted to the network. If it meets the network's rules and is included in a block, it becomes part of the blockchain's history.
 
-### Origin and Development
+Each transaction has an identifier, often called a **transaction ID** or **transaction hash**. You can use it to look up the transaction and its status in a blockchain explorer. For examples of explorers, see [Cardano Ecosystem Resources](/crypto-and-cardano-basics/cardano-ecosystem-resources.md).
 
-Charles Hoskinson was one of five co-founders of Ethereum. After a dispute with Vitalik Buterin about the direction of development there Hoskinson was removed and formed IOHK together with Jeremy Wood. IOHK founded research in different universities to pursue the goal of building a scientific driven level 3 blockchain. Central critical issues that were to be addressed by this development are: scalability, interoperability, and sustainability. Cardano’s blockchain was constructed in layers, which facilitates upgrades to the soft infrastructure without disrupting the blockchain’s operations, such as the settlement layer that handles transactions and a computation layer, which is designed to handle smart contracts.
+## ADA and the Network
 
-One of the core technologies of Cardano is its Ouroboros consensus algorithm. Unlike the energy-intensive proof-of-work protocol used by Bitcoin, Ouroboros is a proof-of-stake (PoS) protocol that decreases energy expenditure and is designed to be scalable. The protocol is rigorously secure, having been the first PoS protocol that was proven secure in a rigorous academic sense. Cardano also incorporates other advanced features such as formal verification for security assurances and sidechains to enable interoperability between different blockchains.
+ADA is used to pay network transaction fees. It also plays a role in securing the network through staking and in on-chain governance. The maximum supply of ADA is 45 billion. One ADA can be divided into one million **lovelace**, its smallest unit. Both names refer to mathematician Ada Lovelace.
 
-Cardano’s vision extends beyond just technical advancements. The platform aims to provide a more inclusive and sustainable global financial system. It is especially involved in Africa trying to deliver services to a broad public that does not have access to financial services. It is uniquely positioned to impact several areas critically, including education, retail, agriculture, and government. Cardano's objective is not just to provide a platform for transactions but to create a platform for social and financial systems to operate openly and without intermediaries.
+Cardano uses a proof-of-stake consensus protocol called **Ouroboros**. Independent stake pools produce blocks, and network nodes check transactions against the ledger rules. The blockchain records transactions and other information according to those rules.
 
-### Cardano Is Controlled by Three Entities
+A Cardano wallet helps you manage the keys needed to interact with the blockchain. Your funds are recorded on the blockchain, rather than stored inside the wallet application. See [Cardano Addresses](/crypto-and-cardano-basics/cardano-basics/cardano-addresses.md) for more about receiving and controlling funds.
 
-#### 1 Cardano foundation
+Cardano was built with a strong emphasis on scientific research, peer review and careful engineering. Its goals include scalability, interoperability with other systems and long-term sustainability. This research-driven approach provides a strong foundation for the network to evolve as new needs and technologies emerge.
 
-- a swiss based company whose goal is to promote and scale on-chain activities on the Cardano blockchain
+Beyond its technical design, Cardano aims to support more open and accessible financial and social systems. Blockchain-based applications could help people transfer value, establish digital identities and access services across borders, including in places where traditional infrastructure is less accessible. Turning that potential into useful services depends on continued development and adoption.
 
-#### 2 IOHK
+## Native Tokens and Smart Contracts
 
-- the actual engineering part is done here. IOHK is responsible for the initial and ongoing development of the Cardano blockchain.
+Cardano supports **native tokens** alongside ADA. Tokens can represent many kinds of digital assets. **Fungible tokens** have interchangeable units, like units of the same currency. An **NFT**, or non-fungible token, is intended to represent a distinct asset, such as a collectible or a certificate.
 
-#### 3 Emurgo
+ADA is Cardano's native currency and is used to pay transaction fees. Other native tokens can be held and transferred on Cardano, but sending them also requires ADA for the transaction fee and for the minimum ADA that must accompany an output containing tokens. For more about this requirement, see [Understanding Cardano's eUTxO Model](/crypto-and-cardano-basics/cardano-basics/understanding-cardanos-eutxo-model.md).
 
-- it serves as the commercial part of the blockchain evolution. It tries to promote usage of Cardano by offering tools and courses to learn and adopt the usage of Cardano.
+Token names and images alone do not establish authenticity. A Cardano token is identified by its **policy ID** and **asset name**. Check these against a trusted source when verifying an asset. An asset's presence on the blockchain does not guarantee its value or authenticity.
 
-## Key Stakeholders in the Cardano Ecosystem
+Smart contracts allow developers to define conditions that transactions must satisfy. They support applications such as decentralized exchanges and lending platforms. These applications can also introduce risks, including bugs and fraudulent interfaces. See [DeFi Explained](/crypto-and-cardano-basics/cardano-basics/defi-decentralized-finance.md).
 
-Cardano’s stakeholders range from individual ADA holders to developers and large-scale commercial partners. Each group contributes either through participation in governance, development of the platform, or by integrating Cardano’s technology into real-world applications.
+## Staking
 
-### ADA Holders
+ADA holders can delegate their stake to a stake pool to help secure the network and may receive rewards. Delegating does not send the ADA to the pool or lock it: the funds remain under the holder's control and can be spent. Pool performance and other factors affect rewards.
 
-ADA, the native token of Cardano, plays a central role in the ecosystem. ADA holders are not just investors; they are also participants in the network's governance. Through staking and delegating their ADA to stake pools, holders contribute to the network's security and earn rewards in return. They also vote on proposals concerning future development and updates, effectively influencing the direction of the Cardano platform.
+Learn more in [How Staking Works](/crypto-and-cardano-basics/cardano-basics/how-staking-works.md).
 
-### Developers
+## Governance and the Ecosystem
 
-Developers are crucial to the growth and evolution of Cardano. They create decentralized applications (DApps) on the platform, explore new use cases, and improve the system's capabilities. Developers in the Cardano ecosystem benefit from robust support through documentation, development tools, and community networks facilitated by the Cardano Foundation, IOHK, and Emurgo.
+Cardano was launched in 2017. The Cardano Foundation, Input Output and EMURGO helped establish the network and remain active in its ecosystem, alongside many other organizations, developers, stake pool operators and community members.
 
-### Partnerships
+With the Chang and Plomin upgrades in 2024 and 2025, Cardano reached an important milestone in its **Voltaire** vision: decisions about protocol changes and treasury spending can now be made through on-chain governance. ADA holders can take part by delegating their voting power to a representative or becoming one themselves. Stake pool operators and the Constitutional Committee also participate in governance according to the rules for each type of decision.
 
-Partnerships with educational and financial institutions are integral to Cardano's strategy. These partnerships not only foster broader adoption but also ensure that the ecosystem remains innovative and relevant. Collaborations with universities help in researching new blockchain advancements, while ties with financial entities pave the way for Cardano to be integrated into existing financial systems.
+The founding organizations continue to contribute in different ways: the Cardano Foundation works on adoption and infrastructure, Input Output contributes research and software development, and EMURGO supports commercial adoption and ecosystem development. Intersect, a member-based organization, helps coordinate development, maintenance and governance processes. These organizations can contribute to Cardano's future, but no single organization can decide protocol changes on its own.
 
-## Strategic Initiatives and Projects
+Learn more about participation and the different roles in [Governance & Project Catalyst](/crypto-and-cardano-basics/cardano-basics/governance-and-catalyst.md).
 
-Cardano's strategic initiatives and projects are aimed at solidifying its place in the blockchain industry by demonstrating practical and scalable applications of its technology. These initiatives not only enhance the platform's capabilities but also strengthen its adoption across various sectors.
+For an overview of Cardano's development, see the [Cardano Timeline](/crypto-and-cardano-basics/cardano-basics/cardano-timeline.md). You can find explorers, documentation, and community resources in [Cardano Ecosystem Resources](/crypto-and-cardano-basics/cardano-ecosystem-resources.md).
 
-### Key Projects
+## Further Reading
 
-#### Atala PRISM
-
-An identity management tool that offers verification of your identity via blockchain. It’s designed to provide access to services that require identity verification, like banking, healthcare, and government services.
-
-#### Catalyst
-
-Catalyst provides money to innovative projects to foster blockchain and tool development. Projects can outline their ideas in a proposal and ADA holders are able to vote on these projects. The winners with the most votes will get the funding that is outlined in their proposal. Catalyst is organized in rounds recurring regularly.
-
-#### Cardano DeFi
-
-Emphasizing decentralized finance (DeFi), Cardano is positioned to rival other established platforms by offering lower transaction fees, reduced energy consumption, and enhanced security. The ecosystem supports the creation of decentralized applications (DApps) that can provide alternatives to traditional financial services.
-
-The impact of these projects extends beyond technical enhancements, touching on social, economic, and environmental areas. Offering enhanced security and scalability the adoption areas of Cardano go way beyond older blockchains.
-
-## Challenges and Future Outlook
-
-Despite the significant advancements and strategic initiatives, Cardano, like any other blockchain platform, faces its own set of challenges.
-Challenges
-
-### Adoption Rate
-
-While Cardano has made impressive strides in development, widespread adoption, especially in comparison to first-movers like Ethereum, remains a challenge. Its sophisticated technology also requires a learning curve that can be a barrier for new users and developers.
-
-### Regulatory Uncertainty
-
-As with many blockchain technologies, regulatory landscapes present ongoing challenges. Cardano’s operation across multiple jurisdictions means it must navigate a complex array of legal frameworks. In the US there is a ongoing legal battle on whether Cardano is to be considered as a security, which has implications on how it is traded and regulated.
-
-### Technological Hurdles
-
-Ensuring that the Cardano blockchain can handle a high volume of transactions without compromising security or speed is an ongoing technological challenge.
-
-## Future Outlook
-
-Looking forward, Cardano is well-positioned to tackle these challenges. Its commitment to peer-reviewed scientific research and phased development approach means that it can adapt and evolve in response to both technological and market needs. The future of Cardano appears promising, with plans to further deepen its market penetration and enhance its technological offerings.
+* [Cardano: Get Started](https://cardano.org/get-started/)
+* [Cardano Research](https://cardano.org/research/)
+* [Cardano Docs: Governance Overview](https://docs.cardano.org/about-cardano/governance-overview)

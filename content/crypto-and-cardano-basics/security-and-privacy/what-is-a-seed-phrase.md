@@ -7,7 +7,9 @@ description: Safeguard Your Seed Phrase!
 
 A seed phrase, often referred to as a recovery phrase or mnemonic phrase, acts as the master key to your cryptocurrency wallet.
 
-It is a series of words that store all the information needed to recover a wallet on any compatible blockchain software. Typically, seed phrases consist of 12 , 15  or 24  words chosen from a standard list of 2048 words, ensuring simplicity and human readability while maintaining cryptographic security.
+It is a series of words that can be used to recover access to a wallet using compatible wallet software. Typically, seed phrases consist of 12, 15 or 24 words chosen from a standard list of 2048 words, ensuring simplicity and human readability while maintaining cryptographic security.
+
+Some wallets also use an additional passphrase. In that case, the seed phrase alone will not restore the same wallet; the same passphrase is needed as well.
 
 12 - a 12 word Shelley wallet
 

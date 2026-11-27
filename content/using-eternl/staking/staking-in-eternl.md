@@ -72,6 +72,8 @@ You can set a governance delegation by:
 
 The built-in options allow reward withdrawals without selecting a DRep.
 
+Eternl checks whether the selected DRep is active when preparing a withdrawal. If the DRep is inactive, delegate to an active DRep or choose one of the built-in voting options to withdraw rewards.
+
 :::success
 You can manage governance delegation inside the **Governance** section of Eternl.
 :::

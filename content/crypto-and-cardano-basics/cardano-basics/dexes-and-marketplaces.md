@@ -1,85 +1,27 @@
----
-description: A brief intro of a few projects within the Cardano ecosystem
----
+# DEXes & Marketplaces
 
-# An Overview of Dexes and Marketplaces Pertinent to the Cardano Ecosystem
+Decentralized exchanges and marketplaces let people trade digital assets. A **decentralized exchange**, or **DEX**, is commonly used to swap tokens, while a marketplace typically focuses on listing and trading individual assets such as NFTs. Some platforms offer both kinds of functionality.
 
-With its robust, research-first approach, Cardano has become a favored blockchain for developers and investors alike illustrated by a high market capitalization placing it in the top10 of blockchains. Central to its appeal are the features of a modern 3rd generation blockchain enabling a broad and ever changing infrastructure of service providers like Decentralized Exchanges (DEXes) and marketplaces that operate within its network.
+These services make it possible to exchange assets and discover digital creations using a wallet. They can give people new ways to trade and participate in the digital economy, including across borders. Their interfaces and rules differ, so review the details shown by the application before approving a transaction.
 
-## Decentralized Exchanges (Dexes) on Cardano: Empowering Users
+## Decentralized Exchanges
 
-DEXes in the Cardano ecosystem offer features that go far beyond simple trading. They offer financial products that before were only available to financial institutions and their customers. Now everybody can access those without the need for intermediaries. This section delves into the most prominent DEXes on Cardano, highlighting their features, benefits, and how they contribute to the ecosystem's overall health.
+On a DEX, you can exchange one token for another using liquidity supplied by other users or other trading mechanisms. Many exchanges use **liquidity pools**: collections of assets that traders can swap against. Prices depend on the assets available in the pool and the size of the trade.
 
-### MuesliSwap
+A **DEX aggregator** searches across supported exchanges or routes to help find a trade. It does not necessarily cover every exchange, and the displayed quote can change before the transaction is completed.
 
-[MuesliSwap](https://muesliswap.com) MuesliSwap offers trading opportunities on the Cardano blockchain. It is known for its user-friendly interface and efficient trading mechanisms, which boost its appeal to both novice and experienced traders.
+When comparing a swap, consider the exchange rate, network and service fees, and **slippage**, the difference between the expected price and the price at which the trade is executed. A trade may fail or take longer than expected. Depending on the application, a submitted order may remain pending and need to be cancelled separately if you no longer want it.
 
-### Dexhunter
+Examples of Cardano DEXes include [Minswap](https://minswap.org/), [SundaeSwap](https://sundae.fi/) and [MuesliSwap](https://muesliswap.com/). [DEXHunter](https://app.dexhunter.io/) is an example of an aggregator. These are just a few examples of the services available in the Cardano ecosystem.
 
-[DEXHunter](https://www.dexhunter.io/) is a DEX aggregator, a tool that scours multiple decentralized exchanges (DEXs) to find the best trading conditions and liquidity for its users. This enables traders to optimize their strategies by ensuring they engage in transactions under the most favorable terms available. A DEX aggregator, like DEXHunter, functions by pulling information from various DEXs. It compares this data, such as transaction fees, prices, and available liquidity, to help users make the most advantageous trades possible without having to manually check each platform.
+## Marketplaces
 
-Optimizing Trading Strategies: By using DEXHunter, traders can streamline their processes and improve their outcomes. The aggregator helps identify the best prices and lowest fees across a fragmented market, which is crucial in maximizing profits and reducing costs in the volatile world of cryptocurrency trading.
+Marketplaces allow users to list and browse assets, often NFTs. They can offer creators and collectors new ways to distribute and exchange digital works and other tokenized assets. A listing describes an offer, but it does not guarantee that an asset is authentic or valuable. Anyone can create tokens with familiar-looking names or images, so check the asset's policy ID and asset name against a trusted source.
 
-Overall, DEXHunter simplifies the trading process on decentralized exchanges by providing a single, comprehensive overview of the best trading options available, thereby enhancing user efficiency and profitability.
+## Connecting and Staying Safe
 
-### SundaeSwap: A Sweet Deal for Liquidity Providers
+To interact with a DEX or marketplace, you generally connect a wallet and approve the transactions you choose to make. Connecting a wallet and approving a transaction are different actions. Read transaction details and signature requests carefully before confirming them.
 
-[SundaeSwap](https://sundae.fi/) stands as a frontrunner among Cardano's DEXes, offering an enticing platform for both traders and liquidity providers. Its innovative protocols and user-friendly interface ensure a seamless trading experience. SundaeSwap's focus on security and transparency is evident in its smart contract architecture, which is rigorously audited to protect users' investments.
+Use official links, beware of impersonations, and never enter your seed phrase into a website to connect your wallet. Smart contracts, third-party services and the assets being traded can all involve risks. See [Security Best Practices](/crypto-and-cardano-basics/security-and-privacy/Security-Best-Practices.md) and [Decentralized Finance Explained](/crypto-and-cardano-basics/cardano-basics/defi-decentralized-finance.md) for more information.
 
-### Minswap: Multi-Pool Dex for Maximum Flexibility
-
-[Minswap](https://minswap.org/) takes the concept of decentralized trading a step further by introducing a multi-pool DEX system. This feature allows users to swap between a wider range of assets, increasing liquidity and trading options. Minswap's commitment to inclusivity and community governance places it at the forefront of user-centric design in the Cardano ecosystem.
-
-### Adax: An Automated Liquidity Protocol
-
-[ADAX](https://adax.pro/) distinguishes itself with an automated liquidity protocol that streamlines the trading process. Its non-custodial order book dispenses with the need for an intermediary, facilitating direct peer-to-peer transactions. This approach not only enhances security but also ensures that users get the best possible trading conditions.
-
-### VyFinance
-
-[VyFinance](https://vyfi.io/) is a platform that focuses on streamlining investment strategies within the Cardano blockchain ecosystem. It targets making decentralized finance (DeFi) more accessible to beginners by offering a suite of tools designed for liquidity mining and yield farming. These tools help users to participate in and benefit from financial activities that involve earning interest on cryptocurrency investments.
-
-### ErgoDEX: Bridging Cardano and Ergo Platforms
-
-[ErgoDex](https://ergoplatform.org/) offers a unique cross-platform trading experience by bridging the Cardano and Ergo blockchains. This interoperability expands the trading landscape, providing users with a greater array of tokens and trading pairs. ErgoDEX's focus on scalability and low transaction fees makes it a compelling option for traders looking for efficiency and affordability.
-
-## Marketplaces in the Cardano Ecosystem: Nurturing Innovation
-
-Marketplaces on Cardano are not just about buying and selling; they're incubators for innovation and creativity. These platforms leverage Cardano's advanced blockchain technology to offer a secure and transparent environment for transactions. From NFTs to service offerings, these marketplaces are redefining the concept of digital commerce.
-
-### Jpgstore
-
-[JPGStore](https://www.jpg.store/) is the leading NFT marketplace on the Cardano blockchain. It allows users to create, discover, and collect a wide variety of digital artwork and collectibles. The platform is designed to be user-friendly with a minimalistic interface that makes it easy to navigate different collections. Additionally, JPG Store supports upcoming NFT drops, enabling users to buy and sell NFTs efficiently without the need for an escrow service.
-
-JPG Store has recently focused on expanding its global reach by enhancing site language translations. This improvement aims to simplify the process for international artists to produce and market their NFTs to a worldwide audience, fostering a more inclusive global community of digital artists and collectors
-
-## Other Services Within the Cardano Ecosystem
-
-### DripDropz. Io
-
-[DripDropz.io](https://github.com/Tastenkunst/eternl-wikibook/blob/main/content/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#dripdropz.-io) is a service designed to distribute Cardano tokens. Users can enter their wallet or stake address on the website to claim various tokens distributed during different epochs (periods of blockchain operation). It’s user-friendly and supports small projects by offering a platform for token distribution
-
-### Taptools. Io
-
-[Taptools.io](https://www.taptools.io/) is a comprehensive analytics platform for Cardano users. It helps users monitor and manage their investments by providing real-time data on token prices, portfolio values, and DeFi (Decentralized Finance) activities. It's a tool aimed at enhancing the trading and investment experience on the Cardano blockchain.
-
-### Cardanoscan. Io
-
-[Cardanoscan.io](https://cardanoscan.io) is a blockchain explorer for Cardano, allowing users to view detailed information about transactions, addresses, and blocks on the Cardano network. It's useful for verifying transactions and understanding the overall activity on the blockchain
-
-### Cexplorer. Io
-
-[Cexplorer.io](https://github.com/Tastenkunst/eternl-wikibook/blob/main/README.md) is another explorer that provides insights and analytics for the Cardano network, helping users understand and navigate its complex data.
-
-### Adastat. Net
-
-[Adastat.net](https://github.com/Tastenkunst/eternl-wikibook/blob/main/content/cardano-basics/an-overview-of-dexes-and-marketplaces-pertinent-to-the-cardano-ecosystem..md#adastat.-net) focuses on delivering statistical data and growth trends within the Cardano ecosystem, useful for researchers and analysts.
-
-The decentralized exchanges (DEXes), marketplaces, and services mentioned above are just a few examples of what the Cardano ecosystem has to offer and are not exhaustive.
-
-:::success
-For a comprehensive overview of projects, tools, and DApps available on Cardano, visit CardanoCube.io.
-:::
-
-## Conclusion: The Future of Finance on Cardano
-
-Cardano's decentralized exchanges (DEXes) and marketplaces are key parts of a new financial system. These platforms improve blockchain technology by focusing on safety, efficiency, and giving power to users. As Cardano grows and brings in new ideas, its DEXes and marketplaces will play a major role in the development of decentralized finance (DeFi).
+For starting points, see the [Cardano ecosystem links](/crypto-and-cardano-basics/cardano-ecosystem-resources.md) and the [Cardano apps directory](https://cardano.org/apps/).

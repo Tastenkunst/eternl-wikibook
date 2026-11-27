@@ -1,94 +1,62 @@
 ---
-disableH2Collapse: true
+description: An introduction to staking and delegation on Cardano
 ---
 
 # How Staking Works
 
-## Abstract
+Staking helps secure the Cardano network. ADA holders can delegate their stake to a stake pool, which participates in producing blocks. Delegators may receive ADA rewards through the protocol.
 
-This article outlines how staking works on the Cardano blockchain, contrasting it with Bitcoin's Proof of Work (PoW). Staking involves holding ADA, Cardano's cryptocurrency, to support network operations and secure transactions. Users delegate ADA to stake pools, which then participate in validating transactions and creating new blocks. Unlike Bitcoin, which requires significant computational power, Cardano's Proof of Stake (PoS) system is more energy-efficient and democratic. Validators are chosen based on the amount of ADA they stake, with rewards distributed for their contribution. The system aims to enhance network security and performance, rewarding participants with additional ADA. The article also compares Cardano's approach to Ethereum's staking, emphasizing Cardano's more decentralized and user-friendly mechanism.
+:::info
+Delegating to a stake pool does not transfer your ADA to its operator or lock your funds. Your ADA remains under your control and can be spent while it is delegated.
+:::
 
-## Proof of Stake in Cardano
+## Proof of Stake and Stake Pools
 
-Cardano's Proof of Stake is a method that secures the network and adds new blocks to the blockchain, but it works differently than Bitcoin's system. Instead of requiring massive amounts of computing power, it lets users lock up some of their Cardano coins as a sign of reliability. The more coins you lock up, or "stake," the better your odds of being selected to check transactions and receive rewards.
+Cardano uses a proof-of-stake protocol called Ouroboros. Stake pools operate nodes that participate in block production. For each slot, the protocol determines which pools are eligible to produce a block, taking delegated stake into account. Selection is probabilistic, so a pool's opportunity to produce blocks varies over time.
 
-Validators on the Cardano network are selected based on the amount of ADA they are willing to delegate (stake) to a pool or use as collateral. Stake pools are responsible for verifying transactions and creating new blocks. The more ADA a validator stakes, the higher the probability they have of being chosen to produce the block.
+Unlike proof of work, used by Bitcoin, proof of stake does not select block producers through energy-intensive mining. The two systems use different approaches to securing their networks.
 
-Staking on the Cardano blockchain involves participants (stakeholders) delegating their ADA (Cardano's native cryptocurrency) to a stake pool, which helps secure the network and participate in the Proof-of-Stake (PoS) consensus mechanism. Here's how it generally works:
+Running a stake pool requires technical knowledge and ongoing maintenance. ADA holders who do not run a pool can participate by delegating their stake to one.
 
-### Stakeholders
+## Delegation
 
-Anyone who holds ADA cryptocurrency can participate in staking.
+A staking credential identifies the stake associated with eligible addresses. When you delegate it to a pool, the protocol records your choice in a transaction. You can delegate to a different pool at any time by submitting another delegation transaction. The change takes effect after a delay in the epoch cycle, so rewards from your previous pool can continue for a while.
 
-### Stake Pools
+In a typical wallet account, eligible ADA received at addresses linked to the delegated staking credential is included in later snapshots. Your spendable balance can change: ADA spent before a snapshot is no longer part of that snapshot. An address without a staking credential does not contribute stake through that address.
 
-Stake pools are entities on the Cardano network that are responsible for processing transactions and creating new blocks. Stake pools consist of a combination of technical infrastructure and the expertise of the pool operator.
+Cardano allows stake to be distributed among multiple pools using multiple staking credentials. Eternl does not support this within a single account, but you can distribute ADA among multiple accounts and delegate each account to a different pool.
 
-### Delegation
+For the steps in Eternl, see [Staking in Eternl](/using-eternl/staking/staking-in-eternl.md).
 
-ADA holders can delegate their ADA to a stake pool of their choice. This process involves selecting a stake pool and delegating their ADA holdings to that pool. Delegation does not involve transferring ownership of ADA; it simply allows the stake pool to include the delegated ADA in its staking power.
+## Epochs and Rewards
 
-#### Rewards
+Cardano divides time into **epochs** of approximately five days. The protocol takes snapshots of stake and uses them in the process of selecting pools and calculating rewards. As a result, a new delegation does not produce rewards immediately. The first rewards typically arrive after about 15 to 20 days, depending on when you delegate and whether the pool produces blocks.
 
-By delegating their ADA to a stake pool, stakeholders earn rewards in the form of additional ADA. These rewards are distributed periodically, typically every epoch (a fixed period of time on the Cardano blockchain, currently around 5 days), and are proportional to the amount of ADA delegated to the pool.
+Rewards are calculated and distributed by the protocol, not sent manually by the pool operator. They come from transaction fees and the monetary reserve. They depend on factors including the delegated stake, pool performance, fees, and protocol parameters. Rewards can vary and are not guaranteed for every epoch.
 
-#### Decentralization and Security
+Rewards accumulate in a reward account associated with the staking credential. They contribute to delegated stake without being withdrawn first. To use them in ordinary transactions, they must be withdrawn; the required transaction incurs a fee.
 
-Cardano aims to achieve decentralization and security through its PoS mechanism. By participating in staking, ADA holders contribute to the security and decentralization of the network, as stake pools are randomly selected to create blocks based on the amount of ADA delegated to them.
+:::info
+Under the current Cardano governance rules, a typical wallet account must also have a voting delegation to a registered DRep or one of the built-in voting options before its rewards can be withdrawn. Rewards continue to accumulate without this delegation. In Eternl, if the selected DRep is inactive, choose an active DRep or one of the built-in voting options to withdraw rewards.
+:::
 
-#### Pool Performance
+## Costs and Choosing a Pool
 
-Stake pool operators are incentivized to maintain high-performance servers and secure their operations to attract delegators. Stakeholders often look at a pool's performance, uptime, fees, and other factors before deciding where to delegate their ADA.
+Registering a staking credential requires a refundable deposit and a transaction fee. Changing delegation also requires a transaction fee. The deposit can be returned when the credential is deregistered, subject to the applicable rules and transaction fee.
 
-#### Pool Operator Rewards
+The **return on stake (ROS)** is a way to express rewards relative to the amount delegated, often as an annualized percentage. An observed or estimated ROS is not a promise of future rewards.
 
-Stake pool operators also receive rewards for their role in maintaining the network and running a stake pool. These rewards are separate from the rewards earned by delegators.
+Pools set a fixed cost and a margin. The fixed cost is taken from the pool's epoch rewards before the margin is applied to the remainder. It is not charged separately to each delegator. Pool performance, pledge, and saturation can also affect rewards, so the lowest fee alone does not necessarily mean the highest return.
 
-Overall, staking on the Cardano blockchain provides a way for ADA holders to participate in securing the network and earn rewards while contributing to the decentralization of the Cardano ecosystem.
+For example, suppose a pool earns 5,000 ADA in an epoch and has a fixed cost of 200 ADA and a 5% margin. After the fixed cost, 4,800 ADA remains. The 5% margin is 240 ADA, leaving 4,560 ADA to be distributed according to the reward rules. These figures are illustrative, not fee recommendations or protocol minimums. Pool owners may also receive rewards for their own delegated stake.
 
-### Rewards Distribution
+A pool is **saturated** when additional delegated stake no longer increases its maximum reward in the same way. This can reduce the reward share for delegators. Actual returns vary, especially for smaller pools that may produce blocks less frequently.
 
-In the Cardano ecosystem, rewards are generated from two key sources: all transaction fees collected from transactions within a block minted during an epoch, and monetary expansion, which is the process of increasing the circulating ADA supply towards a maximum cap. These rewards are then proportionally distributed to both stakers and pool operators. Pool operators are rewarded for their crucial role in maintaining and securing the network, while the remaining rewards are allocated among the stakers. This system is designed to motivate users to engage in staking their ADA, thus enhancing the network's security and overall performance by ensuring a vested interest in the health and efficiency of Cardano.
+## Further Reading
 
-### Return on Stake (RoS)
-
-The RoS in Cardano depends on several factors, including the total amount of ADA staked on the network and the individual stake pool's performance and the amount of ADA staked to the pool. RoS can vary but provides an incentive for ADA holders to participate in staking while keeping full access to spend their ADA whenever.
-
-### Cardano vs. Ethereum Staking Mechanisms
-
-Cardano and Ethereum offer contrasting staking mechanisms, with Cardano featuring a native liquid staking system that allows ADA to remain accessible for spending during staking, without any minimum staking requirements or penalties for misbehavior. This approach promotes decentralization and security by making participation more straightforward and aligning stakeholders' interests with the network's needs. Cardano relies on the Ouroboros Proof-of-Stake consensus and Nash equilibrium theory to encourage honest participation, avoiding the need for slashing as a deterrent.
-
-On the other hand, Ethereum requires validators to lock up 32 ETH, with the possibility of slashing for dishonest actions, aiming to secure the network by economically disincentivizing attacks. However, this has raised concerns about centralization and the dependence on third-party services for staking, which could compromise the network's decentralization and security.
-
-Cardano's model is highlighted for its potential to maintain a more decentralized network, allowing ADA to serve both as a secure asset within the network and as a medium of exchange, thanks to its liquid staking. In contrast, Ethereum's approach, particularly its reliance on third-party services, might hinder the liquidity and practical usability of ETH as money, moving towards a more centralized model. This comparison underscores the importance of staking mechanisms in achieving a balance between security, decentralization, and usability within blockchain networks.
-
-In the Cardano network, ADA holders have the option to participate directly in the network's consensus by operating active nodes or to delegate their participation rights to a stake pool. This delegation process allows those who may not have the capacity or desire to maintain active participation to still contribute to the network's security and decision-making processes. When selecting a stake pool, it's crucial to understand that a lower variable commission does not automatically translate to higher rewards. The annual return difference between delegating to a pool with a 1% commission versus a 5% commission is relatively minor, around 1/4% of the expected annual return. The primary considerations for choosing a stake pool should be the operator's reliability in keeping the nodes safe and operational and the pool's saturation level. Saturation occurs when a pool has a high level of staking, leading to diminished rewards for its delegates due to the distribution of rewards across a larger number of participants. The rewards from staking are automatically delegated to the stake pool, generating additional rewards over time. Any changes in the delegation preferences are processed after the next epoch. The Return on ADA (ROA) is a critical metric for assessing a stake pool's performance, calculated as the direct result of the blocks produced by the stake pool divided by the total amount of ADA staked in the pool for each epoch. The number of blocks a stake pool is assigned in each epoch is determined through a lottery process, contributing to the variability in ROA% across different epochs. For ADA holders looking to track their rewards and estimate future earnings, resources are available to provide detailed historical and predictive insights into the rewards process.
-
-### About Fees
-
-On the Cardano blockchain, stake pool operators charge two types of fees to cover the costs associated with running a pool and to provide an incentive for their services: a fixed fee and a variable fee.
-
-#### Fixed Fee
-
-The fixed fee is a set amount of ADA that is deducted from the total rewards earned by the pool in each epoch (an epoch is a fixed period in which rewards are calculated and distributed on the Cardano network). The minimum fixed fee is set by the Cardano protocol and can only be changed through governance actions. This fee is not charged to each delegator individually; rather, it is taken from the total rewards before distribution to all delegators.
-
-#### Variable Fee (Margin)
-
-The variable fee, also known as the margin, is a percentage of the total rewards that the pool earns after the fixed fee has been deducted. This fee is set by the pool operator and can range from 0% to 10% or more, depending on the pool's policies. The variable fee is intended to provide additional compensation to the pool operator on top of the fixed fee.
-
-The difference between the two fees is that the fixed fee is a constant amount, while the variable fee is a percentage that can result in a different amount of ADA being taken as a fee based on the total rewards the pool earns in an epoch. When rewards are distributed, the fixed fee is taken first, and then the variable fee is calculated on the remaining rewards. The rest of the rewards are then distributed to the delegators proportionally to their stake in the pool
-
-For example, if a pool earns 5,000 ADA in rewards for an epoch, the pool operator would first take the fixed fee of 340 ADA. If the pool's variable fee is set at 5%, the operator would then take 5% of the remaining 4,660 ADA (which is 233 ADA), resulting in a total of 573 ADA for the pool operator (340 ADA fixed fee + 233 ADA variable fee) and 4,427 ADA to be distributed among the delegators.
-
-It's important for delegators to understand these fees when choosing a stake pool, as they can affect the overall rewards received from staking ADA. Lower fees do not necessarily mean higher returns, as the performance and reliability of the pool are also crucial factors.
-
-### Comparison With Bitcoin's Proof of Work
-
-Bitcoin uses a PoW mechanism, where miners solve complex mathematical problems to validate transactions and create new blocks. This process requires significant computational power and energy. The rewards in Bitcoin come in the form of newly minted bitcoins (block rewards) and transaction fees. Unlike Cardano, Bitcoin's reward system heavily relies on the computational work done by miners, not on the amount of cryptocurrency they hold.
-
-Environmental Impact and Efficiency: Cardano's PoS is more energy-efficient compared to Bitcoin's PoW, as it does not require the same level of computational power. This makes Cardano more environmentally friendly and potentially more scalable.
-
-In summary, Cardano's staking mechanism offers a more energy-efficient and potentially more democratic way to participate in the blockchain's security and governance, compared to Bitcoin's computationally intensive PoW mechanism.
+* [Cardano: Stake Your ADA](https://cardano.org/stake-pool-delegation/)
+* [Cardano Docs: Pledging and Rewards](https://docs.cardano.org/about-cardano/learn/pledging-rewards)
+* [Cardano: Governance](https://cardano.org/governance/)
 
 [//]: # (### Delegating to a Stake Pool Using Eternl Wallet)
 

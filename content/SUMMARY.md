@@ -24,6 +24,7 @@
     * [Governance & Project Catalyst](crypto-and-cardano-basics/cardano-basics/governance-and-catalyst.md)
     * [Understanding Cardano’s (e)UTxO Model](crypto-and-cardano-basics/cardano-basics/understanding-cardanos-eutxo-model.md)
     * [Cardano Timeline](crypto-and-cardano-basics/cardano-basics/cardano-timeline.md)
+  * [Cardano Ecosystem Resources](crypto-and-cardano-basics/cardano-ecosystem-resources.md)
 
 * [Using Eternl](using-eternl/README.md)
     * [UI Overview](using-eternl/ui-overview.md)::/assets/icons/MenuSquare.svg
@@ -49,7 +50,6 @@
     * [Eternl Hub](using-eternl/eternl-hub.md)::/assets/icons/Connection.svg
     * [DApp Connection Options](using-eternl/dapp-connection-options.md)::/assets/icons/PlugSocket.svg
     * [Understanding Balances](using-eternl/understanding-balances.md)::/assets/icons/Chart.svg
-    * [Eternl and the eUTxO Model](using-eternl/eternl-and-the-eutxo-model.md)::/assets/icons/UTxO.svg
     * [Trezor Passphrase Wallets](using-eternl/trezor-passphrase-wallets.md)::/assets/icons/Access.svg
     * [Media](using-eternl/media.md)::/assets/icons/MusicNote03.svg
 

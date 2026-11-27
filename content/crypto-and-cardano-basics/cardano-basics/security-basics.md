@@ -1,84 +1,48 @@
 ---
-description: Basic tips for keeping your assets safe and using Eternl Wallet securely
+description: Basic tips for keeping your assets safe and using Eternl securely
 ---
 
 # Security Basics
 
-## 1. Keep Your Seed Phrase Safe
+A self-custody wallet gives you control of your keys and funds. It also means that protecting them is your responsibility. No single measure removes every risk, but a few habits can make a significant difference.
 
-A seed phrase in cryptocurrency is a list of words (usually 12, 15, or 24) that works like a main key to open and get back your crypto wallet. This phrase contains all the details needed to get back and control the money in your wallet.. If you lose your wallet, it breaks, or you forget your password, you can use this phrase to access your cryptocurrency again. It's very important to keep your seed phrase secret because anyone who knows it can take all your assets. This means you should NEVER share this with anyone for any reason and only enter it on trusted wallets.
+## Keep Your Seed Phrase Safe
 
-### 1.1 Best Practices
+Your seed phrase is the backup that can restore access to a wallet. Anyone who obtains it may be able to control its funds. Never share it with anyone, including someone claiming to be support. Store it offline in a secure place and protect it from theft, loss, fire, and water.
 
-* Offline Storage\
-  Store your seed phrase offline. This means not using internet connected devices for storage, as they are vulnerable to hacking and malware attacks​​. Keep in mind that different types of storage have different advantages and disadvantages.
-* Physical Writing\
-  Write the seed phrase on paper or, preferably, on a more durable material like metal (e.g., cryptosteel) that is resistant to fire, water, and other environmental hazards. This provides long term security against physical damag​​​​e. Writing on paper is a start but keep in mind that ink may bleach out or can’t be readable after a long period of time.
-* Secure Location\
-  Keep the written seed phrase in a safe and secure location, such as a safe or a locked drawer. It’s important to choose a place where it is protected from theft, loss, and unauthorized acces​​​s.
-* Avoid Digital Storage\
-  Refrain from storing your seed phrase digitally, such as in screenshots, photos, text files, or cloud storage, as these methods are vulnerable to cyber threat​s.
+A written backup can be kept on paper or on a more durable material such as metal. Consider whether the material and storage location will protect it from damage over time.
 
-Keep your seed phrase safe in several ways\
-It's wise to have more than one secure method to keep your seed phrase protected. This means you could have a paper copy stored safely and another copy on a durable material like metal that won't easily get damaged. This way, if one copy gets lost or ruined, you still have another copy to use. Make sure to store these copies in different spots. If something bad happens to one spot, the other copy will still be safe. Doing this helps ensure you can always access your seed phrase, no matter what.
+Avoid keeping the phrase in screenshots, photos, text files, cloud storage, or messages. Check that your written backup is legible and complete. If you keep more than one copy, consider how to protect each copy and where to store it.
 
-## 2. Use Trusted Wallets for Cardano (ADA)
+Some wallets use an additional passphrase. In that case the seed phrase alone may not restore the same wallet. Make sure you understand and safely back up the information required by your wallet.
 
-Wallets like Eternl, Lace, Yoroi, and Flint are safe ways to manage your Cardano (ADA) cryptocurrency. When you use these wallets clients combined with hardware wallets like Ledger, Trezor, or Keystone, your security becomes even better. Hardware wallets keep your private keys (access keys) on device only. When you make transactions, they are checked and approved through the hardware wallet itself.
+Learn more in [What Is a Seed Phrase?](/crypto-and-cardano-basics/security-and-privacy/what-is-a-seed-phrase.md) and [Security Best Practices](/crypto-and-cardano-basics/security-and-privacy/Security-Best-Practices.md).
 
-## 3. Don't Keep Cryptocurrency on Exchange Sites
+## Use a Hardware Wallet
 
-If you want to keep your cryptocurrency safe for a long time, it's better to use your own personal wallets instead of leaving them on exchange sites. Personal wallets are safer because they have fewer risks than exchanges. Exchanges can sometimes be hacked or have other big problems. Past incidents like what happened with Mt. Gox and FTX show how dangerous it can be to keep a lot of cryptocurrency in wallets on exchange sites for too long. **Not your keys, not your crypto.**
+A hardware wallet keeps its private keys on a separate device and signs transactions there. It can reduce exposure of those keys to malware on your computer or phone.
 
-## 4. Use Two-Step Verification (2fa)
+A hardware wallet does not make every action safe. Check the transaction details on the device before confirming, protect the device and its backup, and never enter its seed phrase into a website or software wallet as part of a normal connection.
 
-Two-Factor Authentication (2FA) is like adding a second authentication method to your online accounts. It makes it harder for someone else to gain access to your accounts. When you use 2FA, you need two different ways to prove it's you. [^test1] This could be something like a password and then a code shown in your authenticator app.
+## Protect Your Devices and Accounts
 
-## 5. Check Who Contacts You
+* Keep your operating system, browser, and wallet software up to date. Install software from sources you trust.
+* Use strong, unique passwords. Where available, enable two-factor authentication for online accounts such as exchanges and email.
+* Lock your devices and be careful with browser extensions and downloaded files.
+* A VPN can hide your IP address from some services, but it does not make you anonymous or protect you from malicious websites, malware, or transactions you approve. The VPN provider can also see some connection information.
 
-Be careful about people who contact you and make sure they are who they say they are. This helps you avoid scams and phishing (tricks to get your personal information). When someone messages you on social media, be extra careful. If you need help or have questions, it's a good idea to use Discord channels that are related to the topic you're interested in. Remember, no real company or their workers will ever ask you for your seed phrase and usually won’t initiate private message contact with you.
+## Check Links and Requests
 
-## 6. Use a VPN to Keep Your Online Activities Private
+Be wary of unexpected messages, fake support accounts, giveaways, and links sent to you. Check the website address before connecting a wallet or signing a transaction. A legitimate support representative will not need your seed phrase or spending password.
 
-A VPN (Virtual Private Network) helps to keep your online activities private and safe, especially when you're doing things like buying or selling online or using your online wallet. A VPN hides what you do on the internet by changing your internet connection to make it secret and secure. This means it's hard for anyone to see or track what you're doing online. But it's very important to choose a VPN service that is reliable and doesn't keep records of your online activities. This helps to make sure your privacy and safety are well-protected.
+Read what a DApp asks you to sign. Connecting a wallet, signing a message, and approving a transaction are different actions. If the request or transaction is unfamiliar, take time to verify it before proceeding.
 
-## 7. Hot Wallet vs. Cold Wallet
+## Self-Custody and Exchanges
 
-In the context of crypto, a hot wallet and a cold wallet refer to two types of cryptocurrency storage methods with different security and connectivity features:
+With self-custody, you control the wallet keys and are responsible for their security and backup. On an exchange, the provider normally controls the keys for assets held in its custody. Both approaches have risks: an exchange can fail or restrict access, while a lost seed phrase or a compromised device can result in loss of self-custodied funds.
 
-### 7.1 Hot Wallet
+## Using Eternl Securely
 
-A hot wallet is connected to the internet. It's easier to use for buying, selling, and managing your crypto. But since it’s online, it can be at risk of being hacked. These dangers can lead to someone getting into your wallet and possibly stealing your crypto. If you use a hot wallet, you should be careful and use good security steps like strong passwords and keeping the wallet software updated.
+The same precautions apply when using Eternl. Choose a strong spending password for software wallets, keep your seed phrase safe, and consider using a hardware wallet for additional protection.
 
-### 7.2 Cold Wallet
-
-A cold wallet is different because it's not connected to the internet. It's used to keep your credentials safe and is generally more secure than a hot wallet.
-
-Hardware wallets are small physical devices that keep your private keys (like secret codes for your crypto) safe and offline. This makes it hard for hackers to get to them.
-
-#### Good Things About Hardware Wallets
-
-Better Security: They're not connected to the internet, so they're safe from online hacking. Control Over Your Keys: You have full control of your private keys. Strong and Lasting: They are made to be tough and long-lasting. Can Hold Many Types of Crypto: They usually support different cryptocurrencies, not just ADA.
-
-#### Downsides Of Hardware Wallets
-
-Cost: They cost more than free hot wallets (online wallets). Less Convenient: Not as easy to use for frequent trading or quick transactions. Risk of Losing or Breaking Them: They can be lost, stolen, or broken because they're physical objects.
-
-For people who trade a lot or need fast access to their ADA, hot wallets (online wallets) are more practical, but they have some security risks. However, for big transactions and keeping your crypto safe for a long time, it's better to use hardware wallets like Trezor, Ledger, and Keystone. These wallets are known for being really secure and they lower the risk of online dangers. Also, these hardware wallets work with the Eternl wallet, which makes them even more useful for Cardano users.
-
-## 8. Using the Eternl Wallet Securely
-
-Everything mentioned before also applies to using Eternl. The most crucial thing is to securely store your seed phrase.
-
-Additionally, it's advised to use Hardware Wallets such as Ledger, Trezor, or Keystone in combination with Eternl to boost security. This approach provides added safety because it keeps the private keys offline.
-
-Eternl wallets ensure that master keys are encrypted with a spending password and stored locally. This means your keys are not exposed online.
-
-Keep your wallet software up-to-date and follow general best practices for digital security.
-
-Stay informed by watching tutorials[^1] and reading guides on how to effectively use Eternl.
-
-Remember, the key to security is not just the tools you use but also your practices in managing them.
-
-
-[^1]: [Eternl on YouTube](https://www.youtube.com/@eternlio)
+For more guidance, see the [Eternl tutorials on YouTube](https://www.youtube.com/@eternlio) and the wiki's [Security & Privacy](/crypto-and-cardano-basics/security-and-privacy/README.md) section.

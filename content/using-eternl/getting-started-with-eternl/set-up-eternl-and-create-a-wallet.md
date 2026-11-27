@@ -15,6 +15,20 @@ For more information, see [What Is a Seed Phrase?](/crypto-and-cardano-basics/se
 3. Set a PIN code to protect access to this Eternl installation, or click **Skip** to continue without one. The PIN is only a local access protection and is separate from your wallet's spending password.
 4. Read and accept the Terms of Service and Privacy Policy to continue.
 
+[[carousel title="Set Up Eternl" steps=true start=1]]
+### Start Setup
+![Start setup - Step 1](/assets/pictures/set_up_eternl_setup-0.jpg)
+
+### Review the Settings
+![Review the settings - Step 2](/assets/pictures/set_up_eternl_setup-1.jpg)
+
+### Set a PIN or Skip
+![Set a PIN or skip - Step 3](/assets/pictures/set_up_eternl_setup-2.jpg)
+
+### Review and Accept the Terms
+![Review and accept the terms - Step 4](/assets/pictures/set_up_eternl_setup-3.jpg)
+[[/carousel]]
+
 After setup, Eternl opens the wallet selection screen. You can create a new wallet or add an existing one.
 
 ## Create a New Wallet
