@@ -24,8 +24,8 @@ If you are trying to restore your wallet and encounter problems, such as error m
 
 ### Missing Funds from other Wallets (Passphrase)
 * **Problem:** You are migrating from a wallet like AdaLite where you used an optional "Passphrase", but your balance in Eternl is zero.
-* **Explanation:** Some third-party wallets allowed an optional passphrase (an extra word) for software wallets. However, this is not part of the official Cardano (CIP) standards for software wallets.
-* **Eternl's Position:** To ensure maximum compatibility and security across the Cardano ecosystem, Eternl adheres strictly to official Cardano standards. Therefore, it does not support this non-standard passphrase layer for software-based restores.
+* **Explanation:** Some third-party wallets allowed an optional passphrase (an extra word) for software wallets.
+* **Eternl:** When restoring a software wallet from a seed phrase, Eternl currently does not provide an option to enter an additional passphrase.
 * **Solution:** If your funds are tied to such a passphrase, you may need to use the original application to access them or move them to a standard Cardano wallet.
 
 ### Security Breach (Stolen Funds)

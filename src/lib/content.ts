@@ -75,6 +75,7 @@ export type CarouselConfig = {
   title: string;
   showSteps: boolean;
   start: number;
+  initial: number;
 };
 
 const SHIKI_THEMES = {
@@ -628,12 +629,15 @@ function parseCarouselOptions(markerName: string, attributes: string): Omit<Caro
   const titleMatch = attributes.match(/(?:^|\s)title\s*=\s*"([^"]*)"/i);
   const stepsMatch = attributes.match(/(?:^|\s)steps(?:\s*=\s*(true|false))?(?=\s|$)/i);
   const startMatch = attributes.match(/(?:^|\s)start\s*=\s*(\d+)(?=\s|$)/i);
+  const initialMatch = attributes.match(/(?:^|\s)initial\s*=\s*(\d+)(?=\s|$)/i);
   const parsedStart = startMatch ? Number.parseInt(startMatch[1], 10) : 1;
+  const parsedInitial = initialMatch ? Number.parseInt(initialMatch[1], 10) : 1;
 
   return {
     title: titleMatch?.[1]?.trim() || '',
     showSteps: markerName === 'steps' || stepsMatch?.[1]?.toLowerCase() === 'true' || stepsMatch?.[1] === undefined && Boolean(stepsMatch),
-    start: Number.isFinite(parsedStart) ? Math.max(1, parsedStart) : 1
+    start: Number.isFinite(parsedStart) ? Math.max(1, parsedStart) : 1,
+    initial: Number.isFinite(parsedInitial) ? Math.max(1, parsedInitial) : 1
   };
 }
 
@@ -653,7 +657,8 @@ function renderCarouselPlaceholder(
     items,
     title: options?.title || '',
     showSteps: options?.showSteps ?? false,
-    start: options?.start || 1
+    start: options?.start || 1,
+    initial: options?.initial || 1
   };
 
   return `<div class="markdown-carousel-placeholder" data-carousel="${escapeHtml(

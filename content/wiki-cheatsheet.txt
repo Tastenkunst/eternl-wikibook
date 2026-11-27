@@ -133,7 +133,7 @@ images
 
 Carousel / Schrittfolge:
 
-[[carousel title="Optional title" steps=true start=1]]
+[[carousel title="Optional title" steps=true start=1 initial=2]]
 ### optional Step title
 Optionaler Text.
 ![Alt text](/assets/pictures/example.png)
